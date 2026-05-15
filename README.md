@@ -1,46 +1,18 @@
-# Astro Starter Kit: Basics
+# Personal Website - Astro Migration
 
-```sh
-npm create astro@latest -- --template basics
-```
+Having spent 12 years with WordPress, I have decided to migrate my [personal website](https://thamara.co.uk) to Astro, deployed on Vercel. This is my attempt to do that in public, with the entire site been rewritten from the ground up.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Planned changes
 
-## 🚀 Project Structure
+1. Typography: Use of [Maiola](https://www.type-together.com/maiola-font) throughout, inspired by the [This American Life](https://www.thisamericanlife.org/) website.
+2. Colour palette: Minor tweaks to my [current colour palette](https://thamara.co.uk/colophon#colour-palette).
+3. Archives: Current archives such as [/gigs](https://thamara.co.uk/gigs/), [/desk](https://thamara.co.uk/desk/), and [/podroll](https://thamara.co.uk/podroll/) to be re-written as a file-based (`.md`) content collections.
+4. Codex: Adding a new `/codex` (or `/canon`) page, version-controlled in Git. (Inspired by [Buster Benson](https://busterbenson.com/codex)). 
 
-Inside of your Astro project, you'll see the following folders and files:
+There's not much else in the pipeline for now. I'm creating all the above very slowly. While the WordPress block editor is extremely user friendly, Astro allows for more freedom to get the site to exactly where I want it.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+Follow along at [astro.thamara.co.uk](https://astro.thamara.co.uk)
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## AI Disclaimer
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Use of language models will strictly be utilitarian (e.g., checking code) and never for creative purposes.
