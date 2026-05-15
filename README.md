@@ -10,3 +10,9 @@ Having spent 12 years with WordPress, I have decided to migrate my [personal web
 4. Codex: Adding a new `/codex` (or `/canon`) page, version-controlled in Git. (Inspired by [Buster Benson](https://busterbenson.com/codex)). 
 
 There's not much else in the pipeline for now. I'm creating all the above very slowly. While the WordPress block editor is extremely user friendly, Astro allows for more freedom to get the site to exactly where I want it.
+
+Follow along at [astro.thamara.co.uk](https://astro.thamara.co.uk)
+
+## AI Disclaimer
+
+Use of language models will strictly be utilitarian (e.g., checking code) and never for creative purposes.
