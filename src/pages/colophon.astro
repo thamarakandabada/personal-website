@@ -1,3 +1,19 @@
+---
+const pageTitle = "Colophon";
+const identity = {
+  firstName: "Thamara",
+  location: "Belfast, United Kingdom",
+  tagline: "generalist and tinkerer",
+  hobbies: ["cinema", "music", "concerts", "guitars"],
+};
+
+const skills = ["HTML", "CSS", "WordPress", "Astro", "Photoshop"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
+---
+
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
@@ -5,7 +21,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>Thamara Kandabada</title>
+    <title>{pageTitle}</title>
   </head>
   
   <body>
@@ -17,10 +33,29 @@
   <a href="/colophon/">Colophon</a>
   <a href="/notebook/">Notebook</a>
 
-    <h1>Colophon</h1>
+    <h1>{pageTitle}</h1>
     
     <h2>About this site</h2>
     <p>This is my personal corner of the internet. It’s a showcase of my interests, hobbies, and my history.</p>
+
+    <p>Here are a few facts about me:</p>
+    <ul>
+     <li>My name is {identity.firstName}.</li>
+     <li>I live in {identity.location} and I identify as a {identity.tagline}.</li>
+      {identity.hobbies.length >= 2 &&
+     <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+  }
+</ul>
+<p>My skills are:</p>
+<ul>
+  {skills.map((skill) => <li>{skill}</li>)}
+</ul>
+
+{happy && <p>I am happy to be learning Astro!</p>}
+
+{finished && <p>I finished this tutorial!</p>}
+
+{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 
     <h2>Technology</h2>
     <p>This site is built with <a href="https://astro.build/">Astro</a> and deployed on <a href="https://vercel.com/">Vercel</a>.</p>
