@@ -45,30 +45,20 @@ const goal = 3;
     <h2>About this site</h2>
     <p>This is my personal corner of the internet. It’s a showcase of my interests, hobbies, and my history.</p>
 
-    <p>Here are a few facts about me:</p>
-    <ul>
-     <li>My name is {identity.firstName}.</li>
-     <li>I live in {identity.location} and I identify as a {identity.tagline}.</li>
-      {identity.hobbies.length >= 2 &&
-     <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-  }
-</ul>
-<p>My skills are:</p>
-<ul>
-  {skills.map((skill) => <li>{skill}</li>)}
-</ul>
-
-{happy && <p>I am happy to be learning Astro!</p>}
-
-{finished && <p>I finished this tutorial!</p>}
-
-{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-
     <h2>Technology</h2>
     <p>This site is built with <a href="https://astro.build/">Astro</a> and deployed on <a href="https://vercel.com/">Vercel</a>.</p>
 
     <h2>Typography</h2>
     <p>This site uses the typeface <a href="https://www.type-together.com/maiola-font">Maiola</a> from the foundry TypeTogether.</p>
+
+    <h2>Editorial</h2>
+    <ul>
+      <li><strong>Language:</strong> British English (colour, programme, metre).</li>
+      <li><strong>Oxford Comma:</strong> Strictly enforced.</li>
+      <li><strong>Dates:</strong> DD MMM YYYY (e.g., 12 Feb 2026).</li>
+      <li><strong>AI:</strong> All writing on this site is 100% human. AI is used for code assistance only, never for prose. Note: I have been using em dashes in my writing long before AI tools were widely available—all em dashes on this website are enthusiastically human-crafted.</li>
+      <li><strong>Notebook Entries:</strong> Thamara’s Notebook © 2026 by Thamara Kandabada is licensed under CC BY-NC-SA 4.0</li>
+    </ul>
 
   </body>
 
