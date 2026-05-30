@@ -7,6 +7,7 @@ image:
     url: ''
     alt: ''
 tags: ["running", "exercise", "couch to 5k"]
+import: '../styles/global.css'
 ---
 
 # Couch to 5K progress: Week 4
