@@ -1,5 +1,5 @@
 body {
-    background-color: #ff0000;
+    background-color: #F5F5F5;
     font-family: "maiola", serif;
 }
 
@@ -9,7 +9,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
     margin-bottom: 0.75rem;
 }
 
@@ -20,7 +25,7 @@ p {
 
 a:link {
   color: red;
-  background-color: #999999;
+  text-decoration: none;
 }
 
 a:hover {
