@@ -1,7 +1,5 @@
-@import url("https://use.typekit.net/lbp7mnn.css");
-
 body {
-    background-color: #999999;
+    background-color: #ff0000;
 }
 
 h1 {
@@ -21,7 +19,7 @@ p {
 
 a:link {
   color: red;
-  background-color: yellow;
+  background-color: #999999;
 }
 
 a:hover {
