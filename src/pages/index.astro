@@ -1,6 +1,28 @@
 ---
 import '../styles/global.css';
 const pageTitle = "Thamara Kandabada - Home";
+
+// src/pages/index.astro
+const userAgent = Astro.request.headers.get('user-agent') || '';
+
+if (userAgent.includes('curl')) {
+  const terminalText = `
+ Thamara Kandabada
+ Generalist. Tinkerer.
+ 
+ See what's happening now: https://thamara.co.uk/now
+`;
+
+  return new Response(terminalText, {
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+    },
+  });
+}
+---
+<html lang="en">
+  <!-- Your normal HTML Astro layout goes here -->
+</html>
 ---
 
 <html lang="en">
