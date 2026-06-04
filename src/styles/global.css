@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Maiola";
+  font-family: maiola, serif;
   src:
-    url("https://use.typekit.net/lbp7mnn.css");
+    url("https://use.typekit.net/lbp7mnn.css") format("opentype");
 }
 
 body {
