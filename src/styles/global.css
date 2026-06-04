@@ -28,10 +28,7 @@ p {
 a, a:visited {
   color: red;
   text-decoration: none;
-}
-
-a {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 a::after {
