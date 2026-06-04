@@ -1,0 +1,38 @@
+---
+import "../styles/global.css";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/tk.png" />
+		<link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+	<header>
+		<div class="top-nav-menu">
+			<a href="/">Home</a>
+			<a href="/colophon/">Colophon</a>
+			<a href="/notebook/">Notebook</a>
+		</div>
+	</header>
+		<slot />
+
+	<footer>
+      <p>Ars long. Vita brevis.</p>
+      <p><strong>Thamara Kandabada</strong> © 2026.</p>
+    </footer>
+    
+	</body>
+</html>
