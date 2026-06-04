@@ -1,5 +1,5 @@
 ---
-layout: ./src/layouts/BlogLayout.astro
+layout: /src/layouts/BlogLayout.astro
 title: 'Couch to 5K progress: Week 4'
 pubDate: 2026-05-18
 description: 'Getting used to longer running intervals'

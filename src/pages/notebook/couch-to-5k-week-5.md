@@ -1,5 +1,5 @@
 ---
-layout: ./src/layouts/BlogLayout.astro
+layout: /src/layouts/BlogLayout.astro
 title: 'Couch to 5K: Week 5'
 pubDate: 2026-05-28
 description: 'Making steady progress'
