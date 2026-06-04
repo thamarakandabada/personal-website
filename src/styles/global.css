@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/lbp7mnn.css");
+
 body {
     background-color: #F5F5F5;
     font-family: "maiola", serif;
@@ -23,7 +25,7 @@ p {
     margin-bottom: 0.25rem;
 }
 
-a:link {
+a:link a:visited {
   color: red;
   text-decoration: none;
 }
