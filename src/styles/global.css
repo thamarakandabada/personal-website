@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "Maiola";
+  src:
+    url("https://use.typekit.net/lbp7mnn.css");
+}
+
 body {
     background-color: #99999;
-    font-family: "Maiola", serif;
 }
 
 h1 {
