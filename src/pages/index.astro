@@ -1,15 +1,14 @@
 ---
-export const prerender = false; // Forces Astro to run this file on the server per-request
-
-const userAgent = Astro.request.headers.get('user-agent') || '';
-
-if (userAgent.includes('curl')) {
-
 import '../styles/global.css';
 const pageTitle = "Thamara Kandabada - Home";
 
-// src/pages/index.astro
-const userAgent = Astro.request.headers.get('user-agent') || '';
+export const prerender = false;
+
+// Tell the CDN to keep separate caches based on the User-Agent
+Astro.response.headers.set('Vary', 'User-Agent');
+
+// Grab the user agent and convert to lowercase
+const userAgent = (Astro.request.headers.get('user-agent') || '').toLowerCase();
 
 if (userAgent.includes('curl')) {
   const terminalText = `
@@ -49,7 +48,8 @@ ASCII art by https://www.asciiart.eu/
   return new Response(terminalText, {
     headers: {
       'Content-Type': 'text/plain; charset=utf-8',
-    },
+      'Vary': 'User-Agent'
+    }
   });
 }
 ---
