@@ -45,10 +45,15 @@ GitHub: https://github.com/thamarakandabada
 ASCII art by https://www.asciiart.eu/
 `;
 
+  // Calculate the exact file size so Windows curl knows when to exit
+  const byteLength = new TextEncoder().encode(terminalText).length.toString();
+
   return new Response(terminalText, {
     headers: {
       'Content-Type': 'text/plain; charset=utf-8',
-      'Vary': 'User-Agent'
+      'Vary': 'User-Agent',
+      'Content-Length': byteLength,
+      'Connection': 'close'
     }
   });
 }
