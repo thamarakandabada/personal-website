@@ -1,6 +1,51 @@
 ---
 import '../styles/global.css';
 const pageTitle = "Thamara Kandabada - Home";
+
+// src/pages/index.astro
+const userAgent = Astro.request.headers.get('user-agent') || '';
+
+if (userAgent.includes('curl')) {
+  const terminalText = `
+
+//////////////////////////////////////////////////////////////////////////
+//                                                                      //
+//  ░▀█▀░█░█░█▀█░█▄█░█▀█░█▀▄░█▀█░░░█░█░█▀█░█▀█░█▀▄░█▀█░█▀▄░█▀█░█▀▄░█▀█  //
+//  ░░█░░█▀█░█▀█░█░█░█▀█░█▀▄░█▀█░░░█▀▄░█▀█░█░█░█░█░█▀█░█▀▄░█▀█░█░█░█▀█  //
+//  ░░▀░░▀░▀░▀░▀░▀░▀░▀░▀░▀░▀░▀░▀░░░▀░▀░▀░▀░▀░▀░▀▀░░▀░▀░▀▀░░▀░▀░▀▀░░▀░▀  //
+//                                                                      //
+//////////////////////////////////////////////////////////////////////////
+
+Hello, command line visitor. I bid you good timezone.
+==========================================================================
+
+Thank you for stopping by. I’m Thamara, furniture-peddler by day and
+wearer-of-many-hats by night. Currently based in Belfast, UK.
+
+Visit my website: https://thamara.co.uk
+See what's happening now: https://thamara.co.uk/now
+Read the blog: https://thamara.co.uk/notebook
+
+Contact:
+-----------
+Send me an email: t@thamara.co.uk
+
+Elsewhere:
+-----------
+LinkedIn: https://www.linkedin.com/in/thamarakandabada/
+Reddit: https://www.reddit.com/user/thamara-k/
+GitHub: https://github.com/thamarakandabada
+
+==========================================================================
+ASCII art by https://www.asciiart.eu/
+`;
+
+  return new Response(terminalText, {
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+    },
+  });
+}
 ---
 
 <html lang="en">
