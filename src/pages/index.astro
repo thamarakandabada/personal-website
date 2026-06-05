@@ -1,4 +1,10 @@
 ---
+export const prerender = false; // Forces Astro to run this file on the server per-request
+
+const userAgent = Astro.request.headers.get('user-agent') || '';
+
+if (userAgent.includes('curl')) {
+
 import '../styles/global.css';
 const pageTitle = "Thamara Kandabada - Home";
 
