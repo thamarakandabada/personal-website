@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Navigation from "../components/TopNavigation.astro";
 
 interface Props {
 	title: string;
@@ -19,22 +20,13 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-	<header>
-		<div class="top-nav-menu">
-			<a href="/">Home</a>
-			<a href="/colophon/">Colophon</a>
-			<a href="/notebook/">Notebook</a>
-		</div>
-	</header>
+
+	<body>	
 	
-	<slot />
+		<Navigation />
 	
-	<footer>
-      <p>Ars long. Vita brevis.</p>
-      <p><strong>Thamara Kandabada</strong> © 2026.</p>
-    </footer>
-    
+		<slot />    
+	
 	</body>
 	
 </html>

@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import PageLayout from '../layouts/PageLayout.astro';
 const pageTitle = "Thamara Kandabada - Home";
 
 export const prerender = false;
@@ -59,6 +59,7 @@ ASCII art by https://www.asciiart.eu/
 }
 ---
 
+<PageLayout title={pageTitle}>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -70,15 +71,8 @@ ASCII art by https://www.asciiart.eu/
   </head>
 
   <body>
-    <div class="banner">
-      <p class="banner-text">Work in progress: this is a clone of my WordPress site, currently being built in Astro, for eventual migration. Visit my <a href="https://thamara.co.uk">current site</a> for the latest updates.</p>
-    </div>
 
-    <div class="top-nav-menu">
-      <a href="/">Home</a>
-      <a href="/colophon/">Colophon</a>
-      <a href="/notebook/">Notebook</a>
-    </div>
+    <header />
 
     <h1>Greetings, friends & strangers.</h1>
 

@@ -3,70 +3,66 @@
 
 .top-nav-menu {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-bottom: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 html {
     background-color: #F5F5F5;
     font-family: "maiola", serif;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 0.75rem;
     font-weight: 400;
 }
 
 h4 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
     font-weight: 400;
 }
 
 h5 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 0.4rem;
     font-weight: 400;
 }
 
 h6 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 0.3rem;
     font-weight: 400;
 }
 
 p {
-    font-size: 1.25rem;
-    margin-bottom: 0.25rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 li {
     font-size: 1.25rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
 }
 
 a {
     color: #D8613C;
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 0.25rem;
 }
 
 a:hover {
@@ -89,10 +85,4 @@ code {
     font-size: 0.95rem;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
-}
-
-footer {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 2px solid black;
 }

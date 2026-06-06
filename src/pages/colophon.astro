@@ -1,27 +1,19 @@
 ---
-import '../styles/global.css';
+import PageLayout from '../layouts/PageLayout.astro';
 const pageTitle = "Colophon";
 ---
+<PageLayout title={pageTitle}>
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/tk.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
     <title>{pageTitle}</title>
   </head>
   
   <body>
-    <div class="banner">
-      <p class="banner-text">Work in progress: this is a clone of my WordPress site, currently being built in Astro, for eventual migration. Visit my <a href="https://thamara.co.uk">current site</a> for the latest updates.</p>
-    </div>
-
-    <div class="top-nav-menu">
-      <a href="/">Home</a>
-      <a href="/colophon/">Colophon</a>
-      <a href="/notebook/">Notebook</a>
-    </div>
 
     <h1>{pageTitle}</h1>
     
@@ -44,4 +36,6 @@ const pageTitle = "Colophon";
     </ul>
   </body>
 
-  </html>
+  </PageLayout>
+</html>
+</PageLayout>
