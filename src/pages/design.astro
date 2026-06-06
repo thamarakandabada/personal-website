@@ -1,9 +1,9 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
-const allPosts = Object.values(import.meta.glob('./notebook/*.md', { eager: true }));
-const pageTitle = "Notebook";
+const pageTitle = "Design";
 ---
-<PageLayout title={pageTitle}>  
+<PageLayout title={pageTitle}>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -16,12 +16,11 @@ const pageTitle = "Notebook";
   <body>
 
     <h1>{pageTitle}</h1>
-    <h2>Uncensored thoughts on Life, The Universe, and Everything</h2>
     
-    <ul>
-        {allPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
-    </ul>
-    
+    <p>work in progress</p>
+
   </body>
-  </html>
+
   </PageLayout>
+</html>
+</PageLayout>

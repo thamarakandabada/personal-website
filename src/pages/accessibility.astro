@@ -1,0 +1,55 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+const pageTitle = "Accessibility";
+---
+<PageLayout title={pageTitle}>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/tk.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <title>{pageTitle}</title>
+  </head>
+  
+  <body>
+
+    <h1>{pageTitle}</h1>
+
+    <div class="accessibility-version-notice">
+      <p><strong>Statement Version:</strong> <code>1.0</code> <strong>Last Updated:</strong> 6 Jun 2026. <a href="https://github.com/thamarakandabada/personal-website/commits/main/src/pages/accessibility.astro" target="_blank">View previous versions</a>.</p>
+    </div>
+
+    <p>This is an accessibility statement for the website of <span class="basic-information website-name">Thamara Kandabada</span>. The contents of this statement applies to the domain <code>thamara.co.uk</code> and its subdomains, with the exception of <code>moria.thamara.co.uk</code> and <code>physicalmedia.thamara.co.uk</code>.</p>
+
+    <h2>Conformance status</h2>
+    
+    <p>
+	The <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a> defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA.
+	<span class="basic-information website-name">Thamara Kandabada</span>
+	is
+	<span class="basic-information conformance-status" data-printfilter="lowercase">fully conformant</span>
+	with
+	<span class="basic-information conformance-standard"><span data-negate="">WCAG 2.2 level AA</span>.</span>
+	<span>
+	<span class="basic-information conformance-status">Fully conformant</span>
+	means that
+	<span class="basic-information conformance-meaning">the content fully conforms to the accessibility standard without any exceptions</span>.
+    </span>
+    </p>
+
+    <h2>Feedback</h2>
+    <p>
+	I welcome your feedback on the accessibility of the website
+	<span class="basic-information website-name">Thamara Kandabada</span>.
+	Please let me know if you encounter any accessibility barriers or have suggestions for improvement. You can contact me by <span class="basic-information feedback h-card">e-mail</span> at <a class="email u-email" href="mailto:t@thamara.co.uk">t@thamara.co.uk</a>
+
+    <p>
+	This statement was created on <span class="basic-information statement-created-date">6 June 2026</span> using the <a href="https://www.w3.org/WAI/planning/statements/">W3C Accessibility Statement Generator Tool</a>.
+    </p>
+
+  </PageLayout>
+  
+</html>
+</PageLayout>

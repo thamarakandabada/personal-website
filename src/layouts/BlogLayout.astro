@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import Navigation from "../components/TopNavigation.astro";
+import WIPBanner from "../components/WIPBanner.astro";
+import GlobalFooter from "../components/GlobalFooter.astro";
 ---
 
 <!doctype html>
@@ -15,11 +17,11 @@ import Navigation from "../components/TopNavigation.astro";
 		<title>Title</title>
 	</head>
 	
-	<body>
+	<body>	
+	<WIPBanner />
 	<Navigation />
     <slot />
-	<footer />
-    
+	<GlobalFooter />
 	</body>
 
 </html>

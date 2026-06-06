@@ -1,4 +1,5 @@
 ---
+import { ACTION_QUERY_PARAMS } from 'astro:actions';
 import PageLayout from '../layouts/PageLayout.astro';
 const pageTitle = "Colophon";
 ---
@@ -21,12 +22,19 @@ const pageTitle = "Colophon";
     <p>This is my personal corner of the internet. It’s a showcase of my interests, hobbies, and my history.</p>
 
     <h2>Technology</h2>
-    <p>This site is built with <a href="https://astro.build/">Astro</a> and deployed on <a href="https://vercel.com/">Vercel</a>.</p>
+    <p>This site is built with <a href="https://astro.build/" target="_blank">Astro</a> and deployed on <a href="https://vercel.com/" target="_blank">Vercel</a>. Version control is managed with <a href="https://github.com/" target="_blank">GitHub</a>.</p>
+    <p>This website uses HTML, CSS and a few bits of JavaScript for customisation.</p>
+    <p>My blog posts have an RSS feed that you can subscribe to using any feed reader (made possible with <a href="https://www.subtome.com/" target="_blank">SubToMe</a>). All posts support <a href="https://indieweb.org/Webmention" target="_blank">Webmentions</a>. The site also supports a number of <code><a href="https://indieweb.org/h-card" target="_blank">h-card</a></code> microformat properties (<a href="https://indiewebify.me/validate-h-card/?url=https%3A%2F%2Fthamara.co.uk" target="_blank">see here</a>).
+    <p>A number of the apps on my <a href="/now">/now</a> page were “vibe-coded” using <a href="https://lovable.dev/" target="_blank">Lovable</a>. All other content was hand-coded by me from the ground up. LLMs were sparingly used to check code.</p>
+    <p>While this site is fully responsive, it is best viewed on desktop.</p>
 
-    <h2>Typography</h2>
-    <p>This site uses the typeface <a href="https://www.type-together.com/maiola-font">Maiola</a> from the foundry TypeTogether.</p>
+    <h2>Design & Writing (See also: <a href="/style">Style</a>, <a href="/ai">AI</a>)</h2>
+    <p>This is the sixth iteration of my website. My goal with this version was to keep it text-based and clean. There are no analytics, no newsletter pop-ups, no ads, and I’m not trying to sell you anything.</p>
 
-    <h2>Editorial</h2>
+    <h3>Typography</h3>
+    <p>This site uses the typeface <a href="https://www.type-together.com/maiola-font" target="_blank">Maiola</a> from the foundry <a href="https://www.type-together.com/" target="_blank">TypeTogether</a> throughout. Code blocks and inline code use the monospace font <a href="https://fonts.google.com/specimen/Cascadia+Mono" target="_blank">Cascadia Mono</a>.</p>
+
+    <h3>Editorial</h3>
     <ul>
       <li><strong>Language:</strong> British English (colour, programme, metre).</li>
       <li><strong>Oxford Comma:</strong> Strictly enforced.</li>
@@ -34,8 +42,19 @@ const pageTitle = "Colophon";
       <li><strong>AI:</strong> All writing on this site is 100% human. AI is used for code assistance only, never for prose. Note: I have been using em dashes in my writing long before AI tools were widely available—all em dashes on this website are enthusiastically human-crafted.</li>
       <li><strong>Notebook Entries:</strong> Thamara’s Notebook © 2026 by Thamara Kandabada is licensed under CC BY-NC-SA 4.0</li>
     </ul>
-  </body>
 
+    <h2>Carbon Footprint</h2>
+    <p>This website produces <a href="https://www.websitecarbon.com/website/thamara-co-uk/" target="_blank">0.10g of CO2 per visit</a>.</p>
+
+    <h2>Privacy</h2>
+    <p><strong>Data Collection:</strong> This website does not use cookies. If you use the contact form on my <a href="/hello">/hello</a> page to send me a message, the information you provide (name and email) is used solely to respond to you. I do not share or sell this data to third parties.</p>
+    <p><strong>Analytics:</strong> No analytics are used on this site.</p>
+    <p><strong>External Links:</strong> This site links to third-party platforms (Letterboxd, Trakt, etc.). Once you leave this site, their respective privacy policies apply.</p>
+
+    <h2>The Quote</h2>
+    <p>The phrase in the footer, <i>“Ars longa, vita brevis”</i> (Art is long, life is short), is one of my favourites that serves as a reminder that while our time here is fleeting, the work we create will outlast us. It also means that any craft worth learning requires a lifetime of dedication.</p>
+
+  </body>
   </PageLayout>
-</html>
-</PageLayout>
+
+  </html>

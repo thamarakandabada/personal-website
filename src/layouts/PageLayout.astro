@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import Navigation from "../components/TopNavigation.astro";
+import WIPBanner from "../components/WIPBanner.astro";
+import GlobalFooter from "../components/GlobalFooter.astro";
 
 interface Props {
 	title: string;
@@ -22,10 +24,11 @@ const { title } = Astro.props;
 	</head>
 
 	<body>	
-	
+     	<WIPBanner />
 		<Navigation />
 	
-		<slot />    
+		<slot />   
+		<GlobalFooter /> 
 	
 	</body>
 	
