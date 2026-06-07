@@ -1,6 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
-const pageTitle = "AI Manifesto";
+const pageTitle = "AI Policy";
 ---
 <PageLayout title={pageTitle}>
 
@@ -16,11 +16,47 @@ const pageTitle = "AI Manifesto";
   <body>
 
     <h1>{pageTitle}</h1>
-    
-    <p>work in progress</p>
 
-  </body>
+    <div class="ai-version-notice">
+      <p><strong>Statement Version:</strong> <code>1.0</code> <strong>Last Updated:</strong> 7 Jun 2026. <a href="https://github.com/thamarakandabada/personal-website/commits/main/src/pages/ai.astro" target="_blank">View previous versions</a>.</p>
+          <p><i>I am using term "AI" here loosely to refer to various technologies—including but not limited to image, video, and text generation tools, chatbots, and vibe-coding tools—built with large language models at their core. Technology evolves rapidly, and my thoughts on it will likely change as I continue to explore its potential, limitations, and implications. I intend this policy to be a living document that will be updated as my understanding of AI evolves.</i></p>    
+    </div>
+  
+    <p><strong>This statement outlines my approach to using AI-based tools, primarily in the making of this website, but also in personal life and at work.</strong></p>
 
-  </PageLayout>
+    <h2>1. General principles</h2>
+    <p>My approach to using AI-based tools is guided by the following principles:</p>
+    <ol>
+      <li><strong>Transparency:</strong> I will be transparent about when and how I use AI-based tools.</li>
+      <li><strong>Accuracy:</strong> I will ensure that these tools do not perpetuate harmful biases or misinformation. I will critically evaluate the outputs of AI tools and make adjustments when necessary.</li>
+      <li><strong>Continuous learning:</strong> I will stay informed about the latest developments in AI technology and best practices for its use, and I will continuously evaluate and update my approach as needed.</li>
+    </ol>
+    <p>As with any technology, I understand that LLMs can be and are being used for nefarious purposes by bad actors. I also find the current bubble around AI concerning, with a lot of power concentrated in the hands of a few (young and male) "hotshots". I feel the potential of the technology to do <a href="https://www.nature.com/articles/s41746-024-01345-9" target="_blank">good</a> is being squandered, with the current focus on <a href="https://unric.org/en/ai-in-conflict-keeping-humanity-in-control/" target="_blank">profit, power, and warmongering</a> rather than ethical considerations.</p>
+    <p>The extensive infrastructure required to maintain the current trajectory of AI development also has <a href="https://www.theguardian.com/technology/2026/apr/24/officials-hugely-underestimated-impact-of-ai-datacentres-on-uk-carbon-emissions" target="_blank">concerning implications for the environment</a>. I believe a delicate balance can be struck, but that would require Silicon Valley to grow a conscience, so I am not holding my breath.</p>
+    <p>With all this in mind, I have endeavoured to keep my AI usage to a minimum, but I would be lying if I said that I do not find its prospects to be exciting.</p>
+
+    <h2>2. Use within this website</h2>
+    <h3>2.1. General usage</h3>
+    <p>The current version of this website, which is built on Astro and deployed on Vercel (see <a href="/colophon">/colophon</a> for more information) has benefitted from AI-based tools in its creation. The raw HTML, CSS and the minimal JavaScript were written by hand. However, I have used the following AI tools to assist with checking the code for errors.</p>
+    <ul>
+      <li>The built-in Copilot integration in Visual Studio Code</li>
+      <li>Google Gemini</li>
+    </ul>
+
+    <h3>2.2. Vibe-coding</h3>
+    <p>The following iframes embedded on my /now page were created/"vibe-coded" using <a href="https://www.lovable.dev/" target="_blank">Lovable</a>.</p>
+    <ul>
+      <li>Trakt integration</li>
+      <li>Goodreads integration</li>
+      <li>PlayStation integration</li>
+    </ul>
+
+    <h3>2.3. Creative usage</h3>
+    <p>I do not use generative AI tools for creating any content for this website. All writing here is 100% human-generated. Images have been sourced from royalty-free stock photo sites, or used with the permission of the respective owners.</p>
+
+    <h2>3. Usage elsewhere</h2>
+    <p>Outside of this website, I use AI-based tools primarily for research and learning purposes. I am cautious about the potential risks and ethical considerations associated with AI, and I strive to use these tools responsibly and minimally. I have discovered that tools like Gemini are particularly helpful in distilling complex information into more digestible formats. I use the "see thinking steps" feature to better understand how these tools arrive at their conclusions. This was a helpful tip shared by Marisabel (the creator of the excellent <a href="https://marisabel.nl/" target="_blank">Konfetti Explorations</a> website) recently on a <a href="https://web-weaving.jamesg.blog/4" target="_blank">podcast</a>.</p>
+    <p>At work, due to the nature of the output demanded of me, I have to separate my personal principles from my professional use of AI tools. I have used generative tools for drafting emails, social media post captions, and images.</p>
+
 </html>
 </PageLayout>
