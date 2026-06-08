@@ -1,15 +1,40 @@
 @import url("https://use.typekit.net/lbp7mnn.css");
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
 
-.top-nav-menu {
+.top-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    background-color: #F8F6F1;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.top-nav-links {
     display: flex;
     gap: 1.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+}
+
+.top-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.top-nav-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+.site-title {
+    font-weight: 700;
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #F8F6F1;
     font-family: "maiola", serif;
 }
 
@@ -56,19 +81,24 @@ h6 {
 }
 
 p {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.5;
 }
 
 li {
-    font-size: 1.25rem;
-    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    line-height: 1.75;
+}
+
+ul, ol {
+    margin-bottom: 2rem;
 }
 
 a {
-    color: #D8613C;
+    color: #EC0000;
     text-decoration: underline;
-    text-underline-offset: 0.25rem;
+    text-underline-offset: 0.4rem;
 }
 
 a:hover {
@@ -102,5 +132,12 @@ code {
 
 .global-footer {
     margin-top: 3rem;
-    border-top: 1px solid #bab9b9;
+    border-top: 1px solid #D8D8D8;
+    text-align: left;
+    display: flex;
+}
+
+.footer-quote {
+    font-style: italic;
+    font-size: 1.5rem;
 }

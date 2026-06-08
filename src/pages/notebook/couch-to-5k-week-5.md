@@ -7,7 +7,7 @@ author: 'Thamara Kandabada'
 image:
     url: ''
     alt: ''
-tags: ["running", "exercise", "couch to 5k"]
+tags: ["running", "exercise", "couch-to-5k"]
 ---
 
 # Couch to 5K: Week 5
