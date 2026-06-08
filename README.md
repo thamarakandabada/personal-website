@@ -15,4 +15,4 @@ Follow along at [astro.thamara.co.uk](https://astro.thamara.co.uk)
 
 ## AI Disclaimer
 
-Use of language models will strictly be utilitarian (e.g., checking code) and never for creative purposes.
+Use of language models will strictly be utilitarian (e.g., checking code) and never for creative purposes. [See my AI Policy](https://astro.thamara.co.uk/ai)
