@@ -1,15 +1,14 @@
 @import url("https://use.typekit.net/lbp7mnn.css");
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
 
-.top-nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1.2rem;
+.header {
+    overflow: hidden;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     position: sticky;
     top: 0;
-    align-items: center;
+    align-items: baseline;
     background-color: #F8F6F1;
     border-bottom: 1px solid #D8D8D8;
 }
@@ -17,9 +16,10 @@
 .top-nav-links {
     display: flex;
     gap: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.top-nav a {
+.header a {
     color: black;
     text-decoration: none;
 }
@@ -31,6 +31,13 @@
 
 .site-title {
     font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.period {
+    color: #EC0000;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 body {

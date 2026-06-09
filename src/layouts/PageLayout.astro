@@ -14,7 +14,7 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/tk.png" />
 		<link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
@@ -24,10 +24,8 @@ const { title } = Astro.props;
 
 	<body>	
 		<Navigation />
-	
 		<slot />   
 		<GlobalFooter /> 
-	
 	</body>
 	
 </html>
