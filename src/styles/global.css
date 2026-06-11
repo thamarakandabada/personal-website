@@ -45,7 +45,6 @@ nav {
     position: sticky;
     top: 0;
     background: var(--bg-secondary);
-    padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -300,6 +299,16 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.featured-pages-list, .recent-blogpost-list {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-pages, .featured-blogposts, .webrings {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Media queries */
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)  {
@@ -377,7 +386,7 @@ input:checked + .slider:before {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
     .page-content, nav, .footer-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
