@@ -24,6 +24,7 @@
   --accent: #FCA311;
 }
 
+/* Main components */
 html, body {
     margin: 0;
     padding: 0;
@@ -186,13 +187,22 @@ code {
 }
 
 .accessibility-version-notice, .ai-version-notice {
-    padding: 1rem 5rem;
+    padding: 0.5rem 3rem;
     background: var(--bg-secondary);
     text-align: center;
     display: flex;
     justify-content: space-between;
+    border-radius: 4px;
 }
 
+.now-watching {
+    display: flex;
+    flex: wrap;
+}
+
+.now-watching-tv, .now-watching-film {
+    flex: 50%;
+}
 
 .global-footer {
     padding: 2em 1em;
@@ -234,6 +244,44 @@ code {
 
 .social-links a:hover {
     color: var(--accent);
+}
+
+.homepage-flex, .hobbies-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-pages, .recent-blogposts, .webrings {
+    flex: 33.3%;
+}
+
+.hobby-cinema, .hobby-music, .hobby-gigs {
+    flex: 25%;
+    justify-content: space-between;
+}
+
+.featured-pages-list, .recent-blogposts-list, .webring-links, .hobby-cinema-list, .consuming {
+    list-style: none;
+    padding: 0;
+}
+
+.webring-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+img {
+    border-radius: 4px;
+}
+
+.home-page-hero {
+    display: flex;
+    align-items: top;
+}
+
+.home-page-intro, .home-page-hero-image {
+    flex: 50%;
 }
 
 /* Dark mode toggle */
@@ -322,6 +370,10 @@ input:checked + .slider:before {
         padding-right: 2rem;
     }
 
+    .featured-pages, .recent-blogposts, .webrings {
+        flex: 100%;
+    }
+
     .site-tagline {
         display: flex;
         flex-direction: column;
@@ -370,6 +422,10 @@ input:checked + .slider:before {
     .page-content, nav, .footer-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
+    }
+
+    .featured-pages, .recent-blogposts, .webrings {
+        flex: 100%;
     }
 
     .top-nav-links {
@@ -452,4 +508,66 @@ input:checked + .slider:before {
     .top-nav-burger {
         display: none;
     }
+}
+
+/* Contact form styling */
+
+.contact-form-container {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--bg-tertiary);
+    font-size: 1.2rem;
+    font-family: "maiola", serif;
+    color: var(--text-primary);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: var(--accent);
+    font-size: 0.875rem;
+    display: none; /* Hidden by default */
+}
+
+.submit-button {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 25%;
+    transition: background-color 0.3s;
+    font-family: "maiola", serif;
+    font-size: 1rem;
+}
+
+.submit-button:hover {
+    background-color: var(--bg-tertiary);
+}
+
+/*Notebook styling */
+.notebook-posts-list {
+    list-style: none;
+    padding: 0;
 }

@@ -61,9 +61,9 @@ ASCII art by https://www.asciiart.eu/
 ---
 
 <PageLayout title={pageTitle}>
+  <h1>Greetings, friends & strangers.</h1>
   <div class="home-page-hero">
     <div class="home-page-intro">
-      <h1>Greetings, friends & strangers.</h1>
       <p>Welcome to my personal website.</p>
       <p>I’m Thamara, <a href="/resume">furniture-peddler</a> by day and <a href="/now">wearer-of-many-hats</a> by night. Currently based in Belfast, Northern Ireland.</p></p>
       <p>I’ve had a website since 2014, which was when I first learned the basics of web design—specifically, HTML, CSS, and WordPress. This is the fourth or fifth iteration; I’ve now lost count.</p>
@@ -71,12 +71,14 @@ ASCII art by https://www.asciiart.eu/
     </div>
 
     <div class="home-page-hero-image">
-      <img src="/" alt="" />
+      <img src="#" alt="" width="100%"/>
     </div>
   
   </div>
 
   <h2>Explore my digital garden</h2>
+
+  <div class="homepage-flex">
     <div  class="featured-pages">   
       <h3>At a glance</h3>
         <ul class="featured-pages-list">
@@ -88,14 +90,21 @@ ASCII art by https://www.asciiart.eu/
           <li><a href="/hello">Say hello</a></li>
         </ul>
     </div>
-    <div class="featured-blogposts">
+    <div class="recent-blogposts">
       <h3>From the notebook</h3>
-        <ul class="recent-blogpost-list">
+        <ul class="recent-blogposts-list">
           {allPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
         </ul>
     </div>
     <div class="webrings">
       <h3>See the neighbourhood</h3>
-        <p>IndieWeb Webring placeholder</p>
+        <p>This website is part of the IndieWeb Webring. View more sites like this below.</p>
+        <ul class="webring-links">
+          <li><a href="/">Previous</a></li>
+          <li><a href="/">Random</a></li>
+          <li><a href="/">Next</a></li>
+        </ul>
     </div>
+  </div>
+
 </PageLayout>
