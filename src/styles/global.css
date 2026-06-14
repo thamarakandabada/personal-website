@@ -186,22 +186,13 @@ code {
     background: var(--bg-tertiary);
 }
 
-.accessibility-version-notice, .ai-version-notice {
+.accessibility-version-notice, .ai-version-notice, .now-location-weather {
     padding: 0.5rem 3rem;
     background: var(--bg-secondary);
     text-align: center;
     display: flex;
     justify-content: space-between;
     border-radius: 4px;
-}
-
-.now-watching {
-    display: flex;
-    flex: wrap;
-}
-
-.now-watching-tv, .now-watching-film {
-    flex: 50%;
 }
 
 .global-footer {
@@ -246,9 +237,16 @@ code {
     color: var(--accent);
 }
 
-.homepage-flex, .hobbies-section {
+.homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
     display: flex;
-    flex-wrap: wrap;
+}
+
+.home-page-hero-intro, .home-page-hero-image {
+    flex: 50%;
+}
+
+.home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
+    margin-right: 3rem;
 }
 
 .featured-pages, .recent-blogposts, .webrings {
@@ -260,7 +258,7 @@ code {
     justify-content: space-between;
 }
 
-.featured-pages-list, .recent-blogposts-list, .webring-links, .hobby-cinema-list, .consuming {
+.featured-pages-list, .recent-blogposts-list, .webring-links, .hobby-cinema-list, .consuming, .hobby-music-list {
     list-style: none;
     padding: 0;
 }
@@ -275,13 +273,8 @@ img {
     border-radius: 4px;
 }
 
-.home-page-hero {
-    display: flex;
-    align-items: top;
-}
-
-.home-page-intro, .home-page-hero-image {
-    flex: 50%;
+.guitar-photo, .hobby-photo {
+    width: 100%;
 }
 
 /* Dark mode toggle */
@@ -362,6 +355,25 @@ input:checked + .slider:before {
     padding-bottom: 20rem;
 }
 
+.footer-nav-links {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.footer-nav-links nav {
+    gap: 1.5rem;
+}
+
+.footer-nav-links a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.footer-nav-links a:hover {
+    color: var(--accent);
+}
+
 /* Media queries */
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)  {
@@ -370,8 +382,14 @@ input:checked + .slider:before {
         padding-right: 2rem;
     }
 
-    .featured-pages, .recent-blogposts, .webrings {
-        flex: 100%;
+    .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+    }
+
+    .home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
+    margin-right: 0;
     }
 
     .site-tagline {
@@ -424,8 +442,14 @@ input:checked + .slider:before {
         padding-right: 2.5rem;
     }
 
-    .featured-pages, .recent-blogposts, .webrings {
-        flex: 100%;
+    .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+    }
+
+    .home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
+    margin-right: 0;
     }
 
     .top-nav-links {
