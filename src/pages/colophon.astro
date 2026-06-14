@@ -1,25 +1,16 @@
 ---
 import { ACTION_QUERY_PARAMS } from 'astro:actions';
 import PageLayout from '../layouts/PageLayout.astro';
-const pageTitle = "Colophon";
+const pageTitle = "Colophon - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/tk.png" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>{pageTitle}</title>
-  </head>
   
   <body>
 
-    <h1>{pageTitle}</h1>
+    <h1>Colophon</h1>
     
     <h2>About this site</h2>
-    <p>This is my personal corner of the internet. It’s a showcase of my interests, hobbies, and my history.</p>
+    <p>This is my personal corner of the internet. It’s a showcase of my interests, hobbies, and my history. <strong>See also:</strong> <a href="https://indieweb.org/colophon">What is a colophon?</a></p>
 
     <h2>Technology</h2>
     <p>This site is built with <a href="https://astro.build/" target="_blank">Astro</a> and deployed on <a href="https://vercel.com/" target="_blank">Vercel</a>. Version control is managed with <a href="https://github.com/" target="_blank">GitHub</a>.</p>
@@ -55,6 +46,4 @@ const pageTitle = "Colophon";
     <p>The phrase in the footer, <i>“Ars longa, vita brevis”</i> (Art is long, life is short), is one of my favourites that serves as a reminder that while our time here is fleeting, the work we create will outlast us. It also means that any craft worth learning requires a lifetime of dedication.</p>
 
   </body>
-  </PageLayout>
-
-  </html>
+</PageLayout>
