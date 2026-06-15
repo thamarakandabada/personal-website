@@ -91,12 +91,21 @@ nav {
 
 }
 
-.uses-grid-container{
+.project-image {
+    border: 1px solid var(--border-color)
+}
+
+.uses-grid-container, .debas-grid, .projects-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
     column-gap: 2rem;
     row-gap: 2rem;
     margin-top: 2.5rem;
+}
+
+.debas-grid a {
+    text-decoration: none;
 }
 
 .uses-grid-container div {
@@ -104,6 +113,24 @@ nav {
     border-radius: 4px;
     padding: 0.75rem 2rem;
     background-color: var(--bg-tertiary);
+}
+
+.debas-grid div {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    background-color: var(--bg-tertiary);
+}
+
+.debas-author {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.debas-grid div:hover {
+    border-color: var(--accent);
+    transition: 0.5s;
 }
 
 h1 {
@@ -442,11 +469,6 @@ input:checked + .slider:before {
         flex-direction: column;
     }
 
-    .uses-grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
     h1 {
         font-size: 2.75rem;
     }
@@ -500,11 +522,6 @@ input:checked + .slider:before {
 
     .accessibility-version-notice, .ai-version-notice {
         flex-direction: column;
-    }
-
-    .uses-grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
     }
 
     h1 {

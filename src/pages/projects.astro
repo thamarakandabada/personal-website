@@ -1,43 +1,85 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import websiteImage from '../assets/images/projects/personalwebsite.png'
+import finvizImage from '../assets/images/projects/finviz.png'
+import pmvImage from '../assets/images/projects/pmv.png'
+import baImage from '../assets/images/projects/bearappeal.png'
+import debasImage from '../assets/images/projects/debas.jpeg'
+import podImage from '../assets/images/projects/badtake.jpeg'
 const pageTitle = "Projects - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
   <body>
 
     <h1>Projects</h1>
+    <p>Here are some of my past and present projects that I had been/am involved with in various capacities.</p>
     
+    <div class="projects-grid">
+    
+    <div>
+    <img class="project-image" src={websiteImage.src} alt="a screenshot of the homepage of this website" width="100%" loading="lazy" />
+    <h2>Personal Website</h2>
+    <p>This website, built on Astro and deployed on Vercel. A previous version of the site, achived below, was built on WordPress.</p>
+    <ul class="project-links">
+      <li><a href="/colophon">Colophon</a></li>
+      <li><a href="/notebook/tag/the-great-astro-migration" target="_blank">Blog Posts</a></li>
+      <li><a href="https://archive.thamara.co.uk/">WordPress Site (Archive)</a></li>
+    </ul>
+    </div>
+
+    <div>
+    <img class="project-image" src={finvizImage.src} alt="a screenshot of the homepage of the Finviz app" width="100%" loading="lazy" />
     <h2>Finviz</h2>
     <p>I vibe-coded a data visualisation app that can be used with CSV exports from Finances 2 (or similar double-entry based bookkeeping apps.)</p>
     <ul class="project-links">
-      <li>test</li>
-      <li>list</li>
+      <li><a href="https://finviz.thamara.co.uk/login" target="_blank">Demo</a></li>
+      <li><a href="https://github.com/thamarakandabada/finviz" target="_blank">Repo</a></li>
+      <li><a href="https://thamara.co.uk/notebook/a-data-visualiser-for-finances-2/">Blog Post</a></li>
     </ul>
+    </div>
 
+    <div>
+    <img class="project-image" src={pmvImage.src} alt="a screenshot of the homepage of the Finviz app" width="100%" loading="lazy" />
     <h2>Physical Media Vault</h2>
     <p>I vibe-coded a simple React app with Lovable to catalogue my physical media collection.</p>
     <ul class="project-links">
-      <li></li>
+      <li><a href="https://physicalmedia.thamara.co.uk/">Live App</a></li>
+      <li><a href="https://github.com/thamarakandabada/physicalmediavault" target="_blank">Repo</a></li>
+      <li><a href="https://thamara.co.uk/notebook/building-a-physical-media-showcase-with-lovable/">Blog Post</a></li>
     </ul>
-
+    </div>
+    
+    <div>
+    <img class="project-image" src={baImage.src} alt="a screenshot of the homepage of the Finviz app" width="100%" loading="lazy" />
     <h2>Bear Appeal</h2>
     <p>I built a successful e-commerce and apparel manufacturing business with my friend and co-founder Pavithra. While I’m no longer involved, the business continues to thrive under Pavithra and his team.</p>
     <ul class="project-links">
-      <li></li>
+      <li><a href="https://bearappeal.com/" target="_blank">Website</a></li>
+      <li><a href="/resume">More Info (Resume)</a></li>
+      <li><a href="/notebook/tag/my-startu[-journey">Blog Posts</a></li>
     </ul>
+    </div>
 
+    <div>
+    <img class="project-image" src={debasImage.src} alt="a screenshot of the homepage of the Finviz app" width="100%" loading="lazy" />
     <h2>Debas</h2>
     <p>Debas was an online platform (now defunct) which brought together diverse perspectives on Sri Lankan politics, economy, society, and culture in dialogue with one another. I helped my friends Himal, Rajni, and Jo with this.</p>
     <ul class="project-links">
-      <li></li>
+      <li><a href="/projects/debas">Archives</a></li>
     </ul>
+    </div>
 
+    <div>
+    <img class="project-image" src={podImage.src} alt="a screenshot of the homepage of the Finviz app" width="100%" loading="lazy" />
     <h2>The Bad Take Podcast</h2>
     <p>A conversational podcast on anything from politics and pop culture to the universe and the meaning of life. I co-hosted this with my friend Himal. The episodes are still available online for your listening pleasure.</p>
     <ul class="project-links">
-      <li></li>
+      <li><a href="https://creators.spotify.com/pod/profile/the-bad-take/" target="_blank">Listen</a></li>
+      <li><a href="/projects/podcast">Archives</a></li>
     </ul>
+    </div>
 
+    </div>
 
   </body>
 </PageLayout>
