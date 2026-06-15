@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import coverImage from '../assets/images/main/thamara-kandabada.jpg';
 const allPosts = Object.values(import.meta.glob('./notebook/*.md', { eager: true }));
 const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
 
@@ -71,7 +72,7 @@ ASCII art by https://www.asciiart.eu/
     </div>
 
     <div class="home-page-hero-image">
-      <img src="/src/assets/images/main/thamara-kandabada.jpg" alt="Me sitting behind the drum set at the Casbah Coffee Club in Liverpool, the birthplace of The Beatles." width="100%"/>
+      <img src={coverImage.src} alt="Me sitting behind the drum set at the Casbah Coffee Club in Liverpool, the birthplace of The Beatles." width="100%"/>
     </div>
   
   </div>

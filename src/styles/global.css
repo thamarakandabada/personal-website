@@ -366,6 +366,10 @@ input:checked + .slider:before {
     padding-bottom: 20rem;
 }
 
+.guestbook-intro {
+    padding-bottom: 3rem;
+}
+
 .footer-nav-links {
     display: flex;
     margin-bottom: 3rem;
@@ -552,64 +556,78 @@ input:checked + .slider:before {
     }
 }
 
-/* Contact form styling */
-
-.contact-form-container {
-    width: 100%;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-    font-size: 1.2rem;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.6rem;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: var(--bg-tertiary);
-    font-size: 1.2rem;
-    font-family: "maiola", serif;
-    color: var(--text-primary);
-}
-
-textarea {
-    resize: vertical;
-}
-
-.error-message {
-    color: var(--accent);
-    font-size: 0.875rem;
-    display: none; /* Hidden by default */
-}
-
-.submit-button {
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
-    border: 1px solid var(--border-color);
-    padding: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 25%;
-    transition: background-color 0.3s;
-    font-family: "maiola", serif;
-    font-size: 1rem;
-}
-
-.submit-button:hover {
-    background-color: var(--bg-tertiary);
-}
-
 /*Notebook styling */
 .notebook-posts-list {
     list-style: none;
     padding: 0;
+}
+
+/* =========================================
+   Discuss Widget Custom Styling Overrides 
+   ========================================= */
+
+/* 1. Base Font Alignment */
+#discuss-comments, .discuss-text-lg, .discuss-text-sm, .discuss-flex {
+    font-family: "maiola", serif;
+    color: var(--text-primary);
+}
+
+/* 2. Strip Tailwind's Hardcoded Backgrounds & Borders */
+/* This intercepts Tailwind's utility classes and forces them to be transparent */
+#discuss-comments [class*="bg-white"],
+#discuss-comments [class*="bg-gray-"],
+#discuss-comments [class*="bg-slate-"],
+#discuss-comments [class*="bg-zinc-"],
+#discuss-comments [class*="dark:bg-"] {
+    background-color: transparent !important;
+}
+
+#discuss-comments [class*="border-gray-"],
+#discuss-comments [class*="border-slate-"],
+#discuss-comments [class*="border-zinc-"],
+#discuss-comments [class*="dark:border-"] {
+    border-color: var(--border-color) !important;
+}
+
+/* 3. Strip Tailwind's Text Colors */
+#discuss-comments [class*="text-gray-"],
+#discuss-comments [class*="text-slate-"],
+#discuss-comments [class*="text-zinc-"],
+#discuss-comments [class*="dark:text-"] {
+    color: var(--text-primary) !important;
+}
+
+/* 4. Inputs & Textareas (Matches your contact form) */
+#discuss-comments input,
+#discuss-comments textarea {
+    background-color: var(--bg-tertiary) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+    border-radius: 4px !important;
+    font-family: "maiola", serif !important;
+}
+
+/* 5. Buttons (Matches your submit button logic) */
+#discuss-comments button {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 4px !important;
+    transition: background-color 0.3s !important;
+    font-family: "maiola", serif !important;
+}
+
+#discuss-comments button:hover {
+    background-color: var(--bg-tertiary) !important;
+}
+
+/* 6. Links & Mentions */
+#discuss-comments a {
+    color: var(--accent) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 0.4rem !important;
+}
+
+#discuss-comments a:hover {
+    color: var(--text-primary) !important;
 }
