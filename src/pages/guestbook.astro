@@ -10,6 +10,17 @@ const pageTitle = "Guestbook - Thamara Kandabada";
     
     <p>work in progress</p>
 
+    <!-- Discuss comment widget -->
+    <div id="discuss-comments"></div>
+    <script src="https://effective-happiness-775p7wj4j9r3rqg5-3000.app.github.dev/client.js"></script>
+    <script>
+      new DiscussWidget({
+      container: document.getElementById('discuss-comments'),
+      serverUrl: 'https://effective-happiness-775p7wj4j9r3rqg5-3000.app.github.dev',
+      primaryColor: '#2563eb',
+    });
+    </script>
+
   </body>
 
 </PageLayout>
