@@ -1,5 +1,8 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import docImage from '../assets/images/uses/dock.png'
+import deskImage from '../assets/images/uses/desk.png'
+import phoneImage from '../assets/images/uses/phone.png'
 const pageTitle = "Uses - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -116,7 +119,7 @@ const pageTitle = "Uses - Thamara Kandabada";
     <h2>Software & Web</h2>
     <p>Regularly used apps across platforms, and some websites I can’t live without.</p>
 
-    <img src="/src/assets/images/uses/dock.png" alt="A screenshot of the dock on my MacBook Air, showing some of my most used appps" width="100%">
+    <img src={docImage.src} alt="A screenshot of the dock on my MacBook Air, showing some of my most used appps" width="100%" />
     
     <h3>Writing & Publishing</h3>
     <ul>
@@ -177,7 +180,7 @@ const pageTitle = "Uses - Thamara Kandabada";
     </ul>
 
     <h3>Productivity, Learning & Finances</h3>
-    <ul>
+    <ul class="productivity-list">
       <li>Apple Reminders: My to-do app of choice.</li>
       <li>Apple Calendar: My calendar app of choice.</li>
       <li>Trello: My project management and planning app of choice.</li>
@@ -192,6 +195,8 @@ const pageTitle = "Uses - Thamara Kandabada";
       <li>Dumb Phone (dp): Minimalist launcher for iOS.</li>
       <li>Pretty Progress: Visual progress tracker for iOS.</li>
     </ul>
+
+    <img class="phone-screen" scr="" alt="A screenshot of my iPhone's homescreen, showing the Dumb Phone launcher and the following apps on the menu bar: Current, Couch to 5K, GitWriter, Discord, Signal, WhatsApp" loading="lazy" width="100%" />
 
     <h3>Security</h3>
     <ul>
