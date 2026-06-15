@@ -197,7 +197,7 @@ code {
     background: var(--bg-tertiary);
 }
 
-.accessibility-version-notice, .ai-version-notice, .now-location-weather {
+.accessibility-version-notice, .ai-version-notice, .now-location-weather, .no-experiments-banner {
     padding: 0.5rem 3rem;
     background: var(--bg-secondary);
     text-align: center;
@@ -383,6 +383,13 @@ input:checked + .slider:before {
 
 .footer-nav-links a:hover {
     color: var(--accent);
+}
+
+.project-links {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 1rem;
 }
 
 /* Media queries */

@@ -8,17 +8,19 @@ const pageTitle = "Guestbook - Thamara Kandabada";
 
     <h1>Guestbook</h1>
     
-    <p>work in progress</p>
+    <p>If you enjoyed browsing the website, please consider signing my guestbook below.</p>
+
+    <p>This guestbook is powered by <a href="https://github.com/karthikeyankc/discuss" target="_blank">Discuss</a>, a self-hosted comments engine for static sites, made by <a href="https://karthikeyankc.com/" target="_blank">Karthikeyan KC</a>. My comments are hosted on <a href="https://www.digitalocean.com/" target="_blank">Digital Ocean</a>.</p>
 
     <!-- Discuss comment widget -->
     <div id="discuss-comments"></div>
-    <script src="https://effective-happiness-775p7wj4j9r3rqg5-3000.app.github.dev/client.js"></script>
+    <script src="https://discuss.thamara.co.uk/client.js"></script>
     <script>
       new DiscussWidget({
-      container: document.getElementById('discuss-comments'),
-      serverUrl: 'https://effective-happiness-775p7wj4j9r3rqg5-3000.app.github.dev',
-      primaryColor: '#2563eb',
-    });
+       container: document.getElementById('discuss-comments'),
+       serverUrl: 'https://discuss.thamara.co.uk',
+       primaryColor: '#2563eb',
+      });
     </script>
 
   </body>
