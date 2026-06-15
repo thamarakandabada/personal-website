@@ -6,7 +6,7 @@
 :root {
   --bg-primary: #FFEBD2;
   --bg-secondary: #f7dfba;
-  --bg-tertiary: #e1c8a2;
+  --bg-tertiary: #f7dfbd;
   --text-primary: #101519;
   --text-secondary: #13213C;
   --border-color: #c6beb0;
@@ -17,7 +17,7 @@
 :root[data-theme="dark"] {
   --bg-primary: #101519;
   --bg-secondary: #13213C;
-  --bg-tertiary: #262C33;
+  --bg-tertiary: #202225;
   --text-primary: #D8DCE0;
   --text-secondary: #a0a0a0;
   --border-color: #737A80;
@@ -89,6 +89,21 @@ nav {
 .period-footer {
     color: var(--accent);
 
+}
+
+.uses-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.uses-grid-container div {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    background-color: var(--bg-tertiary);
 }
 
 h1 {
@@ -427,6 +442,11 @@ input:checked + .slider:before {
         flex-direction: column;
     }
 
+    .uses-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     h1 {
         font-size: 2.75rem;
     }
@@ -480,6 +500,11 @@ input:checked + .slider:before {
 
     .accessibility-version-notice, .ai-version-notice {
         flex-direction: column;
+    }
+
+    .uses-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     h1 {
@@ -600,16 +625,19 @@ input:checked + .slider:before {
 /* 4. Inputs & Textareas (Matches your contact form) */
 #discuss-comments input,
 #discuss-comments textarea {
-    background-color: var(--bg-tertiary) !important;
-    border: 1px solid var(--border-color) !important;
+    background-color: var(--bg-primary) !important;
     color: var(--text-primary) !important;
     border-radius: 4px !important;
     font-family: "maiola", serif !important;
 }
 
+.discuss-form-bottom {
+    background-color: var(--bg-secondary) !important;
+}
+
 /* 5. Buttons (Matches your submit button logic) */
 #discuss-comments button {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--bg-tertiary) !important;
     color: var(--text-primary) !important;
     border: 1px solid var(--border-color) !important;
     border-radius: 4px !important;
@@ -618,7 +646,7 @@ input:checked + .slider:before {
 }
 
 #discuss-comments button:hover {
-    background-color: var(--bg-tertiary) !important;
+    background-color: var(--bg-secondary) !important;
 }
 
 /* 6. Links & Mentions */
