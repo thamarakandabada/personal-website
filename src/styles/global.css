@@ -396,6 +396,10 @@ input:checked + .slider:before {
     gap: 1rem;
 }
 
+.productivity-list, .phone-screen {
+    display: flex;
+}
+
 /* Media queries */
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)  {
