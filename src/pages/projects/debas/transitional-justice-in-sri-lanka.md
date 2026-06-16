@@ -1,11 +1,16 @@
 ---
-layout: /src/layouts/BlogLayout.astro
+layout: /src/layouts/DebasLayout.astro
 title: 'Transitional justice in Sri Lanka: The importance of local ownership'
 pubDate: 2023-04-09
 author: 'Roshni Kapur'
+authorInfo: 'Roshni Kapur is a programme manager/political strategist at Rule of Law Programme Asia at Konrad-Adenauer-Stiftung (KAS). She was a research analyst at the Institute of South Asian Studies (ISAS), National University of Singapore from 2018 to 2021. She is the editor of the volume Sustainable Energy Transition in South Asia: Challenges and Opportunities (2019). Her research focus is on conflict resolution, transitional justice, identity politics, geopolitics, and violent extremism in South Asia. She regularly writes for East Asia Forum, Lowy Institute, Middle East Institute, and Observer Research Foundation.'
+authorPhoto:
+    url: ''
+    alt: ''
 image:
     url: ''
     alt: ''
+disclaimer: 'The opinions expressed in this article are those of the author. They do not reflect the opinions or views of Debas. We welcome authors to submit responses to the arguments made in this article by sending in their pitches to debasdialogues [at] gmail [dot] com. Accepted submissions will be paid a standard honorarium.'
 ---
 
 Can a country genuinely commit to transitional justice mechanisms when majoritarianism remains deeply entrenched in its political, legal, and constitutional structures? While the Aragalaya last year saw a reawakening of civic resistance against poor governance, calling for anti-corruption, system change, and political reforms, the movement had less of a demand and critique of transitional justice and reconciliation measures.
@@ -18,7 +23,7 @@ However, the ground situation was rather complex. Some members of the Aragalaya 
 
 Despite various mechanisms and commissions of inquiries over the years to deal with the past, including those set up during the civil war, transitional justice interventions have not been an integral part of Sri Lanka’s nation-building campaign. The oscillation between different political parties and their domestic and foreign policies has, among other causes, prevented any significant progress on this front. While Sri Lanka’s deeply entrenched ethnocratic and majoritarian structures have prevented a transitional justice apparatus with a strong mandate, its connotation with liberal peace and the West have played a role in its failure as well.
 
-> The sovereignty card often played by Sri Lanka has been part of a wider effort to forge a Global South solidarity against what is portrayed as a neo-colonial pressure on human rights and accountability.
+<blockquote>The sovereignty card often played by Sri Lanka has been part of a wider effort to forge a Global South solidarity against what is portrayed as a neo-colonial pressure on human rights and accountability.</blockquote>
 
 First, there is a general distrust towards issues such as transitional justice, economic development, and sustainability models, particularly when they are initiated or raised by the international community and foreign NGOs. They are usually met with rhetoric that these efforts are intrusive, threaten Sri Lanka’s sovereignty, and bring more harm than good. In 2011, then President Mahinda Rajapaksa gave a speech at the UN Human Rights Council. He stressed the significance of homegrown mechanisms, particularly the Lessons Learnt and Reconciliation Commission (LLRC), to achieve the dual objectives of justice and accountability. Colombo’s defense of its domestic transitional justice apparatus was therefore usually complemented with efforts to push back against Western pressure. 
 
@@ -32,7 +37,7 @@ Third, transitional justice interventions in Sri Lanka have stressed the importa
 
 Many international actors have pressurised Sri Lanka on various multilateral platforms to pursue justice for crimes allegedly committed during the war. However, this rather punitive and prosecutorial model of formal justice ends up prioritising international norms, practices, and expertise over local ones. As a result, the homegrown mechanisms set up by previous governments were seen as second-best approaches with a limited mandate and lacking independence.
 
-> Although these individuals have good intentions and seek to make a tangible difference through their Western-centric legal training, they usually do not have local expertise and knowledge of post-conflict settings. 
+<blockquote>Although these individuals have good intentions and seek to make a tangible difference through their Western-centric legal training, they usually do not have local expertise and knowledge of post-conflict settings.</blockquote> 
 
 Concerns regarding the expertise of the commissioners and judges of international tribunals appointed by the UN have also been raised. Given that there are insufficient experts who specialise in international criminal law, these judges often move from one tribunal to another. Although these individuals have good intentions and seek to make a tangible difference through their Western-centric legal training, they usually do not have local expertise and knowledge of post-conflict settings including the knowledge of local legal systems, local culture, local community, and local facts. 
 
