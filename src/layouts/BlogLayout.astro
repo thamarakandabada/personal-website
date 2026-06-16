@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
+const { frontmatter } = Astro.props;
 ---
 
 <!doctype html>
@@ -42,6 +43,10 @@ import GlobalFooter from "../components/GlobalFooter.astro";
 	<body>	
 	<Navigation />
 	<div class="page-content">
+    <div class="blog-meta">
+    <h1>{frontmatter.title}</h1>
+    <p>by {frontmatter.author}</p>
+    </div>
     <slot />
 	</div>
 	<GlobalFooter />

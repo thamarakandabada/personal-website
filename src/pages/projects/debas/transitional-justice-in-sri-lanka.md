@@ -1,15 +1,49 @@
 ---
 layout: /src/layouts/BlogLayout.astro
-title: ’New writing setup'
-pubDate: 2026-06-08
-description: ‘Hello markdown'
-author: 'Thamara Kandabada'
+title: 'Transitional justice in Sri Lanka: The importance of local ownership'
+pubDate: 2023-04-09
+author: 'Roshni Kapur'
 image:
     url: ''
     alt: ''
-tags: ["writing", "blogging", "the-great-astro-migration-of-2026", "astro"]
 ---
 
-# Test md file
+Can a country genuinely commit to transitional justice mechanisms when majoritarianism remains deeply entrenched in its political, legal, and constitutional structures? While the Aragalaya last year saw a reawakening of civic resistance against poor governance, calling for anti-corruption, system change, and political reforms, the movement had less of a demand and critique of transitional justice and reconciliation measures.
 
-Test.
+The Aragalaya did strengthen the space for dissent while creating new ones demanding for political and economic reforms. Some posters of missing or murdered journalists and other individuals gave hope that the movement would address issues of justice and accountability. A vigil was held on 18 May 2022 at GotaGoGama to pay a tribute to those who died during the war, particularly Tamils. This was an unprecedented occasion for the South who traditionally held commemorations of the civil war to honour the state’s victory, war heroes, and militarism.
+
+However, the ground situation was rather complex. Some members of the Aragalaya sought to project an image of the police and security forces as allies. This did not resonate with minority groups and communities in the North who experienced the full brunt of their violence in their everyday encounters.
+
+## Lack of popular support for transitional justice
+
+Despite various mechanisms and commissions of inquiries over the years to deal with the past, including those set up during the civil war, transitional justice interventions have not been an integral part of Sri Lanka’s nation-building campaign. The oscillation between different political parties and their domestic and foreign policies has, among other causes, prevented any significant progress on this front. While Sri Lanka’s deeply entrenched ethnocratic and majoritarian structures have prevented a transitional justice apparatus with a strong mandate, its connotation with liberal peace and the West have played a role in its failure as well.
+
+> The sovereignty card often played by Sri Lanka has been part of a wider effort to forge a Global South solidarity against what is portrayed as a neo-colonial pressure on human rights and accountability.
+
+First, there is a general distrust towards issues such as transitional justice, economic development, and sustainability models, particularly when they are initiated or raised by the international community and foreign NGOs. They are usually met with rhetoric that these efforts are intrusive, threaten Sri Lanka’s sovereignty, and bring more harm than good. In 2011, then President Mahinda Rajapaksa gave a speech at the UN Human Rights Council. He stressed the significance of homegrown mechanisms, particularly the Lessons Learnt and Reconciliation Commission (LLRC), to achieve the dual objectives of justice and accountability. Colombo’s defense of its domestic transitional justice apparatus was therefore usually complemented with efforts to push back against Western pressure. 
+
+The sovereignty card often played by Sri Lanka has been part of a wider effort to forge a Global South solidarity against what is portrayed as a neo-colonial pressure on human rights and accountability. Sri Lanka has reiterated this message on several multilateral forums and argued that it could set a dangerous precedent to probe human rights cases in other developing countries. The outreach to developing countries has had some success, given support among these countries for homegrown mechanisms and staving off an international inquiry. 
+
+Second, majoritarian nationalism also hampers the process. Sinhala Buddhist nationalist groups have argued that the civil war is long over, that it was won by the state who defeated terrorism, and that it does not make sense to dig up old wounds. The end of the civil war was not simply a military triumph but also a validation of the dominance of the Sinhala Buddhist nationalist ideology. As a result, there was no widespread social pressure to address the violent legacy of the past and to place transitional justice, reconciliation, and peacebuilding high on the state agenda. 
+
+Third, transitional justice interventions in Sri Lanka have stressed the importance of judicial mechanisms, through prosecutions and accountability for alleged human rights violations and mass atrocities. The various commissions of inquiries set up over the years also focused on the need for accountability and prosecutions. The three zonal commissions that were set up between 1995 and 2000 by then-President Chandrika Bandaranaike Kumaratunga to investigate the disappearance of persons in different areas of the country recommended setting up an independent human rights prosecutor to indict those accused of committing atrocities, along with compensating and rehabilitation victims of political violence. However, retributive justice faces several challenges.
+
+## The challenges of retributive justice
+
+Many international actors have pressurised Sri Lanka on various multilateral platforms to pursue justice for crimes allegedly committed during the war. However, this rather punitive and prosecutorial model of formal justice ends up prioritising international norms, practices, and expertise over local ones. As a result, the homegrown mechanisms set up by previous governments were seen as second-best approaches with a limited mandate and lacking independence.
+
+> Although these individuals have good intentions and seek to make a tangible difference through their Western-centric legal training, they usually do not have local expertise and knowledge of post-conflict settings. 
+
+Concerns regarding the expertise of the commissioners and judges of international tribunals appointed by the UN have also been raised. Given that there are insufficient experts who specialise in international criminal law, these judges often move from one tribunal to another. Although these individuals have good intentions and seek to make a tangible difference through their Western-centric legal training, they usually do not have local expertise and knowledge of post-conflict settings including the knowledge of local legal systems, local culture, local community, and local facts. 
+
+These legal experts may also come with a pre-conceived bias that will impede their ability to carry out impartial investigations. It is hardly surprising that even the Yahapalana government that previously committed to setting up a hybrid court with the involvement of foreign judges, gradually issued statements suggesting that this would not happen. This indicates a wider pattern of refusing to ‘internationalise’ transitional justice processes. 
+
+On the other hand, bottom-up customary justice processes that focus on community harmonisation offer an alternative approach to addressing grievances at the local and grassroots level. This approach was taken in Afghanistan where people living in rural areas opted for jirgas or shuras over a state court to address their grievances, including the one set up in 2010 for war victims. While the international community should try to overcome its reservations about customary justice, the latter has its limitations too, such as excluding women, lacking clarity, and having a limited mandate. Hence, there have been contestations between global and local transitional justice processes.
+
+## The way forward for transitional justice in Sri Lanka
+
+Reconciling the differences between top-down and bottom-up transitional justice processes has been a key challenge in the discourse on transitional justice in Sri Lanka. Transitional justice practices that focus on local ownership have been criticised for not complying with international human rights standards. Some argue that local elites can use homegrown processes to keep the oppressive power structures intact, several of which led to the conflict in the first place. However, when international transitional justice processes come with preconditions and are led by experts who come with a pre-conceived bias and lack local knowledge, despite having good intentions, end up making little impact on the ground. Peace processes that are top-down and prescriptive are therefore unlikely to resonate with the local communities and be sustainable in the long-term. 
+
+The challenges of carrying out transitional justice processes at the national level, however, should not dissuade community-based efforts as a form of grievance resolution, healing, and reconciliation. When projects are carried out in a non-hierarchical, bottom-up, and broad-based manner, there is a higher propensity for inclusion and towards inculcating a sense of local ownership. It could also form the basis of a bottom-up mechanism until political will by the government is robust enough to set up a more formal apparatus that is more in line with international standards and practices. 
+
+Sri Lanka has yet to start a meaningful discourse on the significance of community-based and local transitional justice interventions that will win the hearts and minds of local communities. A mechanism that is Sri Lankan-led and Sri Lankan-owned could be a counterbalance to the universalising and centralising tendencies of transitional justice and liberal peacebuilding. After all, peace is an internal and introspective process. A unifying campaign is necessary to bring various and disparate elements together, including those distrustful of one another. There is a long way to go before reaching reconciliation, healing old wounds, and addressing the root causes of conflict.
