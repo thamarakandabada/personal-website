@@ -1,4 +1,5 @@
 ---
+import Analytics from '@vercel/analytics/astro'
 import "../styles/global.css";
 import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
@@ -37,6 +38,7 @@ const { frontmatter } = Astro.props;
 		<link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
 		<meta name="generator" content={Astro.generator} />
+    <Analytics/>
 		<title>Title</title>
 	</head>
 	
