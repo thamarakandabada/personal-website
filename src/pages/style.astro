@@ -2,7 +2,7 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import { Code } from 'astro:components'
 import { Picture } from 'astro:assets';
-import dockImage from '../assets/images/uses/dock.png';
+import balrogImage from '../assets/images/style/gothmog.jpg';
 const pageTitle = "Style - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -117,61 +117,82 @@ const pageTitle = "Style - Thamara Kandabada";
 
   <p>Inline code snippets are set in the monospace font Cascadia Mono at <Code code={`0.9rem`} inline />(to offset variable font heights between this and the base font) and are enclosed in a background block with a border radius of <Code code={`4px`} inline />.</p>
 
-  <p>Code blocks are also enclosed in a background block with a boder radius of <Code code={`4px`} inline /> and <Code code={`2rem`} inline /> padding. Overflow triggers a scrollbar set in the accent colour at a width of <Code code={`100px`} inline />. (Browser support for scrollbar styles vary). Syntax highlighting is handled by the built-in <a href="https://shiki.style/" target="_blank">Shiki</a> integration. I'm using the default <em>GitHub Dark</em> theme from Shiki, and this does not currently switch to a light theme when the website theme is switched.</p>
+  <p>Code blocks are also enclosed in a background block with a boder radius of <Code code={`4px`} inline /> and variable padding. Overflow triggers a scrollbar set in the accent colour at a width of <Code code={`100px`} inline />. (Browser support for scrollbar styles vary). Syntax highlighting is handled by the built-in <a href="https://shiki.style/" target="_blank">Shiki</a> integration. I'm using the default <em>GitHub Dark</em> theme from Shiki, and this does not currently switch to a light theme when the website theme is switched.</p>
   <p>See example below.</p>
   <Code
   lang="css"
-  code={`
-  code {
-      font-family: "Cascadia Mono", monospace;
-      font-size: 0.9rem;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-  }
-
-  pre {
-      font-family: "Cascadia Mono", monospace;
-      font-size: 0.9rem;
-      padding: 2rem 2rem;
-      border-radius: 4px;
-      overflow-x: scroll;
-      scrollbar-color: var(--accent);
-      scrollbar-width: 100px;
-  }`}
-    />
+  code={`figcaption {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding-top: 0.5rem;
+    text-align: right;
+}`} />
   
-  <p>Blockquotes are italicised. They are <Code code={`1.5rem`} inline /> in font size and styled in the secondary text colour, with a <Code code={`1px`} inline /> left border styled in the accent colour. See example below. Blockquotes are only used for quotations rather than as a decorative element.</p>
+  <p>Blockquotes are italicised. They are <Code code={`1.5rem`} inline /> in font size and styled in the secondary text colour, with a <Code code={`1px`} inline /> left border styled in the accent colour. Blockquotes are only used for quotations rather than as a decorative element. See example below. </p>
   <blockquote>
     Arise, arise, Riders of Théoden!<br>Fell deeds awake: fire and slaughter!<br>Spear shall be shaken, shield be splintered,<br>a sword-day, a red day, ere the sun rises!<br>Ride now, ride now! Ride to Gondor!
   </blockquote>
 
-  <p>Unordered lists use the default <Code code={`disc`} inline /> style and ordered lists use the default <Code code={`decimal`} inline /> style. Font colours are inherited from the parent.</p>
+  <p>Unordered lists use the default <Code code={`disc`} inline /> style and ordered lists use the default <Code code={`decimal`} inline /> style. Font colours are inherited from the parent. This is illustrated below.</p>
+  <div class="meals type-showcase">
+    <div>
+      <h4>Meals of the day</h4>
+      <ol>
+        <li>Breakfast</li>
+        <li>Second breakfast</li>
+        <li>Elevenses</li>
+        <li>Luncheon</li>
+        <li>Afternoon Tea</li>
+        <li>Dinner</li>
+        <li>Supper</li>
+      </ol>
+    </div>
+    <div>
+      <h4>Ways to make taters</h4>
+      <ul>
+        <li>Boil 'em</li>
+        <li>Mash 'em</li>
+        <li>Stick 'em in a stew</li>
+      </ul>
+    </div>
+  </div>
+
   <p>All text, except blog post titles, are left-aligned. Blog post titles are centre aligned-with a background set in the secondary background colour, on which the hero image (if available) overlaps with a <Code code={`-180px`} inline /> vertical spacing. See an example <a href="">here</a>.</p>
 
   <h2>Images</h2>
   <p>All images are served in AVIF with fallback to WebP, with a <Code code={`4px`} inline /> border radius and have alt text. Captions, when used, are right aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour. See example below.</p>
   <figure>
   <Picture
-    src={dockImage} alt="A screenshot of my dock on the MacBook Air, with a number of my most used apps"
+    src={balrogImage} alt="A colourful and stylised drawing of a Balrog, engulfed in flames and wielding a large pole-axe type weapon, riding a dragon"
     formats={['avif', 'webp']}
   />
-  <figcaption>My MacBook Air dock</figcaption>
+  <figcaption>Gothmog, Lord of the Balrogs, riding a dragon. <a href="https://commons.wikimedia.org/wiki/File:GOTHMOG-1_(detail).jpg" target="_blank">Tttom</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>, via Wikimedia Commons</figcaption>
   </figure>
 
   <h2>Other components</h2>
-  <p>Grid elements have a <Code code={`1px`} inline /> thick solid border set in the border colour, with a <Code code={`4px`} inline /> border radius. The background is styled in the tertiary background colour. If the gird element is hyperlinked, the border transitions to the accent colour on hover.</p>
+  <p>Grid elements have a <Code code={`1px`} inline /> thick solid border set in the border colour, with a <Code code={`4px`} inline /> border radius. The background is styled in the tertiary background colour. If the grid element is hyperlinked, the border transitions to the accent colour on hover.</p>
   
   <div class="style-grid">
   <div class="unlinked-grid">
-  <p>Here is an example of an unlinked grid element. See more on the <a href="/uses">Uses</a> page.</p>
+  <p>This is an example of an unlinked grid element. See this in use on the <a href="/uses">Uses</a> page.</p>
   </div>
 
   <div class="linked-grid">
-  <p>Here is an example of a linked grid element. See more on the <a href="/projects/debas">Debas Archives</a> page.</p>
+  <p>This is an example of a linked grid element. See this in use on the <a href="/projects/debas">Debas Archives</a> page.</p>
   </div>
   </div>
 
-  <p><a href="https://indieweb.org/post_footer" target="_blank">Post footers</a> share the above styles (with the exception of the hover effect). On ordered lists inside post footers, numbers are styled in the accent colour.</p>
+  <p><a href="https://indieweb.org/post_footer" target="_blank">Post footers</a> share the above styles (with the exception of the hover effect). On ordered lists inside post footers, numbers are styled in the accent colour. See example below.</p>
+
+  <div class="post-footer">
+    <p><strong>Further reading</strong> (courtesy of <a href="https://tolkiengateway.net/wiki/Reading_order" target="_blank">Tolkien Gateway</a>)</p>
+    <ol id="post-footer-list">
+      <li><span><em>The Silmarillion:</em> The Silmarillion describes the beginnings of Tolkien's world.</span></li>
+      <li><span><em>The Hobbit:</em> Although directly unrelated to The Silmarillion, it is the next big story.</span></li>  
+      <li><span><em>The Lord of the Rings:</em> The conclusion of the story of The Hobbit as well as things mentioned in The Silmarillion.</span></li>  
+    </ol>
+  </div>
 
   <h2>Currently not in use</h2>
   <p>I'm currently not using tables, accordions, and definition lists within this website.</p>

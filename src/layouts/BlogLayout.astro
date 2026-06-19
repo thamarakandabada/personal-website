@@ -1,5 +1,6 @@
 ---
-import Analytics from '@vercel/analytics/astro'
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from "@vercel/speed-insights/astro";
 import "../styles/global.css";
 import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
@@ -39,6 +40,7 @@ const { frontmatter } = Astro.props;
         <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
 		<meta name="generator" content={Astro.generator} />
     <Analytics/>
+    <SpeedInsights/>
 		<title>Title</title>
 	</head>
 	
