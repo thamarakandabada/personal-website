@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Code } from 'astro:components'
 const pageTitle = "Style - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -9,8 +10,10 @@ const pageTitle = "Style - Thamara Kandabada";
     
     <p>On this page you can see how different elements are styled on this website. I have not used any pre-packaged themes; all CSS was handwritten from the ground up.</p>
 
+    <p>While this website is designed to be fully responsive using media queries, it is best viewed on desktop.</p>
+
     <h2>Colour palette</h2>
-    <p>This site gives you the option to switch between light and dark modes, which use the colour palettes below.</p>
+    <p>This site gives you the option to switch between light and dark modes by using the toggle on the top navigation menu. All elements are dynamically repainted in the following colour schemes. No elements use harcoded colour values.</p>
 
     <div class="colour-palette-grid">
       <div>
@@ -52,15 +55,15 @@ const pageTitle = "Style - Thamara Kandabada";
           <div class="colours-grid">
             <div>
               <div class="colour-box-bg-p-dark"></div>
-              <p><strong>Primary background</strong> #0d0d0e</p>
+              <p><strong>Primary background</strong> #101519</p>
             </div>
             <div>
               <div class="colour-box-bg-s-dark"></div>
-              <p><strong>Secondary background</strong> #0c182e</p>
+              <p><strong>Secondary background</strong> #181d23</p>
             </div>
             <div>
               <div class="colour-box-bg-t-dark"></div>
-              <p><strong>Tertiary background</strong> #000000</p>
+              <p><strong>Tertiary background</strong> #1c2129</p>
             </div>
             <div>
               <div class="colour-box-t-p-dark"></div>
@@ -68,15 +71,15 @@ const pageTitle = "Style - Thamara Kandabada";
             </div>
             <div>
               <div class="colour-box-t-s-dark"></div>
-              <p><strong>Secondary text</strong> #a0a0a0</p>
+              <p><strong>Secondary text</strong> #737a80</p>
             </div>
             <div>
               <div class="colour-box-b-c-dark"></div>
-              <p><strong>Border colour</strong> #737a80</p>
+              <p><strong>Border colour</strong> #262c33</p>
             </div>
             <div>
               <div class="colour-box-a-dark"></div>
-              <p><strong>Accent</strong> #fca311</p>
+              <p><strong>Accent</strong> #1db4ac</p>
             </div>
           </div>
       </div>
@@ -87,15 +90,81 @@ const pageTitle = "Style - Thamara Kandabada";
 
     <div class="type-showcase">
     <h1>Heading 1</h1>
-    <p>Level 1 headings are set in the base font and the primary text colour, and have the following properties: <code>font-size: 3rem; margin-bottom: 2rem; margin-top: 3rem; font-weight: 400;</code></p>
-
+    <p>Level 1 headings are set in the base font and the primary text colour, and have the following properties:</p>
+    <p>Font size: <Code code={`3rem`} inline />, Font weight: <Code code={`400`} inline /></p>
+  
     <h2>Heading 2</h2>
-    <p>Level 2 headings are set in the base font and the secondary text colour, and have the following properties: <code>font-size: 3rem; margin-bottom: 2rem; margin-top: 3rem; font-weight: 400;</code></p>
-    </div>
+    <p>Level 2 headings are set in the base font and the secondary text colour, and have the following properties:</p>
+    <p>Font size: <Code code={`2rem`} inline />, Font weight: <Code code={`700`} inline /></p>
+    <p>They are also styled with a trailing line that extends the full remaining width of the container and is set in the border colour.</p>
 
-    <blockquote>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </blockquote>
+    <h3>Heading 3</h3>
+    <p>Level 3 headings are set in the base font and the secondary text colour, and have the following properties:</p>
+    <p>Font size: <Code code={`1.75rem`} inline />, Font weight: <Code code={`400`} inline />, Text decoration: underline offset at <Code code={`0.4rem`} inline /></p>
 
+    <h4>Heading 4</h4>
+    <p>Level 4 headings are set in the base font and the secondary text colour, and have the following properties:</p>
+    <p>Font size: <Code code={`1.5rem`} inline />, Font weight: <Code code={`400`} inline /></p>
+  </div>
+
+  <p><Code code={`h5`} inline /> and <Code code={`h6`} inline /> titles are not used on this website.</p>
+
+  <p>Paragraph text is set in the base font at <Code code={`1.2rem`} inline />. List elements share the font size. </p>
+
+  <p>Inline <Code code={`a`} inline /> elements in the body are set in the accent colour, with an underline offset at <Code code={`0.4rem`} inline />. On hover, elements transition to the primary text colour in <Code code={`0.3s`} inline />. Navigation links in the header and footer vary, with the header opting for a simple underline reveal on hover, and the footer transitioning from the primary text colour to the accent colour on hover.</p>
+
+  <p>Inline code snippets are set in the monospace font Cascadia Mono at <Code code={`0.9rem`} inline />(to offset variable font heights between this and the base font) and are enclosed in a background block with a border radius of <Code code={`4px`} inline />.</p>
+
+  <p>Code blocks are also enclosed in a background block with a boder radius of <Code code={`4px`} inline /> and <Code code={`2rem`} inline /> padding. Overflow triggers a scrollbar set in the accent colour at a width of <Code code={`100px`} inline />. (Browser support for scrollbar styles vary). Syntax highlighting is handled by the built-in <a href="https://shiki.style/" target="_blank">Shiki</a> integration. I'm using the default <em>GitHub Dark</em> theme from Shiki, and this does not currently switch to a light theme when the website theme is switched.</p>
+  <p>See example below.</p>
+  <Code
+  lang="css"
+  code={`
+  code {
+      font-family: "Cascadia Mono", monospace;
+      font-size: 0.9rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+  }
+
+  pre {
+      font-family: "Cascadia Mono", monospace;
+      font-size: 0.9rem;
+      padding: 2rem 2rem;
+      border-radius: 4px;
+      overflow-x: scroll;
+      scrollbar-color: var(--accent);
+      scrollbar-width: 100px;
+  }`}
+    />
+  
+  <p>Blockquotes are italicised. They are <Code code={`1.5rem`} inline /> in font size and styled in the secondary text colour, with a <Code code={`1px`} inline /> left border styled in the accent colour. See example below. Blockquotes are only used for quotations rather than as a decorative element.</p>
+  <blockquote>
+    Arise, arise, Riders of Théoden!<br>Fell deeds awake: fire and slaughter!<br>Spear shall be shaken, shield be splintered,<br>a sword-day, a red day, ere the sun rises!<br>Ride now, ride now! Ride to Gondor!
+  </blockquote>
+
+  <p>Unordered lists use the default <Code code={`disc`} inline /> style and ordered lists use the default <Code code={`decimal`} inline /> style. Font colours are inherited from the parent.</p>
+  <p>All text, except blog post titles, are left-aligned. Blog post titles are centre aligned-with a background set in the secondary background colour, on which the hero image (if available) overlaps with a <Code code={`-180px`} inline /> vertical spacing. See an example <a href="">here</a>.</p>
+
+  <h2>Images</h2>
+  <p>All images are served in AVIF with fallback to WebP, with a <Code code={`4px`} inline /> border radius and have alt text. Captions, when used, are right aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour. See example below.</p>
+
+  <h2>Other components</h2>
+  <p>Grid elements have a <Code code={`1px`} inline /> thick solid border set in the border colour, with a <Code code={`4px`} inline /> border radius. The background is styled in the tertiary background colour. If the gird element is hyperlinked, the border transitions to the accent colour on hover.</p>
+  
+  <div class="style-grid">
+  <div class="unlinked-grid">
+  <p>Here is an example of an unlinked grid element. See more on the <a href="/uses">Uses</a> page.</p>
+  </div>
+
+  <div class="linked-grid">
+  <p>Here is an example of a linked grid element. See more on the <a href="/projects/debas">Debas Archives</a> page.</p>
+  </div>
+  </div>
+
+  <p><a href="https://indieweb.org/post_footer" target="_blank">Post footers</a> share the above styles (with the exception of the hover effect). On ordered lists inside post footers, numbers are styled in the accent colour.</p>
+
+  <h2>Currently not in use</h2>
+  <p>I'm currently not using tables, accordions, and definition lists within this website.</p>
   </body>
 </PageLayout>
