@@ -1,6 +1,8 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import { Code } from 'astro:components'
+import { Picture } from 'astro:assets';
+import dockImage from '../assets/images/uses/dock.png';
 const pageTitle = "Style - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -148,6 +150,13 @@ const pageTitle = "Style - Thamara Kandabada";
 
   <h2>Images</h2>
   <p>All images are served in AVIF with fallback to WebP, with a <Code code={`4px`} inline /> border radius and have alt text. Captions, when used, are right aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour. See example below.</p>
+  <figure>
+  <Picture
+    src={dockImage} alt="A screenshot of my dock on the MacBook Air, with a number of my most used apps"
+    formats={['avif', 'webp']}
+  />
+  <figcaption>My MacBook Air dock</figcaption>
+  </figure>
 
   <h2>Other components</h2>
   <p>Grid elements have a <Code code={`1px`} inline /> thick solid border set in the border colour, with a <Code code={`4px`} inline /> border radius. The background is styled in the tertiary background colour. If the gird element is hyperlinked, the border transitions to the accent colour on hover.</p>

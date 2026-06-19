@@ -1,11 +1,13 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
-import websiteImage from '../assets/images/projects/personalwebsite.png'
-import finvizImage from '../assets/images/projects/finviz.png'
-import pmvImage from '../assets/images/projects/pmv.png'
-import baImage from '../assets/images/projects/bearappeal.png'
-import debasImage from '../assets/images/projects/debas.jpeg'
-import podImage from '../assets/images/projects/badtake.jpeg'
+import { Picture } from 'astro:assets';
+import websiteImage from '../assets/images/projects/personalwebsite.png';
+import finvizImage from '../assets/images/projects/finviz.png';
+import pmvImage from '../assets/images/projects/pmv.png';
+import baImage from '../assets/images/projects/bearappeal.png';
+import debasImage from '../assets/images/projects/debas.jpeg';
+import podImage from '../assets/images/projects/badtake.jpeg';
+import { base64 } from 'astro:schema';
 const pageTitle = "Projects - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -17,7 +19,13 @@ const pageTitle = "Projects - Thamara Kandabada";
     <div class="projects-grid">
     
     <div>
-    <img class="project-image" src={websiteImage.src} alt="a screenshot of the homepage of this website" width="100%" loading="lazy" />
+        <figure>
+              <Picture
+                src={websiteImage}
+                alt="a screenshot of the homepage of this website"
+                formats={['avif', 'webp']}
+              />
+        </figure>
     <h2>Personal Website</h2>
     <p>This website, built on Astro and deployed on Vercel. A previous version of the site, achived below, was built on WordPress.</p>
     <ul class="project-links">
@@ -28,7 +36,13 @@ const pageTitle = "Projects - Thamara Kandabada";
     </div>
 
     <div>
-    <img class="project-image" src={finvizImage.src} alt="a screenshot of the homepage of the Finviz app" width="100%" loading="lazy" />
+        <figure>
+              <Picture
+                src={finvizImage}
+                alt="a screenshot of the homepage of the Finviz app"
+                formats={['avif', 'webp']}
+              />
+        </figure>
     <h2>Finviz</h2>
     <p>I vibe-coded a data visualisation app that can be used with CSV exports from Finances 2 (or similar double-entry based bookkeeping apps.)</p>
     <ul class="project-links">
@@ -39,7 +53,13 @@ const pageTitle = "Projects - Thamara Kandabada";
     </div>
 
     <div>
-    <img class="project-image" src={pmvImage.src} alt="a screenshot of the homepage of the Finviz app" width="100%" loading="lazy" />
+        <figure>
+              <Picture
+                src={pmvImage}
+                alt="a screenshot of the homepage of my Physical Media Vault app"
+                formats={['avif', 'webp']}
+              />
+        </figure>
     <h2>Physical Media Vault</h2>
     <p>I vibe-coded a simple React app with Lovable to catalogue my physical media collection.</p>
     <ul class="project-links">
@@ -50,7 +70,13 @@ const pageTitle = "Projects - Thamara Kandabada";
     </div>
     
     <div>
-    <img class="project-image" src={baImage.src} alt="a screenshot of the homepage of the Finviz app" width="100%" loading="lazy" />
+        <figure>
+              <Picture
+                src={baImage}
+                alt="a screenshot of the Bear Appeal online store's homepage"
+                formats={['avif', 'webp']}
+              />
+        </figure>
     <h2>Bear Appeal</h2>
     <p>I built a successful e-commerce and apparel manufacturing business with my friend and co-founder Pavithra. While I’m no longer involved, the business continues to thrive under Pavithra and his team.</p>
     <ul class="project-links">
@@ -61,7 +87,13 @@ const pageTitle = "Projects - Thamara Kandabada";
     </div>
 
     <div>
-    <img class="project-image" src={debasImage.src} alt="a screenshot of the homepage of the Finviz app" width="100%" loading="lazy" />
+        <figure>
+              <Picture
+                src={debasImage}
+                alt="The Debas logo and the site description, which reads Debas is a platform which brings together diverse perspectives in conversation with one another in an increasingly polarised world"
+                formats={['avif', 'webp']}
+              />
+        </figure>
     <h2>Debas</h2>
     <p>Debas was an online platform (now defunct) which brought together diverse perspectives on Sri Lankan politics, economy, society, and culture in dialogue with one another. I helped my friends Himal, Rajni, and Jo with this.</p>
     <ul class="project-links">
@@ -70,7 +102,13 @@ const pageTitle = "Projects - Thamara Kandabada";
     </div>
 
     <div>
-    <img class="project-image" src={podImage.src} alt="a screenshot of the homepage of the Finviz app" width="100%" loading="lazy" />
+        <figure>
+              <Picture
+                src={podImage}
+                alt="The logo of The Bad Take Podcast set in white lettering against a magenta background"
+                formats={['avif', 'webp']}
+              />
+        </figure>
     <h2>The Bad Take Podcast</h2>
     <p>A conversational podcast on anything from politics and pop culture to the universe and the meaning of life. I co-hosted this with my friend Himal. The episodes are still available online for your listening pleasure.</p>
     <ul class="project-links">

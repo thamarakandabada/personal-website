@@ -1,6 +1,7 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
-import docImage from '../assets/images/uses/dock.png';
+import { Picture } from 'astro:assets';
+import dockImage from '../assets/images/uses/dock.png';
 const pageTitle = "Uses - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -132,8 +133,14 @@ const pageTitle = "Uses - Thamara Kandabada";
     <h2>Software & Web</h2>
     <p>Regularly used apps across platforms, and some websites I can’t live without.</p>
 
-    <img src={docImage.src} alt="A screenshot of the dock on my MacBook Air, showing some of my most used appps" width="100%" />
-    
+  <figure>
+  <Picture
+    src={dockImage} alt="A screenshot of my dock on the MacBook Air, with a number of my most used apps"
+    formats={['avif', 'webp']}
+  />
+  <figcaption>My MacBook Air dock</figcaption>
+  </figure>
+
     <div class="uses-grid-container">
     <div class="uses-grid-div">
     <h3>Writing & Publishing</h3>

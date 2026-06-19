@@ -1,12 +1,13 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Picture } from 'astro:assets';
 import cinemaImage from '../assets/images/now/hobbies/qft-door.jpg';
 import musicImage from '../assets/images/now/hobbies/headphone-setup.jpg';
-import gigsImage from '../assets/images/now/hobbies/myles-kennedy.jpg'
-import lespaulImage from '../assets/images/now/guitars/les paul.jpg'
-import stratImage from '../assets/images/now/guitars/strat.jpg'
-import embassyImage from '../assets/images/now/guitars/embassy.jpg'
-import morrisImage from '../assets/images/now/guitars/morris.jpg'
+import gigsImage from '../assets/images/now/hobbies/myles-kennedy.jpg';
+import lespaulImage from '../assets/images/now/guitars/les paul.jpg';
+import stratImage from '../assets/images/now/guitars/strat.jpg';
+import embassyImage from '../assets/images/now/guitars/embassy.jpg';
+import morrisImage from '../assets/images/now/guitars/morris.jpg';
 const pageTitle = "Now - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -46,7 +47,13 @@ const pageTitle = "Now - Thamara Kandabada";
       <div class="hobbies-section">
         <div class="hobby-cinema">
           <h3>Cinema</h3>
-            <img class="hobby-photo" src={cinemaImage.src} alt="The entrance to QFT Belfast" />
+            <figure>
+              <Picture
+                src={cinemaImage}
+                alt="The entrance to QFT Belfast"
+                formats={['avif', 'webp']}
+              />
+            </figure>
             <p>I’m an avid cinema-goer. I spend most of my free time at my favourite place in Belfast, the <a href="https://queensfilmtheatre.com/" target="_blank">Queen’s Film Theatre</a>.</p>
             <p>I sometimes make <a href="/design#alternate-film-tv-posters">alternate posters</a> for films that I like.</p>
             <p>Sundry links:</p>
@@ -60,7 +67,13 @@ const pageTitle = "Now - Thamara Kandabada";
 
         <div class="hobby-music">
           <h3>Music</h3>
-          <img class="hobby-photo" src={musicImage.src} alt="My headphone setup with 2 amps, switcher and equaliser" />
+          <figure>
+              <Picture
+                src={musicImage}
+                alt="My headphone setup with 2 amps, switcher and equaliser"
+                formats={['avif', 'webp']}
+              />
+            </figure>
           <p>I like as much detail as possible in my music. My current listening setup includes:</p>
             <ul class="hobby-music-list">
               <li><strong>Amps:</strong> Schiit Magni Heresy and Little Dot MKII</li>
@@ -74,7 +87,13 @@ const pageTitle = "Now - Thamara Kandabada";
 
         <div class="hobby-gigs">
           <h3>Gigs</h3>
-            <img class="hobby-photo" src={gigsImage.src} alt="A photo I took of Myles Kennedy at a recent gig, mid-song." />
+            <figure>
+              <Picture
+                src={gigsImage}
+                alt="A photo I took of Myles Kennedy at a recent gig, mid-song."
+                formats={['avif', 'webp']}
+              />
+            </figure>
             <p>I enjoy live music, and living in the UK has given me opportunities that I never would have had back home in Sri Lanka. I try to attend as many music, comedy, and theatre performances as I can, time and budget permitting.</p>
             <p>You can view the timeline at on the <a href="/gigs">/gigs</a> page.</p>
         </div>
@@ -88,25 +107,49 @@ const pageTitle = "Now - Thamara Kandabada";
 
       <div class="guitar-showcase">
       <div class="guitar">
-        <img class="guitar-photo" src={lespaulImage.src} alt="Epiphone Les Paul Standard electric guitar with Mahogany body finished in Aged Gloss and Laurel fretboard" />
+        <figure>
+              <Picture
+                src={lespaulImage}
+                alt="Epiphone Les Paul Standard electric guitar with Mahogany body finished in Aged Gloss and Laurel fretboard"
+                formats={['avif', 'webp']}
+              />
+        </figure>
         <h4>Epiphone 1959 Les Paul Standard</h4>
         <p>Body – Mahogany, Aged Gloss<br>Fretboard – Laurel</p>
       </div>
 
       <div class="guitar">
-        <img class="guitar-photo" src={stratImage.src} alt="Fender Player Stratocaster electric guitar with Alder body finished in Tidepool and Maple fretboard" />
+        <figure>
+              <Picture
+                src={stratImage}
+                alt="Fender Player Stratocaster electric guitar with Alder body finished in Tidepool and Maple fretboard"
+                formats={['avif', 'webp']}
+              />
+        </figure>
         <h4>Fender Player Series Stratocaster</h4>
         <p>Body – Alder, Tidepool<br>Fretboard – Maple</p>
       </div>
 
       <div class="guitar">
-        <img class="guitar-photo" src={embassyImage.src} alt="Epiphone Embassy electric bass guitar with Mahogany body finished in Graphite Black body and Laurel fretboard" />
+        <figure>
+              <Picture
+                src={embassyImage}
+                alt="Epiphone Embassy electric bass guitar with Mahogany body finished in Graphite Black body and Laurel fretboard"
+                formats={['avif', 'webp']}
+              />
+        </figure>
         <h4>Epiphone Embassy (Bass)</h4>
         <p>Body – Mahogany, Graphite Black<br>Fretboard – Laurel</p>
       </div>
 
       <div class="guitar">
-        <img class="guitar-photo" src={morrisImage.src} alt="Morris W-18 acoustic dreadnought guitar with Spruce and Mahogany body in natural finish and Rosewood fretboard" />
+        <figure>
+              <Picture
+                src={morrisImage}
+                alt="Morris W-18 acoustic dreadnought guitar with Spruce and Mahogany body in natural finish and Rosewood fretboard"
+                formats={['avif', 'webp']}
+              />
+        </figure>
         <h4>Morris W-18</h4>
         <p>Body – Spruce & Mahogany, Natural<br>Fretboard – Rosewood</p>
       </div>

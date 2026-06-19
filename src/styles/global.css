@@ -338,7 +338,23 @@ pre {
 }
 
 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 4px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding-top: 0.5rem;
+    text-align: right;
 }
 
 .guitar-photo, .hobby-photo {
