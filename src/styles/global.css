@@ -274,22 +274,36 @@ pre {
 
 .global-footer {
     padding: 2em 1em;
-    margin-top: 3rem;
+    margin-top: 5rem;
     border-top: 1px solid var(--border-color);
 }
 
-.footer-content {
+.footer-content, .footer-text {
     text-align: center;
     max-width: 1024px;
     margin: 0 auto;
+}
 
+.footer-text {
+    font-family: "Cascadia Mono", monospace;
+}
+
+.footer-text ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-text li {
+    font-size: 0.75rem;
 }
 
 .page-content {
     text-align: left;
     max-width: 1024px;
     margin: 0 auto;
-
 }
 
 .footer-quote {
@@ -366,6 +380,10 @@ figcaption {
     text-align: right;
 }
 
+figcaption a {
+    text-decoration: none;
+}
+
 .guitar-photo, .hobby-photo {
     width: 100%;
 }
@@ -438,10 +456,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-.footer-text {
-    font-size: 1rem;
 }
 
 .blank-page-declaration {

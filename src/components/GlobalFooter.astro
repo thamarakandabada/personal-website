@@ -1,19 +1,34 @@
 <div class="global-footer">
-     <div class="footer-nav-links">
-      <nav>
-        <a href="/">Home</a>
-        <a href="/slashpages">Slashpages</a>
-        <a href="/colophon">Colophon</a>
-      </nav>
-      </div>
-    <div class="footer-content">
+  <div class="footer-nav-links">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/slashpages">Slashpages</a>
+      <a href="/colophon">Colophon</a>
+    </nav>
+  </div>
+  <div class="footer-content">
     <p><span class="footer-quote">Ars longa<span class="period-footer">.</span> Vita brevis<span class="period-footer">.</span></span></br> © 2026 Thamara Kandabada</p>
     <div class="social-links">
-       <a href="https://github.com/thamarakandabada" target="_blank"><i role="img" aria-label="Thamara on GitHub" class="bi bi-github"><svg focusable="false" viewBox="0 0 24 24"></svg></i></a>
-       <a href="https://www.linkedin.com/in/thamarakandabada/" target="_blank"><i role="img" aria-label="Thamara on LinkedIn" class="bi bi-linkedin"><svg focusable="false" viewBox="0 0 24 24"></svg></i></a>
-       <a href="https://www.reddit.com/user/thamara-k/" target="_blank"><i role="img" aria-label="Thamara on Reddit" class="bi bi-reddit"><svg focusable="false" viewBox="0 0 24 24"></svg></i></a>
-       <a href="" target="_blank"><i role="img" aria-label="Thamara's RSS feed" class="bi bi-rss-fill"></i><svg focusable="false" viewBox="0 0 24 24"></svg></a>
+      <a href="https://github.com/thamarakandabada" target="_blank"><i role="img" aria-label="Thamara on GitHub" class="bi bi-github"><svg focusable="false" viewBox="0 0 24 24"></svg></i></a>
+      <a href="https://www.linkedin.com/in/thamarakandabada/" target="_blank"><i role="img" aria-label="Thamara on LinkedIn" class="bi bi-linkedin"><svg focusable="false" viewBox="0 0 24 24"></svg></i></a>
+      <a href="https://www.reddit.com/user/thamara-k/" target="_blank"><i role="img" aria-label="Thamara on Reddit" class="bi bi-reddit"><svg focusable="false" viewBox="0 0 24 24"></svg></i></a>
+      <a href="" target="_blank"><i role="img" aria-label="Thamara's RSS feed" class="bi bi-rss-fill"></i><svg focusable="false" viewBox="0 0 24 24"></svg></a>
     </div>
-      <p class="footer-text"><i>made by a human | <a href="https://github.com/thamarakandabada/personal-website" target="_blank">source code</a></i></p>
-    </div>  
+  </div>  
 </div>
+<div class="footer-text">
+  <ul>
+    <li>Made by a <strong>Human</strong></li>
+    <li>/</li>
+    <li>Last commit: <span id="commit">Loading...</li>
+    <li>/</li>
+    <li><a href="https://github.com/thamarakandabada/personal-website" target="_blank">Source Code</a></li>
+</div>
+
+<script>
+  fetch('https://api.github.com/repos/thamarakandabada/personal-website/commits?per_page=1')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('commit').innerHTML = res[0].commit.message
+  })
+</script>

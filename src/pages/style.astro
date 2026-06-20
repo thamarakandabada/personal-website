@@ -137,7 +137,7 @@ const pageTitle = "Style - Thamara Kandabada";
   <p>Unordered lists use the default <Code code={`disc`} inline /> style and ordered lists use the default <Code code={`decimal`} inline /> style. Font colours are inherited from the parent. This is illustrated below.</p>
   <div class="meals type-showcase">
     <div>
-      <h4>Meals of the day</h4>
+      <h3>Meals of the day</h3>
       <ol>
         <li>Breakfast</li>
         <li>Second breakfast</li>
@@ -149,7 +149,7 @@ const pageTitle = "Style - Thamara Kandabada";
       </ol>
     </div>
     <div>
-      <h4>Ways to make taters</h4>
+      <h3>How to make taters</h3>
       <ul>
         <li>Boil 'em</li>
         <li>Mash 'em</li>
@@ -161,10 +161,10 @@ const pageTitle = "Style - Thamara Kandabada";
   <p>All text, except blog post titles, are left-aligned. Blog post titles are centre aligned-with a background set in the secondary background colour, on which the hero image (if available) overlaps with a <Code code={`-180px`} inline /> vertical spacing. See an example <a href="">here</a>.</p>
 
   <h2>Images</h2>
-  <p>All images are served in AVIF with fallback to WebP, with a <Code code={`4px`} inline /> border radius and have alt text. Captions, when used, are right aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour. See example below.</p>
+  <p>All images are served in AVIF with fallback to WebP, with a <Code code={`4px`} inline /> border radius and have alt text. Captions, when used, are right aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour. Hyperlinks in the caption have no text decoration. See example below.</p>
   <figure>
   <Picture
-    src={balrogImage} alt="A colourful and stylised drawing of a Balrog, engulfed in flames and wielding a large pole-axe type weapon, riding a dragon"
+    src={balrogImage} alt="A colourful and stylised drawing of a Balrog, engulfed in flames and wielding a large axe, riding a dragon"
     formats={['avif', 'webp']}
   />
   <figcaption>Gothmog, Lord of the Balrogs, riding a dragon. <a href="https://commons.wikimedia.org/wiki/File:GOTHMOG-1_(detail).jpg" target="_blank">Tttom</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>, via Wikimedia Commons</figcaption>
