@@ -17,18 +17,5 @@
   </div>  
 </div>
 <div class="footer-text">
-  <ul>
-    <li>Made by a <strong>Human</strong></li>
-    <li>/</li>
-    <li>Last commit: <span id="commit">Loading...</li>
-    <li>/</li>
-    <li><a href="https://github.com/thamarakandabada/personal-website" target="_blank">Source Code</a></li>
+  <p>Made by a <strong>Human</strong> // <a href="https://github.com/thamarakandabada/personal-website" target="_blank">Source Code</a></p>
 </div>
-
-<script>
-  fetch('https://api.github.com/repos/thamarakandabada/personal-website/commits?per_page=1')
-  .then(res => res.json())
-  .then(res => {
-    document.getElementById('commit').innerHTML = res[0].commit.message
-  })
-</script>

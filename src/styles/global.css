@@ -262,7 +262,7 @@ pre {
     scrollbar-width: 100px;
 }
 
-.accessibility-version-notice, .ai-version-notice, .now-location-weather, .no-experiments-banner {
+.accessibility-version-notice, .ai-version-notice, .now-location-weather, .no-experiments-banner, .commit-info {
     padding: 0.5rem 3rem;
     background: var(--bg-secondary);
     text-align: center;
@@ -278,26 +278,24 @@ pre {
     border-top: 1px solid var(--border-color);
 }
 
-.footer-content, .footer-text {
+.footer-text {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+}
+
+.footer-content {
     text-align: center;
     max-width: 1024px;
     margin: 0 auto;
 }
 
-.footer-text {
+.footer-text p {
     font-family: "Cascadia Mono", monospace;
-}
-
-.footer-text ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.footer-text li {
     font-size: 0.75rem;
+    margin: 0;
+    text-align: center;
 }
 
 .page-content {
@@ -553,7 +551,7 @@ input:checked + .slider:before {
         margin: 0;
     }
 
-    .accessibility-version-notice, .ai-version-notice {
+    .accessibility-version-notice, .ai-version-notice, .commit-info {
         flex-direction: column;
     }
 
@@ -648,7 +646,7 @@ input:checked + .slider:before {
     }
 
 
-    .accessibility-version-notice, .ai-version-notice {
+    .accessibility-version-notice, .ai-version-notice, .commit-info {
         flex-direction: column;
     }
 
