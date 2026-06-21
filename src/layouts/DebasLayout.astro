@@ -41,19 +41,22 @@ const { frontmatter } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
     <Analytics/>
     <SpeedInsights/>
-		<title>Title</title>
+		<title>{frontmatter.title} - Debas Archives</title>
 	</head>
 	
 	<body>	
 	<Navigation />
-	<div class="page-content">
-    <p><a href="/projects/debas/">Back to Debas Archives</a></p>
-    <h1>{frontmatter.title}</h1>
-    <div class="blog-meta">
-    <p>by {frontmatter.author} | published on {frontmatter.pubDate}</p>
-    </div>
+  <div class="debas-header">
+      <h1>{frontmatter.title}</h1>
+      <div class="blog-meta">
+        <p>by {frontmatter.author} | published on {frontmatter.pubDate}</p>
+      </div>
+      <div class="blog-hero-image">
+      </div>
+  </div>
+	<div class="page-content debas-content">
     <slot />
-	</div>
+  </div>  
 	<GlobalFooter />
 	<script>
   const themeToggle = document.getElementById('theme-toggle');

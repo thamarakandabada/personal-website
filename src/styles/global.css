@@ -90,6 +90,20 @@ nav {
 
 }
 
+.debas-header {
+    background-color: var(--bg-secondary);
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+
+.debas-header h1, .debas-header p {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
 .project-image {
     border: 1px solid var(--border-color)
 }
@@ -304,6 +318,10 @@ pre {
     margin: 0 auto;
 }
 
+.debas-content {
+    margin-top: 4rem;
+}
+
 .footer-quote {
     font-style: italic;
     font-size: 1.5rem;
@@ -358,6 +376,7 @@ pre {
     gap: 1rem;
 }
 
+/*Overriding the wdith and height specification required by Astro's <Picture /> tag and adding a border radius*/
 img {
     max-width: 100%;
     height: auto;

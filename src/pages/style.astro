@@ -121,13 +121,13 @@ const pageTitle = "Style - Thamara Kandabada";
   <p>See example below.</p>
   <Code
   lang="css"
-  code={`figcaption {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    font-style: italic;
-    padding-top: 0.5rem;
-    text-align: right;
-}`} />
+  code={`/*Overriding the wdith and height specification required by Astro's <Picture /> tag and adding a border radius*/
+ img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+ }`} />
   
   <p>Blockquotes are italicised. They are <Code code={`1.5rem`} inline /> in font size and styled in the secondary text colour, with a <Code code={`1px`} inline /> left border styled in the accent colour. Blockquotes are only used for quotations rather than as a decorative element. See example below. </p>
   <blockquote>
