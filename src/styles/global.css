@@ -108,7 +108,7 @@ nav {
     border: 1px solid var(--border-color)
 }
 
-.uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals {
+.uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .podcast-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
@@ -116,15 +116,26 @@ nav {
     margin-top: 2.5rem;
 }
 
-.debas-grid a {
+.debas-grid a, .podcast-grid a {
     text-decoration: none;
 }
 
-.uses-grid-container div, .now-grid div, .debas-grid div, .unlinked-grid, .linked-grid, .post-footer {
+.uses-grid-container div, .now-grid div, .debas-grid div, .unlinked-grid, .linked-grid, .post-footer, .podcast-grid div {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 0.75rem 2rem;
     background-color: var(--bg-tertiary);
+}
+
+.podcast-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.podcast-date, .podcast-ep {
+    margin: 0;
 }
 
 #post-footer-list li span {
@@ -135,13 +146,13 @@ nav {
     color: var(--accent);
 }
 
-.debas-author {
+.debas-author, .podcast-guest {
     font-style: italic;
     font-size: 1.5rem;
     color: var(--accent);
 }
 
-.debas-grid div:hover, .linked-grid:hover {
+.debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover {
     border-color: var(--accent);
     transition: 0.5s;
 }
@@ -276,14 +287,21 @@ pre {
     scrollbar-width: 100px;
 }
 
-.accessibility-version-notice, .ai-version-notice, .now-location-weather, .no-experiments-banner, .commit-info {
-    padding: 0.5rem 3rem;
+.accessibility-version-notice, .ai-version-notice, .now-location-weather, .no-experiments-banner, .commit-info, .see-also {
+    padding: 1rem 1.5rem;
     background: var(--bg-secondary);
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+    gap: 1.5rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
+}
+
+.accessibility-version-notice ul, .ai-version-notice ul, .now-location-weather ul, .no-experiments-banner ul, .commit-info ul, .see-also ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .global-footer {
@@ -570,11 +588,12 @@ input:checked + .slider:before {
         margin: 0;
     }
 
-    .accessibility-version-notice, .ai-version-notice, .commit-info {
+    .accessibility-version-notice ul, .ai-version-notice ul, .commit-info ul, .see-also ul, .now-location-weather ul {
         flex-direction: column;
+        gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .podcast-grid {
     grid-template-columns: 1fr;
     }
 
@@ -665,11 +684,12 @@ input:checked + .slider:before {
     }
 
 
-    .accessibility-version-notice, .ai-version-notice, .commit-info {
+    .accessibility-version-notice ul, .ai-version-notice ul, .commit-info ul, .see-also ul, .now-location-weather ul {
         flex-direction: column;
+        gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .podcast-grid {
     grid-template-columns: 1fr;
     }
 

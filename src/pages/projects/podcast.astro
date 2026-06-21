@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
+import { Code } from 'astro:components';
 const pageTitle = "The Bad Take Podcast Archives";
 ---
 <PageLayout title={pageTitle}>
@@ -7,8 +8,30 @@ const pageTitle = "The Bad Take Podcast Archives";
 
     <h1>{pageTitle}</h1>
     
-    <p>This is the complete archive of the (now discontinued) conversational podcast I co-hosted with Himal Kotelawala. The podcast was active from 2018–2022. Originally hosted on Anchor, it was distributed on most podcast platforms using Anchor’s syndication tools. The show is archived here for posterity, complete with the original show notes first published at <code>thebadtake.com</code>.</p>
+    <p>This is the complete archive of the (now discontinued) conversational podcast I co-hosted with <a href="https://himalkk.substack.com/" target="_blank">Himal Kotelawala</a>. The podcast was active from 2018–2022. Originally hosted on Anchor, it was distributed on most podcast platforms using Anchor’s syndication tools. The show is archived here for posterity, complete with the original show notes first published at <Code code=`thebadtake.com` inline />.</p>
     <p>The podcast’s logo was designed by me.</p>
 
+      <div class="podcast-grid">
+      <div>
+        <a href="/projects/podcast/">
+          <div class="podcast-meta">
+            <p class="podcast-date">9 Apr 2023</p>
+            <p class="podcast-ep"><strong>Episode 21</strong></p>
+          </div>
+          <h2>Sri Lanka in Crisis: Is the Political Elite Doomed?</h2>
+          <p class="podcast-guest">with Rajni Gamage</p>
+        </a>
+      </div>
+
+      <div>
+        <a href="/projects/podcast/">
+          <div class="podcast-meta">
+            <p class="podcast-date">28 Feb 2020</p>
+            <p class="podcast-ep"><strong>Episode 20</strong></p>
+          </div>
+          <h2>A Matter of Words</h2>
+          <p class="podcast-guest">with Carmen Aguilera-Carnerero</p>
+        </a>
+      </div>
   </body>
 </PageLayout>

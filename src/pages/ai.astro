@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Code } from 'astro:components';
 const pageTitle = "AI Policy - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -9,9 +10,11 @@ const pageTitle = "AI Policy - Thamara Kandabada";
     <h1>AI Policy</h1>
 
     <div class="ai-version-notice">
-      <p><strong>Statement Version:</strong> <code>1.2.0</code></p>
-      <p><strong>Last Updated:</strong> 13 Jun 2026</p>
-      <p><a href="https://github.com/thamarakandabada/personal-website/commits/main/src/pages/ai.astro" target="_blank">View previous versions</a></p>    
+      <ul>
+        <li><strong>Statement Version:</strong> <Code code=`1.2.1` inline /></li>
+        <li><strong>Last Updated:</strong> 21 Jun 2026</li>
+        <li><a href="https://github.com/thamarakandabada/personal-website/commits/main/src/pages/ai.astro" target="_blank">View previous versions</a></li>
+      </ul>
     </div>
  
     <p><strong>This statement outlines my approach to using AI-based tools, primarily in the making of this website, but also in personal life and at work.</strong></p>
@@ -39,7 +42,7 @@ const pageTitle = "AI Policy - Thamara Kandabada";
 
     <h3>2.2. Vibe-coding</h3>
     <p>In a previous version of this website, the following iframes embedded on my <a href="/now">/now</a> page were created/"vibe-coded" using <a href="https://www.lovable.dev/" target="_blank">Lovable</a>: Trakt integration, Goodreads integration, and PlayStation integration. This is no longer the case; I have replaced these with simple text links to each silo.</p>
-    <p>Two tools that I use regularly in connection with this website were also made using Lovable. They are hosted at <code>physicalmedia.thamara.co.uk</code> and <code>moria.thamara.co.uk</code>.</p>
+    <p>Two tools that I use regularly in connection with this website were also made using Lovable. They are hosted at <Code code=`physicalmedia.thamara.co.uk` inline /> and <Code code=`moria.thamara.co.uk` inline />.</p>
 
     <h3>2.3. Creative usage</h3>
     <p>I do not use generative AI tools for creating any content for this website. All writing here is 100% human-generated. Images have been sourced from royalty-free stock photo sites, or used with the permission of the respective owners.</p>
@@ -49,6 +52,6 @@ const pageTitle = "AI Policy - Thamara Kandabada";
     <p>At work, due to the nature of the output demanded of me, I have to separate my personal principles from my professional use of AI tools. I have used generative tools for drafting emails, social media post captions, and images.</p>
 
     <h2>Versioning</h2>
-  <p>I use the following method of semantic versioning for this policy: <code>Major.Minor.Stylistic</code></p>
+  <p>I use the following method of semantic versioning for this policy: <Code code=`Major.Minor.Stylistic` inline /></p>
 
 </PageLayout>

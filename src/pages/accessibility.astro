@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Code } from 'astro:components';
 const pageTitle = "Accessibility - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -9,12 +10,14 @@ const pageTitle = "Accessibility - Thamara Kandabada";
     <h1>Accessibility Notice</h1>
 
     <div class="accessibility-version-notice">
-      <p><strong>Statement Version:</strong> <code>1.0.0</code></p>
-      <p><strong>Last Updated:</strong> 6 Jun 2026</p>
-      <p><a href="https://github.com/thamarakandabada/personal-website/commits/main/src/pages/accessibility.astro" target="_blank">View previous versions</a></p>
+      <ul>
+        <li><strong>Statement Version:</strong> <Code code=`1.0.0` inline /></li>
+        <li><strong>Last Updated:</strong> 6 Jun 2026</li>
+        <li><a href="https://github.com/thamarakandabada/personal-website/commits/main/src/pages/accessibility.astro" target="_blank">View previous versions</a></li>
+      </ul>
     </div>
 
-    <p>This is an accessibility statement for the website of <span class="basic-information website-name">Thamara Kandabada</span>. The contents of this statement applies to the domain <code>thamara.co.uk</code> and its subdomains, with the exception of <code>moria.thamara.co.uk</code> and <code>physicalmedia.thamara.co.uk</code>.</p>
+    <p>This is an accessibility statement for the website <span class="basic-information website-name">Thamara Kandabada</span>. The contents of this statement applies to the domain <Code code=`thamara.co.uk` inline /> and its subdomains, with the exceptions of <Code code=`moria.thamara.co.uk` inline /> and <Code code=`physicalmedia.thamara.co.uk` inline />.</p>
 
     <h2>Conformance status</h2>
     
@@ -43,7 +46,7 @@ const pageTitle = "Accessibility - Thamara Kandabada";
     </p>
 
   <h2>Versioning</h2>
-  <p>I use the following method of semantic versioning for this policy: <code>Major.Minor.Stylistic</code></p>
+  <p>I use the following method of semantic versioning for this policy: <Code code=`Major.Minor.Stylistic` inline /></p>
   
   </body>
 </PageLayout>
