@@ -1,67 +1,137 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Code } from 'astro:components'
 const pageTitle = "Verify - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
   <body>
 
-    <h1>Verify - WIP</h1>
+    <h1>Verify</h1>
     
     <p>This is a list of online identities I maintain across the interwebs.</p>
 
-    <h2>Domains</h2>
-    <p>I own the following domains. They are managed through my registrar of choice, <a href="https://porkbun.com/" target="_blank">Porkbun</a>.</p>
-    <ul>
-      <li><code>thamara.co.uk</code></li>
-      <li><code>thamara.uk</code></li>
-      <li><code>thamara.xyz</code></li>
-      <li><code>thamara.blog</code></li>
-      <li><code>thamara.work</code></li>
-      <li><code>thamarakandabada.com</code></li>
-      <li><code>windingroad.design</code></li>
-    </ul>
+    <div class="verify-grid">
+      <div class="verify-subgrid">
+        <div class="grid-long">
+          <h2>Domains</h2>
+          <p>I own the following domains. They are managed through my registrar of choice, <a href="https://porkbun.com/" target="_blank">Porkbun</a>.</p>
+          <ul>
+            <li><Code code=`thamara.co.uk` inline />: this website</li>
+            <li><Code code=`thamara.uk` inline />: redirects here</li>
+            <li><Code code=`thamara.xyz` inline />: redirects here</li>
+            <li><Code code=`thamara.blog` inline />: redirects to <a href="/notebook">/Notebook</a></li>
+            <li><Code code=`thamara.work` inline />: redirects to <a href="/resume">/Resume</a></li>
+            <li><Code code=`thamarakandabada.com` inline />: redirects here</li>
+            <li><Code code=`windingroad.design` inline />: redirects to <a href="/design">/Design</a></li>
+          </ul>
+        </div>
 
-    <h2>Social Media</h2>
-    <p>Social media here is broadly defined. I have added a list of silos where it's possible to publicly "follow" my account.</p>
-    <ul>
-      <li>Reddit</li>
-      <li>LinkedIn</li>
-      <li>Letterboxd</li>
-      <li>Gravatar</li>
-      <li>YouTube</li>
-      <li>MUBI</li>
-      <li>Trakt</li>
-      <li>Goodreads</li>
-      <li>The Story Graph</li>
-      <li>Behance</li>
-      <li>Creative Cloud</li>
-      <li>Strava</li>
-      <li>Runna</li>
-    </ul>
+        <div class="grid-long">
+          <h2>Social Media & Public Profiles</h2>
+          <ul>
+            <li><a href="https://www.reddit.com/user/thamara-k/" target="_blank">Reddit</a></li>
+            <li><a href="https://www.linkedin.com/in/thamarakandabada/" target="_blank">LinkedIn</a></li>
+            <li>Gravatar</li>
+            <li>YouTube</li>
+            <li>Google Maps</li>
+          </ul>
+        </div>
 
-    <h2>Chat</h2>
+          <div class="grid-long">
+          <h2>Film, TV & Books</h2>
+          <ul>
+            <li><a href=https://letterboxd.com/thamarak/" target="_blank">Letterboxd</a></li>
+            <li>MUBI</li>
+            <li>Trakt</li>
+            <li>Goodreads</li>
+            <li>The Story Graph</li>
+          </ul>
+        </div>
+
+        <div class="grid-long">
+          <h2>Creative</h2>
+          <ul>
+            <li>Behance</li>
+            <li>Creative Cloud</li>
+          </ul>
+        </div>
+
+                <div class="grid-long">
+          <h2>Fitness</h2>
+          <ul>
+            <li>Strava</li>
+            <li>Runna</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="verify-subgrid">
+        <div class=""grid-short">
+    <h2>Email & Chat</h2>
     <ul>
       <li>Discord</li>
       <li>Signal</li>
       <li>iMessage</li>
+      <li>t@thamara.co.uk</li>
     </ul>
-
+    </div>
+ 
+    <div class="grid-short">
     <h2>Gaming</h2>
     <ul>
       <li>PlayStation</li>
       <li>PSN Profiles</li>
+      <li>Steam</li>
     </ul>
+    </div>
 
+    <div class="grid-short">
     <h2>Writing & Publishing</h2>
     <ul>
       <li>WordPress.com</li>
-      <li>GitHub</li>
+      <li>Medium</li>
+      <li>SubStack (unused)</li>
     </ul>
+    </div>
 
-    <h2>Other</h2>
+        <div class="grid-short">
+    <h2>Coding</h2>
+    <ul>
+      <li>GitHub</li>
+      <li>Lovable</li>
+    </ul>
+    </div>
+
+            <div class="grid-short">
+    <h2>Wiki</h2>
+    <ul>
+      <li>IndieWeb</li>
+      <li>Wikipedia</li>
+    </ul>
+    </div>
+
+    <div class="grid-short">
+    <h2>Music</h2>
     <ul>
       <li>Apple Music</li>
+      <li>SoundCloud</li>
+      <li>Spotify (unused)</li>
     </ul>
+    </div>
+
+        <div class="grid-short">
+    <h2>Shops & Support</h2>
+    <ul>
+      <li>Redbubble</li>
+      <li>Kofi</li>
+      <li>eBay</li>
+      <li>PayPal</li>
+      <li>Revolut</li>
+    </ul>
+    </div>
+
+    </div>
+    </div>
 
   </body>
 </PageLayout>
