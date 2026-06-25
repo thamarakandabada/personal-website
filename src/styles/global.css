@@ -108,9 +108,17 @@ nav {
     border: 1px solid var(--border-color)
 }
 
-.uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .podcast-grid, .blogroll-grid, .verify-grid {
+.uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.podcast-grid {
+    display: grid;
+    grid-template-columns: 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
     margin-top: 2.5rem;
@@ -122,11 +130,17 @@ nav {
     row-gap: 2rem;
 }
 
+.podcast-subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
 .debas-grid a, .podcast-grid a {
     text-decoration: none;
 }
 
-.uses-grid-container div, .now-grid div, .debas-grid div, .unlinked-grid, .linked-grid, .post-footer, .podcast-grid div, .blogroll-grid div:not(.blogroll-subgrid), .verify-grid div:not(.verify-subgrid) {
+.uses-grid-container div, .now-grid div, .debas-grid div, .unlinked-grid, .linked-grid, .post-footer, .podcast-grid div:not(.podcast-subgrid), .blogroll-grid div:not(.blogroll-subgrid), .verify-grid div:not(.verify-subgrid) {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 0.75rem 2rem;
@@ -158,7 +172,7 @@ nav {
     color: var(--accent);
 }
 
-.debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover {
+.debas-grid div:hover, .linked-grid:hover {
     border-color: var(--accent);
     transition: 0.5s;
 }
@@ -599,7 +613,7 @@ input:checked + .slider:before {
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .podcast-grid, .blogroll-grid, .verify-grid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podcast-subgrid {
     grid-template-columns: 1fr;
     }
 
@@ -695,7 +709,7 @@ input:checked + .slider:before {
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .podcast-grid, .blogroll-grid, .verify-grid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podcast-subgrid {
     grid-template-columns: 1fr;
     }
 
