@@ -1,0 +1,32 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+const pageTitle = "Gitlog - Thamara Kandabada";
+---
+<PageLayout title={pageTitle}>
+  
+  <body>
+
+    <h1>Gitlog - WIP</h1>
+    
+    <p>This is a detailed changelog for this site, listing all Git commits deployed since launch. For the highlighs, see <a href="/changelog">/changelog</a> instead.</p>
+
+
+    <script>
+      // Octokit.js
+      // https://github.com/octokit/core.js#readme
+      const octokit = new Octokit({
+      auth: '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'
+    })
+
+      await octokit.request('GET /repos/thamarakandabada/personal-website/commits', {
+      owner: 'Thamara Kandabada',
+      repo: 'Personal Website',
+      headers: {
+      'X-GitHub-Api-Version': '2026-03-10'
+     }
+    })
+    </script>
+  </body>
+
+</PageLayout>
+

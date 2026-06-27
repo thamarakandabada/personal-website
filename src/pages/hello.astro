@@ -1,13 +1,14 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Code } from 'astro:components';
 const pageTitle = "Hello - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
   <body>
     <h1>Say Hello</h1>
-      <p>If you enjoyed browsing this website, or want to get in touch for any other reason, the best way to say hello is through email: <code>t@thamara.co.uk</code>. You can also iMessage me at this address.</p>
-      <p>My Signal username is <code>thamara.01</code>.</p>
-      <p>My Discord username is <code>thamara_k</code>. I'm usually active on the <a href="https://indieweb.org/discuss" target="_blank">IndieWeb IRC chat</a>.</p>
+      <p>If you enjoyed browsing this website, or want to get in touch for any other reason, the best way to say hello is through email: <Code code=`t@thamara.co.uk` inline />. You can also iMessage me at this address.</p>
+      <p>My Signal username is <Code code=`thamara.01` inline />.</p>
+      <p>My Discord username is <Code code=`thamara_k` inline />. I'm usually active on the <a href="https://indieweb.org/discuss" target="_blank">IndieWeb IRC channels</a>.</p>
 
   </body>
 </PageLayout>

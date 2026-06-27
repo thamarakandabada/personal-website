@@ -136,7 +136,7 @@ nav {
     row-gap: 2rem;
     column-gap: 2rem;
 }
-.debas-grid a, .podcast-grid a {
+.debas-grid a {
     text-decoration: none;
 }
 
