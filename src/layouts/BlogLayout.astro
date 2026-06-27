@@ -10,29 +10,6 @@ const { frontmatter } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
-		<script is:inline>
-  const theme = (() => {
-    // Check if they manually selected a theme previously
-    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-      return localStorage.getItem('theme');
-    }
-    // Otherwise, check their operating system preference
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
-    return 'light';
-  })();
-      
-  // Apply the theme to the HTML tag immediately
-  if (theme === 'light') {
-    document.documentElement.setAttribute('data-theme', 'light');
-    document.documentElement.classList.remove('dark'); // Required for Discuss widget
-  } else {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    document.documentElement.classList.add('dark'); // Required for Discuss widget
-  }
-  window.localStorage.setItem('theme', theme);
-</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/tk.png" />
@@ -54,27 +31,6 @@ const { frontmatter } = Astro.props;
     <slot />
 	</div>
 	<GlobalFooter />
-	<script>
-  const themeToggle = document.getElementById('theme-toggle');
-
-  // 1. Sync the checkbox state with the current theme on page load
-  if (document.documentElement.getAttribute('data-theme') === 'dark') {
-    themeToggle.checked = true;
-  }
-
-  // 2. Listen for clicks on the toggle
-  themeToggle.addEventListener('change', () => {
-    if (themeToggle.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      document.documentElement.classList.add('dark'); // Tells Tailwind to go dark
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-      document.documentElement.classList.remove('dark'); // Tells Tailwind to go light
-      localStorage.setItem('theme', 'light');
-    }
-  });
-</script>
 	</body>
 
 </html>
