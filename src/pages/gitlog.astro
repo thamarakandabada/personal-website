@@ -10,22 +10,6 @@ const pageTitle = "Gitlog - Thamara Kandabada";
     
     <p>This is a detailed changelog for this site, listing all Git commits deployed since launch. For the highlighs, see <a href="/changelog">/changelog</a> instead.</p>
 
-
-    <script>
-      // Octokit.js
-      // https://github.com/octokit/core.js#readme
-      const octokit = new Octokit({
-      auth: ''
-    })
-
-      await octokit.request('GET /repos/thamarakandabada/personal-website/commits', {
-      owner: 'Thamara Kandabada',
-      repo: 'Personal Website',
-      headers: {
-      'X-GitHub-Api-Version': '2026-03-10'
-     }
-    })
-    </script>
   </body>
 
 </PageLayout>
