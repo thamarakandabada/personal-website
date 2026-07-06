@@ -3,72 +3,16 @@ import PageLayout from '../layouts/PageLayout.astro';
 import { Picture } from 'astro:assets';
 import coverImage from '../assets/images/main/thamara-kandabada.jpg';
 const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
-
-export const prerender = false;
-
-// Tell the CDN to keep separate caches based on the User-Agent
-Astro.response.headers.set('Vary', 'User-Agent');
-
-// Grab the user agent and convert to lowercase
-const userAgent = (Astro.request.headers.get('user-agent') || '').toLowerCase();
-
-if (userAgent.includes('curl')) {
-  const terminalText = `
-
-//////////////////////////////////////////////////////////////////////////
-//                                                                      //
-//  ░▀█▀░█░█░█▀█░█▄█░█▀█░█▀▄░█▀█░░░█░█░█▀█░█▀█░█▀▄░█▀█░█▀▄░█▀█░█▀▄░█▀█  //
-//  ░░█░░█▀█░█▀█░█░█░█▀█░█▀▄░█▀█░░░█▀▄░█▀█░█░█░█░█░█▀█░█▀▄░█▀█░█░█░█▀█  //
-//  ░░▀░░▀░▀░▀░▀░▀░▀░▀░▀░▀░▀░▀░▀░░░▀░▀░▀░▀░▀░▀░▀▀░░▀░▀░▀▀░░▀░▀░▀▀░░▀░▀  //
-//                                                                      //
-//////////////////////////////////////////////////////////////////////////
-
-Hello, command line visitor. I bid you good timezone.
-==========================================================================
-
-Thank you for stopping by. I’m Thamara, furniture-peddler by day and
-wearer-of-many-hats by night. Currently based in Belfast, UK.
-
-Visit my website: https://thamara.co.uk
-See what's happening now: https://thamara.co.uk/now
-Read the blog: https://thamara.co.uk/notebook
-
-Contact:
------------
-Send me an email: t@thamara.co.uk
-
-Elsewhere:
------------
-LinkedIn: https://www.linkedin.com/in/thamarakandabada/
-Reddit: https://www.reddit.com/user/thamara-k/
-GitHub: https://github.com/thamarakandabada
-
-==========================================================================
-ASCII art by https://www.asciiart.eu/
-`;
-
-  // Calculate the exact file size so Windows curl knows when to exit
-  const byteLength = new TextEncoder().encode(terminalText).length.toString();
-
-  return new Response(terminalText, {
-    headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
-      'Vary': 'User-Agent',
-      'Content-Length': byteLength,
-      'Connection': 'close'
-    }
-  });
-}
 ---
 
 <PageLayout title={pageTitle}>
   <h1>Greetings, friends & strangers.</h1>
   <div class="home-page-hero">
     <div class="home-page-hero-intro">
-      <p>Welcome to my personal website.</p>
+      <p><span id="day">Hello</span> and welcome to my personal website.</p>
       <p>I’m Thamara, <a href="/resume">furniture-peddler</a> by day and <a href="/now">wearer-of-many-hats</a> by night. Currently based in Belfast, Northern Ireland.</p>
       <p>I’ve had a website since 2014, which was when I first learned the basics of web design—specifically, HTML, CSS, and WordPress. This is the fourth or fifth iteration; I’ve now lost count.</p>
-      <p>You can learn more about how this site is built in <a href="/colophon">the colophon</a>, or explore below. Bust most importantly, thank you for visiting. Please consider signing my <a href="/guestbook">guestbook</a>.</p>
+      <p>You can learn more about how this site is built in <a href="/colophon">the colophon</a>, or explore below. Bust most importantly, thank you for visiting. Please consider signing my <a href="/guestbook">guestbook</a>, I'd love to know what you thought of it.</p>
     </div>
 
     <div class="home-page-hero-image">
@@ -114,5 +58,9 @@ ASCII art by https://www.asciiart.eu/
         </ul>
     </div>
   </div>
+
+  <script>
+  document.getElementById("day").innerText = "Happy " + ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].at(new Date().getDay() - 1);
+  </script>
 
 </PageLayout>

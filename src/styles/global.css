@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-/* Light mode (default) */
+/*
+Light mode
+===========
+*/
+
 :root {
   --bg-primary: #F8F6F1;
   --bg-secondary: #F5F5F5;
@@ -13,7 +17,11 @@
   --accent: #AF4F41;
 }
 
-/* Dark mode */
+/*
+Dark mode
+==========
+*/
+
 :root[data-theme="dark"] {
   --bg-primary: #101519;
   --bg-secondary: #181D23;
@@ -24,7 +32,83 @@
   --accent: #1db4ac;
 }
 
-/* Main components */
+/*
+Toggle
+=======
+*/
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  margin-left: 2rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-tertiary);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.2rem;
+  width: 1.2rem;
+  left: 0.2rem;
+  top: 0.15rem;
+  background-color: var(--bg-secondary);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--bg-primary);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--bg-secondary);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(2.4rem);
+  -ms-transform: translateX(2.4rem);
+  transform: translateX(1.4rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*
+Main components
+===============
+*/
 html, body {
     margin: 0;
     padding: 0;
@@ -33,6 +117,17 @@ html, body {
     color: var(--text-primary);
     font-family: "maiola", serif;
 }
+
+.page-content {
+    text-align: left;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*
+Navigation, header and footer
+-----------------------------
+*/
 
 nav {
   display: flex;
@@ -90,95 +185,79 @@ nav {
 
 }
 
-.debas-header {
-    background-color: var(--bg-secondary);
-    margin: 0;
-    padding-top: 3rem;
-    padding-bottom: 10rem;
+
+.global-footer {
+    padding: 2em 1em;
+    margin-top: 5rem;
+    border-top: 1px solid var(--border-color);
 }
 
-.debas-header h1, .debas-header p {
+.footer-text {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+}
+
+.footer-content {
+    text-align: center;
     max-width: 1024px;
     margin: 0 auto;
-    padding: 0;
+}
+
+.footer-text p {
+    font-family: "Cascadia Mono", monospace;
+    font-size: 0.75rem;
+    margin: 0;
     text-align: center;
 }
 
-.project-image {
-    border: 1px solid var(--border-color)
+
+.footer-quote {
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
-.uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-subgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    margin-top: 2.5rem;
-}
-
-.blogroll-subgrid, .verify-subgrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-}
-
-.podroll-subgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-    column-gap: 2rem;
-}
-.debas-grid a, .podcast-grid a {
-    text-decoration: none;
-}
-
-.uses-grid-container div, .now-grid div, .debas-grid div, .unlinked-grid, .linked-grid, .post-footer, .podroll-grid div:not(.podroll-subgrid), .blogroll-grid div:not(.blogroll-subgrid), .verify-grid div:not(.verify-subgrid) {
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    padding: 0.75rem 2rem;
-    background-color: var(--bg-tertiary);
-}
-
-.podcast-meta {
+.social-links {
     display: flex;
-    justify-content: space-between;
-    padding: 0 !important;
-    border: none !important;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 1.5rem;
 }
 
-.podcast-date, .podcast-ep {
-    margin: 0;
-}
-
-#post-footer-list li span {
+.social-links a {
     color: var(--text-primary);
 }
 
-#post-footer-list li {
+.social-links a:hover {
     color: var(--accent);
 }
 
-.debas-author, .podcast-guest {
-    font-style: italic;
-    font-size: 1.5rem;
+.footer-nav-links {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.footer-nav-links nav {
+    gap: 1.5rem;
+}
+
+.footer-nav-links a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.footer-nav-links a:hover {
     color: var(--accent);
 }
 
-.debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover {
-    border-color: var(--accent);
-    transition: 0.5s;
-}
-
-.type-showcase {
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    padding: 1rem 2rem;
-    margin-top: 2rem;
-}
-
-.type-showcase h1 {
-    margin: 0;
-}
+/*
+Text elements
+--------------
+*/
 
 h1 {
     font-size: 3rem;
@@ -319,79 +398,56 @@ th {
     background-color: var(--bg-secondary);
 }
 
-.accessibility-version-notice, .ai-version-notice, .now-location-weather, .no-experiments-banner, .commit-info, .see-also {
-    padding: 1rem 1.5rem;
-    background: var(--bg-secondary);
-    gap: 1.5rem;
-    border: 1px solid var(--border-color);
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 4px;
 }
 
-.accessibility-version-notice ul, .ai-version-notice ul, .now-location-weather ul, .no-experiments-banner ul, .commit-info ul, .see-also ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
+figure {
     margin: 0;
     padding: 0;
 }
 
-.global-footer {
-    padding: 2em 1em;
-    margin-top: 5rem;
-    border-top: 1px solid var(--border-color);
-}
-
-.footer-text {
-    background-color: var(--bg-secondary);
-    border-top: 1px solid var(--border-color);
-    padding-top: 0.5rem;
-    padding-bottom: 0.75rem;
-}
-
-.footer-content {
-    text-align: center;
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-.footer-text p {
-    font-family: "Cascadia Mono", monospace;
-    font-size: 0.75rem;
-    margin: 0;
-    text-align: center;
-}
-
-.page-content {
-    text-align: left;
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-.debas-content {
-    margin-top: 4rem;
-}
-
-.footer-quote {
+figcaption {
+    font-size: 1rem;
+    color: var(--text-secondary);
     font-style: italic;
-    font-size: 1.5rem;
-    font-weight: 700;
+    padding-top: 0.5rem;
+    text-align: right;
 }
 
-.social-links {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-    font-size: 1.5rem;
+figcaption a {
+    text-decoration: none;
 }
 
-.social-links a {
+/*
+Page elements
+-------------------
+*/
+
+.project-image {
+    border: 1px solid var(--border-color)
+}
+
+#post-footer-list li span {
     color: var(--text-primary);
 }
 
-.social-links a:hover {
+#post-footer-list li {
     color: var(--accent);
+}
+
+.type-showcase {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.type-showcase h1 {
+    margin: 0;
 }
 
 .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
@@ -426,103 +482,8 @@ th {
     gap: 1rem;
 }
 
-/*Overriding the wdith and height specification required by Astro's <Picture /> tag and adding a border radius*/
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-figcaption {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    font-style: italic;
-    padding-top: 0.5rem;
-    text-align: right;
-}
-
-figcaption a {
-    text-decoration: none;
-}
-
 .guitar-photo, .hobby-photo {
     width: 100%;
-}
-
-/* Dark mode toggle */
- /* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 3rem;
-  height: 1.5rem;
-  margin-left: 2rem;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--bg-tertiary);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.2rem;
-  width: 1.2rem;
-  left: 0.2rem;
-  top: 0.15rem;
-  background-color: var(--bg-secondary);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: var(--bg-primary);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--bg-secondary);
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(2.4rem);
-  -ms-transform: translateX(2.4rem);
-  transform: translateX(1.4rem);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 2rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.3rem;
-  font-size: 0.7rem;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
 
 .blank-page-declaration {
@@ -533,403 +494,11 @@ input:checked + .slider:before {
     padding-bottom: 3rem;
 }
 
-.footer-nav-links {
-    display: flex;
-    margin-bottom: 3rem;
-}
-
-.footer-nav-links nav {
-    gap: 1.5rem;
-}
-
-.footer-nav-links a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: var(--text-primary);
-}
-
-.footer-nav-links a:hover {
-    color: var(--accent);
-}
-
 .project-links {
     list-style: none;
     padding-left: 0;
     display: flex;
     gap: 1rem;
-}
-
-/* Media queries */
- /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px)  {
-    .page-content, nav, .footer-content {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
-        display: flex;
-        flex: wrap;
-        flex-direction: column;
-    }
-
-    .home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
-    margin-right: 0;
-    }
-
-    .site-tagline {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #mobile-menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 30%;
-        right: 0;
-        z-index: 1;
-        flex-direction: column;
-        background-color: var(--bg-secondary);
-        padding-top: 2rem;
-        padding-left: 3rem;
-        border-left: 1px solid var(--border-color);
-    }
-
-    .scrim {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 70%;
-        z-index: -1;
-        background-color: var(--bg-secondary);
-        opacity: 0.8;
-    }
-
-    .scrim:hover {
-        cursor: default;
-    }
-
-    #mobile-menu:target {
-        display: flex;
-    }
-
-    .switch {
-        margin: 0;
-    }
-
-    .accessibility-version-notice ul, .ai-version-notice ul, .commit-info ul, .see-also ul, .now-location-weather ul {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podcast-subgrid, .podroll-grid, .podroll-subgrid {
-    grid-template-columns: 1fr;
-    }
-
-    h1 {
-        font-size: 2.75rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.35rem;
-    }
-
-    h5 {
-        font-size: 1.2rem;
-    }
-
-    h6, p, li {
-        font-size: 1.1rem;
-    }
-
-    code {
-        font-size: 0.8rem;
-}
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-    .page-content, nav, .footer-content {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-
-    .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
-        display: flex;
-        flex: wrap;
-        flex-direction: column;
-    }
-
-    .home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
-    margin-right: 0;
-    }
-
-    #mobile-menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 30%;
-        right: 0;
-        z-index: 1;
-        flex-direction: column;
-        background-color: var(--bg-secondary);
-        padding-top: 2rem;
-        padding-left: 3rem;
-        border-left: 1px solid var(--border-color);
-    }
-
-    .scrim {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 70%;
-        z-index: -1;
-        background-color: var(--bg-secondary);
-        opacity: 0.8;
-    }
-
-    .scrim:hover {
-        cursor: default;
-    }
-
-    #mobile-menu:target {
-        display: flex;
-        transition: 0.3s;
-    }
-    
-    .switch {
-        margin: 0;
-    }
-
-
-    .accessibility-version-notice ul, .ai-version-notice ul, .commit-info ul, .see-also ul, .now-location-weather ul {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podcast-subgrid, .podroll-grid, .podroll-subgrid {
-    grid-template-columns: 1fr;
-    }
-
-    h1 {
-        font-size: 2.75rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.35rem;
-    }
-
-    h5 {
-        font-size: 1.2rem;
-    }
-
-    h6, p, li {
-        font-size: 1.1rem;
-    }
-
-    code {
-        font-size: 0.8rem;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .page-content, nav, .footer-content {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-
-    #mobile-menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 30%;
-        right: 0;
-        z-index: 1;
-        flex-direction: column;
-        background-color: var(--bg-secondary);
-        padding-top: 2rem;
-        padding-left: 3rem;
-        border-left: 1px solid var(--border-color);
-    }
-
-    .scrim {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 70%;
-        z-index: -1;
-        background-color: var(--bg-secondary);
-        opacity: 0.8;
-    }
-
-    .scrim:hover {
-        cursor: default;
-    }
-
-    #mobile-menu:target {
-        display: flex;
-        transition: 0.3s;
-    }
-    
-    .switch {
-        margin: 0;
-    }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .page-content, nav, .footer-content {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-
-    .top-nav-links {
-        display: flex;
-    }
-
-    .top-nav-burger {
-        display: none;
-    }
-
-    .x {
-        display: none;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1000px) {
-    .page-content, nav, .footer-content {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-
-    .top-nav-links {
-        display: flex;
-    }
-
-    .top-nav-burger {
-        display: none;
-    }
-
-    .x {
-        display: none;
-    }
-}
-
-/*Notebook styling */
-.notebook-posts-list {
-    list-style: none;
-    padding: 0;
-}
-
-/* =========================================
-   Discuss Widget Custom Styling Overrides 
-   ========================================= */
-
-/* 1. Base Font Alignment */
-#discuss-comments, .discuss-text-lg, .discuss-text-sm, .discuss-flex {
-    font-family: "maiola", serif;
-    color: var(--text-primary);
-}
-
-/* 2. Strip Tailwind's Hardcoded Backgrounds & Borders */
-/* This intercepts Tailwind's utility classes and forces them to be transparent */
-#discuss-comments [class*="bg-white"],
-#discuss-comments [class*="bg-gray-"],
-#discuss-comments [class*="bg-slate-"],
-#discuss-comments [class*="bg-zinc-"],
-#discuss-comments [class*="dark:bg-"] {
-    background-color: transparent !important;
-}
-
-#discuss-comments [class*="border-gray-"],
-#discuss-comments [class*="border-slate-"],
-#discuss-comments [class*="border-zinc-"],
-#discuss-comments [class*="dark:border-"] {
-    border-color: var(--border-color) !important;
-}
-
-/* 3. Strip Tailwind's Text Colors */
-#discuss-comments [class*="text-gray-"],
-#discuss-comments [class*="text-slate-"],
-#discuss-comments [class*="text-zinc-"],
-#discuss-comments [class*="dark:text-"] {
-    color: var(--text-primary) !important;
-}
-
-/* 4. Inputs & Textareas (Matches your contact form) */
-#discuss-comments input,
-#discuss-comments textarea {
-    background-color: var(--bg-primary) !important;
-    color: var(--text-primary) !important;
-    border-radius: 4px !important;
-    font-family: "maiola", serif !important;
-}
-
-.discuss-form-bottom {
-    background-color: var(--bg-secondary) !important;
-}
-
-/* 5. Buttons (Matches your submit button logic) */
-#discuss-comments button {
-    background-color: var(--bg-tertiary) !important;
-    color: var(--text-primary) !important;
-    border: 1px solid var(--border-color) !important;
-    border-radius: 4px !important;
-    transition: background-color 0.3s !important;
-    font-family: "maiola", serif !important;
-}
-
-#discuss-comments button:hover {
-    background-color: var(--bg-secondary) !important;
-}
-
-/* 6. Links & Mentions */
-#discuss-comments a {
-    color: var(--accent) !important;
-    text-decoration: underline !important;
-    text-underline-offset: 0.4rem !important;
-}
-
-#discuss-comments a:hover {
-    color: var(--text-primary) !important;
-}
-
-.colour-palette-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-}
-
-.colours-grid {
-    display: grid;
-    row-gap: 0.1rem;
 }
 
 .colour-box-bg-p {
@@ -1046,3 +615,409 @@ input:checked + .slider:before {
     height: 2rem;
 }
 
+/*
+Grids and sub-grids
+===================
+*/
+
+.uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.podroll-subgrid {
+    margin-top: 2rem;
+}
+
+.blogroll-subgrid, .verify-subgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+.podroll-subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.debas-grid a, .podcast-grid a {
+    text-decoration: none;
+}
+
+.uses-grid-container div, .now-grid div, .debas-grid div, .unlinked-grid, .linked-grid, .post-footer, .podroll-grid div:not(.podroll-subgrid), .blogroll-grid div:not(.blogroll-subgrid), .verify-grid div:not(.verify-subgrid), .podcast-grid div {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    background-color: var(--bg-tertiary);
+}
+
+.podcast-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.podcast-date, .podcast-ep {
+    margin: 0;
+}
+
+.debas-author, .podcast-guest {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover {
+    border-color: var(--accent);
+    transition: 0.5s;
+}
+
+.colour-palette-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.colours-grid {
+    display: grid;
+    row-gap: 0.1rem;
+}
+
+/*
+Site notices
+=============
+*/
+
+.accessibility-version-notice, .ai-version-notice, .now-location-weather, .no-experiments-banner, .commit-info, .see-also {
+    padding: 1rem 1.5rem;
+    background: var(--bg-secondary);
+    gap: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.accessibility-version-notice ul, .ai-version-notice ul, .now-location-weather ul, .no-experiments-banner ul, .commit-info ul, .see-also ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Media queries
+=============
+*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)  {
+    .page-content, nav, .footer-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+    }
+
+    .home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
+    margin-right: 0;
+    }
+
+    .site-tagline {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 30%;
+        right: 0;
+        z-index: 1;
+        flex-direction: column;
+        background-color: var(--bg-secondary);
+        padding-top: 2rem;
+        padding-left: 3rem;
+        border-left: 1px solid var(--border-color);
+    }
+
+    .scrim {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 70%;
+        z-index: -1;
+        background-color: var(--bg-secondary);
+        opacity: 0.8;
+    }
+
+    .scrim:hover {
+        cursor: default;
+    }
+
+    #mobile-menu:target {
+        display: flex;
+    }
+
+    .switch {
+        margin: 0;
+    }
+
+    .accessibility-version-notice ul, .ai-version-notice ul, .commit-info ul, .see-also ul, .now-location-weather ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid {
+    grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.35rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6, p, li {
+        font-size: 1.1rem;
+    }
+
+    code {
+        font-size: 0.8rem;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .page-content, nav, .footer-content {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+    }
+
+    .home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
+    margin-right: 0;
+    }
+
+    #mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 30%;
+        right: 0;
+        z-index: 1;
+        flex-direction: column;
+        background-color: var(--bg-secondary);
+        padding-top: 2rem;
+        padding-left: 3rem;
+        border-left: 1px solid var(--border-color);
+    }
+
+    .scrim {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 70%;
+        z-index: -1;
+        background-color: var(--bg-secondary);
+        opacity: 0.8;
+    }
+
+    .scrim:hover {
+        cursor: default;
+    }
+
+    #mobile-menu:target {
+        display: flex;
+        transition: 0.3s;
+    }
+    
+    .switch {
+        margin: 0;
+    }
+
+
+    .accessibility-version-notice ul, .ai-version-notice ul, .commit-info ul, .see-also ul, .now-location-weather ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid {
+    grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.35rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6, p, li {
+        font-size: 1.1rem;
+    }
+
+    code {
+        font-size: 0.8rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .page-content, nav, .footer-content {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    #mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 30%;
+        right: 0;
+        z-index: 1;
+        flex-direction: column;
+        background-color: var(--bg-secondary);
+        padding-top: 2rem;
+        padding-left: 3rem;
+        border-left: 1px solid var(--border-color);
+    }
+
+    .scrim {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 70%;
+        z-index: -1;
+        background-color: var(--bg-secondary);
+        opacity: 0.8;
+    }
+
+    .scrim:hover {
+        cursor: default;
+    }
+
+    #mobile-menu:target {
+        display: flex;
+        transition: 0.3s;
+    }
+    
+    .switch {
+        margin: 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .page-content, nav, .footer-content {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .top-nav-links {
+        display: flex;
+    }
+
+    .top-nav-burger {
+        display: none;
+    }
+
+    .x {
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1000px) {
+    .page-content, nav, .footer-content {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .top-nav-links {
+        display: flex;
+    }
+
+    .top-nav-burger {
+        display: none;
+    }
+
+    .x {
+        display: none;
+    }
+}
+
+/*
+Content collections
+===================
+
+Debas
+-----
+*/
+
+.debas-content {
+    margin-top: 4rem;
+}
+
+.debas-header {
+    background-color: var(--bg-secondary);
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+
+.debas-header h1, .debas-header p {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
