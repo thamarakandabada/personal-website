@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Code } from 'astro:components';
 const pageTitle = "Credits - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -37,6 +38,62 @@ const pageTitle = "Credits - Thamara Kandabada";
 
     <h2><a href="https://renata.haliya.net/thelab.html" target="_blank">Renata's Lab</a></h2>
     <p>This is a wonderfull collection of CSS snippets by Renata, a self-described "enthusiast of all things delightful."</p>
-  
+
+    <h2><a href="" target="_blank">Commit Message Conventions</a></h2>
+    <p>I use the commit message <a href="https://brennan.day/colophon/#commit-conventions" target="_blank">conventions</a> developed by <a href="https://brennan.day/" target="_blank">Brennan Kenneth Brown</a>. All commit messages follow this format:</p>
+    <Code 
+      code=`<type>: <description> [optional body]`
+    />
+    <p>Here is a full list of the types of commits and explainations of when they're used.</p>
+    <table>
+      <tr>
+        <th>Type</th>
+        <th>Usage</th>
+      </tr>
+      <tr>
+        <td><Code code=`post:` inline /></td>
+        <td>A new essay, blog post, or other written content is published</td>
+      </tr>
+      <tr>
+        <td><Code code=`edit:` inline /></td>
+        <td>Corrections, revisions, or expansions to existing written content</td>
+      </tr>
+      <tr>
+        <td><Code code=`update:` inline /></td>
+        <td>Routine data refreshes like comments, uses page, now page, blogroll, podroll</td>
+      </tr>
+      <tr>
+        <td><Code code=`design:` inline /></td>
+        <td>Visual, layout, or CSS changes</td>
+      </tr>
+      <tr>
+        <td><Code code=`build:` inline /></td>
+        <td>Site infrastructure, config, tooling, or dependency changes</td>
+      </tr>
+      <tr>
+        <td><Code code=`fix:` inline /></td>
+        <td>Code bugs only; prose corrections use <Code code=`edit:` inline /> instead</td>
+      </tr>
+      <tr>
+        <td><Code code=`ci:` inline /></td>
+        <td>CI/CD pipeline changes (GitHub CI, Vercel config)</td>
+      </tr>
+      <tr>
+        <td><Code code=`a11y:` inline /></td>
+        <td>Accessibility improvements like ARIA, contrast, alt text, semantics</td>
+      </tr>
+      <tr>
+        <td><Code code=`perf:` inline /></td>
+        <td>Performance improvements like build speed, asset size, caching</td>
+      </tr>
+      <tr>
+        <td><Code code=`refactor:` inline /></td>
+        <td>Code restructuring without behaviour change</td>
+      </tr>
+      <tr>
+        <td><Code code=`revert:` inline /></td>
+        <td>Undoing a previous commit</td>
+      </tr>
+    </table>
   </body>
 </PageLayout>

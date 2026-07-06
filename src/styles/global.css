@@ -307,6 +307,26 @@ pre {
     scrollbar-width: 100px;
 }
 
+table {
+    border: 1px solid var(--border-color);
+    width: 100%;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+td, th {
+    padding: 1rem;
+    border-right: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--bg-secondary);
+}
+
 .accessibility-version-notice, .ai-version-notice, .now-location-weather, .no-experiments-banner, .commit-info, .see-also {
     padding: 1rem 1.5rem;
     background: var(--bg-secondary);
