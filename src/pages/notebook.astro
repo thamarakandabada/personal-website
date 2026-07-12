@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import BlogPost from '../components/BlogPost.astro';
 const allPosts = Object.values(import.meta.glob('./notebook/*.md', { eager: true }));
 const pageTitle = "Notebook - Thamara Kandabada";
 ---
@@ -10,7 +11,7 @@ const pageTitle = "Notebook - Thamara Kandabada";
     <p><i>Uncensored thoughts on Life, The Universe, and Everything</i></p>
     
     <ul class="notebook-posts-list">
-        {allPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+    {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
     </ul>
     
   </body>

@@ -6,31 +6,38 @@ import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
 const { frontmatter } = Astro.props;
 ---
-
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/tk.png" />
-		<link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
-		<meta name="generator" content={Astro.generator} />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/tk.png" />
+	<link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
+	<meta name="generator" content={Astro.generator} />
     <Analytics/>
     <SpeedInsights/>
-		<title>Title</title>
-	</head>
+	<title>{frontmatter.title}</title>
+</head>
 	
-	<body>	
-	<Navigation />
-	<div class="page-content">
-    <div class="blog-meta">
-    <h1>{frontmatter.title}</h1>
-    <p>by {frontmatter.author}</p>
-    </div>
-    <slot />
-	</div>
-	<GlobalFooter />
-	</body>
+<body>	
+<Navigation />
+      <div class="blog-header">
+	  <p><span class="blog-category">In <a href="#">{frontmatter.sections}</a></span>|<span class="blog-date">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
+      <h1 class="blog-title">{frontmatter.title}</h1>
+	  <p class="blog-description">{frontmatter.description}</p>
+	  <p class="blog-author">by {frontmatter.author}</p>
 
-</html>
+	    <div class="blog-hero-image">
+        </div>
+      </div>
+	<div class="page-content">
+      <slot />
+	
+	<div class="topics-list">
+		<ul>
+		<li><strong>Topics:</strong></li>
+		{frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${topic}`}>{topic}</a></li>)}
+		</ul>
+	</div>
+    </div>
+	<GlobalFooter />
+</body>

@@ -4,15 +4,9 @@ title: 'Couch to 5K progress: Week 4'
 pubDate: 2026-05-18
 description: 'Getting used to longer running intervals'
 author: 'Thamara Kandabada'
-image:
-    url: ''
-    alt: ''
-tags: ["running", "exercise", "couch-to-5k"]
+sections: ["Life"]
+topics: ["running", "exercise", "couch to 5k"]
 ---
-
-# Couch to 5K progress: Week 4
-
-Published on: 18 May 2026
 
 Week 4 of couch to 5k is all about longer running intervals compared to walking intervals. This is what that looks like.
 
@@ -34,4 +28,4 @@ The great thing about this is that I always feel good after my post-run stretch.
 
 The third run for week 4 is tomorrow. I’m not dreading it.
 
-Follow my Couch to 5K progress [here](/notebook/topic/couch-to-5k).
+Follow my Couch to 5K progress [here](/notebook/topics/couch-to-5k).

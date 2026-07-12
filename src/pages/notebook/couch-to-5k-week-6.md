@@ -2,16 +2,11 @@
 layout: /src/layouts/BlogLayout.astro
 title: 'Couch to 5K: Week 6'
 pubDate: 2026-06-07
-description: ‘Can I call myself a runner now?'
+description: 'Can I call myself a runner now?'
 author: 'Thamara Kandabada'
-image:
-    url: ''
-    alt: ''
-tags: ["running", "exercise", "couch-to-5k"]
+sections: ["Life"]
+topics: ["running", "exercise", "couch to 5k"]
 ---
-
-# Couch to 5K: Week 6
-
 After a strenuous end to week 5 of the programme, week 6 reverts to a shorter running interval at the beginning and ramps up significantly towards the end. Here are the 3 runs:
 
 ## Run 1 
@@ -43,4 +38,4 @@ For run 3, I chose to listen to the Dream Theater’s [Octavarium](https://music
 
 I’m looking forward to tackling the longer runs of week 7. I start tomorrow.
 
-[Follow my Couch to 5K progress here.](https://thamara.co.uk/notebook/tag/couch-to-5k)
+[Follow my Couch to 5K progress here.](/notebook/topics/couch-to-5k)

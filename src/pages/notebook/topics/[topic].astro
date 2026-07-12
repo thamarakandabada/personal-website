@@ -1,0 +1,26 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import BlogPost from '../../../components/BlogPost.astro';
+
+export async function getStaticPaths() {
+  const allPosts = Object.values(import.meta.glob('../*.md', { eager: true }));
+  const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.topics).flat())];
+
+return uniqueTags.map((topic) => {
+  const filteredPosts = allPosts.filter((post: any) => post.frontmatter.topics.includes(topic));
+  return {
+    params: { topic },
+    props: { posts: filteredPosts },
+  };
+});
+}
+
+const { topic } = Astro.params;
+const { posts } = Astro.props;
+---
+<PageLayout title={`Topic: ${topic} - Thamara Kandabada`}>
+  <h1>Topic: <em>{topic}</em></h1>
+  <ul>
+  {posts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title}/>)}
+  </ul>
+</PageLayout>
