@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/BlogLayoutwithImage.astro
 title: 'Gehenu Lamai'
 pubDate: 2026-07-13
 description: 'A gem of Sri Lankan cinema comes to Belfast'

@@ -541,6 +541,31 @@ Page elements
     height: 2rem;
 }
 
+.strava-embed {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    margin: 0.25rem;
+    border: solid 1px var(--border-color);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--bg-tertiary);
+    font-size: 1rem;
+}
+
+
+.tag a {
+    text-decoration: none;
+}
+
 /*
 Grids and sub-grids
 ===================
@@ -554,14 +579,25 @@ Grids and sub-grids
     margin-top: 2.5rem;
 }
 
+.notebook-grid {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    column-gap: 4rem;
+    row-gap: 2rem;
+}
+
 .podroll-subgrid {
     margin-top: 2rem;
 }
 
-.blogroll-subgrid, .verify-subgrid {
+.blogroll-subgrid, .verify-subgrid, .notebook-subgrid {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2rem;
+}
+
+.notebook-subgrid {
+    height: fit-content;
 }
 
 .podroll-subgrid {
@@ -713,7 +749,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid {
     grid-template-columns: 1fr;
     }
 
@@ -808,7 +844,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid {
     grid-template-columns: 1fr;
     }
 
@@ -955,6 +991,11 @@ Blog
 -----
 */
 
+.blog-banner {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
 .blog-content {
     max-width: 1024px;
     margin: 0 auto;
@@ -991,4 +1032,46 @@ Blog
 
 .blog-hero-image {
     margin: -15rem 0 2rem 0;
+}
+
+.notebook-post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.notebook-post-list-item {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+}
+
+.notebook-post-list-item p {
+    margin: 0;
+    padding: 0;
+}
+
+.notebook-post-list-item a {
+    text-decoration: none;
+}
+
+.notebook-post-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.notebook-post-description {
+    font-style: italic;
+}
+
+.notebook-post-section {
+    font-style: italic;
+}
+
+.filed-under {
+    color: var(--text-secondary);
+    font-size: 1rem;
 }

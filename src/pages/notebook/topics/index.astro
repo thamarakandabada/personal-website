@@ -1,0 +1,36 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+const pageTitle = "Topics - Thamara Kandabada";
+import { getCollection } from "astro:content";
+const allPosts = await getCollection("blog");
+const topics = [...new Set(allPosts.map((post: any) => post.data.topics).flat())];
+---
+<PageLayout title={pageTitle}>
+  <h1>Topics</h1>
+  <p>Welcome to the topics page!</p>
+  <div class="tags">
+    {topics.map((topic) => <p class="tag"><a href={`/notebook/topics/${topic}`}>{topic}</a></p>)}
+  </div>
+</PageLayout>
+
+<style>
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    margin: 0.25rem;
+    border: solid 1px var(--border-color);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--bg-tertiary);
+  }
+
+
+  .tag a {
+    text-decoration: none;
+  }
+
+</style>

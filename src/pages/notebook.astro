@@ -1,18 +1,42 @@
 ---
+import { getCollection } from "astro:content";
 import PageLayout from '../layouts/PageLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
-const allPosts = Object.values(import.meta.glob('./notebook/*.md', { eager: true }));
+
+const allPosts = await getCollection("blog");
+const topics = [...new Set(allPosts.map((post: any) => post.data.topics).flat())];
 const pageTitle = "Notebook - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>  
   <body>
 
     <h1>Notebook</h1>
-    <p><i>Uncensored thoughts on Life, The Universe, and Everything</i></p>
+    <p class="blog-banner">Welcome to my personal blog. Here you can find my uncensored thoughts on <a href="/notebook/sections/Life">Life</a>, <a href="/notebook/sections/The%20Universe">The Universe</a>, and <a href="/notebook/sections/Everything%20Else">Everything</a>. There is also a <a href="/notebook/sections/Microblog">Microblog</a> section for shorter musings and more frequent updates.</p>
     
-    <ul class="notebook-posts-list">
-    {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
-    </ul>
+    <div class="notebook-grid">
+      <div>
+        <h2>Latest Posts</h2>
+          <ul class="notebook-post-list">
+            {allPosts.map((post: any) => <BlogPost pubDate={post.data.pubDate} url={`/notebook/${post.id}/`} title={post.data.title} description={post.data.description} sections={post.data.sections} />)}
+          </ul>
+       </div>
+
+      <div class="notebook-subgrid">
+        <div>
+          <h2>Subscribe</h2>
+          <p>Susbcribe using SubToMe or access the raw RSS feed link below.</p>
+        </div>
+        <div>
+          <h2>Topics</h2>
+            <div class="tags">
+              {topics.map((topic) => <p class="tag"><a href={`/notebook/topics/${topic}`}>{topic}</a></p>)}
+            </div>
+        </div>
+        <div>
+          <h2>Search Blog</h2>
+        </div>
+      </div>
+    </div>
     
   </body>
 </PageLayout>

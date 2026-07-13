@@ -1,9 +1,11 @@
 ---
-layout: /src/layouts/BlogLayoutNoImage.astro
 title: 'Couch to 5K: Week 6'
 pubDate: 2026-06-07
 description: 'Can I call myself a runner now?'
 author: 'Thamara Kandabada'
+imageUrl: ''
+imageAlt: ''
+imageCaption: ''
 sections: ["Life"]
 topics: ["running", "exercise", "couch to 5k"]
 ---

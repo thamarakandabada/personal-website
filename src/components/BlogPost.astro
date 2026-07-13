@@ -1,4 +1,13 @@
 ---
-const { title, url } = Astro.props;
+const { title, url, description, pubDate, sections } = Astro.props;
 ---
-<li><a href={url}>{title}</a></li>
+<li class="notebook-post-list-item">
+    <div class="notebook-post-meta">
+      <p class="notebook-post-date">{pubDate.toLocaleDateString()}</p>
+    </div>
+    <div class="notebook-post-title-description">
+      <p class="filed-under">Filed under <span class="notebook-post-section">{sections}</span></p>
+      <a href={url} class="notebook-post-title">{title}</a>
+      <p class="notebook-post-description">{description}</p>
+    </div>
+</li>

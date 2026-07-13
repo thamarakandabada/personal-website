@@ -1,0 +1,25 @@
+---
+import { getCollection, render } from 'astro:content';
+import BlogLayoutNoImage from '../../layouts/BlogLayoutNoImage.astro';
+import BlogLayoutwithImage from '../../layouts/BlogLayoutwithImage.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.id }, props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+{post.data.imageUrl ? (
+  <BlogLayoutwithImage frontmatter={post.data}>
+    <Content />
+  </BlogLayoutwithImage>
+) : (
+  <BlogLayoutNoImage frontmatter={post.data}>
+    <Content />
+  </BlogLayoutNoImage>
+)}

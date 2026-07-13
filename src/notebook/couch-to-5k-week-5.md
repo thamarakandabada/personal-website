@@ -1,9 +1,11 @@
 ---
-layout: /src/layouts/BlogLayoutNoImage.astro
 title: 'Couch to 5K: Week 5'
 pubDate: 2026-05-28
 description: 'Making steady progress'
 author: 'Thamara Kandabada'
+imageUrl: ''
+imageAlt: ''
+imageCaption: ''
 sections: ["Life"]
 topics: ["running", "exercise", "couch to 5k"]
 ---

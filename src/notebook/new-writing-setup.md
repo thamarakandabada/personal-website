@@ -1,9 +1,11 @@
 ---
-layout: /src/layouts/BlogLayoutNoImage.astro
 title: 'New writing setup'
 pubDate: 2026-06-08
 description: 'Hello markdown'
 author: 'Thamara Kandabada'
+imageUrl: ''
+imageAlt: ''
+imageCaption: ''
 sections: ["Everything Else"]
 topics: ["writing", "blogging", "the great astro migration of 2026", "astro"]
 ---

@@ -22,7 +22,7 @@ const { frontmatter } = Astro.props;
 <body>	
 <Navigation />
     <div class="blog-header">
-	  <p><span class="blog-category">In <a href="#">{frontmatter.sections}</a></span>|<span class="blog-date">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
+	  <p><span class="blog-category">In <a href={`/notebook/sections/${frontmatter.sections}`}>{frontmatter.sections}</a></span>|<span class="blog-date">{frontmatter.pubDate.toString().slice(0,15)}</span></p>
       <h1 class="blog-title">{frontmatter.title}</h1>
 	  <p class="blog-description">{frontmatter.description}</p>
 	  <p class="blog-author">by {frontmatter.author}</p>
