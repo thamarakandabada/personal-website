@@ -25,7 +25,7 @@ const { posts, displaySection } = Astro.props;
 ---
 <PageLayout title={`Section: ${displaySection} - Thamara Kandabada`}>
   <h1>Section: <em>{displaySection}</em></h1>
-  <ul>
+  <ul class="notebook-post-list">
   {posts.map((post) => <BlogPost pubDate={post.data.pubDate} url={`/notebook/${post.id}/`} title={post.data.title} description={post.data.description} sections={post.data.sections} />)}
   </ul>
 </PageLayout>
