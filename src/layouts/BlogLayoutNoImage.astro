@@ -5,6 +5,9 @@ import SpeedInsights from "@vercel/speed-insights/astro";
 import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
 const { frontmatter } = Astro.props;
+const formattedDate = frontmatter.pubDate 
+  ? new Date(frontmatter.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+  : 'Unknown Date';
 ---
 <head>
 	<meta charset="UTF-8" />
@@ -21,7 +24,7 @@ const { frontmatter } = Astro.props;
 <body>	
 <Navigation />
     <div class="blog-header-no-image">
-	  <p><span class="blog-date">{frontmatter.pubDate.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</span>//<span class="blog-category">In <a href={`/notebook/sections/${frontmatter.sections}`}>{frontmatter.sections}</a></span></p>
+	  <p><span class="blog-date">{formattedDate}</span>//<span class="blog-category">In {frontmatter.sections?.map((section: string, index: number) => (<><a href={`/notebook/sections/${String(section).toLowerCase().replace(/\s+/g, '-')}/`}>{section}</a></>))}</span></p>
       <h1 class="blog-title">{frontmatter.title}</h1>
 	  <p class="blog-description">{frontmatter.description}</p>
 	  <p class="blog-author">by {frontmatter.author}</p>
@@ -33,7 +36,7 @@ const { frontmatter } = Astro.props;
     	<div class="topics-list">
 		<ul>
 		<li><strong>Topics:</strong></li>
-		{frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${topic}`}>{topic}</a></li>)}
+		{frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
 		</ul>
 	</div>
     </div>

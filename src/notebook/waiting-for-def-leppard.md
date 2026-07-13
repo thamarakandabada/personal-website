@@ -7,7 +7,7 @@ imageUrl: '../assets/images/notebook/waiting-for-def-leppard/371DC28C-9246-42EC-
 imageAlt: 'The stage at Belsonic being prepared by the road crews of Extreme an Def Leppard'
 imageCaption: 'I like to get very close to the stage so I can examine all the gear'
 sections: ["Everything Else"]
-topics: ["writing", "gigs", "couch to 5k", "running"]
+topics: ["Writing", "Gigs", "Couch to 5k", "Running"]
 ---
 I find myself in the middle of a crowd again. Standing. Waiting. I’m outdoors this time. The space is much bigger. The crowd is much bigger. It’s quite warm in Belfast tonight; we’ve just survived a heatwave. But that hasn’t stopped thousands of metal fans from coming out to see Def Leppard.
 

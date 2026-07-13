@@ -5,23 +5,27 @@ import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
-  const uniqueTags = [...new Set(allPosts.map((post: any) => post.data.topics).flat())];
+  allPosts.sort((a, b) => {
+    const dateA = new Date(a.data.pubDate).valueOf();
+    const dateB = new Date(b.data.pubDate).valueOf();
+    return dateB - dateA;
+  });
+  const uniqueTags = [...new Set(allPosts.map((post) => post.data.topics).filter(Boolean).flat())];
 
 return uniqueTags.map((topic) => {
-  const filteredPosts = allPosts.filter((post: any) => post.data.topics.includes(topic));
+  const filteredPosts = allPosts.filter((post) => post.data.topics?.includes(topic));
   return {
-    params: { topic },
-    props: { posts: filteredPosts },
+    params: { topic: String(topic).toLowerCase().replace(/\s+/g, '-') },
+    props: { posts: filteredPosts, displayTopic: topic },
   };
 });
 }
 
-const { topic } = Astro.params;
-const { posts } = Astro.props;
+const { posts, displayTopic } = Astro.props;
 ---
-<PageLayout title={`Topic: ${topic} - Thamara Kandabada`}>
-  <h1>Topic: <em>{topic}</em></h1>
-  <ul>
-  {posts.map((post: any) => <BlogPost url={`/notebook/${post.id}/`} title={post.data.title} />)}
+<PageLayout title={`Topic: ${displayTopic} - Thamara Kandabada`}>
+  <h1>Topic: <em>{displayTopic}</em></h1>
+  <ul class="notebook-post-list">
+  {posts.map((post) => <BlogPost pubDate={post.data.pubDate} url={`/notebook/${post.id}/`} title={post.data.title} description={post.data.description} sections={post.data.sections} />)}
   </ul>
 </PageLayout>

@@ -7,7 +7,7 @@ imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Life"]
-topics: ["running", "exercise", "couch to 5k"]
+topics: ["Running", "Exercise", "Couch to 5k"]
 ---
 After a strenuous end to week 5 of the programme, week 6 reverts to a shorter running interval at the beginning and ramps up significantly towards the end. Here are the 3 runs:
 

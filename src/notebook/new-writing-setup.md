@@ -7,7 +7,7 @@ imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Everything Else"]
-topics: ["writing", "blogging", "the great astro migration of 2026", "astro"]
+topics: ["Writing", "Blogging", "The Great Astro Migration of 2026", "Astro"]
 ---
 
 When my [Astro migration](/notebook/topics/the-great-astro-migration-of-2026) is complete, I will have to set used to writing in markdown exclusively. I thought I should get a headstart on it.

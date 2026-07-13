@@ -7,7 +7,7 @@ imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Life"]
-topics: ["running", "exercise", "couch to 5k"]
+topics: ["Running", "Exercise", "Couch to 5k"]
 ---
 
 The three runs for week 5 of Couch to 5K are not all the same. There’s a gradual increase from run 1 to run 2. Run 3 is a different beast altogether. There must be a logic to it that I don’t see, but it’s an inordinate increase, and I’ve been dreading it for days.

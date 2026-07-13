@@ -7,7 +7,7 @@ imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Life"]
-topics: ["running", "exercise", "couch to 5k"]
+topics: ["Running", "Exercise", "Couch to 5k"]
 ---
 
 Week 4 of couch to 5k is all about longer running intervals compared to walking intervals. This is what that looks like.

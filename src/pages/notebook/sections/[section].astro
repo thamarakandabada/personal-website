@@ -5,23 +5,27 @@ import BlogPost from '../../../components/BlogPost.astro';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
-  const uniqueTags = [...new Set(allPosts.map((post: any) => post.data.sections).flat())];
+  allPosts.sort((a, b) => {
+    const dateA = new Date(a.data.pubDate).valueOf();
+    const dateB = new Date(b.data.pubDate).valueOf();
+    return dateB - dateA;
+  });
+  const uniqueSections = [...new Set(allPosts.map((post) => post.data.sections).filter(Boolean).flat())];
 
-return uniqueTags.map((section) => {
-  const filteredPosts = allPosts.filter((post: any) => post.data.sections.includes(section));
+return uniqueSections.map((section) => {
+  const filteredPosts = allPosts.filter((post) => post.data.sections?.includes(section));
   return {
-    params: { section },
-    props: { posts: filteredPosts },
+    params: { section: String(section).toLowerCase().replace(/\s+/g, '-') },
+    props: { posts: filteredPosts, displaySection: section },
   };
 });
 }
 
-const { section } = Astro.params;
-const { posts } = Astro.props;
+const { posts, displaySection } = Astro.props;
 ---
-<PageLayout title={`Section: ${section} - Thamara Kandabada`}>
-  <h1>Section: <em>{section}</em></h1>
+<PageLayout title={`Section: ${displaySection} - Thamara Kandabada`}>
+  <h1>Section: <em>{displaySection}</em></h1>
   <ul>
-  {posts.map((post: any) => <BlogPost url={`/notebook/${post.id}/`} title={post.data.title} />)}
+  {posts.map((post) => <BlogPost pubDate={post.data.pubDate} url={`/notebook/${post.id}/`} title={post.data.title} description={post.data.description} sections={post.data.sections} />)}
   </ul>
 </PageLayout>

@@ -7,7 +7,7 @@ imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Life"]
-topics: ["running", "exercise", "couch to 5k"]
+topics: ["Running", "Exercise", "Couch to 5k"]
 ---
 I’ve been on a bit of a running (and writing) hiatus. Before heading to Wales at the end of June, I had naively imagined I would run and write through the holiday, but neither happened. My [last post](/notebook/waiting-for-def-leppard) that I wrote while waiting for Def Leppard hinted at the desire to do them but the reality was quite different. There were things to see and miles to walk which consumed what energy I had and deterred me from running, and too many things going on to carve out any time for writing.
 
