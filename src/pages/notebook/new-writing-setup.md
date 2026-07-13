@@ -1,5 +1,5 @@
 ---
-layout: /src/layouts/BlogLayout.astro
+layout: /src/layouts/BlogLayoutNoImage.astro
 title: 'New writing setup'
 pubDate: 2026-06-08
 description: 'Hello markdown'

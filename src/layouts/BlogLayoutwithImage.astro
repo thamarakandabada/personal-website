@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { Picture } from 'astro:assets';
 import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from "@vercel/speed-insights/astro";
 import Navigation from "../components/TopNavigation.astro";
@@ -20,19 +21,26 @@ const { frontmatter } = Astro.props;
 	
 <body>	
 <Navigation />
-      <div class="blog-header">
+    <div class="blog-header">
 	  <p><span class="blog-category">In <a href="#">{frontmatter.sections}</a></span>|<span class="blog-date">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
       <h1 class="blog-title">{frontmatter.title}</h1>
 	  <p class="blog-description">{frontmatter.description}</p>
 	  <p class="blog-author">by {frontmatter.author}</p>
+    </div>
 
-	    <div class="blog-hero-image">
-        </div>
-      </div>
-	<div class="page-content">
+	<div class="blog-content">
+	  <div class="blog-image">
+	  <figure class="blog-hero-image">
+      <Picture
+        src={frontmatter.imageUrl} alt={frontmatter.imageAlt} width="1480" height="1080"
+        formats={['avif', 'webp']}
+      />
+      <figcaption>{frontmatter.imageCaption}</figcaption>
+      </figure>
+	  </div>
       <slot />
 	
-	<div class="topics-list">
+    	<div class="topics-list">
 		<ul>
 		<li><strong>Topics:</strong></li>
 		{frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${topic}`}>{topic}</a></li>)}

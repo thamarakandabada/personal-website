@@ -15,7 +15,7 @@ const pageTitle = "Style - Thamara Kandabada";
     <p>While this website is designed to be fully responsive using media queries, it is best viewed on desktop.</p>
 
     <h2>Colour palette</h2>
-    <p>This site gives you the option to switch between light and dark modes by using the toggle on the top navigation menu. All elements are dynamically repainted in the following colour schemes. No elements use harcoded colour values.</p>
+    <p>When you visit this site, your browser with default to light or dark mode based on your system settings by using client-side JavaScript. The site gives you the option to switch between modes by using the toggle on the top navigation menu. All elements are dynamically repainted in the following colour schemes. No elements use harcoded colour values.</p>
 
     <div class="colour-palette-grid">
       <div>
@@ -23,7 +23,7 @@ const pageTitle = "Style - Thamara Kandabada";
           <div class="colours-grid">
             <div>
               <div class="colour-box-bg-p"></div>
-              <p><strong>Primary background</strong> #f8f6f1</p>
+              <p><strong>Primary background</strong> #f6f1e6</p>
             </div>
             <div>
               <div class="colour-box-bg-s"></div>
@@ -158,7 +158,7 @@ const pageTitle = "Style - Thamara Kandabada";
     </div>
   </div>
 
-  <p>All text, except blog post titles, are left-aligned. Blog post titles are centre aligned-with a background set in the secondary background colour, on which the hero image (if available) overlaps with a <Code code={`-180px`} inline /> vertical spacing. See an example <a href="">here</a>.</p>
+  <p>All text, except blog post titles, are left-aligned. Blog post titles are centre aligned-with a background set in the secondary background colour, on which the hero image (if available) overlaps with a <Code code={`-15rem`} inline /> vertical spacing. See an example <a href="/notebook/gehenu-lamai">here</a>.</p>
 
   <h2>Images</h2>
   <p>All images are served in AVIF with fallback to WebP, with a <Code code={`4px`} inline /> border radius and have alt text. Captions, when used, are right aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour. Hyperlinks in the caption have no text decoration. See example below.</p>
@@ -170,6 +170,29 @@ const pageTitle = "Style - Thamara Kandabada";
   <figcaption>Gothmog, Lord of the Balrogs, riding a dragon. <a href="https://commons.wikimedia.org/wiki/File:GOTHMOG-1_(detail).jpg" target="_blank">Tttom</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>, via Wikimedia Commons</figcaption>
   </figure>
 
+  <h2>Tables</h2>
+  <p>Tables have a <Code code={`1px`} inline /> thick solid border set in the border colour with no border radius. The background of the header row is styled in the secondary background colour, while other rows have a transparent background. All text is left-aligned and vertically aligned to the top.</p>
+  <p>See and example below.</p>
+  <h3>Kings of Gondor</h3>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Reign</th>
+    </tr>
+    <tr>
+      <td>Elendil</td>
+      <td>Second Age 3320 – Second Age 3441</td>
+    </tr>
+    <tr>
+      <td>Anárion</td>
+      <td>Second Age 3320 – Second Age 3340</td>
+    </tr>
+    <tr>
+      <td>Isildur</td>
+      <td>Second Age 3320 – Third Age 2</td>
+    </tr>
+  </table>
+  
   <h2>Other components</h2>
   <p>Grid elements have a <Code code={`1px`} inline /> thick solid border set in the border colour, with a <Code code={`4px`} inline /> border radius. The background is styled in the tertiary background colour. If the grid element is hyperlinked, the border transitions to the accent colour on hover.</p>
   
@@ -195,6 +218,6 @@ const pageTitle = "Style - Thamara Kandabada";
   </div>
 
   <h2>Currently not in use</h2>
-  <p>I'm currently not using tables, accordions, and definition lists within this website.</p>
+  <p>I'm currently not using accordions and definition lists within this website.</p>
   </body>
 </PageLayout>

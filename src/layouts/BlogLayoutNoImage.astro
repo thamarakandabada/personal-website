@@ -1,0 +1,41 @@
+---
+import "../styles/global.css";
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from "@vercel/speed-insights/astro";
+import Navigation from "../components/TopNavigation.astro";
+import GlobalFooter from "../components/GlobalFooter.astro";
+const { frontmatter } = Astro.props;
+---
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/tk.png" />
+	<link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
+	<meta name="generator" content={Astro.generator} />
+    <Analytics/>
+    <SpeedInsights/>
+	<title>{frontmatter.title}</title>
+</head>
+	
+<body>	
+<Navigation />
+    <div class="blog-header-no-image">
+	  <p><span class="blog-category">In <a href="#">{frontmatter.sections}</a></span>|<span class="blog-date">{frontmatter.pubDate.toString().slice(0,10)}</span></p>
+      <h1 class="blog-title">{frontmatter.title}</h1>
+	  <p class="blog-description">{frontmatter.description}</p>
+	  <p class="blog-author">by {frontmatter.author}</p>
+    </div>
+
+	<div class="blog-content">
+      <slot />
+	
+    	<div class="topics-list">
+		<ul>
+		<li><strong>Topics:</strong></li>
+		{frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${topic}`}>{topic}</a></li>)}
+		</ul>
+	</div>
+    </div>
+	<GlobalFooter />
+</body>

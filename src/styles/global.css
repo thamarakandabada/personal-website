@@ -138,7 +138,6 @@ nav {
     text-align: center;
 }
 
-
 .footer-quote {
     font-style: italic;
     font-size: 1.5rem;
@@ -318,6 +317,7 @@ tr {
 td, th {
     padding: 1rem;
     border-right: 1px solid var(--border-color);
+    vertical-align: top;
 }
 
 th {
@@ -428,7 +428,7 @@ Page elements
 }
 
 .colour-box-bg-p {
-    background-color: #F8F6F1;
+    background-color: #f6f1e6;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     width: auto;
@@ -650,7 +650,7 @@ Media queries
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)  {
-    .page-content, nav, .footer-content {
+    .page-content, nav, .footer-content, .blog-content {
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -737,7 +737,7 @@ Media queries
         font-size: 1.2rem;
     }
 
-    h6, p, li {
+    h6, p, li, table {
         font-size: 1.1rem;
     }
 
@@ -748,7 +748,7 @@ Media queries
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    .page-content, nav, .footer-content {
+    .page-content, nav, .footer-content, .blog-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -832,7 +832,7 @@ Media queries
         font-size: 1.2rem;
     }
 
-    h6, p, li {
+    h6, p, li, table {
         font-size: 1.1rem;
     }
 
@@ -843,7 +843,7 @@ Media queries
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .page-content, nav, .footer-content {
+    .page-content, nav, .footer-content, .blog-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -890,7 +890,7 @@ Media queries
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .page-content, nav, .footer-content {
+    .page-content, nav, .footer-content, .blog-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -910,7 +910,7 @@ Media queries
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1000px) {
-    .page-content, nav, .footer-content {
+    .page-content, nav, .footer-content, .blog-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -955,29 +955,40 @@ Blog
 -----
 */
 
-.page-content {
-    margin-top: 4rem;
+.blog-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 3rem;
 }
 
-.blog-header {
+.blog-header {  
     background-color: var(--bg-secondary);
     margin: 0;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0 15rem;
 }
 
-.blog-header h1, .blog-header p {
+.blog-header-no-image {
+    background-color: var(--bg-secondary);
+    margin: 0;
+    padding: 3rem 0 3rem;
+}
+
+.blog-header h1, .blog-header p, .blog-header-no-image h1, .blog-header-no-image p {
     max-width: 1024px;
     margin: 0 auto;
     text-align: center;
 }
 
-.blog-category, .blog-date{
+.blog-category, .blog-date {
     padding: 1rem;
 }
 
-.blog-description{
+.blog-description { 
     padding: 1rem;
     font-style: italic;
     font-size: 1.5rem;
+}
+
+.blog-hero-image {
+    margin: -15rem 0 2rem 0;
 }

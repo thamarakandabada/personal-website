@@ -1,5 +1,5 @@
 ---
-layout: /src/layouts/BlogLayout.astro
+layout: /src/layouts/BlogLayoutNoImage.astro
 title: 'Couch to 5K: Week 6'
 pubDate: 2026-06-07
 description: 'Can I call myself a runner now?'
