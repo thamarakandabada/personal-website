@@ -1,7 +1,7 @@
 ---
 title: 'Couch to 5K: Week 9'
 pubDate: 2026-07-11
-description: 'That'
+description: 'That''s it, I''m a runner now!'
 author: 'Thamara Kandabada'
 imageUrl: ''
 imageAlt: ''

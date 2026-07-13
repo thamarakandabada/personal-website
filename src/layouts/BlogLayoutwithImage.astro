@@ -22,7 +22,7 @@ const { frontmatter } = Astro.props;
 <body>	
 <Navigation />
     <div class="blog-header">
-	  <p><span class="blog-category">In <a href={`/notebook/sections/${frontmatter.sections}`}>{frontmatter.sections}</a></span>|<span class="blog-date">{frontmatter.pubDate.toString().slice(0,15)}</span></p>
+	  <p><span class="blog-date">{frontmatter.pubDate.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</span>//<span class="blog-category">In <a href={`/notebook/sections/${frontmatter.sections}`}>{frontmatter.sections}</a></span></p>
       <h1 class="blog-title">{frontmatter.title}</h1>
 	  <p class="blog-description">{frontmatter.description}</p>
 	  <p class="blog-author">by {frontmatter.author}</p>
@@ -32,8 +32,9 @@ const { frontmatter } = Astro.props;
 	  <div class="blog-image">
 	  <figure class="blog-hero-image">
       <Picture
-        src={frontmatter.imageUrl} alt={frontmatter.imageAlt} width="1480" height="1080"
-        formats={['avif', 'webp']}
+        src={frontmatter.imageUrl}
+		formats={['avif', 'webp']}
+		alt={frontmatter.imageAlt} width="1480" height="1080"
       />
       <figcaption>{frontmatter.imageCaption}</figcaption>
       </figure>

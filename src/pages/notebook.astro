@@ -4,6 +4,7 @@ import PageLayout from '../layouts/PageLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
 
 const allPosts = await getCollection("blog");
+const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
 const topics = [...new Set(allPosts.map((post: any) => post.data.topics).flat())];
 const pageTitle = "Notebook - Thamara Kandabada";
 ---
@@ -17,7 +18,7 @@ const pageTitle = "Notebook - Thamara Kandabada";
       <div>
         <h2>Latest Posts</h2>
           <ul class="notebook-post-list">
-            {allPosts.map((post: any) => <BlogPost pubDate={post.data.pubDate} url={`/notebook/${post.id}/`} title={post.data.title} description={post.data.description} sections={post.data.sections} />)}
+            {sortedPosts.map((post: any) => <BlogPost pubDate={post.data.pubDate} url={`/notebook/${post.id}/`} title={post.data.title} description={post.data.description} sections={post.data.sections} />)}
           </ul>
        </div>
 

@@ -1040,12 +1040,16 @@ Blog
 }
 
 .notebook-post-list-item {
-    margin-bottom: 3rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
-    flex-direction: row;
-    column-gap: 2.5rem;
+    border-top: 1px solid var(--border-color);
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 0.175fr 0.825fr;
+    column-gap: 2rem;
+}
+
+.notebook-post-list-item:first-child {
+    border: none;
+    padding-top: 0.5rem;
 }
 
 .notebook-post-list-item p {
@@ -1071,7 +1075,7 @@ Blog
     font-style: italic;
 }
 
-.filed-under {
+.filed-under, .notebook-post-date {
     color: var(--text-secondary);
     font-size: 1rem;
 }

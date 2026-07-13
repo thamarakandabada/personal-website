@@ -3,7 +3,7 @@ title: 'Waiting for Def Leppard'
 pubDate: 2026-06-26
 description: 'Another pre-gig dispatch'
 author: 'Thamara Kandabada'
-imageUrl: '/src/assets/images/notebook/waiting-for-def-leppard/371DC28C-9246-42EC-A86D-21485C14ECE5_1_105_c.jpeg'
+imageUrl: '../assets/images/notebook/waiting-for-def-leppard/371DC28C-9246-42EC-A86D-21485C14ECE5_1_105_c.jpeg'
 imageAlt: 'The stage at Belsonic being prepared by the road crews of Extreme an Def Leppard'
 imageCaption: 'I like to get very close to the stage so I can examine all the gear'
 sections: ["Everything Else"]
