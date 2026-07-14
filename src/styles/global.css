@@ -686,7 +686,7 @@ Media queries
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)  {
-    .page-content, nav, .footer-content, .blog-content {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p {
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -784,7 +784,7 @@ Media queries
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    .page-content, nav, .footer-content, .blog-content {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -879,7 +879,7 @@ Media queries
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .page-content, nav, .footer-content, .blog-content {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -926,7 +926,7 @@ Media queries
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .page-content, nav, .footer-content, .blog-content {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -946,7 +946,7 @@ Media queries
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1000px) {
-    .page-content, nav, .footer-content, .blog-content {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -1004,13 +1004,13 @@ Blog
 
 .blog-header {  
     background-color: var(--bg-secondary);
-    margin: 0;
+    margin: 0 auto;
     padding: 3rem 0 15rem;
 }
 
 .blog-header-no-image {
     background-color: var(--bg-secondary);
-    margin: 0;
+    margin: 0 auto;
     padding: 3rem 0 3rem;
 }
 
