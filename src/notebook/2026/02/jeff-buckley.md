@@ -1,13 +1,13 @@
 ---
-title: 'Styling the new website'
-pubDate: 2026-06-09
-description: 'Another pre-gig dispatch'
+title: 'Jeff Buckley'
+pubDate: 2026-02-16
+description: 'Some thoughts swirling around in my head after watching the new documentary'
 author: 'Thamara Kandabada'
 imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Everything Else"]
-topics: ["CSS", "Design", "JavaScript", "The Great Astro Migration of 2026","Web Design"]
+topics: ["Music", "Jeff Buckley", "Documentary", "Film"]
 ---
 
 There are two kinds of people in the world:
@@ -26,4 +26,8 @@ I’ve sung the praises of this album ever since I first heard it, and will cont
 
 Grab the best pair of headphones or speakers you can find (which obviously rules out any Bluetooth device), find a copy of the album ([Apple Music has a lossless version](https://music.apple.com/gb/album/live-at-sin-%C3%A9-legacy-edition-audio-version/309064121)), turn off your notifications, and spend 3 hours in his presence. Sway gently to the dynamism and vulnerability in his voice. Marvel at his range as he pays homage to Billie Holliday, Nina Simone, Nusrat Fateh Ali Kahn, Bob Dylan, Edith Piaf, and Leonard Cohen in a single evening and make it look effortless. Laugh when he makes a corny joke (he’s just like us mere mortals!). Soak in the reverb. Worship at his altar. Miss him terribly. And be grateful for his light, his power, and his music.
 
+<div class="post-footer">
+
 My original thoughts were posted on [Letterboxd](https://letterboxd.com/thamarak/film/its-never-over-jeff-buckley/).
+
+</div>

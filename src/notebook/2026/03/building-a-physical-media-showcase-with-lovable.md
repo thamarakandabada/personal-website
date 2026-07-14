@@ -1,13 +1,13 @@
 ---
-title: 'Styling the new website'
-pubDate: 2026-06-09
-description: 'Another pre-gig dispatch'
+title: 'Building a physical media showcase with Lovable'
+pubDate: 2026-03-04
+description: 'How I vibe-coded a simple catalogue app'
 author: 'Thamara Kandabada'
-imageUrl: ''
-imageAlt: ''
+imageUrl: 'images/Screenshot-2026-03-04-at-20.00.49-scaled.png'
+imageAlt: 'A screenshot of my physical media catalogue app showing its front page listing my collection of discs'
 imageCaption: ''
 sections: ["Everything Else"]
-topics: ["CSS", "Design", "JavaScript", "The Great Astro Migration of 2026","Web Design"]
+topics: ["Vibe-coding", "Web Apps", "AI", "Physical Media", "Open Source"]
 ---
 
 For the longest time, my Blu-ray collection was catalogued on a spreadsheet. Compared to heavy-hitters on [r/4kbluray](https://www.reddit.com/r/4kbluray/) and other corners of the physical media loving internet, my collection is unremarkably small (around 250 titles at the time of writing), and my spreadsheet served its purpose. It was tedious to manually input data into it every time I bought something, but my purchases were few and far between, and it was manageable.
@@ -16,7 +16,7 @@ I could have happily used the spreadsheet for a while longer as my purchasing ha
 
 ## Planning
 
-Having used [Lovable](https://lovable.dev) to create a few simple apps to embed on my [/now](https://thamara.co.uk/now/) page, I was confident in my prompt mastery to take on a bigger project. I set my sights on creating a web-based app to host my media catalogue, and began with a list of basic needs.
+Having used [Lovable](https://lovable.dev) to create a few simple apps to embed on my [/now](/now/) page, I was confident in my prompt mastery to take on a bigger project. I set my sights on creating a web-based app to host my media catalogue, and began with a list of basic needs.
 
 I wanted the app to:
 
@@ -28,9 +28,7 @@ I wanted the app to:
 
 - have a Wishlist section that I could easily manage
 
-Over several days and close to 200 iterations, I built a simple, multi-page app tailored to my exact needs. I hosted it on the subdomain [physicalmedia.thamara.co.uk](https://physicalmedia.thamara.co.uk), and this is what it looks like.
-
-![A screenshot of the homepage of my physical media vault app](images/Screenshot-2026-03-04-at-20.00.49-scaled.png)
+Over several days and close to 200 iterations, I built a simple, multi-page app tailored to my exact needs. I hosted it on the subdomain [physicalmedia.thamara.co.uk](https://physicalmedia.thamara.co.uk).
 
 I'm documenting my motivations, thought process, and design minutiae here, in the unlikely event that another sod like me with too much time on their hands stumbles upon it and decides this may be of some use. At the end of the post, I have linked a GitHub repository which includes the source code of this project, which you can adapt and make your own.
 
@@ -42,7 +40,7 @@ The font used throughout the app is **Rig Sans**, the same one you're reading th
 
 Here is a detailed breakdown of the colour palette used throughout the app.
 
-### Colour Palette[](https://github.com/thamarakandabada/physicalmediavault#colour-palette)
+### [Colour Palette](https://github.com/thamarakandabada/physicalmediavault#colour-palette)
 
 | Role | Hex | HSL | Usage |
 | --- | --- | --- | --- |
@@ -54,7 +52,7 @@ Here is a detailed breakdown of the colour palette used throughout the app.
 | **Muted Foreground** | `#737A80` | `210 8% 50%` | Secondary / placeholder text |
 | **Border** | `#262C33` | `210 12% 17%` | Borders and dividers |
 
-#### Accent Colours[](https://github.com/thamarakandabada/physicalmediavault#accent-colours)
+#### [Accent Colours](https://github.com/thamarakandabada/physicalmediavault#accent-colours)
 
 | Role | Hex | HSL | Usage |
 | --- | --- | --- | --- |
@@ -63,7 +61,7 @@ Here is a detailed breakdown of the colour palette used throughout the app.
 | **Orange** | `#FF8000` | `30 100% 50%` | Secondary accent, warnings |
 | **Destructive** | `#E03E3E` | `0 72% 50%` | Delete actions, errors |
 
-#### Media Type Badges[](https://github.com/thamarakandabada/physicalmediavault#media-type-badges)
+#### [Media Type Badges](https://github.com/thamarakandabada/physicalmediavault#media-type-badges)
 
 | Type | Hex | HSL |
 | --- | --- | --- |
@@ -135,7 +133,7 @@ On my previous spreadsheet, I had set up a pivot table to sort all my Criterion 
 
 ## Vital statistics
 
-My friends know that I'm obsessed with quantifying everything. Why else would I [track every single film and TV episode I watch, catalogue every book I read, chase PlayStation trophies](https://thamara.co.uk/now/) and build things like this?
+My friends know that I'm obsessed with quantifying everything. Why else would I [track every single film and TV episode I watch, catalogue every book I read, chase PlayStation trophies](/now/) and build things like this?
 
 I took inspiration from Letterboxd for the stats section, too. The counting logic has been set to correct for duplicate metadata entries (e.g., on film collections, main title metadata is ignored and only nested title entries are counted.)
 
@@ -171,11 +169,13 @@ It was important for me to have a functional Wishlist tool, and I wanted this to
 
 I wanted to make the Wishlist view-only for all external visitors, with me retaining the ability to edit and manage it while logged in. See the comparison below:
 
-- The screenshot on the left of the slider shows what I see. I have the ability to add new titles to the list by simply pasting a link from a reputed retailer such as HMV. The new listing that is created includes a thumbnail, price, and a link to the retailer's e-commerce page. "Delete" and "Mark as done/purchased" buttons help me manage the list.
+- The first screenshot shows what I see. I have the ability to add new titles to the list by simply pasting a link from a reputed retailer such as HMV. The new listing that is created includes a thumbnail, price, and a link to the retailer's e-commerce page. "Delete" and "Mark as done/purchased" buttons help me manage the list.
 
-- The screenshot on the right of the slider shows what other visitors see. The list is still richly populated with metadata, but all the list management options are hidden.
+- The second screenshot shows what other visitors see. The list is still richly populated with metadata, but all the list management options are hidden.
 
-![](images/Screenshot-2026-03-04-at-21.40.20-scaled.png)![](images/Screenshot-2026-03-04-at-21.40.04-scaled.png)
+![A screenshot of the Wishlist showing my view when logged in](images/Screenshot-2026-03-04-at-21.40.20-scaled.png)
+
+![A screenshot of the Wishlit showing other visitors' view](images/Screenshot-2026-03-04-at-21.40.04-scaled.png)
 
 I've also implemented basic checks to:
 

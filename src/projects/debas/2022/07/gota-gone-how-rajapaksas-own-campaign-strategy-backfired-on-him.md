@@ -1,0 +1,63 @@
+---
+title: 'Gota gone: How Rajapaksa’s own campaign strategy backfired on him'
+pubDate: 2022-07-17
+author: 'Nimendra Mawalagedara'
+authorInfo: 'Nimendra Mawalagedara (she/her) is a Ph.D. Candidate in Political Science at Georgia State University.'
+authorPhotoUrl: 'images/WhatsApp-Image-2022-07-17-at-3.59.50-PM.jpeg'
+authorPhotoAlt: 'Profile photo of Nimendra Mawalagedara'
+imageUrl: 'images/52040059520_791e3b412c_o-scaled.jpg'
+imageAlt: 'Protestors at the Galle Face Green in Colombo holding placards'
+imageCaption: '“Sri Lanka Protests! #GoHomeGota2022 #SriLankaEconomicCrisis” is copyright (c) 2022 Nazly Ahmed and made available under a Attribution-Noncommercial-Share Alike 2.0 license'
+disclaimer: 'The opinions expressed in this article are those of the author. They do not reflect the opinions or views of Debas. We welcome authors to submit responses to the arguments made in this article by sending in their pitches to debasdialogues [at] gmail [dot] com. Accepted submissions will be paid a standard honorarium.'
+language: 'English'
+---
+
+Change the political system. Get rid of corrupt politicians. Rewrite the Constitution. The president and prime minister must resign immediately. These are some of the demands we heard amidst the widespread protests in Sri Lanka since earlier this year. In 2019, the hope inspired by _Vistas of Prosperity and Splendour_, Gotabaya Rajapaksa’s election manifesto, drew voters to the polls. In 2022, a fervent determination to overturn the mandate given to (now former) President Rajapaksa in 2019 drew the masses onto the streets. 
+
+The drastic change in the mood of the country, from hope to anger, may foreshadow political change, even systemic change. There is no doubt that Sri Lanka is at a crossroads. But what brought Sri Lanka to this pivotal moment?  
+
+### First to flee
+
+Sri Lanka’s political institutions have withstood several civil conflicts, a coup attempt, and a constitutional coup. In particular, the office of the president has thus far remained powerful and politically stable. Of course, there have been unpopular presidents. But a president has never had to resign in disgrace. One president was assassinated by an LTTE suicide bomber, and another had a close encounter with one a few years later. But no Sri Lankan president has ever had to flee in fear of the very same people who gave them the mandate to govern.
+
+The dramatic events that led President Gotabaya Rajapaksa to flee his country and resign from his presidency overshadow his landslide election victory in 2019. But this victory, more specifically the successful campaign behind it, offers a compelling explanation of how his presidency ended and what laid the groundwork for the protests that led to his downfall.
+
+### An “anti-establishment” populist campaign
+
+Gotabaya Rajapaksa’s election victory left analysts asking what aspects of his campaign resonated so profoundly with voters, that a man who had never held political office could get elected to the most powerful office in the country. Most answers to this question note that his central campaign message successfully invoked and utilised ethno-religious nationalism and even outright racism. 
+
+However, ethno-religious nationalism and racism are common political platforms in Sri Lankan politics. It does not fully explain why Rajapaksa’s message stood out and resonated with 6.9 million voters. Another possible explanation is his campaign strategy: the use of anti-establishment rhetoric. Rajapaksa’s campaign skilfully used anti-establishment rhetoric to elicit buy-in from the voters, particularly from outside the Rajapaksa base. This strategy made his presidential campaign vastly different from the competition.
+
+What are anti-establishment views? Anti-establishment views are not a political ideology, and do not embody specific policy prescriptions. Quite simply, anti-establishment views oppose the “establishment”, a term which can include political elite, political institutions, the constitution, political and economic systems, corporations, and the media. Anti-establishment rhetoric is a form of communication that conveys anti-establishment views.
+
+How a party or political candidate identifies and defines “the establishment” can vary and often depends on the political context and target voter base. When tailored to fit the political climate of a country, anti-establishment rhetoric has proven to be an effective campaigning strategy for political parties and candidates. It has become increasingly common in North American and European politics. Once used primarily by fringe groups, it is now used by some mainstream parties such as the Republican Party in the United States, the Five Star Movement in Italy, the New Era/Unity party in Latvia, and the Bharatiya Janata Party (BJP) in India.  
+
+Anti-establishment rhetoric is an enduring feature of the Sri Lankan political landscape and is often the preferred strategy of the far-left parties. However, following the global trend, some aspects of anti-establishment views have started to seep into Sri Lanka’s mainstream political parties in recent years. In 2014, the coalition led by the United National Party (UNP) launched a presidential campaign that used anti-elite rhetoric. As part of the opposition, the coalition portrayed members of the government as obscenely wealthy and corrupt. However, their campaign stopped short of using anti-establishment rhetoric against political institutions, the political system, or democracy. Instead, their campaign’s central message was that corrupt politicians are preventing the political and legal system from functioning effectively – they did not direct their criticism at the establishment but rather at those who occupied it. 
+
+### “Moral panics” and post-democratic politics
+
+By 2019, Sri Lanka’s political landscape had changed drastically. On Easter Sunday 2019,  a terrorist organisation with alleged links to ISIS carried out a series of coordinated suicide bombings across the country. This incited fear that terrorism would resurface in post-war Sri Lanka. As a result, Gotabaya Rajapaksa found himself in an ideal position to challenge the governing coalition. Directing the blame onto the government, the “weakened” intelligence services, and the Muslim community, the campaign used anti-establishment rhetoric that spoke to people’s fears and transformed it into a powerful campaign strategy. 
+
+Gotabaya Rajapaksa’s campaign questioned the legitimacy of establishment politicians, political institutions, and the rule of law. It portrayed the establishment as a corrupt, broken, and dysfunctional machinery that worked against the people and the state. Rajapaksa presented himself as the untainted political outsider who could bring ‘prosperity and splendour’ to Sri Lanka and her people. His campaign strategy encouraged and normalised anti-establishment sentiments, turning the public against political institutions, the law, and even the constitution. 
+
+The campaign impressed upon the people the many restraints of democracy that endangered the well-being of the people, and the candidate presented himself as a strong leader who could do what democracy could not. His campaign inspired anger toward the establishment and offered hope that he alone could provide a working alternative to the broken establishment. The problem is not that he could not fix what he claimed was broken, but that he successfully convinced the people that Sri Lanka’s democracy and political system were truly broken beyond repair. By doing so, he inadvertently created a platform for future protestors to rally around.
+
+### Crisis and promises unkept
+
+As Sri Lanka’s economic crisis deepened, however, people became disillusioned with the president’s ability to manage the crisis. When the man who promised to save the government from itself and the Sri Lankan people from corrupt elite failed to deliver, the hope he inspired subsided and left people angry and discontent. In Rajapaksa’s presidential campaign there were instructions on where the people should direct their anger: towards the establishment. Therefore, as President Rajapaksa blundered from one mistake to the next, people directed their anger not just toward him but towards the entire political system, including democracy itself.
+
+Rooted in anti-establishment sentiments, strong negative attitudes toward Sri Lanka’s political system can persist well after Gotabaya Rajapaksa’s resignation. Sri Lanka’s political institutions have been tested in the past and have endured. However, the events that transpired this year are unique because they were driven by political attitudes new to mainstream politics. 
+
+There is a clear anti-establishment tenour to the protest movement. The occupation of the President’s office, the Prime Minister’s office, and the attempted occupation of Parliament indicate that the protestors’ anger goes beyond their discontent with the president and his government. The legitimacy of the entire political system has been called into question. The protestors call for change, and yet there is no blueprint of what successful change would entail. Although protests are a healthy sign of democracy and prompt response to public appeals is a vital ingredient of liberal democratic politics, continued hasty decision-making in response to public unrest can be destabilising.
+
+### Gota gone: What next?
+
+Many analysts herald Gotabaya Rajapaksa’s resignation as a significant victory for the protests. However, as the dust settles, important unanswered questions emerge. Viewing the overturning of the popular mandate given to Sri Lanka’s president as a success hinges on the assumption that it has the consent of a majority of Sri Lankans. Indeed, the thousands of people who poured into the capital city on July 09 signify a shift in the country’s mood. 
+
+However, Sri Lanka has a deeply divided society with ethnic, political, and economic cleavages that separate Sri Lankans into groups that are sometimes antagonistic. Given these divisions, how representative of public opinion was the call for the (former) president’s immediate resignation? In truth, we will never know because no reliable public opinion surveys have been conducted on the subject. Even if polling had taken place, given the highly tense political climate in the country, response bias would have interfered with the reliability of such a survey. 
+
+In other words, short of holding an election, it is impossible to determine what a majority of Sri Lankans truly want. It also raises concerns about whether Rajapaksa’s resignation might set precedence for overturning the popular mandate in response to protests. And if so, can we ensure that all groups in society have an equal say next time? And can we prevent it from venturing into the territory of the tyranny of the majority? The answer is that we cannot guarantee that. That is why democracies use elections, election laws, and a constitution to provide a consistent framework for determining how individuals are elected to political office. However, if these mechanisms continue to be perceived as illegitimate and corrupt, there will continue to be more attempts to circumvent them in the future. 
+
+A fine example of this is post-Arab Spring Egypt. The primary goal of Egypt’s Arab Spring was to remove Hosni Mubarak from power and establish democracy. However, Egypt found that ousting a dictator was relatively easier than establishing a functional democracy. Among the many challenges were the attempts by the military to usurp power in the interim government, the public discontent with the newly-elected president, and the military intervening to remove the democratically-elected president in response to public unrest. 
+
+To be clear, Sri Lanka and Egypt are vastly different. Sri Lanka is largely and arguably a consolidated democracy with strong political institutions. The country has laws which determine how leaders are elected and guide the process of peaceful and stable transfer of power. It is the strength of these institutions that safeguard Sri Lanka’s political stability and democracy. However, anti-establishment, populist rhetoric is proving to be a valuable strategy for mainstream parties in government and opposition. If mainstream political parties continue to use anti-establishment rhetoric, it will further delegitimise Sri Lanka’s democracy, political institutions, and political system in the eyes of the people. By doing so, political parties risk not only the country’s political stability but, like former President Gotabaya Rajapaksa, their own political future.

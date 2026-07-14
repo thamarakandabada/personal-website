@@ -1,13 +1,13 @@
 ---
-title: 'Styling the new website'
-pubDate: 2026-06-09
-description: 'Another pre-gig dispatch'
+title: 'Armoured Transport'
+pubDate: 2026-02-09
+description: 'Ready to be deployed at an ice planet nearby'
 author: 'Thamara Kandabada'
 imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Everything Else"]
-topics: ["CSS", "Design", "JavaScript", "The Great Astro Migration of 2026","Web Design"]
+topics: ["Lego", "Recreation", "Hobbies"]
 ---
 
 Built our first Lego set this weekend.
@@ -16,4 +16,4 @@ An Imperial AT-AT. Complete with Luke's snowspeeder and the tow cable around the
 
 My wife helped. She is now demanding that we buy some Harry Potter sets. This could be the start of a collection.
 
-![The AT-AT Lego set](images/WhatsApp-Image-2026-02-09-at-11.18.01-AM-768x1024.jpeg)
+![The AT-AT Lego build, posed in front of its box](images/WhatsApp-Image-2026-02-09-at-11.18.01-AM-768x1024.jpeg)

@@ -1,14 +1,16 @@
 ---
-title: "Counting and Cracking"
-date: 2022-10-08
-coverImage: "da900c51-ee7f-4282-bcae-24178987cc61.jpg"
+title: 'Counting and Cracking'
+pubDate: 2022-10-08
+author: 'Antonythasan Jesuthasan'
+authorInfo: 'Antonythasan Jesuthasan, also known by the pseudonym Shobasakthi, is a Sri Lankan Tamil author and actor. He is the lead actor of “Counting and Cracking”, performed at the Birmingham 2022 Festival, an epic drama which follows the journey of one Sri Lankan Australian family over four generations, from 1956 to 2004, as well as the tale of two countries: Sri Lankan post-independence and Australia as an immigrant nation.'
+authorPhotoUrl: 'images/WhatsApp-Image-2022-10-08-at-6.52.08-AM.jpeg'
+authorPhotoAlt: 'Profile Antonythasan Jesuthasan'
+imageUrl: 'images/da900c51-ee7f-4282-bcae-24178987cc61.jpg'
+imageAlt: 'A scene from the play where a woman, dressed in a white and orange saree, is talking to a woman dressed in a bright red saree while a man in a cream top looks on'
+imageCaption: 'Photo courtesy of Belvoir St Theatre'
+disclaimer: 'The opinions expressed in this article are those of the author. They do not reflect the opinions or views of Debas. We welcome authors to submit responses to the arguments made in this article by sending in their pitches to debasdialogues [at] gmail [dot] com. Accepted submissions will be paid a standard honorarium.'
+language: 'Tamil'
 ---
-
-![A scene from the play, "Counting and Cracking"](images/da900c51-ee7f-4282-bcae-24178987cc61.jpg)
-
-**By Antonythasan Jesuthasan**
-
-* * *
 
 என்னுடைய தாய் நாட்டின் துயரக் கதையையும், இலங்கை சிங்கள இனவாத ஆட்சியாளர்களாலும் தமிழ்ப் புலிகளாலும் நிகழ்த்தப்பட்ட கொடுமைகளையும் வெளிநாட்டு மேடையொன்றில் நின்று நான் சொல்வதில் உண்மையில் பெருமைப்படவோ, மகிழ்ச்சியடையவோ ஏதுமில்லை. எனினும் ஒரு கலைஞனாக அது என்னுடைய துயரார்ர்ந்த கடமையாக இருக்கிறது. என் வாழ்நாள் முழுவதும் ஒரு எழுத்தாளனாகவும் நடிகனாவும் நான் இலங்கையின் கண்ணீரையும் இரத்தத்தையும் இறந்த உடல்களையுமே மக்கள் முன் வைத்துவருகின்றேன். “In the dark times, Will there also be singing? Yes, there will also be singing, About the dark times” என்னும் Bertolt Brecht இனுடைய வார்த்தைகள் இதன் மூலமாக நிறைவேற்றப்படுகின்றது.
 
@@ -35,8 +37,6 @@ coverImage: "da900c51-ee7f-4282-bcae-24178987cc61.jpg"
 
 நாடகம் நிகழ்ந்த இடங்களிலெல்லாம் பார்வையாளர்களில் முக்கால்வாசிப் பேர் இலங்கையர் அல்லாத வெளிநாட்டவரே. எனினும் அந்தந்த நகரங்களில் குடியேறியிருக்கும் இலங்கை மக்களும் காட்சிகளிற்கு பெருமளவில் வந்து தங்களுடைய ஆதரவைத் தெரிவித்தார்கள். ஒவ்வொரு காட்சியும் முடியும் போது பார்வையாளர்கள் தங்களது கருத்துகளை எங்களுடன் பகிர்ந்துகொண்டார்கள். குறிப்பாக வெளிநாட்டவர்களிற்கு இலங்கை இன முரண்பாட்டின் வரலாற்றையும் யுத்தத்தின் பாதிப்புகளையும் புரிந்துகொள்வதற்கான தொடக்கக் குறுக்குவெட்டுச் சித்திரமாக இந்த நாடகம் அமைந்திருக்கிறது என்பது அவர்களது பேச்சிலிருந்து தெரிந்தது.
 
-> “சாதாரண மனிதர்கள் கஷ்டங்களினாலும் வலிகளினாலும் சொரியும் கண்ணீருக்கு முன்னால் இனவாத ஊளைக்கூச்சல்களிற்கு எந்தப் பெறுமதியுமில்லை என்பதை அரங்கிலிருந்த பார்வையாளர்களின் கண்ணீர் நிரூபித்தது.”
-
 நாடகத்தில் இலங்கை அரசு மீதும் சிங்களப் பேரினவாதத்தின் மீதும் கூர்மையான விமர்சனங்கள் நிறைந்திருந்தது போலவே மொண்ணைத் தமிழ்த் தேசியவாதம் பேசிய அரசியல் கட்சிகள் மீதும் தமிழ்ப் புலிகளின் மனிதவுரிமை மீறல்கள் மீதும் விமர்சனங்கள் வைக்கப்பட்டிருந்தன. ஆனால் இந்த விமர்சனங்கள் அனைத்துமே ஒரு தமிழ்க் குடும்பத்தின் நான்கு தலைமுறைகளின் உணர்ச்சிமயமான கதையைச் சொல்வதன் ஊடாகவே வெளிப்படுத்தப்பட்டன. தமிழ்–சிங்களம் எனக் கன்னை பிரித்து மோதிக்கொள்ளும் கேவலமான இனவாத அரசியல், அந்த ஒற்றைக் குடும்பத்தின் கதையால் அரங்கில் தோற்கடிக்கப்பட்டது என்றே நான் நம்புகிறேன். சாதாரண மனிதர்கள் க~;டங்களினாலும் வலிகளினாலும் சொரியும் கண்ணீருக்கு முன்னால் இனவாத ஊளைக்கூச்சல்களிற்கு எந்தப் பெறுமதியுமில்லை என்பதை அரங்கிலிருந்த பார்வையாளர்களின் கண்ணீர் நிரூபித்தது.
 
 இலங்கையில் சிங்களப் பேரினவாதத்தின் கொடூர முகத்தையும், ஒற்றை ஆட்சியின் வன்முறையையும், தமிழர்கள் மீது நிகழ்த்தப்பட்ட இனப்படுகொலைகளையும், பறிக்கப்பட்ட சிறுபான்மை இனங்களது உரிமைகளையும் குறித்த செய்திகளை அனைத்துலக மக்கள் முன்பு எடுத்துச் செல்வது பாதிக்கப்பட்ட மக்களதும் சனநாயகச் சக்திகளதும் நோக்கமாகவும் பகீரதப் பிரயத்தனமாகவும் இருக்கிறது. ஆனால் அனைத்துலக மக்கள் முன்னே ஒருதலைப்பட்சமாக வைக்கப்படும் எந்தச் செய்தியும் வதந்திக்கு நிகரானதாகவே கருதப்படும். இலங்கையில் பயங்கரவாதத்தையும் மனித உரிமை மீறல்களையும் நிகழ்த்திய – நிகழ்த்திக்கொண்டிருக்கும் அனைத்துத் தரப்பையும் நாம் கண்டித்து நம் பரப்புரையை முன்வைக்கும் போதுதான் அந்தப் பரப்புரை பக்கச் சார்பற்றதாகக் கருதப்பட்டுப் பரிசீலிக்கப்படும். தனிப்பட்ட முறையில் நம் ஆன்மாவிற்கும் அதுவே தார்மீகத் தைரியத்தை வழங்கி நம்மைத் தொடர்ச்சியான இயங்கு நிலையிலும் வைத்திருக்கும். ஆந்த வகையில் ‘கவுண்டிக் அன்ட் கிராக்கிங்’ நாடகம் நம்முடைய முக்கியமானதும் சரியானதுமான பரப்புரைக் கருவியாக இருக்கிறது.
@@ -44,19 +44,3 @@ coverImage: "da900c51-ee7f-4282-bcae-24178987cc61.jpg"
 ஒரு நாடகம் எவ்வளவு தூரத்திற்கு மக்களின் மனதில் சிந்தனையைத் தூண்டும், மாற்றங்களை ஏற்படுத்தும் வல்லமையுடையது? இளமையில் பார்த்த ‘அரிச்சந்திரா’ நாடகம் தனது சிந்தனையைத் தூண்டி தன்னைச் சத்தியத்தை நோக்கித் திருப்பியது எனக் காந்தியார் சொன்னதாக நாம் படித்திருக்கிறோம். என். கே. இரகுநாதனின் ‘கந்தன் கருணை’ நாடகமும் குழந்தை மா. சண்முகலிங்கத்தின் ‘மண் சுமந்த மேனியர்’ நாடகமும் மக்களிடையே ஏற்படுத்திய எழுச்சியை நாம் நேரிலேயே கண்டிருக்கிறோம். இலங்கையில் சாதியத்திற்கு எதிரான போராட்டத்தின் வரலாற்றையும் ஈழப் போராட்ட வரலாற்றையும் எழுதும்போது இந்த நாடகங்களைத் தவிர்த்துவிட்டு எழுத முடியாது.
 
 இந்த நாடகத்தை இலங்கைக்குக் கொண்டு செல்ல வேண்டுமென்பது நாடகக் குழுவினரின் கனவு. என்னுடைய சொந்த மக்களிடம் எங்களுடைய கடந்தகாலக் கதையையும் கண்ணீரையும் நேரடியாகப் பகிர்ந்துகொள்ள வேண்டும் என்பது என் கனவு. கனவுகள் மெய்ப்பட வேண்டும்!
-
-* * *
-
-![Profile photo of the author](images/WhatsApp-Image-2022-10-08-at-6.52.08-AM.jpeg)
-
-**Antonythasan Jesuthasan**
-
-Antonythasan Jesuthasan, also known by the pseudonym Shobasakthi, is a Sri Lankan Tamil author and actor. He is the lead actor of “Counting and Cracking”, performed at the Birmingham 2022 Festival, an epic drama which follows the journey of one Sri Lankan Australian family over four generations, from 1956 to 2004, as well as the tale of two countries: Sri Lankan post-independence and Australia as an immigrant nation.
-
-* * *
-
-The opinions expressed in this article are those of the author. They do not reflect the opinions or views of Debas.
-
-Cover Photo: Belvoir St Theatre
-
-**[← Back to archives](https://thamara.co.uk/debas/)**

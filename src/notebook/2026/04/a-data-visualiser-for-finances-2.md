@@ -1,18 +1,18 @@
 ---
-title: 'Styling the new website'
-pubDate: 2026-06-09
-description: 'Another pre-gig dispatch'
+title: 'A data visualiser for Finances 2'
+pubDate: 2026-04-13
+description: 'My second vibe-coding project'
 author: 'Thamara Kandabada'
-imageUrl: ''
-imageAlt: ''
+imageUrl: 'images/Screenshot-2026-04-13-at-23.51.16-scaled.png'
+imageAlt: 'A screenshot of my data visualisation app showing various dashboards populated with data'
 imageCaption: ''
 sections: ["Everything Else"]
-topics: ["CSS", "Design", "JavaScript", "The Great Astro Migration of 2026","Web Design"]
+topics: ["Vibe-coding", "Web Apps", "Data Visualisation", "Open Source","Personal Finance"]
 ---
 
 I have been continuing to use Lovable to make things for personal use. My second public project is a data visualiser, specifically, one that can be used with CSV exports from my personal finance app of choice, [Finances 2](https://hochgatterer.me/finances/). I've named it _Finviz_. Not the most imaginative name, but it gets the idea across.
 
-Just like [the first project](https://thamara.co.uk/building-a-physical-media-showcase-with-lovable/), this was made entirely using natural language prompts. And like the first project, this too is open source. You can find the GitHub repo [here](https://github.com/thamarakandabada/finviz). The app is designed to be a private, self-hosted tool. You own your data. The app lives in your server and is not accessible by anyone else.
+Just like [the first project](/notebook/2026/03/building-a-physical-media-showcase-with-lovable/), this was made entirely using natural language prompts. And like the first project, this too is open source. You can find the GitHub repo [here](https://github.com/thamarakandabada/finviz). The app is designed to be a private, self-hosted tool. You own your data. The app lives in your server and is not accessible by anyone else.
 
 I have used the export format from Finances 2 as standard. But the column mapping is customisable for anyone using different apps to adapt as they please.
 

@@ -1,0 +1,53 @@
+---
+title: 'Pulling the emergency brake: Politics of disincorporation and the fault lines of Sri Lanka’s political crisis'
+pubDate: 2022-07-22
+author: 'Kanishka Jayasuriya'
+authorInfo: 'Kanishka Jayasuriya is Professor of Politics and International Studies at Murdoch University.'
+authorPhotoUrl: 'images/WhatsApp-Image-2022-07-22-at-6.03.24-PM.jpeg'
+authorPhotoAlt: 'Profile photo of Kanishka Jayasuriya'
+imageUrl: 'images/FYO7WB4XEAIFqei.jpeg'
+imageAlt: 'A photo of the Sri Lankan president, Ranil Wickremesinghe, addressing the military with a megaphone'
+imageCaption: 'Photo courtesy of President’s Media Division'
+disclaimer: 'The opinions expressed in this article are those of the author. They do not reflect the opinions or views of Debas. We welcome authors to submit responses to the arguments made in this article by sending in their pitches to debasdialogues [at] gmail [dot] com. Accepted submissions will be paid a standard honorarium.'
+language: 'English'
+---
+
+The resignation of Gotabaya Rajapakse is an encouraging development – a testimony to perseverance and the mobilisation of the Janatha Aragalaya (People’s Struggle) movement. A striking illustration of Walter Benjamin’s point that  revolutions are an attempt by the passengers on the human train to “pull the  emergency brake”.
+
+But this is only a short-term fix for Sri Lanka. There is no constitutional or institutional fix to the current Sri Lankan crisis, such as the restriction of presidential powers or the removal of the executive presidency. It is a political crisis of authority and representation – or political disincorporation – whose explosive fault lines have been shaped by the decades-long process of neoliberal or market-oriented economic restructuring and authoritarian politics. The economic crisis has led these tectonic fault lines to erupt in a popular movement, shaking state institutions and the political establishment.
+
+### Neoliberal reforms of the ’80s
+
+These fractures have emerged over the decades since the neoliberal experimentation introduced by President J. R. Jayawardene, who was also responsible for the 1978 constitution that established the executive presidency. A constitution that was aimed at enhancing executive power and which sought to disable the capacity for mass mobilisation. Sri Lanka – after Chile – was a showcase of Southern neoliberalism and the poster child of international economic institutions and think tanks. Sure, this neoliberalism has never been static and its evolution has been shaped by constant political and economic failures. Indeed, a new phase of neoliberalism was evident after the civil war and the intensifying militarisation and ethnonationalist politics under the Rajapaksas.
+
+For this reason, arguments that the crisis can be sheeted home to democratic decline or institutional failure arguments must be met with robust scepticism. The point is that neoliberalism has been associated with authoritarian politics, emergency rule, and extra-judicial action  that have been normalised over the last three decades with two insurrections in the South and civil war in the North.
+
+So, what are these fault lines? 
+
+### Political disincorporation
+
+The first and pivotal set of fault lines relates to the draining away of the authority of the political establishment, as well as the capacity of the broader party system to link societal forces with the formal political system. Contrast the moribund nature of parliamentary politics, including the ineffectual parliamentary opposition, during the current crisis to the aragalaya’s vibrant, resilient, and brave protests outside parliament. The cross-ethnic and multi-class assembly – and predominantly – youthful members contrasted with ghost-like manoeuvrings within the parliament. The formal political process and the established political class – in full view during the election of the new president – has been drained of its authority. All the main contenders for the presidency in the recent parliamentary vote were associated with various aspects of emergency and authoritarian rule. It was no counter to the democratic energy on the foreshore.
+
+The problems run deeper. It is striking that formal political opposition has been ineffectual in its capacity to mobilise − let alone build – an alternative political project. The crisis has exposed the hollowing out of formal political institutions and mainstream political parties. It is the striking political disincorporation of citizens and collective movements from the mainstream political parties. This is a key feature of politics in neoliberal times and nowhere is this more striking than in Sri Lanka. In the last elections, two of the nation’s oldest parties – the United National Party and the Sri Lanka Freedom Party were decimated. Yet, Ranil Wickremesinghe, with one seat in parliament, is now the erstwhile president. The so-called “old left” parties are a hollow shell and mere appendages of the ethnonationalist Sri Lanka Podujana Party (SLPP). The main opposition and its leader – who swim in the same swamp of nationalism – have failed to capitalise on the current crisis.
+
+The major parties now compete for the spoils of state office, and are often the creations of executive power  – like the Rajapakse political vehicle, the SLPP. True, the executive presidency has been central to this hollowing out of formal political institutions, but even more pivotal has been the fact that neoliberal policies have diminished any ideological difference. There is little or no connection to broader social forces or collective movements – a fact accentuated by the repression and defeat of the labour and old left parties since the 1980s.The challenge that this disincorporation poses is that no element within the political class is capable of building an alternative political project that garners the support of a broad-based social coalition.
+
+This repressive, authoritarian, and executive politics has been accompanied by the advent of an informal political opposition, of the kind that we have seen in Galle Face Green. It is the flip side of the political disincorporation and authoritarian rule that we have seen over the last few decades. These forms of political protests resemble similar protests in Chile, Brazil, and even the yellow vests protests in France which emerged in a similar context of authoritarian statism. They have particular potency around issues of social reproduction – such as the cost of living or the price of essential utilities, which have a particularly damaging effect on precarious labour – and which has been the hallmark of neoliberal transformation. These movements disrupt the political process but are weakened by their inability to develop an ongoing transformative political project that would enable developing links with organised collective organisations. 
+
+Moreover, a more expansive set of demands may well run into the challenge of making cohesive the currently heterogeneous social coalition. There is palpable anxiety within sections of the middle class  that the movement might stray from the narrow lane of liberal constitutional reform. Despite these challenges, it may well be that a new radical and transformative movement emerges out of the crisis.
+
+### A new phase of neoliberalism
+
+The second set of fault lines lies in the character of neoliberalism and changing class relations that have emerged after the civil war. Two key elements were evident: a more “national form of neoliberalism” with an emphasis on using the state to facilitate key sectors of domestic capital. Hence, for example, the role of infrastructure and state capital has been an important dimension of this variant of neoliberalism. To be clear, this was not a departure from neoliberalism but more an attempt to manage its various crises and failures.
+
+One facet of these developments over the last decade has been the emergence of a new bourgeoisie whose growth was facilitated and supported by the business class to state resources and projects, including property development and infrastructure projects such as the Colombo Port City project. The tax changes and exchange rate policies that were the proximate causes of the current crisis have a social foundation in these transformed class relations. Aligned with transformations are the ultranationalist and far-right Sinhala Buddhist forces with a strong basis in the military and the broader militarisation of politics and economy. These far-right forces remain potent and key elements of all mainstream political parties have mobilised them to varying degrees.
+
+In responding to the crisis, we are likely to see the tension between market neoliberals – couched in terms of “market and political reform”– and this national neoliberalism couched in deeply reactionary and even fascist terms of  “national resilience” or “sovereignty”. The political wheeling and dealing after the resignation of Gotabaya Rajapaksa are designed to  reconstitute this neoliberal regime without resolving its fundamental structural contradictions.  
+
+### Old and new contradictions
+
+There is one final set of fault lines that underpins all the others and that is broader capitalist forces that shape Sri Lanka’s engagement with the global capitalist economy. Sri Lanka’s IMF bailout will almost certainly impose discipline, and the burdens and costs of this debt will be shaped by the political contradictions identified above, It is likely to provoke more popular anger as well as capitalise on feeding into the tensions between neoliberal variants. More crucially, the broader geopolitical tensions between the US and China will complicate the ability to sustain a coherent political project or economic strategy.
+
+The economic and political crisis is often put down to a lack of political will, corruption, good governance, state capacity, or the lack of trust in political institutions. This is wrong. Its roots are rather in the fault lines and the political disincorporation of nearly four decades of neoliberalism and the crisis of authority and representation within the state. The danger is that in this vacuum the new president and military might support fascist or “Caesarist” solutions to the current crisis. Sri Lanka is not short of little Caesars.
+
+Any such putative Caesars will have to contend with the democratic energy unleashed by the aragalaya movement that will have a long-lasting impact on Sri Lankan politics.
