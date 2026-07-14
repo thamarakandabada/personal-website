@@ -1,40 +1,63 @@
 ---
 import "../styles/global.css";
+import { Picture } from 'astro:assets';
 import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from "@vercel/speed-insights/astro";
 import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
 const { frontmatter } = Astro.props;
+const formattedDate = frontmatter.pubDate 
+  ? new Date(frontmatter.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+  : 'Unknown Date';
 ---
-
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/tk.png" />
-		<link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
-		<meta name="generator" content={Astro.generator} />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/tk.png" />
+	<link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
+	<meta name="generator" content={Astro.generator} />
     <Analytics/>
     <SpeedInsights/>
-		<title>{frontmatter.title} - Debas Archives</title>
-	</head>
+	<title>{frontmatter.title}</title>
+</head>
 	
-	<body>	
-	<Navigation />
-  <div class="debas-header">
-      <h1>{frontmatter.title}</h1>
-      <div class="blog-meta">
-        <p>by {frontmatter.author} | published on {frontmatter.pubDate}</p>
-      </div>
-      <div class="blog-hero-image">
-      </div>
-  </div>
-	<div class="page-content debas-content">
-    <slot />
-  </div>  
-	<GlobalFooter />
-	</body>
+<body>	
+<Navigation />
 
-</html>
+<div class="blog-header">
+  <p><span class="blog-date">{formattedDate}</span>//<span class="blog-category">Language: {frontmatter.language}</span></p>
+  <h1 class="blog-title">{frontmatter.title}</h1>
+  <p class="blog-author">by {frontmatter.author}</p>
+</div>
+
+<div class="blog-content">
+  <div class="blog-image">
+  <figure class="blog-hero-image">
+    <Picture
+      src={frontmatter.imageUrl}
+	  formats={['avif', 'webp']}
+	  alt={frontmatter.imageAlt}
+    />
+    <figcaption>{frontmatter.imageCaption}</figcaption>
+  </figure>
+  </div>
+  <slot />
+  <div class="author-info">
+    <div class="author-photo">
+	  <Picture
+        src={frontmatter.authorPhotoUrl}
+		formats={['avif', 'webp']}
+		alt={frontmatter.imageAlt}
+      />
+	</div>
+	<div class="author-description">
+	  <p>{frontmatter.authorInfo}</p>
+	</div>
+  </div>
+  <div>
+	<p class="disclaimer">{frontmatter.disclaimer}</p>
+  </div>
+</div>
+<GlobalFooter />
+</body>

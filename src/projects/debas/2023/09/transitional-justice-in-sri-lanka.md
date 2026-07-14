@@ -1,15 +1,15 @@
 ---
-layout: /src/layouts/DebasLayout.astro
 title: 'Transitional justice in Sri Lanka: The importance of local ownership'
 pubDate: 2023-04-09
 author: 'Roshni Kapur'
 authorInfo: 'Roshni Kapur is a programme manager/political strategist at Rule of Law Programme Asia at Konrad-Adenauer-Stiftung (KAS). She was a research analyst at the Institute of South Asian Studies (ISAS), National University of Singapore from 2018 to 2021. She is the editor of the volume Sustainable Energy Transition in South Asia: Challenges and Opportunities (2019). Her research focus is on conflict resolution, transitional justice, identity politics, geopolitics, and violent extremism in South Asia. She regularly writes for East Asia Forum, Lowy Institute, Middle East Institute, and Observer Research Foundation.'
-authorPhotoUrl: ''
-authorPhotoAlt: ''
-imageUrl: '/src/assets/images/style/gothmog.jpg'
-imageAlt: 'some alt'
-imageCaption: 'testing'
+authorPhotoUrl: 'images/Picture1.png'
+authorPhotoAlt: 'Profile photo of Roshni Kapur'
+imageUrl: 'images/46485475162_21c4ebcbbe_o-scaled.jpg'
+imageAlt: 'A row of palm trees against the backgoround for a blue sky'
+imageCaption: '“Palm Trees in Jaffna” is copyright (c) 2023 Nazly Ahmed and made available under a Attribution-Noncommercial-Share Alike 2.0 license'
 disclaimer: 'The opinions expressed in this article are those of the author. They do not reflect the opinions or views of Debas. We welcome authors to submit responses to the arguments made in this article by sending in their pitches to debasdialogues [at] gmail [dot] com. Accepted submissions will be paid a standard honorarium.'
+language: 'English'
 ---
 
 Can a country genuinely commit to transitional justice mechanisms when majoritarianism remains deeply entrenched in its political, legal, and constitutional structures? While the Aragalaya last year saw a reawakening of civic resistance against poor governance, calling for anti-corruption, system change, and political reforms, the movement had less of a demand and critique of transitional justice and reconciliation measures.

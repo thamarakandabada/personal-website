@@ -1,0 +1,10 @@
+---
+const { title, url, pubDate, author } = Astro.props;
+---
+<div>
+  <a href={url}">
+    <p class="debas-author">{author}</p>
+    <h2>{title}</h2>
+    <p class="debas-date">{pubDate.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</p>
+  </a>
+</div>

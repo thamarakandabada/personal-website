@@ -1,7 +1,13 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import { Code } from 'astro:components';
+import { getCollection } from "astro:content";
+import DebasPost from '../../components/DebasPost.astro';
+
 const pageTitle = "Debas Archives";
+const allPosts = await getCollection("debas");
+const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
+
 ---
 <PageLayout title={pageTitle}>
   <body>
@@ -12,21 +18,7 @@ const pageTitle = "Debas Archives";
     <p>The logo was designed by Jo.</p>
 
     <div class="debas-grid">
-      <div>
-        <a href="/projects/debas/transitional-justice-in-sri-lanka">
-        <p class="debas-author">Roshni Kapur</p>
-        <h2>Transitional justice in Sri Lanka: The importance of local ownership</h2>
-        <p class="debas-date">9 Apr 2023</p>
-        </a>
-      </div>
-      
-      <div>
-        <a href="#">
-        <p class="debas-author">Iman Hameed</p>
-        <h2>187 Orchestra</h2>
-        <p class="debas-date">27 Oct 2022</p>
-        </a>
-      </div>
+        {sortedPosts.map((post: any) => <DebasPost pubDate={post.data.pubDate} url={`/projects/debas/${post.id}/`} title={post.data.title} author={post.data.author} />)}
     </div>
 
   </body>
