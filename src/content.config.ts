@@ -37,8 +37,23 @@ const debas = defineCollection({
     })
 });
 
+const gigs = defineCollection({
+    loader: glob({ pattern: '**/[^_]*.md', base: "./src/gigs" }),
+    schema: ({ image }) => z.object({
+      title: z.string(),
+      date: z.date(),
+      imageUrl: image(),
+      imageAlt: z.string(),
+      venue: z.string(),
+      label: z.string(),
+      description: z.string(),
+      support: z.string()
+    })
+});
+
 // Export a single `collections` object to register your collection(s)
 export const collections = {
   'blog': blog,
   'debas': debas,
+  'gigs': gigs,
 };

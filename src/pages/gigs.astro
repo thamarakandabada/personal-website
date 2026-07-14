@@ -1,15 +1,19 @@
 ---
+import { getCollection } from "astro:content";
 import PageLayout from '../layouts/PageLayout.astro';
+import Gig from '../components/Gig.astro';
+
+const allPosts = await getCollection("gigs");
+const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
 const pageTitle = "Gigs - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
-
   <body>
-
     <h1>Gigs</h1>
-    
-    <p>work in progress</p>
+    <p>A timeline of the gigs I have been to. Includes music, theatre, comedy, and many other kinds of performance art. My pre-2022 records are incomplete—I have only added the gigs that I remember.</p>
 
+    <div>
+      {sortedPosts.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} />)}
+    </div>
   </body>
-
 </PageLayout>
