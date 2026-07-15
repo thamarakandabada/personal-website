@@ -1097,6 +1097,14 @@ Blog
     font-size: 1rem;
 }
 
+.pagination-links {
+    display: flex;
+}
+
+.pagination-links nav {
+    gap: 1.5rem;
+}
+
 /*
 Debas
 -----

@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import PageLayout from '../../layouts/PageLayout.astro';
+import Gig from '../../components/Gig.astro';
+
+export const getStaticPaths = (async ({paginate}) => {
+  const gigs = (await getCollection('gigs'))
+    .sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0));
+
+  return paginate(gigs, { pageSize: 1 } );
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
+const pageTitle = "Gigs - Thamara Kandabada";
+---
+<PageLayout title={pageTitle}>
+  <body>
+    <h1>Gigs</h1>
+    <p>A timeline of the gigs I have been to. Includes music, theatre, comedy, and many other kinds of performance art. My pre-2022 records are incomplete—I have only added the gigs that I remember.</p>
+
+    <div>
+      {page.data.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} />)}
+    </div>
+    
+{
+  (page.lastPage > 1) && (
+    <nav aria-label="Pagination">
+      { page.url.prev && ( <a href={page.url.prev}>Previous Page</a> ) }
+      { pageNumbers.map((num) => (
+          num === page.currentPage
+            ? <span aria-current="page">{num}</span>
+            : <a href={num === 1 ? '/gigs/' : `/gigs/${num}/`} aria-label={`Page ${num}`}>{num}</a>
+        ))
+      }
+      { page.url.next && ( <a href={page.url.next}>Next Page</a> ) }
+    </nav>
+  )
+}
+
+  </body>
+</PageLayout>
