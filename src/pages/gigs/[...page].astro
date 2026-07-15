@@ -21,14 +21,14 @@ const pageTitle = "Gigs - Thamara Kandabada";
     <p>A timeline of the gigs I have been to. Includes music, theatre, comedy, and many other kinds of performance art. My pre-2022 records are incomplete—I have only added the gigs that I remember.</p>
     <p>I've only mentioned the support acts I saw; on many occasions there may have been more.</p>
 
-    <div>
+    <div class="gig-year-archive">
       <p><strong>Browse by year:</strong></p>
-        <div class="tags">
-              
+        <div class="gig-years">
+
         </div>
     </div>
 
-    <div>
+    <div class="gigs-grid">
       {page.data.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} />)}
     </div>
     

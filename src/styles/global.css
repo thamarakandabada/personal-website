@@ -73,6 +73,10 @@ nav {
     border-bottom: 1px solid var(--border-color);
 }
 
+nav p, nav div {
+    align-items: baseline;
+}
+
 .top-nav-links, .top-nav-burger {
     display: flex;
     font-size: 1.2rem;
@@ -572,6 +576,12 @@ Grids and sub-grids
 ===================
 */
 
+.gigs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+}
+
 .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -765,7 +775,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid {
     grid-template-columns: 1fr;
     }
 
@@ -860,7 +870,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid {
     grid-template-columns: 1fr;
     }
 

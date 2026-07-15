@@ -1,0 +1,34 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Gig from '../../../components/Gig.astro';
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const allGigs = (await getCollection("gigs"));
+  const gigYears = new Map();
+
+  allGigs.forEach((post) => {
+    const year = new Date(post.data.date).getFullYear();
+
+    if (!gigYears.get(year)) {
+      gigYears.set(year, []);
+    }
+
+    gigYears.get(year).push(post);
+  });
+
+  return [...gigYears.entries()].map(([year, posts]) => ({
+    params: { year: String(year) },
+    props: { posts },
+  }));
+}
+
+const { year } = Astro.params;
+const { posts } = Astro.props;
+---
+<PageLayout title={`Gigs in ${year} - Thamara Kandabada`}>
+    <h1>Gigs in {year}</h1>
+    <div>
+      {posts.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} />)}
+    </div>
+</PageLayout>
