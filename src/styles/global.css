@@ -1008,7 +1008,7 @@ Blog
 */
 
 .blog-banner {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-style: italic;
 }
 
@@ -1021,7 +1021,7 @@ Blog
 .blog-header {  
     background-color: var(--bg-secondary);
     margin: 0 auto;
-    padding: 3rem 0 15rem;
+    padding: 3rem 0 120px;
 }
 
 .blog-header-no-image {
@@ -1048,7 +1048,7 @@ Blog
 }
 
 .blog-hero-image {
-    margin: -15rem 0 2rem 0;
+    margin: -120px 0 2rem 0;
 }
 
 .notebook-post-list {
@@ -1105,6 +1105,26 @@ Blog
     gap: 1.5rem;
 }
 
+button {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+
+button:hover {
+    border: 1px solid var(--accent);
+    transition: 0.3s;
+    color: var(--accent)
+}
+
+.subscribe-buttons {
+    display: flex;
+    gap: 0.25rem;
+}
+
 /*
 Debas
 -----
@@ -1148,6 +1168,7 @@ Gigs
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .gig-timeline-node p {

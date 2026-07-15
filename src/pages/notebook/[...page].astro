@@ -8,19 +8,18 @@ export const getStaticPaths = (async ({paginate}) => {
   const posts = (await getCollection('blog'))
     .sort((a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0));
 
-  return paginate(posts, { pageSize: 20 } );
+  return paginate(posts, { pageSize: 15 } );
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
 const topics = [...new Set(page.data.map((post) => post.data.topics).filter(Boolean).flat())];
 const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
-const pageTitle = "Notebook Archives - Thamara Kandabada";
+const pageTitle = "Notebook - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>  
   <body>
-
     <h1>Notebook</h1>
-    <p class="blog-banner">Welcome to my personal blog. Here you can find my uncensored thoughts on <a href="/notebook/sections/life">Life</a>, <a href="/notebook/sections/the-universe">The Universe</a>, and <a href="/notebook/sections/everything-else">Everything</a>. There is also a <a href="/notebook/sections/microblog">Microblog</a> section for shorter musings and more frequent updates.</p>
+    <p class="blog-banner">Welcome to my personal blog. Here you can find my uncensored thoughts on <a href="/notebook/sections/life">Life</a>, <a href="/notebook/sections/the-universe">The Universe</a>, and <a href="/notebook/sections/everything-else">Everything</a>. There is also a <a href="/notebook/sections/stream">Stream</a> section for shorter musings and more frequent updates.</p>
     
     <div class="notebook-grid">
       <div>
@@ -30,38 +29,49 @@ const pageTitle = "Notebook Archives - Thamara Kandabada";
           </ul>
 
           <div class="pagination-links">
-    {
-      (page.lastPage > 1) && (
-        <nav aria-label="Pagination">
-          { page.url.prev && ( <a href={page.url.prev}>Previous Page</a> ) }
-          { pageNumbers.map((num) => (
-            num === page.currentPage
-              ? <span aria-current="page">{num}</span>
-              : <a href={num === 1 ? '/notebook/' : `/notebook/${num}/`} aria-label={`Page ${num}`}>{num}</a>
-          ))
-          }
-          { page.url.next && ( <a href={page.url.next}>Next Page</a> ) }
-        </nav>
-      )
-    }
-    </div>
+            {
+              (page.lastPage > 1) && (
+              <nav aria-label="Pagination">
+               { page.url.prev && ( <a href={page.url.prev}>Previous Page</a> ) }
+               { pageNumbers.map((num) => (
+                 num === page.currentPage
+                 ? <span aria-current="page">{num}</span>
+                 : <a href={num === 1 ? '/notebook/' : `/notebook/${num}/`} aria-label={`Page ${num}`}>{num}</a>
+              ))
+              }
+              { page.url.next && ( <a href={page.url.next}>Next Page</a> ) }
+              </nav>
+            )
+            }
+          </div>
 
-       </div>
+      </div>
 
       <div class="notebook-subgrid">
         <div>
           <h2>Subscribe</h2>
           <p>Susbcribe using SubToMe or access the raw RSS feed link below.</p>
+          <div class="subscribe-buttons">
+          <button type="button">SubToMe</button>
+          <button type="button"><i class="bi bi-rss-fill"></i></button>
+          </div>
         </div>
+
+        <div>
+          <h2>Search Blog</h2>
+        </div>
+
         <div>
           <h2>Topics</h2>
             <div class="tags">
               {topics.map((topic) => <p class="tag"><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></p>)}
             </div>
         </div>
+
         <div>
-          <h2>Search Blog</h2>
+          <h2>Stats</h2>
         </div>
+      
       </div>
     </div>
     

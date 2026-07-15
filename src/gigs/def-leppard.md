@@ -4,7 +4,7 @@ imageAlt: 'Def Leppard performing on stage. From left to right: Vivian Campbell 
 label: 'Music'
 title: 'Def Leppard'
 support: 'Extreme'
-description: ' Rock legends Def Leppard performed at Belsonic this year supported by Extreme. Nuno Bettencourt showed off his impressive guitar skills during Extreme’s set, which I quite enjoyed. Def Leppard’s headline performance was peppered with both new and old hits which got the crowd going.'
+description: 'Rock legends Def Leppard performed at Belsonic this year supported by Extreme. Nuno Bettencourt showed off his impressive guitar skills during Extreme’s set, which I quite enjoyed. Def Leppard’s headline performance was peppered with both new and old hits which got the crowd going.'
 venue: 'Ormeau Park, Belfast'
 date: 2026-06-26
 ---
