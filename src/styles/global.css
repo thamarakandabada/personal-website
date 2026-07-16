@@ -96,7 +96,7 @@ nav p, nav div {
 
 .top-nav-links a:hover {
     text-decoration: underline;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .site-tagline {
@@ -114,7 +114,6 @@ nav p, nav div {
 
 .period-footer {
     color: var(--accent);
-
 }
 
 .global-footer {
@@ -285,9 +284,10 @@ a {
     color: var(--accent);
 }
 
-a:hover {
-    transition: 0.3s;
+a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a) {
     color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-style: wavy;
 }
 
 code {
@@ -569,6 +569,18 @@ Page elements
 
 .tag a {
     text-decoration: none;
+    color: var(--text-primary);
+}
+
+.tag a:hover {
+    color: var(--accent);
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.tag:hover {
+    border-color: var(--accent);
+    transition: 0.5s;
 }
 
 /*
@@ -857,7 +869,7 @@ Media queries
 
     #mobile-menu:target {
         display: flex;
-        transition: 0.3s;
+        transition: 0.5s;
     }
     
     .switch {
@@ -942,7 +954,7 @@ Media queries
 
     #mobile-menu:target {
         display: flex;
-        transition: 0.3s;
+        transition: 0.5s;
     }
     
     .switch {
@@ -1094,6 +1106,7 @@ Blog
     color: var(--accent);
 }
 
+
 .notebook-post-description {
     font-style: italic;
 }
@@ -1120,14 +1133,15 @@ button {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 0.25rem 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: inherit;
 }
 
 button:hover {
     border: 1px solid var(--accent);
-    transition: 0.3s;
-    color: var(--accent)
+    color: var(--accent);
+    font-size: 1.2rem;
+    transition: 0.5s;
 }
 
 .subscribe-buttons {
