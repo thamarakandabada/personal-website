@@ -6,8 +6,10 @@ const { title, url, description, pubDate, sections } = Astro.props;
       <p class="notebook-post-date">{pubDate.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</p>
     </div>
     <div class="notebook-post-title-description">
+    <a href={url}>
       <p class="filed-under">Filed under <span class="notebook-post-section">{sections}</span></p>
-      <a href={url} class="notebook-post-title">{title}</a>
+      <p class="notebook-post-title">{title}</p>
       <p class="notebook-post-description">{description}</p>
+    </a>
     </div>
 </li>

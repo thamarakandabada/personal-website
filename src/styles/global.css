@@ -96,7 +96,6 @@ nav p, nav div {
 
 .top-nav-links a:hover {
     text-decoration: underline;
-    transition: 0.5s;
 }
 
 .site-tagline {
@@ -127,6 +126,7 @@ nav p, nav div {
     border-top: 1px solid var(--border-color);
     padding-top: 0.5rem;
     padding-bottom: 0.75rem;
+    box-shadow: 0 50vh 0 50vh var(--bg-secondary);
 }
 
 .footer-content {
@@ -161,7 +161,9 @@ nav p, nav div {
 }
 
 .social-links a:hover {
-    color: var(--accent);
+    color: var(--accent) !important;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .footer-nav-links {
@@ -180,7 +182,8 @@ nav p, nav div {
 }
 
 .footer-nav-links a:hover {
-    color: var(--accent);
+    color: var(--accent) !important;
+    transition: 0.5s;
 }
 
 /*
@@ -415,10 +418,6 @@ Page elements
 
 .guitar-photo, .hobby-photo {
     width: 100%;
-}
-
-.blank-page-declaration {
-    padding-bottom: 20rem;
 }
 
 .guestbook-intro {
@@ -1092,6 +1091,11 @@ Blog
     column-gap: 2rem;
 }
 
+.notebook-post-list-item:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
 .notebook-post-list-item:first-child {
     border: none;
     padding-top: 0.5rem;
@@ -1135,6 +1139,7 @@ Blog
 }
 
 button {
+    color: inherit;
     background-color: var(--bg-tertiary);
     border: 1px solid var(--border-color);
     border-radius: 4px;
