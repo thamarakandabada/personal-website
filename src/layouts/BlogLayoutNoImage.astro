@@ -4,16 +4,20 @@ import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from "@vercel/speed-insights/astro";
 import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
+
 const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
   ? new Date(frontmatter.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
   : 'Unknown Date';
 ---
+<!doctype html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<link rel="icon" type="image/svg+xml" href="/tk.png" />
-	<link rel="icon" href="/favicon.ico" />
+	<link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin />
     <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
 	<meta name="generator" content={Astro.generator} />
     <Analytics/>
@@ -42,3 +46,4 @@ const formattedDate = frontmatter.pubDate
     </div>
 	<GlobalFooter />
 </body>
+</html>
