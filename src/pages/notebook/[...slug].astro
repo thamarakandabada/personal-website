@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BlogLayoutNoImage from '../../layouts/BlogLayoutNoImage.astro';
 import BlogLayoutwithImage from '../../layouts/BlogLayoutwithImage.astro';
+import StreamLayout from '../../layouts/StreamLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -12,14 +13,17 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+let Layout;
+if (!post.data.title) {
+  Layout = StreamLayout;
+} else if (post.data.imageUrl) {
+  Layout = BlogLayoutwithImage;
+} else {
+  Layout = BlogLayoutNoImage;
+}
 ---
 
-{post.data.imageUrl ? (
-  <BlogLayoutwithImage frontmatter={post.data}>
-    <Content />
-  </BlogLayoutwithImage>
-) : (
-  <BlogLayoutNoImage frontmatter={post.data}>
-    <Content />
-  </BlogLayoutNoImage>
-)}
+<Layout frontmatter={post.data}>
+  <Content />
+</Layout>
