@@ -6,5 +6,8 @@ export default defineConfig({
   adapter: vercel(),
   devToolbar: {
     enabled: false
-  }
+  },
+  build: {
+    inlineStylesheets: `always`,
+  },
 });

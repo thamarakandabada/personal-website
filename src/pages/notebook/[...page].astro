@@ -12,7 +12,6 @@ export const getStaticPaths = (async ({paginate}) => {
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
-const topics = [...new Set(page.data.map((post) => post.data.topics).filter(Boolean).flat())];
 const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
 const pageTitle = "Notebook - Thamara Kandabada";
 ---
@@ -58,20 +57,19 @@ const pageTitle = "Notebook - Thamara Kandabada";
         </div>
 
         <div>
+          <h2>Stats</h2>
+        </div>
+
+        <div>
           <h2>Search Blog</h2>
         </div>
 
         <div>
-          <h2>Topics</h2>
-            <div class="tags">
-              {topics.map((topic) => <p class="tag"><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></p>)}
-            </div>
+          <h2>Archives</h2>
+          <p>View the full post archives to browse by section, topic, and year.</p>
+          <p><a href="/notebook/archives">Visit the archives</a></p>
         </div>
 
-        <div>
-          <h2>Stats</h2>
-        </div>
-      
       </div>
     </div>
     
