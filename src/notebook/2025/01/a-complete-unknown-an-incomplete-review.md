@@ -3,7 +3,7 @@ title: 'A Complete Unknown (2025)'
 pubDate: 2025-01-26
 description: 'An incomplete review'
 author: 'Thamara Kandabada'
-imageUrl: 'images/1_pHHVicHx_USTXhoGTWUhMg.webp'
+imageUrl: 'images/1_pHHVicHx_USTXhoGTWUhMg copy.jpg'
 imageAlt: 'Timothée Chalamet as Bob Dylan, behind two microphones getting ready for a performance in a still from the film'
 imageCaption: ''
 sections: ["Everything Else"]

@@ -113,7 +113,9 @@ const pageTitle = "Style - Thamara Kandabada";
 
   <p>Paragraph text is set in the base font at <Code code={`1.2rem`} inline />. List elements share the font size. </p>
 
-  <p>Inline <Code code={`a`} inline /> elements in the body are set in the accent colour, with an underline offset at <Code code={`0.4rem`} inline />. On hover, elements transition to the primary text colour in <Code code={`0.3s`} inline />. Navigation links in the header and footer vary, with the header opting for a simple underline reveal on hover, and the footer transitioning from the primary text colour to the accent colour on hover.</p>
+  <p>Inline <Code code={`a`} inline /> elements in the body are set in the accent colour, with an underline offset at <Code code={`0.4rem`} inline />. On hover, elements transition to the primary text colour with a wavy underline in <Code code={`0.5s`} inline />. Navigation links in the header and footer vary, with the header opting for a simple underline reveal on hover, and the footer transitioning from the primary text colour to the accent colour on hover.</p>
+
+  <p>Some linked elements resize using the <Code code={`transform: scale()`} inline /> function on hover. The posts list in the <a href="/notebook">Notebook</a> is an example of this.</p>
 
   <p>Inline code snippets are set in the monospace font Cascadia Mono at <Code code={`0.9rem`} inline />(to offset variable font heights between this and the base font) and are enclosed in a background block with a border radius of <Code code={`4px`} inline />.</p>
 
@@ -161,7 +163,9 @@ const pageTitle = "Style - Thamara Kandabada";
   <p>All text, except blog post titles, are left-aligned. Blog post titles are centre aligned-with a background set in the secondary background colour, on which the hero image (if available) overlaps with a <Code code={`-120px`} inline /> vertical spacing. See an example <a href="/notebook/gehenu-lamai">here</a>.</p>
 
   <h2>Images</h2>
-  <p>All images are served in AVIF with fallback to WebP, with a <Code code={`4px`} inline /> border radius and have alt text. Captions, when used, are right aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour. Hyperlinks in the caption have no text decoration. See example below.</p>
+  <p>All images are served in AVIF with fallback to WebP, with a <Code code={`4px`} inline /> border radius and have alt text. Captions, when used, are right aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour. Hyperlinks in the caption have no text decoration.</p>
+  <p>All images have a subtle shadow, set to the values <Code code={`rgba(0, 0, 0, 0.16) 0px 1px 4px;`} inline />.</p>
+  <p>See example below.</p>
   <figure>
   <Picture
     src={balrogImage} alt="A colourful and stylised drawing of a Balrog, engulfed in flames and wielding a large axe, riding a dragon"
