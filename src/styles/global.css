@@ -8,9 +8,9 @@ Light mode
 */
 
 html {
-  --bg-primary: #f6f1e6;
-  --bg-secondary: #F5F5F5;
-  --bg-tertiary: #ebe1d5;
+  --bg-primary: #fef4df;
+  --bg-secondary: #fbfaf8;
+  --bg-tertiary: #f9e8d3;
   --text-primary: #101519;
   --text-secondary: #67686b;
   --border-color: #c6beb0;
@@ -24,8 +24,8 @@ Dark mode
 
 html.dark {
   --bg-primary: #101519;
-  --bg-secondary: #181D23;
-  --bg-tertiary: #1C2129;
+  --bg-secondary: #22262c;
+  --bg-tertiary: #101318;
   --text-primary: #D8DCE0;
   --text-secondary: #737A80;
   --border-color: #262C33;
@@ -337,6 +337,7 @@ img {
     height: auto;
     display: block;
     border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 figure {
@@ -432,7 +433,7 @@ Page elements
 }
 
 .colour-box-bg-p {
-    background-color: #f6f1e6;
+    background-color: #fef4df;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     width: auto;
@@ -440,7 +441,7 @@ Page elements
 }
 
 .colour-box-bg-s {
-    background-color: #F5F5F5;
+    background-color: #fbfaf8;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     width: auto;
@@ -448,7 +449,7 @@ Page elements
 }
 
 .colour-box-bg-t {
-    background-color: #ebe1d5;
+    background-color: #f9e8d3;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     width: auto;
@@ -504,7 +505,7 @@ Page elements
 }
 
 .colour-box-bg-t-dark {
-    background-color: #1C2129;
+    background-color: #101318;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     width: auto;
@@ -1092,7 +1093,7 @@ Blog
 }
 
 .notebook-post-list-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: 0.5s;
 }
 
