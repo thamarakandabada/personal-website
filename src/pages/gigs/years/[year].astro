@@ -4,11 +4,11 @@ import Gig from '../../../components/Gig.astro';
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const allGigs = (await getCollection("gigs"));
+  const allGigs = await getCollection('gigs');
   const gigYears = new Map();
 
   allGigs.forEach((post) => {
-    const year = new Date(post.data.date).getFullYear();
+    const year = post.data.date.getFullYear();
 
     if (!gigYears.get(year)) {
       gigYears.set(year, []);
@@ -18,17 +18,17 @@ export async function getStaticPaths() {
   });
 
   return [...gigYears.entries()].map(([year, posts]) => ({
-    params: { year: String(year) },
-    props: { posts },
+    params: { year: String() },
+    props: { posts }
   }));
-}
+};
 
 const { year } = Astro.params;
 const { posts } = Astro.props;
 ---
 <PageLayout title={`Gigs in ${year} - Thamara Kandabada`}>
     <h1>Gigs in {year}</h1>
-    <div>
+    <div class="gigs-grid">
       {posts.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} />)}
     </div>
 </PageLayout>

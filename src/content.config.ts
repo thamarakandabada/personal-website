@@ -47,7 +47,7 @@ const gigs = defineCollection({
       venue: z.string(),
       label: z.string(),
       description: z.string(),
-      support: z.string()
+      support: z.string().optional()
     })
 });
 
@@ -55,5 +55,5 @@ const gigs = defineCollection({
 export const collections = {
   'blog': blog,
   'debas': debas,
-  'gigs': gigs,
+  'gigs': gigs
 };
