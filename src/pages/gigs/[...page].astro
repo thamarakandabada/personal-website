@@ -12,8 +12,10 @@ export const getStaticPaths = (async ({paginate}) => {
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
+const allGigs = await getCollection("gigs");
 const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
 const pageTitle = "Gigs - Thamara Kandabada";
+const years = [...new Set(allGigs.map((post) => post.data.date.getFullYear()).flat())]
 ---
 <PageLayout title={pageTitle}>
   <body>
@@ -21,11 +23,11 @@ const pageTitle = "Gigs - Thamara Kandabada";
     <p>A timeline of the gigs I have been to. Includes music, theatre, comedy, and many other kinds of performance art. My pre-2022 records are incomplete—I have only added the gigs that I remember.</p>
     <p>I've only mentioned the support acts I saw; on many occasions there may have been more.</p>
 
-    <div class="gig-year-archive">
-      <p><strong>Browse by year:</strong></p>
-        <div class="gig-years">
-
-        </div>
+    <div class="gig-years-list">
+		<ul>
+		<li><strong>Browse by year:</strong></li>
+		{years.map((year) => <p class="gig-year"><a href={`/gigs/years/${String(year)}/`}>{year}</a></p>)}
+		</ul>
     </div>
 
     <div class="gigs-grid">

@@ -1,0 +1,35 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import BlogPost from '../../../components/BlogPost.astro';
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const postYears = new Map();
+
+  allPosts.forEach((post) => {
+    const year = post.data.pubDate.getFullYear();
+
+    if (!postYears.get(year)) {
+      postYears.set(year, []);
+    }
+
+    postYears.get(year).push(post);
+  });
+
+  return [...postYears.entries()].map(([year, posts]) => ({
+    params: { year: String(year) },
+    props: { posts }
+  }));
+};
+
+const { year } = Astro.params;
+const { posts } = Astro.props;
+---
+<PageLayout title={`Posts in ${year} - Thamara Kandabada`}>
+    <h1>Posts in {year}</h1>
+          <ul class="notebook-post-list">
+            {posts.map((post: any) => <BlogPost pubDate={post.data.pubDate} url={`/notebook/${post.id}/`} title={post.data.title} description={post.data.description} sections={post.data.sections} />)}
+          </ul>
+</PageLayout>

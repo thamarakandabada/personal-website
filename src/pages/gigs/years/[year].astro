@@ -5,6 +5,7 @@ import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const allGigs = await getCollection('gigs');
+  allGigs.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
   const gigYears = new Map();
 
   allGigs.forEach((post) => {
@@ -18,7 +19,7 @@ export async function getStaticPaths() {
   });
 
   return [...gigYears.entries()].map(([year, posts]) => ({
-    params: { year: String() },
+    params: { year: String(year) },
     props: { posts }
   }));
 };

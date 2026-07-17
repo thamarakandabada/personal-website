@@ -10,7 +10,7 @@ sections: ["Everything Else"]
 topics: ["Astro", "HTML", "CSS", "The Great Astro Migration of 2026"]
 ---
 
-I’ve been making steady progress with the new website except in one area. I’m writing lots of HTML and CSS almost every day, but not knowing any JavaScript has become an issue. Key elements like injecting a blog, making content collections, and making ineteractive menus require JS knowledge. While I've been able to implement all this by following the Astro's tutiorials and how-to guides documented by other good samaritans on the internet, I've also had to resort to the following:
+I’ve been making steady progress with the new website except in one area. I’m writing lots of HTML and CSS almost every day, but not knowing any JavaScript has become an issue. Key elements like injecting a blog, making content collections, and making interactive menus require JS knowledge. While I've been able to implement all this by following Astro's tutiorials and how-to guides documented by other good samaritans on the internet, I've also had to resort to the following:
 
 1. Write as much of the website as possible with simple HTML and CSS. This approach has made me rethink some elements I had initially wanted to port over from the current website, but I’m enjoying the challenge. 
 
