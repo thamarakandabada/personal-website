@@ -584,6 +584,10 @@ Page elements
     transition: 0.5s;
 }
 
+.discuss-widget {
+    font-family: inherit !important;
+}
+
 /*
 Grids and sub-grids
 ===================
