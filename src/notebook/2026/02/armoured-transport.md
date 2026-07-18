@@ -7,7 +7,7 @@ imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Everything Else"]
-topics: ["Lego", "Recreation", "Hobbies"]
+topics: ["Lego", "Recreation", "Hobbies", "Star Wars"]
 ---
 
 Built our first Lego set this weekend.

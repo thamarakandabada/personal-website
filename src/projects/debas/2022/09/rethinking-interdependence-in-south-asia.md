@@ -16,7 +16,7 @@ It is well-documented that South Asia, a region with India at its centre, was 
 
 As the economies of India and its neighbours continued to grow and their global linkages developed in the context of various degrees of liberalisation, the green shoots of a novel framework emerged. This framework, one of mutual interdependence, was centred around energy, telecom, and transportation. This has made higher levels of economic growth possible. For obvious reasons, it is necessary to separate the cases of Pakistan and China, which also share borders with India, from the present discussion. The neighbours referred to here are significantly smaller. Sri Lanka is among these smaller neighbours and stands to gain significantly from greater regional interdependence and closer economic links with India and others. Energy, telecom, and transport are three areas in which this interdependency is explored further, including through the development of future scenarios.     
 
-### Energy: Tapping into regional power grids
+## Energy: Tapping into regional power grids
 
 Bhutan and Nepal are endowed with enormous hydropower potential. In the latter part of the 20th and early 21st century, India helped Bhutan develop its hydropower and also purchased the generated electricity, which quickly became its primary export and the contributor of as much as 70 percent of the Bhutan government’s revenue. A monopsony is not an ideal situation to be at the wrong end of. When the product is electricity that is moved by cables, there are few possibilities of developing additional markets, short of complex regulatory solutions such as [wheeling](https://www.princeton.edu/~ota/disk1/1989/8913/8913.PDF).  
 
@@ -34,7 +34,7 @@ It thus appears that any country wishing to preserve or enhance its sovereignty 
 
 Similarly, Indian investments in the long-unused Trincomalee oil tanks finally unlocked the much-talked-about potential of the Trincomalee port as an energy hub serving the larger Bay of Bengal region, including the eastern seaboard of India.
 
-### Telecom: Shared connectivity
+## Telecom: Shared connectivity
 
 Interdependency in telecom bandwidth has also emerged regionally; here, however the power asymmetry took a different form. With the rapid growth of data communication, the demand for telecom “big pipes” capable of hauling terabytes of data both domestically and to data centres located all over the world increased apace. 
 
@@ -48,7 +48,7 @@ On this occasion, it may be argued that India made itself dependent on Banglades
 
 - **Scenario 4:** With the SEA-ME-WE 5 cable directly connecting to Matara in the south of Sri Lanka (shaving off milliseconds of latency from being connected via spurs, as before) and the location of the cable repair facility in Hambantota, were the beginnings of a pivotal role for Sri Lanka in terms of international connectivity. The Asian Highway route, AH 43, which runs from Matara to Agra via Bangalore and Hyderabad was upgraded by both countries with the laying of road authority-owned fiber. This resulted in redundancy for the connectivity that was provided by cables landing in Chennai.
 
-### Transport: Docking at world-class ports
+## Transport: Docking at world-class ports
 
 Colombo has for long been the second largest container port serving India. Depending on the year, Colombo and the Jawaharlal Nehru Port Trust (JNPT) Port (or Nhava Sheva Port) are the largest and second largest container ports in South Asia and among the top 25 or 30 in the world. It is not incorrect to say that Colombo is India’s second largest container port because over 70 percent of the containers going through Colombo are from or headed to Indian ports. Colombo was the first deep-water port in the region, capable of accommodating the largest container vessels. The deep-water South Harbour was completed in the first decade of this century. It was designed for three container terminals, of which the first was in operation since 2013 and the second and third were completed by 2025.
 

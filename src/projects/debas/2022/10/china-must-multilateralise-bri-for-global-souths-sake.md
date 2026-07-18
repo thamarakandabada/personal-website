@@ -18,13 +18,13 @@ While [Western propaganda](https://asia.nikkei.com/Editor-s-Picks/Interview/Chi
 
 This article looks at the main stumbling blocks in the BRI, why it needs to multilateralise to achieve its objectives, and what China can do to convince the world that it is serious about collaboration and transparency.
 
-### Why the BRI needs to work
+## Why the BRI needs to work
 
 Contrary to what its detractors say, both China and South Asia have a lot to gain from the BRI’s success. South Asia’s infrastructure needs are real. According to the United Nations Economic and Social Commission for Asia and the Pacific (UNESCAP), infrastructure deficits result in GDP losses of 3-4 percent annually and the region will need about [five trillion](https://www.unescap.org/sites/default/files/Policy%20Brief%20AIIB_Oct19.pdf) US dollars by 2030 in infrastructure investments. The BRI offers real opportunities for South Asian nations to build infrastructure that they desperately need. There is no one else offering similar amounts of money required to build roads, ports, and airports.
 
 Moreover, the BRI is an important part of China’s ambitions of remaining a major power and being a leader in development finance with its own [development strategy](https://www.cigionline.org/publications/deeper-look-chinas-going-out-policy/). China has also invested heavy political capital in the BRI. For example, in 2017, during the 19th Party Congress, the BRI was enshrined in the constitution of the Chinese Communist Party, and in 2021, it featured prominently in China’s third white paper on development assistance. If China can address the main concerns people have with regard to the BRI and make it a shared project, involving a large number of bilateral aid and export credit agencies, multilateral development banks and commercial banks around the globe, this will greatly benefit both China and recipients of its development finance.
 
-### Where did China go wrong?
+## Where did China go wrong?
 
 When the BRI was unveiled in 2013, China’s leaders thought it would increase the country’s soft power. President Xi Jinping in 2013 [argued](https://www.reuters.com/article/us-china-southchinasea/chinas-xi-strikes-conciliatory-note-broadens-diplomatic-focus-idUSKCN0JE04J20141130) that his government’s actions “should increase China’s soft power, give a good Chinese narrative, and better communicate China’s message to the world”. However due to several reasons, Beijing made a series of mistakes, and these have forced it to assume its current defensive posture. What transpired in Sri Lanka is a good example of its mistakes and the reputational damage China has incurred.
 
@@ -32,7 +32,7 @@ China started out in Sri Lanka with a number of advantages. Since the 1950s, Chi
 
 Instead of being responsive and transparent, China doubled down on catering to the interests of Sri Lanka’s political leaders. This strategy backfired and public sentiment on China changed. Sri Lanka has relatively free and fair elections and supporting China in 2022 comes with great political risk, especially as China still has not publicly distanced itself from the [Rajapaksas](https://twitter.com/ChinaEmbSL/status/1542189860823465984). These mistakes have fed the Western narrative of a “Chinese debt trap”, although China only holds about 15 to 20 percent of Sri Lanka’s debt stock and the island nation’s economic woes are more a result of its own [unsustainable development practices](https://www.isas.nus.edu.sg/papers/crises-in-the-sri-lankan-economy-need-for-national-planning-and-political-stability/) that rely on a number of financing sources not limited to China.
 
-### What can China do?
+## What can China do?
 
 In the beginning, Western donors and lenders encouraged China to multilateralise the BRI. They insisted that China establish a common set of project appraisal standards, procurement guidelines, fiduciary controls, transparency policies, and social/environmental safeguards. These Western donors claimed that by putting these in place, China could persuade other aid agencies and development banks to support the BRI. But Beijing chose to go it alone.
 

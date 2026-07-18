@@ -16,7 +16,7 @@ Sri Lanka is going through its worst economic crisis in 74 years of post-Indepen
 
 The political elites’ response — or lack thereof — to these demands reveals a deep disconnect with the masses they claim to represent. What is the state of Sri Lanka’s political class amid this unprecedented upheaval and how might the present crisis enable a re-imagining of the prevailing social contract? 
 
-### The elite’s grip on power
+## The elite’s grip on power
 
 Sri Lanka’s political class was dominated at independence by upper-class, urban, Anglicised, \(mostly\) men who, in many ways, sustained the structures of power across class, racial, gender, and religious divides during colonial rule. The reactionary, nationalist politics that gained momentum under the leadership of S W R D Bandaranaike carried the promise of redistribution through social democracy. However, though the markers of national authenticity were realigned with being ‘Sinhala’ and ‘Buddhist’, the foundational structures of elitism remained largely static. 
 
@@ -24,7 +24,7 @@ The present political crisis in Sri Lanka reveals a deep democratic deficit. The
 
 Thus, even as the people’s protests demand that the political leadership and government resign, there is no sign of them being responsive to such pressures. How does a society successfully take on the elite’s grip on power which they use chiefly to fortify their position of privilege? 
 
-### Elite disconnect and the power of knowledge and discourse
+## Elite disconnect and the power of knowledge and discourse
 
 In a 2020 podcast episode ’The New Experiments in Elitism’, Venkatesh Rao argues that “the essence of elitism isn’t in these moments of creative destruction of elite power, but in quieter unaccountable workings away from public scrutiny.”
 
@@ -32,7 +32,7 @@ Elite politics thrive on back-door deals and false narratives to hoodwink the ma
 
 The Swiss philosopher [Vilfredo Pareto](https://www.eugenewei.com/blog/2017/3/6/paretos-two-types-of-elites-lions-and-foxes) viewed elite politics as cyclical. What appear to be ‘changes’ in elite composition, he argues, are simply processes of amalgamation rather than replacement. These cycles typically involved two types of elite: foxes and lions. Foxes wield power through the pen, attempting to co-opt dissent and critique of its rule. Lions, in contrast, are more conservative and rule through force. Observing Sri Lanka’s elite transitions, especially with the recent replacement of former PM Mahinda Rajapaksa with incumbent PM Ranil Wickremesinghe, confirms such circulation of elite. The system change, as demanded by the people’s protests, remains forever elusive. Incidentally, Mr Wickremesinghe has been referred to as a fox by sections of the media over the years.
 
-### Re-imagining elite-mass relations: A new politics of solidarity?
+## Re-imagining elite-mass relations: A new politics of solidarity?
 
 The mass protests against the ruling regime have continued for almost two months now. Many argue that the core reasons for widespread dissent against the regime, which had come to power on an overwhelming popular mandate, are economic. Where was the mass outrage against the state during past violations of human rights, they ask? Why did the majority Sinhala population not lend their weight to the Mothers of the Disappeared who have been demanding answers from the state for years? The past inability of democratic politics to transcend the divides of class, race, and region gives well-founded reasons for doubting that the present moment heralds a new politics of solidarity. 
 

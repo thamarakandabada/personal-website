@@ -20,17 +20,17 @@ This campaign was met with a strong (and predictable) backlash from the governme
 
 Fast forward to 2022, and the country is in deep economic turmoil due to years of gross mismanagement in political and economic governance. There is now a call for cricket fans to show dissent at the ongoing Sri Lanka-Australia cricket series. Despite the needle having moved on many social issues over the past fifteen years, a certain reticence in using cricket to highlight political issues is evident. Even prominent protestors at GotaGoGama, the epicenter of the organic people’s protests since April 2022, disavowed plans to protest at the upcoming cricket match. 
 
-### Are protests at cricket matches novel?
+## Are protests at cricket matches novel?
 
 Protests at cricket matches are not a new phenomenon. In the recent India-Australia series held in Sydney, spectator-protestors [demanded](https://science.thewire.in/external-affairs/world/stop-adani-protests-carmichael-coal-mine-sbi-loan-new-coal-financing/) the State Bank of India revoke its decision to provide AUD $1 billion loans to the Adani Group for a controversial coal mine project in Australia. Protestors opposed the Carmichael project on grounds that it would increase Australia’s carbon emissions and accelerate climate change.
 
 Protests are not uncommon in cricket matches involving Sri Lanka either. Throughout the years, at world cricket events and bilateral series in countries with significant Tamil diaspora, political protests were commonplace. Sri Lanka’s inaugural test match played at Lords in 1984 was disrupted by Tamil protestors who highlighted the atrocities committed during Black July in 1983.  
 
-### The “sacrosanctity” of cricket
+## The “sacrosanctity” of cricket
 
 It is no secret that cricket has been a unifying force that has brought about a collective sense of joy in a nation that often had little to nothing to celebrate at the world stage. However, to pretend that Sri Lankan cricket has remained bereft of politics or that the players have upheld this spirit of apolitical community is dangerous naivety. If a 41-year-old Sanath Jayasuriya, UPFA member of the Matara District, coming onto the field to bat as a “farewell game” in 2011 is considered an extreme example of the brazen politicisation of cricket, there have been much more varied examples of election endorsements, advantageous business deals, and cushy jobs within the SLC that have gone on to prove that cricket, especially in Sri Lanka, has been anything but sacrosanct.  
 
-### Cricket and the right to dissent
+## Cricket and the right to dissent
 
 Opposition to protesting at the cricket include those who fear that any disruptive act, be it from the protestors or those with narrow political agendas, would result in the tour being cancelled. This would mean a loss of vital foreign exchange revenue to the country. This argument, while holding some practical value, puts an unfair burden of the present ailments of the country on its people.
 

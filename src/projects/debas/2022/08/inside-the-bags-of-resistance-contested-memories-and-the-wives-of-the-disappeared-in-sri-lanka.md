@@ -16,7 +16,7 @@ It was a windy Colombo afternoon in June 2022 as I observed a protest led by a g
 
 We all sat down with a cup of tea as she reached for a plastic bag to bring out what she called “bits and pieces of my existence”. She carried with her a picture of her missing husband, Devananda, who had run a small grocery store in their village. In February 2009, the police had come searching for Devananda at his shop. He had told Vinitha not to worry and that he would be back later that day. Vinitha remembers holding her daughter’s hand and waving goodbye to Devananda as the last memory of her husband. Devananda never returned after 13 years and there has been no word on his whereabouts.
 
-### Sri Lanka’s history of enforced disappearances
+## Sri Lanka’s history of enforced disappearances
 
 Sri Lanka’s 26-year long bloody civil ended in May 2009, marked by brutal atrocities by both sides. Around [150,000 Sri Lankans](https://www.reuters.com/article/uk-srilanka-massgrave/sri-lanka-mass-grave-unearths-ghosts-from-troubled-past-idUKBRE8BI0AQ20121219) had been killed in almost 30 years of violence. It is also estimated that since the ethnic conflict in the 1980s, [60-100,000 people](https://www.amnesty.org/en/documents/asa37/5853/2017/en/), mostly Tamils, have “disappeared”. This constitutes the [second-highest](https://www.amnesty.org/en/what-we-do/enforced-disappearances/) caseload of disappeared persons globally. Whether summoned for questioning at a police station, detained at military checkpoints, forced into white vans, or simply abducted from their homes in the middle of the night, stories of disappearances from all corners of Sri Lanka haunt their family members (mostly women) who hold on to their last hopes for justice.
 
@@ -26,7 +26,7 @@ Wives, mothers, daughters, and sisters of the disappeared not only head the hous
 
 Unfortunately, enforced disappearances are now a common occurrence in Sri Lanka. Since the state crackdown on GotaGoGama began on July 22, a day after Ranil Wikremesinghe was sworn in as President, there has been a significant [increase](https://www.hrw.org/news/2022/08/05/sri-lanka-end-government-crackdown-peaceful-protesters) in abductions. In recent weeks, several protesters in the “Janatha Aragalaya” (People’s Struggle) were abducted and their next of kin and lawyers were not informed as to where they were detained. Due process was rarely followed by the police in carrying out these arrests. 
 
-### The things she carries
+## The things she carries
 
 Vinitha reaches for her plastic bag to show us the things she carried. Along with pictures of her husband, there is information on his date of birth and date of disappearance scribbled at the back. She carries copies of her husband’s government ID, many forms submitted to government commissions, statements she has given to the police, and pieces of newspaper clippings related to her husband’s disappearance. She says that she carries this bag at every checkpoint, every appointment with the police, meetings with NGO officials, journalists, or other such women, as she has to open her life, struggle, and grievances to provide any tangible proof of her husband’s disappearance, only to “wrap up everything back in the plastic bag as I am turned away from every door I knock”_._
 
@@ -36,7 +36,7 @@ As Akhil Gupta [argues](https://read.dukeupress.edu/books/book/1607/Red-TapeBur
 
 In Sri Lanka, the wives (as well as mothers and other female relatives) of the disappeared face several issues apart from the struggle for justice. Not only do they face intimidation from the military deployed in North and East, they also remain deeply deprived of the economic [opportunities](https://www.crisisgroup.org/asia/south-asia/sri-lanka/289-sri-lankas-conflict-affected-women-dealing-legacy-war) available to them after the war. Women who head households face significant challenges, including a loss of employment, the negative stereotypes associated with women who are employed outside the home, and difficulty in finding childcare. These women also experienced and/or were vulnerable to incapacitating trauma, sexual abuse and harassment, and discriminatory treatment by recruiters based on caste, gender, or previous affiliation with separatist ideologies. Vinitha says, “Whatever you say, for most employers, we are still the rebels. Our identity has been tainted forever”. Vinitha, fortunately, was able to secure her husband’s business with additional help from a microfinance loan programme and still runs the grocery shop, which pays for her everyday expenses. She says that while she is fortunate to have something to fall back on, many do not.
 
-### Resistance beyond the bag
+## Resistance beyond the bag
 
 For Vinitha, these documents represent how she and her hopes for justice have been delayed, denied, and dusted away. However, her resistance goes beyond these documents. In response to being asked in what ways she protests, she replies—anyway and every way she can. She goes to the protests held in various parts of Northern Province. She stands with her “fellow sisters” in front of offices, buildings, on the streets, beaches, and military-occupied lands. She files every form available, following up with the police, NGO officials, and whoever she can. 
 

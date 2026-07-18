@@ -16,13 +16,13 @@ Change the political system. Get rid of corrupt politicians. Rewrite the Const
 
 The drastic change in the mood of the country, from hope to anger, may foreshadow political change, even systemic change. There is no doubt that Sri Lanka is at a crossroads. But what brought Sri Lanka to this pivotal moment?  
 
-### First to flee
+## First to flee
 
 Sri Lanka’s political institutions have withstood several civil conflicts, a coup attempt, and a constitutional coup. In particular, the office of the president has thus far remained powerful and politically stable. Of course, there have been unpopular presidents. But a president has never had to resign in disgrace. One president was assassinated by an LTTE suicide bomber, and another had a close encounter with one a few years later. But no Sri Lankan president has ever had to flee in fear of the very same people who gave them the mandate to govern.
 
 The dramatic events that led President Gotabaya Rajapaksa to flee his country and resign from his presidency overshadow his landslide election victory in 2019. But this victory, more specifically the successful campaign behind it, offers a compelling explanation of how his presidency ended and what laid the groundwork for the protests that led to his downfall.
 
-### An “anti-establishment” populist campaign
+## An “anti-establishment” populist campaign
 
 Gotabaya Rajapaksa’s election victory left analysts asking what aspects of his campaign resonated so profoundly with voters, that a man who had never held political office could get elected to the most powerful office in the country. Most answers to this question note that his central campaign message successfully invoked and utilised ethno-religious nationalism and even outright racism. 
 
@@ -34,7 +34,7 @@ How a party or political candidate identifies and defines “the establishment�
 
 Anti-establishment rhetoric is an enduring feature of the Sri Lankan political landscape and is often the preferred strategy of the far-left parties. However, following the global trend, some aspects of anti-establishment views have started to seep into Sri Lanka’s mainstream political parties in recent years. In 2014, the coalition led by the United National Party (UNP) launched a presidential campaign that used anti-elite rhetoric. As part of the opposition, the coalition portrayed members of the government as obscenely wealthy and corrupt. However, their campaign stopped short of using anti-establishment rhetoric against political institutions, the political system, or democracy. Instead, their campaign’s central message was that corrupt politicians are preventing the political and legal system from functioning effectively – they did not direct their criticism at the establishment but rather at those who occupied it. 
 
-### “Moral panics” and post-democratic politics
+## “Moral panics” and post-democratic politics
 
 By 2019, Sri Lanka’s political landscape had changed drastically. On Easter Sunday 2019,  a terrorist organisation with alleged links to ISIS carried out a series of coordinated suicide bombings across the country. This incited fear that terrorism would resurface in post-war Sri Lanka. As a result, Gotabaya Rajapaksa found himself in an ideal position to challenge the governing coalition. Directing the blame onto the government, the “weakened” intelligence services, and the Muslim community, the campaign used anti-establishment rhetoric that spoke to people’s fears and transformed it into a powerful campaign strategy. 
 
@@ -42,7 +42,7 @@ Gotabaya Rajapaksa’s campaign questioned the legitimacy of establishment polit
 
 The campaign impressed upon the people the many restraints of democracy that endangered the well-being of the people, and the candidate presented himself as a strong leader who could do what democracy could not. His campaign inspired anger toward the establishment and offered hope that he alone could provide a working alternative to the broken establishment. The problem is not that he could not fix what he claimed was broken, but that he successfully convinced the people that Sri Lanka’s democracy and political system were truly broken beyond repair. By doing so, he inadvertently created a platform for future protestors to rally around.
 
-### Crisis and promises unkept
+## Crisis and promises unkept
 
 As Sri Lanka’s economic crisis deepened, however, people became disillusioned with the president’s ability to manage the crisis. When the man who promised to save the government from itself and the Sri Lankan people from corrupt elite failed to deliver, the hope he inspired subsided and left people angry and discontent. In Rajapaksa’s presidential campaign there were instructions on where the people should direct their anger: towards the establishment. Therefore, as President Rajapaksa blundered from one mistake to the next, people directed their anger not just toward him but towards the entire political system, including democracy itself.
 
@@ -50,7 +50,7 @@ Rooted in anti-establishment sentiments, strong negative attitudes toward Sri L
 
 There is a clear anti-establishment tenour to the protest movement. The occupation of the President’s office, the Prime Minister’s office, and the attempted occupation of Parliament indicate that the protestors’ anger goes beyond their discontent with the president and his government. The legitimacy of the entire political system has been called into question. The protestors call for change, and yet there is no blueprint of what successful change would entail. Although protests are a healthy sign of democracy and prompt response to public appeals is a vital ingredient of liberal democratic politics, continued hasty decision-making in response to public unrest can be destabilising.
 
-### Gota gone: What next?
+## Gota gone: What next?
 
 Many analysts herald Gotabaya Rajapaksa’s resignation as a significant victory for the protests. However, as the dust settles, important unanswered questions emerge. Viewing the overturning of the popular mandate given to Sri Lanka’s president as a success hinges on the assumption that it has the consent of a majority of Sri Lankans. Indeed, the thousands of people who poured into the capital city on July 09 signify a shift in the country’s mood. 
 

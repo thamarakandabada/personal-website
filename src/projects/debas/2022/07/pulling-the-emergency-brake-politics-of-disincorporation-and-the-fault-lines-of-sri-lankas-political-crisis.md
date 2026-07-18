@@ -16,7 +16,7 @@ The resignation of Gotabaya Rajapakse is an encouraging development – a testim
 
 But this is only a short-term fix for Sri Lanka. There is no constitutional or institutional fix to the current Sri Lankan crisis, such as the restriction of presidential powers or the removal of the executive presidency. It is a political crisis of authority and representation – or political disincorporation – whose explosive fault lines have been shaped by the decades-long process of neoliberal or market-oriented economic restructuring and authoritarian politics. The economic crisis has led these tectonic fault lines to erupt in a popular movement, shaking state institutions and the political establishment.
 
-### Neoliberal reforms of the ’80s
+## Neoliberal reforms of the ’80s
 
 These fractures have emerged over the decades since the neoliberal experimentation introduced by President J. R. Jayawardene, who was also responsible for the 1978 constitution that established the executive presidency. A constitution that was aimed at enhancing executive power and which sought to disable the capacity for mass mobilisation. Sri Lanka – after Chile – was a showcase of Southern neoliberalism and the poster child of international economic institutions and think tanks. Sure, this neoliberalism has never been static and its evolution has been shaped by constant political and economic failures. Indeed, a new phase of neoliberalism was evident after the civil war and the intensifying militarisation and ethnonationalist politics under the Rajapaksas.
 
@@ -24,7 +24,7 @@ For this reason, arguments that the crisis can be sheeted home to democratic dec
 
 So, what are these fault lines? 
 
-### Political disincorporation
+## Political disincorporation
 
 The first and pivotal set of fault lines relates to the draining away of the authority of the political establishment, as well as the capacity of the broader party system to link societal forces with the formal political system. Contrast the moribund nature of parliamentary politics, including the ineffectual parliamentary opposition, during the current crisis to the aragalaya’s vibrant, resilient, and brave protests outside parliament. The cross-ethnic and multi-class assembly – and predominantly – youthful members contrasted with ghost-like manoeuvrings within the parliament. The formal political process and the established political class – in full view during the election of the new president – has been drained of its authority. All the main contenders for the presidency in the recent parliamentary vote were associated with various aspects of emergency and authoritarian rule. It was no counter to the democratic energy on the foreshore.
 
@@ -36,7 +36,7 @@ This repressive, authoritarian, and executive politics has been accompanied by t
 
 Moreover, a more expansive set of demands may well run into the challenge of making cohesive the currently heterogeneous social coalition. There is palpable anxiety within sections of the middle class  that the movement might stray from the narrow lane of liberal constitutional reform. Despite these challenges, it may well be that a new radical and transformative movement emerges out of the crisis.
 
-### A new phase of neoliberalism
+## A new phase of neoliberalism
 
 The second set of fault lines lies in the character of neoliberalism and changing class relations that have emerged after the civil war. Two key elements were evident: a more “national form of neoliberalism” with an emphasis on using the state to facilitate key sectors of domestic capital. Hence, for example, the role of infrastructure and state capital has been an important dimension of this variant of neoliberalism. To be clear, this was not a departure from neoliberalism but more an attempt to manage its various crises and failures.
 
@@ -44,7 +44,7 @@ One facet of these developments over the last decade has been the emergence of a
 
 In responding to the crisis, we are likely to see the tension between market neoliberals – couched in terms of “market and political reform”– and this national neoliberalism couched in deeply reactionary and even fascist terms of  “national resilience” or “sovereignty”. The political wheeling and dealing after the resignation of Gotabaya Rajapaksa are designed to  reconstitute this neoliberal regime without resolving its fundamental structural contradictions.  
 
-### Old and new contradictions
+## Old and new contradictions
 
 There is one final set of fault lines that underpins all the others and that is broader capitalist forces that shape Sri Lanka’s engagement with the global capitalist economy. Sri Lanka’s IMF bailout will almost certainly impose discipline, and the burdens and costs of this debt will be shaped by the political contradictions identified above, It is likely to provoke more popular anger as well as capitalise on feeding into the tensions between neoliberal variants. More crucially, the broader geopolitical tensions between the US and China will complicate the ability to sustain a coherent political project or economic strategy.
 

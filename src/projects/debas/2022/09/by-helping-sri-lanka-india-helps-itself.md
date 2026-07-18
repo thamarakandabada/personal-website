@@ -14,7 +14,7 @@ language: 'English'
 
 Beset by multiple external and internal shocks, Sri Lanka is grappling with a terrible debt and economic crisis. India has played an important first responder role in providing foreign aid to Sri Lanka. This article looks at the relationship between foreign aid and domestic policies in tackling Sri Lanka’s crisis. It discusses the causes of Sri Lanka’s crisis, Indian aid to Sri Lanka, and policy priorities for President Wickremesinghe’s administration.     
 
-### Sri Lanka’s terrible crisis
+## Sri Lanka’s terrible crisis
 
 This is by far Sri Lanka’s worst economic crisis since independence from British rule in 1948. The default on external debt obligations in mid-April 2022 and a dollar shortage to pay for essential imports (e.g., food, fuel and medicines) has brought unprecedented economic misery to a country that was once on the cusp of upper middle-income status. About three-quarters of a million additional people may become the “new poor”, reversing decades of admirable gains in poverty reduction in Sri Lanka. Inflation has soared to over 60%, raising food and fuel prices which have in part created shortages and food insecurity for the population. Many families are down to one meal a day and there is a risk of malnutrition among children. Reflecting contractions across economic sectors, the Sri Lankan economy may contract by about -8 to -10% in 2022.
 
@@ -22,7 +22,7 @@ In simple terms, Sri Lanka’s present economic crisis can be explained by exter
 
 To sort out its balance of payments problems, Sri Lanka finally began negotiating an IMF agreement in May 2022. But this process will take some time as Sri Lanka needs to whittle down its external debt of USD 51 billion to sustainable levels and get assurances from its creditors before it can reach an IMF agreement. Meanwhile, Sri Lanka has been seeking bridging finance to provide dollars for essential imports of food, fuel, and medicines from friendly countries. This has proved particularly challenging as 60% of the world’s poorest countries are also experiencing debt distress, while a possible second global recession in three years could dampen advanced economies’ enthusiasm to support Sri Lanka.
 
-### Neighbourhood first
+## Neighbourhood first
 
 India has gradually shifted from aid recipient to aid donor since the early 2000s, following its impressive achievement of becoming one of the world’s fastest growing economies. India was the first responder to Sri Lanka’s desperate request for bridging finance and foreign aid, motivated by the unfolding humanitarian crisis affecting the Sri Lankan people and political pressure from South Indian states to provide aid. In the first six months of 2022, Indian [aid](https://www.vifindia.org/article/2022/july/11/sri-lankan-leaders-forcing-the-hands-of-its-citizens) worth USD 3.8 billion has flowed to Sri Lanka through credit lines, deferred loans, and grants, making it India’s largest bilateral aid programme in recent times. Back-of-the-envelope calculations suggest that Sri Lanka would require financing of between USD 20-25 billion over the next three years to provide essential imports and to help stabilise the economy. India alone may not be able to mobilise such a large aid envelope in the short run. Nonetheless, the South Asian giant has a unique opportunity to cement its reputation as an emerging donor by leading an [aid consortium](https://www.orfonline.org/expert-speak/sri-lanka-is-a-new-india-centric-aid-group/) for Sri Lanka, working closely with other friendly countries (e.g., Japan, the US, and the EU), the IMF, and the World Bank.
 
@@ -30,7 +30,7 @@ Supporting Sri Lanka could be in India’s best [interest](https://www.thehindu
 
 International experience offers some lessons on how to make Indian aid more effective in Sri Lanka. First, it would be prudent to have appropriate controls in place to ensure that leakages and deadweight losses are minimised to acceptable levels. Second, aid should be divided into smaller projects directed to the poor and distributed island-wide rather than just to the Western Province. Third, where possible, the private sector and grassroots non-governmental organisations (NGOs) should complement nationwide aid delivery by state institutions.     
 
-### Domestic priorities
+## Domestic priorities
 
 There has been growing scepticism in India as to why its taxpayers should bail out Sri Lanka, when there is a perception that Sri Lanka’s debt default is the result of economic mismanagement, inefficient state-owned enterprises, and corruption. Sri Lanka’s decision to allow the Chinese dual-use spy ship a port call at the Chinese-built Hambantota Port despite Indian protests has also sparked criticism of the Modi administration’s foreign aid to Sri Lanka. Clearly, a “flip flop” foreign policy does little to reassure development partners like India that Sri Lanka is serious about tackling the root causes of its crisis and in moving forward to build a harmonious and prosperous economy.
 

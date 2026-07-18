@@ -14,7 +14,7 @@ language: 'English'
 
 "I may disapprove of what you say, but I will defend to the death your right to say it”. This is a quote coined by Evelyn Hall, often mistakenly attributed to the French philosopher Voltaire. This free-speech tagline emphasises the importance of tolerating diverse individual viewpoints, even if they are contrary to what one believes in. It also signals the need to create space for varying perspectives to flourish and contest with one another. This generates a marketplace of ideas which ideally helps the public make choices based on evidence and sound reasoning. If one attempts to silence differing opinions, not only are we deprived of an assessment which may lead to a paradigm shift in our thinking, but it would also render us incapable of understanding why an individual adheres to an ideological stance. A marketplace of free speech can thereby lead to a freer and healthier society.
 
-### Stepping outside the “ideological bubble”
+## Stepping outside the “ideological bubble”
 
 In praxis, however, this is not the norm. We tend to follow groups and political personalities who align with our worldviews and politico-economic position. Social media algorithms amplify these waves of information (at times mis/disinformation), feeding us “facts” and opinions which, more often than not, resonate with our ideological position. The decision to consume news from a specific television network, for instance, minimises interactions with opposing views and alternative vantage points, serving only to reinforce echo chambers.
 
@@ -22,25 +22,25 @@ This is why, during my short stay in Sri Lanka, I sought to engage with several 
 
 Nevertheless, my forays in Sri Lanka – rudely interrupted by the shortage of public transport and fuel – revealed a number which far exceeded my initial estimation.  Why do Rajapaksa loyalists remain faithful to the regime even as the country is experiencing its worst economic crisis since independence?
 
-### Grounding mass protests in a crisis of governance
+## Grounding mass protests in a crisis of governance
 
 A common thread among the Rajapaksa loyalists that I spoke to is their revulsion towards the “aragalaya” taking place at the Galle Face promenade. Some described it as a “hippie party” of youngsters with violent leftist ideologies aiming at bringing about anarchy and chaos. Others argued that this “Tamil diaspora-funded gang intends to destroy Sri Lanka by removing this government”. No one I spoke with voiced a positive impression of the aragalaya or connected the prevailing economic crisis to its emergence.
 
 The hidden undercurrent in many of their narratives appears to be that state repression against these protestors is justifiable. They argue that the anti-regime, mass protests harm the country’s recovery process by deterring tourism and engendering a reluctance among international financial institutions (such as the IMF) and foreign governments from appearing to support an unpopular government, despite the dire need for assistance. Consequently, exposing the flawed nature of such reasoning requires greater effort to ground the aragalaya’s emergence in response to the governance crisis which is arguably at the root of the economic hardships the people are protesting against.
 
-### “Development” for whom?
+## “Development” for whom?
 
 Leaping from correlation to causation is another recurrent feature in my conversations with Rajapaksa loyalists. When faced with evidence of unsustainable debt levels acquired since the start of Mahinda Rajapaksa’s tenure in 2005, coupled with the lack of return on investment from white elephant projects, they maintain that the data is incorrect or that these infrastructure projects were initiated to develop Sri Lanka. When framed in this manner, my criticism of the development projects and the debt incurred to finance them were interpreted by loyalists as a lack of patriotism.
 
 One elderly gentleman claimed: “At least he tried. What did the other governments do? Nothing! Who are you to criticise Mahinda mahattaya? Don’t you know how long it takes for infrastructure projects to become profitable?”. When quizzed on this further, he admitted to not knowing when the project in question (the Mattala Rajapaksa International Airport) could break-even. Instead, he repeated typical rebuttals by the ruling party (SLPP) MPs, such as the previous regime’s decision to use the airport’s empty hangars to house paddy and which allegedly damaged the image of the airport among the international community. The nature of his outburst to my counterclaims instilled a nagging fear and wonder in me. Was it possible that, even at this stage of the economic crisis, a citizen of the country had not heard or could not accept prevailing local and global criticisms of these unsustainable development practices and the Rajapaksa dynasty’s role in legitimising them?
 
-### “The alternatives are worse”
+## “The alternatives are worse”
 
 Almost all the Rajapaksa loyalists I spoke to maintained that the best course of action for Sri Lankans was to support the current regime. They were convinced that the opposition could not do any better. To illustrate, they highlighted cases where opposition political leaders had deceived the public or had been part of a violent past (such as the JVP). Three individuals cited the same example: that the former Deputy Minister of National Policies and Economic Affairs Dr Harsha de Silva had once said that inflation (during his government’s tenure) was good. If so, how can he now tell us that inflation is bad, they asked?
 
 In their view, the Rajapaksa brothers had played a significant role in defeating the LTTE, which warranted placing complete faith in their “ability to deliver”. When supporting Mahinda Rajapaksa is equated with being patriotic, the only option for any Sri Lankan, according to this logic, was to support the “war winning president”. Attempts to disentangle their misplaced nationalistic pride from their veneration of the Rajapaksas failed miserably. This, in my view, spoke volumes about the efficacy of the Rajapaksa regime’s public relations machine.
 
-### Talking across the divide
+## Talking across the divide
 
 Countering this narrative requires a sustained, ground up, data-driven media campaign – an endeavor akin to Bongbong Marcos’ disinformation campaign but in the opposite direction. The steps taken by Watchdog to educate the public on how Sri Lanka fell into this [economic abyss](https://longform.watchdog.team/814832952d994d56b8b5266462b7b8d4) in the vernacular, Transparency International’s efforts to expose [corruption](https://www.hindsight.tisrilanka.org/), Verité Research’s attempt to [fact-check](https://factcheck.lk/) politicians, and the GotaGoGama [People’s University](https://www.facebook.com/Peoples-University-Gotagogama-106927955328032/) discussions are steps in the right direction.
 
