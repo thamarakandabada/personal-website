@@ -1202,12 +1202,14 @@ Gigs
     padding: 0;
 }
 .gig-label {
-    margin-top: 1rem !important;
+    margin: -1rem 0 0 1rem;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 0.25rem 0.5rem !important;
     background-color: var(--bg-tertiary);
     font-size: 1rem;
     width: fit-content;
+    display: inline-block;
 }
 
 .gig-title {
@@ -1243,3 +1245,8 @@ Gigs
     margin: 0;
     padding: 0;
 }
+
+  .gig-photo img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }

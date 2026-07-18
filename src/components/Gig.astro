@@ -12,9 +12,11 @@ const { imageUrl, imageAlt, label, title, description, venue, date, support } = 
 		  alt={imageAlt}
     />
   </div>
-  <p class="gig-label">{label}</p>
+  <div class="gig-label">
+    <p>{label}</p>
+  </div>
   <p class="gig-title">{title}</p>
-  <p class="gig-support">Supported by: {support}</p>
+  <p class="gig-support">{support}</p>
   <p class="gig-description">{description}</p>
   <p class="gig-date">{date.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})} at <span class="gig-venue">{venue}</span></p>
 </div>
