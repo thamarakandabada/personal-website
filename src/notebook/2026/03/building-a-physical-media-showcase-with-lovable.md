@@ -42,6 +42,8 @@ Here is a detailed breakdown of the colour palette used throughout the app.
 
 ### [Colour Palette](https://github.com/thamarakandabada/physicalmediavault#colour-palette)
 
+<div class="md-table">
+
 | Role | Hex | HSL | Usage |
 | --- | --- | --- | --- |
 | **Background** | `#101519` | `210 20% 7%` | Page background |
@@ -52,7 +54,11 @@ Here is a detailed breakdown of the colour palette used throughout the app.
 | **Muted Foreground** | `#737A80` | `210 8% 50%` | Secondary / placeholder text |
 | **Border** | `#262C33` | `210 12% 17%` | Borders and dividers |
 
+</div>
+
 #### [Accent Colours](https://github.com/thamarakandabada/physicalmediavault#accent-colours)
+
+<div class="md-table">
 
 | Role | Hex | HSL | Usage |
 | --- | --- | --- | --- |
@@ -61,7 +67,11 @@ Here is a detailed breakdown of the colour palette used throughout the app.
 | **Orange** | `#FF8000` | `30 100% 50%` | Secondary accent, warnings |
 | **Destructive** | `#E03E3E` | `0 72% 50%` | Delete actions, errors |
 
+</div>
+
 #### [Media Type Badges](https://github.com/thamarakandabada/physicalmediavault#media-type-badges)
+
+<div class="md-table">
 
 | Type | Hex | HSL |
 | --- | --- | --- |
@@ -70,6 +80,8 @@ Here is a detailed breakdown of the colour palette used throughout the app.
 | Documentary | `#30994D` | `145 50% 38%` |
 | Concert Film | `#B83D78` | `330 55% 48%` |
 | TV | `#6633CC` | `265 50% 50%` |
+
+</div>
 
 ## Film ti(t)les
 

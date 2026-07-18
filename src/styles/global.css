@@ -305,7 +305,12 @@ table {
     width: 100%;
     font-size: 1.2rem;
     border-collapse: collapse;
+    text-align: left;
 }
+
+.md-table {
+    overflow-x: auto;
+} 
 
 tr {
     border-bottom: 1px solid var(--border-color);
