@@ -22,17 +22,13 @@ const nextPost =
     <nav class="post-nav">
       {previousPost && (
         <p>
-          Previous Post: <a href={`/notebook/${previousPost.id}/`}>
-            {previousPost.data.title}
-          </a>
+          <a href={`/notebook/${previousPost.id}/`}>Previous Post</a>
         </p>
       )}
 
       {nextPost && (
         <p>
-          Next Post: <a href={`/notebook/${nextPost.id}/`}>
-            {nextPost.data.title}
-          </a>
+          <a href={`/notebook/${nextPost.id}/`}>Next Post</a>
         </p>
       )}
     </nav>

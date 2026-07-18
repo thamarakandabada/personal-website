@@ -4,6 +4,7 @@ import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from "@vercel/speed-insights/astro";
 import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
+import BlogPostNavPrevNext from '../components/BlogPostNavPrevNext.astro';
 
 const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
@@ -41,6 +42,7 @@ const formattedDate = frontmatter.pubDate
 		    {frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
 		  </ul>
 	    </div>
+		<BlogPostNavPrevNext />
     </div>
 	<GlobalFooter />
 </body>
