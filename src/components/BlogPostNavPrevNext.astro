@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0));
+
+const currentPostIndex = posts.findIndex(post => post.id === Astro.params.slug);
+
+const previousPost =
+  ((currentPostIndex >= 0) && (currentPostIndex < posts.length - 1))
+    ? posts[currentPostIndex + 1]
+    : undefined;
+
+const nextPost =
+  currentPostIndex > 0
+    ? posts[currentPostIndex - 1]
+    : undefined;
+---
+
+{
+  (previousPost || nextPost) && (
+    <nav class="post-nav">
+      {previousPost && (
+        <p>
+          Previous Post: <a href={`/notebook/${previousPost.id}/`}>
+            {previousPost.data.title}
+          </a>
+        </p>
+      )}
+
+      {nextPost && (
+        <p>
+          Next Post: <a href={`/notebook/${nextPost.id}/`}>
+            {nextPost.data.title}
+          </a>
+        </p>
+      )}
+    </nav>
+  )
+}

@@ -36,6 +36,8 @@ Unsurprisingly, I wanted to visit a film theatre while in Glasgow. I picked [The
 
 The cinema is cozily tucked away on [Ashton Lane](https://maps.app.goo.gl/8HX4bi33aRkxiuh5A), surrounded by several bars. Being a Saturday night, it was as busy as it could get, with throngs of people milling about. When we walked into screen 2, the first thing I noticed was how the thumping bass from the music playing outside was leaking through. I chose to ignore this and settled in to see the film, which sadly did not turn out to be an enjoyable experience. It was ruined by people walking in and out of the cinema constantly—some jumping over seats to do so!—and a group of (possibly drunk) teenagers interjecting every so often, whom the manager eventually had to throw out.
 
+<div class="md-grid">
+
 ![Nuwani posing outside the cinema, under the large illuminated sign that reads The Grosvenor Picture Theatre.](images/IMG_3519-768x1024.jpg)
 
 ![Nuwani on the seat next to me at the cinema, illuminated by one of the small lamps installed next to every seat.](images/IMG_3522.jpg)
@@ -43,6 +45,8 @@ The cinema is cozily tucked away on [Ashton Lane](https://maps.app.goo.gl/8HX4bi
 ![One of our tickets for the film Backrooms, with the screen number and the seat number printed on it.](images/IMG_3518-scaled.jpg)
 
 ![A wide photo of screen 2. The vintage look of the cinema is preserved with the use of red carpets and acoustic treatment of the walls, and red leather chairs.](images/IMG_3521-scaled.jpg)
+
+</div>
 
 While it may be lucrative, I'm not convinced that the location of this cinema (neighbouring a number of very busy bars) is conducive to attracting the most well-behaved cinema-goers. The [code violations](https://iwittr.com/wiki/page/Moviegoers_Code_of_Conduct) I witnessed on a single visit were simply too many and too extreme to tolerate. I don't imagine I would be back.
 
@@ -64,11 +68,15 @@ Barrowland was a 15-minute walk from our hotel. I made my way there around 7pm, 
 
 Big Thief took the stage around 9pm. They performed a mix of new and old tracks, including my favourites _Mary_ (from the album _Capacity_) and _Not_ (from the album _Two Hands_). I posted a video of their performance of _Not_ on my [/Gigs](/gigs) page; it was every bit as powerful as I had hoped it would be. The audience was abuzz with a palpable energy that night; I must say I enjoyed every minute of it.
 
+<div class="md-grid">
+
 ![The band on stage, mid-performance. They're illuminated by soft orange and purple lights while the audience in the foreground looks on.](images/IMG_3560-scaled.jpg)
 
 ![Adrianne Lenker on her knees while performing the solo of the song Not. Many audience members have their phones out, filming the moment. ](images/IMG_3569-scaled.jpg)
 
 ![The multi-coloured neon signage on the front face of the Barrowland building beautifully illuminated at night](images/IMG_3577.jpg)
+
+</div>
 
 ## Monday
 
@@ -81,6 +89,8 @@ The famous [Glasgow Necropolis](https://en.wikipedia.org/wiki/Glasgow_Necropolis
 <figcaption>The entrance to the necropolis through the Bridge of Sighs</figcaption>
 
 While it is by design a resting place for the dead, there is a lot of life to be found in these grounds. It is by no means a desolate graveyard. Bees buzzing around the flower beds, squirrels in the trees, and the constant birdsong in the air make it an ideal place for quiet walks, absorbed in deep contemplation if you are so inclined. But the city is only a few minutes away, and its sounds do penetrate the invisible walls of this unlikely sanctuary occasionally—nothing like a loud car horn to remind you of the never-ending pursuit of industry.
+
+<div class="md-grid">
 
 ![One of the many leafy walkways through the necropolis, with trees bursting in green along both sides](images/IMG_3608-scaled.jpg)
 
@@ -102,6 +112,8 @@ While it is by design a resting place for the dead, there is a lot of life to be
 
 ![Large trees along one of the perimeter walls of the necropolis](images/IMG_3610.jpg)
 
+</div>
+
 The necropolis is built on a small hill. At the top, on a large column, is a statue of [John Knox](https://en.wikipedia.org/wiki/John_Knox), a theologian who played a prominent role in the [Scottish Reformation](https://en.wikipedia.org/wiki/Scottish_Reformation). Standing at the foot of the column you can see the grounds stretch in all four directions, peaceful, quiet, and impossibly green.
 
 ### Glasgow Cathedral
@@ -109,6 +121,8 @@ The necropolis is built on a small hill. At the top, on a large column, is a sta
 This impressive cathedral, first built in the 1100s, has undergone several renovations under many Bishops over the years. It is dedicated to [Saint Mungo](https://en.wikipedia.org/wiki/Saint_Mungo) (also known as Saint Kentigern) whose tomb it enshrines. It had served as an important pilgrimage site during the medieval period. Importantly, it survived the Scottish Reformation virtually intact, while many other churches were stripped of their status and destroyed as the Protestants rebelled against traditional forms of Catholic worship.
 
 Christian architecture fascinates me because I find its mere existence impossible to comprehend. How can such beauty and grace be imbued into places built in the service of a capricious god? How are the same people capable of committing unspeakable atrocities in the name of their god also be skilled in producing wondrous monuments to him? While impressed by the craftsmanship and artistry of it all, I remain staunchly irreligious, but even I must fess up to the following, albeit reluctantly: Christianity ain't all bad; it gave us beautiful cathedrals (and Martin Scorsese).
+
+<div class="md-grid">
 
 ![A copy of the King James Bible printed in 1617 that is displayed at the cathedral inside a glass case.](images/IMG_3628-scaled.jpg)
 
@@ -128,16 +142,22 @@ Christian architecture fascinates me because I find its mere existence impossibl
 
 ![The entrance to the cathedral as seen from the outside](images/IMG_3619-scaled.jpg)
 
+</div>
+
 ### St. Mungo’s Museum of Religious Life and Art
 
 This small museum is located right next to the cathedral. It showcases the beliefs and rituals of several major religions around the world, told through numerous artefacts, audio and video exhibits, and excerpts of interviews with representatives of each religious faith. Entry is free of charge. We were running out of time, so we didn't get to see much of the museum. We will go back to see the rest of it some day.
 
 On the way back we noticed a [coffee shop](https://www.instagram.com/copperboxcoffee/) located in an old police box, TARDIS-style. It was getting colder and there was a light drizzle, so we got ourselves some hot chocolate to enjoy on the way back to the hotel. That morning I had read [the post James wrote about Caramel Logs](https://jamesg.blog/2026/05/31/the-caramel-log), which this coffee shop happened to be selling, so we bought two of them to try. James was right; they are excellent treats with a great flavour combination, and they certainly won me—someone who generally avoids caramel-flavoured food—over.
 
+<div class="md-grid">
+
 ![Copperbox Coffee, a small specialty coffee shop based in the Cathedral Square in Glasgow which is run out of a blue police box.](images/IMG_3638.jpg)
 
 ![Me holding a Tunnock’s Caramel Log, a chocolate and caramel covered wafer treat, in a red and white wrapper.](images/IMG_3637-scaled.jpg)
 
 ![Nuwani and I holding our hot chocolate cups together](images/IMG_3639-scaled.jpg)
+
+</div>
 
 We took the bus back to the Glasgow airport and flew back home with full hearts. Scotland is a place of many delights; we aim to go back very soon.

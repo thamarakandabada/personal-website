@@ -28,9 +28,13 @@ Once the formalities were dealt with, we were taken to the starting point of the
 
 The walk begins on a craggy shore, past a few farms. On a clear day, like the one we were fortunate enough to do this on, you can see Scotland's Mull of Kintyre on one side of the horizon, and Northern Ireland's own Bangor on the other.
 
+<figure>
+
 ![The craggy shoreline at the start of the walking path in the morning sun](images/IMG_3227-1024x768.jpg)
 
 <figcaption>The starting point of the walking path</figcaption>
+
+</figure>
 
 The entrance to the walking path is closed off. The padlocked gate can only be opened by a guide, and once you enter through Wise's Eye—a hole bored in the rock, named after the path's creator Berkeley Deane Wise— it is clear why it remains under lock and key.
 
@@ -42,73 +46,129 @@ The cliffs are home to a variety of birdlife including the extremely elusive puf
 
 The walk took about 2 hours in total, and our guide was with us the whole time. The views were indeed incredible, and the photos below don't do them justice.
 
+<div class="md-grid">
+
+<figure>
+
 ![Our boots photographed together. The shoes are a bit worn, and covered in smudges, showing use.](images/IMG_3188-768x1024.jpg)
 
 <figcaption>Nuwani and I wearing our hiking boots</figcaption>
+
+</figure>
+<figure>
 
 ![A view of the sea as seen through the trees. The sea is a greenish blue in colour against the vibrant greens of the foliage.](images/IMG_7971-768x1024.jpg)
 
 <figcaption>The sea, as seen from drop off point of the tour</figcaption>
 
+</figure>
+<figure>
+
 ![A group of people, wearing hard hats and walking boots, walking away from the camera, while the sun shines brightly overhead.](images/IMG_7832-768x1024.jpg)
 
 <figcaption>The group making their way to the start of the path</figcaption>
+
+</figure>
+<figure>
 
 ![An obelist erected on the coast near the shore. The craggy shoreline can be seen in the background, and a section of the path can be seen to the left of the photo.](images/IMG_7848-768x1024.jpg)
 
 <figcaption>The WWI monument at the start of the path</figcaption>
 
+</figure>
+<figure>
+
 ![A photo of Nuwani, on the left, and I, on the right. Nuwani is wearing a light green coat and I a green one. We both have hard hats in our hands.](images/IMG_3229-768x1024.jpg)
 
 <figcaption>Nuwani and I at the entrance to the path</figcaption>
+
+</figure>
+<figure>
 
 ![A bridge and a section of the walking path with the horizon in the background. Two people can be seen on the bridge, talking to each other.](images/IMG_7887-2-768x1024.jpg)
 
 <figcaption>A view of the path ahead</figcaption>
 
+</figure>
+<figure>
+
 ![Purple flowers on a bed of mossy grass perched on a cliff](images/IMG_7960-768x1024.jpg)
 
 <figcaption>Flowers growing out of the cliff-face</figcaption>
+
+</figure>
+<figure>
 
 ![People walking along the path, with the sea on the left and a sheer cliff face on the right.](images/IMG_7951-768x1024.jpg)
 
 <figcaption>A section of the path</figcaption>
 
+</figure>
+<figure>
+
 ![Nuwani standing on the cliff path holding the fence on her left.](images/IMG_3226-768x1024.jpg)
 
 <figcaption>Nuwani taking a break to pose</figcaption>
+
+</figure>
+<figure>
 
 ![A group of people, all wearing hard hats, descending a staircase leading into a cave](images/IMG_7947-768x1024.jpg)
 
 <figcaption>Descending in to a cave</figcaption>
 
+</figure>
+<figure>
+
 ![Two bridges intersecting at a concrete column built into the rocky shore, with the horizon in the background.](images/IMG_7921-scaled.jpg)
 
 <figcaption>A view of two of the bridges on the path</figcaption>
+
+</figure>
+<figure>
 
 ![The horizon dividing a brilliant blue sky and a green sea. Rocks along the sea shore can be seen in the foreground.](images/IMG_7907-768x1024.jpg)
 
 <figcaption>A view of the sea as seen from the path</figcaption>
 
+</figure>
+<figure>
+
 ![The dark opening of a cave, with a craggy landing in the foreground. Foamy seawater is creeping towards the cave opening.](images/IMG_7929-768x1024.jpg)
 
 <figcaption>A cave that can be seen along the path</figcaption>
+
+</figure>
+<figure>
 
 ![Me wearing a blue coat, blue hiking trousers and a hard hat standing with my back to a cliff.](images/IMG_7889-768x1024.jpg)
 
 <figcaption>Me against the sheer cliff-face the path was carved into</figcaption>
 
+</figure>
+<figure>
+
 ![Nuwani posing for a photo in the middle of a tubular metal bridge. The rest of the group can be seen behind her.](images/IMG_3203-768x1024.jpg)
 
 <figcaption>Nuwani at the tubular bridge</figcaption>
+
+</figure>
+<figure>
 
 ![Small white birds scattered across many legdes on a rock face.](images/IMG_7910-768x1024.jpg)
 
 <figcaption>Kittiwakes nesting in the cliffs</figcaption>
 
+</figure>
+<figure>
+
 ![A photo of Nuwani standing next to the protective fence at the end of the path. She is wearing a green coat, a hard hat and sunglasses.](images/IMG_3217-768x1024.jpg)
 
 <figcaption>Nuwani at the end of the path</figcaption>
+
+</figure>
+
+</div>
 
 It was an excellent day out in the sun, with a bit of exercise to boot, and we learned quite a bit about the local history, wildlife, and plant life. If you ever find yourself in Northern Ireland for a few days, this walk is highly recommended.
 

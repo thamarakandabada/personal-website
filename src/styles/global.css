@@ -175,6 +175,12 @@ nav p, nav div {
     transition: 0.5s;
 }
 
+.post-nav {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
 /*
 Text elements
 --------------
@@ -583,7 +589,7 @@ Grids and sub-grids
 ===================
 */
 
-.gigs-grid {
+.gigs-grid, .md-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1.5rem;
@@ -699,8 +705,9 @@ Site notices
 
 .topics-list {
     border-top: 1px solid var(--border-color);
-    margin-top: 3rem;
-    padding-top: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    margin: 3rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
 }
 
 .topics-list ul {
@@ -788,7 +795,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .md-grid {
     grid-template-columns: 1fr;
     }
 

@@ -4,6 +4,7 @@ import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from "@vercel/speed-insights/astro";
 import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
+import BlogPostNavPrevNext from '../components/BlogPostNavPrevNext.astro'; 
 
 const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
@@ -38,12 +39,29 @@ const formattedDate = frontmatter.pubDate
       <slot />
 	
     	<div class="topics-list">
-		<ul>
-		<li><strong>Topics:</strong></li>
-		{frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
-		</ul>
+		  <ul>
+		    <li><strong>Topics:</strong></li>
+		      {frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
+		  </ul>
+	    </div>
+
+		<!-- Discuss comment widget -->
+		<div class="discuss-widget">
+          <link rel="stylesheet" href="https://discuss.thamara.co.uk/client.css">
+          <div id="discuss-comments"></div>
+          <script src="https://discuss.thamara.co.uk/client.js"></script>
+          <script>
+            new DiscussWidget({
+              container: document.getElementById('discuss-comments'),
+              serverUrl: 'https://discuss.thamara.co.uk',
+              primaryColor: '#2563eb',
+            });
+          </script>
+		</div>
+
+	    <BlogPostNavPrevNext />
+    
 	</div>
-    </div>
 	<GlobalFooter />
 </body>
 </html>

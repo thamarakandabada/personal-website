@@ -22,7 +22,7 @@ const formattedDate = frontmatter.pubDate
 	<meta name="generator" content={Astro.generator} />
     <Analytics/>
     <SpeedInsights/>
-	<title>Streamlet on {frontmatter.pubDate}</title>
+	<title>Streamlet on {frontmatter.pubDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric'})}</title>
 </head>
 	
 <body>	

@@ -3,7 +3,7 @@ title: 'Catharsis through film'
 pubDate: 2026-04-23
 description: 'Some thoughts on two recent Brazilian cinema outings'
 author: 'Thamara Kandabada'
-imageUrl: 'images/The-Blue-Trail.webp'
+imageUrl: 'images/The-Blue-Trail.jpg'
 imageAlt: 'A still from The Blue Trail (2025), where the main character is standing next to a large sculpted head overgrown with foliage'
 imageCaption: 'Denise Weinberg as Tereza in The Blue Trail'
 sections: ["Everything Else"]

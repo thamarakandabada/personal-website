@@ -22,6 +22,7 @@ A demo of the app can be accessed here: [finviz.thamara.co.uk](https://finviz.th
 
 Feel free to upload your own data and play about. (The data resets periodically.) Here are a few screenshots to tickle your fancy.
 
+
 ![App screenshot showing the login screen](images/Screenshot-2026-04-13-at-23.50.55.png)
 
 ![App screenshot showing a monthly summary of finances and an expense breakdown](images/Screenshot-2026-04-13-at-23.51.50.png)
