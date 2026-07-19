@@ -1,0 +1,30 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { Code } from 'astro:components';
+
+const pageTitle = "Subdomains - Thamara Kandabada";
+---
+<PageLayout title={pageTitle}>
+  <body>
+
+    <h1>Subdomains</h1>
+    
+    <p>The following subdomains are associated with this website. I have hosted various apps and tools on them.</p>
+
+    <div class="see-also">
+      <ul>
+        <li><strong>See also:</strong></li>
+        <li><a href="/slashpages" target="_blank">Slashpages</a></li>
+      </ul>
+    </div>
+    
+    <ul>
+      <li><Code code=`archive.thamara.co.uk` inline />: </li>  
+      <li><Code code=`discuss.thamara.co.uk` inline />: </li>  
+      <li><Code code=`finviz.thamara.co.uk` inline />: A visualisation app for financial data exported from <a href="https://hochgatterer.me/finances/" target="_blank">Finances 2</a>.</li>
+      <li><Code code=`moria.thamara.co.uk` inline />: A suite of financial apps for personal use. This includes a moified version of the Finviz app above.</li>  
+      <li><Code code=`physicalmedia.thamara.co.uk` inline />: My physical media collection, hosted on a simple React app. Read more about the app <a href="/notebook/2026/03/building-a-physical-media-showcase-with-lovable/">here</a>, or clone it and make your own using the <a href="https://github.com/thamarakandabada/physicalmediavault" target="_blank">GitHub repository</a>.</li>
+    </ul>
+
+  </body>
+</PageLayout>
