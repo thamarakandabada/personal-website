@@ -1,5 +1,7 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Code } from 'astro:components';
+
 const pageTitle = "Subdomains - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -7,35 +9,21 @@ const pageTitle = "Subdomains - Thamara Kandabada";
 
     <h1>Subdomains</h1>
     
-    <p>This website is my <a href="https://indieweb.org/digital_garden" target="_blank">“digital garden“</a>—my corner of the internet where I publish thoughts, showcase various interests, run experiments, and archive things for posterity. I treat it as an extension of my offline self. It is completely non-commercial, built with thought and care, and adheres to the <a href="https://indieweb.org" target="_blank">IndieWeb ethos</a>.</p>
-    <p>Exploring this digital garden is easy; simply navigate through the various <a href="https://slashpages.net/" target="_blank">slash pages</a> below. They represent different parts of my personality, interests, and history.</p>
+    <p>The following subdomains are associated with this website. I have hosted various apps and tools on them.</p>
+
+    <div class="see-also">
+      <ul>
+        <li><strong>See also:</strong></li>
+        <li><a href="/slashpages" target="_blank">Slashpages</a></li>
+      </ul>
+    </div>
     
     <ul>
-      <li><strong><a href="/accessibility">/Accessibility</a></strong>: My accessibility statement.</li>
-      <li><strong><a href="/ai">/AI</a></strong>: How I am using (and not using) AI.</li>
-      <li><strong><a href="/blank">/Blank</a></strong>: A blank page.</li>
-      <li><strong><a href="/blogroll">/Blogroll</a></strong>: A list of blogs I follow.</li>
-      <li><strong><a href="/changelog">/Changelog</a></strong>: A log of changes made to this website.</li>
-      <li><strong><a href="/colophon">/Colophon</a></strong>: Information on how this website is built.</li>
-      <li><strong><a href="/credits">/Credits</a></strong>: A list of tools and resources used making this website.</li>
-      <li><strong><a href="/desk">/Desk</a></strong>: The evolution of my desk setup.</li>
-      <li><strong><a href="/experiments">/Experiments</a></strong>: A testing ground for new features.</li>
-      <li><strong><a href="/feeds">/Feeds</a></strong>: All my RSS feeds that you can subscribe to.</li>
-      <li><strong><a href="/design">/Design</a></strong>: A showcase of my design work.</li>
-      <li><strong><a href="/gigs">/Gigs</a></strong>: A timeline of gigs I have been to.</li>
-      <li><strong><a href="/gitlog">/Gitlog</a></strong>: A detailed changelog listing every Git commit for this site.</li>
-      <li><strong><a href="/guestbook">/Guestbook</a></strong>: A place for visitors to leave messages.</li>
-      <li><strong><a href="/hello">/Hello</a></strong>: Get in touch.</li>
-      <li><strong><a href="/notebook">/Notebook</a></strong>: My personal blog.</li>
-      <li><strong><a href="/now">/Now</a></strong>: What I am doing now.</li>
-      <li><strong><a href="https://physicalmedia.thamara.co.uk">/Physical Media Vault</a></strong>: My physical media collection.</li>
-      <li><strong><a href="/podroll">/Podroll</a></strong>: A list of podcasts I listen to.</li>
-      <li><strong><a href="/projects">/Projects</a></strong>: A list of projects I am and have been involved in.</li>
-      <li><strong><a href="/resume">/Resume</a></strong>: My professional background and experience.</li>
-      <li><strong><a href="/sitemap">/Sitemap</a></strong>: A human-readable map of this website.</li>
-      <li><strong><a href="/style">/Style</a></strong>: The style sheet for this website.</li>
-      <li><strong><a href="/uses">/Uses</a></strong>: The tools and services I use.</li>
-      <li><strong><a href="/verify">/Verify</a></strong>: Verification of my online identities.</li>
+      <li><Code code=`archive.thamara.co.uk` inline />: </li>  
+      <li><Code code=`discuss.thamara.co.uk` inline />: </li>  
+      <li><Code code=`finviz.thamara.co.uk` inline />: A visualisation app for financial data exported from <a href="https://hochgatterer.me/finances/" target="_blank">Finances 2</a>.</li>
+      <li><Code code=`moria.thamara.co.uk` inline />: A suite of financial apps for personal use. This includes a moified version of the Finviz app above.</li>  
+      <li><Code code=`physicalmedia.thamara.co.uk` inline />: My physical media collection, hosted on a simple React app. Read more about the app <a href="/notebook/2026/03/building-a-physical-media-showcase-with-lovable/">here</a>, or clone it and make your own using the <a href="https://github.com/thamarakandabada/physicalmediavault" target="_blank">GitHub repository</a>.</li>
     </ul>
 
   </body>
