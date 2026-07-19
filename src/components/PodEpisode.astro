@@ -1,0 +1,13 @@
+---
+const { title, url, pubDate, episode, guest } = Astro.props;
+---
+<div>
+  <a href={url}>
+    <div class="podcast-meta">
+      <p class="podcast-date">{pubDate.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</p>
+      <p class="podcast-ep">Episode {episode}</p>
+    </div>
+    <h2>{title}</h2>
+    <p class="podcast-guest">{guest}</p>
+  </a>
+</div>

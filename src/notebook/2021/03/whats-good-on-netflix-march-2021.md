@@ -7,7 +7,7 @@ imageUrl: 'images/pexels-karola-g-5202917.jpg'
 imageAlt: 'Selective focus of a Netflix screen on a smart TV in an indoor setting.'
 imageCaption: 'Photo by www.kaboompics.com from Pexels'
 sections: ["Everything Else"]
-topics: ["4K Blu-rays", "Blu-rays", "Physical Media", "Films", "Star Wars"]
+topics: ["Recommendations", "Streaming", "Netflix", "Films", "TV Shows"]
 ---
 
 ## The Dig (2021)

@@ -51,9 +51,20 @@ const gigs = defineCollection({
     })
 });
 
+const podcast = defineCollection({
+    loader: glob({ pattern: '**/[^_]*.md', base: "./src/projects/podcast" }),
+    schema: z.object({
+      title: z.string(),
+      pubDate: z.date(),
+      guest: z.string().optional(),
+      episode: z.string(),
+    })
+});
+
 // Export a single `collections` object to register your collection(s)
 export const collections = {
   'blog': blog,
   'debas': debas,
-  'gigs': gigs
+  'gigs': gigs,
+  'podcast': podcast
 };

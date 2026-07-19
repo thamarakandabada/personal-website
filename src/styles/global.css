@@ -340,6 +340,10 @@ img {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+audio {
+    width: 100%;
+}
+
 figure {
     margin: 0;
     padding: 0;
@@ -638,7 +642,7 @@ Grids and sub-grids
 }
 
 .debas-grid a, .podcast-grid a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .uses-grid-container div, .now-grid div, .debas-grid div, .unlinked-grid, .linked-grid, .post-footer, .podroll-grid div:not(.podroll-subgrid), .blogroll-grid div:not(.blogroll-subgrid), .verify-grid div:not(.verify-subgrid), .podcast-grid div {
@@ -657,6 +661,10 @@ Grids and sub-grids
 
 .podcast-date, .podcast-ep {
     margin: 0;
+}
+
+.podcast-ep {
+    font-weight: 700;
 }
 
 .debas-author, .podcast-guest {
@@ -727,7 +735,7 @@ Media queries
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)  {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content {
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -830,7 +838,7 @@ Media queries
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -925,7 +933,7 @@ Media queries
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -972,7 +980,7 @@ Media queries
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -992,7 +1000,7 @@ Media queries
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1000px) {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -1042,7 +1050,7 @@ Blog
     font-style: italic;
 }
 
-.blog-content {
+.blog-content, .podcast-content {
     max-width: 1024px;
     margin: 0 auto;
     margin-top: 3rem;
@@ -1054,19 +1062,19 @@ Blog
     padding: 3rem 0 120px;
 }
 
-.blog-header-no-image {
+.blog-header-no-image, .podcast-header {
     background-color: var(--bg-secondary);
     margin: 0 auto;
     padding: 3rem 0 3rem;
 }
 
-.blog-header h1, .blog-header p, .blog-header-no-image h1, .blog-header-no-image p {
+.blog-header h1, .blog-header p, .blog-header-no-image h1, .blog-header-no-image p, .podcast-header h1, .podcast-header p {
     max-width: 1024px;
     margin: 0 auto;
     text-align: center;
 }
 
-.blog-category, .blog-date {
+.blog-category, .blog-date, .podcast-date, .podcast-ep {
     padding: 1rem;
 }
 

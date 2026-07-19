@@ -7,7 +7,6 @@ import DebasPost from '../../components/DebasPost.astro';
 const pageTitle = "Debas Archives";
 const allPosts = await getCollection("debas");
 const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
-
 ---
 <PageLayout title={pageTitle}>
   <body>
