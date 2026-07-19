@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import PageLayout from '../../layouts/PageLayout.astro';
+import Poster from '../../components/Poster.astro';
+
+export const getStaticPaths = (async ({paginate}) => {
+  const posts = (await getCollection('poster'))
+    .sort((a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0));
+
+  return paginate(posts, { pageSize: 18 } );
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
+const pageTitle = "Design - Thamara Kandabada";
+---
+<PageLayout title={pageTitle}>
+
+    <h1>Design</h1>
+    
+    <p>Although I have no formal training in design, I dabble. These side projects are presented on the web and elsewhere under my alias <i>Winding Road Design</i>, named after one of my favourite songs by the greatest band of all time. While it is primarily a hobby, culminating in alternate poster designs for films and TV, I have occasionally been involved in fundraising ventures such as The Turnaround Project‘s Great Legal Challenge.</p>
+
+          <div class="poster-list">
+            {page.data.map((post: any) => <Poster pubDate={post.data.pubDate} url={`/design/${post.id}/`} title={post.data.title} category={post.data.category} year={post.data.year} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt}/>)}
+          </div>
+
+          <div class="pagination-links">
+            {
+              (page.lastPage > 1) && (
+              <nav aria-label="Pagination">
+               { page.url.prev && ( <a href={page.url.prev}>Previous Page</a> ) }
+               { pageNumbers.map((num) => (
+                 num === page.currentPage
+                 ? <span aria-current="page">{num}</span>
+                 : <a href={num === 1 ? '/design/' : `/design/${num}/`} aria-label={`Page ${num}`}>{num}</a>
+              ))
+              }
+              { page.url.next && ( <a href={page.url.next}>Next Page</a> ) }
+              </nav>
+            )
+            }
+          </div>
+
+</PageLayout>

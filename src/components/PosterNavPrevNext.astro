@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('poster'))
+  .sort((a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0));
+
+const currentPostIndex = posts.findIndex(post => post.id === Astro.params.slug);
+
+const previousPoster =
+  ((currentPostIndex >= 0) && (currentPostIndex < posts.length - 1))
+    ? posts[currentPostIndex + 1]
+    : undefined;
+
+const nextPoster =
+  currentPostIndex > 0
+    ? posts[currentPostIndex - 1]
+    : undefined;
+---
+
+{
+  (previousPoster || nextPoster) && (
+    <nav class="post-nav">
+      {previousPoster && (
+        <p>
+          <a href={`/design/${previousPoster.id}/`}>Previous</a>
+        </p>
+      )}
+
+      {nextPoster && (
+        <p>
+          <a href={`/design/${nextPoster.id}/`}>Next</a>
+        </p>
+      )}
+    </nav>
+  )
+}

@@ -61,10 +61,25 @@ const podcast = defineCollection({
     })
 });
 
+const poster = defineCollection({
+    loader: glob({ pattern: '**/[^_]*.md', base: "./src/design" }),
+    schema: ({ image }) => z.object({
+      title: z.string(),
+      pubDate: z.date(),
+      year: z.string(),
+      imageUrl: image(),
+      imageAlt: z.string(),
+      description: z.string(),
+      category: z.array(z.string()),
+      director: z.string().optional(),
+    })
+});
+
 // Export a single `collections` object to register your collection(s)
 export const collections = {
   'blog': blog,
   'debas': debas,
   'gigs': gigs,
-  'podcast': podcast
+  'podcast': podcast,
+  'poster': poster
 };

@@ -1,0 +1,16 @@
+---
+import { Picture } from 'astro:assets';
+
+const { title, url, year, category, imageUrl, imageAlt } = Astro.props;
+---
+<div class="poster-list-item">
+    <a href={url}>
+      <figure>
+        <Picture src={imageUrl} formats={['avif', 'webp']} alt={imageAlt} />
+      </figure>
+      <div class="poster-meta">
+        <p class="poster-list-category">{category}</p>
+        <p><span class="poster-list-title">{title}</span> <span class="poster-list-year">({year})</span></p>
+      </div>
+    </a>
+  </div>
