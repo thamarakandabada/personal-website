@@ -735,7 +735,7 @@ Media queries
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)  {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -750,7 +750,7 @@ Media queries
     margin-right: 0;
     }
 
-    .site-tagline {
+    .site-tagline, .poster-page-flex {
         display: flex;
         flex-direction: column;
     }
@@ -838,7 +838,7 @@ Media queries
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    .page-content, nav, .footer-content, .blog-content,.blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content {
+    .page-content, nav, .footer-content, .blog-content,.blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -937,7 +937,7 @@ Media queries
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -988,7 +988,7 @@ Media queries
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -1008,7 +1008,7 @@ Media queries
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1000px) {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content {
+    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -1307,7 +1307,7 @@ Gigs
     gap: 0.5rem;
 }
 
-.poster-list-category {
+.poster-list-category, .poster-category {
     color: var(--accent);
     font-weight: 700;
 }
@@ -1321,8 +1321,36 @@ Gigs
     color: var(--text-secondary)
 }
 
-.poster-page-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.poster-page-flex {
+    display: flex;
     gap: 2rem;
+}
+
+.poster-image {
+    flex: 60%
+}
+
+.poster-details {
+    flex: 40%;
+}
+
+.poster-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.poster-year {
+    margin: 0;
+}
+
+.poster-description {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.poster-director {
+
+    font-weight: 700;
 }

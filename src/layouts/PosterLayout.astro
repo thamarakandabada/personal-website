@@ -30,14 +30,15 @@ const formattedDate = frontmatter.pubDate
 <body>
   <Navigation />
     <div class="poster-content">
-    <div class="poster-page-grid">
+    <div class="poster-page-flex">
 	  <div class="poster-image">
 		<Picture src={frontmatter.imageUrl} formats={['avif', 'webp']} alt={frontmatter.imageAlt} />
 	  </div>
 	  <div class="poster-details">
 		<p class="poster-category">{frontmatter.category}</p>
-		<p class="poster-title">{frontmatter.title}</p>
+		<h1 class="poster-title">{frontmatter.title}</h1>
 		<p class="poster-year">{frontmatter.year}</p>
+		<p class="poster-director">{frontmatter.director}</p>
 		<p class="poster-description">{frontmatter.description}</p>
 	  </div>
       <slot />
