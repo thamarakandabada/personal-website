@@ -120,17 +120,20 @@ const pageTitle = "Style - Thamara Kandabada";
 
   <p>Inline code snippets are set in the monospace font Cascadia Mono at <Code code={`0.9rem`} inline />(to offset variable font heights between this and the base font) and are enclosed in a background block with a border radius of <Code code={`4px`} inline />.</p>
 
-  <p>Code blocks are also enclosed in a background block with a boder radius of <Code code={`4px`} inline /> and variable padding. Overflow triggers a scrollbar set in the accent colour at a width of <Code code={`100px`} inline />. (Browser support for scrollbar styles vary). Syntax highlighting is handled by the built-in <a href="https://shiki.style/" target="_blank">Shiki</a> integration. I'm using the default <em>GitHub Dark</em> theme from Shiki, and this does not currently switch to a light theme when the website theme is switched.</p>
+  <p>Code blocks are also enclosed in a background block with a boder radius of <Code code={`4px`} inline /> and <Code code=`0.5rem 1rem` inline /> padding. Overflow on the x-axis triggers a scrollbar. Syntax highlighting is handled by the built-in <a href="https://shiki.style/" target="_blank">Shiki</a> integration. I'm using the default <em>GitHub Dark</em> theme from Shiki, and this does not currently switch to a light theme when the website theme is switched.</p>
+  <p>Inline code, however, is handled slightly differently. They are enclosed in a background set in the tertiary background colour, with a <Code code=`4px` inline /> border radius and <Code code=`0.25rem 0.5rem` inline /> padding.</p>
   <p>See example below.</p>
   <Code
   lang="css"
-  code={`/*Overriding the wdith and height specification required by Astro's <Picture /> tag and adding a border radius*/
- img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
- }`} />
+  code={`
+  /*Overriding the width and height specification required by Astro's <Picture /> tag and adding a border radius*/
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+  }
+  `} />
   
   <p>Blockquotes are italicised. They are <Code code={`1.5rem`} inline /> in font size and styled in the secondary text colour, with a <Code code={`1px`} inline /> left border styled in the accent colour. Blockquotes are only used for quotations rather than as a decorative element. See example below. </p>
   <blockquote>

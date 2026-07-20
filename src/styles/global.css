@@ -288,22 +288,25 @@ a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a) 
     text-decoration-style: wavy;
 }
 
-code {
+.astro-code:not(pre) {
     font-family: "Cascadia Mono", monospace;
     font-size: 0.9rem;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
+    color: var(--text-primary) !important;
+    background-color: var(--bg-tertiary) !important;
 }
 
 pre {
+    background-color: var(--shiki-dark-bg);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+}
+
+pre code {
     font-family: "Cascadia Mono", monospace;
     font-size: 0.9rem;
-    padding: 1rem;
-    line-height: 2;
-    border-radius: 4px;
-    overflow-x: scroll;
-    scrollbar-color: var(--accent);
-    scrollbar-width: 100px;
 }
 
 table {
@@ -1327,7 +1330,12 @@ Gigs
 }
 
 .poster-image {
-    flex: 60%
+    flex: 60%;
+}
+
+.poster-image img {
+    position: sticky;
+    top: 7.5rem;
 }
 
 .poster-details {
@@ -1345,12 +1353,12 @@ Gigs
 
 .poster-description {
     border-top: 1px solid var(--border-color);
-    padding-top: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
     color: var(--text-secondary);
     font-style: italic;
 }
 
-.poster-director {
-
+.poster-director, .poster-customer {
     font-weight: 700;
 }

@@ -72,6 +72,7 @@ const poster = defineCollection({
       description: z.string(),
       category: z.array(z.string()),
       director: z.string().optional(),
+      customer: z.string().optional(),
     })
 });
 

@@ -8,3 +8,11 @@ imageUrl: 'images/The-Irishman-768x1024.jpg'
 imageAlt: 'From left to right, Robert De Niro, Al Pacino, and Joe Pesci, with a large handgun in the foreground'
 director: 'Martin Scorsese'
 ---
+
+Scorsese is perhaps my favourite living director. He easily tops my [physical media stats](https://physicalmedia.thamara.co.uk/stats) for top director, and I feel I can revisit his films and constantly discover new things about them.
+
+_The Irishman_ perhaps is a minor work in his impressive catalogue, but an enjoyable film nonetheless. It brought together De Niro and Pacino, who deliver excellent performances as always.
+
+[Digital copy](https://ko-fi.com/s/24080d9fd1)
+
+[Physical copy](https://www.redbubble.com/i/poster/The-Irishman-2019-by-123thamara-k/101862062/flk2)

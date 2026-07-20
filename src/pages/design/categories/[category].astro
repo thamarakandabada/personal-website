@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Poster from '../../../components/Poster.astro';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("poster");
+  allPosts.sort((a, b) => {
+    const dateA = new Date(a.data.pubDate).valueOf();
+    const dateB = new Date(b.data.pubDate).valueOf();
+    return dateB - dateA;
+  });
+  const uniqueCategories = [...new Set(allPosts.map((post) => post.data.category).filter(Boolean).flat())];
+
+return uniqueCategories.map((category) => {
+  const filteredPosts = allPosts.filter((post) => post.data.category?.includes(category));
+  return {
+    params: { category: String(category).toLowerCase().replace(/\s+/g, '-') },
+    props: { posts: filteredPosts, displayCategory: category },
+  };
+});
+}
+
+const { posts, displayCategory } = Astro.props;
+---
+<PageLayout title={`Category: ${displayCategory} - Design - Thamara Kandabada`}>
+  <h1>Category: <em>{displayCategory}</em></h1>
+  <div class="poster-list">
+  {posts.map((post) => <Poster pubDate={post.data.pubDate} url={`/design/${post.id}/`} title={post.data.title} category={post.data.category} year={post.data.year} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt}/>)}
+  </div>
+</PageLayout>
