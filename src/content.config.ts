@@ -66,7 +66,7 @@ const poster = defineCollection({
     schema: ({ image }) => z.object({
       title: z.string(),
       pubDate: z.date(),
-      year: z.string(),
+      year: z.string().optional(),
       imageUrl: image(),
       imageAlt: z.string(),
       description: z.string(),

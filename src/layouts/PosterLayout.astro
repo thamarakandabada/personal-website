@@ -5,7 +5,7 @@ import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from "@vercel/speed-insights/astro";
 import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
-import PosterNavPrevNext from '../components/BlogPostNavPrevNext.astro'; 
+import PosterNavPrevNext from '../components/PosterNavPrevNext.astro'; 
 
 const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
@@ -27,29 +27,23 @@ const formattedDate = frontmatter.pubDate
 	<title>{frontmatter.title} - Design - Thamara Kandabada</title>
 </head>
 	
-<body>	
-<Navigation />
-    <div class="poster-header">
-	  <p><span class="poster-date">{formattedDate}</span>//<span class="poster-category">In {frontmatter.category?.map((category: string, index: number) => (<><a href={`/design/category/${String(category).toLowerCase().replace(/\s+/g, '-')}/`}>{category}</a></>))}</span></p>
-      <h1 class="poster-title">{frontmatter.title}</h1>
-	  <p class="poster-film-year">{frontmatter.year}</p>
-    </div>
-
-	<div class="poster-content">
+<body>
+  <Navigation />
+    <div class="poster-content">
+    <div class="poster-page-grid">
 	  <div class="poster-image">
-	  <figure class="poster-hero-image">
-      <Picture
-        src={frontmatter.imageUrl}
-		formats={['avif', 'webp']}
-		alt={frontmatter.imageAlt}
-      />
-      </figure>
+		<Picture src={frontmatter.imageUrl} formats={['avif', 'webp']} alt={frontmatter.imageAlt} />
+	  </div>
+	  <div class="poster-meta">
+		<p class="poster-category">{frontmatter.category}</p>
+		<p class="poster-title">{frontmatter.title}</p>
+		<p class="poster-year">{frontmatter.year}</p>
+		<p class="poster-description">{frontmatter.description}</p>
 	  </div>
       <slot />
-
-	  <PosterNavPrevNext />
-
-    </div>
-	<GlobalFooter />
+	</div>
+  <PosterNavPrevNext />
+  </div>
+  <GlobalFooter />
 </body>
 </html>
