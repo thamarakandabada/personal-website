@@ -1326,8 +1326,3 @@ Gigs
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
-
-.poster-meta {
-    display: flex;
-    flex-direction: column;
-}
