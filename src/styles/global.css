@@ -288,25 +288,14 @@ a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a) 
     text-decoration-style: wavy;
 }
 
-.astro-code:not(pre) {
+.astro-code, .astro-code span, code {
     font-family: "Cascadia Mono", monospace;
     font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+code {
     padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    color: var(--text-primary) !important;
-    background-color: var(--bg-tertiary) !important;
-}
-
-pre {
-    background-color: var(--shiki-dark-bg);
-    border-radius: 4px;
-    padding: 0.5rem 1rem;
-    line-height: 1.5;
-}
-
-pre code {
-    font-family: "Cascadia Mono", monospace;
-    font-size: 0.9rem;
 }
 
 table {
