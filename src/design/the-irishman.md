@@ -13,6 +13,6 @@ Scorsese is perhaps my favourite living director. He easily tops my [physical me
 
 _The Irishman_ perhaps is a minor work in his impressive catalogue, but an enjoyable film nonetheless. It brought together De Niro and Pacino, who deliver excellent performances as always.
 
-[Digital copy](https://ko-fi.com/s/24080d9fd1)
+I wish the film had received a wider theatrical release. But, as a Netflix production, it had to leave cinemas after only a few weeks. It did get the Criterion treatment later, however, and I'm glad there is a way to physically own a copy of the film for those who are thus inclined.
 
-[Physical copy](https://www.redbubble.com/i/poster/The-Irishman-2019-by-123thamara-k/101862062/flk2)
+[Digital copy](https://ko-fi.com/s/24080d9fd1) / [Physical copy](https://www.redbubble.com/i/poster/The-Irishman-2019-by-123thamara-k/101862062/flk2)

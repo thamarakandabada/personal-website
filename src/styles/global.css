@@ -1351,3 +1351,8 @@ Gigs
 .poster-director, .poster-customer {
     font-weight: 700;
 }
+
+.poster-nav {
+    border-top: 1px solid var(--border-color);
+    margin: 2rem 0;
+}
