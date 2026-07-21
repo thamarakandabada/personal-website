@@ -15,14 +15,25 @@ const nextPoster =
   currentPostIndex > 0
     ? posts[currentPostIndex - 1]
     : undefined;
+
+const allPosters =
+  currentPostIndex > 0
+    ? posts[currentPostIndex]
+    : undefined;
 ---
 
 {
-  (previousPoster || nextPoster) && (
+  (previousPoster || allPosters || nextPoster) && (
     <nav class="post-nav">
       {previousPoster && (
         <p>
           <a href={`/design/${previousPoster.id}/`}>Previous</a>
+        </p>
+      )}
+
+      {allPosters && (
+        <p>
+          <a href={`/design/`}>All Posters</a>
         </p>
       )}
 
