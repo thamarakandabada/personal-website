@@ -5,7 +5,6 @@ import SpeedInsights from "@vercel/speed-insights/astro";
 import Navigation from "../components/TopNavigation.astro";
 import GlobalFooter from "../components/GlobalFooter.astro";
 import BlogPostNavPrevNext from '../components/BlogPostNavPrevNext.astro';
-import { Code } from 'astro:components';
 
 const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
@@ -47,7 +46,7 @@ const formattedDate = frontmatter.pubDate
 	    </div>
 
 		<div class="post-reference">
-			<p><strong>Reference this post:</strong> When referencing this post, I prefer to be called Thamara, Thamara Kandabada, or Thamara's Notebook.<br>Permalink: https://thamara.co.uk/notebook/${Astro.params.slug}</p>
+			<p><strong>Reference this post:</strong> When referencing this post, I prefer to be called Thamara, Thamara Kandabada, or Thamara's Notebook.<br>Permalink: https://thamara.co.uk/notebook/{Astro.params.slug}</p>
 		</div>
 
 		<!-- Discuss comment widget -->
