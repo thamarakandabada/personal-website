@@ -1,5 +1,8 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Picture } from 'astro:assets';
+import profilePicture from '../assets/images/resume/thamara.png';
+
 const pageTitle = "Resume - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -8,7 +11,62 @@ const pageTitle = "Resume - Thamara Kandabada";
 
     <h1>Resume</h1>
     
-    <p>work in progress</p>
+    <div class="resume-header">
+      <div class="resume-photo">
+        <Picture
+          src={profilePicture} alt="Profile photo of Thamara Kandabada"
+          formats={['avif', 'webp']}
+        />
+      </div>
+      <div class="resume-details">
+        <h2>Thamara Kandabada</h2>
+        <p>I am a Sri Lankan professional currently living and working in Belfast, Northern Ireland. I have a keen eye for detail and a strong work ethic. I pride myself in my ability to adapt and learn new things—be it technology, operational processes, or creative endeavours. In my free time, I frequent the cinema, playing guitar, game, read, and tinker with this website.</p>
+        <div class="resume-contact">
+          <p><a href="mailto:t@thamara.co.uk"><i class="bi bi-envelope"></i> Email</a></p>
+          <p><a href="https://www.linkedin.com/in/thamarakandabada/"><i class="bi bi-linkedin"></i> LinkedIn</a></p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="resume-heading">Timeline</h3>
+    <div class="resume-timeline">
+      <div class="resume-2017">
+        <h3>2017</h3>
+        <p>Left my job in marketing to start my own business. Built a very successful e-commerce business over the next 5+ years.</p>
+      </div>
+      <div class="resume-2020">
+        <h3>2020</h3>
+        <p>Started a manufacturing arm for the business. Developed key skills in the apparel manufacturing sector.</p>
+      </div>
+      <div class="resume-2022">
+        <h3>2022</h3>
+        <p>Moved to Belfast to support my partner with her further education plans. Started working at <a href="https://deskwarehouse.co.uk/" target="_blank">Desk Warehouse</a>.</p>
+      </div>
+    </div>
+
+    <h3 class="resume-heading">Experience</h3>
+    <div class="resume-experience">
+      <h4>Desk Warehouse | Belfast, UK <span class="current">current</span></h4>
+      <p>Desk Warehouse is the leading office furniture supplier in Northern Ireland. Our showrooms are based in a large converted Victorian linen mill, and we have an extensive selection of new, clearance and used office furniture to suit any requirement.</p>
+      <div class="resume-experience-role">
+        <div>
+          <p class="resume-experience-role-title">General Manager</p>
+          <p class="resume-experience-role-title-duration">Feb 2024–Present</p>
+        </div>
+        <div class="resume-experience-role-description">
+          <p>While making sure all aspects of the day-to-day run smoothly, I also take primary responsibility for the sales pipeline of the business.</p>
+        </div>
+      </div>
+      <div class="resume-experience-role">
+        <div>
+          <p class="resume-experience-role-title">Admin Manager</p>
+          <p class="resume-experience-role-title-duration">Nov 2022-Feb 2024</p>
+        </div>
+        <div class="resume-experience-role-description">
+          <p>Daily admin tasks including showroom operations, online/offline sales support, order processing, delivery route planning, customer support, credit control and marketing content creation.</p>
+        </div>
+      </div>
+    </div>
 
   </body>
 

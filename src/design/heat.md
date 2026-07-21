@@ -8,3 +8,11 @@ imageUrl: 'images/Heat-768x1024.jpg'
 imageAlt: 'Robert De Niro''s character Neil McCauley running across and airfield'
 director: 'Michael Mann'
 ---
+
+I don't need to tell you what a great film is. Everyone knows. It's widely regarded as one of the best films ever made. And it deserves the accolade.
+
+I wasn't happy with this poster. I probably should have removed Neil McCauley's blood-stained photo and the bullets from the top, and gone with something else, or nothing at all.
+
+I will revisit this someday.
+
+[Digital copy](https://ko-fi.com/s/856d6473ac) / [Physical copy](https://www.redbubble.com/i/poster/Heat-1995-by-123thamara-k/101863434/flk2)

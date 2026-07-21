@@ -354,6 +354,7 @@ figcaption a {
     text-decoration: none;
 }
 
+
 /*
 Page elements
 -------------------
@@ -563,7 +564,6 @@ Page elements
     font-size: 1rem;
 }
 
-
 .tag a {
     text-decoration: none;
     color: var(--text-primary);
@@ -578,6 +578,119 @@ Page elements
 .tag:hover {
     border-color: var(--accent);
     transition: 0.5s;
+}
+
+.resume-header {
+    display: flex;
+    gap: 2rem;
+}
+
+.resume-photo {
+    flex: 25%;
+}
+
+.resume-details {
+    flex: 75%;
+}
+
+.resume-details h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.resume-details a {
+    text-decoration: none;
+}
+
+.resume-details a:hover {
+    text-decoration: none !important;
+}
+
+.resume-contact {
+    display: flex;
+    gap: 2rem;
+}
+
+.resume-contact p {
+    margin: 0;
+    padding: 0;
+}
+
+.resume-timeline {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.resume-2017 h3, .resume-2020 h3, .resume-2022 h3 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.resume-heading {
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-tertiary);
+    margin: 2rem 0 -1rem 2rem;
+    display: inline-block;
+}
+
+.resume-experience {
+    padding: 1rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.resume-experience-role {
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0 1rem 0;
+}
+
+.resume-experience-role:last-child {
+    border: none;
+}
+
+.resume-experience-role-title {
+    flex: 35%;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-experience-role-description {
+    flex: 65%;
+}
+
+.resume-experience-role-description p {
+    margin: 0;
+    padding: 0;
+}
+.resume-experience-role-title-duration {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    color: var(--text-secondary);
+}
+
+.current {
+    background-color: var(--bg-tertiary);
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    font-family: "Cascadia Mono", monospace;
+    margin-left: 1rem;
 }
 
 /*
@@ -825,7 +938,11 @@ Media queries
 
     code {
         font-size: 0.8rem;
-}
+    }
+
+    .resume-header, .resume-timeline {
+        flex-direction: column;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -925,6 +1042,14 @@ Media queries
     code {
         font-size: 0.8rem;
     }
+    
+    .resume-photo {
+        flex: 40%;
+    }
+
+    .resume-details {
+        flex: 60%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -975,6 +1100,14 @@ Media queries
 
     .poster-list {
         grid-template-columns: 1fr 1fr !important;
+    }
+
+    .resume-photo {
+        flex: 50%;
+    }
+
+    .resume-details {
+        flex: 50%;
     }
 }
 
@@ -1169,6 +1302,14 @@ button:hover {
 .subscribe-buttons {
     display: flex;
     gap: 0.25rem;
+}
+
+.post-reference {
+    margin: 2rem 0;
+}
+.post-reference p {
+    font-style: italic;
+    color: var(--text-secondary);
 }
 
 /*
