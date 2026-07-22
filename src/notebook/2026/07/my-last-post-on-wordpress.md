@@ -1,6 +1,6 @@
 ---
 title: 'My last post on WordPress'
-pubDate: 2026-07-22
+pubDate: 2026-07-21
 description: 'It''s time for a new chapter'
 author: 'Thamara Kandabada'
 imageUrl: ''
