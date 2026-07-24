@@ -11,7 +11,6 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
 ---
 
 <PageLayout title={pageTitle}>
-  <body>
   <h1>Greetings, friends & strangers.</h1>
   <div class="home-page-hero">
     <div class="home-page-hero-intro">
@@ -51,11 +50,9 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
     <div class="recent-blogposts">
       <h3>From the notebook</h3>
         <ul class="recent-blogposts-list">
-          <li>
               {posts.map(post => (
               <li><a href={`/notebook/${post.id}`}>{post.data.title}</a></li>
               ))}
-          </li>
         </ul>
     </div>
     <div class="webrings">
@@ -72,5 +69,4 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
   <script>
   document.getElementById("day").innerText = "Happy " + ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].at(new Date().getDay() - 1);
   </script>
-</body>
 </PageLayout>
