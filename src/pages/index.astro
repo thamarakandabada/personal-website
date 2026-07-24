@@ -4,9 +4,10 @@ import { Picture } from 'astro:assets';
 import coverImage from '../assets/images/main/thamara-kandabada.jpg';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-).slice(0,10).filter(post => ! post.data.sections.includes('Stream'));
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .filter(post => !post.data.sections?.includes('Stream'))
+  .slice(0,6);
 const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
 ---
 
@@ -45,6 +46,7 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
           <li><a href="/gigs">Gigs I've been to</a></li>
           <li><a href="https://physicalmedia.thamara.co.uk">Blu-ray collection</a></li>
           <li><a href="/hello">Say hello</a></li>
+          <li><strong><a href="/slashpages">More pages</a></strong></li>
         </ul>
     </div>
     <div class="recent-blogposts">
@@ -53,6 +55,7 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
               {posts.map(post => (
               <li><a href={`/notebook/${post.id}`}>{post.data.title}</a></li>
               ))}
+          <li><strong><a href="/notebook">More posts</a></strong></li>
         </ul>
     </div>
     <div class="webrings">
@@ -66,7 +69,7 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
     </div>
   </div>
 
-  <script>
+  <script is:inline>
   document.getElementById("day").innerText = "Happy " + ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].at(new Date().getDay() - 1);
   </script>
 </PageLayout>
