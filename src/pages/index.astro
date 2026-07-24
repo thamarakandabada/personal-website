@@ -11,6 +11,7 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
 ---
 
 <PageLayout title={pageTitle}>
+  <body>
   <h1>Greetings, friends & strangers.</h1>
   <div class="home-page-hero">
     <div class="home-page-hero-intro">
@@ -71,5 +72,5 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
   <script>
   document.getElementById("day").innerText = "Happy " + ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].at(new Date().getDay() - 1);
   </script>
-
+</body>
 </PageLayout>
