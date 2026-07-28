@@ -810,8 +810,17 @@ Site notices
 =============
 */
 
+.four-o-four, .four-o-four div {
+    text-align: center;
+}
+
+.four-o-four .see-also {
+    display: flex;
+    justify-content: space-around;
+}
+
 .accessibility-version-notice, .ai-version-notice, .now-location-weather, .no-experiments-banner, .commit-info, .see-also {
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     background: var(--bg-secondary);
     gap: 1.5rem;
     border: 1px solid var(--border-color);
