@@ -60,19 +60,17 @@ const formattedDate = frontmatter.pubDate
 			<p><strong>Reference this post:</strong> When referencing this post, I prefer to be called Thamara, Thamara Kandabada, or Thamara's Notebook.<br>Permalink: https://thamara.co.uk/notebook/{Astro.params.slug}</p>
 		</div>
 
-		<!-- Discuss comment widget -->
-		<div class="discuss-widget">
-          <link rel="stylesheet" href="https://discuss.thamara.co.uk/client.css">
-          <div id="discuss-comments"></div>
-          <script is:inline src="https://discuss.thamara.co.uk/client.js"></script>
-          <script>
-            new DiscussWidget({
-              container: document.getElementById('discuss-comments'),
-              serverUrl: 'https://discuss.thamara.co.uk',
-              primaryColor: '#2563eb',
-            });
-          </script>
-		</div>
+<!-- Discuss comment widget -->
+<link rel="stylesheet" href="https://discuss.thamara.co.uk/client.css">
+<div id="discuss-comments"></div>
+<script is:inline src="https://discuss.thamara.co.uk/client.js"></script>
+<script>
+  new DiscussWidget({
+    container: document.getElementById('discuss-comments'),
+    serverUrl: 'https://discuss.thamara.co.uk',
+    primaryColor: '#2563eb',
+  });
+</script>
 
 		<BlogPostNavPrevNext />
 
