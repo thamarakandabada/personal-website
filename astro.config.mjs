@@ -3,7 +3,7 @@ import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: "https://astro.thamara.co.uk",
+  site: "https://thamara.co.uk",
   adapter: vercel(),
   devToolbar: {
     enabled: false

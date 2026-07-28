@@ -39,8 +39,8 @@ html, body {
 
 .page-content {
     text-align: left;
-    max-width: 1024px;
-    margin: 0 auto;
+    max-width: 1024px !important;
+    margin: 0 auto !important;
 }
 
 /* Navigation, header and footer */
@@ -359,6 +359,17 @@ figcaption a {
 Page elements
 -------------------
 */
+
+iframe:not(.podcast-embed) {
+    width: 100%;
+    height: 50vh;
+    border-radius: 4px;
+}
+
+.podcast-embed {
+    width: 100%;
+    border-radius: 4px;
+}
 
 .project-image {
     border: 1px solid var(--border-color)
@@ -715,7 +726,7 @@ Grids and sub-grids
 .notebook-grid {
     display: grid;
     grid-template-columns: 0.6fr 0.4fr;
-    column-gap: 4rem;
+    column-gap: 3rem;
     row-gap: 2rem;
 }
 
@@ -841,8 +852,8 @@ Media queries
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)  {
     .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
     }
 
     .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
@@ -1000,7 +1011,6 @@ Media queries
     .switch {
         margin: 0;
     }
-
 
     .accessibility-version-notice ul, .ai-version-notice ul, .commit-info ul, .see-also ul, .now-location-weather ul {
         flex-direction: column;
@@ -1274,14 +1284,6 @@ Blog
     font-size: 1rem;
 }
 
-.pagination-links {
-    display: flex;
-}
-
-.pagination-links nav {
-    gap: 1.5rem;
-}
-
 button {
     color: inherit;
     background-color: var(--bg-tertiary);
@@ -1302,6 +1304,7 @@ button:hover {
 .subscribe-buttons {
     display: flex;
     gap: 0.25rem;
+    flex-wrap: wrap;
 }
 
 .post-reference {
