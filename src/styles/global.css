@@ -827,11 +827,8 @@ Site notices
     padding: 0;
 }
 
-.topics-list {
+.post-reference {
     border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    margin: 3rem 0 1rem 0;
-    padding: 1rem 0 1rem 0;
 }
 
 .topics-list ul {
@@ -839,9 +836,20 @@ Site notices
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 0 1.5rem;
     margin: 0;
     padding: 0;
+}
+
+.topics-reference {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+.topics-list {
+    margin-bottom: 1rem;
 }
 
 /*
@@ -1305,14 +1313,6 @@ button:hover {
     display: flex;
     gap: 0.25rem;
     flex-wrap: wrap;
-}
-
-.post-reference {
-    margin: 2rem 0;
-}
-.post-reference p {
-    font-style: italic;
-    color: var(--text-secondary);
 }
 
 /*
