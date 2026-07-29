@@ -14,6 +14,7 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
 <PageLayout title={pageTitle}>
 
   <h1>Greetings, friends & strangers.</h1>
+  <div class="h-card">
   <div class="home-page-hero">
     <div class="home-page-hero-intro">
       <p><span id="day">Hello</span> and welcome to my personal website.</p>
@@ -24,10 +25,10 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
     </div>
 
     <!-- My h-card -->
-      <div class="h-card" style="display: none;">
-        <a class="p-name u-url u-uid" href="https://archive.thamara.co.uk/" rel="me">Thamara Kandabada</a>
+      <div style="display: none;">
+        <a class="p-name u-url u-uid" href="https://thamara.co.uk/" rel="me">Thamara Kandabada</a>
         <p class="p-note">Generalist. Tinkerer.</p>
-        <a class="u-email" href="mailto:t@thamara.co.uk">t@thamara.co.uk</a>
+        <p class="u-email">t@thamara.co.uk</p>
         <!-- location -->
         <div class="p-adr">
           <span class="p-locality">Belfast</span>, 
@@ -37,8 +38,6 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
         <!-- identity -->
           <p class="p-sex">Male</p>
           <p class="p-gender-identity">Cisgender</p>
-          <img data-recalc-dims="1" decoding="async" class="u-photo" src="https://github.com/thamarakandabada/personal-website/blob/main/src/assets/images/main/thamara-kandabada.jpg" alt="Thamara">
-          <img data-recalc-dims="1" decoding="async" class="u-logo" src="https://github.com/thamarakandabada/personal-website/blob/main/public/tk.png" alt="TK Logo">
       </div>
 
       <div style="display: none;">
@@ -69,12 +68,14 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
     <div class="home-page-hero-image">
     <figure>
       <Picture
+      class="u-photo"
       src={coverImage}
       alt="Me sitting behind the drum set at the Casbah Coffee Club in Liverpool, the birthplace of The Beatles."
       formats={['avif', 'webp']}
       />
     <figcaption>No, I can't play the drums.</figcaption>
     </figure>
+    </div>
     </div>
   
   </div>
