@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://astro.thamara.co.uk/sitemap-index.xml
