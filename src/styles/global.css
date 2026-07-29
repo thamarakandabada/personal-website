@@ -630,17 +630,14 @@ iframe:not(.podcast-embed) {
 .resume-timeline {
     display: flex;
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    font-style: italic;
 }
 
-.resume-2017 h3, .resume-2020 h3, .resume-2022 h3 {
+.resume-2017 h3, .resume-2020 h3, .resume-2022 h3, .resume-glance h3 {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    font-weight: 700;
 }
 
 .resume-heading {
@@ -651,14 +648,51 @@ iframe:not(.podcast-embed) {
     width: fit-content;
     padding: 0.5rem 1rem;
     background-color: var(--bg-tertiary);
-    margin: 1rem 0 -1rem 1rem;
+    margin: 2rem 1.5rem -1rem;
     display: inline-block;
 }
 
 .resume-experience {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
+}
+
+.resume-recs {
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.resume-glance {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.resume-glance div {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    background-color: var(--bg-tertiary);
+}
+
+.rec-text {
+    font-style: italic;
+}
+
+.rec-person {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.rec-person-title {
+    color: var(--text-secondary);
+    margin: 0;
 }
 
 .resume-experience-role {
@@ -678,6 +712,7 @@ iframe:not(.podcast-embed) {
     font-weight: 700;
     margin: 0;
     padding: 0;
+    color: var(--accent);
 }
 
 .resume-experience-role-description {
@@ -688,6 +723,7 @@ iframe:not(.podcast-embed) {
     margin: 0;
     padding: 0;
 }
+
 .resume-experience-role-title-duration {
     font-style: italic;
     margin: 0;
@@ -879,6 +915,11 @@ Media queries
         flex-direction: column;
     }
 
+    .resume-experience-role {
+        display: flex;
+        flex-direction: column;
+    }
+
     .home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
     margin-right: 0;
     }
@@ -971,6 +1012,17 @@ Media queries
     .resume-header, .resume-timeline {
         flex-direction: column;
     }
+
+    .resume-recs, .resume-glance {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+
+    .recommendation:not(.recommendation:last-child) {
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -983,6 +1035,11 @@ Media queries
     .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
         display: flex;
         flex: wrap;
+        flex-direction: column;
+    }
+
+    .resume-experience-role {
+        display: flex;
         flex-direction: column;
     }
 
@@ -1076,6 +1133,17 @@ Media queries
 
     .resume-details {
         flex: 60%;
+    }
+    
+    .resume-recs, .resume-glance {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+
+    .recommendation:not(.recommendation:last-child) {
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1rem;
     }
 }
 
