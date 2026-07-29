@@ -1,6 +1,18 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 
+const response = await fetch('https://api.github.com/repos/thamarakandabada/personal-website/commits?per_page=1');
+const data = await response.json();
+const rawDate = data[0].commit.author.date;
+const commitMsg = data[0].commit.message;
+const commitHash = data[0].sha.slice(0,7);
+const commitUrl = data[0].html_url;
+
+const formattedDate = new Date(rawDate).toLocaleDateString('en-GB', { 
+  year: 'numeric', 
+  month: 'long', 
+  day: 'numeric' 
+});
 const pageTitle = "Colophon - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
@@ -21,9 +33,9 @@ const pageTitle = "Colophon - Thamara Kandabada";
     <p>This site is built with <a href="https://astro.build/" target="_blank">Astro</a> and deployed on <a href="https://vercel.com/" target="_blank">Vercel</a>. Version control is managed with <a href="https://github.com/" target="_blank">GitHub</a>.</p>
     <div class="commit-info">
       <ul>
-        <li><strong>Last commit:</strong> <span id="commit">Loading...</span></li>
-        <li><strong>Date:</strong> <span id="commit-date">Loading...</span></li>
-        <li><a href="https://github.com/thamarakandabada/personal-website/" target="_blank">Source code</a></li>
+        <li><strong>Last commit:</strong> <a href={commitUrl} target="_blank">{commitHash}</a> / {commitMsg}</li>
+        <li><strong>Date:</strong> {formattedDate}</li>
+        <li><strong>Source code:</strong> <a href="https://github.com/thamarakandabada/personal-website/" target="_blank">GitHub repo</a></li>
       </ul>
     </div>
     <p>This website uses HTML, CSS and a few bits of JavaScript for customisation.</p>
@@ -57,13 +69,4 @@ const pageTitle = "Colophon - Thamara Kandabada";
     <h2>The Quote</h2>
     <p>The phrase in the footer, <i>“Ars longa, vita brevis”</i> (Art is long, life is short), is one of my favourites that serves as a reminder that while our time here is fleeting, the work we create will outlast us. It also means that any craft worth learning requires a lifetime of dedication.</p>
 
-    <script is:inline>
-      fetch('https://api.github.com/repos/thamarakandabada/personal-website/commits?per_page=1')
-        .then(res => res.json())
-        .then(res => {
-          document.getElementById('commit').innerHTML = res[0].commit.message;
-          document.getElementById('commit-date').innerHTML = res[0].commit.author.date;
-        })
-        .catch(err => console.error("GitHub fetch failed:", err));
-    </script>
 </PageLayout>
