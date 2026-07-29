@@ -360,6 +360,11 @@ Page elements
 -------------------
 */
 
+.commit-hash {
+    font-family: "Cascadia Mono", monospace;
+    font-size: 0.9rem;
+}
+
 iframe:not(.podcast-embed) {
     width: 100%;
     height: 50vh;
@@ -1005,7 +1010,7 @@ Media queries
         font-size: 1.1rem;
     }
 
-    code {
+    code, .commit-hash {
         font-size: 0.8rem;
     }
 
@@ -1123,7 +1128,7 @@ Media queries
         font-size: 1.1rem;
     }
 
-    code {
+    code, .commit-hash {
         font-size: 0.8rem;
     }
     

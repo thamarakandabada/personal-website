@@ -6,7 +6,7 @@ import profilePicture from '../assets/images/resume/thamara.png';
 const pageTitle = "Resume - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
-
+ <div class="h-resume">
     <h1>Resume</h1>
     
     <div class="resume-header">
@@ -17,10 +17,10 @@ const pageTitle = "Resume - Thamara Kandabada";
         />
       </div>
       <div class="resume-details">
-        <h2>Thamara Kandabada</h2>
-        <p>I am a Sri Lankan professional currently living and working in Belfast, Northern Ireland. I have a keen eye for detail and a strong work ethic. I pride myself in my ability to adapt and learn new things—be it technology, operational processes, or creative endeavours. In my free time, I frequent the cinema, playing guitar, game, read, and tinker with this website.</p>
+        <h2 class="h-card p-name">Thamara Kandabada</h2>
+        <p class="p-summary">I am a Sri Lankan professional currently living and working in Belfast, Northern Ireland. I have a keen eye for detail and a strong work ethic. I pride myself in my ability to adapt and learn new things—be it technology, operational processes, or creative endeavours. In my free time, I frequent the cinema, playing guitar, game, read, and tinker with this website.</p>
         <div class="resume-contact">
-          <p><a href="mailto:t@thamara.co.uk"><i class="bi bi-envelope"></i> Email</a></p>
+          <p><a class="p-contact" href="mailto:t@thamara.co.uk"><i class="bi bi-envelope"></i> Email</a></p>
           <p><a href="https://www.linkedin.com/in/thamarakandabada/"><i class="bi bi-linkedin"></i> LinkedIn</a></p>
         </div>
       </div>
@@ -46,11 +46,11 @@ const pageTitle = "Resume - Thamara Kandabada";
       <div>
       <h3>Key skills & qualities</h3>
       <ul>
-        <li>A keen eye for detail</li>
-        <li>A strong work ethic</li>
-        <li>The ability to adapt quickly</li>
-        <li>A lifelong love of learning</li>
-        <li>A creative brain</li>
+        <li class="p-skill">A keen eye for detail</li>
+        <li class="p-skill">A strong work ethic</li>
+        <li class="p-skill">The ability to adapt quickly</li>
+        <li class="p-skill">A lifelong love of learning</li>
+        <li class="p-skill">A creative brain</li>
       </ul>
       </div>
       <div>
@@ -81,12 +81,12 @@ const pageTitle = "Resume - Thamara Kandabada";
 
     <h3 class="resume-heading">Experience</h3>
     <div class="resume-experience">
-      <h4>Desk Warehouse | Belfast, UK <span class="current">current</span></h4>
+      <h4 class="h-card p-name">Desk Warehouse | Belfast, UK <span class="current">current</span></h4>
       <p>Desk Warehouse is the leading office furniture supplier in Northern Ireland. Our showrooms are based in a large converted Victorian linen mill, and we have an extensive selection of new, clearance and used office furniture to suit any requirement.</p>
       <div class="resume-experience-role">
         <div>
-          <p class="resume-experience-role-title">General Manager</p>
-          <p class="resume-experience-role-title-duration">Feb 2024–Present</p>
+          <p class="resume-experience-role-title h-event p-experience">General Manager</p>
+          <p class="resume-experience-role-title-duration dt-duration">Feb 2024–Present</p>
         </div>
         <div class="resume-experience-role-description">
           <p>While making sure all aspects of the day-to-day run smoothly, I also take primary responsibility for the sales pipeline of the business.</p>
@@ -94,8 +94,8 @@ const pageTitle = "Resume - Thamara Kandabada";
       </div>
       <div class="resume-experience-role">
         <div>
-          <p class="resume-experience-role-title">Admin Manager</p>
-          <p class="resume-experience-role-title-duration">Nov 2022–Feb 2024</p>
+          <p class="resume-experience-role-title h-event p-experience">Admin Manager</p>
+          <p class="resume-experience-role-title-duration dt-duration">Nov 2022–Feb 2024</p>
         </div>
         <div class="resume-experience-role-description">
           <p>Daily admin tasks including showroom operations, online/offline sales support, order processing, delivery route planning, customer support, credit control and marketing content creation.</p>
@@ -107,8 +107,8 @@ const pageTitle = "Resume - Thamara Kandabada";
       <p>Bear Supply Global is an apparel manufacturing company, primarily founded as the production arm for the Bear Appeal brand. Since then, Bear Supply Global has expanded operations to service other clients such as Uber Sri Lanka, 99x Technology, Calcey Technologies, CodeGen International, Surge Global, and more.</p>
       <div class="resume-experience-role">
         <div>
-          <p class="resume-experience-role-title">Co-Founder & Director</p>
-          <p class="resume-experience-role-title-duration">Apr 2017–Sept 2022</p>
+          <p class="resume-experience-role-title h-event p-experience">Co-Founder & Director</p>
+          <p class="resume-experience-role-title-duration dt-duration">Apr 2017–Sept 2022</p>
         </div>
         <div class="resume-experience-role-description">
           <p>Primary responsibilities:</p>
@@ -138,8 +138,8 @@ const pageTitle = "Resume - Thamara Kandabada";
       <p>Sana Commerce is a class leading B2B e-commerce solution that helps companies sell their products online while keeping their ERP system at the heart of everything. I primarily explored opportunities in Australia & New Zealand.</p>
       <div class="resume-experience-role">
         <div>
-          <p class="resume-experience-role-title">Field Marketing Manager</p>
-          <p class="resume-experience-role-title-duration">Apr 2016–May 2017</p>
+          <p class="resume-experience-role-title h-event p-experience">Field Marketing Manager</p>
+          <p class="resume-experience-role-title-duration dt-duration">Apr 2016–May 2017</p>
         </div>
         <div class="resume-experience-role-description">
           <p>Primary responsibilities:</p>
@@ -164,8 +164,8 @@ const pageTitle = "Resume - Thamara Kandabada";
       </div>
       <div class="resume-experience-role">
         <div>
-          <p class="resume-experience-role-title">Database Marketing Manager</p>
-          <p class="resume-experience-role-title-duration">Oct 2015–Apr 2016</p>
+          <p class="resume-experience-role-title h-event p-experience">Database Marketing Manager</p>
+          <p class="resume-experience-role-title-duration dt-duration">Oct 2015–Apr 2016</p>
         </div>
         <div class="resume-experience-role-description">
           <p>Primary responsibilities:</p>
@@ -182,8 +182,8 @@ const pageTitle = "Resume - Thamara Kandabada";
       </div>
       <div class="resume-experience-role">
         <div>
-          <p class="resume-experience-role-title">Team Captain – Marketing Support</p>
-          <p class="resume-experience-role-title-duration">Aug 2015–Oct 2015</p>
+          <p class="resume-experience-role-title h-event p-experience">Team Captain – Marketing Support</p>
+          <p class="resume-experience-role-title-duration dt-duration">Aug 2015–Oct 2015</p>
         </div>
         <div class="resume-experience-role-description">
           <p>Primary responsibilities:</p>
@@ -201,8 +201,8 @@ const pageTitle = "Resume - Thamara Kandabada";
       </div>
       <div class="resume-experience-role">
         <div>
-          <p class="resume-experience-role-title">Junior Business Developer </p>
-          <p class="resume-experience-role-title-duration">Jan 2015–Aug 2016</p>
+          <p class="resume-experience-role-title h-event p-experience">Junior Business Developer </p>
+          <p class="resume-experience-role-title-duration dt-duration">Jan 2015–Aug 2016</p>
         </div>
         <div class="resume-experience-role-description">
           <p>Primary responsibilities:</p>
@@ -222,8 +222,8 @@ const pageTitle = "Resume - Thamara Kandabada";
       <h4>eBEYONDS | Pannipitiya, Sri Lanka</h4>
       <div class="resume-experience-role">
         <div>
-          <p class="resume-experience-role-title">Intern</p>
-          <p class="resume-experience-role-title-duration">Dec 2014–Jan 2015</p>
+          <p class="resume-experience-role-title h-event p-experience">Intern</p>
+          <p class="resume-experience-role-title-duration dt-duration">Dec 2014–Jan 2015</p>
         </div>
         <div class="resume-experience-role-description">
           <p>I worked briefly in the company as a trainee where I mainly supported the organising of a soft skills training programme. PACE Institute, the educational arm of eBEYONDS, organised this event focused on filling the much needed gap in the academic and professional education industry to mould and build a high value employee.</p>
@@ -233,8 +233,8 @@ const pageTitle = "Resume - Thamara Kandabada";
       <h4>UNICEF | Remote</h4>
       <div class="resume-experience-role">
         <div>
-          <p class="resume-experience-role-title">Blogging Intern</p>
-          <p class="resume-experience-role-title-duration">Jun 2014–Jan 2015</p>
+          <p class="resume-experience-role-title h-event p-experience">Blogging Intern</p>
+          <p class="resume-experience-role-title-duration dt-duration">Jun 2014–Jan 2015</p>
         </div>
         <div class="resume-experience-role-description">
           <p>I was selected as one of the 20 blogging interns from around the world for Voices of Youth remote internship programme in 2014. During the 6-month internship, passionate youngsters from around the world published articles regularly on a range of youth and development related topics.</p>
@@ -244,8 +244,8 @@ const pageTitle = "Resume - Thamara Kandabada";
       <h4>Sri Lanka Anti-Narcotics Association | Colombo, Sri Lanka</h4>
       <div class="resume-experience-role">
         <div>
-          <p class="resume-experience-role-title">Intern</p>
-          <p class="resume-experience-role-title-duration">May 2014–Aug 2015</p>
+          <p class="resume-experience-role-title h-event p-experience">Intern</p>
+          <p class="resume-experience-role-title-duration dt-duration">May 2014–Aug 2015</p>
         </div>
         <div class="resume-experience-role-description">
           <p>I worked as a project official for the 16th National Health Run (2014), the annual national awareness event organised by SLANA. I also helped in organising and conducting two other community-based awareness projects for schoolchildren, labourers, and vulnerable communal groups.</p>
@@ -255,9 +255,9 @@ const pageTitle = "Resume - Thamara Kandabada";
 
     <h3 class="resume-heading">Education</h3>
     <div class="resume-experience">
-      <h4>CIMA Professional Qualification</h4>
+      <h4 class="h-event p-education">CIMA Professional Qualification</h4>
       <p>Management Accounting qualification with a focus on business strategy and financial performance.</p>
-      <p class="resume-experience-role-title-duration">Exams completed: May 2015</p>
+      <p class="resume-experience-role-title-duration dt-end">Exams completed: May 2015</p>
     </div>
 
     <h3 class="resume-heading">Recommendations</h3>
@@ -288,6 +288,6 @@ const pageTitle = "Resume - Thamara Kandabada";
         <p class="rec-person-title">CEO, eBEYONDS</p>
       </div>
     </div>
-
+  </div>
 
 </PageLayout>
