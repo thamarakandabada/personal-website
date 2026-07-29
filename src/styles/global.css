@@ -17,9 +17,9 @@ html {
 /* Dark mode */
 
 html.dark {
-  --bg-primary: #101519;
+  --bg-primary: #151b20;
   --bg-secondary: #22262c;
-  --bg-tertiary: #101318;
+  --bg-tertiary: #0a0a0a;
   --text-primary: #D8DCE0;
   --text-secondary: #737A80;
   --border-color: #262C33;
@@ -498,7 +498,7 @@ iframe:not(.podcast-embed) {
 }
 
 .colour-box-bg-p-dark {
-    background-color: #101519;
+    background-color: #151b20;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     width: auto;
@@ -506,7 +506,7 @@ iframe:not(.podcast-embed) {
 }
 
 .colour-box-bg-s-dark {
-    background-color: #181D23;
+    background-color: #22262c;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     width: auto;
@@ -514,7 +514,7 @@ iframe:not(.podcast-embed) {
 }
 
 .colour-box-bg-t-dark {
-    background-color: #101318;
+    background-color: #0a0a0a;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     width: auto;
