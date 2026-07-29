@@ -630,7 +630,7 @@ iframe:not(.podcast-embed) {
 .resume-timeline {
     display: flex;
     gap: 1.5rem;
-    padding: 1rem 2rem;
+    padding: 1rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     font-style: italic;
@@ -651,12 +651,12 @@ iframe:not(.podcast-embed) {
     width: fit-content;
     padding: 0.5rem 1rem;
     background-color: var(--bg-tertiary);
-    margin: 2rem 0 -1rem 2rem;
+    margin: 1rem 0 -1rem 1rem;
     display: inline-block;
 }
 
 .resume-experience {
-    padding: 1rem 2rem;
+    padding: 1rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
 }
@@ -664,7 +664,7 @@ iframe:not(.podcast-embed) {
 .resume-experience-role {
     display: grid;
     grid-template-columns: 0.25fr 0.75fr;
-    gap: 0.5rem;
+    gap: 1rem;
     border-bottom: 1px solid var(--border-color);
     padding: 1rem 0 1rem 0;
 }
