@@ -2,6 +2,7 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import { Picture } from 'astro:assets';
 import dockImage from '../assets/images/uses/dock.png';
+import phoneImage from '../assets/images/uses/phone.png'
 
 const response = await fetch('https://api.github.com/repos/thamarakandabada/personal-website/commits?path=src/pages/uses.astro&per_page=1');
 const data = await response.json();
@@ -40,7 +41,7 @@ const pageTitle = "Uses - Thamara Kandabada";
 
     <div class="uses-grid-div">
     <h3>Computer Setup</h3>
-    <h4>At home</h4>
+    <h4>At home (See also <a href="/desk">/Desk</a>)</h4>
     <ul>
       <li>MacBook Air M1: Space Grey, 8GB RAM, 256GB Storage. My daily driver at home.</li>
       <li>Mac mini M1: Space Grey, 16GB RAM, 512GB Storage. Used in my desktop setup.</li>
@@ -86,7 +87,7 @@ const pageTitle = "Uses - Thamara Kandabada";
 
     <div class="uses-grid-div">
     <h3>Music Production & Recording</h3>
-    <h4>Guitars</h4>
+    <h4>Guitars (See also <a href="/Guitars">/Guitars</a>)</h4>
     <ul>
       <li>Fender Player Series Stratocaster: Alder Body in Tidepool Finish, Maple Fretboard, 3x Single Coil Pickups. Great clean tones.</li>
       <li>Epiphone 1959 Les Paul Standard: Mahogany Body in Aged Gloss Finish, Laurel Fretboard, 2x Gibson Burstbucker Pickups. Raw energy, dirty sound.</li>
@@ -155,8 +156,6 @@ const pageTitle = "Uses - Thamara Kandabada";
     <h3>Writing & Publishing</h3>
     <ul>
       <li>SoloMD and GitWriter: Git-based markdown writer for Mac and iPhone respectively. Synced with a GitHub repository for on the go access.</li>
-      <li>WordPress</li>
-      <li>Astro</li>
       <li>Google Workspace (Slides, Sheets, Docs)</li>
       <li>Apple Notes</li>
       <li>Apple Journal</li>
@@ -233,6 +232,15 @@ const pageTitle = "Uses - Thamara Kandabada";
       <li>Pretty Progress: Visual progress tracker for iOS.</li>
     </ul>
     </div>
+    <div class="uses-grid-div-img">
+      <figure>
+      <Picture
+        src={phoneImage} alt="My minimal phone homescreen containing text launcher icons to Phone, Calendar, Google Maps, Overcast and Translink."
+        formats={['avif', 'webp']}
+      />
+      <figcaption>My iPhone homescreen</figcaption>
+      </figure>
+    </div>
     <div class="uses-grid-div">
     <h3>Security</h3>
     <ul>
@@ -271,7 +279,6 @@ const pageTitle = "Uses - Thamara Kandabada";
       <li>Strava</li>
       <li>Runna</li>
       <li>AllTrails</li>
-      <li>NHS Couch to 5K</li>
     </ul>
     </div>
     <div class="uses-grid-div">
@@ -325,10 +332,12 @@ const pageTitle = "Uses - Thamara Kandabada";
     </ul>
     </div>
     <div class="uses-grid-div">
-    <h3>Website Tools</h3>
+    <h3>Website Tools (See also <a href="/credits">/Credits</a>)</h3>
     <ul>
       <li>Astro</li>
       <li>Vercel</li>
+      <li>Discuss</li>
+      <li>Digital Ocean</li>
     </ul>
     </div>
     </div>
