@@ -3,13 +3,17 @@ const { title, url, description, pubDate, sections } = Astro.props;
 ---
 <li class="notebook-post-list-item">
     <div class="notebook-post-meta">
-      <p class="notebook-post-date">{pubDate.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</p>
+      <p class="notebook-post-date">
+        <time class="dt-published">
+        {pubDate.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}
+        </time>
+      </p>
     </div>
     <div class="notebook-post-title-description">
-    <a href={url}>
-      <p class="filed-under">Filed under <span class="notebook-post-section">{sections}</span></p>
-      <p class="notebook-post-title">{title}</p>
-      <p class="notebook-post-description">{description}</p>
+    <a class="u-url" href={url}>
+      <p class="filed-under">Filed under <span class="notebook-post-section p-category" rel="category-tag">{sections}</span></p>
+      <p class="notebook-post-title p-name entry-title">{title}</p>
+      <p class="notebook-post-description p-summary entry-summary">{description}</p>
     </a>
     </div>
 </li>
