@@ -1,90 +1,59 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+
+let allCommits = [];
+let page = 1;
+let keepFetching = true;
+
+while (keepFetching) {
+  const response = await fetch(`https://api.github.com/repos/thamarakandabada/personal-website/commits?per_page=100&page=${page}`, {
+    headers: {
+      Authorization: `Bearer ${import.meta.env.GITHUB_TOKEN}`
+    }
+  });
+  
+  const data = await response.json();
+
+  if (data.length === 0) {
+    keepFetching = false;
+  } else {
+    allCommits = allCommits.concat(data);
+    page++;
+  }
+}
+
 const pageTitle = "Changelog - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
   
-  <body>
-
     <h1>Changelog</h1>
-    <p>This is a list of changes made to my website (this version and previous versions where noted), sorted by month.</p>
-    
-    <div class="see-also">
-    <ul>
-      <li><strong>See also:</strong></li>
-      <li><a href="/colophon">Colophon</a></li>
-      <li><a href="/credits">Credits</a></li>
-    </ul>
+    <p>This is a detailed changelog for this site, listing all Git commits deployed since launch.</p>
+
+<div class="changelog-container" style="margin-top: 3rem;">
+      {allCommits.map((commit) => {
+        const date = new Date(commit.commit.author.date).toLocaleDateString('en-GB', { 
+          year: 'numeric', 
+          month: 'long', 
+          day: 'numeric' 
+        });
+        
+        const hash = commit.sha.substring(0, 7);
+
+        return (
+          <div style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+            <p style="margin: 0; color: var(--text-secondary);">
+              <time datetime={commit.commit.author.date}>{date}</time>
+            </p>
+            <p style="margin: 0.5rem 0; font-weight: 700; font-size: 1.25rem;">
+              {commit.commit.message.split('\n')[0]} 
+            </p>
+            <p style="margin: 0; font-family: 'Cascadia Mono', monospace; font-size: 0.9rem;">
+              <a href={commit.html_url} target="_blank">View commit {hash}</a>
+            </p>
+          </div>
+        );
+      })}
     </div>
 
-    <h2>2026</h2>
-
-    <h3>June</h3>
-    <ul>
-      <li>Added <a href="/ai">/AI</a>, an AI policy outlining how I'm using (and not using) LLMs. It is a living document, version controlled-with Git.</li>
-      <li>Added <a href="/accessibility">/accessibility</a>.</li>
-      <li>Added <a href="/blogroll">/blogroll</a>.</li>
-      <li>Added <a href="/experiments">/experiments</a>.</li>
-      <li>Added <a href="" target="_blank">Discuss</a>, a comment engine for static sites, to power the guestbook.</li>
-    </ul>
-    <h3>May</h3>
-    <ul>
-      <li>Created a <a href="/garden">/garden</a> page and consolidated all major sections of the website under it.</li>
-      <li>Added the ability to subscribe to my posts using <a href="https://www.subtome.com/" target="_blank">SubToMe</a>.</li>
-      <li>Created a <a href="/changelog">/changelog</a> page. It was previously a section within <a href="/colophon">/colophon</a>.</li>
-      <li>Added a “Work in Progress” section to <a href="/garden">/garden</a>.</li>
-      <li>Changed the code font to Cascadia Mono. Updated the Typography section of <a href="/colophon">/colophon</a>.</li>
-      <li>Added a human-readable map of the website at <a href="/sitemap">/sitemap</a>.</li>
-      <li>Added the <a href="https://xn--sr8hvo.ws/" target="_blank">IndieWeb Webring</a> to the homepage.</li>
-      <li>Added <a href="/guestbook">/guestbook</a>.</li>
-      <li>Added <a href="/podroll">/podroll</a>.</li>
-      <li>Added a dark mode toggle.</li>
-      <li>Added <a href="/desk">/desk</a>.</li>
-      <li>Added <code><a href="https://astro.thamara.co.uk">astro.thamara.co.uk</a></code>, a temporary repository for my new Astro build of this site (for eventual migration). See build history <a href="https://github.com/thamarakandabada/personal-website/commits/main/" target="_blank">here</a>.</li>
-    </ul>
-
-    <h3>Apr</h3>
-    <ul>
-      <li>Added the <a href="/design">/design</a> and <a href="/projects">/projects</a> archives.</li>
-      <li>Started the process of indieweb-ifying the website:</li>
-      <ul>
-        <li>Added an <code><a href="https://indieweb.org/h-card" target="_blank">h-card</a></code>, <a href="https://indieweb.org/IndieAuth" target="_blank">IndieAuth</a>, <a href="https://indieweb.org/Webmention" target="_blank">Webmentions</a> and support for other <a href="https://indieweb.org/microformats" target="_blank">microformats</a>.</li>
-        <li>WIP: <a href="https://indieweb.org/u-syndication" target="_blank">syndication links</a>.</li>
-      </ul>
-    </ul>
-
-    <h3>Mar</h3>
-    <ul>
-      <li>Added the <a href="physicalmedia.thamara.co.uk">Physical Media Vault</a>. Wrote about the process <a href="https://thamara.co.uk/notebook/building-a-physical-media-showcase-with-lovable/">here</a>.</li>
-      <li>Created a secure subdomain for hosting a suite of private web apps and utility dashboards.</li>
-      <li>Added the <a href="/gigs">/gigs</a> timeline.</li>
-    </ul>
-
-    <h3>Feb</h3>
-    <ul>
-      <li>Added <a href="/projects/podcast">/podcast</a> and <a href="/projects/debas">/debas</a> archives.</li>
-    </ul>
-
-    <h3>Jan</h3>
-    <ul>
-      <li>Moved to thamara.co.uk with a complete refresh focusing on minimalism and clean typography. Added <a href="/now">/now</a>, <a href="/uses">/uses</a>, and <a href="/colophon">/colophon</a> pages. Moved the blog back to WordPress.</li>
-    </ul>
-
-    <h2>Feb 2017</h2>
-    <ul>
-      <li>Moved to <a href="https://web.archive.org/web/20170210081235/http://thamara.xyz/" target="_blank">thamara.xyz</a>, a purely text-based landing page. Moved the blog to Medium, with the custom domain thamara.blog.</li>
-    </ul>
-
-    <h2>May 2014</h2>
-    <ul>
-      <li>First WordPress blog at <a href="https://web.archive.org/web/20141211071321/http://thamarakandabada.com/" target="_blank">thamarakandabada.com</a>. Learned the basics of self-hosting, themes, HTML, and CSS.</li>
-    </ul>
-
-    <h2>Mar 2014</h2>
-    <ul>
-      <li>First blog at thamarakandabada.blogspot.com.</li>
-    </ul>
-
-  </body>
-
 </PageLayout>
+
