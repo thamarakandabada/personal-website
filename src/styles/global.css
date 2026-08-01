@@ -1612,6 +1612,6 @@ Gigs
     --accent-surface: var(--bg-tertiary);
     --focus-ring: var(--accent);
     --on-primary: var(--text-primary).dark;
-    .discuss-btn-primary { background: var(--accent-fg) !important; color: var(--on-primary) !important; border-color: var(--border-default) !important; }
+    .discuss-btn-primary { background: var(--brand-600) !important; color: var(--on-primary) !important; border-color: var(--border-default) !important; }
     .discuss-btn-primary:hover { background: var(--surface-inset) !important; color: var(--text-primary) !important; border-color: var(--border-default) !important; }
 }
