@@ -1592,6 +1592,7 @@ Gigs
 /* Discuss */
 #discuss-comments {
     margin-top: 2rem;
+    border-radius: 4px !important;
     --discuss-font-family: "Maiola", serif;
     --text-primary: var(--text-primary);
     --text-secondary: var(--text-secondary);
@@ -1610,6 +1611,6 @@ Gigs
     --accent-surface: var(--bg-tertiary);
     --focus-ring: var(--accent);
     --on-primary: var(--text-primary).dark;
-    .discuss-btn-primary { background: var(--accent); color: var(--on-primary); border-color: var(--border-color); }
-    .discuss-btn-primary:hover { background: var(--border-color); color: var(--text-primary); border-color: var(--accent); }
+    .discuss-btn-primary { background: var(--accent-fg) !important; color: var(--on-primary) !important; border-color: var(--border-default) !important; }
+    .discuss-btn-primary:hover { background: var(--surface-inset) !important; color: var(--text-primary) !important; border-color: var(--border-default) !important; }
 }
