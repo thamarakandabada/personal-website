@@ -7,7 +7,7 @@ export async function GET(context) {
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return rss({
-    title: 'Thamara\'s Notebook',
+    title: 'Notebook - Thamara Kandabada',
     description: 'Uncensored thoughts on Life, The Universe, and Everything',
     site: context.site,
     items: posts.map((post) => ({
