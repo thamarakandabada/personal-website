@@ -1610,4 +1610,10 @@ Gigs
     --accent-surface: var(--bg-tertiary);
     --focus-ring: var(--accent);
     --on-primary: var(--text-primary);
+    .discuss-btn {
+        background-color: var(--accent);
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        color: var(--text-primary);
+    }
 }
