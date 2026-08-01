@@ -1442,6 +1442,11 @@ Gigs
 -----
 */
 
+.venue {
+    font-weight: 700;
+    color: var(--accent);
+}
+
 .gig-timeline-node, .desk-timeline-node {
     border: 1px solid var(--border-color);
     border-radius: 4px;
