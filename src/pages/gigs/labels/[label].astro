@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from '../../../layouts/PageLayout.astro';
+import Gig from '../../../components/Gig.astro';
+
+export async function getStaticPaths() {
+  const allGigs = await getCollection("gigs");
+  allGigs.sort((a, b) => {
+    const dateA = new Date(a.data.date).valueOf();
+    const dateB = new Date(b.data.date).valueOf();
+    return dateB - dateA;
+  });
+  const uniqueLabels = [...new Set(allGigs.map((gig) => gig.data.label).filter(Boolean))];
+
+return uniqueLabels.map((label) => {
+  const filteredGigs = allGigs.filter((gig) => gig.data.label === label);
+  return {
+    params: { label: String(label).toLowerCase().replace(/\s+/g, '-') },
+    props: { page: { data: filteredGigs }, displayLabel: label },
+  };
+});
+}
+
+const { page, displayLabel } = Astro.props;
+---
+<PageLayout title={`Label: ${displayLabel} - Gigs - Thamara Kandabada`}>
+  <h1>Label: <em>{displayLabel}</em></h1>
+    <div class="gigs-grid">
+      {page.data.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} />)}
+    </div>
+</PageLayout>

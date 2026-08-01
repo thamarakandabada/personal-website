@@ -758,6 +758,10 @@ Grids and sub-grids
     column-gap: 1.5rem;
 }
 
+.gigs-grid {
+    margin-top: 2rem;
+}
+
 .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1503,6 +1507,11 @@ Gigs
 .gig-support {
     font-size: 1.25rem;
     color: var(--text-secondary);
+}
+
+.gig-years-list p {
+    margin: 0;
+    padding: 0;
 }
 
 .gig-years-list ul {

@@ -16,9 +16,10 @@ const allGigs = await getCollection("gigs");
 const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
 const pageTitle = "Gigs - Thamara Kandabada";
 const years = [...new Set(allGigs.map((post) => post.data.date.getFullYear()).flat())]
+const sortedYears = years.sort((a, b) => b - a);
+const labels = [...new Set(allGigs.map((post) => post.data.label).filter(Boolean).flat())]
 ---
 <PageLayout title={pageTitle}>
-  <body>
     <h1>Gigs</h1>
     <p>This is a timeline of the gigs I have been to. It includes music, theatre, comedy, and many other kinds of performance art. My pre-2022 records are incomplete—I have only added the gigs that I remember.</p>
     <p>Where support acts are mentioned, I've only included the ones I saw.</p>
@@ -27,7 +28,14 @@ const years = [...new Set(allGigs.map((post) => post.data.date.getFullYear()).fl
     <div class="gig-years-list">
 		<ul>
 		<li><strong>Browse by year:</strong></li>
-		{years.map((year) => <p class="gig-year"><a href={`/gigs/years/${String(year)}/`}>{year}</a></p>)}
+		{sortedYears.map((year) => <li class="gig-year"><a href={`/gigs/years/${String(year)}/`}>{year}</a></li>)}
+		</ul>
+    </div>
+
+    <div class="gig-years-list">
+		<ul>
+		<li><strong>Browse by label:</strong></li>
+		{labels.map((label) => <li class="gig-year"><a href={`/gigs/labels/${String(label).toLowerCase().replace(/\s+/g, '-')}/`}>{label}</a></li>)}
 		</ul>
     </div>
 
@@ -52,5 +60,4 @@ const years = [...new Set(allGigs.map((post) => post.data.date.getFullYear()).fl
       }
     </div>
 
-  </body>
 </PageLayout>
