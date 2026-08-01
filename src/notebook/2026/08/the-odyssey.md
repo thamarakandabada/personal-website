@@ -1,6 +1,6 @@
 ---
 title: 'The Odyssey (2026): a review'
-pubDate: 2026-07-31
+pubDate: 2026-08-01
 description: 'My thoughts on Christopher Nolan''s blockbuster adaptation of the Greek epic'
 author: 'Thamara Kandabada'
 imageUrl: 'images/the-odyssey-banner.jpg'
