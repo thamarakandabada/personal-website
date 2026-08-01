@@ -2,7 +2,7 @@
 title: '187 Orchestra'
 pubDate: 2022-10-27
 author: 'Iman Hameed'
-authorInfo: 'Born in Kuwait to Sri Lankan Moor parents, Iman, now a Singapore citizen, spent most of her childhood in Sri Lanka, in the city of Colombo and it is here, that she developed a fondness for writing stories. She experiments with synaesthetic and cross-genre writing. Her collection of vignettes “Colomboscapes”, was published in the UK/Singapore based literary art journal, We Are A Website, in 2017. Her poem, A Better World, was featured in the book _UNMASKED: Reflections on Virus-time_, curated by Shamini Flint and is the co-editor of _Singapore at Home: Life Across Lines_, an anthology of short stories launched at the Singapore Writers Festival, 2021. When she is not writing fiction, she is engaged with academic research and consulting work in the field of public health.'
+authorInfo: 'Born in Kuwait to Sri Lankan Moor parents, Iman, now a Singapore citizen, spent most of her childhood in Sri Lanka, in the city of Colombo and it is here, that she developed a fondness for writing stories. She experiments with synaesthetic and cross-genre writing. Her collection of vignettes “Colomboscapes”, was published in the UK/Singapore based literary art journal, We Are A Website, in 2017. Her poem, A Better World, was featured in the book UNMASKED: Reflections on Virus-time, curated by Shamini Flint and is the co-editor of Singapore at Home: Life Across Lines, an anthology of short stories launched at the Singapore Writers Festival, 2021. When she is not writing fiction, she is engaged with academic research and consulting work in the field of public health.'
 authorPhotoUrl: 'images/WhatsApp-Image-2022-10-25-at-5.05.58-AM.jpeg'
 authorPhotoAlt: 'Profile photo of Iman Hameed'
 imageUrl: 'images/WhatsApp-Image-2022-10-25-at-5.12.07-AM.jpeg'
@@ -26,7 +26,7 @@ A heave from the driver, steering wheel spins; worn rexine squeals as sweat slid
 
 Anxiousness. The sound of sliding fingers against that nylon string. You don’t see it, but you do. In that space in the mind’s eye — just above your left ear. The vibrato of the string signals the steady approach to its target and then _triiiiiiing_! The bell manages to belch a ring through the rust that encrusts its rims.
 
-Click_. Ssshhshhshshs_… Static. Driver switches the radio on. FM.  
+_Click_. _Ssshhshhshshs_… Static. Driver switches the radio on. FM.  
 
 _Hiru? Maybe Ran?_  
 
@@ -92,9 +92,9 @@ Time for the interlude.
 
 “Aney, mahaththayo, mage daruwanta beheth ganna, podi adhaarayak karanna. Ping sidda wewa,” belts a cacophonic voice from a mouth full of betel-stained teeth.
 
-_Shilling shilling, taka-taka-takara-takera-tak-tak-tak. H_e drums his tambourine.
+_Shilling shilling_, taka-taka-takara-takera-tak-tak-tak. He drums his tambourine.
 
-I look at you_. Give! I would. Won’t you?_  
+I look at you. _Give!_ I would. Won’t you?
 
 Yes, I see the questions in your head reflect in your eyes: _why should you, probably a druggie._ 
 
@@ -102,7 +102,7 @@ But you feel judged by my stare. Quickly, your fingers scramble in that big _ma
 
 The man looks dumbfounded. What luck– _five hundred!_ He offers you a toothless grin and requests a dozen good things to come your way from his higher-ups.
 
-H_appy? Collected a blessing for the day at least._ 
+Happy? Collected a blessing for the day at least.
 
 This must be the bridge.
 
@@ -112,7 +112,7 @@ _Don’t turn. Too obvious. University-goers._
 
 Gurgling giggles, teasing voices, whispers of star-crossed lovers
 
-“Enna appa? Athu thane naan um solluren. Naan ippewe veeteku varawo?” Lilting voice, that intonation, melodious. Jaffna Tamil. Her phone rings. A R Rahman’s_._    
+“Enna appa? Athu thane naan um solluren. Naan ippewe veeteku varawo?” Lilting voice, that intonation, melodious. Jaffna Tamil. Her phone rings. A R Rahman’s.
 
 _Enda padum?_ _Can’t recall. Ah, yes, you remembered right. That’s from Mudalvan. Lovely song. My favourite too._  
 
@@ -143,4 +143,3 @@ Silence. Silence. Silence.
 _Ding-dong_
 
 “Buona Vista Interchange. Please mind the gap!”
-
