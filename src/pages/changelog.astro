@@ -44,11 +44,11 @@ const pageTitle = "Changelog - Thamara Kandabada";
             <p style="margin: 0; color: var(--text-secondary);">
               <time datetime={commit.commit.author.date}>{date}</time>
             </p>
-            <p style="margin: 0.5rem 0; font-weight: 700; font-size: 1.25rem;">
+            <p style="margin: 0.5rem 0;">
               {commit.commit.message.split('\n')[0]} 
             </p>
             <p style="margin: 0; font-family: 'Cascadia Mono', monospace; font-size: 0.9rem;">
-              <a href={commit.html_url} target="_blank">View commit {hash}</a>
+              <a href={commit.html_url} target="_blank">{hash}</a>
             </p>
           </div>
         );
