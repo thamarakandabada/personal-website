@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import PageLayout from '../../layouts/PageLayout.astro';
+import Desk from '../../components/Desk.astro';
+
+export const getStaticPaths = (async ({paginate}) => {
+  const desk = (await getCollection('desk'))
+    .sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0));
+
+  return paginate(desk, { pageSize: 20 } );
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const allDesks = await getCollection("desk");
+const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
+const pageTitle = "Desk - Thamara Kandabada";
+---
+<PageLayout title={pageTitle}>
+  <body>
+    <h1>Desk</h1>
+    <p>This is a timeline of my desk setup over the years. Changing priorities, house moves, and fluctuations in my financial situation have caused my setup to evolve/de-evolve in interesting ways. These photos were taken by me at random moments, and I’m documenting them all here for nostalgia.</p>
+    <p>You may also be interested in what I’m currently using, over at <a href="/uses">/Uses</a>.</p>
+
+    <div class="desk-grid">
+      {page.data.map((post: any) => <Desk date={post.data.date} description={post.data.description} location={post.data.location} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} />)}
+    </div>
+    
+    <div class="pagination-links">
+      {
+        (page.lastPage > 1) && (
+        <nav aria-label="Pagination">
+          { page.url.prev && ( <a href={page.url.prev}>Previous Page</a> ) }
+          { pageNumbers.map((num) => (
+            num === page.currentPage
+              ? <span aria-current="page">{num}</span>
+              : <a href={num === 1 ? '/gigs/' : `/gigs/${num}/`} aria-label={`Page ${num}`}>{num}</a>
+            ))
+          }
+          { page.url.next && ( <a href={page.url.next}>Next Page</a> ) }
+       </nav>
+      )
+      }
+    </div>
+
+  </body>
+</PageLayout>

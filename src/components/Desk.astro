@@ -1,0 +1,19 @@
+---
+import { Picture } from "astro:assets";
+
+const { imageUrl, imageAlt, date , description , location } = Astro.props;
+---
+<div class="desk-timeline-node">
+  <div class="desk-photo">
+    <Picture
+      src={imageUrl}
+      formats={['avif', 'webp']}
+		  alt={imageAlt}
+    />
+  </div>
+  <div class="desk-location">
+    <p>{location}</p>
+  </div>
+  <p class="desk-description">{description}</p>
+  <p class="desk-date">{date.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</p>
+</div>

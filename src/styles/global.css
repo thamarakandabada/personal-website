@@ -1442,18 +1442,18 @@ Gigs
 -----
 */
 
-.gig-timeline-node {
+.gig-timeline-node, .desk-timeline-node {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 1rem;
     margin-bottom: 1.5rem;
 }
 
-.gig-timeline-node p {
+.gig-timeline-node p, .desk-timeline-node p {
     margin: 0;
     padding: 0;
 }
-.gig-label {
+.gig-label, .desk-location {
     margin: -1rem 0 0 1rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -1470,12 +1470,12 @@ Gigs
     font-weight: 700;
 }
 
-.gig-description {
+.gig-description, .desk-description {
     margin-top: 0.5rem !important;
     font-style: italic;
 }
 
-.gig-date {
+.gig-date, .desk-date {
     border-top: 1px solid var(--border-color);
     margin-top: 1rem !important;
     padding-top: 0.5rem !important;
@@ -1498,7 +1498,7 @@ Gigs
     padding: 0;
 }
 
-.gig-photo img {
+.gig-photo img, .desk-photo img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }

@@ -52,6 +52,17 @@ const gigs = defineCollection({
     })
 });
 
+const desk = defineCollection({
+    loader: glob({ pattern: '**/[^_]*.md', base: "./src/desk" }),
+    schema: ({ image }) => z.object({
+      date: z.date(),
+      imageUrl: image(),
+      imageAlt: z.string(),
+      description: z.string(),
+      location: z.string()
+    })
+});
+
 const podcast = defineCollection({
     loader: glob({ pattern: '**/[^_]*.md', base: "./src/projects/podcast" }),
     schema: z.object({
@@ -83,5 +94,6 @@ export const collections = {
   'debas': debas,
   'gigs': gigs,
   'podcast': podcast,
-  'poster': poster
+  'poster': poster,
+  'desk': desk
 };
