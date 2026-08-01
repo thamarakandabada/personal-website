@@ -176,10 +176,9 @@ nav p, nav div {
 }
 
 .post-nav {
-    margin: 0;
-    padding: 0;
     font-style: italic;
 }
+
 
 /*
 Text elements
@@ -744,6 +743,10 @@ iframe:not(.podcast-embed) {
     margin-left: 1rem;
 }
 
+.post-footer {
+    margin-top: 2.5rem;
+}
+
 /*
 Grids and sub-grids
 ===================
@@ -901,7 +904,7 @@ Site notices
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 1rem 1.5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .topics-list {
@@ -915,7 +918,7 @@ Media queries
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)  {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
+    .page-content, nav:not(.post-nav), .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
     }
@@ -1038,7 +1041,7 @@ Media queries
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    .page-content, nav, .footer-content, .blog-content,.blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
+    .page-content, nav:not(.post-nav), .footer-content, .blog-content,.blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -1160,7 +1163,7 @@ Media queries
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
+    .page-content, nav:not(.post-nav), .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -1219,7 +1222,7 @@ Media queries
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
+    .page-content, nav:not(.post-nav), .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -1239,7 +1242,7 @@ Media queries
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1000px) {
-    .page-content, nav, .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p, .podcast-content, .poster-content {
+    .page-content, nav:not(.post-nav), .footer-content, .blog-content, .blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
@@ -1289,21 +1292,29 @@ Blog
     font-style: italic;
 }
 
-.blog-content, .podcast-content, .poster-content {
-    max-width: 1024px;
-    margin: 0 auto;
+.poster-content {
     margin-top: 3rem;
 }
 
 .blog-header {  
     background-color: var(--bg-secondary);
-    margin: 0 auto;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     padding: 3rem 0 120px;
 }
 
 .blog-header-no-image, .podcast-header {
     background-color: var(--bg-secondary);
-    margin: 0 auto;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     padding: 3rem 0 3rem;
 }
 
@@ -1325,7 +1336,9 @@ Blog
 }
 
 .blog-hero-image {
-    margin: -120px 0 2rem 0;
+    max-width: 1024px;
+    margin: -80px auto 2rem auto;
+    position: relative;
 }
 
 .notebook-post-list {
@@ -1616,7 +1629,7 @@ Gigs
     --accent-fg: var(--accent);
     --accent-surface: var(--bg-tertiary);
     --focus-ring: var(--accent);
-    --on-primary: var(--text-primary).dark;
+    --on-primary: var(--text-primary);
     .discuss-btn-primary { background: var(--brand-600) !important; color: var(--on-primary) !important; border-color: var(--border-default) !important; }
     .discuss-btn-primary:hover { background: var(--surface-inset) !important; color: var(--text-primary) !important; border-color: var(--border-default) !important; }
 }

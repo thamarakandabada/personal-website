@@ -1,35 +1,20 @@
 ---
-import "../styles/global.css";
+import PageLayout from './PageLayout.astro';
 import { Picture } from 'astro:assets';
-import Analytics from '@vercel/analytics/astro';
-import SpeedInsights from "@vercel/speed-insights/astro";
-import Navigation from "../components/TopNavigation.astro";
-import GlobalFooter from "../components/GlobalFooter.astro";
-import BlogPostNavPrevNext from '../components/BlogPostNavPrevNext.astro'; 
+import BlogPostNavPrevNext from '../components/BlogPostNavPrevNext.astro';
 
 const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
   ? new Date(frontmatter.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
   : 'Unknown Date';
 ---
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" type="image/svg+xml" href="/tk.png" />
-	<link rel="preconnect" href="https://use.typekit.net" crossorigin />
-    <link rel="preconnect" href="https://p.typekit.net" crossorigin />
-    <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
-    <link rel="sitemap" href="/sitemap-index.xml" />	
-	<meta name="generator" content={Astro.generator} />
-    <Analytics/>
-    <SpeedInsights/>
-	<title>{frontmatter.title}</title>
-</head>
-	
-<body>	
-<Navigation />
+<PageLayout 
+  title={`${frontmatter.title} - Notebook - Thamara Kandabada`}
+  description={frontmatter.description} 
+  image={frontmatter.imageUrl}
+  feeds={[{ title: "Notebook - Thamara Kandabada", href: "/notebook/rss.xml" }]}
+>
+
     <div class="blog-header">
 	  <p><span class="blog-date">{formattedDate}</span>//<span class="blog-category">In {frontmatter.sections?.map((section: string, index: number) => (<><a href={`/notebook/sections/${String(section).toLowerCase().replace(/\s+/g, '-')}/`}>{section}</a></>))}</span></p>
       <h1 class="blog-title">{frontmatter.title}</h1>
@@ -37,8 +22,6 @@ const formattedDate = frontmatter.pubDate
 	  <p class="blog-author">by {frontmatter.author}</p>
     </div>
 
-	<div class="blog-content">
-	  <div class="blog-image">
 	  <figure class="blog-hero-image">
       <Picture
         src={frontmatter.imageUrl}
@@ -47,7 +30,6 @@ const formattedDate = frontmatter.pubDate
       />
       <figcaption>{frontmatter.imageCaption}</figcaption>
       </figure>
-	  </div>
       <slot />
 	
     	<div class="topics-reference">
@@ -57,8 +39,8 @@ const formattedDate = frontmatter.pubDate
 		      {frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
 		  </ul>
 	    </div>
-    <div class="post-reference">
-			<p><strong>Reference this post:</strong> When referencing this post, I prefer to be called Thamara, Thamara Kandabada, or Thamara's Notebook.<br>Permalink: https://thamara.co.uk/notebook/{Astro.params.slug}</p>
+		<div class="post-reference">
+			<p><strong>Reference this post:</strong> When referencing this post, I prefer to be called Thamara, Thamara Kandabada, or Thamara's Notebook. Permalink: <em>{Astro.url.href}</em></p>
 		</div>
     </div>
 
@@ -76,8 +58,4 @@ const formattedDate = frontmatter.pubDate
 </script>
 
 		<BlogPostNavPrevNext />
-
-    </div>
-	<GlobalFooter />
-</body>
-</html>
+</PageLayout>

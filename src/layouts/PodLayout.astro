@@ -1,33 +1,16 @@
 ---
-import "../styles/global.css";
-import Analytics from '@vercel/analytics/astro';
-import SpeedInsights from "@vercel/speed-insights/astro";
-import Navigation from "../components/TopNavigation.astro";
-import GlobalFooter from "../components/GlobalFooter.astro";
+import PageLayout from './PageLayout.astro';
 
 const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
   ? new Date(frontmatter.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
   : 'Unknown Date';
 ---
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" type="image/svg+xml" href="/tk.png" />
-  <link rel="preconnect" href="https://use.typekit.net" crossorigin />
-  <link rel="preconnect" href="https://p.typekit.net" crossorigin />
-  <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
-  <link rel="sitemap" href="/sitemap-index.xml" />	
-	<meta name="generator" content={Astro.generator} />
-    <Analytics/>
-    <SpeedInsights/>
-	<title>{frontmatter.title} - Podcast Archives - Thamara Kandabada</title>
-</head>
-	
-<body>	
-<Navigation />
+<PageLayout 
+  title={`${frontmatter.title} - Podcast Archives - Thamara Kandabada`}
+  description={frontmatter.description} 
+  image={frontmatter.imageUrl}
+>
 
 <div class="podcast-header">
   <p><span class="podcast-date">{formattedDate}</span> // <span class="podcast-ep">Episode {frontmatter.episode}</span></p>
@@ -35,10 +18,6 @@ const formattedDate = frontmatter.pubDate
   <p class="podcast-guest">{frontmatter.guest}</p>
 </div>
 
-<div class="podcast-content">
-  <slot />
-</div>
-
-<GlobalFooter />
-</body>
-</html>
+<slot />
+<p><strong>Permalink:</strong> {Astro.url.href}</p>
+</PageLayout>

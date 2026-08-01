@@ -1,33 +1,17 @@
 ---
-import "../styles/global.css";
+import PageLayout from './PageLayout.astro';
 import { Picture } from 'astro:assets';
-import Analytics from '@vercel/analytics/astro';
-import SpeedInsights from "@vercel/speed-insights/astro";
-import Navigation from "../components/TopNavigation.astro";
-import GlobalFooter from "../components/GlobalFooter.astro";
-import PosterNavPrevNext from '../components/PosterNavPrevNext.astro'; 
+import PosterNavPrevNext from '../components/PosterNavPrevNext.astro';
 
 const { frontmatter } = Astro.props;
 ---
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" type="image/svg+xml" href="/tk.png" />
-	<link rel="preconnect" href="https://use.typekit.net" crossorigin />
-    <link rel="preconnect" href="https://p.typekit.net" crossorigin />
-    <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
-    <link rel="sitemap" href="/sitemap-index.xml" />	
-	<meta name="generator" content={Astro.generator} />
-    <Analytics/>
-    <SpeedInsights/>
-	<title>{frontmatter.title} - Design - Thamara Kandabada</title>
-</head>
-	
-<body>
-  <Navigation />
-    <div class="poster-content">
+<PageLayout 
+  title={`${frontmatter.title} - Design - Thamara Kandabada`}
+  description={frontmatter.description} 
+  image={frontmatter.imageUrl}
+  feeds={[{ title: "Design - Thamara Kandabada", href: "/design/rss.xml" }]}
+>
+<div class="poster-content">
     <div class="poster-page-flex">
 	  <div class="poster-image">
 		<Picture src={frontmatter.imageUrl} formats={['avif', 'webp']} alt={frontmatter.imageAlt} />
@@ -39,13 +23,15 @@ const { frontmatter } = Astro.props;
 		<p class="poster-director">{frontmatter.director}</p>
 		<p class="poster-customer">{frontmatter.customer}</p>
 		<p class="poster-description">{frontmatter.description}</p>
+		
       <slot />
+	    <p><strong>Permalink:</strong> {Astro.url.href}</p>
+
 	  </div>
 	</div>
   <div class="poster-nav">
   <PosterNavPrevNext />
   </div>
   </div>
-  <GlobalFooter />
-</body>
-</html>
+
+</PageLayout>
