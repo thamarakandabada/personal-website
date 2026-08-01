@@ -11,7 +11,19 @@ const posts = (await getCollection('blog'))
 const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
 ---
 
-<PageLayout title={pageTitle}>
+<PageLayout 
+  title={pageTitle}
+  feeds={[
+    { title: "Notebook - Thamara Kandabada (All Posts)", href: "/notebook/rss.xml" },
+    { title: "Notebook - Thamara Kandabada (Life)", href: "/notebook/sections/life/rss.xml" },
+    { title: "Notebook - Thamara Kandabada (The Universe)", href: "/notebook/sections/the-universe/rss.xml" },
+    { title: "Notebook - Thamara Kandabada (Everything Else)", href: "/notebook/sections/everything-else/rss.xml" },
+    { title: "Notebook - Thamara Kandabada (Stream)", href: "/notebook/sections/stream/rss.xml" },
+    { title: "Design - Thamara Kandabada", href: "/design/rss.xml" },
+    { title: "Desk - Thamara Kandabada", href: "/desk/rss.xml" },
+    { title: "Gigs - Thamara Kandabada", href: "/gigs/rss.xml" }
+  ]}
+>
 
   <h1>Greetings, friends & strangers.</h1>
   <div class="h-card">
@@ -43,27 +55,6 @@ const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
         <a rel="me" href="https://github.com/thamarakandabada">GitHub</a>
         <a rel="me" href="https://www.reddit.com/user/thamara-k/">Reddit</a>
         <a rel="me" href="https://www.linkedin.com/in/thamarakandabada/">LinkedIn</a>
-        <a rel="me" href="https://www.youtube.com/@ThamaraKandabada">YouTube</a>
-        <a rel="me" href="https://letterboxd.com/thamarak/">Letterboxd</a>
-        <a rel="me" href="https://app.trakt.tv/profile/thamarakandabada">Trakt</a>
-        <a rel="me" href="https://www.behance.net/thamarakandaba">Behance</a>
-        <a rel="me" href="https://ko-fi.com/windingroaddesign/shop">Ko-fi</a>
-        <a rel="me" href="https://lovable.dev/@thamarak">Lovable</a>
-        <a rel="me" href="https://www.goodreads.com/thamarakandabada">Goodreads</a>
-        <a rel="me" href="https://music.apple.com/profile/thamaraxyz">Apple Music</a>
-        <a rel="me" href="https://www.redbubble.com/people/123thamara-k/shop">Redbubble</a>
-        <a rel="me" href="https://substack.com/@thamarak">Substack</a>
-        <a rel="me" href="https://psnprofiles.com/thamarakandabada">PSN Profiles</a>
-        <a rel="me" href="https://www.ebay.com/usr/masterthamara">eBay</a>
-        <a rel="me" href="https://profile.playstation.com/thamarakandabada">PlayStation</a>
-        <a rel="me" href="https://paypal.me/thamaraxyz">PayPal</a>
-        <a rel="me" href="https://www.strava.com/athletes/167611354">Strava</a>
-        <a rel="me" href="https://steamcommunity.com/id/thamarakandabada/">Steam</a>
-        <a rel="me" href="https://open.spotify.com/user/hd2l5c0uipyrdljootsontbvc?si=75a8cd765d95447c">Spotify</a>
-        <a rel="me" href="https://revolut.me/thamarak">Revolut</a>
-        <a rel="me" href="https://mubi.com/en/users/11920807">MUBI</a>
-        <a rel="me" href="https://medium.com/@thamara">Medium</a>
-        <a rel="me" href="https://maps.app.goo.gl/6L2j2HGsgdSzLyjm7?g_st=iw">Google Maps</a>
       </div>
 
     <div class="home-page-hero-image">
