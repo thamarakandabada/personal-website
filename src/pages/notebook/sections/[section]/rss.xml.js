@@ -5,10 +5,10 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   return [
-    { params: { sections: 'life' }, props: { sectionName: 'Life' } },
-    { params: { sections: 'the-universe' }, props: { sectionName: 'The Universe' } },
-    { params: { sections: 'everything-else' }, props: { sectionName: 'Everything Else' } },
-    { params: { sections: 'stream' }, props: { sectionName: 'Stream' } },
+    { params: { section: 'life' }, props: { sectionName: 'Life' } },
+    { params: { section: 'the-universe' }, props: { sectionName: 'The Universe' } },
+    { params: { section: 'everything-else' }, props: { sectionName: 'Everything Else' } },
+    { params: { section: 'stream' }, props: { sectionName: 'Stream' } },
   ];
 }
 
