@@ -1,5 +1,5 @@
 ---
-title: 'The Great Legal Challenge'
+title: 'The Great Legal Challenge 2023'
 year: '2023'
 pubDate: 2023-08-01
 description: 'A law quiz, organised with the aim of raising funds for The Turnaround Project, a Belfast-based charity that enables people who have been through the justice system to turn around their futures by providing paid employment and coaching.'
