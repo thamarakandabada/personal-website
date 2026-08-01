@@ -1588,3 +1588,8 @@ Gigs
     border-top: 1px solid var(--border-color);
     margin: 2rem 0;
 }
+
+/* Discuss */
+#discuss-comments {
+    margin-top: 2rem;
+}
