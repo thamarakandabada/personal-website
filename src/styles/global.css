@@ -323,7 +323,7 @@ th {
     background-color: var(--bg-secondary);
 }
 
-img {
+img:not(.buttons8815 img) {
     max-width: 100%;
     height: auto;
     display: block;
@@ -1397,6 +1397,13 @@ Blog
     font-size: 1rem;
 }
 
+.buttons8815 {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 button, .sub-button {
     color: inherit;
     background-color: var(--bg-tertiary);
@@ -1420,6 +1427,7 @@ button:hover, .sub-button:hover {
     gap: 0.25rem;
     flex-wrap: wrap;
 }
+
 
 /*
 Debas
