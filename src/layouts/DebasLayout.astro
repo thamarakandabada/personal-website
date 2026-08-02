@@ -6,6 +6,9 @@ const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
   ? new Date(frontmatter.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
   : 'Unknown Date';
+const isoDate = frontmatter.pubDate
+  ? new Date(frontmatter.pubDate).toISOString() 
+  : '';
 ---
 <PageLayout 
   title={`${frontmatter.title} - Debas Archives - Thamara Kandabada`} 
@@ -13,14 +16,18 @@ const formattedDate = frontmatter.pubDate
   image={frontmatter.imageUrl}
 >
 
+<article class="h-entry">
+<a class="u-url" href={Astro.url.href} hidden>Permalink</a>
 <div class="blog-header">
-  <p><span class="blog-date">{formattedDate}</span>//<span class="blog-category">Language: {frontmatter.language}</span></p>
-  <h1 class="blog-title">{frontmatter.title}</h1>
-  <p class="blog-author">by {frontmatter.author}</p>
+  <p><span class="blog-date"><time class="dt-published" datetime={isoDate}>{formattedDate}</time></span>//<span class="blog-category">Language: <span class="p-category">{frontmatter.language}</span></span></p>
+  <h1 class="blog-title p-name">{frontmatter.title}</h1>
+  <div class="p-author h-card">
+    <p class="blog-author">by <span class="p-name">{frontmatter.author}</span></p>
+  </div>
 </div>
 
   <div class="blog-image">
-  <figure class="blog-hero-image">
+  <figure class="blog-hero-image u-photo">
     <Picture
       src={frontmatter.imageUrl}
 	  formats={['avif', 'webp']}
@@ -29,13 +36,15 @@ const formattedDate = frontmatter.pubDate
     <figcaption>{frontmatter.imageCaption}</figcaption>
   </figure>
   </div>
+  <div class="e-content">
   <slot />
+  </div>
   <div class="author-info">
     <div class="author-photo">
 	  <Picture
         src={frontmatter.authorPhotoUrl}
 		formats={['avif', 'webp']}
-		alt={frontmatter.imageAlt}
+		alt={frontmatter.authorPhotoAlt}
       />
 	</div>
 	<div class="author-description">
@@ -46,4 +55,5 @@ const formattedDate = frontmatter.pubDate
 	<p class="disclaimer">{frontmatter.disclaimer}</p>
   <p><strong>Permalink:</strong> {Astro.url.href}</p>
   </div>
+</article>  
 </PageLayout>

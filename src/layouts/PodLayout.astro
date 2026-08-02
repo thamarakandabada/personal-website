@@ -5,19 +5,26 @@ const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
   ? new Date(frontmatter.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
   : 'Unknown Date';
+const isoDate = frontmatter.pubDate
+  ? new Date(frontmatter.pubDate).toISOString() 
+  : '';
 ---
 <PageLayout 
   title={`${frontmatter.title} - Podcast Archives - Thamara Kandabada`}
   description={frontmatter.description} 
   image={frontmatter.imageUrl}
 >
-
+<article class="h-entry">
+<a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
+<a class="u-url" href={Astro.url.href} hidden>Permalink</a>
 <div class="podcast-header">
-  <p><span class="podcast-date">{formattedDate}</span> // <span class="podcast-ep">Episode {frontmatter.episode}</span></p>
-  <h1 class="podcast-title">{frontmatter.title}</h1>
+  <p><span class="podcast-date"><time class="dt-published" datetime={isoDate}>{formattedDate}</time></span> // <span class="podcast-ep">Episode {frontmatter.episode}</span></p>
+  <h1 class="podcast-title p-name">{frontmatter.title}</h1>
   <p class="podcast-guest">{frontmatter.guest}</p>
 </div>
-
-<slot />
+<div class="e-content">
+  <slot />
+</div>
 <p><strong>Permalink:</strong> {Astro.url.href}</p>
+</article>
 </PageLayout>

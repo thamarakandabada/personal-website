@@ -7,6 +7,9 @@ const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
   ? new Date(frontmatter.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
   : 'Unknown Date';
+const isoDate = frontmatter.pubDate
+  ? new Date(frontmatter.pubDate).toISOString() 
+  : '';
 ---
 <PageLayout 
   title={`Streamlet - ${formattedDate} - Thamara Kandabada`} 
@@ -15,18 +18,23 @@ const formattedDate = frontmatter.pubDate
   feeds={[{ title: "Notebook - Thamara Kandabada", href: "/notebook/rss.xml" }]}
 >
 
+<article class="h-entry">
+<a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
+<a class="u-url" href={Astro.url.href} hidden>Permalink</a>
+<h1 class="p-name" hidden>Streamlet - {formattedDate}</h1>
     <div class="blog-header-no-image">
-	  <p><span class="blog-date">{formattedDate}</span>//<span class="blog-category">In {frontmatter.sections?.map((section: string, index: number) => (<><a href={`/notebook/sections/${String(section).toLowerCase().replace(/\s+/g, '-')}/`}>{section}</a></>))}</span></p>
+	  <p><span class="blog-date"><time class="dt-published" datetime={isoDate}>{formattedDate}</time></span>//<span class="blog-category">In {frontmatter.sections?.map((section: string, index: number) => (<><a class="p-category" href={`/notebook/sections/${String(section).toLowerCase().replace(/\s+/g, '-')}/`}>{section}</a></>))}</span></p>
 	  <p class="blog-author">by {frontmatter.author}</p>
     </div>
-
-	<p>{frontmatter.description}</p>
+    <div class="e-content">
+	<p class="p-summary">{frontmatter.description}</p>
 	<slot />
+	</div>	
 	    	<div class="topics-reference">
     	<div class="topics-list">
 		  <ul>
 		    <li><strong>Topics:</strong></li>
-		    {frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
+		    {frontmatter.topics?.map((topic: string) => <li><a class="p-category" href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
 		  </ul>
 	    </div>
 		<div class="post-reference">
@@ -34,4 +42,5 @@ const formattedDate = frontmatter.pubDate
 		</div>
 		</div>
 		<BlogPostNavPrevNext />
+		</article>	
 </PageLayout>	

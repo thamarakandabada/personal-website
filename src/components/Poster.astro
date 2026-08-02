@@ -1,16 +1,17 @@
 ---
 import { Picture } from 'astro:assets';
 
-const { title, url, year, category, imageUrl, imageAlt } = Astro.props;
+const { title, url, year, category, imageUrl, imageAlt, pubDate } = Astro.props;
 ---
-<div class="poster-list-item">
+<div class="poster-list-item h-entry">
     <a href={url}>
-      <figure>
+      <figure class="u-photo">
         <Picture src={imageUrl} formats={['avif', 'webp']} alt={imageAlt} />
       </figure>
       <div class="poster-meta">
-        <p class="poster-list-category">{category}</p>
-        <p><span class="poster-list-title">{title}</span> <span class="poster-list-year">{year}</span></p>
+      <p hidden><time class="dt-published" datetime={pubDate.toISOString()}>{pubDate.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</time></p>
+        <p class="poster-list-category p-category">{category}</p>
+        <p><span class="poster-list-title p-name">{title}</span> <span class="poster-list-year">{year}</span></p>
       </div>
     </a>
   </div>

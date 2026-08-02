@@ -4,6 +4,9 @@ import { Picture } from 'astro:assets';
 import PosterNavPrevNext from '../components/PosterNavPrevNext.astro';
 
 const { frontmatter } = Astro.props;
+const isoDate = frontmatter.pubDate
+  ? new Date(frontmatter.pubDate).toISOString() 
+  : '';
 ---
 <PageLayout 
   title={`${frontmatter.title} - Design - Thamara Kandabada`}
@@ -11,20 +14,24 @@ const { frontmatter } = Astro.props;
   image={frontmatter.imageUrl}
   feeds={[{ title: "Design - Thamara Kandabada", href: "/design/rss.xml" }]}
 >
+<article class="h-entry">
+<a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
+<a class="u-url" href={Astro.url.href} hidden>Permalink</a>
 <div class="poster-content">
     <div class="poster-page-flex">
-	  <div class="poster-image">
+	  <div class="poster-image u-photo">
 		<Picture src={frontmatter.imageUrl} formats={['avif', 'webp']} alt={frontmatter.imageAlt} />
 	  </div>
 	  <div class="poster-details">
-		<p class="poster-category">{frontmatter.category?.map((category: string, index: number) => (<><a href={`/design/categories/${String(category).toLowerCase().replace(/\s+/g, '-')}/`}>{category}</a></>))}</p>
-		<h1 class="poster-title">{frontmatter.title}</h1>
+		<p class="poster-category">{frontmatter.category?.map((category: string, index: number) => (<><a class="p-category" href={`/design/categories/${String(category).toLowerCase().replace(/\s+/g, '-')}/`}>{category}</a></>))}</p>
+		<h1 class="poster-title p-name">{frontmatter.title}</h1>
 		<p class="poster-year">{frontmatter.year}</p>
 		<p class="poster-director">{frontmatter.director}</p>
 		<p class="poster-customer">{frontmatter.customer}</p>
-		<p class="poster-description">{frontmatter.description}</p>
-		
+		<p class="poster-description p-summary">{frontmatter.description}</p>
+		<div class="e-content">
       <slot />
+	  </div>
 	    <p><strong>Permalink:</strong> {Astro.url.href}</p>
 
 	  </div>
@@ -33,5 +40,5 @@ const { frontmatter } = Astro.props;
   <PosterNavPrevNext />
   </div>
   </div>
-
+</article>
 </PageLayout>

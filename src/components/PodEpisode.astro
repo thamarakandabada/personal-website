@@ -1,13 +1,17 @@
 ---
 const { title, url, pubDate, episode, guest } = Astro.props;
+const isoDate = pubDate ? new Date(pubDate).toISOString() : '';
+const formattedDate = pubDate 
+  ? new Date(pubDate).toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'}) 
+  : '';
 ---
-<div>
-  <a href={url}>
+<div class="h-entry">
+  <a class="u-url" href={url}>
     <div class="podcast-meta">
-      <p class="podcast-date">{pubDate.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</p>
+      <p class="podcast-date"><time class="dt-published" datetime={isoDate}>{formattedDate}</time></p>
       <p class="podcast-ep">Episode {episode}</p>
     </div>
-    <h2>{title}</h2>
+    <h2 class="p-name">{title}</h2>
     <p class="podcast-guest">{guest}</p>
   </a>
 </div>

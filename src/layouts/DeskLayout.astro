@@ -6,6 +6,9 @@ const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.date 
   ? new Date(frontmatter.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
   : 'Unknown Date';
+const isoDate = frontmatter.date
+  ? new Date(frontmatter.date).toISOString() 
+  : '';
 ---
 <PageLayout 
   title={`Desk - ${formattedDate} - Thamara Kandabada`} 
@@ -14,8 +17,13 @@ const formattedDate = frontmatter.date
   feeds={[{ title: "Desk - Thamara Kandabada", href: "/desk/rss.xml" }]}
 >
 
+<article class="h-entry">
+<a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
+<a class="u-url" href={Astro.url.href} hidden>Permalink</a>
+<h1 class="p-name" hidden>Desk Setup - {formattedDate}</h1>
+
     <div class="blog-header">
-	  <p><span class="blog-date">{formattedDate}</span>//<span class="blog-category">{frontmatter.location}</span></p>
+	  <p><span class="blog-date"><time class="dt-published" datetime={isoDate}>{formattedDate}</time></span>//<span class="blog-category p-category">{frontmatter.location}</span></p>
     </div>
 
 	  <div class="blog-image">
@@ -27,7 +35,9 @@ const formattedDate = frontmatter.date
       />
     </figure>
 	  </div>
-	  	  <p>{frontmatter.description}</p>
-      <slot />
-
+	  	  <p class="p-summary">{frontmatter.description}</p>
+        <div class="e-content">
+          <slot />
+        </div>
+        </article>
 </PageLayout>
