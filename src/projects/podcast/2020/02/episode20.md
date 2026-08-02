@@ -1,7 +1,7 @@
 ---
 title: 'A Matter of Words'
 pubDate: 2020-02-28
-guest: 'Carmen Aguilera-Carnerero'
+guest: 'with Carmen Aguilera-Carnerero'
 episode: '20'
 ---
 
