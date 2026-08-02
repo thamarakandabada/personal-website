@@ -29,6 +29,13 @@ const pageTitle = "Changelog - Thamara Kandabada";
     <h1>Changelog</h1>
     <p>This is a detailed changelog for this site, listing all Git commits deployed since launch.</p>
 
+    <div class="see-also">
+      <ul>
+        <li><strong>See also:</strong></li>
+        <li><a href="/credits#commit-message-conventions">Commit Message Conventions</a></li>
+      </ul>
+    </div>
+
 <div class="changelog-container" style="margin-top: 3rem;">
       {allCommits.map((commit) => {
         const date = new Date(commit.commit.author.date).toLocaleDateString('en-GB', { 
