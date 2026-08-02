@@ -6,6 +6,7 @@ import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .filter(post => !post.data.draft)
   .filter(post => !post.data.sections?.includes('Stream'))
   .slice(0,6);
 const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";

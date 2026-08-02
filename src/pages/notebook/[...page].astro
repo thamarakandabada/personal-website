@@ -7,8 +7,9 @@ import BlogPost from '../../components/BlogPost.astro';
 export const getStaticPaths = (async ({paginate}) => {
   const posts = (await getCollection('blog'))
     .sort((a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0));
-
-  return paginate(posts, { pageSize: 15 } );
+  
+  const publishedPosts = posts.filter(post => !post.data.draft);
+  return paginate(publishedPosts, { pageSize: 15 } );
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
