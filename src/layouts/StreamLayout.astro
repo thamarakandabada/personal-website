@@ -29,8 +29,8 @@ const formattedDate = frontmatter.pubDate
 		    {frontmatter.topics?.map((topic: string) => <li><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
 		  </ul>
 	    </div>
-		    <div class="post-reference">
-			<p><strong>Reference this post:</strong> When referencing this post, I prefer to be called Thamara, Thamara Kandabada, or Thamara's Notebook.<br>Permalink: https://thamara.co.uk/notebook/{Astro.params.slug}</p>
+		<div class="post-reference">
+			<p><strong>Reference this post:</strong> When referencing this post, I prefer to be called Thamara, Thamara Kandabada, or Thamara's Notebook. Permalink: <em>{Astro.url.href}</em></p>
 		</div>
 		</div>
 		<BlogPostNavPrevNext />

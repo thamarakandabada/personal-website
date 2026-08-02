@@ -51,10 +51,11 @@ With _O Brother, Where Art Thou?_ the Coen Brothers did a more stimulating adapt
 
 <div class="post-footer">
 
-<p><strong>Related:</strong></p>
+<p><strong>Further reading:</strong></p>
     <ol id="post-footer-list">
-      <li><span>My original review on Letterboxd is linked <a href="https://letterboxd.com/thamarak/film/the-odyssey-2026/">here</a>.</span></li>
-      <li><span>Emily Wilson's scathing review of the film on the London Review of Books is linked <a href="https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man">here</a>.</span></li>
+      <li><span>My <a href="https://letterboxd.com/thamarak/film/the-odyssey-2026/">original review</a> on Letterboxd.</span></li>
+      <li><span>Emily Wilson's <a href="https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man">scathing review</a> of the film on the London Review of Books.</span></li>
+      <li><span>Himal Kotelawala's <a href="">review</a> of the film.</span></li>
       <li><span>A new episode of <em>The Bad Take</em> podcast featuring a conversation about the film will be available <a href="/projects/podcast/2022/episode21/">here</a> shortly.</span></li>  
     </ol>
 

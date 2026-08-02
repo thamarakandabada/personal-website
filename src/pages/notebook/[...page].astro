@@ -16,13 +16,14 @@ const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
 const pageTitle = "Notebook - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
-    <h1>Notebook</h1>
+  <div class="h-feed">
+    <h1 class="p-name">Notebook</h1>
     <p class="blog-banner">Welcome to my personal blog. Here you can find my uncensored thoughts on <a href="/notebook/sections/life">Life</a>, <a href="/notebook/sections/the-universe">The Universe</a>, and <a href="/notebook/sections/everything-else">Everything</a>. There is also a <a href="/notebook/sections/stream">Stream</a> section for shorter musings and more frequent updates.</p>
     
-    <div class="notebook-grid h-feed">
-      <a class="p-author h-card" href="/" hidden>Thamara Kandabada</a>
+    <div class="notebook-grid">
+      <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
       <div>
-        <h2 class="p-name">Latest Posts</h2>
+        <h2>Latest Posts</h2>
           <ul class="notebook-post-list">
             {page.data.map((post: any) => <BlogPost pubDate={post.data.pubDate} url={`/notebook/${post.id}/`} title={post.data.title} description={post.data.description} sections={post.data.sections} />)}
           </ul>
@@ -71,5 +72,5 @@ const pageTitle = "Notebook - Thamara Kandabada";
         </div>
       </div>
     </div>
-    
+  </div>
 </PageLayout>

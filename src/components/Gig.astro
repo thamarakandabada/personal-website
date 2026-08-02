@@ -4,7 +4,7 @@ import { Picture } from "astro:assets";
 const { imageUrl, imageAlt, label, title, description, venue, date, support } = Astro.props;
 ---
 
-<div class="gig-timeline-node">
+<div class="gig-timeline-node h-entry">
   <div class="gig-photo">
     <Picture
       src={imageUrl}
@@ -15,8 +15,10 @@ const { imageUrl, imageAlt, label, title, description, venue, date, support } = 
   <div class="gig-label">
     <p>{label}</p>
   </div>
-  <p class="gig-title">{title}</p>
+  <p class="gig-title p-name">{title}</p>
   <p class="gig-support">{support}</p>
   <p class="gig-description">{description}</p>
-  <p class="gig-date">{date.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})} at <span class="gig-venue">{venue}</span></p>
+  <p class="gig-date"><time class="dt-published" datetime={date.toISOString()}>
+    {date.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}
+  </time>at <span class="gig-venue">{venue}</span></p>
 </div>
