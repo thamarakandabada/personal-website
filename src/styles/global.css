@@ -1405,6 +1405,7 @@ button, .sub-button {
     padding: 0.25rem 0.5rem;
     font-size: 1rem;
     font-family: inherit;
+    cursor: pointer;
 }
 
 button:hover, .sub-button:hover {
