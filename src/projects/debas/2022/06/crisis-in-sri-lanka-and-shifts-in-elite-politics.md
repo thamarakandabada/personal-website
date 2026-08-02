@@ -42,6 +42,6 @@ Anti-elite politics is on the rise across the world, in response to the rising l
 
 <div class="post-footer">
 
-**Related**: [The Bad Take Podcast Episode 21: Sri Lanka in Crisis: Is the Political Elite Doomed? (with Rajni Gamage)](/projects/podcast/episode21/)
+**Related**: [The Bad Take Podcast Episode 21: Sri Lanka in Crisis: Is the Political Elite Doomed? (with Rajni Gamage)](/projects/podcast/2022/06/episode21/)
 
 </div>

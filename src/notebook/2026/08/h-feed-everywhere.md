@@ -8,7 +8,6 @@ imageAlt: ''
 imageCaption: ''
 sections: ["Everything Else"]
 topics: ["Personal Website", "Writing", "Blogging", "Microformats", "The Great Astro Migration of 2026"]
-draft: true
 ---
 
 Making my website IndieWeb friendly has always been the goal. With WordPress, I could simply install a plugin to inject [microformat properties](https://microformats.org/) such as [h-feed](https://microformats.org/wiki/h-feed) to the site, but building everything from scratch in Astro meant I had to do this manually. I spent some time writing the microformat classes into my HTML layouts yesterday, and now the following feeds are fully marked up with h-feed.
