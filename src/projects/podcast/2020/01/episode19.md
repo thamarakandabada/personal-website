@@ -3,6 +3,8 @@ title: 'Planet Hunting'
 pubDate: 2020-01-31
 guest: 'with Mahesh Herath'
 episode: '19'
+imageUrl: 'images/ep-19.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 On this episode, we’re joined by Sri Lankan astronomer Mahesh Herath who made headlines last year when he discovered not one but two exoplanets – no big deal – in a remote corner of our galaxy. We talked about his rigorous research process and the future of space exploration technologies among other things.

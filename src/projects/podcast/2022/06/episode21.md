@@ -3,6 +3,8 @@ title: 'Sri Lanka in Crisis: Is the Political Elite Doomed?'
 pubDate: 2022-06-05
 guest: 'with Rajni Gamage'
 episode: '21'
+imageUrl: 'images/ep-21-thumb.jpeg'
+imageAlt: 'Scene of a protest with a large gathering of people with the episode information overlaid'
 ---
 
 In this episode, joined by Rajni Gamage, we discuss the nature of elite politics in Sri Lanka in the context of the current crisis. We explore what scope there is for a new politics of solidarity and social transformation through the people’s protests and the shifts in elite politics this would entail.

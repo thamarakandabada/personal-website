@@ -3,6 +3,8 @@ title: 'Demystifying AI'
 pubDate: 2019-12-03
 guest: 'with Nisansa de Silva'
 episode: '18'
+imageUrl: 'images/ep-18.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 Joined by subject expert Nisansa de Silva, we bust some myths about AI and its applications, while exploring the challenges in AI development and the inevitable social, economic and political implications it poses.

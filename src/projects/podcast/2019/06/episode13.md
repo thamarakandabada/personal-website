@@ -3,6 +3,8 @@ title: 'Catching up on Twitter'
 pubDate: 2019-06-11
 guest: ''
 episode: '13'
+imageUrl: 'images/ep-13.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 We’re back after a bit of a hiatus. So much has happened since you last heard from us. Particularly on the online space. This is a brief look at what’s been going down.

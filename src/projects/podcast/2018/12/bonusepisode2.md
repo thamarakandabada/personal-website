@@ -3,6 +3,8 @@ title: 'Back from the Beaches'
 pubDate: 2018-12-01
 guest: ''
 episode: '6a'
+imageUrl: 'images/ep-6a.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 The Bad Take is back after a month’s silence. On this episode we have a chat about Thamara’s holiday in Indonesia.

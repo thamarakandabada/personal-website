@@ -3,6 +3,8 @@ title: 'Congested'
 pubDate: 2019-01-29
 guest: ''
 episode: '10'
+imageUrl: 'images/ep-10.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 “You’re not stuck in traffic. You are traffic.” So goes the adage. But is that always true? What explains the bumper to bumper traffic jams we find ourselves in almost every day, slowly driving us all insane? Is there a solution in sight? This is our attempt to answer some of these questions.

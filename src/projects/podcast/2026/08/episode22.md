@@ -4,7 +4,7 @@ pubDate: 2026-08-03
 guest: ''
 episode: '22'
 imageUrl: 'images/episode-22-thumb.jpeg'
-imageAlt: ''
+imageAlt: 'A still from the film The Odyssey of a group of people pulling a large horse statue out of a beach, overlaid with the podcast logo and title name'
 ---
 
 Christopher Nolan’s take on Homer’s ancient epic is all anyone’s talking about these days. So much so that it even managed to spurt us out of retirement. We are back. Sort of. With our own spicy take on the biggest movie of 2026.

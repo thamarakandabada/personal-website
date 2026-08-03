@@ -3,6 +3,8 @@ title: 'Firing Squad'
 pubDate: 2018-12-25
 guest: 'with Chav and Thimal Gajadeera'
 episode: '8'
+imageUrl: 'images/ep-8.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 An unfortunate incident involving a political argument that quickly escalated took Twitter by storm a few days ago. Tempers flared and one of the parties ended up losing their job as a result. Joining us today are Chav and Thimal Gajadeera to discuss the ethical and moral implications of this.

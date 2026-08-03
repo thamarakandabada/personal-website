@@ -3,6 +3,8 @@ title: 'A Conversation with Ajay Kamalakaran'
 pubDate: 2018-12-31
 guest: 'with Ajay Kamalakaran'
 episode: '9'
+imageUrl: 'images/ep-9.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 This week, we’re joined by journalist turned author Ajay Kamalakaran based in Mumbai, India. He talks about, among other things, his latest work, a short story collection centred around a remote island in Russia.

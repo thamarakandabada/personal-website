@@ -3,6 +3,8 @@ title: 'Major Throwback – ’90s Pop Culture in Sri Lanka'
 pubDate: 2019-06-26
 guest: 'with Dilina Amaruwan and Chav'
 episode: '14'
+imageUrl: 'images/ep-14.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 From Doo Daruwo to Soora Pappa, from Rookantha to Bathiya & Santhush, the 1990s saw an unprecedented boom in popular entertainment in Sri Lanka that defined an entire generation. This is a look back at the glory days.

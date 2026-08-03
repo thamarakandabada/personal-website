@@ -1,5 +1,6 @@
 ---
 import PageLayout from './PageLayout.astro';
+import { Picture } from 'astro:assets';
 
 const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
@@ -22,6 +23,15 @@ const isoDate = frontmatter.pubDate
   <h1 class="podcast-title p-name">{frontmatter.title}</h1>
   <p class="podcast-guest">{frontmatter.guest}</p>
 </div>
+
+	  <figure class="blog-hero-image u-photo" hidden>
+      <Picture
+        src={frontmatter.imageUrl}
+		    formats={['avif', 'webp']}
+		    alt={frontmatter.imageAlt}
+      />
+    </figure>
+
 <div class="e-content">
   <slot />
 </div>

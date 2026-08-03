@@ -3,6 +3,8 @@ title: 'At The Movies'
 pubDate: 2018-09-23
 guest: ''
 episode: '3'
+imageUrl: 'images/ep-3.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 With no preparation at all, we sat down to have a chat about the movies we have enjoyed. The conversation flowed with great ease, and we veered a little towards books and TV shows, too, naturally. A fun exchange it was, so we decided to revisit the movie theater again soon. We hope you’d enjoy this first instalment for now!

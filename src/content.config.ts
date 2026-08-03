@@ -65,11 +65,13 @@ const desk = defineCollection({
 
 const podcast = defineCollection({
     loader: glob({ pattern: '**/[^_]*.md', base: "./src/projects/podcast" }),
-    schema: z.object({
+    schema: ({ image }) => z.object({
       title: z.string(),
       pubDate: z.date(),
       guest: z.string().optional(),
       episode: z.string(),
+      imageUrl: image(),
+      imageAlt: z.string(),
     })
 });
 

@@ -3,6 +3,8 @@ title: 'On Censorship, Hate Speech & Tolerance'
 pubDate: 2018-09-09
 guest: ''
 episode: '1'
+imageUrl: 'images/ep-1.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 The word ‘censorship’ gets thrown around a lot these days, both locally and internationally. It’s been an especially thorny topic of late, given the divisive political climate we’re living in right now. But what exactly does it mean to censor someone? And who reserves the right to do it? Thamara and Himal, two random dudes on the internet, offer their half baked opinions on this important subject.

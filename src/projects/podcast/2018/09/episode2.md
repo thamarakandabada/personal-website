@@ -3,6 +3,8 @@ title: 'On Atheism'
 pubDate: 2018-09-16
 guest: ''
 episode: '2'
+imageUrl: 'images/ep-2.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 Religion is a touchy topic, to say the least. It’s a subject many people like to steer clear of. But lately, in Sri Lanka, there has been much conversation around religion, or more specifically, the absence of it. This is one such conversation.

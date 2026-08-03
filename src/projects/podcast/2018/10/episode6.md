@@ -3,6 +3,8 @@ title: 'On Digital Demons'
 pubDate: 2018-10-26
 guest: ''
 episode: '6'
+imageUrl: 'images/ep-6.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 Social media is all around us, controlling so many aspects of our lives. For a lot of us, it’s a useful way to stay connected, to stay up to date on what’s going in the world. But like with all things, too much of it cannot be a good thing. This is a deep dive into the ills of social media.

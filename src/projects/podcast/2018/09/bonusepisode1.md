@@ -3,6 +3,8 @@ title: 'Bonus: Sound Check'
 pubDate: 2018-09-21
 guest: ''
 episode: '2a'
+imageUrl: 'images/ep-2a.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 So we got some new recording gear this week and we thought we’d just sit down and record an impromptu conversation just to test the equipment. This is what we ended up with: a rather long-winded meta chat about the podcast and a few other things that interest us personally. It’s not the most exciting, so feel free to skip. Await Episode 3!

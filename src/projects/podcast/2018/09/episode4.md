@@ -3,6 +3,8 @@ title: 'On Bus Music'
 pubDate: 2018-09-30
 guest: 'with Indika de Silva'
 episode: '4'
+imageUrl: 'images/ep-4.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 It’s cranky, it’s raw, you know it when you hear it. And whether you like it or not, ‘bus music’ is here to stay. On this episode we explore the fundamental characteristics of the famed Lankan musical genre with connoisseur Indika de Silva.

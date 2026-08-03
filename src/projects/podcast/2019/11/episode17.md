@@ -3,6 +3,8 @@ title: 'Fidel off the Field'
 pubDate: 2019-11-22
 guest: 'with Andrew Fidel Fernando'
 episode: '17'
+imageUrl: 'images/ep-17.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 We caught up with sports writer Andrew Fidel Fernando for a chat on his first book, the well received travelogue Upon a Sleepless Isle.

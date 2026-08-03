@@ -3,6 +3,8 @@ title: 'A Matter of Words'
 pubDate: 2020-02-28
 guest: 'with Carmen Aguilera-Carnerero'
 episode: '20'
+imageUrl: 'images/ep-20.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 On this episode, we’re joined by linguist Carmen Aguilera-Carnerero based in Granada, Spain. She was in Sri Lanka for some months last year, studying extreme speech online. She has also studied graffiti and “wall art” in Spanish and other European cities. This is a deep dive into her findings.[](https://web.archive.org/web/20221129140733/https://thebadtake.com/episode20/)

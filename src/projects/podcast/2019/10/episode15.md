@@ -3,6 +3,8 @@ title: 'At The Movies – We Live In A Society'
 pubDate: 2019-10-11
 guest: ''
 episode: '15'
+imageUrl: 'images/ep-15.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 We’re back after a while with another movie episode. This time we talk about the new Joker and the controversy surrounding it. Is it worth the hype?

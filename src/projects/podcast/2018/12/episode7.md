@@ -3,6 +3,8 @@ title: 'At The Movies – Talking Movies'
 pubDate: 2018-12-14
 guest: 'with Dilina Amaruwan'
 episode: '7'
+imageUrl: 'images/ep-7.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 This week, we’re joined by writer and pop culture connoisseur Dilina Amaruwan Pathirage. We pick his brain on what’s hot (and not) at the movies and take a walk down memory lane on Sri Lankan cinema’s golden years.

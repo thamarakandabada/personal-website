@@ -3,6 +3,8 @@ title: 'Cosmic Musings – Where are all our neighbours?'
 pubDate: 2019-02-18
 guest: ''
 episode: '11'
+imageUrl: 'images/ep-11.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 Given the sheer number of stars in the universe — over 200 billion in our galaxy alone, in a universe of two trillion galaxies — chances are, we are not alone. And yet, we have yet to see a shred of credible evidence for life outside our little cosmic corner, let alone intelligent life. The silence is deafening. Are we really alone?

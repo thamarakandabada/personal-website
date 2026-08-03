@@ -3,6 +3,8 @@ title: 'At The Movies – Hollywood Ramblings'
 pubDate: 2019-11-03
 guest: ''
 episode: '16'
+imageUrl: 'images/ep-16.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 This edition of our At the Movies episodes is a somewhat belated discussion on Tarantino’s latest outing and legendary filmmaker Martin Scorsese’s remarks on the MCU.

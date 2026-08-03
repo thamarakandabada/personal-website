@@ -3,6 +3,8 @@ title: 'On “Radicals” & Social Justice'
 pubDate: 2018-10-08
 guest: ''
 episode: '5'
+imageUrl: 'images/ep-5.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 In the Sinhala-speaking corner of the internet, the word ‘radical’ has come to mean something negative, not unlike pejorative terms such as ‘SJW’. This is an attempt to make sense of this politically loaded word as it applies to the Sri Lankan context.

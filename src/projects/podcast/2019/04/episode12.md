@@ -3,6 +3,8 @@ title: 'Cosmic Musings – Are we living in a simulation?'
 pubDate: 2019-04-20
 guest: ''
 episode: '12'
+imageUrl: 'images/ep-12.jpeg'
+imageAlt: 'decorative thumbnail image with podcast info'
 ---
 
 Are we living in a simulation? The idea is not a new one. It’s been a sci-fi staple for years. But more and more scientists are taking it seriously. This is an attempt to understand the implications of this question.
