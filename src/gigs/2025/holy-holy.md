@@ -7,4 +7,5 @@ support: ''
 description: 'Woody Woodmansey (from The Spiders from Mars) and Tony Visconti (Bowie''s longtime producer) pay tribute to the late, great David Bowie, featuring Glen Gregory from Heaven 17 on vocals, and a brilliant crew of musicians in tow. They performed a delightful selection of Bowie’s hits. '
 venue: 'O2 Academy, Liverpool'
 date: 2025-05-31
+city: 'Liverpool'
 ---

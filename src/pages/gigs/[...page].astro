@@ -18,6 +18,7 @@ const pageTitle = "Gigs - Thamara Kandabada";
 const years = [...new Set(allGigs.map((post) => post.data.date.getFullYear()).flat())]
 const sortedYears = years.sort((a, b) => b - a);
 const labels = [...new Set(allGigs.map((post) => post.data.label).filter(Boolean).flat())]
+const cities = [...new Set(allGigs.map((post) => post.data.city).filter(Boolean).flat())]
 ---
 <PageLayout title={pageTitle}>
   <div class="h-feed">
@@ -27,18 +28,27 @@ const labels = [...new Set(allGigs.map((post) => post.data.label).filter(Boolean
     <p>Where support acts are mentioned, I've only included the ones I saw.</p>
     <p>These updates have an RSS feed, <a href="/gigs/rss.xml">subscribe here</a>.</p>
 
-    <div class="gig-years-list">
-		<ul>
-		<li><strong>Browse by year:</strong></li>
-		{sortedYears.map((year) => <li class="gig-year"><a href={`/gigs/years/${String(year)}/`}>{year}</a></li>)}
-		</ul>
+    <div class="gigs-filter">
+    <div>
+    <h2>Browse by year</h2>
+    <div class="tags">
+		{sortedYears.map((year) => <p class="tag"><a href={`/gigs/years/${String(year)}/`}>{year}</a></p>)}
+    </div>
     </div>
 
-    <div class="gig-years-list">
-		<ul>
-		<li><strong>Browse by label:</strong></li>
-		{labels.map((label) => <li class="gig-year"><a href={`/gigs/labels/${String(label).toLowerCase().replace(/\s+/g, '-')}/`}>{label}</a></li>)}
-		</ul>
+    <div>
+    <h2>Browse by label</h2>
+    <div class="tags">	
+		{labels.map((label) => <p class="tag"><a href={`/gigs/labels/${String(label).toLowerCase().replace(/\s+/g, '-')}/`}>{label}</a></p>)}
+    </div>
+    </div>
+
+    <div>
+    <h2>Browse by city</h2>
+    <div class="tags">
+		{cities.map((city) => <p class="tag"><a href={`/gigs/cities/${String(city).toLowerCase().replace(/\s+/g, '-')}/`}>{city}</a></p>)}
+    </div>
+    </div>
     </div>
 
     <div class="gigs-grid">

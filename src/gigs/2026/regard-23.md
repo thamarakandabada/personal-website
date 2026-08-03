@@ -7,4 +7,5 @@ support: 'Crystal Dawn, Tia Bow, Mark Hegan'
 description: 'Regard gigs are always unique and interesting, and this month''s was even more so. It took place in Foxglove Alley, a cozy community garden maintained by volunteers in the Stranmillis area in Belfast. There was a light drizzle throughout the whole evening, but that did not deter the crowd from enjoying the excellent music performed by a trio of local artists.'
 venue: 'Foxglove Alley, Belfast'
 date: 2026-07-26
+city: 'Belfast'
 ---

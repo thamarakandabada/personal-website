@@ -7,4 +7,5 @@ support: 'Support act: Martin Harley'
 description: 'The legendary Bonnie Raitt performed a number of classics from her enormous back catalogue. I especially liked the acoustic rendition of "Angel from Montgomery".'
 venue: 'Ulster Hall, Belfast'
 date: 2025-06-01
+city: 'Belfast'
 ---

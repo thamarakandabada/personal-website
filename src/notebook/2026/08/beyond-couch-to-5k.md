@@ -8,7 +8,6 @@ imageAlt: ''
 imageCaption: ''
 sections: ["Life"]
 topics: ["Running", "Exercise", "Couch to 5K"]
-draft: true
 ---
 
 After finishing the Couch to 5k programme a few weeks ago, I immediately subscribed to the paid version of [Runna](https://www.runna.com/) and signed up with a personalised running plan. The plan is designed to improve both my speed and distance. At the end of 12 weeks, all being well, I will be able to run 10k non-stop.

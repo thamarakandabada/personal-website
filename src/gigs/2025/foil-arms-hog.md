@@ -7,4 +7,5 @@ support: ''
 description: 'The Irish comedy trio Foil, Arms & Hog brought their signature skits to Belfast on their "Skittish" tour. It was am excellent evening full of laughs.'
 venue: 'Grand Opera House, Belfast'
 date: 2025-04-17
+city: 'Belfast'
 ---

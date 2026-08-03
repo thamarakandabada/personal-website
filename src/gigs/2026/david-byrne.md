@@ -7,4 +7,5 @@ support: ''
 description: 'It was such a pleasure to witness David, who I regard as a once-in-a-generation talent on his Who is The Sky Tour. The set featured music from Talking Heads and David’s solo career. The entire set was choreographed and energetically performed by his crew of musicians, singers, and dancers.'
 venue: 'O2 Apollo, Manchester'
 date: 2026-03-09
+city: 'Manchester'
 ---

@@ -7,4 +7,5 @@ support: 'Beckie Stew, Tyrell, Vera'
 description: 'The monthly Regard gigs are certainly becoming one of our favourite things to do. This month, the event took place in the beautiful Thread Studio in the Portview Trade Centre, featuring a spoken word performance by Beckie Stew and music by Tyrell and the band Vera—Sarah Toner (vocals), Darragh Tibbs (drums), Matt Holland (keys/guitar) and David Dalzell (bass).'
 venue: 'Thread Studio, Belfast'
 date: 2026-05-17
+city: 'Belfast'
 ---

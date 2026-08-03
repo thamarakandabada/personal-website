@@ -7,4 +7,5 @@ support: ''
 description: 'This Conor McPherson’s play which masterfully intertwines a number of Dylan classics with an original story set in Minnesota in the 1930s was a highlight of our London trip. It was a limited revival at the iconic Old Vic which we were fortunate enough to witness. Katie Brayben''s rendition of "Forever Young" towards the end of the play had me in tears.'
 venue: 'The Old Vic, London'
 date: 2025-07-16
+city: 'London'
 ---

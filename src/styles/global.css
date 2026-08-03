@@ -762,6 +762,7 @@ Grids and sub-grids
 ===================
 */
 
+
 .gigs-grid, .md-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1418,6 +1419,12 @@ Blog
     justify-content: center;
 }
 
+.buttons8815 img:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.5s;
+}
+
 button, .sub-button {
     color: inherit;
     background-color: var(--bg-tertiary);
@@ -1530,22 +1537,6 @@ Gigs
 .gig-support {
     font-size: 1.25rem;
     color: var(--text-secondary);
-}
-
-.gig-years-list p {
-    margin: 0;
-    padding: 0;
-}
-
-.gig-years-list ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
 }
 
 .gig-photo img, .desk-photo img {
