@@ -250,6 +250,8 @@ p {
     margin-bottom: 1.1rem;
     line-height: 1.5;
     color: var(--text-primary);
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 blockquote {
@@ -279,6 +281,8 @@ a {
     text-decoration: underline;
     text-underline-offset: 0.4rem;
     color: var(--accent);
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a) {
