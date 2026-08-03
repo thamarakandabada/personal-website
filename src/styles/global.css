@@ -359,15 +359,21 @@ Page elements
 -------------------
 */
 
+.e-content p, 
+.e-content a {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 .commit-hash {
     font-family: "Cascadia Mono", monospace;
     font-size: 0.9rem;
 }
 
-iframe:not(.podcast-embed) {
+iframe {
     width: 100%;
-    height: 50vh;
     border-radius: 4px;
+    overflow-y: visible;
 }
 
 .podcast-embed {
@@ -1284,6 +1290,10 @@ Debas
     margin: 0 auto;
     padding: 0;
     text-align: center;
+}
+
+.permalink {
+    border-top: 1px solid var(--border-color);
 }
 
 /*

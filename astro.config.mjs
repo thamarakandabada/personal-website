@@ -1,4 +1,3 @@
-import { unified } from '@astrojs/markdown-remark';
 import { defineConfig } from 'astro/config';
 import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
@@ -13,8 +12,4 @@ export default defineConfig({
     inlineStylesheets: `always`,
   },
   integrations: [sitemap()],
-  markdown: {
-    processor: unified({
-    }),
-  },
 });

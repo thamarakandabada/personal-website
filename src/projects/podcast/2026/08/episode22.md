@@ -7,7 +7,7 @@ episode: '22'
 
 Christopher Nolan’s take on Homer’s ancient epic is all anyone’s talking about these days. So much so that it even managed to spurt us out of retirement. We are back. Sort of. With our own spicy take on the biggest movie of 2026.
 
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/4PubUWmsRDqHBmRVp3prY7?utm_source=generator&si=9daeb282b7d74589" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe src="https://creators.spotify.com/pod/profile/the-bad-take/embed/episodes/22-On-Nolans-Odyssey-e3msl3j" frameborder="0" scrolling="no"></iframe>
 
 ## Show Notes
 

@@ -53,7 +53,23 @@ const pageTitle = "Notebook - Thamara Kandabada";
           <h2>Subscribe</h2>
           <p>Susbcribe using SubToMe or access the raw RSS feed link below. Go to the <a href=/feeds>/Feeds</a> page for more granular feed options.</p>
           <div class="subscribe-buttons">
-            <input class="sub-button" type="button" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this)" value="SubToMe">
+            <input 
+              class="sub-button" 
+              type="button" 
+              value="SubToMe" 
+              onclick="(function(btn){
+                var link = document.createElement('link');
+                link.rel = 'alternate';
+                link.type = 'application/rss+xml';
+                link.href = 'https://thamara.co.uk/notebook/rss.xml';
+                document.head.insertBefore(link, document.head.firstChild);
+    
+              var z = document.createElement('script');
+              document.subtomeBtn = btn;
+              z.src = 'https://www.subtome.com/load.js';
+              document.body.appendChild(z);
+            })(this)"
+            />
             <a href="/notebook/rss.xml"><button type="button"><i class="bi bi-rss-fill"></i></button></a>
           </div>
         </div>
