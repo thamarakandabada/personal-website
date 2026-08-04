@@ -5,7 +5,7 @@ label: 'Talk'
 title: 'Professor Brian Cox: Horizons – A 21st Century Odyssey'
 support: ''
 description: 'An evening of science, hosted by Professor Brian Cox, with the aid of stunning visuals, focusing on space exploration.'
-venue: 'Waterfront Hall, Belfast'
+venue: 'Waterfront Hall'
 date: 2024-01-24
 city: 'Belfast'
 ---

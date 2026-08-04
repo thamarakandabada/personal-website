@@ -5,7 +5,7 @@ label: 'Music'
 title: 'Brian Jonestown Massacre'
 support: 'Support act: The Magic Mod'
 description: 'This was uncharacteristically chilled out for a BJM show. There were no fights on stage!'
-venue: 'Limelight, Belfast'
+venue: 'Limelight'
 date: 2023-02-10
 city: 'Belfast'
 ---

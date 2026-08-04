@@ -5,7 +5,7 @@ label: 'Comedy'
 title: 'David O’Doherty'
 support: ''
 description: 'David’s show included his signature blend of comedy and music. Having seen and liked him on many panel shows over the years, I was delighted to experience a live show with David''s antics.'
-venue: 'Waterfront Hall, Belfast'
+venue: 'Waterfront Hall'
 date: 2024-11-16
 city: 'Belfast'
 ---

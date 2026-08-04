@@ -5,7 +5,7 @@ label: 'Theatre'
 title: 'Rocky Horror Show'
 support: ''
 description: 'A new UK and Ireland stage adaptation of the cult classic Rocky Horror Picture Show, with Adam Strong as Frank-N-Furter. All the performers were great and had the audience in stitches.'
-venue: 'Grand Opera House, Belfast'
+venue: 'Grand Opera House'
 date: 2025-07-23
 city: 'Belfast'
 ---

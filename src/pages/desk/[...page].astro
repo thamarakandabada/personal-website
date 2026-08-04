@@ -8,7 +8,7 @@ export const getStaticPaths = (async ({paginate}) => {
   const desk = (await getCollection('desk'))
     .sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0));
 
-  return paginate(desk, { pageSize: 10 } );
+  return paginate(desk, { pageSize: 16 } );
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
@@ -21,7 +21,7 @@ const pageTitle = "Desk - Thamara Kandabada";
     <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
     <p>This is a timeline of my desk setup over the years. Changing priorities, house moves, and fluctuations in my financial situation have caused my setup to evolve/de-evolve in interesting ways. These photos were taken by me at random moments, and I’m documenting them all here for nostalgia.</p>
     <p>These updates have an RSS feed, <a href="/desk/rss.xml">subscribe here</a>.</p>
-    <p>You may also be interested in what I’m currently using, over at <a href="/uses">/Uses</a>.</p>
+    <p>You may also be interested in what I’m currently using, over on the <a href="/uses">Uses</a> page.</p>
 
     <div class="desk-grid">
       {page.data.map((post: any) => <Desk date={post.data.date} description={post.data.description} location={post.data.location} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} />)}

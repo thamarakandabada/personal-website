@@ -5,7 +5,7 @@ label: 'Music'
 title: 'Bowie Experience'
 support: ''
 description: 'The tribute band performed an explosive set of hits to a very enthusiastic audience. The show was opened by the local band Lonely Astronaut.'
-venue: 'Ulster Hall, Belfast'
+venue: 'Ulster Hall'
 date: 2023-04-09
 city: 'Belfast'
 ---

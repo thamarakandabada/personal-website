@@ -5,7 +5,7 @@ label: 'Comedy'
 title: 'Jon Richardson'
 support: ''
 description: 'Jon Richardson’s The Knitwit Tour, serving his signature style of comedy.'
-venue: 'Waterfront Hall, Belfast'
+venue: 'Waterfront Hall'
 date: 2024-01-20
 city: 'Belfast'
 ---

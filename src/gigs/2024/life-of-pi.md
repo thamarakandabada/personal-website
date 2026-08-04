@@ -5,7 +5,7 @@ label: 'Theatre'
 title: 'Life of Pi'
 support: ''
 description: 'The stage adaptation of Yann Martel’s novel, with a new UK & Ireland cast, and exquisite puppetry.'
-venue: 'Grand Opera House, Belfast'
+venue: 'Grand Opera House'
 date: 2024-02-22
 city: 'Belfast'
 ---

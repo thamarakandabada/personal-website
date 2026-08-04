@@ -5,7 +5,7 @@ label: 'Music'
 title: 'Norah Jones'
 support: ''
 description: 'Supported by a stripped-down band, Norah performed a number of her best loved songs.'
-venue: 'Waterfront Hall, Belfast'
+venue: 'Waterfront Hall'
 date: 2023-11-13
 city: 'Belfast'
 ---

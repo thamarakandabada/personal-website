@@ -8,7 +8,7 @@ export const getStaticPaths = (async ({paginate}) => {
   const gigs = (await getCollection('gigs'))
     .sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0));
 
-  return paginate(gigs, { pageSize: 12 } );
+  return paginate(gigs, { pageSize: 20 } );
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
@@ -18,7 +18,9 @@ const pageTitle = "Gigs - Thamara Kandabada";
 const years = [...new Set(allGigs.map((post) => post.data.date.getFullYear()).flat())]
 const sortedYears = years.sort((a, b) => b - a);
 const labels = [...new Set(allGigs.map((post) => post.data.label).filter(Boolean).flat())]
+const sortedLabels = labels.sort();
 const cities = [...new Set(allGigs.map((post) => post.data.city).filter(Boolean).flat())]
+const sortedCities = cities.sort();
 ---
 <PageLayout title={pageTitle}>
   <div class="h-feed">
@@ -26,6 +28,7 @@ const cities = [...new Set(allGigs.map((post) => post.data.city).filter(Boolean)
     <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
     <p>This is a list of gigs I have been to, arranged in reverse chronological order. My definition of "gig" here is quite broad—it includes music, theatre, comedy, and many other kinds of performance art. My pre-2022 records are incomplete and I have only added the gigs that I remember. But I intend to dig through old photos and emails to make this list as comprehensive as possible.</p>
     <p>Where support acts are mentioned, I've only included the ones I saw.</p>
+    <p>This page draws inspiration from <a href="https://lynnandtonic.com/" target="_blank">Lynn Fisher</a>'s excellent <a href="https://concerts.lynnandtonic.com/" target="_blank">concerts page</a>. You can find more great examples on the <a href="https://indieweb.org/concerts" target="_blank">IndieWeb Wiki</a>.</p>
     <p>These updates have an RSS feed, <a href="/gigs/rss.xml">subscribe here</a>.</p>
 
     <div class="gigs-filter">
@@ -37,22 +40,23 @@ const cities = [...new Set(allGigs.map((post) => post.data.city).filter(Boolean)
     </div>
 
     <div>
-    <h2>Browse by label</h2>
+    <h2>Browse by performance type</h2>
     <div class="tags">	
-		{labels.map((label) => <p class="tag"><a href={`/gigs/labels/${String(label).toLowerCase().replace(/\s+/g, '-')}/`}>{label}</a></p>)}
+		{sortedLabels.map((label) => <p class="tag"><a href={`/gigs/labels/${String(label).toLowerCase().replace(/\s+/g, '-')}/`}>{label}</a></p>)}
     </div>
     </div>
 
     <div>
     <h2>Browse by city</h2>
     <div class="tags">
-		{cities.map((city) => <p class="tag"><a href={`/gigs/cities/${String(city).toLowerCase().replace(/\s+/g, '-')}/`}>{city}</a></p>)}
-    </div>
+		{sortedCities.map((city) => <p class="tag"><a href={`/gigs/cities/${String(city).toLowerCase().replace(/\s+/g, '-')}/`}>{city}</a></p>)}
     </div>
     </div>
 
+    </div>
+
     <div class="gigs-grid">
-      {page.data.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} />)}
+      {page.data.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} city={post.data.city} />)}
     </div>
     
     <div class="pagination-links">

@@ -5,7 +5,7 @@ label: 'Comedy'
 title: 'James Acaster'
 support: ''
 description: 'James welcomed hecklers at the show, and expertly clapped back at all of them. He even managed to split the room with the joke about the royal family.'
-venue: 'Whitla Hall, Belfast'
+venue: 'Whitla Hall'
 date: 2023-11-02
 city: 'Belfast'
 ---

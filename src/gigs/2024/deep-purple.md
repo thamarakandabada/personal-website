@@ -5,7 +5,7 @@ label: 'Music'
 title: 'Deep Purple'
 support: 'Support act: Reef'
 description: 'The =1 tour, including songs from the latest album, as well as their well-known hits.'
-venue: 'AO Arena, Manchester'
+venue: 'AO Arena'
 date: 2024-11-09
 city: 'Manchester'
 ---

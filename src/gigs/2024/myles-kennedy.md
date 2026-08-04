@@ -5,7 +5,7 @@ label: 'Music'
 title: 'Myles Kennedy'
 support: 'Support act: Cardinal Black'
 description: 'I caught Myles Kennedy on his solo tour promoting the album Year of the Tiger. As a big fan of Alter Bridge, Myles is one of my favourite modern rock vocalists, and he is as every bit as powerful on stage performing his own material as he is when he is with the band.'
-venue: 'Limelight, Belfast'
+venue: 'Limelight'
 date: 2024-12-06
 city: 'Belfast'
 ---

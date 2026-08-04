@@ -5,7 +5,7 @@ label: 'Music'
 title: 'The Stray Gaiters: The Music of Neil Young'
 support: ''
 description: 'This event was part of the Cathedral Quarter Arts Festival (CQAF). The Stray Gaiters played some of Neil Young’s best-loved numbers, including some of my favourites (Down by the River, Cortez the Killer, Out on the Weekend).'
-venue: 'The Black Box, Belfast'
+venue: 'The Black Box'
 date: 2026-04-30
 city: 'Belfast'
 ---

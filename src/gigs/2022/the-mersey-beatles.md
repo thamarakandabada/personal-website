@@ -5,7 +5,7 @@ label: 'Music'
 title: 'The Mersey Beatles'
 support: ''
 description: 'The tribute band performed a number of favourites spanning the entire recording career of The Beatles.'
-venue: 'Ulster Hall, Belfast'
+venue: 'Ulster Hall'
 date: 2022-10-03
 city: 'Belfast'
 ---

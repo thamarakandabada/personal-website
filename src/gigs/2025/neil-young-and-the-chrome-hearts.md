@@ -5,7 +5,7 @@ label: 'Music'
 title: 'Neil Young and the Chrome Hearts'
 support: 'Support acts: Naima Bock, Amble, Van Morrison, Yusuf/Cat Stevens'
 description: 'Neil Yound played the BST Hyde Park festival with his new backing band, The Chrome Hearts, on their "Love Earth" tour. Neil didn''t disappoint; his guitar tone was as raw and dirty as ever, and they played all the way through to the curfew at 10.30pm. They had to cut the sound off as he was finishing "Rocking in the Free World".'
-venue: 'Hyde Park, London'
+venue: 'Hyde Park'
 date: 2025-07-11
 city: 'London'
 ---

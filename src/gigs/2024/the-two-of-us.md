@@ -5,7 +5,7 @@ label: 'Music'
 title: 'The Two of Us: Songs of Lennon and McCartney'
 support: ''
 description: 'Featuring songs from the Lennon and McCartney songbook, performed by a number of artists, backed by the Ulster Orchestra.'
-venue: 'Waterfront Hall, Belfast'
+venue: 'Waterfront Hall'
 date: 2024-02-03
 city: 'Belfast'
 ---

@@ -5,7 +5,7 @@ label: 'Comedy'
 title: 'Bill Bailey'
 support: ''
 description: 'Bill Bailey’s new tour, named Thoughtifier, included a mix of his signature comedy and music, with audience interaction.'
-venue: 'SSE Arena, Belfast'
+venue: 'SSE Arena'
 date: 2024-02-10
 city: 'Belfast'
 ---

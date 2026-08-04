@@ -5,7 +5,7 @@ label: 'Music'
 title: 'Hats Off To Led Zeppelin'
 support: 'Support act: Lonely Astronaut'
 description: 'The tribute band performed an explosive set of hits to a very enthusiastic audience. The show was opened by the local band Lonely Astronaut.'
-venue: 'Empire Music Hall, Belfast'
+venue: 'Empire Music Hall'
 date: 2023-02-25
 city: 'Belfast'
 ---

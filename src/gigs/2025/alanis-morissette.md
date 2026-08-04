@@ -5,7 +5,7 @@ label: 'Music'
 title: 'Alanis Morissette'
 support: 'Support acts: Irish Woman in Harmony, Liz Phair'
 description: 'Alanis headlined the Belsonic festival. It was a rainy evening in Belfast, but the atmosphere was great and Alanis rocked the show. People were singing along and having fun.'
-venue: 'Ormeau Park, Belfast'
+venue: 'Ormeau Park'
 date: 2025-06-30
 city: 'Belfast'
 ---

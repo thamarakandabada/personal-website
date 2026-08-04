@@ -5,7 +5,7 @@ label: 'Circus'
 title: 'Circus Extreme'
 support: ''
 description: 'This thrilling circus featured peformers—acrobats, motocross riders, trapeze artists, and more—from all over Europe.'
-venue: 'Boucher Playing Fields, Belfast'
+venue: 'Boucher Playing Fields'
 date: 2022-10-23
 city: 'Belfast'
 ---
