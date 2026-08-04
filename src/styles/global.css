@@ -856,6 +856,7 @@ Grids and sub-grids
 
 .debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover {
     border-color: var(--accent);
+    transform: translateY(-4px);
     transition: 0.5s;
 }
 
@@ -1555,7 +1556,7 @@ Gigs
 }
 
 .poster-list-item:hover {
-    transform: scale(1.01);
+    transform: translateY(-4px);
     transition: 0.5s;
 }
 

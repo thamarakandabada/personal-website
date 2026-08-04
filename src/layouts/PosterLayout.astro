@@ -32,7 +32,9 @@ const isoDate = frontmatter.pubDate
 		<div class="e-content">
       <slot />
 	  </div>
-	    <p><strong>Permalink:</strong> {Astro.url.href}</p>
+  <div class="permalink">
+  <p><strong>Permalink:</strong> {Astro.url.href}</p>
+  </div>
 
 	  </div>
 	</div>
