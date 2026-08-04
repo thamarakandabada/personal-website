@@ -176,7 +176,7 @@ nav p, nav div {
 }
 
 .post-nav {
-    font-style: italic;
+    font-weight: 700;
 }
 
 
@@ -246,12 +246,22 @@ h6 {
 }
 
 p {
+    font-family: inherit;
     font-size: 1.2rem;
     margin-bottom: 1.1rem;
     line-height: 1.5;
     color: var(--text-primary);
     overflow-wrap: break-word;
     word-break: break-word;
+}
+
+label input {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0 0.5rem;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--bg-primary);
 }
 
 blockquote {

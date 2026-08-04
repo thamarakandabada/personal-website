@@ -15,11 +15,6 @@ const nextPost =
   currentPostIndex > 0
     ? posts[currentPostIndex - 1]
     : undefined;
-
-const allPosts =
-  currentPostIndex > 0
-    ? posts[currentPostIndex]
-    : undefined;
 ---
 
 {
@@ -27,19 +22,13 @@ const allPosts =
     <nav class="post-nav">
       {previousPost && (
         <p>
-          <a href={`/notebook/${previousPost.id}/`}>Previous Post</a>
-        </p>
-      )}
-
-      {allPosts && (
-        <p>
-          <a href={`/notebook/`}>All Posts</a>
+          <a href={`/notebook/${previousPost.id}/`}>Previous</a>
         </p>
       )}
 
       {nextPost && (
         <p>
-          <a href={`/notebook/${nextPost.id}/`}>Next Post</a>
+          <a href={`/notebook/${nextPost.id}/`}>Next</a>
         </p>
       )}
     </nav>

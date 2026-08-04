@@ -1,6 +1,7 @@
 ---
 import PageLayout from './PageLayout.astro';
 import BlogPostNavPrevNext from '../components/BlogPostNavPrevNext.astro';
+import PostReference from '../components/PostReference.astro';
 
 const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
@@ -41,9 +42,7 @@ const isoDate = frontmatter.pubDate
 		  </ul>
 	    </div>
 
-		<div class="post-reference">
-			<p><strong>Reference this post:</strong> When referencing this post, I prefer to be called Thamara, Thamara Kandabada, or Thamara's Notebook. Permalink: <em>{Astro.url.href}</em></p>
-		</div>
+<PostReference />
 	  </div>
 
       <!-- Discuss comment widget -->
