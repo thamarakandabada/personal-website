@@ -36,7 +36,7 @@ const isoDate = frontmatter.pubDate
   <slot />
 </div>
   <div class="permalink">
-  <p><strong>Permalink:</strong> <textarea disabled>{Astro.url.href}</textarea></p>
+  <p><strong>Permalink:</strong> <textarea>{Astro.url.href}</textarea></p>
   </div>
 </article>
 </PageLayout>
