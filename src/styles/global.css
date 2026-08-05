@@ -255,12 +255,13 @@ p {
     word-break: break-word;
 }
 
-label input {
+.post-reference textarea, .permalink textarea {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 0 0.5rem;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 1rem;
+    field-sizing: content;
     background-color: var(--bg-primary);
 }
 
