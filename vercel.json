@@ -1,692 +1,693 @@
 {
+  "trailingSlash": false,
   "redirects": [
     {
-      "source": "/my-last-post-on-wordpress/?",
+      "source": "/my-last-post-on-wordpress",
       "destination": "/notebook/2026/07/my-last-post-on-wordpress",
       "permanent": true
     },
     {
-      "source": "/no-js-mobile-navigation-menu/?",
+      "source": "/no-js-mobile-navigation-menu",
       "destination": "/notebook/2026/07/no-js-mobile-navigation-menu",
       "permanent": true
     },
     {
-      "source": "/gehenu-lamai/?",
+      "source": "/gehenu-lamai",
       "destination": "/notebook/2026/07/gehenu-lamai",
       "permanent": true
     },
     {
-      "source": "/couch-to-5k-week-9/?",
+      "source": "/couch-to-5k-week-9",
       "destination": "/notebook/2026/07/couch-to-5k-week-9",
       "permanent": true
     },
     {
-      "source": "/waiting-for-def-leppard/?",
+      "source": "/waiting-for-def-leppard",
       "destination": "/notebook/2026/06/waiting-for-def-leppard",
       "permanent": true
     },
     {
-      "source": "/couch-to-5k-week-8/?",
+      "source": "/couch-to-5k-week-8",
       "destination": "/notebook/2026/06/couch-to-5k-week-8",
       "permanent": true
     },
     {
-      "source": "/birthday/?",
+      "source": "/birthday",
       "destination": "/notebook/2026/06/birthday",
       "permanent": true
     },
     {
-      "source": "/couch-to-5k-week-7/?",
+      "source": "/couch-to-5k-week-7",
       "destination": "/notebook/2026/06/couch-to-5k-week-7",
       "permanent": true
     },
     {
-      "source": "/styling-the-new-website/?",
+      "source": "/styling-the-new-website",
       "destination": "/notebook/2026/06/styling-the-new-website",
       "permanent": true
     },
     {
-      "source": "/new-writing-setup/?",
+      "source": "/new-writing-setup",
       "destination": "/notebook/2026/06/new-writing-setup",
       "permanent": true
     },
     {
-      "source": "/couch-to-5k-week-6/?",
+      "source": "/couch-to-5k-week-6",
       "destination": "/notebook/2026/06/couch-to-5k-week-6",
       "permanent": true
     },
     {
-      "source": "/a-weekend-in-scotland/?",
+      "source": "/a-weekend-in-scotland",
       "destination": "/notebook/2026/06/a-weekend-in-scotland",
       "permanent": true
     },
     {
-      "source": "/waiting-for-big-thief/?",
+      "source": "/waiting-for-big-thief",
       "destination": "/notebook/2026/05/waiting-for-big-thief",
       "permanent": true
     },
     {
-      "source": "/couch-to-5k-week-5/?",
+      "source": "/couch-to-5k-week-5",
       "destination": "/notebook/2026/05/couch-to-5k-week-5",
       "permanent": true
     },
     {
-      "source": "/spring-summer-reading-list/?",
+      "source": "/spring-summer-reading-list",
       "destination": "/notebook/2026/05/spring-summer-reading-list",
       "permanent": true
     },
     {
-      "source": "/letterboxd-tag-hierarchy/?",
+      "source": "/letterboxd-tag-hierarchy",
       "destination": "/notebook/2026/05/letterboxd-tag-hierarchy",
       "permanent": true
     },
     {
-      "source": "/the-first-100-films-of-2026/?",
+      "source": "/the-first-100-films-of-2026",
       "destination": "/notebook/2026/05/the-first-100-films-of-2026",
       "permanent": true
     },
     {
-      "source": "/couch-to-5k-progress-week-4/?",
+      "source": "/couch-to-5k-progress-week-4",
       "destination": "/notebook/2026/05/couch-to-5k-progress-week-4",
       "permanent": true
     },
     {
-      "source": "/location-and-weather-in-now/?",
+      "source": "/location-and-weather-in-now",
       "destination": "/notebook/2026/05/location-and-weather-in-now",
       "permanent": true
     },
     {
-      "source": "/the-great-astro-migration-of-2026/?",
+      "source": "/the-great-astro-migration-of-2026",
       "destination": "/notebook/2026/05/the-great-astro-migration-of-2026",
       "permanent": true
     },
     {
-      "source": "/typeface-makeover/?",
+      "source": "/typeface-makeover",
       "destination": "/notebook/2026/05/typeface-makeover",
       "permanent": true
     },
     {
-      "source": "/the-gobbins-cliff-walk/?",
+      "source": "/the-gobbins-cliff-walk",
       "destination": "/notebook/2026/05/the-gobbins-cliff-walk",
       "permanent": true
     },
     {
-      "source": "/couch-to-5k/?",
+      "source": "/couch-to-5k",
       "destination": "/notebook/2026/05/couch-to-5k",
       "permanent": true
     },
     {
-      "source": "/gardening-update-may-2026/?",
+      "source": "/gardening-update-may-2026",
       "destination": "/notebook/2026/05/gardening-update-may-2026",
       "permanent": true
     },
     {
-      "source": "/catharsis-through-film/?",
+      "source": "/catharsis-through-film",
       "destination": "/notebook/2026/04/catharsis-through-film",
       "permanent": true
     },
     {
-      "source": "/boredom/?",
+      "source": "/boredom",
       "destination": "/notebook/2026/04/boredom",
       "permanent": true
     },
     {
-      "source": "/a-data-visualiser-for-finances-2/?",
+      "source": "/a-data-visualiser-for-finances-2",
       "destination": "/notebook/2026/04/a-data-visualiser-for-finances-2",
       "permanent": true
     },
     {
-      "source": "/validation/?",
+      "source": "/validation",
       "destination": "/notebook/2026/04/validation",
       "permanent": true
     },
     {
-      "source": "/more-archiving-gigs/?",
+      "source": "/more-archiving-gigs",
       "destination": "/notebook/2026/03/more-archiving-gigs",
       "permanent": true
     },
     {
-      "source": "/archiving/?",
+      "source": "/archiving",
       "destination": "/notebook/2026/03/archiving",
       "permanent": true
     },
     {
-      "source": "/duodecennium/?",
+      "source": "/duodecennium",
       "destination": "/notebook/2026/03/duodecennium",
       "permanent": true
     },
     {
-      "source": "/david-byrne-at-the-o2-apollo/?",
+      "source": "/david-byrne-at-the-o2-apollo",
       "destination": "/notebook/2026/03/david-byrne-at-the-o2-apollo",
       "permanent": true
     },
     {
-      "source": "/building-a-physical-media-showcase-with-lovable/?",
+      "source": "/building-a-physical-media-showcase-with-lovable",
       "destination": "/notebook/2026/03/building-a-physical-media-showcase-with-lovable",
       "permanent": true
     },
     {
-      "source": "/jeff-buckley/?",
+      "source": "/jeff-buckley",
       "destination": "/notebook/2026/02/jeff-buckley",
       "permanent": true
     },
     {
-      "source": "/new-year-new-website/?",
+      "source": "/new-year-new-website",
       "destination": "/notebook/2026/02/new-year-new-website",
       "permanent": true
     },
     {
-      "source": "/armoured-transport/?",
+      "source": "/armoured-transport",
       "destination": "/notebook/2026/02/armoured-transport",
       "permanent": true
     },
     {
-      "source": "/memory/?",
+      "source": "/memory",
       "destination": "/notebook/2026/02/memory",
       "permanent": true
     },
     {
-      "source": "/a-complete-unknown-an-incomplete-review/?",
+      "source": "/a-complete-unknown-an-incomplete-review",
       "destination": "/notebook/2025/01/a-complete-unknown-an-incomplete-review",
       "permanent": true
     },
     {
-      "source": "/dont-look-back-1967/?",
+      "source": "/dont-look-back-1967",
       "destination": "/notebook/2024/12/dont-look-back-1967",
       "permanent": true
     },
     {
-      "source": "/a-wordle-hack/?",
+      "source": "/a-wordle-hack",
       "destination": "/notebook/2022/01/a-wordle-hack",
       "permanent": true
     },
     {
-      "source": "/rogue-one-a-star-wars-story/?",
+      "source": "/rogue-one-a-star-wars-story",
       "destination": "/notebook/2021/08/rogue-one-a-star-wars-story",
       "permanent": true
     },
     {
-      "source": "/star-wars-the-empire-strikes-back/?",
+      "source": "/star-wars-the-empire-strikes-back",
       "destination": "/notebook/2021/08/star-wars-the-empire-strikes-back",
       "permanent": true
     },
     {
-      "source": "/apple-music-hifi/?",
+      "source": "/apple-music-hifi",
       "destination": "/notebook/2021/05/apple-music-hifi",
       "permanent": true
     },
     {
-      "source": "/monthly-music-update-april-2021/?",
+      "source": "/monthly-music-update-april-2021",
       "destination": "/notebook/2021/05/monthly-music-update-april-2021",
       "permanent": true
     },
     {
-      "source": "/deezer-discoveries-april-2021/?",
+      "source": "/deezer-discoveries-april-2021",
       "destination": "/notebook/2021/05/deezer-discoveries-april-2021",
       "permanent": true
     },
     {
-      "source": "/active-vs-passive-listening/?",
+      "source": "/active-vs-passive-listening",
       "destination": "/notebook/2021/04/active-vs-passive-listening",
       "permanent": true
     },
     {
-      "source": "/all-the-madmen/?",
+      "source": "/all-the-madmen",
       "destination": "/notebook/2021/04/all-the-madmen",
       "permanent": true
     },
     {
-      "source": "/monthly-music-update-march-2021/?",
+      "source": "/monthly-music-update-march-2021",
       "destination": "/notebook/2021/04/monthly-music-update-march-2021",
       "permanent": true
     },
     {
-      "source": "/apple-music-vs-spotify/?",
+      "source": "/apple-music-vs-spotify",
       "destination": "/notebook/2021/03/apple-music-vs-spotify",
       "permanent": true
     },
     {
-      "source": "/moving-in/?",
+      "source": "/moving-in",
       "destination": "/notebook/2021/03/moving-in",
       "permanent": true
     },
     {
-      "source": "/little-dot-mkii/?",
+      "source": "/little-dot-mkii",
       "destination": "/notebook/2021/03/little-dot-mkii",
       "permanent": true
     },
     {
-      "source": "/whats-good-on-netflix-march-2021/?",
+      "source": "/whats-good-on-netflix-march-2021",
       "destination": "/notebook/2021/03/whats-good-on-netflix-march-2021",
       "permanent": true
     },
     {
-      "source": "/six-weeks-with-last-fm/?",
+      "source": "/six-weeks-with-last-fm",
       "destination": "/notebook/2020/09/six-weeks-with-last-fm",
       "permanent": true
     },
     {
-      "source": "/beginnings/?",
+      "source": "/beginnings",
       "destination": "/notebook/2020/01/beginnings",
       "permanent": true
     },
     {
-      "source": "/poison/?",
+      "source": "/poison",
       "destination": "/notebook/2019/11/poison",
       "permanent": true
     },
     {
-      "source": "/the-netflix-effect/?",
+      "source": "/the-netflix-effect",
       "destination": "/notebook/2019/09/the-netflix-effect",
       "permanent": true
     },
     {
-      "source": "/gladiators/?",
+      "source": "/gladiators",
       "destination": "/notebook/2019/08/gladiators",
       "permanent": true
     },
     {
-      "source": "/writing-on-twitter/?",
+      "source": "/writing-on-twitter",
       "destination": "/notebook/2019/08/writing-on-twitter",
       "permanent": true
     },
     {
-      "source": "/the-stages-of-atheism/?",
+      "source": "/the-stages-of-atheism",
       "destination": "/notebook/2019/08/the-stages-of-atheism",
       "permanent": true
     },
     {
-      "source": "/on-saviours/?",
+      "source": "/on-saviours",
       "destination": "/notebook/2019/08/on-saviours",
       "permanent": true
     },
     {
-      "source": "/to-protest-is-to-progress/?",
+      "source": "/to-protest-is-to-progress",
       "destination": "/notebook/2019/08/to-protest-is-to-progress",
       "permanent": true
     },
     {
-      "source": "/pick-one/?",
+      "source": "/pick-one",
       "destination": "/notebook/2019/04/pick-one",
       "permanent": true
     },
     {
-      "source": "/through-java-to-bali/?",
+      "source": "/through-java-to-bali",
       "destination": "/notebook/2019/02/through-java-to-bali",
       "permanent": true
     },
     {
-      "source": "/flip-the-switch/?",
+      "source": "/flip-the-switch",
       "destination": "/notebook/2019/02/flip-the-switch",
       "permanent": true
     },
     {
-      "source": "/the-death-of-intimacy/?",
+      "source": "/the-death-of-intimacy",
       "destination": "/notebook/2019/01/the-death-of-intimacy",
       "permanent": true
     },
     {
-      "source": "/expectations/?",
+      "source": "/expectations",
       "destination": "/notebook/2019/01/expectations",
       "permanent": true
     },
     {
-      "source": "/the-unhustle/?",
+      "source": "/the-unhustle",
       "destination": "/notebook/2019/01/the-unhustle",
       "permanent": true
     },
     {
-      "source": "/declutter-an-update/?",
+      "source": "/declutter-an-update",
       "destination": "/notebook/2019/01/declutter-an-update",
       "permanent": true
     },
     {
-      "source": "/cool-turkey/?",
+      "source": "/cool-turkey",
       "destination": "/notebook/2019/01/cool-turkey",
       "permanent": true
     },
     {
-      "source": "/whats-your-number/?",
+      "source": "/whats-your-number",
       "destination": "/notebook/2019/01/whats-your-number",
       "permanent": true
     },
     {
-      "source": "/to-the-year-that-flew-by/?",
+      "source": "/to-the-year-that-flew-by",
       "destination": "/notebook/2018/12/to-the-year-that-flew-by",
       "permanent": true
     },
     {
-      "source": "/a-new-reason-to-write/?",
+      "source": "/a-new-reason-to-write",
       "destination": "/notebook/2018/12/a-new-reason-to-write",
       "permanent": true
     },
     {
-      "source": "/the-stories-we-tell/?",
+      "source": "/the-stories-we-tell",
       "destination": "/notebook/2018/12/the-stories-we-tell",
       "permanent": true
     },
     {
-      "source": "/stop/?",
+      "source": "/stop",
       "destination": "/notebook/2018/12/stop",
       "permanent": true
     },
     {
-      "source": "/hit-record/?",
+      "source": "/hit-record",
       "destination": "/notebook/2018/10/hit-record",
       "permanent": true
     },
     {
-      "source": "/the-bad-take/?",
+      "source": "/the-bad-take",
       "destination": "/notebook/2018/09/the-bad-take",
       "permanent": true
     },
     {
-      "source": "/its-the-little-things/?",
+      "source": "/its-the-little-things",
       "destination": "/notebook/2018/09/its-the-little-things",
       "permanent": true
     },
     {
-      "source": "/no-more-delivery-sorrow/?",
+      "source": "/no-more-delivery-sorrow",
       "destination": "/notebook/2018/09/no-more-delivery-sorrow",
       "permanent": true
     },
     {
-      "source": "/discounts/?",
+      "source": "/discounts",
       "destination": "/notebook/2018/08/discounts",
       "permanent": true
     },
     {
-      "source": "/wander/?",
+      "source": "/wander",
       "destination": "/notebook/2018/08/wander",
       "permanent": true
     },
     {
-      "source": "/the-beauty-of-ignorance/?",
+      "source": "/the-beauty-of-ignorance",
       "destination": "/notebook/2018/08/the-beauty-of-ignorance",
       "permanent": true
     },
     {
-      "source": "/the-self-made-myth/?",
+      "source": "/the-self-made-myth",
       "destination": "/notebook/2018/07/the-self-made-myth",
       "permanent": true
     },
     {
-      "source": "/google-local-guides/?",
+      "source": "/google-local-guides",
       "destination": "/notebook/2018/06/google-local-guides",
       "permanent": true
     },
     {
-      "source": "/trademarks/?",
+      "source": "/trademarks",
       "destination": "/notebook/2018/04/trademarks",
       "permanent": true
     },
     {
-      "source": "/avurudu-deliveries/?",
+      "source": "/avurudu-deliveries",
       "destination": "/notebook/2018/04/avurudu-deliveries",
       "permanent": true
     },
     {
-      "source": "/guarantees/?",
+      "source": "/guarantees",
       "destination": "/notebook/2018/04/guarantees",
       "permanent": true
     },
     {
-      "source": "/250-10/?",
+      "source": "/250-10",
       "destination": "/notebook/2018/03/250-10",
       "permanent": true
     },
     {
-      "source": "/6-new-podcasts/?",
+      "source": "/6-new-podcasts",
       "destination": "/notebook/2018/01/6-new-podcasts",
       "permanent": true
     },
     {
-      "source": "/226-days-that-mattered/?",
+      "source": "/226-days-that-mattered",
       "destination": "/notebook/2018/01/226-days-that-mattered",
       "permanent": true
     },
     {
-      "source": "/backlog/?",
+      "source": "/backlog",
       "destination": "/notebook/2017/12/backlog",
       "permanent": true
     },
     {
-      "source": "/declutter/?",
+      "source": "/declutter",
       "destination": "/notebook/2017/11/declutter",
       "permanent": true
     },
     {
-      "source": "/goodbye-headspace-hello-oak/?",
+      "source": "/goodbye-headspace-hello-oak",
       "destination": "/notebook/2017/11/goodbye-headspace-hello-oak",
       "permanent": true
     },
     {
-      "source": "/diary-not-book/?",
+      "source": "/diary-not-book",
       "destination": "/notebook/2017/11/diary-not-book",
       "permanent": true
     },
     {
-      "source": "/a-challenge-for-the-next-30-days/?",
+      "source": "/a-challenge-for-the-next-30-days",
       "destination": "/notebook/2017/10/a-challenge-for-the-next-30-days",
       "permanent": true
     },
     {
-      "source": "/listening-to-customers-the-early-stages/?",
+      "source": "/listening-to-customers-the-early-stages",
       "destination": "/notebook/2017/10/listening-to-customers-the-early-stages",
       "permanent": true
     },
     {
-      "source": "/meditating-with-headspace/?",
+      "source": "/meditating-with-headspace",
       "destination": "/notebook/2017/10/meditating-with-headspace",
       "permanent": true
     },
     {
-      "source": "/permission-to-vent/?",
+      "source": "/permission-to-vent",
       "destination": "/notebook/2017/10/permission-to-vent",
       "permanent": true
     },
     {
-      "source": "/reality-check/?",
+      "source": "/reality-check",
       "destination": "/notebook/2017/10/reality-check",
       "permanent": true
     },
     {
-      "source": "/the-importance-of-delight/?",
+      "source": "/the-importance-of-delight",
       "destination": "/notebook/2017/10/the-importance-of-delight",
       "permanent": true
     },
     {
-      "source": "/october-is-here/?",
+      "source": "/october-is-here",
       "destination": "/notebook/2017/10/october-is-here",
       "permanent": true
     },
     {
-      "source": "/snippets-from-an-incomplete-journal/?",
+      "source": "/snippets-from-an-incomplete-journal",
       "destination": "/notebook/2017/10/snippets-from-an-incomplete-journal",
       "permanent": true
     },
     {
-      "source": "/the-first-3-months-how-we-acquired-customers/?",
+      "source": "/the-first-3-months-how-we-acquired-customers",
       "destination": "/notebook/2017/09/the-first-3-months-how-we-acquired-customers",
       "permanent": true
     },
     {
-      "source": "/one-hundred-days-later/?",
+      "source": "/one-hundred-days-later",
       "destination": "/notebook/2017/09/one-hundred-days-later",
       "permanent": true
     },
     {
-      "source": "/i-write-for-myself-maybe-you-should-too/?",
+      "source": "/i-write-for-myself-maybe-you-should-too",
       "destination": "/notebook/2017/06/i-write-for-myself-maybe-you-should-too",
       "permanent": true
     },
     {
-      "source": "/selling-convenience/?",
+      "source": "/selling-convenience",
       "destination": "/notebook/2017/06/selling-convenience",
       "permanent": true
     },
     {
-      "source": "/in-praise-of-meritocracy/?",
+      "source": "/in-praise-of-meritocracy",
       "destination": "/notebook/2017/06/in-praise-of-meritocracy",
       "permanent": true
     },
     {
-      "source": "/podcasts-im-listening-to/?",
+      "source": "/podcasts-im-listening-to",
       "destination": "/notebook/2017/05/podcasts-im-listening-to",
       "permanent": true
     },
     {
-      "source": "/the-joy-of-starting-up-for-yourself/?",
+      "source": "/the-joy-of-starting-up-for-yourself",
       "destination": "/notebook/2017/05/the-joy-of-starting-up-for-yourself",
       "permanent": true
     },
     {
-      "source": "/the-cosmic-perspective/?",
+      "source": "/the-cosmic-perspective",
       "destination": "/notebook/2017/05/the-cosmic-perspective",
       "permanent": true
     },
     {
-      "source": "/a-critique-of-meritocracy/?",
+      "source": "/a-critique-of-meritocracy",
       "destination": "/notebook/2017/04/a-critique-of-meritocracy",
       "permanent": true
     },
     {
-      "source": "/the-biggest-killer-of-our-times/?",
+      "source": "/the-biggest-killer-of-our-times",
       "destination": "/notebook/2017/03/the-biggest-killer-of-our-times",
       "permanent": true
     },
     {
-      "source": "/lessons-from-my-first-job/?",
+      "source": "/lessons-from-my-first-job",
       "destination": "/notebook/2017/03/lessons-from-my-first-job",
       "permanent": true
     },
     {
-      "source": "/the-perils-of-determinism/?",
+      "source": "/the-perils-of-determinism",
       "destination": "/notebook/2017/03/the-perils-of-determinism",
       "permanent": true
     },
     {
-      "source": "/what-does-a-prison-and-a-university-have-in-common/?",
+      "source": "/what-does-a-prison-and-a-university-have-in-common",
       "destination": "/notebook/2017/02/what-does-a-prison-and-a-university-have-in-common",
       "permanent": true
     },
     {
-      "source": "/the-future-of-work-is-not-here-yet/?",
+      "source": "/the-future-of-work-is-not-here-yet",
       "destination": "/notebook/2017/01/the-future-of-work-is-not-here-yet",
       "permanent": true
     },
     {
-      "source": "/redefining-ambition/?",
+      "source": "/redefining-ambition",
       "destination": "/notebook/2017/01/redefining-ambition",
       "permanent": true
     },
     {
-      "source": "/the-age-of-curation/?",
+      "source": "/the-age-of-curation",
       "destination": "/notebook/2017/01/the-age-of-curation",
       "permanent": true
     },
     {
-      "source": "/a-year-of-podcasts/?",
+      "source": "/a-year-of-podcasts",
       "destination": "/notebook/2016/12/a-year-of-podcasts",
       "permanent": true
     },
     {
-      "source": "/the-national-anthem/?",
+      "source": "/the-national-anthem",
       "destination": "/notebook/2016/02/the-national-anthem",
       "permanent": true
     },
     {
-      "source": "/tedxcolombo-was-worth-it/?",
+      "source": "/tedxcolombo-was-worth-it",
       "destination": "/notebook/2015/08/tedxcolombo-was-worth-it",
       "permanent": true
     },
     {
-      "source": "/help-a-worthy-cause-this-month/?",
+      "source": "/help-a-worthy-cause-this-month",
       "destination": "/notebook/2015/07/help-a-worthy-cause-this-month",
       "permanent": true
     },
     {
-      "source": "/the-great-divide-and-my-apathy/?",
+      "source": "/the-great-divide-and-my-apathy",
       "destination": "/notebook/2015/06/the-great-divide-and-my-apathy",
       "permanent": true
     },
     {
-      "source": "/why-i-didnt-vote-today/?",
+      "source": "/why-i-didnt-vote-today",
       "destination": "/notebook/2015/01/why-i-didnt-vote-today",
       "permanent": true
     },
     {
-      "source": "/the-state-of-work-in-2030/?",
+      "source": "/the-state-of-work-in-2030",
       "destination": "/notebook/2014/12/the-state-of-work-in-2030",
       "permanent": true
     },
     {
-      "source": "/a-virtuous-common-candidate/?",
+      "source": "/a-virtuous-common-candidate",
       "destination": "/notebook/2014/11/a-virtuous-common-candidate",
       "permanent": true
     },
     {
-      "source": "/volunteering-in-sri-lanka/?",
+      "source": "/volunteering-in-sri-lanka",
       "destination": "/notebook/2014/10/volunteering-in-sri-lanka",
       "permanent": true
     },
     {
-      "source": "/global-power-dynamics-and-the-third-world/?",
+      "source": "/global-power-dynamics-and-the-third-world",
       "destination": "/notebook/2014/10/global-power-dynamics-and-the-third-world",
       "permanent": true
     },
     {
-      "source": "/colombos-golden-tale/?",
-      "destination": "/notebook/2014/09/colombos-golden-tale/?",
+      "source": "/colombos-golden-tale",
+      "destination": "/notebook/2014/09/colombos-golden-tale",
       "permanent": true
     },
     {
-      "source": "/why-im-proud-of-being-sri-lankan/?",
+      "source": "/why-im-proud-of-being-sri-lankan",
       "destination": "/notebook/2014/07/why-im-proud-of-being-sri-lankan",
       "permanent": true
     },
     {
-      "source": "/can-the-saarc-ever-come-back/?",
+      "source": "/can-the-saarc-ever-come-back",
       "destination": "/notebook/2014/06/can-the-saarc-ever-come-back",
       "permanent": true
     },
     {
-      "source": "/the-rich-and-the-poor/?",
+      "source": "/the-rich-and-the-poor",
       "destination": "/notebook/2014/06/the-rich-and-the-poor",
       "permanent": true
     },
     {
-      "source": "/back-from-utopian-dreams-to-reality/?",
+      "source": "/back-from-utopian-dreams-to-reality",
       "destination": "/notebook/2014/05/back-from-utopian-dreams-to-reality",
       "permanent": true
     },
     {
-      "source": "/will-debt-be-chinas-undoing/?",
+      "source": "/will-debt-be-chinas-undoing",
       "destination": "/notebook/2014/04/will-debt-be-chinas-undoing",
       "permanent": true
     },
     {
-      "source": "/what-is-rational-about-the-war-on-terror/?",
+      "source": "/what-is-rational-about-the-war-on-terror",
       "destination": "/notebook/2014/04/what-is-rational-about-the-war-on-terror",
       "permanent": true
     },
     {
-      "source": "/the-cost-of-being-neighbours/?",
+      "source": "/the-cost-of-being-neighbours",
       "destination": "/notebook/2014/04/the-cost-of-being-neighbours",
       "permanent": true
     },
     {
-      "source": "/the-thing-about-post-war-diplomacy/?",
+      "source": "/the-thing-about-post-war-diplomacy",
       "destination": "/notebook/2014/04/the-thing-about-post-war-diplomacy",
       "permanent": true
     },
     {
-      "source": "/the-big-brother-little-brother-affair/?",
+      "source": "/the-big-brother-little-brother-affair",
       "destination": "/notebook/2014/03/the-big-brother-little-brother-affair",
       "permanent": true
     },
     {
-      "source": "/sovereign-states-missing-planes-and-the-cold-war/?",
+      "source": "/sovereign-states-missing-planes-and-the-cold-war",
       "destination": "/notebook/2014/03/sovereign-states-missing-planes-and-the-cold-war",
       "permanent": true
     }
