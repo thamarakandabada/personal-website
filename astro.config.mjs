@@ -11,5 +11,9 @@ export default defineConfig({
   build: {
     inlineStylesheets: `always`,
   },
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      xslURL: '/sitemap.xslt'
+    }),
+  ],
 });
