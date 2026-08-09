@@ -262,6 +262,7 @@ p {
     font-size: 1rem;
     field-sizing: content;
     background-color: var(--bg-primary);
+    color: var(--text-primary);
 }
 
 blockquote {
