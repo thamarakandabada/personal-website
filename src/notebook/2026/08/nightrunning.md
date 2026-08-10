@@ -12,7 +12,7 @@ topics: ["Running", "Self Reflection"]
 
 When you run, Londoners do not move out of the way and let you pass like people in Belfast do. You have to find your way through them, a little forcefully sometimes. When I run, my mind wanders. I couldn't let that happen when I ran in [St. James's Park](https://www.royalparks.org.uk/visit/parks/st-jamess-park) yesterday. It was far too crowded for that.
 
-I did still find my mind racing through many things. I thought about the day we had had, about [how good Matilda had been](/gigs/2026/matilda). I thought about [Blaugust](https://nerdgirlthoughts.game.blog/2026/07/15/blaugust-2026-is-coming/), and what I was going to write about for the next few days. Although I'm not participating officially, I'm treating it as an excuse to write as much as I can this month, with a faint hope of reaching the 31-post pinnacle by the end of the month.
+I did still find my mind racing through many things. I thought about the day we had had, about [how good _Matilda_ had been](/gigs/2026/matilda). I thought about [Blaugust](https://nerdgirlthoughts.game.blog/2026/07/15/blaugust-2026-is-coming/), and what I was going to write about for the next few days. Although I'm not participating officially, I'm treating it as an excuse to write as much as I can this month, with a faint hope of reaching the 31-post pinnacle by the end of the month.
 
 I thought about London, and whether I would enjoy living there. There is no shortage of things to do, but I can't help but think it would quickly become overwhelming, and financially unviable.
 
