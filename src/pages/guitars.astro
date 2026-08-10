@@ -1,8 +1,64 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Picture } from 'astro:assets';
+import lespaulImage from '../assets/images/now/guitars/les paul.jpg';
+import stratImage from '../assets/images/now/guitars/strat.jpg';
+import embassyImage from '../assets/images/now/guitars/embassy.jpg';
+import morrisImage from '../assets/images/now/guitars/morris.jpg';
+
 const pageTitle = "Guitars - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
     <h1>Guitars</h1>
-    <p>Work in progress</p>
+    <p>This page is dedicated to guitars: those I currently own, want to own, and am interested in for any reason.</p>
+    <h2>My current collection</h2>
+      <div class="guitar-showcase">
+      <div class="guitar">
+        <figure>
+              <Picture
+                src={lespaulImage}
+                alt="Epiphone Les Paul Standard electric guitar with Mahogany body finished in Aged Gloss and Laurel fretboard"
+                formats={['avif', 'webp']}
+              />
+        </figure>
+        <h4>Epiphone 1959 Les Paul Standard</h4>
+        <p>Body – Mahogany, Aged Gloss<br>Fretboard – Laurel</p>
+      </div>
+
+      <div class="guitar">
+        <figure>
+              <Picture
+                src={stratImage}
+                alt="Fender Player Stratocaster electric guitar with Alder body finished in Tidepool and Maple fretboard"
+                formats={['avif', 'webp']}
+              />
+        </figure>
+        <h4>Fender Player Series Stratocaster</h4>
+        <p>Body – Alder, Tidepool<br>Fretboard – Maple</p>
+      </div>
+
+      <div class="guitar">
+        <figure>
+              <Picture
+                src={embassyImage}
+                alt="Epiphone Embassy electric bass guitar with Mahogany body finished in Graphite Black body and Laurel fretboard"
+                formats={['avif', 'webp']}
+              />
+        </figure>
+        <h4>Epiphone Embassy (Bass)</h4>
+        <p>Body – Mahogany, Graphite Black<br>Fretboard – Laurel</p>
+      </div>
+
+      <div class="guitar">
+        <figure>
+              <Picture
+                src={morrisImage}
+                alt="Morris W-18 acoustic dreadnought guitar with Spruce and Mahogany body in natural finish and Rosewood fretboard"
+                formats={['avif', 'webp']}
+              />
+        </figure>
+        <h4>Morris W-18</h4>
+        <p>Body – Spruce & Mahogany, Natural<br>Fretboard – Rosewood</p>
+      </div>
+      </div>
 </PageLayout>
