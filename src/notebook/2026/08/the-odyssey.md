@@ -7,7 +7,7 @@ imageUrl: 'images/the-odyssey-banner.jpg'
 imageAlt: 'A group of people pulling out a large wooden horse half buried in the sand onto a beach while a horse-mounted soldier looks on'
 imageCaption: 'Promotional still from The Odyssey (2026), Universal'
 sections: ["Everything Else"]
-topics: ["Films", "Reviews", "Ancient Greece", "Homer"]
+topics: ["Film", "Reviews", "Ancient Greece", "Homer"]
 ---
 _This review contains spoilers._
 

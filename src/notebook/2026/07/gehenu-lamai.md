@@ -7,7 +7,7 @@ imageUrl: 'images/GEHENU_LAMAI_STILL-8.jpg'
 imageAlt: 'A still from the film. Wasanthi Chathurani, playing Kusum, is on the left of the frame while Ajith Jinadasa, playing Nimal, is on the right, looking at her.'
 imageCaption: 'Photo courtesy of Film Heritage Foundation'
 sections: ["Everything Else"]
-topics: ["Films", "QFT", "Belfast"]
+topics: ["Film", "QFT", "Belfast"]
 ---
 
 Back in November 2025 when we went home to Sri Lanka for a few weeks, we had the pleasure of seeing a restored version of _Gehenu Lamai_ (The Girls), Sumitra Peries’ acclaimed 1978 film, in the cinema. The film had been restored by [Film Heritage Foundation](https://filmheritagefoundation.co.in/film-heritage-foundation-restores-the-sri-lankan-film-gehenu-lamai-1978-the-girls-directed-by-sumitra-peries/) recently. A few days ago I was delighted to discover that [QFT will be screening this version in Belfast](https://queensfilmtheatre.com/Whats-On/The-Girls) later this month.

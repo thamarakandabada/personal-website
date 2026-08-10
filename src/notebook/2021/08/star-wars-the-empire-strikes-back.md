@@ -7,7 +7,7 @@ imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Everything Else"]
-topics: ["4K Blu-rays", "Blu-rays", "Physical Media", "Films", "Star Wars"]
+topics: ["4K Blu-rays", "Blu-rays", "Physical Media", "Film", "Star Wars"]
 ---
 
 I managed to watch my favourite Star Wars movie last week in the highest available quality. It’s of course as good as it has always been. I still think this is one of the best sequels ever made.

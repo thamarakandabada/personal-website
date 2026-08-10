@@ -7,7 +7,7 @@ imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Life"]
-topics: ["Fulfilment", "Self-Reflection", "Time"]
+topics: ["Fulfilment", "Self Reflection", "Time"]
 ---
 
 I’m writing this on the phone as I pace around in my room. I never do that (not the pacing, but the writing-on-the-phone) but I’m feeling rather comfortable today.

@@ -5,9 +5,10 @@ import BlogPost from '../../components/BlogPost.astro';
 
 const pageTitle = "Notebook Archives - Thamara Kandabada";
 const allPosts = await getCollection("blog");
-const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
 const publishedPosts = allPosts.filter(post => !post.data.draft);
 const topics = [...new Set(allPosts.map((post) => post.data.topics).filter(Boolean).flat())];
+const sortedTopics = topics.sort();
+  console.log(topics); 
 const sections = [...new Set(allPosts.map((post) => post.data.sections).filter(Boolean).flat())];
 const sortedSections = sections.sort((a, b) => {
   const order = ['Life', 'The Universe', 'Everything Else', 'Stream'];
@@ -25,7 +26,7 @@ const years = [...new Set(allPosts.map((post) => post.data.pubDate.getFullYear()
 
   <h2>Browse by topic</h2>
   <div class="tags">
-    {topics.map((topic) => <p class="tag"><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></p>)}
+    {sortedTopics.map((topic) => <p class="tag"><a href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></p>)}
   </div>
 
   <h2>Browse by year</h2>

@@ -7,7 +7,7 @@ imageUrl: 'images/pressstill01-thesecretagent-srgb-20250409-scaled-1.jpg'
 imageAlt: 'Wagner Moura, who plays Marcelo in The Secret Agent stands next to a yellow car at a gas station in this press still for the film'
 imageCaption: 'Wagner Moura as Marcelo in The Secret Agent. Photograph: 2025 MK2 Films'
 sections: ["Everything Else"]
-topics: ["Films", "Film Reviews", "Cinema", "Northern Ireland", "QFT", "Streaming"]
+topics: ["Film", "Film Reviews", "Cinema", "Northern Ireland", "QFT", "Streaming"]
 ---
 
 I walked out of the cinema last Saturday having seen my 100th film for the year. Not the 100th at the cinema, the 100th overall. Being a diligent Letterboxd logger, I could tell you exactly where I've seen them. These are the stats:

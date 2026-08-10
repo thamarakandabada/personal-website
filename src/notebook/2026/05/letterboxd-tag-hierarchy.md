@@ -7,7 +7,7 @@ imageUrl: 'images/Screenshot-2026-05-25-at-21.54.32-scaled.png'
 imageAlt: ''
 imageCaption: ''
 sections: ["Everything Else"]
-topics: ["Letterboxd", "Films", "Diary", "Habits"]
+topics: ["Letterboxd", "Film", "Diary", "Habits"]
 ---
 
 In my [previous post](/notebook/2026/05/the-first-100-films-of-2026/), I included a breakdown of where I had watched my first one hundred films this year. I realised that I didn't sufficiently explain how I had this data on hand. So, this post will be an explainer on how I use [tags](https://letterboxd.zendesk.com/hc/en-us/articles/15179274026639-How-do-tags-work) in Letterboxd to organise my film diary in a loosely hierarchical structure.

@@ -7,7 +7,7 @@ imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Everything Else"]
-topics: ["4K Blu-rays", "Blu-rays", "Physical Media", "Films", "Star Wars"]
+topics: ["4K Blu-rays", "Blu-rays", "Physical Media", "Film", "Star Wars"]
 ---
 
 _Rogue One_ is my 2nd favourite Star Wars movie after _Empire_. I loved it so much when it came out, I saw it three times in the theatre.

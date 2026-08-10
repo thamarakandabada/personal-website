@@ -7,7 +7,7 @@ imageUrl: 'images/IMG_1573-scaled.jpg'
 imageAlt: 'The mountainside covered in mist, as seen through the opening in a rock wall'
 imageCaption: ''
 sections: ["Life"]
-topics: ["Writing", "Blogging", "Self Reflection", "Personal Website"]
+topics: ["Writing", "Blogging", "Personal Website", "Self Reflection"]
 ---
 
 12 years ago today, I wrote and published [my first blog post](/notebook/2014/03/sovereign-states-missing-planes-and-the-cold-war/). It was a badly written piece about world affairs—among the topics I had covered were the Russian annexation of Crimea and the missing Malaysian Airlines MH370. Reading it today, I'm confused as to what I was trying to say. I'm certain I was confused back then, too. But that didn't stop me.

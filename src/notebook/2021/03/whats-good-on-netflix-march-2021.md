@@ -7,7 +7,7 @@ imageUrl: 'images/pexels-karola-g-5202917.jpg'
 imageAlt: 'Selective focus of a Netflix screen on a smart TV in an indoor setting.'
 imageCaption: 'Photo by www.kaboompics.com from Pexels'
 sections: ["Everything Else"]
-topics: ["Recommendations", "Streaming", "Netflix", "Films", "TV Shows"]
+topics: ["Recommendations", "Streaming", "Netflix", "Film", "TV Shows"]
 ---
 
 ## The Dig (2021)
