@@ -48,6 +48,6 @@ _Gimme Sympathy_ is a manifesto. It's upbeat. It's hopeful. It's about looking a
 
 <div class="post-footer">
 
-As part of the challenge, I gave James three songs to choose one out of and write about. My picks were _Train Dreams_ by Nick Cave, _Mary_ by Big Thief, and _Plainsong_ by The Cure. Find out James' pick [here](https://jamesg.blog/2026/08/17/plainsong).
+As part of the challenge, I gave James three songs to choose one out of and write about. My list included _Train Dreams_ by Nick Cave, _Mary_ by Big Thief, and _Plainsong_ by The Cure. Find out James' pick [here](https://jamesg.blog/2026/08/17/plainsong).
 
 </div>
