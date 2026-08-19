@@ -416,7 +416,7 @@ iframe {
     margin: 0;
 }
 
-.homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
+.homepage-flex, .home-page-hero, .guitar-showcase {
     display: flex;
 }
 
@@ -424,17 +424,12 @@ iframe {
     flex: 50%;
 }
 
-.home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
+.home-page-hero-intro, .featured-pages, .recent-blogposts, .guitar {
     margin-right: 3rem;
 }
 
 .featured-pages, .recent-blogposts, .webrings {
     flex: 33.3%;
-}
-
-.hobby-cinema, .hobby-music, .hobby-gigs {
-    flex: 25%;
-    justify-content: space-between;
 }
 
 .featured-pages-list, .recent-blogposts-list, .webring-links, .hobby-cinema-list, .consuming, .hobby-music-list {
@@ -446,10 +441,6 @@ iframe {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-}
-
-.guitar-photo, .hobby-photo {
-    width: 100%;
 }
 
 .guestbook-intro {
@@ -771,10 +762,16 @@ Grids and sub-grids
 */
 
 
-.gigs-grid, .md-grid {
+.gigs-grid, .md-grid, .hobbies-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1.5rem;
+}
+
+.hobbies-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
 }
 
 .gigs-grid {
@@ -947,7 +944,7 @@ Media queries
         padding-right: 2rem !important;
     }
 
-    .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
+    .homepage-flex, .home-page-hero, .guitar-showcase {
         display: flex;
         flex: wrap;
         flex-direction: column;
@@ -958,7 +955,7 @@ Media queries
         flex-direction: column;
     }
 
-    .home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
+    .home-page-hero-intro, .featured-pages, .recent-blogposts, .guitar {
     margin-right: 0;
     }
 
@@ -1015,7 +1012,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .md-grid, .poster-list {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .md-grid, .poster-list, .hobbies-section {
         grid-template-columns: 1fr !important;
     }
 
@@ -1070,7 +1067,7 @@ Media queries
         padding-right: 2.5rem;
     }
 
-    .homepage-flex, .hobbies-section, .home-page-hero, .guitar-showcase {
+    .homepage-flex, .home-page-hero, .guitar-showcase {
         display: flex;
         flex: wrap;
         flex-direction: column;
@@ -1081,7 +1078,7 @@ Media queries
         flex-direction: column;
     }
 
-    .home-page-hero-intro, .featured-pages, .recent-blogposts, .hobby-cinema, .hobby-music, .guitar {
+    .home-page-hero-intro, .featured-pages, .recent-blogposts, .guitar {
     margin-right: 0;
     }
 
@@ -1129,7 +1126,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .hobbies-section {
     grid-template-columns: 1fr;
     }
 

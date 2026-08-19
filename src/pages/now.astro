@@ -4,10 +4,7 @@ import { Picture } from 'astro:assets';
 import cinemaImage from '../assets/images/now/hobbies/qft-door.jpg';
 import musicImage from '../assets/images/now/hobbies/headphone-setup.jpg';
 import gigsImage from '../assets/images/now/hobbies/myles-kennedy.jpg';
-import lespaulImage from '../assets/images/now/guitars/les paul.jpg';
-import stratImage from '../assets/images/now/guitars/strat.jpg';
-import embassyImage from '../assets/images/now/guitars/embassy.jpg';
-import morrisImage from '../assets/images/now/guitars/morris.jpg';
+import guitarsImage from '../assets/images/now/hobbies/guitars.jpg';
 
 const response = await fetch('https://api.github.com/repos/thamarakandabada/personal-website/commits?path=src/pages/now.astro&per_page=1');
 const data = await response.json();
@@ -115,63 +112,23 @@ const pageTitle = "Now - Thamara Kandabada";
             <p>You can view the timeline at on the <a href="/gigs">/gigs</a> page.</p>
         </div>
 
-      </div>
-
-    <div class="guitars-section">
+    <div class="hobby-guitars">
       <h3>Guitars</h3>
-      <p>A majority of the music I consume is guitar-based, and I also play guitar at a beginner level. I keep buying guitars hoping that skill will follow. (It hasn’t happened yet.) Fortunately for you, the music I make is not available for public consumption</p>
-      <p>My current guitars are:</p>
-
-      <div class="guitar-showcase">
-      <div class="guitar">
-        <figure>
+                  <figure>
               <Picture
-                src={lespaulImage}
-                alt="Epiphone Les Paul Standard electric guitar with Mahogany body finished in Aged Gloss and Laurel fretboard"
+                src={guitarsImage}
+                alt="4 guitars on a couch"
                 formats={['avif', 'webp']}
               />
-        </figure>
-        <h4>Epiphone 1959 Les Paul Standard</h4>
-        <p>Body – Mahogany, Aged Gloss<br>Fretboard – Laurel</p>
-      </div>
+            </figure>
+      <p>A majority of the music I consume is guitar-based, and I also play guitar at a beginner level. I keep buying guitars hoping that skill will follow. (It hasn’t happened yet.) Fortunately for you, the music I make is not available for public consumption.</p>
+      <p>See more info on my <a href="/guitars">/guitars</a> page.</p>
 
-      <div class="guitar">
-        <figure>
-              <Picture
-                src={stratImage}
-                alt="Fender Player Stratocaster electric guitar with Alder body finished in Tidepool and Maple fretboard"
-                formats={['avif', 'webp']}
-              />
-        </figure>
-        <h4>Fender Player Series Stratocaster</h4>
-        <p>Body – Alder, Tidepool<br>Fretboard – Maple</p>
-      </div>
-
-      <div class="guitar">
-        <figure>
-              <Picture
-                src={embassyImage}
-                alt="Epiphone Embassy electric bass guitar with Mahogany body finished in Graphite Black body and Laurel fretboard"
-                formats={['avif', 'webp']}
-              />
-        </figure>
-        <h4>Epiphone Embassy (Bass)</h4>
-        <p>Body – Mahogany, Graphite Black<br>Fretboard – Laurel</p>
-      </div>
-
-      <div class="guitar">
-        <figure>
-              <Picture
-                src={morrisImage}
-                alt="Morris W-18 acoustic dreadnought guitar with Spruce and Mahogany body in natural finish and Rosewood fretboard"
-                formats={['avif', 'webp']}
-              />
-        </figure>
-        <h4>Morris W-18</h4>
-        <p>Body – Spruce & Mahogany, Natural<br>Fretboard – Rosewood</p>
-      </div>
       </div>
     </div>
+
+    <h2>Work</h2>
+    <p>I currently work as the General Manager at <a href="https://deskwarehouse.co.uk/">Desk Warehouse</a>, a Belfast-based office furniture dealer. See more about my day-to-day responsibilities and my full work history on the <a href="/resume">/resume</a> page.</p>
 
     <h2>What I'm watching, listening to, reading, and playing</h2>
     <ul class="consuming">
