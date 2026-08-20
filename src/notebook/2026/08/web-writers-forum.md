@@ -7,7 +7,7 @@ imageUrl: ''
 imageAlt: ''
 imageCaption: ''
 sections: ["Everything Else"]
-topics: ["Writing", "Blogging"]
+topics: ["Writing", "Blogging", "WWC"]
 ---
 
 A few months ago, [James](https://jamesg.blog/) kindly invited me to join a Signal group for a community he was forming that included writers and bloggers on the web. He had been [thinking about this for a while](https://jamesg.blog/2026/06/03/chat-community-for-web-writers), and he felt a closed group chat was as good a place to start as any. He had extended invites to writers whose blogs he had been enjoying over the years. I was quite flattered, and finally summoned the courage to join after the initial wave of imposter syndrome had passed. (After all, [am I even good enough to have imposter syndrome?](https://reductress.com/post/quiz-are-you-even-good-enough-to-have-imposter-syndrome/))

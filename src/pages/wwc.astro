@@ -1,0 +1,61 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { Picture } from 'astro:assets';
+import siteImage from '../assets/images/wwc/wwcsite.png';
+import forumImage from '../assets/images/wwc/wwcforum.png';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .filter(post => !post.data.draft)
+  .filter(post => post.data.topics?.includes('WWC'))
+  .slice(0,5);
+const pageTitle = "Web Writers' Collective - Thamara Kandabada";
+---
+<PageLayout title={pageTitle}>
+    <h1>Web Writers' Collective</h1>
+    <p>Web Writers’ Collective is a community for people who write on the web. The core group started out as a group chat on Signal, initiated by <a href="https://jamesg.blog" target="_blank">James</a>, and has quickly grown in numbers. We now have our own dedicted resources on the web, and I can recommend them for anyone curious about writing on the web.</p>
+    <p>I'm both flattered and privileged to be part of this group of wonderful writers from around the world.</p>
+    <p>Membership is currently through invitation only, as new accounts require admin approval. If you write on the web and would like to be part of this group, please <a href="/hello">reach out to me</a>.</p>
+    <div class="wwc-grid">
+      <div>
+        <h2>The website</h2>
+          <figure>
+            <Picture
+              src={siteImage}
+              alt="A screenshot of the front page of the website"
+              formats={['avif', 'webp']}
+            />
+          </figure>
+        <p>This is our online home and the best place to visit for updates on the group's activities. <em>Anthologies</em>, the community zine, is an upcoming project to look out for.</p>
+        <p><a href="https://webwriterscollective.com/" target="_blank">Visit website</a></p>
+      </div>
+      <div>
+        <h2>The forum</h2>
+          <figure>
+            <Picture
+              src={forumImage}
+              alt="A screenshot of the front page of the forum"
+              formats={['avif', 'webp']}
+            />
+          </figure>
+        <p>This lively forum is home to daily discussions on all things writing. Members regularly share tips and resources on writing, take part in collaborative challenges, and have a bit of banter along the way. The forum has both public and members-only sections.</p>
+        <p><a href="https://forum.webwriterscollective.com/" target="_blank">Visit forum</a></p>
+      </div>
+      <div>
+        <h2>Members' feed</h2>
+        <p>There is an RSS feed that includes all posts from current members of the group. You can subscribe to it <a href="https://artemis.jamesg.blog/u/web-writers-collective" target="_blank">here</a>.</p>
+      </div>
+      <div>
+        <h2>Blog posts</h2>
+        <p>These are the latest WWC-related blog posts from yours truly.</p>
+        <ul class="recent-blogposts-list">
+              {posts.map(post => (
+              <li><a href={`/notebook/${post.id}`}>{post.data.title}</a></li>
+              ))}
+          <li><strong><a href="/notebook/topics/wwc/">All WWC-related posts</a></strong></li>
+        </ul>
+      </div>
+    </div>
+
+</PageLayout>

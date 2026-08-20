@@ -768,7 +768,7 @@ Grids and sub-grids
     column-gap: 1.5rem;
 }
 
-.hobbies-section, .guitar-showcase {
+.hobbies-section, .guitar-showcase, .wwc-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
@@ -1012,7 +1012,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .md-grid, .poster-list, .hobbies-section, .guitar-showcase {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .md-grid, .poster-list, .hobbies-section, .guitar-showcase, .wwc-grid {
         grid-template-columns: 1fr !important;
     }
 
@@ -1126,7 +1126,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .hobbies-section, .guitar-showcase {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .hobbies-section, .guitar-showcase, .wwc-grid {
     grid-template-columns: 1fr;
     }
 
@@ -1540,7 +1540,7 @@ Gigs
     color: var(--text-secondary);
 }
 
-.gig-photo img, .desk-photo img, .wishlist-guitar img {
+.gig-photo img, .desk-photo img, .wishlist-guitar img, .wwc-grid img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
