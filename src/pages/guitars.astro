@@ -5,6 +5,10 @@ import lespaulImage from '../assets/images/now/guitars/les paul.jpg';
 import stratImage from '../assets/images/now/guitars/strat.jpg';
 import embassyImage from '../assets/images/now/guitars/embassy.jpg';
 import morrisImage from '../assets/images/now/guitars/morris.jpg';
+import voxImage from '../assets/images/now/guitars/vox.jpg';
+import champImage from '../assets/images/now/guitars/champion.jpg';
+import interfaceImage from '../assets/images/now/guitars/404hd.jpg';
+import { intersection } from 'astro:schema';
 
 const pageTitle = "Guitars - Thamara Kandabada";
 ---
@@ -18,11 +22,11 @@ const pageTitle = "Guitars - Thamara Kandabada";
       <div class="guitar">
         <h3>Epiphone 1959 Les Paul Standard</h3>
         <figure>
-              <Picture
-                src={lespaulImage}
-                alt="Epiphone Les Paul Standard electric guitar with Mahogany body finished in Aged Gloss and Laurel fretboard"
-                formats={['avif', 'webp']}
-              />
+          <Picture
+            src={lespaulImage}
+            alt="Epiphone Les Paul Standard electric guitar with Mahogany body finished in Aged Gloss and Laurel fretboard"
+            formats={['avif', 'webp']}
+          />
         </figure>
         <p><strong>Body material and finish:</strong> Mahogany, Aged Gloss</p>
         <p><strong>Fretboard:</strong> Laurel</p>
@@ -35,11 +39,11 @@ const pageTitle = "Guitars - Thamara Kandabada";
       <div class="guitar">
         <h3>Fender Player Series Stratocaster</h3>
         <figure>
-              <Picture
-                src={stratImage}
-                alt="Fender Player Stratocaster electric guitar with Alder body finished in Tidepool and Maple fretboard"
-                formats={['avif', 'webp']}
-              />
+          <Picture
+            src={stratImage}
+            alt="Fender Player Stratocaster electric guitar with Alder body finished in Tidepool and Maple fretboard"
+            formats={['avif', 'webp']}
+          />
         </figure>
         <p><strong>Body material and finish:</strong> Alder, Tidepool</p>
         <p><strong>Fretboard:</strong> Maple</p>
@@ -52,11 +56,11 @@ const pageTitle = "Guitars - Thamara Kandabada";
       <div class="guitar">
         <h3>Epiphone Embassy (Bass)</h3>
         <figure>
-              <Picture
-                src={embassyImage}
-                alt="Epiphone Embassy electric bass guitar with Mahogany body finished in Graphite Black body and Laurel fretboard"
-                formats={['avif', 'webp']}
-              />
+          <Picture
+            src={embassyImage}
+            alt="Epiphone Embassy electric bass guitar with Mahogany body finished in Graphite Black body and Laurel fretboard"
+            formats={['avif', 'webp']}
+          />
         </figure>
         <p><strong>Body material and finish:</strong> Mahogany, Graphite Black</p>
         <p><strong>Fretboard:</strong> Laurel</p>
@@ -69,11 +73,11 @@ const pageTitle = "Guitars - Thamara Kandabada";
       <div class="guitar">
         <h3>Morris W-18</h3>
         <figure>
-              <Picture
-                src={morrisImage}
-                alt="Morris W-18 acoustic dreadnought guitar with Spruce and Mahogany body in natural finish and Rosewood fretboard"
-                formats={['avif', 'webp']}
-              />
+          <Picture
+            src={morrisImage}
+            alt="Morris W-18 acoustic dreadnought guitar with Spruce and Mahogany body in natural finish and Rosewood fretboard"
+            formats={['avif', 'webp']}
+          />
         </figure>
         <p><strong>Body material and finish:</strong> Spruce & Mahogany, Natural</p>
         <p><strong>Fretboard:</strong> Rosewood</p>
@@ -85,6 +89,56 @@ const pageTitle = "Guitars - Thamara Kandabada";
       </div>
 
       <h2>Amps</h2>
+      <div class="guitar-showcase">
+      <div class="amp">
+        <h3>Fender Champion 20</h3>
+        <figure>
+          <Picture
+            src={champImage}
+            alt="A small guitar amp on a glass table. It has a black carcass and a silver grille, with the Fender logo on the front of it."
+            formats={['avif', 'webp']}
+          />
+        </figure>
+        <p><strong>Wattage:</strong> 20 Watts</p>
+        <p><strong>Purchase date:</strong> 24 November 2022</p>
+        <p><strong>Purchase price:</strong> £149</p>
+        <p>This is a great beginner amp and is perfect for my casual interest. It still makes a decent amount of noise, and has a set of amp presets that lets me change the sound without using any pedals.</p>
+        <p><a href="https://www.manualslib.tech/en-gb/guide/546748/fender-champion-20-champion-40-amplifier-manual.html" target="_blank">View full spec</a></p>
+      </div>
+
+      <div class="amp">
+        <h3>Vox amPlug2 Bass Headphone Amp</h3>
+        <figure>
+          <Picture
+            src={voxImage}
+            alt="A pocket-sized amp held in hand"
+            formats={['avif', 'webp']}
+          />
+        </figure>
+        <p><strong>Wattage:</strong> 3 Watts</p>
+        <p><strong>Purchase date:</strong> 24 March 2023</p>
+        <p><strong>Purchase price:</strong> £38</p>
+        <p>I didn't have the space for, or want to spend a lot of money on, a big bass amp. This headphone amp comes in an impossibly small package and still scratches the itch quite effectively.</p>
+        <p><a href="https://voxamps.com/product/amplug-2/" target="_blank">View full spec</a></p>
+      </div>
+      </div>
+      
       <h2>Interfaces</h2>
+      <h3>Behringer U-Phoria UMC 404HD USB Audio/MIDI Interface</h3>
+        <figure>
+          <Picture
+            src={interfaceImage}
+            alt="A small guitar amp on a glass table. It has a black carcass and a silver grille, with the Fender logo on the front of it."
+            formats={['avif', 'webp']}
+          />
+        </figure>
+        <p><strong>Inputs:</strong> 4</p>
+        <p><strong>Purchase date:</strong> 25 November 2019</p>
+        <p><strong>Purchase price:</strong> £95 / $125</p>
+        <p>I first purchased this to record <a href="/projects/podcast">our podcast</a> on, but it works perfectly for my guitars as well. It's excellent value for money. I generally have my microphone plugged in at all times, and 2 leads at the ready whenever I want to plug in my guitars. The interface lets me monitor the input via headphone, too.</p>
+        <p><a href="https://www.behringer.com/en/products/0805-AAT" target="_blank">View full spec</a></p>
+      
       <h2>Wishlist</h2>
+      <h3>Fender Telecaster</h3>
+      <p>I've always wanted a Tele, although I haven't given much thought to what series it should be or what specifications it should have. I am partial to the classic Butterscotch Blonde finish, however, and am planning to do more research when budget allows.</p>
 </PageLayout>
