@@ -1540,7 +1540,7 @@ Gigs
     color: var(--text-secondary);
 }
 
-.gig-photo img, .desk-photo img {
+.gig-photo img, .desk-photo img, .wishlist-guitar img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }

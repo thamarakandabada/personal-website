@@ -8,7 +8,9 @@ import morrisImage from '../assets/images/now/guitars/morris.jpg';
 import voxImage from '../assets/images/now/guitars/vox.jpg';
 import champImage from '../assets/images/now/guitars/champion.jpg';
 import interfaceImage from '../assets/images/now/guitars/404hd.jpg';
-import { intersection } from 'astro:schema';
+import rickImage from '../assets/images/now/guitars/rick.jpg';
+import teleImage from '../assets/images/now/guitars/tele.jpg';
+import electromaticImage from '../assets/images/now/guitars/electromatic.jpg';
 
 const pageTitle = "Guitars - Thamara Kandabada";
 ---
@@ -32,7 +34,7 @@ const pageTitle = "Guitars - Thamara Kandabada";
         <p><strong>Fretboard:</strong> Laurel</p>
         <p><strong>Purchase date:</strong> 14 November 2023</p>
         <p><strong>Purchase price:</strong> £749</p>
-        <p>This guitar is full of character. I love the raw energy of the sound, and even though it goes out of tune faster than you can say "Les Paul" it's a joy to play. It's the kind of machine you feel powerful just holding.</p>
+        <p>This guitar is full of character. I love the raw energy of the sound, and even though it goes out of tune faster than you can say "Les Paul", it's a joy to play. It's the kind of machine you feel powerful just holding.</p>
         <p><a href="https://www.gibson.com/en-gb/products/epiphone-1959-les-paul-standard-incl-hard-case-aged-dark-burst" target="_blank">View full spec</a></p>
       </div>
 
@@ -66,7 +68,7 @@ const pageTitle = "Guitars - Thamara Kandabada";
         <p><strong>Fretboard:</strong> Laurel</p>
         <p><strong>Purchase date:</strong> 22 March 2023</p>
         <p><strong>Purchase price:</strong> £349</p>
-        <p>Although this is my lease picked up guitar, I like having the option in my collection. I like plugging in my compact bass headphone amplifier directly to this for some good old fashion grooving for an audience of one.</p>
+        <p>Although this is my least picked up guitar, I like having the option in my collection. I like plugging in my compact bass headphone amplifier directly to this for some good old-fashioned grooving for an audience of one.</p>
         <p><a href="https://www.gibson.com/en-gb/products/epiphone-embassy-bass-graphite-black" target="_blank">View full spec</a></p>
       </div>
 
@@ -128,17 +130,51 @@ const pageTitle = "Guitars - Thamara Kandabada";
         <figure>
           <Picture
             src={interfaceImage}
-            alt="A small guitar amp on a glass table. It has a black carcass and a silver grille, with the Fender logo on the front of it."
+            alt="An audio interface with several inputs and outputs on a desk. There are two leads plugged into it."
             formats={['avif', 'webp']}
           />
         </figure>
         <p><strong>Inputs:</strong> 4</p>
         <p><strong>Purchase date:</strong> 25 November 2019</p>
         <p><strong>Purchase price:</strong> £95 / $125</p>
-        <p>I first purchased this to record <a href="/projects/podcast">our podcast</a> on, but it works perfectly for my guitars as well. It's excellent value for money. I generally have my microphone plugged in at all times, and 2 leads at the ready whenever I want to plug in my guitars. The interface lets me monitor the input via headphone, too.</p>
+        <p>I first purchased this to record <a href="/projects/podcast">our podcast</a> on, but it works perfectly for my guitars as well. It's excellent value for money. I generally have my microphone plugged in at all times, and 2 leads at the ready whenever I want to plug in my guitars. The interface lets me monitor the input via headphones, too.</p>
         <p><a href="https://www.behringer.com/en/products/0805-AAT" target="_blank">View full spec</a></p>
       
       <h2>Wishlist</h2>
-      <h3>Fender Telecaster</h3>
-      <p>I've always wanted a Tele, although I haven't given much thought to what series it should be or what specifications it should have. I am partial to the classic Butterscotch Blonde finish, however, and am planning to do more research when budget allows.</p>
+      <p>This is an inexhaustive list of guitars I would like to own one day. All evocative of a particular place and time in history, all insanely cool, and all out of my budget. But hey, isn't that what wishlists are for?</p>
+      <div class="guitar-showcase">
+        <div class="wishlist-guitar">
+          <h3>Fender Telecaster</h3>
+        <figure>
+          <Picture
+            src={teleImage}
+            alt="A Telecaster in the Butterscotch Blonde finish in a lush velvet case."
+            formats={['avif', 'webp']}
+          />
+        </figure>
+          <p>I've always wanted a Tele, although I haven't given much thought to what series it should be or what specifications it should have. I am partial to the classic Butterscotch Blonde finish, however, and am planning to do more research when budget allows.</p>
+        </div>
+        <div class="wishlist-guitar">
+          <h3>Gretsch Hollowbody</h3>
+        <figure>
+          <Picture
+            src={electromaticImage}
+            alt="A white Gretch guitar with gold hardware"
+            formats={['avif', 'webp']}
+          />
+        </figure>
+          <p>Similar to the Tele, I don't quite know what model I'd want to get, but I would love to have a large hollowbody guitar made by Gretsch, possibly an Electromatic or a Country Gentleman.</p>
+        </div>
+        <div class="wishlist-guitar">
+          <h3>Rickenbacker Bass</h3>
+        <figure>
+          <Picture
+            src={rickImage}
+            alt="A Rickenbacker bass guitar with the iconic 'Amber Fireglo' red gradient finish in a velvet lined case"
+            formats={['avif', 'webp']}
+          />
+        </figure>
+          <p>This, too, is purely a vibes-based preference. I know these guitars are notoriously difficult to keep in tune, but who cares about that when they look this cool?</p>
+        </div>
+      </div>
 </PageLayout>
