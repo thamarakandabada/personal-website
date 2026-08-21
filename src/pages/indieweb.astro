@@ -1,8 +1,82 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
-const pageTitle = "Codex - Thamara Kandabada";
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .filter(post => !post.data.draft)
+  .filter(post => post.data.topics?.includes('IndieWeb'))
+  .slice(0,5);
+const pageTitle = "IndieWeb - Thamara Kandabada";
 ---
 <PageLayout title={pageTitle}>
-    <h1>Codex</h1>
-    <p>Work in progress</p>
+    <h1>IndieWeb</h1>
+    <p>The IndieWeb movement is about taking back control of the web. There are competing definitions for the IndieWeb (or indie web), but the core principles revolve around being people-focused and inclusive. From the IndieWeb wiki:</p>
+    <blockquote>We are a community of independent and personal websites based on the principles of: owning your domain and using it as your primary online identity, publishing on your own site first (optionally elsewhere), and owning your content.</blockquote>
+    <p>Joining the movement is easy. If you have a personal website, you are already on the IndieWeb. If you don't have one yet, there are many great tools and resources that will help you get started for free. I have listed some below.</p>
+    
+    <h2>Resources</h2>
+    <div class="iw-grid">
+      <div>
+      <h3>Tools</h3>
+      <p>There are plenty of website-making tools out there that let you get started free of charge. Here are some recommendations:</p>
+      <ul>
+        <li><strong><a href="https://wordpress.org/download/" target="_blank">WordPress</a>:</strong> Even though a lot of bloat had been added to WordPress over the years, it still remains an extremely beginner-friendly and IndieWeb-friendly (thanks to plugins developed by various developers) tool to start a website with.</li>
+        <li><strong><a href="https://micro.blog/" target="_blank">micro.blog</a>:</strong> This is a minimal blogging platform that supports IndieWeb functionality out of the box.</li>
+        <li><strong><a href="https://bearblog.dev/" target="_blank">Bear Blog</a>:</strong> A no-nonsense open source blog hosting platform that states "longevity" as a goal.</li>
+        <li><strong><a href="https://neocities.org/" target="_blank">Neocities</a>:</strong> A free static web hosting platform popular with users preferring a retro aesthetic.</li>
+        <li><strong><a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages</a>:</strong> A static hosting service that lets users publish websites using HTML, CSS and Javascript files on GitHub repositories.</li>
+      </ul>
+      <p>The tools used are not as important as what you make with them. The true IndieWeb spirit lies in producing and owning your own content. For this reason, you will find most IndieWeb proponents have a strong aversion to generative AI.</p>
+      </div>
+      <div>
+        <h3>Communities</h3>
+        <h4>IndieWeb wiki</h4>
+        <p>The IndieWeb wiki is a treasure trove of information on all things related to the movement, as well as guidance on getting started for anyone interested. The wiki is maintained by a core team of organisers and a slew of volunteers.</p>
+        <p><strong>Helpful links:</strong></p>
+          <ul>
+            <li><a href="https://indieweb.org/" target="_blank">Wiki homepage</a></li>
+            <li><a href="https://indieweb.org/Getting_Started" target="_blank">Getting started</a></li>
+            <li><a href="https://indiewebify.me/" target="_blank">IndieWebify.Me</a></li>
+            <li><a href="https://indieweb.org/discuss" target="_blank">Chat</a></li>
+          </ul>
+        <h4>32-Bit Cafe</h4>
+        <p>32-Bit Cafe is a vibrant community of website hobbyists passionate about the personal web. They describe themselves as "a community as a resource", consisting of website developers & designers, artists, writers, technologists, university students, and internet enthusiasts at varying levels of expertise.</p>
+        <p><strong>Helpful links:</strong></p>
+          <ul>
+            <li><a href="https://32bit.cafe/" target="_blank">Homepage</a></li>
+            <li><a href="https://listmonk.32bit.cafe/subscription/form" target="_blank">Newsletter</a></li>
+            <li><a href="https://discourse.32bit.cafe/" target="_blank">Forum</a></li>
+          </ul>
+      </div>
+      <div>     
+        <h3>Building blocks</h3>
+        <p>There are many tried and tested key design-patterns, technologies, and methods for building and improving an independent website.</p>
+        <p>These can be a bit overwhelming at the outset; it is generally advised to focus on building a great user experience for your site first and to treat these formats and protocols as secondary.</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+          <li><a href="https://microformats.org/" target="_blank">microformats</a></li>
+          <li><a href="https://www.w3.org/TR/webmention/" target="_blank">Webmentions</a></li>
+          <li><a href="https://indieweb.org/POSSE" target="_blank">POSSE</a></li>
+
+        </ul>
+      </div>
+      <div>
+        <h3>Inspiration</h3>
+        <p>If you're looking for some inspiration for making your own site, these may help.</p>
+        <ul>
+          <li><strong><a href="https://personalsit.es/" target="_blank">Personalsit.es</a>:</strong> A directory of 1,000+ personal websites.</li>
+          <li><strong><a href="https://blogroll.org/" target="_blank">Ye Olde Blogroll</a>:</strong> A curated collection of 1,000+ personal blogs.</li>
+          <li><strong><a href="https://web-weaving.jamesg.blog/" target="_blank"><em>Wonders of Web Weaving</em> Podcast</a>:</strong> A podcast featuring conversations with "web-weavers", makers of personal websites and cool personal projects on the web.</li>          
+        </ul>
+      </div>
+    </div>
+        <h2>Blog posts</h2>
+        <p>These are the latest IndieWeb-related blog posts from yours truly.</p>
+        <ul class="recent-blogposts-list">
+              {posts.map(post => (
+              <li><a href={`/notebook/${post.id}`}>{post.data.title}</a></li>
+              ))}
+          <li><strong><a href="/notebook/topics/wwc/">All IndieWeb-related posts</a></strong></li>
+        </ul>
 </PageLayout>

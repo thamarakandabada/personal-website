@@ -24,8 +24,8 @@ return uniqueLabels.map((label) => {
 const { page, displayLabel } = Astro.props;
 ---
 <PageLayout title={`Label: ${displayLabel} - Gigs - Thamara Kandabada`}>
-  <h1>Label: <em>{displayLabel}</em></h1>
+  <h1>Type: <em>{displayLabel}</em></h1>
     <div class="gigs-grid">
-      {page.data.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} />)}
+      {page.data.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} city={post.data.city} />)}
     </div>
 </PageLayout>
