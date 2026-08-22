@@ -4,8 +4,8 @@ imageAlt: 'The Cure performing on stage, illuminated by various lights in red an
 label: 'Music'
 title: 'The Cure'
 support: 'Support acts: The Slow Readers Club, Slowdive'
-description: 'The band played for almost two-and-a-half hours, performing much-loved hits from their previous albums. I loved that "Inbetween Days" and "Just Like Heaven", two of my favourite songs, were played back-to-back. It was a great crowd, too, and it did not rain despite the forecasts. The two support acts complemented The Cure''s music perfectly.'
+description: 'The band played for almost two-and-a-half hours, performing much-loved hits from their previous albums. I loved that "Inbetween Days" and "Just Like Heaven", two of my favourite songs, were played back-to-back. It was a great crowd, too, and it did not rain despite the forecasts. The two support acts complemented The Cure''s music perfectly. The gig was almost wall-to-wall music, with little to no banter in between. Robert Smith joked about being a singer and not a talker.'
 venue: 'Wythenshawe Park'
-date: 2026-08-22
+date: 2026-08-21
 city: 'Manchester'
 ---

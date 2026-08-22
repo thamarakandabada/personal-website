@@ -112,7 +112,6 @@ nav p, nav div {
 
 .footer-text {
     background-color: var(--bg-secondary);
-    border-top: 1px solid var(--border-color);
     padding-top: 0.5rem;
     padding-bottom: 0.75rem;
     box-shadow: 0 50vh 0 50vh var(--bg-secondary);
@@ -178,6 +177,44 @@ nav p, nav div {
 .post-nav {
     font-weight: 700;
 }
+
+.marquee-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+    white-space: nowrap;
+    background: var(--accent);
+    padding: 0.5rem 0;
+}
+
+.marquee-text {
+    display: inline-block;
+    width: auto;
+    color: white;
+    font-size: 0.75rem;
+    font-family: "Cascadia Mono", monospace;
+    animation: marquee-scroll 20s linear infinite normal;
+}
+
+.marquee-text:hover {
+    animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-text {
+        animation: none !important;
+    }
+}
+
+        @keyframes marquee-scroll {
+            0%   { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+
 
 /*
 Text elements
