@@ -15,8 +15,9 @@ export const getStaticPaths = (async ({paginate}) => {
 const { page } = Astro.props;
 const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
 const pageTitle = "Notebook - Thamara Kandabada";
+const slashpageImage = "/featured-images/notebook.png"
 ---
-<PageLayout title={pageTitle}>
+<PageLayout title={pageTitle} image={slashpageImage}>
   <div class="h-feed">
     <h1 class="p-name">Notebook</h1>
     <p>Welcome to my personal blog. Here you can find my uncensored thoughts on <a href="/notebook/sections/life">Life</a>, <a href="/notebook/sections/the-universe">The Universe</a>, and <a href="/notebook/sections/everything-else">Everything</a>. There is also a <a href="/notebook/sections/stream">Stream</a> section for shorter musings and more frequent updates.</p>

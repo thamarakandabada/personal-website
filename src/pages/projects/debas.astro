@@ -7,8 +7,9 @@ import DebasPost from '../../components/DebasPost.astro';
 const pageTitle = "Debas Archives - Thamara Kandabada";
 const allPosts = await getCollection("debas");
 const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
+const slashpageImage = "/featured-images/debas.png"
 ---
-<PageLayout title={pageTitle}>
+<PageLayout title={pageTitle} image={slashpageImage}>
   <div class="h-feed">
     <h1 class="p-name">Debas Archives</h1>
     <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>

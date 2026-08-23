@@ -10,10 +10,12 @@ const posts = (await getCollection('blog'))
   .filter(post => !post.data.sections?.includes('Stream'))
   .slice(0,6);
 const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
+const slashpageImage = "/featured-images/404.png"
 ---
 
 <PageLayout 
   title={pageTitle}
+  image={slashpageImage}
   feeds={[
     { title: "Notebook - Thamara Kandabada (All Posts)", href: "/notebook/rss.xml" },
     { title: "Notebook - Thamara Kandabada (Life)", href: "/notebook/sections/life/rss.xml" },

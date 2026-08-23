@@ -21,8 +21,9 @@ const labels = [...new Set(allGigs.map((post) => post.data.label).filter(Boolean
 const sortedLabels = labels.sort();
 const cities = [...new Set(allGigs.map((post) => post.data.city).filter(Boolean).flat())]
 const sortedCities = cities.sort();
+const slashpageImage = "/featured-images/gigs.png"
 ---
-<PageLayout title={pageTitle}>
+<PageLayout title={pageTitle} image={slashpageImage}>
   <div class="h-feed">
     <h1 class="p-name">Gigs</h1>
     <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>

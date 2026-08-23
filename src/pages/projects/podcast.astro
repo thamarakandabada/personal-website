@@ -7,8 +7,9 @@ import PodEpisode from '../../components/PodEpisode.astro';
 const pageTitle = "The Bad Take Podcast Archives - Thamara Kandabada";
 const allPosts = await getCollection("podcast");
 const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
+const slashpageImage = "/featured-images/podcast.png"
 ---
-<PageLayout title={pageTitle}>
+<PageLayout title={pageTitle} image={slashpageImage}>
 <div class="h-feed">
     <h1 class="p-name">The Bad Take Podcast Archives</h1>
     <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>

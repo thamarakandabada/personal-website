@@ -8,8 +8,9 @@ const posts = (await getCollection('blog'))
   .filter(post => post.data.topics?.includes('IndieWeb'))
   .slice(0,5);
 const pageTitle = "IndieWeb - Thamara Kandabada";
+const slashpageImage = "/featured-images/indieweb.png"
 ---
-<PageLayout title={pageTitle}>
+<PageLayout title={pageTitle} image={slashpageImage}>
     <h1>IndieWeb</h1>
     <p>The IndieWeb movement is about taking back control of the web. There are competing definitions for the IndieWeb (or indie web), but the core principles revolve around being people-focused and inclusive. From the IndieWeb wiki:</p>
     <blockquote>We are a community of independent and personal websites based on the principles of: owning your domain and using it as your primary online identity, publishing on your own site first (optionally elsewhere), and owning your content.</blockquote>
