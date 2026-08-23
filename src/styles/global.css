@@ -1694,11 +1694,11 @@ Gigs
     .discuss-btn-primary:hover { background: var(--surface-inset) !important; color: var(--text-primary) !important; border-color: var(--border-default) !important; }
 }
 
-#discuss-comments p, #discuss-comments textarea, #discuss-comments input {
+#discuss-comments .discuss-form-textarea, #discuss-comments .discuss-form-input, #discuss-comments .discuss-btn {
     font-size: 1rem !important;
 }
 
-#discuss-comments h3, .webmentions-section h3 {
+#discuss-comments .discuss-text-lg, .webmentions-section h3 {
     font-size: 1.2rem;
     font-weight: 700;
 }
