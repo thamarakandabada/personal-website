@@ -39,5 +39,8 @@ const isoDate = frontmatter.date
         <div class="e-content">
           <slot />
         </div>
+          <div class="permalink">
+  <p><strong>Permalink:</strong> <textarea>{Astro.url.href}</textarea></p>
+  </div>
         </article>
 </PageLayout>
