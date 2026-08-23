@@ -1694,8 +1694,16 @@ Gigs
     .discuss-btn-primary:hover { background: var(--surface-inset) !important; color: var(--text-primary) !important; border-color: var(--border-default) !important; }
 }
 
-#discuss-comments p, #discuss-comments h3, #discuss-comments textarea, #discuss-comments input {
-    font-size: inherit !important;
-    font-weight: inherit !important;
-    font-style: inherit !important;
+#discuss-comments p, #discuss-comments textarea, #discuss-comments input {
+    font-size: 1rem !important;
+}
+
+#discuss-comments h3, .webmentions-section h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.webmentions-section h4 {
+    font-size: 1rem;
+    font-weight: 700;
 }

@@ -27,7 +27,7 @@ const replies = mentions.filter(m => m['wm-property'] === 'in-reply-to' || m['wm
 
 {mentions.length > 0 && (
   <section class="webmentions-section">
-    <h2>Webmentions</h2>
+    <h3>Webmentions</h3>
 
     {/* Likes & Reposts Section */}
     {(likes.length > 0 || reposts.length > 0) && (
@@ -48,7 +48,7 @@ const replies = mentions.filter(m => m['wm-property'] === 'in-reply-to' || m['wm
     {/* Comments & Replies Section */}
     {replies.length > 0 && (
       <div class="mention-threads">
-        <h3>Replies & Mentions</h3>
+        <h4>Replies & Mentions</h4>
         <ul>
           {replies.map(mention => (
             <li class="mention-card">
