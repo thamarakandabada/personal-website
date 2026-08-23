@@ -8,61 +8,63 @@ import GlobalFooter from "../components/GlobalFooter.astro";
 interface Props {
     title: string;
     description?: string;
-    image?: string;
+    image?: string | { src: string };
     feeds?: { title: string; href: string }[];
 }
 
 const { 
     title,
     description = "Generalist. Tinkerer.",
-    image = "/tk.png",
+    image = "/featured-images/homepage.png",
     feeds = [{ title: "Thamara's Notebook", href: "/rss.xml" }] 
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://thamara.co.uk');
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://thamara.co.uk').href;
 const imagePath = typeof image === 'object' && image !== null ? image.src : image;
-const socialImageURL = new URL(imagePath, Astro.site || 'https://thamara.co.uk');
+const socialImageURL = new URL(imagePath, Astro.site || 'https://thamara.co.uk').href;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/tk.png" />
-		<link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <head>
+        <meta charset="UTF-8" />
+        <title>{title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/tk.png" />
+        <link rel="preconnect" href="https://use.typekit.net" crossorigin />
         <link rel="preconnect" href="https://p.typekit.net" crossorigin />
         <link rel="stylesheet" href="https://use.typekit.net/lbp7mnn.css">
         <link rel="sitemap" href="/sitemap-index.xml" />
         <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
         <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
-{feeds.map((feed) => (
+        
+        {feeds.map((feed) => (
             <link rel="alternate" type="application/rss+xml" title={feed.title} href={feed.href} />
         ))}
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content={description} />
+        
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content={description} />
 
-		<meta property="og:type" content="website" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalURL} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={socialImageURL} />
 
-		<meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={canonicalURL} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={socialImageURL} />
-		
+        
         <Analytics/>
         <SpeedInsights/>
-		<title>{title}</title>
-	    </head>
-	    <body>	
-		<Navigation />
-		<div class="page-content">
-		<slot />
-		</div>   
-		<GlobalFooter />
-	    </body>
+    </head>
+    <body>  
+        <Navigation />
+        <div class="page-content">
+            <slot />
+        </div>   
+        <GlobalFooter />
+    </body>
 </html>
