@@ -33,7 +33,7 @@ const replies = mentions.filter(m => m['wm-property'] === 'in-reply-to' || m['wm
     {/* Likes & Reposts Section */}
     {(likes.length > 0 || reposts.length > 0) && (
       <div class="mention-icons">
-        <p><strong>{likes.length} Likes & {reposts.length} Reposts</strong></p>
+        <p>{likes.length} Likes & {reposts.length} Reposts</p>
         <div class="avatar-list">
           {likes.concat(reposts).map(mention => (
             <a href={mention.author?.url} target="_blank" rel="noopener noreferrer" title={mention.author?.name}>
@@ -62,7 +62,7 @@ const replies = mentions.filter(m => m['wm-property'] === 'in-reply-to' || m['wm
                 </a>
               </div>
               <p>{mention.content?.text}</p>
-              <small><a href={mention.url} target="_blank" rel="noopener noreferrer">Original response</a></small>
+              <a href={mention.url} target="_blank" rel="noopener noreferrer">Original response</a>
             </li>
           ))}
         </ul>
