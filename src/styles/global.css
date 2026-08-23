@@ -1694,8 +1694,8 @@ Gigs
     .discuss-btn-primary:hover { background: var(--surface-inset) !important; color: var(--text-primary) !important; border-color: var(--border-default) !important; }
 }
 
-#discuss-comments p, #discuss-comments h3 {
-    font-size: inherit;
-    font-weight: inherit;
-    font-style: inherit;
+#discuss-comments p, #discuss-comments h3, #discuss-comments textarea, #discuss-comments input {
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    font-style: inherit !important;
 }
