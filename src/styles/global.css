@@ -1700,7 +1700,7 @@ Gigs
     font-weight: 700;
 }
 
-#discuss-comments textarea, .discuss-form-input-wrapper input .discuss-btn button, #discuss-comments .discuss-text-sm, #discuss-comments .discuss-comment-content, #discuss-comments .discuss-action-btn {
+#discuss-comments textarea, .discuss-form-input-wrapper input .discuss-btn button, #discuss-comments .discuss-text-sm, #discuss-comments .discuss-comment-content, #discuss-comments .discuss-action-btn, .discuss-comment-content span {
     font-size: 1.2rem !important;
 }
 
