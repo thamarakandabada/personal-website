@@ -3,7 +3,9 @@ import PageLayout from './PageLayout.astro';
 import { Picture } from 'astro:assets';
 import BlogPostNavPrevNext from '../components/BlogPostNavPrevNext.astro';
 import PostReference from '../components/PostReference.astro';
+import Webmentions from '../components/Webmentions.astro';
 
+const currentUrl = new URL(Astro.url.pathname, Astro.site || 'https://thamara.co.uk').href;
 const { frontmatter } = Astro.props;
 const formattedDate = frontmatter.pubDate 
   ? new Date(frontmatter.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
@@ -63,6 +65,7 @@ const isoDate = frontmatter.pubDate
 	title: 'Leave your thoughts',
   });
 </script>
+<Webmentions targetUrl={currentUrl} />
 
 		<BlogPostNavPrevNext />
 </article>

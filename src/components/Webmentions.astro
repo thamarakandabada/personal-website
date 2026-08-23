@@ -1,0 +1,71 @@
+---
+interface Props {
+  targetUrl: string;
+}
+
+const { targetUrl } = Astro.props;
+
+const domain = "thamara.co.uk";
+const apiUrl = `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(targetUrl)}`;
+
+let mentions = [];
+
+try {
+  const response = await fetch(apiUrl);
+  if (response.ok) {
+    const data = await response.json();
+    mentions = data.children || [];
+  }
+} catch (error) {
+  console.error("Failed to fetch webmentions:", error);
+}
+
+const likes = mentions.filter(m => m['wm-property'] === 'like-of');
+const reposts = mentions.filter(m => m['wm-property'] === 'repost-of');
+const replies = mentions.filter(m => m['wm-property'] === 'in-reply-to' || m['wm-property'] === 'mention-of');
+---
+
+{mentions.length > 0 && (
+  <section class="webmentions-section">
+    <h2>Webmentions</h2>
+
+    {/* Likes & Reposts Section */}
+    {(likes.length > 0 || reposts.length > 0) && (
+      <div class="mention-icons">
+        <p><strong>{likes.length} Likes & {reposts.length} Reposts</strong></p>
+        <div class="avatar-list">
+          {likes.concat(reposts).map(mention => (
+            <a href={mention.author?.url} target="_blank" rel="noopener noreferrer" title={mention.author?.name}>
+              {mention.author?.photo && (
+                <img src={mention.author.photo} alt={mention.author.name} width="32" height="32" class="avatar" />
+              )}
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {/* Comments & Replies Section */}
+    {replies.length > 0 && (
+      <div class="mention-threads">
+        <h3>Replies & Mentions</h3>
+        <ul>
+          {replies.map(mention => (
+            <li class="mention-card">
+              <div class="mention-author">
+                {mention.author?.photo && (
+                  <img src={mention.author.photo} alt="" width="40" height="40" class="avatar" />
+                )}
+                <a href={mention.author?.url} target="_blank" rel="noopener noreferrer">
+                  <strong>{mention.author?.name || 'Anonymous'}</strong>
+                </a>
+              </div>
+              <p>{mention.content?.text}</p>
+              <small><a href={mention.url} target="_blank" rel="noopener noreferrer">Original response</a></small>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </section>
+)}
