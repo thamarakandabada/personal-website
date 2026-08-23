@@ -6,7 +6,8 @@ interface Props {
 const { targetUrl } = Astro.props;
 
 const domain = "thamara.co.uk";
-const apiUrl = `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(targetUrl)}`;
+const normalizedTarget = targetUrl.replace(/\/$/, "");
+const apiUrl = `https://webmention.io/api/mentions.jf2?domain=${domain}&target=${encodeURIComponent(normalizedTarget)}`;
 
 let mentions = [];
 
