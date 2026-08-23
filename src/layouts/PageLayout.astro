@@ -20,7 +20,8 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://thamara.co.uk');
-const socialImageURL = new URL(image, Astro.site || 'https://thamara.co.uk');
+const imagePath = typeof image === 'object' && image !== null ? image.src : image;
+const socialImageURL = new URL(imagePath, Astro.site || 'https://thamara.co.uk');
 ---
 
 <!doctype html>
