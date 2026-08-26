@@ -6,7 +6,7 @@ author: 'Thamara Kandabada'
 imageUrl: ''
 imageAlt: ''
 imageCaption: ''
-sections: ["Life"]
+sections: ["Everything Else"]
 topics: ["Music", "Writing", "Blogging"]
 ---
 
