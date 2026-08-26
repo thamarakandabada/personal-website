@@ -1,5 +1,7 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { Code } from 'astro:components';
+
 const pageTitle = "Changelog (legacy) - Thamara Kandabada";
 const slashpageImage = "/featured-images/changelog-legacy.png"
 ---
@@ -8,7 +10,7 @@ const slashpageImage = "/featured-images/changelog-legacy.png"
   <body>
 
     <h1>Changelog (legacy)</h1>
-    <p>This is a list of changes made to my website), sorted by month. This version of the log is no longer maintained.</p>
+    <p>This is a list of changes made to my website, sorted by month. This version of the log is no longer maintained.</p>
     
     <div class="see-also">
     <ul>
@@ -42,7 +44,7 @@ const slashpageImage = "/featured-images/changelog-legacy.png"
       <li>Added <a href="/podroll">/podroll</a>.</li>
       <li>Added a dark mode toggle.</li>
       <li>Added <a href="/desk">/desk</a>.</li>
-      <li>Added <code><a href="https://astro.thamara.co.uk">astro.thamara.co.uk</a></code>, a temporary repository for my new Astro build of this site (for eventual migration). See build history <a href="https://github.com/thamarakandabada/personal-website/commits/main/" target="_blank">here</a>.</li>
+      <li>Added <Code code=`astro.thamara.co.uk` inline />, a temporary repository for my new Astro build of this site (for eventual migration). See build history <a href="https://github.com/thamarakandabada/personal-website/commits/main/" target="_blank">here</a>.</li>
     </ul>
 
     <h3>Apr</h3>
@@ -50,7 +52,7 @@ const slashpageImage = "/featured-images/changelog-legacy.png"
       <li>Added the <a href="/design">/design</a> and <a href="/projects">/projects</a> archives.</li>
       <li>Started the process of indieweb-ifying the website:</li>
       <ul>
-        <li>Added an <code><a href="https://indieweb.org/h-card" target="_blank">h-card</a></code>, <a href="https://indieweb.org/IndieAuth" target="_blank">IndieAuth</a>, <a href="https://indieweb.org/Webmention" target="_blank">Webmentions</a> and support for other <a href="https://indieweb.org/microformats" target="_blank">microformats</a>.</li>
+        <li>Added an <a href="https://indieweb.org/h-card" target="_blank"><Code code=`h-card` inline /></a>, <a href="https://indieweb.org/IndieAuth" target="_blank">IndieAuth</a>, <a href="https://indieweb.org/Webmention" target="_blank">Webmentions</a> and support for other <a href="https://indieweb.org/microformats" target="_blank">microformats</a>.</li>
         <li>WIP: <a href="https://indieweb.org/u-syndication" target="_blank">syndication links</a>.</li>
       </ul>
     </ul>

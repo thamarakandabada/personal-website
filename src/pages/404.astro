@@ -7,16 +7,16 @@ const pageTitle = "Turn back - Thamara Kandabada";
 const slashpageImage = "/featured-images/404.png"
 ---
 <PageLayout title={pageTitle} image={slashpageImage}>
-    <div class="four-o-four">
+  <div class="four-o-four">
     <h1>Hic Sunt Dracones</h1>
-    <figure>
-    <Picture
-      src={mapImage} alt="A scarce circular woodblock world map"
-      formats={['avif', 'webp']}
-    />
-    <figcaption><a href="https://commons.wikimedia.org/wiki/File:Medieval_woodblock_T-O_world_map_Altea_Gallery.jpg">AnonymousUnknown author</a>, Public domain, via Wikimedia Commons</figcaption>
-    </figure>
     <p>You have wandered too far off the map. It's not safe here. Turn back, before it's too late.</p>
+    <figure>
+      <Picture
+        src={mapImage} alt="A scarce circular woodblock world map"
+        formats={['avif', 'webp']}
+      />
+      <figcaption><a href="https://commons.wikimedia.org/wiki/File:Medieval_woodblock_T-O_world_map_Altea_Gallery.jpg">AnonymousUnknown author</a>, Public domain, via Wikimedia Commons</figcaption>
+    </figure>
     <div class="see-also">
       <ul>
         <li><strong>You can:</strong></li>
@@ -25,5 +25,5 @@ const slashpageImage = "/featured-images/404.png"
         <li><a href="/notebook"><i class="bi bi-book"></i> Read the scrolls</a></li>
       </ul>
     </div>
-    </div>
+  </div>
 </PageLayout>

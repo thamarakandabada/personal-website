@@ -79,6 +79,7 @@ const slashpageImage = "/featured-images/homepage.png"
   <div class="homepage-flex">
     <div  class="featured-pages">   
       <h3>At a glance</h3>
+        <p>Some of the many pages on this website to get you started.</p>
         <ul class="featured-pages-list">
           <li><a href="/resume">Resume</a></li>
           <li><a href="/now">What I'm up to</a></li>
@@ -91,6 +92,7 @@ const slashpageImage = "/featured-images/homepage.png"
     </div>
     <div class="recent-blogposts">
       <h3>From the notebook</h3>
+      <p>The latest posts from my blog.</p>
         <ul class="recent-blogposts-list">
           {posts.map(post => (
           <li><a href={`/notebook/${post.id}`}>{post.data.title}</a></li>

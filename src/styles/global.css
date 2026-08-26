@@ -299,7 +299,6 @@ p {
     border-radius: 4px;
     padding: 0 0.5rem;
     font-family: inherit;
-    font-size: 1rem;
     field-sizing: content;
     background-color: var(--bg-primary);
     color: var(--text-primary);
@@ -406,6 +405,12 @@ figcaption {
 
 figcaption a {
     text-decoration: none;
+}
+
+hr {
+    height: 1px;
+    background-color: var(--border-color);
+    border: none;
 }
 
 /*
@@ -942,7 +947,7 @@ Site notices
     border-radius: 4px;
 }
 
-.accessibility-version-notice ul, .ai-version-notice ul, .now-location-weather ul, .no-experiments-banner ul, .commit-info ul, .see-also ul {
+.accessibility-version-notice ul, .ai-version-notice ul, .now-location-weather ul, .no-experiments-banner ul, .see-also ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -1051,7 +1056,7 @@ Media queries
         margin: 0;
     }
 
-    .accessibility-version-notice ul, .ai-version-notice ul, .commit-info ul, .see-also ul, .now-location-weather ul {
+    .accessibility-version-notice ul, .ai-version-notice ul, .see-also ul, .now-location-weather ul {
         flex-direction: column;
         gap: 0;
     }
@@ -1165,7 +1170,7 @@ Media queries
         margin: 0;
     }
 
-    .accessibility-version-notice ul, .ai-version-notice ul, .commit-info ul, .see-also ul, .now-location-weather ul {
+    .accessibility-version-notice ul, .ai-version-notice ul, .see-also ul, .now-location-weather ul {
         flex-direction: column;
         gap: 0;
     }

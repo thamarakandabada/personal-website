@@ -27,57 +27,46 @@ const pageTitle = "Colophon - Thamara Kandabada";
 const slashpageImage = "/featured-images/colophon.png"
 ---
 <PageLayout title={pageTitle} image={slashpageImage}>
-    <h1>Colophon</h1>
-    
-    <h2>About this site</h2>
+  <h1>Colophon</h1>
+  <h2>About this site</h2>
     <p>This is my personal corner of the internet. It’s a showcase of my interests, hobbies, and my history.</p>
-    <div class="see-also">
-      <ul>
-        <li><strong>See also:</strong></li>
-        <li><a href="https://indieweb.org/colophon" target="_blank">What is a colophon?</a></li>
-        <li><a href="/changelog">Changelog</a></li>
-        <li><a href="/credits">Credits</a></li>
-      </ul>
-    </div>
-
-    <h2>Technology</h2>
+  <div class="see-also">
+    <ul>
+      <li><strong>See also:</strong></li>
+      <li><a href="https://indieweb.org/colophon" target="_blank">What is a colophon?</a></li>
+      <li><a href="/changelog">Changelog</a></li>
+      <li><a href="/credits">Credits</a></li>
+    </ul>
+  </div>
+  <h2>Technology</h2>
     <p>This site is built with <a href="https://astro.build/" target="_blank">Astro</a> and deployed on <a href="https://vercel.com/" target="_blank">Vercel</a>. Version control is managed with <a href="https://github.com/" target="_blank">GitHub</a>.</p>
     <div class="commit-info">
-      <ul>
-        <li><strong>Last commit:</strong> <a href={commitUrl} target="_blank"><span class="commit-hash">{commitHash}</span></a> | {commitMsg}</li>
-        <li><strong>Date:</strong> {formattedDate}</li>
-        <li><strong>Source code:</strong> <a href="https://github.com/thamarakandabada/personal-website/" target="_blank">GitHub repo</a></li>
-      </ul>
+      <p><strong>Last commit:</strong> <a href={commitUrl} target="_blank"><span class="commit-hash">{commitHash}</span></a> | {commitMsg}</p>
+      <p><strong>Date:</strong> {formattedDate}</p>
+      <p><strong>Source code:</strong> <a href="https://github.com/thamarakandabada/personal-website/" target="_blank">GitHub repo</a></p>
     </div>
     <p>This website uses HTML, CSS and a few bits of JavaScript for customisation.</p>
     <p>My blog posts have an RSS feed that you can subscribe to using any feed reader (made possible with <a href="https://www.subtome.com/" target="_blank">SubToMe</a>). All blog posts support <a href="https://indieweb.org/Webmention" target="_blank">Webmentions</a>. The site also supports a number of <a href="https://indieweb.org/h-card" target="_blank">h-card</a> microformat properties (<a href="https://indiewebify.me/validate-h-card/?url=https%3A%2F%2Fthamara.co.uk" target="_blank">see here</a>). All <a href="/feeds">feeds</a> are marked up with <a href="https://microformats.org/wiki/h-feed" target="_blank">h-feed</a>.</p>
     <p>All content is hand-coded by me from the ground up. LLMs are sparingly used to check code.</p>
     <p>While this site is fully responsive, it is best viewed on desktop.</p>
-
-    <h2>Design & Writing (See also: <a href="/style">Style</a>, <a href="/ai">AI</a>)</h2>
+  <h2>Design & Writing (See also: <a href="/style">Style</a>, <a href="/ai">AI</a>)</h2>
     <p>This is the sixth iteration of my website. My goal with this version was to keep it text-based and clean. There are no analytics, no newsletter pop-ups, no <a href="https://daringfireball.net/2026/05/what_is_a_dickover" target="_blank">dickovers</a>, no ads, and I’m not trying to sell you anything.</p>
-
     <h3>Typography</h3>
-    <p>This site uses the typeface <a href="https://www.type-together.com/maiola-font" target="_blank">Maiola</a> from the foundry <a href="https://www.type-together.com/" target="_blank">TypeTogether</a> throughout. Code blocks and inline code use the monospace font <a href="https://fonts.google.com/specimen/Cascadia+Mono" target="_blank">Cascadia Mono</a>.</p>
-
+      <p>This site uses the typeface <a href="https://www.type-together.com/maiola-font" target="_blank">Maiola</a> from the foundry <a href="https://www.type-together.com/" target="_blank">TypeTogether</a> throughout. Code blocks and inline code use the monospace font <a href="https://fonts.google.com/specimen/Cascadia+Mono" target="_blank">Cascadia Mono</a>.</p>
     <h3>Editorial</h3>
-    <ul>
-      <li><strong>Language:</strong> British English (colour, programme, metre).</li>
-      <li><strong>Oxford Comma:</strong> Strictly enforced.</li>
-      <li><strong>Dates:</strong> DD MMM YYYY (e.g., 12 Feb 2026).</li>
-      <li><strong>AI:</strong> All writing on this site is 100% human. AI is used for code assistance only, never for prose. Note: I have been using em dashes in my writing long before AI tools were widely available—all em dashes on this website are enthusiastically human-crafted.</li>
-      <li><strong>Notebook Entries:</strong> Thamara’s Notebook © 2026 by Thamara Kandabada is licensed under CC BY-NC-SA 4.0</li>
-    </ul>
-
-    <h2>Carbon Footprint</h2>
+      <ul>
+        <li><strong>Language:</strong> British English (colour, programme, metre).</li>
+        <li><strong>Oxford Comma:</strong> Strictly enforced.</li>
+        <li><strong>Dates:</strong> DD MMM YYYY (e.g., 12 Feb 2026).</li>
+        <li><strong>AI:</strong> All writing on this site is 100% human. AI is used for code assistance only, never for prose. Note: I have been using em dashes in my writing long before AI tools were widely available—all em dashes on this website are enthusiastically human-crafted.</li>
+        <li><strong>Notebook Entries:</strong> Thamara’s Notebook © 2026 by Thamara Kandabada is licensed under CC BY-NC-SA 4.0</li>
+      </ul>
+  <h2>Carbon Footprint</h2>
     <p>This website produces <a href="https://www.websitecarbon.com/website/thamara-co-uk/" target="_blank">0.10g of CO2 per visit</a>.</p>
-
-    <h2>Privacy</h2>
+  <h2>Privacy</h2>
     <p><strong>Data Collection:</strong> This website does not use cookies. If you leave a note on my <a href="/guestbook">guestbook</a> or comment on one of my blog posts, the information you provide (name and email) is used solely to respond to you. I do not share or sell this data to third parties.</p>
     <p><strong>Analytics:</strong> This website collects anonymised data through <a href="https://vercel.com/docs/analytics" targets="_blank">Vercel Analytics</a> which helps me understand what parts of the website are being read. This tool does not use cookies and respects the users' privacy. I am also using <a href="https://vercel.com/docs/speed-insights" target="_blank">Vercel Speed Insights</a> to optimise the browsing experience.</p>
     <p><strong>External Links:</strong> This site links to third-party platforms (Letterboxd, Trakt, etc.). Once you leave this site, their respective privacy policies apply.</p>
-
-    <h2>The Quote</h2>
+  <h2>The Quote</h2>
     <p>The phrase in the footer, <i>“Ars longa, vita brevis”</i> (Art is long, life is short), is one of my favourites that serves as a reminder that while our time here is fleeting, the work we create will outlast us. It also means that any craft worth learning requires a lifetime of dedication.</p>
-
 </PageLayout>

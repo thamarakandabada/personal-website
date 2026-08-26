@@ -19,58 +19,51 @@ const pageTitle = "Now - Thamara Kandabada";
 const slashpageImage = "/featured-images/now.png"
 ---
 <PageLayout title={pageTitle} image={slashpageImage}>
-
-    <h1>Now</h1>
-
-      <p>This is a page dedicated to what’s happening in my life right now. Inspired by my friend <a href="https://ukr.lk/now/" target="_blank">Kaveen’s now page</a>, which in turn was inspired by <a href="https://nownownow.com/about" target="">nownownow.com</a>. I also have pages for my past and current <a href="/projects">/projects</a> and various <a href="/design">/design</a> work I've done over the years.</p>
-      <p>You can explore all slashpages at <a href="/garden">/garden</a>.</p>
-      <p><strong>Last Updated:</strong> <span id="commit-date">{formattedDate}</span></p>
-
-      <div class="now-location-weather">
-        <ul>
-          <li><strong>Homebase:</strong> Belfast</li>
-          <li><strong>Current location:</strong> Loading...</li>
-          <li><strong>Weather:</strong> Loading...</li>
-        </ul>  
-      </div>
+  <h1>Now</h1>
+    <p>This is a page dedicated to what’s happening in my life right now. Inspired by my friend <a href="https://ukr.lk/now/" target="_blank">Kaveen’s now page</a>, which in turn was inspired by <a href="https://nownownow.com/about" target="_blank">nownownow.com</a>. I also have pages for my past and current <a href="/projects">projects</a> and various <a href="/design">design</a> work I've done over the years.</p>
+    <p><strong>Last Updated:</strong> <span id="commit-date">{formattedDate}</span></p>
+    <div class="now-location-weather">
+      <ul>
+        <li><strong>Homebase:</strong> Belfast</li>
+        <li><strong>Current location:</strong> Loading...</li>
+        <li><strong>Weather:</strong> Loading...</li>
+      </ul>  
+    </div>
     <div class="now-grid">
-    <div>
-    <h2>What I'm working on</h2>
-      <ul>
-        <li>Training to run a 10K and a sub-30-minute 5K</li>
-        <li>Tinkering with this website</li>
-        <ul>
-          <li>Implementing Webmention support</li>
-          <li>Writing as many posts as I can this August (although I am not officially participating in Blaugust)</li>
-        </ul>
-        <li>Working through my <a href="/notebook/2026/05/spring-summer-reading-list">summer reading list</a></li>
-      </ul>
-    </div>
-    
-    <div>
-    <h2>Broad goals for the next few months</h2>
-      <ul>
-        <li>Play more music</li>
-        <li>Read more</li>
-        <li>Design a font</li>
-        <li>Save for a deposit to buy a house</li>
-      </ul>
+      <div>
+        <h2>What I'm working on</h2>
+          <ul>
+            <li>Training to run a 10K and a sub-30-minute 5K</li>
+            <li>Tinkering with this website</li>
+            <ul>
+              <li>Writing as many posts as I can this August (although I am not officially participating in Blaugust)</li>
+            </ul>
+            <li>Working through my <a href="/notebook/2026/05/spring-summer-reading-list">summer reading list</a></li>
+          </ul>
+      </div>
+      <div>
+        <h2>Broad goals for the next few months</h2>
+          <ul>
+            <li>Play more music</li>
+            <li>Read more</li>
+            <li>Design a font</li>
+            <li>Save for a deposit to buy a house</li>
+          </ul>
       </div>
     </div>
-
-    <h2>Hobbies</h2>
-      <div class="hobbies-section">
-        <div class="hobby-cinema">
-          <h3>Cinema</h3>
-            <figure>
-              <Picture
-                src={cinemaImage}
-                alt="The entrance to QFT Belfast"
-                formats={['avif', 'webp']}
-              />
-            </figure>
-            <p>I’m an avid cinema-goer. I spend most of my free time at my favourite place in Belfast, the <a href="https://queensfilmtheatre.com/" target="_blank">Queen’s Film Theatre</a>.</p>
-            <p>I sometimes make <a href="/design#alternate-film-tv-posters">alternate posters</a> for films that I like.</p>
+  <h2>Hobbies</h2>
+    <div class="hobbies-section">
+      <div class="hobby-cinema">
+        <h3>Cinema</h3>
+          <figure>
+            <Picture
+              src={cinemaImage}
+              alt="The entrance to QFT Belfast"
+              formats={['avif', 'webp']}
+            />
+          </figure>
+          <p>I’m an avid cinema-goer. I spend most of my free time at my favourite place in Belfast, the <a href="https://queensfilmtheatre.com/" target="_blank">Queen’s Film Theatre</a>.</p>
+          <p>I sometimes make <a href="/design#alternate-film-tv-posters">alternate posters</a> for films that I like.</p>
             <p>Sundry links:</p>
               <ul class="hobby-cinema-list">
                 <li><a href="https://letterboxd.com/thamarak/list/2026-favourites-so-far/" target="_blank">Favourite films of 2026… so far</a></li>
