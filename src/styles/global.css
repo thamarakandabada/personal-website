@@ -289,6 +289,11 @@ p {
     word-break: break-word;
 }
 
+.homepage-intro-paragraph {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 .post-reference textarea, .permalink textarea {
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -478,6 +483,8 @@ iframe {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .guestbook-intro {

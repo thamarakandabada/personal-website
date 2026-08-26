@@ -28,17 +28,18 @@ const slashpageImage = "/featured-images/homepage.png"
   ]}
 >
 
-  <h1>Greetings, friends & strangers.</h1>
+<h1>Greetings, friends & strangers.</h1>
   <div class="h-card">
-  <div class="home-page-hero">
-    <div class="home-page-hero-intro">
-      <p><span id="day">Hello</span> and welcome to my personal website.</p>
-      <p><span class="p-note">I’m Thamara, <a href="/resume">furniture-peddler</a> by day and <a href="/now">wearer-of-many-hats</a> by night. I like to watch films, enjoy live music, tinker with this website, play guitar, and run in my free time. I'm currently based in Belfast, Northern Ireland.</span></p>
-      <p>I’ve had a website since 2014, which was when I first learned the basics of web design—specifically, HTML, CSS, and WordPress. This is the fourth or fifth iteration; I’ve now lost count.</p>
-      <p>You can learn more about how this site is built in <a href="/colophon">the colophon</a>, or explore below. Bust most importantly, thank you for visiting. Please consider signing my <a href="/guestbook">guestbook</a>, I'd love to know what you thought of it.</p>
-    </div>
+    <div class="home-page-hero">
+      <div class="home-page-hero-intro">
+        <p class="homepage-intro-paragraph"><span id="day">Hello</span> and welcome to my personal website.</p>
+        <p><span class="p-note">I’m Thamara, <a href="/resume">furniture-peddler</a> by day and <a href="/now">wearer-of-many-hats</a> by night. I like to watch films, enjoy live music, tinker with this website, play guitar, and run in my free time. I'm currently based in Belfast, Northern Ireland.</span></p>
+        <p>I’ve had a website since 2014, which was when I first learned the basics of web design—specifically, HTML, CSS, and WordPress. This is the fourth or fifth iteration; I’ve now lost count.</p>
+        <p>This website will always remain a work in progress, and you will frequently see things that are half-built, or simply broken.</p>
+        <p>If you enjoyed browsing it, please consider leaving a note in my <a href="/guestbook">guestbook</a>. I'd love to know what you thought.</p>
+      </div>
 
-    <!-- My h-card -->
+      <!-- My h-card -->
       <div style="display: none;">
         <a class="p-name u-url u-uid" href="https://thamara.co.uk/" rel="me">Thamara Kandabada</a>
         <p class="p-note">Generalist. Tinkerer.</p>
@@ -50,8 +51,8 @@ const slashpageImage = "/featured-images/homepage.png"
           <span class="p-country-name">United Kingdom</span>
         </div>
         <!-- identity -->
-          <p class="p-sex">Male</p>
-          <p class="p-gender-identity">Cisgender</p>
+        <p class="p-sex">Male</p>
+        <p class="p-gender-identity">Cisgender</p>
       </div>
 
       <div style="display: none;">
@@ -60,23 +61,21 @@ const slashpageImage = "/featured-images/homepage.png"
         <a rel="me" href="https://www.linkedin.com/in/thamarakandabada/">LinkedIn</a>
       </div>
 
-    <div class="home-page-hero-image">
-    <figure>
-      <Picture
-      class="u-photo"
-      src={coverImage}
-      alt="Me sitting behind the drum set at the Casbah Coffee Club in Liverpool, the birthplace of The Beatles."
-      formats={['avif', 'webp']}
-      />
-    <figcaption>No, I can't play the drums.</figcaption>
-    </figure>
+      <div class="home-page-hero-image">
+        <figure>
+          <Picture
+            class="u-photo"
+            src={coverImage}
+            alt="Me sitting behind the drum set at the Casbah Coffee Club in Liverpool, the birthplace of The Beatles."
+            formats={['avif', 'webp']}
+          />
+          <figcaption>No, I can't play the drums.</figcaption>
+        </figure>
+      </div>
     </div>
-    </div>
-  
   </div>
 
-  <h2>Explore my digital garden</h2>
-
+<h2>Explore my digital garden</h2>
   <div class="homepage-flex">
     <div  class="featured-pages">   
       <h3>At a glance</h3>
@@ -93,24 +92,39 @@ const slashpageImage = "/featured-images/homepage.png"
     <div class="recent-blogposts">
       <h3>From the notebook</h3>
         <ul class="recent-blogposts-list">
-              {posts.map(post => (
-              <li><a href={`/notebook/${post.id}`}>{post.data.title}</a></li>
-              ))}
+          {posts.map(post => (
+          <li><a href={`/notebook/${post.id}`}>{post.data.title}</a></li>
+          ))}
           <li><strong><a href="/notebook">All posts</a></strong></li>
         </ul>
     </div>
     <div class="webrings">
-      <h3>See the neighbourhood</h3>
-        <p>This website is part of the <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a>. View more sites like this below.</p>
+      <h3>Webrings</h3>
+        <p>This website is part of many webrings you can traverse through using the links below.</p>
         <ul class="webring-links">
           <li><a href="https://xn--sr8hvo.ws/previous">Previous</a></li>
-          <li><a href="https://xn--sr8hvo.ws/random">Random</a></li>
+          <li><a href="https://xn--sr8hvo.ws">IndieWeb</a></li>
           <li><a href="https://xn--sr8hvo.ws/next">Next</a></li>
+        </ul>
+        <ul class="webring-links">
+          <li><a href="https://webwriterscollective.com/webring/previous/thamara.co.uk/">Previous</a></li>
+          <li><a href="https://webwriterscollective.com/webring/">WWC</a></li>
+          <li><a href="https://webwriterscollective.com/webring/next/thamara.co.uk">Next</a></li>
+        </ul>
+        <ul class="webring-links">
+          <li><a href="https://zacharykai.net/lists/starwars?action=prev">Previous</a></li>
+          <li><a href="https://zacharykai.net/lists/starwars">Star Wars</a></li>
+          <li><a href="https://zacharykai.net/lists/starwars?action=next">Next</a></li>
+        </ul>
+        <ul class="webring-links">
+          <li><a href="https://webri.ng/webring/cssjoy/previous?via=https://thamara.co.uk">Previous</a></li>
+          <li><a href="https://cs.sjoy.lol/">CSS Joy</a></li>
+          <li><a href="https://webri.ng/webring/cssjoy/next?via=https://example.com/path">Next</a></li>
         </ul>
     </div>
   </div>
 
-  <script is:inline>
+<script is:inline>
   document.getElementById("day").innerText = "Happy " + ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].at(new Date().getDay() - 1);
-  </script>
+</script>
 </PageLayout>
