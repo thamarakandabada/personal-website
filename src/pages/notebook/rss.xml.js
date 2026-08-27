@@ -21,14 +21,30 @@ export async function GET(context) {
       const fallbackTitle = post.data.title || post.data.description || 'Untitled Streamlet';
       const itemUrl = new URL(`/notebook/${post.id}/`, siteUrl).href;
 
-      const { author, ...restData } = post.data;
+      const { author, imageUrl, ...restData } = post.data;
 
-      return {
+      let description = post.data.description || fallbackTitle;
+      if (imageUrl && imageUrl.trim() !== '') {
+        const absoluteImageUrl = new URL(imageUrl, siteUrl).href;
+        description = `<p><img src="${absoluteImageUrl}" alt="" /></p>` + description;
+      }
+
+      const item = {
         ...restData,
         title: fallbackTitle,
-        description: post.data.description || fallbackTitle,
+        description: description,
         link: itemUrl,
       };
+
+      if (imageUrl && imageUrl.trim() !== '') {
+        const absoluteImageUrl = new URL(imageUrl, siteUrl).href;
+        item.enclosure = {
+          url: absoluteImageUrl,
+          type: 'image/jpeg',
+        };
+      }
+
+      return item;
     }),
   });
 }
