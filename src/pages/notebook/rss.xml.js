@@ -21,30 +21,15 @@ export async function GET(context) {
       const fallbackTitle = post.data.title || post.data.description || 'Untitled Streamlet';
       const itemUrl = new URL(`/notebook/${post.id}/`, siteUrl).href;
 
-      const { author, imageUrl, ...restData } = post.data;
+      // Destructure 'author' out of post.data to prevent the RSS email validation error
+      const { author, ...restData } = post.data;
 
-      let description = post.data.description || fallbackTitle;
-      if (imageUrl && imageUrl.trim() !== '') {
-        const absoluteImageUrl = new URL(imageUrl, siteUrl).href;
-        description = `<p><img src="${absoluteImageUrl}" alt="" /></p>` + description;
-      }
-
-      const item = {
+      return {
         ...restData,
         title: fallbackTitle,
-        description: description,
+        description: post.data.description || fallbackTitle,
         link: itemUrl,
       };
-
-      if (imageUrl && imageUrl.trim() !== '') {
-        const absoluteImageUrl = new URL(imageUrl, siteUrl).href;
-        item.enclosure = {
-          url: absoluteImageUrl,
-          type: 'image/jpeg',
-        };
-      }
-
-      return item;
     }),
   });
 }
