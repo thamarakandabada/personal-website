@@ -22,44 +22,39 @@ const isoDate = frontmatter.pubDate
 >
 
 <article class="h-entry">
-<a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
-<a class="u-url" href={Astro.url.href} hidden>Permalink</a>
-
-    <div class="blog-header-no-image">
-	  <p><span class="blog-date"><time class="dt-published" datetime={isoDate}>
-	    {formattedDate}
-	  </time></span>//<span class="blog-category">In {frontmatter.sections?.map((section: string, index: number) => (<><a class="p-category" href={`/notebook/sections/${String(section).toLowerCase().replace(/\s+/g, '-')}/`}>{section}</a></>))}</span></p>
-      <h1 class="blog-title p-name">{frontmatter.title}</h1>
+  <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
+  <a class="u-url" href={Astro.url.href} hidden>Permalink</a>
+  <div class="blog-header-no-image">
+	  <p><span class="blog-date"><time class="dt-published" datetime={isoDate}>{formattedDate}</time></span>//<span class="blog-category">In {frontmatter.sections?.map((section: string, index: number) => (<><a class="p-category" href={`/notebook/sections/${String(section).toLowerCase().replace(/\s+/g, '-')}/`}>{section}</a></>))}</span></p>
+    <h1 class="blog-title p-name">{frontmatter.title}</h1>
 	  <p class="blog-description p-summary">{frontmatter.description}</p>
 	  <p class="blog-author">by {frontmatter.author}</p>
-    </div>
-    <div class="e-content">
-      <slot />
-    </div>
-	  <div class="topics-reference">
-    	<div class="topics-list">
+  </div>
+  <div class="e-content">
+    <slot />
+  </div>
+	<div class="topics-reference">
+    <div class="topics-list">
 		  <ul>
 		    <li><strong>Topics:</strong></li>
 		      {frontmatter.topics?.map((topic: string) => <li><a class="p-category" href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
 		  </ul>
-	    </div>
-
-<PostReference />
 	  </div>
-
-      <!-- Discuss comment widget -->
-        <link rel="stylesheet" href="https://discuss.thamara.co.uk/client.css">
-        <div id="discuss-comments" data-dark-selector=".dark"></div>
-        <script is:inline src="https://discuss.thamara.co.uk/client.js"></script>
-        <script>
-          new DiscussWidget({
-            container: document.getElementById('discuss-comments'),
-            serverUrl: 'https://discuss.thamara.co.uk',
-	        darkSelector: '.dark',
-	        title: 'Leave your thoughts',
-          });
-        </script>
+    <PostReference />
+	</div>
+  <!-- Discuss comment widget -->
+  <link rel="stylesheet" href="https://discuss.thamara.co.uk/client.css">
+  <div id="discuss-comments" data-dark-selector=".dark"></div>
+    <script is:inline src="https://discuss.thamara.co.uk/client.js"></script>
+    <script>
+      new DiscussWidget({
+        container: document.getElementById('discuss-comments'),
+        serverUrl: 'https://discuss.thamara.co.uk',
+	    darkSelector: '.dark',
+	    title: 'Leave your thoughts',
+      });
+    </script>
     <Webmentions targetUrl={currentUrl} />
 		<BlogPostNavPrevNext />
-    </article>
+</article>
 </PageLayout>

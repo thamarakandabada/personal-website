@@ -21,27 +21,27 @@ const isoDate = frontmatter.pubDate
 >
 
 <article class="h-entry">
-<a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
-<a class="u-url" href={Astro.url.href} hidden>Permalink</a>
-<h1 class="p-name" hidden>Streamlet - {formattedDate}</h1>
+  <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
+  <a class="u-url" href={Astro.url.href} hidden>Permalink</a>
+  <h1 class="p-name" hidden>Streamlet - {formattedDate}</h1>
     <div class="blog-header-no-image">
 	  <p><span class="blog-date"><time class="dt-published" datetime={isoDate}>{formattedDate}</time></span>//<span class="blog-category">In {frontmatter.sections?.map((section: string, index: number) => (<><a class="p-category" href={`/notebook/sections/${String(section).toLowerCase().replace(/\s+/g, '-')}/`}>{section}</a></>))}</span></p>
 	  <p class="blog-author">by {frontmatter.author}</p>
     </div>
     <div class="e-content">
-	<p class="p-summary">{frontmatter.description}</p>
-	<slot />
+	  <p class="p-summary">{frontmatter.description}</p>
+	  <slot />
 	</div>	
-	    	<div class="topics-reference">
-    	<div class="topics-list">
-		  <ul>
-		    <li><strong>Topics:</strong></li>
+	<div class="topics-reference">
+      <div class="topics-list">
+	    <ul>
+		  <li><strong>Topics:</strong></li>
 		    {frontmatter.topics?.map((topic: string) => <li><a class="p-category" href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
-		  </ul>
-	    </div>
-<PostReference />
-		</div>
-		<Webmentions targetUrl={currentUrl} />
-		<BlogPostNavPrevNext />
-		</article>	
-</PageLayout>	
+		</ul>
+	  </div>
+      <PostReference />
+	</div>
+	<Webmentions targetUrl={currentUrl} />
+	<BlogPostNavPrevNext />
+</article>	
+</PageLayout>
