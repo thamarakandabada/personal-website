@@ -11,7 +11,7 @@ const posts = (await getCollection('blog'))
   .filter(post => post.data.topics?.includes('WWC'))
   .slice(0,5);
 const pageTitle = "Web Writers' Collective - Thamara Kandabada";
-const slashpageImage = "/featured-images/wwc.png"
+const slashpageImage = "/featured-images/wwc.png";
 ---
 <PageLayout title={pageTitle} image={slashpageImage}>
     <h1>Web Writers' Collective</h1>

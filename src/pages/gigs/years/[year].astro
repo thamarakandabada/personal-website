@@ -26,6 +26,7 @@ export async function getStaticPaths() {
 
 const { year } = Astro.params;
 const { posts } = Astro.props;
+const slashpageImage = "/featured-images/gigs.png";
 ---
 <PageLayout title={`Gigs in ${year} - Thamara Kandabada`}>
     <h1>Gigs in {year}</h1>

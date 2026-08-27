@@ -10,7 +10,7 @@ const posts = (await getCollection('blog'))
   .filter(post => !post.data.sections?.includes('Stream'))
   .slice(0,6);
 const pageTitle = "Thamara Kandabada - Generalist. Tinkerer.";
-const slashpageImage = "/featured-images/homepage.png"
+const slashpageImage = "/featured-images/homepage.png";
 ---
 
 <PageLayout 

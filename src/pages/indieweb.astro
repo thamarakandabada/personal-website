@@ -8,7 +8,7 @@ const posts = (await getCollection('blog'))
   .filter(post => post.data.topics?.includes('IndieWeb'))
   .slice(0,5);
 const pageTitle = "IndieWeb - Thamara Kandabada";
-const slashpageImage = "/featured-images/indieweb.png"
+const slashpageImage = "/featured-images/indieweb.png";
 ---
 <PageLayout title={pageTitle} image={slashpageImage}>
     <h1>IndieWeb</h1>

@@ -14,7 +14,7 @@ export const getStaticPaths = (async ({paginate}) => {
 const { page } = Astro.props;
 const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
 const pageTitle = "Design - Thamara Kandabada";
-const slashpageImage = "/featured-images/design.png"
+const slashpageImage = "/featured-images/design.png";
 ---
 <PageLayout title={pageTitle} image={slashpageImage}>
 <div class="h-feed">

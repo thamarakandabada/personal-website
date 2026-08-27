@@ -5,7 +5,7 @@ import { Picture } from 'astro:assets';
 import balrogImage from '../assets/images/style/gothmog.jpg';
 
 const pageTitle = "Style - Thamara Kandabada";
-const slashpageImage = "/featured-images/style.png"
+const slashpageImage = "/featured-images/style.png";
 ---
 <PageLayout title={pageTitle} image={slashpageImage}>
   <h1>Style</h1>
@@ -103,8 +103,8 @@ const slashpageImage = "/featured-images/style.png"
   <p>Inline <Code code={`a`} inline /> elements in the body are set in the accent colour, with an underline offset at <Code code={`0.4rem`} inline />. On hover, elements transition to the primary text colour with a wavy underline in <Code code={`0.5s`} inline />. Navigation links in the header and footer vary, with the header opting for a simple underline reveal on hover, and the footer transitioning from the primary text colour to the accent colour on hover.</p>
   <p>Some linked elements resize using the <Code code={`transform: scale()`} inline /> function on hover. The posts list in the <a href="/notebook">Notebook</a> is an example of this.</p>
   <p>Inline code snippets are set in the monospace font Cascadia Mono at <Code code={`0.9rem`} inline /> (to offset variable font heights between Cascadia Mono and Maiola) and are enclosed in a background block with a border radius of <Code code={`4px`} inline />.</p>
-  <p>Code blocks are also enclosed in a background block with a boder radius of <Code code={`4px`} inline /> and <Code code=`0.5rem 1rem` inline /> padding. Overflow on the x-axis triggers a scrollbar. Syntax highlighting is handled by the built-in <a href="https://shiki.style/" target="_blank">Shiki</a> integration. I'm using the default <em>GitHub Dark</em> theme from Shiki, and this does not currently switch to a light theme when the website theme is toggled.</p>
-  <p>See and example below:</p>
+  <p>Code blocks are also enclosed in a background block with a border radius of <Code code={`4px`} inline /> and <Code code=`0.5rem 1rem` inline /> padding. Overflow on the x-axis triggers a scrollbar. Syntax highlighting is handled by the built-in <a href="https://shiki.style/" target="_blank">Shiki</a> integration. I'm using the default <em>GitHub Dark</em> theme from Shiki, and this does not currently switch to a light theme when the website theme is toggled.</p>
+  <p>See an example below:</p>
   <Code
   lang="css"
   code={`
@@ -116,7 +116,7 @@ const slashpageImage = "/featured-images/style.png"
       border-radius: 4px;
   }
   `} />
-  <p>Inline code, however, is handled slightly differently. They are enclosed in a background set in the tertiary background colour, with a <Code code=`4px` inline /> border radius and <Code code=`0.25rem 0.5rem` inline /> padding.</p>
+  <p>Inline code snippets, however, are handled slightly differently. They are enclosed in a background set in the tertiary background colour, with a <Code code=`4px` inline /> border radius and <Code code=`0.25rem 0.5rem` inline /> padding.</p>
   <p>Blockquotes are italicised. They are <Code code={`1.5rem`} inline /> in font size and styled in the secondary text colour, with a <Code code={`1px`} inline /> left border styled in the accent colour. Blockquotes are only used for quotations rather than as a decorative element. See example below. </p>
   <blockquote>
     Arise, arise, Riders of Théoden!<br>Fell deeds awake: fire and slaughter!<br>Spear shall be shaken, shield be splintered,<br>a sword-day, a red day, ere the sun rises!<br>Ride now, ride now! Ride to Gondor!
