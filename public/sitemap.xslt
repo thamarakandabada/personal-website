@@ -8,7 +8,6 @@
     <xsl:template match="/">
 <xsl:message>Powered by <a href="https://www.xml.style/sitemap/">XML.Style</a></xsl:message>
 
-
 <!-- get the hostname from the first url/loc -->
 <xsl:variable name="hostname" select="substring-before(substring-after(/sitemap:urlset/sitemap:url[1]/sitemap:loc, '://'), '/')" />
   <html>
@@ -16,11 +15,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="referrer" content="unsafe-url" />
       <title>Sitemap for <xsl:value-of select="$hostname"/></title>
-      <link rel="stylesheet" href="https://thamara.co.uk/global.css" />
+      <link rel="stylesheet" href="https://thamara.co.uk/sitemapstyle.css" />
     </head>
     <body>
       <main class="container">
-        <h1>Pages on <xsl:value-of select="$hostname"/></h1>
+        <h1>Sitemap for <em><xsl:value-of select="$hostname"/></em></h1>
+        <p>This dynamically generated sitemap includes all pages and posts on this website.</p>
         <ul>
           <xsl:for-each select="sitemap:urlset/sitemap:url">
           <xsl:variable name="sitemap_loc"><xsl:value-of select="sitemap:loc"/></xsl:variable>
@@ -36,6 +36,6 @@
         <p><xsl:value-of select="count(sitemap:urlset/sitemap:url)"/> pages</p>
       </main>
     </body>
-        </html>
-    </xsl:template>
+  </html>
+</xsl:template>
 </xsl:stylesheet>
