@@ -24,49 +24,44 @@ const isoDate = frontmatter.pubDate
   <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
   <a class="u-url" href={Astro.url.href} hidden>Permalink</a>
     <div class="blog-header">
-	  <p><span class="blog-date"><time class="dt-published" datetime={isoDate}>
-	    {formattedDate}
-	  </time></span>//<span class="blog-category">In {frontmatter.sections?.map((section: string, index: number) => (<><a class="p-category" href={`/notebook/sections/${String(section).toLowerCase().replace(/\s+/g, '-')}/`}>{section}</a></>))}</span></p>
+	    <p><span class="blog-date"><time class="dt-published" datetime={isoDate}>{formattedDate}</time></span>//<span class="blog-category">In {frontmatter.sections?.map((section: string, index: number) => (<><a class="p-category" href={`/notebook/sections/${String(section).toLowerCase().replace(/\s+/g, '-')}/`}>{section}</a></>))}</span></p>
       <h1 class="blog-title p-name">{frontmatter.title}</h1>
-	  <p class="blog-description p-summary">{frontmatter.description}</p>
-	  <p class="blog-author">by {frontmatter.author}</p>
+	    <p class="blog-description p-summary">{frontmatter.description}</p>
+	    <p class="blog-author">by {frontmatter.author}</p>
     </div>
-
-	  <figure class="blog-hero-image u-photo">
+    <figure class="blog-hero-image u-photo">
       <Picture
         src={frontmatter.imageUrl}
-		formats={['avif', 'webp']}
-		alt={frontmatter.imageAlt}
+		    formats={['avif', 'webp']}
+		    alt={frontmatter.imageAlt}
       />
       <figcaption>{frontmatter.imageCaption}</figcaption>
-      </figure>
-      <div class="e-content">
+    </figure>
+    <div class="e-content">
       <slot />
-	</div>  
-    	<div class="topics-reference">
+	  </div>  
+    <div class="topics-reference">
     	<div class="topics-list">
-		  <ul>
-		    <li><strong>Topics:</strong></li>
-		      {frontmatter.topics?.map((topic: string) => <li><a class="p-category" href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
-		  </ul>
+		    <ul>
+		      <li><strong>Topics:</strong></li>
+		        {frontmatter.topics?.map((topic: string) => <li><a class="p-category" href={`/notebook/topics/${String(topic).toLowerCase().replace(/\s+/g, '-')}/`}>{topic}</a></li>)}
+		    </ul>
 	    </div>
-<PostReference />
+      <PostReference />
     </div>
-
-<!-- Discuss comment widget -->
-<link rel="stylesheet" href="https://discuss.thamara.co.uk/client.css">
-<div id="discuss-comments" data-dark-selector=".dark"></div>
-<script is:inline src="https://discuss.thamara.co.uk/client.js"></script>
-<script>
-  new DiscussWidget({
-    container: document.getElementById('discuss-comments'),
-    serverUrl: 'https://discuss.thamara.co.uk',
-	darkSelector: '.dark',
-	title: 'Leave your thoughts',
-  });
-</script>
-<Webmentions targetUrl={currentUrl} />
-
-		<BlogPostNavPrevNext />
+    <!-- Discuss comment widget -->
+      <link rel="stylesheet" href="https://discuss.thamara.co.uk/client.css">
+      <div id="discuss-comments" data-dark-selector=".dark"></div>
+      <script is:inline src="https://discuss.thamara.co.uk/client.js"></script>
+      <script>
+        new DiscussWidget({
+          container: document.getElementById('discuss-comments'),
+          serverUrl: 'https://discuss.thamara.co.uk',
+	      darkSelector: '.dark',
+	      title: 'Leave your thoughts',
+        });
+      </script>
+    <Webmentions targetUrl={currentUrl} />
+    <BlogPostNavPrevNext />
 </article>
 </PageLayout>
