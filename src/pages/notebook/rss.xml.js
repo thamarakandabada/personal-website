@@ -16,6 +16,7 @@ export async function GET(context) {
       pubDate: post.data.pubDate,
       author: post.data.author,
       description: post.data.description,
+      image: post.data.imageUrl,
       link: `/notebook/${post.id}/`,
     })),
     customData: `<language>en-gb</language>`,
