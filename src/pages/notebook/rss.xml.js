@@ -1,9 +1,5 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
-import sanitizeHtml from 'sanitize-html';
-import MarkdownIt from 'markdown-it';
-
-const parser = new MarkdownIt();
 
 export async function GET(context) {
   const blog = await getCollection('blog');
@@ -23,8 +19,8 @@ export async function GET(context) {
     `,
     items: posts.map((post) => {
       const fallbackTitle = post.data.title || post.data.description || 'Untitled Streamlet';
-      const postBody = post.body || '';
       const itemUrl = new URL(`/notebook/${post.id}/`, siteUrl).href;
+
       const { author, ...restData } = post.data;
 
       return {
@@ -32,9 +28,6 @@ export async function GET(context) {
         title: fallbackTitle,
         description: post.data.description || fallbackTitle,
         link: itemUrl,
-        content: sanitizeHtml(parser.render(postBody), {
-          allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
-        }),
       };
     }),
   });
