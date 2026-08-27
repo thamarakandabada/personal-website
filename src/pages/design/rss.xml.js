@@ -17,6 +17,9 @@ export async function GET(context) {
       description: post.data.description,
       link: `/design/${post.id}/`,
     })),
-    customData: `<language>en-gb</language>`,
+    customData: `
+    <language>en-gb</language>
+    <atom:link href="${new URL('/design/rss.xml', siteUrl).href}" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    `,
   });
 }
