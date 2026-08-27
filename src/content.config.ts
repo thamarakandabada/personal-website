@@ -4,6 +4,7 @@ import { glob } from "astro/loaders";
 import { defineCollection } from "astro:content";
 // Import Zod
 import { z } from "astro/zod";
+
 // Define a `loader` and `schema` for each collection
 const blog = defineCollection({
     loader: glob({ pattern: '**/[^_]*.md', base: "./src/notebook" }),
