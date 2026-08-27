@@ -20,7 +20,7 @@
     <body>
       <main class="container">
         <h1>Sitemap for <em><xsl:value-of select="$hostname"/></em></h1>
-        <p>This dynamically generated sitemap includes all pages and posts on this website.</p>
+        <p>This dynamically generated sitemap includes all pages and posts on this website in alphabetical order.</p>
         <ul>
           <xsl:for-each select="sitemap:urlset/sitemap:url">
           <xsl:variable name="sitemap_loc"><xsl:value-of select="sitemap:loc"/></xsl:variable>
