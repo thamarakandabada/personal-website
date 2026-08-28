@@ -14,23 +14,32 @@ export async function getStaticPaths() {
 
 export async function GET(context) {
   const { sectionName } = context.props;
-  
-  const posts = await getCollection("blog");
-  
-  const sectionPosts = posts.filter((post) => post.data.sections?.includes(sectionName));
+const sectionParam = context.params.section;
+  const blog = await getCollection('blog');
+  const sectionPosts = blog.filter((post) => post.data.sections?.includes(sectionName));
   sectionPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const siteUrl = context.site || 'https://thamara.co.uk';
 
   return rss({
     title: `${sectionName} - Notebook - Thamara Kandabada`,
     description: `Uncensored thoughts on ${sectionName}`,
-    site: context.site,
-    items: sectionPosts.map((post) => ({
-      title: post.data.title,
-      pubDate: post.data.pubDate,
-      author: post.data.author,
-      description: post.data.description,
-      link: `/notebook/${post.id}/`,
-    })),
-    customData: `<language>en-gb</language>`,
+    site: siteUrl,
+    customData: `
+      <language>en-gb</language>
+<atom:link href="${new URL(`/notebook/${sectionParam}/rss.xml`, siteUrl).href}" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />    `,
+    items: sectionPosts.map((post) => {
+      const fallbackTitle = post.data.title || post.data.description || 'Untitled Post';
+      const itemUrl = new URL(`/notebook/${post.id}/`, siteUrl).href;
+
+      // Destructure 'author' out of post.data to prevent the RSS email validation error
+      const { author, ...restData } = post.data;
+
+      return {
+        ...restData,
+        title: fallbackTitle,
+        description: post.data.description || fallbackTitle,
+        link: itemUrl,
+      };
+    }),
   });
 }
