@@ -12,6 +12,8 @@ html {
   --text-secondary: #67686b;
   --border-color: #c6beb0;
   --accent: #AF4F41;
+  --accent-op1: #AF4F4130;
+  --accent-op2: #AF4F4190;
 }
 
 /* Dark mode */
@@ -24,6 +26,8 @@ html.dark {
   --text-secondary: #A1A1AA;
   --border-color: #33373c;
   --accent: #22D3EE;
+  --accent-op1: #22D3EE30;
+  --accent-op2: #22D3EE90;
 }
 
 /* Main components */
@@ -81,10 +85,6 @@ nav p, nav div {
 .header a {
     text-decoration: none;
     color: var(--text-primary);
-}
-
-.top-nav-links a:hover {
-    text-decoration: underline;
 }
 
 .site-tagline {
@@ -150,7 +150,7 @@ nav p, nav div {
 
 .social-links a:hover {
     color: var(--accent) !important;
-    transform: scale(1.1);
+    transform: translateY(-4px);
     transition: 0.5s;
 }
 
@@ -169,7 +169,7 @@ nav p, nav div {
     color: var(--text-primary);
 }
 
-.footer-nav-links a:hover {
+.footer-nav-links a:hover, .top-nav-links a:hover {
     color: var(--accent) !important;
     transition: 0.5s;
 }
@@ -201,7 +201,7 @@ nav p, nav div {
 }
 
 .marquee-text:hover {
-    animation-play-state: paused;
+    animation-play-state: paused !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -337,18 +337,27 @@ ul, ol {
     margin-bottom: 2rem;
 }
 
-a {
-    text-decoration: underline;
-    text-underline-offset: 0.4rem;
-    color: var(--accent);
+a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a) {
+    background-image: linear-gradient(to right, var(--accent-op1), var(--accent-op2));
+    background-repeat: no-repeat;
+    background-position: 50% 95%;
+    background-size: 200% 20%;
     overflow-wrap: break-word;
     word-break: break-word;
+    color: var(--text-primary);
+    text-decoration: none;
 }
 
-a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a) {
+a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a) {
+    background-image: linear-gradient(to right, var(--accent-op1));
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    padding: 0.1rem 0.4rem;
+    background-position: 0% 100%;
+    background-size: 300% 100%;
     color: var(--text-primary);
-    text-decoration: underline;
-    text-decoration-style: wavy;
+    font-weight: 700;
+    transition: 0.5s;
 }
 
 .astro-code, .astro-code span, code {
