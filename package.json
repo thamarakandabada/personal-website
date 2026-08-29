@@ -9,13 +9,15 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "postbuild": "webmention dist/notebook/rss.xml --limit 1 --send"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.2.4",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
     "@astrojs/vercel": "^11.0.8",
+    "@remy/webmention": "^1.5.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "astro": "^7.2.9",
