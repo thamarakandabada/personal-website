@@ -146,12 +146,12 @@ nav p, nav div {
 
 .social-links a {
     color: var(--text-primary);
+    transition: 0.5s;
 }
 
 .social-links a:hover {
     color: var(--accent) !important;
     transform: translateY(-4px);
-    transition: 0.5s;
 }
 
 .footer-nav-links {
@@ -167,11 +167,15 @@ nav p, nav div {
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--text-primary);
+    transition: 0.5s;
+}
+
+.top-nav-links a {
+    transition: 0.5s !important;
 }
 
 .footer-nav-links a:hover, .top-nav-links a:hover {
     color: var(--accent) !important;
-    transition: 0.5s;
 }
 
 .post-nav {
@@ -337,7 +341,7 @@ ul, ol {
     margin-bottom: 2rem;
 }
 
-a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a) {
+a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a) {
     background-image: linear-gradient(to right, var(--accent-op1), var(--accent-op2));
     background-repeat: no-repeat;
     background-position: 50% 95%;
@@ -346,9 +350,10 @@ a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .butto
     word-break: break-word;
     color: var(--text-primary);
     text-decoration: none;
+    transition: 0.5s;
 }
 
-a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a) {
+a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a) {
     background-image: linear-gradient(to right, var(--accent-op1));
     background-repeat: no-repeat;
     border-radius: 4px;
@@ -357,7 +362,6 @@ a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, 
     background-size: 300% 100%;
     color: var(--text-primary);
     font-weight: 700;
-    transition: 0.5s;
 }
 
 .astro-code, .astro-code span, code {
@@ -654,22 +658,22 @@ iframe {
     padding: 0.25rem 0.5rem;
     background-color: var(--bg-tertiary);
     font-size: 1rem;
+    transition: 0.5s;
 }
 
 .tag a {
     text-decoration: none;
     color: var(--text-primary);
+    transition: 0.5s;
 }
 
 .tag a:hover {
     color: var(--accent);
     font-size: 1.2rem;
-    transition: 0.5s;
 }
 
 .tag:hover {
     border-color: var(--accent);
-    transition: 0.5s;
 }
 
 .resume-header {
@@ -897,6 +901,7 @@ Grids and sub-grids
     border-radius: 4px;
     padding: 0.75rem 2rem;
     background-color: var(--bg-tertiary);
+    transition: 0.5s;
 }
 
 .uses-grid-div-img {
@@ -930,7 +935,6 @@ Grids and sub-grids
 .debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover {
     border-color: var(--accent);
     transform: translateY(-4px);
-    transition: 0.5s;
 }
 
 .colour-palette-grid {
@@ -1135,6 +1139,7 @@ Media queries
         padding-top: 2rem;
         padding-left: 3rem;
         border-left: 1px solid var(--border-color);
+        transition: 0.5s;
     }
 
     .scrim {
@@ -1154,7 +1159,6 @@ Media queries
 
     #mobile-menu:target {
         display: flex;
-        transition: 0.5s;
     }
     
     .switch {
@@ -1218,6 +1222,7 @@ Media queries
         padding-top: 2rem;
         padding-left: 3rem;
         border-left: 1px solid var(--border-color);
+        transition: 0.5s;
     }
 
     .scrim {
@@ -1237,7 +1242,6 @@ Media queries
 
     #mobile-menu:target {
         display: flex;
-        transition: 0.5s;
     }
     
     .switch {
@@ -1388,11 +1392,11 @@ Blog
     display: grid;
     grid-template-columns: 0.175fr 0.825fr;
     column-gap: 2rem;
+    transition: 0.5s;
 }
 
 .notebook-post-list-item:hover {
     transform: scale(1.02);
-    transition: 0.5s;
 }
 
 .notebook-post-list-item:first-child {
@@ -1436,14 +1440,16 @@ Blog
     justify-content: center;
 }
 
-.buttons8815 img:hover {
-    transform: translateY(-4px);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.buttons8815 img {
     transition: 0.5s;
 }
 
+.buttons8815 img:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 button, .sub-button {
-    color: inherit;
     background-color: var(--bg-tertiary);
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -1451,13 +1457,13 @@ button, .sub-button {
     font-size: 1rem;
     font-family: inherit;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 button:hover, .sub-button:hover {
     border: 1px solid var(--accent);
     color: var(--accent);
     font-size: 1.2rem;
-    transition: 0.5s;
 }
 
 .subscribe-buttons {
@@ -1563,6 +1569,10 @@ Gigs
 
 /* Posters */
 
+.poster-list-item {
+    transition: 0.5s;
+}
+
 .poster-list-item a {
     text-decoration: none;
 }
@@ -1573,7 +1583,6 @@ Gigs
 
 .poster-list-item:hover {
     transform: translateY(-4px);
-    transition: 0.5s;
 }
 
 .poster-list {
