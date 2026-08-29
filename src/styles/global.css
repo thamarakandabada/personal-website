@@ -1692,3 +1692,29 @@ Gigs
     margin-left: 0;
     padding-left: 0;
 }
+
+/* Contact form */
+
+.contact-form {
+    margin-top: 2rem;
+}
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--bg-secondary);
+    margin: 0.25rem 0;
+}
+
+.contact-form button {
+    font-size: 1.2rem;
+    margin: 0.25rem 0;
+}
+
+.contact-form label {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
