@@ -354,13 +354,10 @@ a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .butto
 }
 
 a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a) {
-    background-image: linear-gradient(to right, var(--accent-op1));
-    background-repeat: no-repeat;
     border-radius: 4px;
     padding: 0.1rem 0.4rem;
     background-position: 0% 100%;
     background-size: 300% 100%;
-    color: var(--text-primary);
     font-weight: 700;
 }
 
