@@ -1698,6 +1698,7 @@ Gigs
 .contact-form {
     margin-top: 2rem;
 }
+
 .contact-form input, .contact-form textarea {
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -1717,4 +1718,8 @@ Gigs
 .contact-form label {
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: 2px solid var(--accent);
 }
