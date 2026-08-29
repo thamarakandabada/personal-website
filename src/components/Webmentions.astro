@@ -24,6 +24,9 @@ try {
 const likes = mentions.filter(m => m['wm-property'] === 'like-of');
 const reposts = mentions.filter(m => m['wm-property'] === 'repost-of');
 const replies = mentions.filter(m => m['wm-property'] === 'in-reply-to' || m['wm-property'] === 'mention-of');
+
+// Maximum character length for reply text before truncation
+const MAX_LENGTH = 200;
 ---
 
 {mentions.length > 0 && (
@@ -36,7 +39,7 @@ const replies = mentions.filter(m => m['wm-property'] === 'in-reply-to' || m['wm
         <p>{likes.length} Likes & {reposts.length} Reposts</p>
         <div class="avatar-list">
           {likes.concat(reposts).map(mention => (
-            <a href={mention.author?.url} target="_blank" rel="noopener noreferrer" title={mention.author?.name}>
+            <a href={mention.author?.url || mention.url} target="_blank" rel="noopener noreferrer" title={mention.author?.name}>
               {mention.author?.photo && (
                 <img src={mention.author.photo} alt={mention.author.name} width="32" height="32" class="avatar" />
               )}
@@ -51,20 +54,27 @@ const replies = mentions.filter(m => m['wm-property'] === 'in-reply-to' || m['wm
       <div class="mention-threads">
         <h4>Replies & Mentions</h4>
         <ul>
-          {replies.map(mention => (
-            <li class="mention-card">
-              <div class="mention-author">
-                {mention.author?.photo && (
-                  <img src={mention.author.photo} alt="" width="40" height="40" class="avatar" />
-                )}
-                <a href={mention.author?.url} target="_blank" rel="noopener noreferrer">
-                  <strong>{mention.author?.name || 'Anonymous'}</strong>
-                </a>
-              </div>
-              <p>{mention.content?.text}</p>
-              <a href={mention.url} target="_blank" rel="noopener noreferrer">Original response</a>
-            </li>
-          ))}
+          {replies.map(mention => {
+            const rawText = mention.content?.text || '';
+            const truncatedText = rawText.length > MAX_LENGTH 
+              ? rawText.slice(0, MAX_LENGTH).trim() + '…' 
+              : rawText;
+
+            return (
+              <li class="mention-card">
+                <div class="mention-author">
+                  {mention.author?.photo && (
+                    <img src={mention.author.photo} alt="" width="40" height="40" class="avatar" />
+                  )}
+                  <a href={mention.author?.url || mention.url} target="_blank" rel="noopener noreferrer">
+                    <strong>{mention.author?.name || 'Anonymous'}</strong>
+                  </a>
+                </div>
+                <p>{truncatedText}</p>
+                <a href={mention.url} target="_blank" rel="noopener noreferrer">View original response</a>
+              </li>
+            );
+          })}
         </ul>
       </div>
     )}
