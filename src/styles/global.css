@@ -337,7 +337,7 @@ ul, ol {
     margin-bottom: 2rem;
 }
 
-a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a) {
+a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a) {
     background-image: linear-gradient(to right, var(--accent-op1), var(--accent-op2));
     background-repeat: no-repeat;
     background-position: 50% 95%;
@@ -348,7 +348,7 @@ a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .butto
     text-decoration: none;
 }
 
-a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a) {
+a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a) {
     background-image: linear-gradient(to right, var(--accent-op1));
     background-repeat: no-repeat;
     border-radius: 4px;
