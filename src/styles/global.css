@@ -341,7 +341,7 @@ ul, ol {
     margin-bottom: 2rem;
 }
 
-a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a) {
+a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a, .gigs-grid a) {
     background-image: linear-gradient(to right, var(--accent-op1), var(--accent-op2));
     background-repeat: no-repeat;
     background-position: 50% 95%;
@@ -349,11 +349,11 @@ a:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .butto
     overflow-wrap: break-word;
     word-break: break-word;
     color: var(--text-primary);
-    text-decoration: none;
+    text-decoration: none !important;
     transition: 0.5s;
 }
 
-a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a) {
+a:hover:not(.header a, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a, .gigs-grid a) {
     border-radius: 4px;
     padding: 0.1rem 0.4rem;
     background-position: 0% 100%;
@@ -889,7 +889,7 @@ Grids and sub-grids
     column-gap: 2rem;
 }
 
-.debas-grid a, .podcast-grid a {
+.debas-grid a, .podcast-grid a, .gigs-grid a {
     text-decoration: none !important;
 }
 
@@ -898,6 +898,10 @@ Grids and sub-grids
     border-radius: 4px;
     padding: 0.75rem 2rem;
     background-color: var(--bg-tertiary);
+    transition: 0.5s;
+}
+
+.gigs-grid div {
     transition: 0.5s;
 }
 
@@ -929,7 +933,7 @@ Grids and sub-grids
     color: var(--accent);
 }
 
-.debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover {
+.debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover, .gigs-grid div:hover:not(.gig-photo, .gig-label) {
     border-color: var(--accent);
     transform: translateY(-4px);
 }
