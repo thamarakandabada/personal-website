@@ -10,7 +10,7 @@ sections: ["Everything Else"]
 topics: ["Art", "Art Exchange", "Writing"]
 ---
 
-*James and I are doing an art exchange, where we each give the other a painting to write about. You can find James' post on [his website]().*
+*James and I are doing an art exchange, where we each give the other a painting to write about. You can find James' post on [his website](https://jamesg.blog/2026/08/30/boat-bridge).*
 
 *For this post, I chose not to look anything up about the artist or the painting. What you will read below are my own original thoughts. I am not an art critic, so please don't ascribe any academic importance to what follows.*
 
