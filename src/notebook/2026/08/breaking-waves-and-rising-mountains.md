@@ -10,7 +10,7 @@ sections: ["Everything Else"]
 topics: ["Art", "Art Gallery", "Museum", "Japan", "Japanese Art"]
 ---
 
-Whenever I visit Manchester—and I do frequently—I stop by the [Manchester Museum](https://www.museum.manchester.ac.uk/). It’s a great place to spend a few hours at, immersed in natural history, archaeology, geology, and anthropology. On this visit, I wanted to explore somewhere I hadn’t been to before, and I had a full day to do it.
+Whenever I visit Manchester—and I do frequently—I stop by the [Manchester Museum](https://www.museum.manchester.ac.uk/). It’s a great place to spend a few hours at, immersed in natural history, archaeology, geology, and anthropology. On my last visit, I wanted to explore somewhere I hadn’t been to before, and I had a full day to do it.
 
 When I saw that [The Whitworth](https://www.whitworth.manchester.ac.uk/) had an exhibition on the Japanese wood block printing style, I was immediately convinced. I must admit that I lack any real knowledge about the discipline, and my interest is purely in the aesthetics rather than one of academic rigour. Nevertheless, I was excited at the prospect of this exhibition. Here was a chance to see the best of the genre, curated and presented by those who passionately study it. And all for free.
 
