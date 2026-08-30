@@ -22,7 +22,7 @@ On the left, more green, sprinkled with orange and red. Flowers, I've decided. I
 
 A peaceful landscape at sundown.
 
-Just beyond the green that occupies the bottom of the frame there is water. The sea, perhahps. Or a large bay. Its steady approach to the horizon is interrupted by two headlands on either side, obscured in shadow. A ship approaches from the left, its silhouette casting a blue impression on the softly lit ocean. Who does it carry into the quiet of the night? Are they disturbers of the peace, or merely seeking its refuge after a long journey?
+Just beyond the green that occupies the bottom of the frame there is water. The sea, perhaps. Or a large bay. Its steady approach to the horizon is interrupted by two headlands on either side, obscured in shadow. A ship approaches from the left, its silhouette casting a blue impression on the softly lit ocean. Who does it carry into the quiet of the night? Are they disturbers of the peace, or merely seeking its refuge after a long journey?
 
 Above the earthly plain, a large cloud. An impressive presence for sure, but not threatening. The pink hues on the right blend into the blues and purples in the middle. On top of it all is a brilliant white crown. It has a neighbour, too; smaller, lacking in definition, but still colourful. It has drifted off the frame and off the artist's view, just as the large pink cloud will do in a few minutes. It is suspended not just in air but in time, in a frame captured with a thousand masterful brushstrokes.
 
