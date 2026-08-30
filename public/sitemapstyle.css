@@ -12,6 +12,8 @@ html {
   --text-secondary: #67686b;
   --border-color: #c6beb0;
   --accent: #AF4F41;
+  --accent-op1: #AF4F4130;
+  --accent-op2: #AF4F4190;
 }
 
 html, body {
@@ -40,15 +42,21 @@ p, li {
 }
 
 a {
-    text-decoration: underline;
-    text-underline-offset: 0.4rem;
-    color: var(--accent);
+    background-image: linear-gradient(to right, var(--accent-op1), var(--accent-op2));
+    background-repeat: no-repeat;
+    background-position: 50% 95%;
+    background-size: 200% 20%;
     overflow-wrap: break-word;
     word-break: break-word;
+    color: var(--text-primary);
+    text-decoration: none !important;
+    transition: 0.5s;
 }
 
 a:hover {
-    color: var(--text-primary);
-    text-decoration: underline;
-    text-decoration-style: wavy;
+    border-radius: 4px;
+    padding: 0.1rem 0.4rem;
+    background-position: 0% 100%;
+    background-size: 300% 100%;
+    font-weight: 700;
 }

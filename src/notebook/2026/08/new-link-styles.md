@@ -44,3 +44,16 @@ Here is the CSS.
 The `--accent-op1` and `--accent-op2` are two "breaks" in opacity I had set for the accent colour. Using a linear gradient instead of full opacity gives the underline (which is essentially a background made to look like an underline) a subdued feel. I did try setting the opacity to full, but didn't like the result. I could have, of course, changed the accent colour to something else altogether, but it took me such a long time to settle on the colour scheme I have now, and I didn't find the prospect of a full overhaul appealing.
 
 I am aware my code is quite janky and quite amateurish. There may be a much better way to do this. Please feel free to educate me.
+
+<div class="post-footer">
+
+**Acknowledgements**
+
+<ol id="post-footer-list">
+
+<li><span>This new style was inspired by the link styling on <a href="https://manuelmoreale.com/">Manuel Moreale's website</a>.</span></li>
+<li><span>Thank you, <a href="https://taylordrayson.com/">Taylor</a>, for the tip on applying transition effects to the root selector rather than the <code>:hover</code> selector.</span></li>
+
+</ol>
+
+</div>

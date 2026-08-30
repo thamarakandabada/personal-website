@@ -1457,6 +1457,7 @@ button, .sub-button {
     padding: 0.25rem 0.5rem;
     font-size: 1rem;
     font-family: inherit;
+    color: var(--text-primary);
     cursor: pointer;
     transition: 0.5s;
 }
@@ -1714,6 +1715,7 @@ Gigs
     border-radius: 4px;
     width: 100%;
     font-family: inherit;
+    color: var(--text-secondary);
     font-size: 1.2rem;
     padding: 0.25rem 0.5rem;
     background-color: var(--bg-secondary);
@@ -1721,8 +1723,12 @@ Gigs
 }
 
 .contact-form button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.25rem 0;
+}
+
+.contact-form button:hover {
+    font-size: 1.2rem;
 }
 
 .contact-form label {
