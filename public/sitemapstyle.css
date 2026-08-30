@@ -25,6 +25,12 @@ html, body {
     font-family: "Maiola", serif;
 }
 
+.container {
+    text-align: left;
+    max-width: 1024px !important;
+    margin: 0 auto !important;
+}
+
 h1 {
     font-size: 3rem;
     margin: 3rem 1rem 2rem 1rem;
