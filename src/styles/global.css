@@ -1713,13 +1713,14 @@ Gigs
 .contact-form input, .contact-form textarea {
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    width: 100%;
     font-family: inherit;
     color: var(--text-secondary);
     font-size: 1.2rem;
     padding: 0.25rem 0.5rem;
     background-color: var(--bg-secondary);
     margin: 0.25rem 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-form button {
