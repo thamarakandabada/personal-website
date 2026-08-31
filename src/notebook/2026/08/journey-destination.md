@@ -31,3 +31,7 @@ Here are just a few things I want to add, but have no idea how to build:
 Some of these features may require learning new programming languages, something I simply do not have the time to commit to. I may be able to find shortcuts—such as bits of code shared by kind netizens who have already solved these problems—for some things, which I may be able to adapt without understanding how the underlying technology works (which is how I have written all the JavaScript and TypeScript required for this Astro build). Some may never get built.
 
 But finding the [joy](https://indieweb.org/joy) in what I *can* do with my limited knowledge is what I'll focus on. IndieWeb is a journey, not a destination, I've decided.
+
+***
+
+<i><a class="u-syndication" href="https://news.indieweb.org/en">Also posted on IndieNews</a></i>
