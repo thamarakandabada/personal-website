@@ -3,30 +3,42 @@ interface Props {
   targetUrl?: string;
 }
 
-// Automatically use the current page URL if targetUrl isn't explicitly passed
 const { targetUrl = Astro.url.href } = Astro.props;
 
-const domain = "thamara.co.uk";
-const apiUrl = `https://webmention.io/api/mentions.jf2?domain=${domain}`;
+// Strip any existing slash, then create both variations
+const cleanTarget = targetUrl.replace(/\/$/, "");
+const targetWithSlash = cleanTarget + "/";
 
-let allMentions = [];
+const apiWithoutSlash = `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(cleanTarget)}`;
+const apiWithSlash = `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(targetWithSlash)}`;
+
+let mentions = [];
 
 try {
-  const response = await fetch(apiUrl);
-  if (response.ok) {
-    const data = await response.json();
-    allMentions = data.children || [];
-  }
+  // Fetch both endpoints at the same time
+  const [res1, res2] = await Promise.all([
+    fetch(apiWithoutSlash),
+    fetch(apiWithSlash)
+  ]);
+
+  const data1 = res1.ok ? await res1.json() : { children: [] };
+  const data2 = res2.ok ? await res2.json() : { children: [] };
+
+  // Combine results
+  const combinedMentions = [...(data1.children || []), ...(data2.children || [])];
+
+  // Remove potential duplicates using the unique 'wm-id'
+  const uniqueMentionsMap = new Map(combinedMentions.map(m => [m['wm-id'], m]));
+  mentions = Array.from(uniqueMentionsMap.values());
+
 } catch (error) {
   console.error("Failed to fetch webmentions:", error);
 }
 
-const cleanTarget = targetUrl.replace(/\/$/, "");
-
-const mentions = allMentions.filter(m => {
-  const mentionTarget = (m['wm-target'] || '').replace(/\/$/, "");
-  return mentionTarget === cleanTarget;
-});
+// --- DIAGNOSTIC LOGS ---
+console.log(`--- WEBMENTION DEBUG for ${cleanTarget} ---`);
+console.log(`Found ${mentions.length} total mentions across both slash variations.`);
+// -----------------------
 
 const likes = mentions.filter(m => m['wm-property'] === 'like-of');
 const reposts = mentions.filter(m => m['wm-property'] === 'repost-of');
@@ -37,13 +49,12 @@ const MAX_LENGTH = 200;
 
 {mentions.length > 0 && (
   <section class="webmentions-section">
-    <h3>Webmentions</h3>
+    <h3>Around the web</h3>
 
-    {/* Likes & Reposts Section */}
     {(likes.length > 0 || reposts.length > 0) && (
       <div class="mention-icons">
         <p>{likes.length} Likes & {reposts.length} Reposts</p>
-        <div class="avatar-list">
+        <div class="avatar-list not-a">
           {likes.concat(reposts).map(mention => (
             <a href={mention.author?.url || mention.url} target="_blank" rel="noopener noreferrer" title={mention.author?.name}>
               {mention.author?.photo && (
@@ -55,7 +66,6 @@ const MAX_LENGTH = 200;
       </div>
     )}
 
-    {/* Comments & Replies Section */}
     {replies.length > 0 && (
       <div class="mention-threads">
         <h4>Replies & Mentions</h4>
@@ -77,7 +87,7 @@ const MAX_LENGTH = 200;
                   </a>
                 </div>
                 <p>{truncatedText}</p>
-                <a href={mention.url} target="_blank" rel="noopener noreferrer">View original response</a>
+                <a href={mention.url} target="_blank" rel="noopener noreferrer">Original response</a>
               </li>
             );
           })}
