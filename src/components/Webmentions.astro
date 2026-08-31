@@ -1,12 +1,12 @@
 ---
 interface Props {
-  targetUrl: string;
+  targetUrl?: string;
 }
 
-const { targetUrl } = Astro.props;
+// Automatically use the current page URL if targetUrl isn't explicitly passed
+const { targetUrl = Astro.url.href } = Astro.props;
 
 const domain = "thamara.co.uk";
-// Fetch ALL domain mentions instead of filtering server-side
 const apiUrl = `https://webmention.io/api/mentions.jf2?domain=${domain}`;
 
 let allMentions = [];
@@ -21,10 +21,8 @@ try {
   console.error("Failed to fetch webmentions:", error);
 }
 
-// Normalize the current page URL by removing any trailing slash
 const cleanTarget = targetUrl.replace(/\/$/, "");
 
-// Filter mentions locally, stripping trailing slashes from wm-target to guarantee a match
 const mentions = allMentions.filter(m => {
   const mentionTarget = (m['wm-target'] || '').replace(/\/$/, "");
   return mentionTarget === cleanTarget;
