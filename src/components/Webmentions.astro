@@ -1,44 +1,21 @@
 ---
+import { getDomainWebmentions } from '../utils/webmentions.js';
+
 interface Props {
   targetUrl?: string;
 }
 
 const { targetUrl = Astro.url.href } = Astro.props;
 
-// Strip any existing slash, then create both variations
+// 1. Fetch all mentions instantly from the local cache
+const allMentions = await getDomainWebmentions();
+
+// 2. Filter them locally to match this specific page, ignoring trailing slashes
 const cleanTarget = targetUrl.replace(/\/$/, "");
-const targetWithSlash = cleanTarget + "/";
-
-const apiWithoutSlash = `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(cleanTarget)}`;
-const apiWithSlash = `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(targetWithSlash)}`;
-
-let mentions = [];
-
-try {
-  // Fetch both endpoints at the same time
-  const [res1, res2] = await Promise.all([
-    fetch(apiWithoutSlash),
-    fetch(apiWithSlash)
-  ]);
-
-  const data1 = res1.ok ? await res1.json() : { children: [] };
-  const data2 = res2.ok ? await res2.json() : { children: [] };
-
-  // Combine results
-  const combinedMentions = [...(data1.children || []), ...(data2.children || [])];
-
-  // Remove potential duplicates using the unique 'wm-id'
-  const uniqueMentionsMap = new Map(combinedMentions.map(m => [m['wm-id'], m]));
-  mentions = Array.from(uniqueMentionsMap.values());
-
-} catch (error) {
-  console.error("Failed to fetch webmentions:", error);
-}
-
-// --- DIAGNOSTIC LOGS ---
-console.log(`--- WEBMENTION DEBUG for ${cleanTarget} ---`);
-console.log(`Found ${mentions.length} total mentions across both slash variations.`);
-// -----------------------
+const mentions = allMentions.filter(m => {
+  const mentionTarget = (m['wm-target'] || '').replace(/\/$/, "");
+  return mentionTarget === cleanTarget;
+});
 
 const likes = mentions.filter(m => m['wm-property'] === 'like-of');
 const reposts = mentions.filter(m => m['wm-property'] === 'repost-of');
