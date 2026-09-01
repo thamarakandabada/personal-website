@@ -14,7 +14,7 @@ const isoDate = frontmatter.pubDate
   ? new Date(frontmatter.pubDate).toISOString() 
   : '';
 
-  let DisclaimerThreshold = 3; // years
+  let DisclaimerThreshold = 2; // years
   let currentYear = new Date().getFullYear();
   let postYear = frontmatter.pubDate ? new Date(frontmatter.pubDate).getFullYear() : currentYear;
   let postAge = currentYear - postYear;
@@ -37,8 +37,10 @@ const isoDate = frontmatter.pubDate
 	  <p class="blog-description p-summary">{frontmatter.description}</p>
 	  <p class="blog-author">by {frontmatter.author}</p>
   </div>
-  {showDisclaimer && <OldPostDisclaimer />}
-  <div class="e-content">
+<div class="old-post-disclaimer">
+  <p><span class="disclaimer-tag"><strong>Disclaimer:</strong></span> This post was written over {postAge} years ago and may not reflect my current views or opinions. Please take this into consideration when reading.</p>
+</div>
+<div class="e-content">
     <slot />
   </div>
 	<div class="topics-reference">

@@ -4,7 +4,6 @@ import { Picture } from 'astro:assets';
 import BlogPostNavPrevNext from '../components/BlogPostNavPrevNext.astro';
 import PostReference from '../components/PostReference.astro';
 import Webmentions from '../components/Webmentions.astro';
-import OldPostDisclaimer from '../components/OldPostDisclaimer.astro';
 
 const currentUrl = new URL(Astro.url.pathname, Astro.site || 'https://thamara.co.uk').href;
 const { frontmatter } = Astro.props;
@@ -15,7 +14,7 @@ const isoDate = frontmatter.pubDate
   ? new Date(frontmatter.pubDate).toISOString() 
   : '';
 
-  let DisclaimerThreshold = 3; // years
+  let DisclaimerThreshold = 2; // years
   let currentYear = new Date().getFullYear();
   let postYear = frontmatter.pubDate ? new Date(frontmatter.pubDate).getFullYear() : currentYear;
   let postAge = currentYear - postYear;
@@ -44,7 +43,9 @@ const isoDate = frontmatter.pubDate
       />
       <figcaption>{frontmatter.imageCaption}</figcaption>
     </figure>
-    {showDisclaimer && <OldPostDisclaimer />}
+<div class="old-post-disclaimer">
+  <p><span class="disclaimer-tag"><strong>Disclaimer:</strong></span> This post was written over {postAge} years ago and may not reflect my current views or opinions. Please take this into consideration when reading.</p>
+</div>
     <div class="e-content">
       <slot />
 	  </div>  
