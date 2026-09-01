@@ -12,7 +12,7 @@ html {
   --text-secondary: #67686b;
   --border-color: #c6beb0;
   --accent: #AF4F41;
-  --accent-op1: #AF4F4130;
+  --accent-op1: #AF4F4120;
   --accent-op2: #AF4F4190;
 }
 
@@ -26,7 +26,7 @@ html.dark {
   --text-secondary: #A1A1AA;
   --border-color: #33373c;
   --accent: #22D3EE;
-  --accent-op1: #22D3EE30;
+  --accent-op1: #22D3EE20;
   --accent-op2: #22D3EE90;
 }
 
@@ -345,10 +345,10 @@ a:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .notebook-post
     background-image: linear-gradient(to right, var(--accent-op1), var(--accent-op2));
     background-repeat: no-repeat;
     background-position: 50% 95%;
-    background-size: 200% 20%;
+    background-size: 200% 10%;
     overflow-wrap: break-word;
     word-break: break-word;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     text-decoration: none !important;
     transition: 0.5s;
 }
@@ -359,6 +359,7 @@ a:hover:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .noteboo
     background-position: 0% 100%;
     background-size: 300% 100%;
     font-weight: 700;
+    color: var(--accent);
 }
 
 .astro-code, .astro-code span, code {

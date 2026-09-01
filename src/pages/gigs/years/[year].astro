@@ -31,6 +31,6 @@ const slashpageImage = "/featured-images/gigs.png";
 <PageLayout title={`Gigs in ${year} - Thamara Kandabada`}>
     <h1>Gigs in {year}</h1>
     <div class="gigs-grid">
-      {posts.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} city={post.data.city} />)}
+      {posts.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} city={post.data.city} url={`/gigs/${post.id}/`} />)}
     </div>
 </PageLayout>
