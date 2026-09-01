@@ -8,3 +8,5 @@ imageUrl: 'images/Fr-Greg-Boyle-A4-Flyer-scaled.jpg'
 imageAlt: 'Father Greg Boyle'
 director: 'The Turnaround Project'
 ---
+
+I was approached by the Turnaround team to design a poster for the event based on our previous experience working together and I was glad to oblige.

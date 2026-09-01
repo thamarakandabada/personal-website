@@ -8,3 +8,5 @@ imageUrl: 'images/A4-Poster-scaled.jpg'
 imageAlt: 'Event details listed in text, on the background of a library shelf filled with law books.'
 director: 'The Turnaround Project'
 ---
+
+This was the second year this event was being held, and my second year designing the poster for it. The team at Turnaround Project have always been great to work with and I would gladly volunteer my time and skills again.
