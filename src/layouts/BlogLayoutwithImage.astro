@@ -4,6 +4,7 @@ import { Picture } from 'astro:assets';
 import BlogPostNavPrevNext from '../components/BlogPostNavPrevNext.astro';
 import PostReference from '../components/PostReference.astro';
 import Webmentions from '../components/Webmentions.astro';
+import OldPostDisclaimer from '../components/OldPostDisclaimer.astro';
 
 const currentUrl = new URL(Astro.url.pathname, Astro.site || 'https://thamara.co.uk').href;
 const { frontmatter } = Astro.props;
@@ -13,6 +14,12 @@ const formattedDate = frontmatter.pubDate
 const isoDate = frontmatter.pubDate
   ? new Date(frontmatter.pubDate).toISOString() 
   : '';
+
+  let DisclaimerThreshold = 3; // years
+  let currentYear = new Date().getFullYear();
+  let postYear = frontmatter.pubDate ? new Date(frontmatter.pubDate).getFullYear() : currentYear;
+  let postAge = currentYear - postYear;
+  let showDisclaimer = postAge > DisclaimerThreshold;
 ---
 <PageLayout 
   title={`${frontmatter.title} - Notebook - Thamara Kandabada`}
@@ -37,6 +44,7 @@ const isoDate = frontmatter.pubDate
       />
       <figcaption>{frontmatter.imageCaption}</figcaption>
     </figure>
+    {showDisclaimer && <OldPostDisclaimer />}
     <div class="e-content">
       <slot />
 	  </div>  

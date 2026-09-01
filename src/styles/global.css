@@ -1334,6 +1334,19 @@ Blog
 -----
 */
 
+.old-post-disclaimer {
+    font-style: italic;
+    border-bottom: 1px solid var(--accent);
+}
+
+.old-post-disclaimer p {
+    color: var(--text-secondary);
+}
+
+.disclaimer-tag {
+    color: var(--accent);
+}
+
 .poster-content {
     margin-top: 3rem;
 }
