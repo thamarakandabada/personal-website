@@ -43,9 +43,11 @@ const isoDate = frontmatter.pubDate
       />
       <figcaption>{frontmatter.imageCaption}</figcaption>
     </figure>
-<div class="old-post-disclaimer">
-  <p><span class="disclaimer-tag"><strong>Disclaimer:</strong></span> This post was written over {postAge} years ago and may not reflect my current views or opinions. Please take this into consideration when reading.</p>
-</div>
+{showDisclaimer && (
+  <div class="old-post-disclaimer">
+    <p><span class="disclaimer-tag"><strong>Disclaimer:</strong></span> This post was written over {postAge} years ago and may not reflect my current views or opinions. Please take this into consideration when reading.</p>
+  </div>
+)}
     <div class="e-content">
       <slot />
 	  </div>  
