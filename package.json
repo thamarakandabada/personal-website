@@ -13,14 +13,14 @@
     "postbuild": "webmention dist/notebook/rss.xml --limit 1 --send"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^7.2.4",
+    "@astrojs/markdown-remark": "^7.3.0",
     "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.3",
-    "@astrojs/vercel": "^11.0.8",
+    "@astrojs/sitemap": "^3.7.4",
+    "@astrojs/vercel": "^11.0.9",
     "@remy/webmention": "^1.5.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "astro": "^7.2.9",
+    "astro": "^7.2.10",
     "markdown-it": "^15.0.0",
     "mdast-util-to-string": "^4.0.0",
     "reading-time": "^1.5.0",
