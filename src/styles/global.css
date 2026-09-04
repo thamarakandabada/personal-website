@@ -1676,6 +1676,7 @@ Gigs
 
 #discuss-comments, .dark #discuss-comments {
     margin-top: 2rem;
+    z-index: 0;
     --brand-600: var(--accent) !important;
     --discuss-font-family: "Maiola", serif;
     --text-primary: var(--text-primary);
