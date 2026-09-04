@@ -1699,7 +1699,7 @@ Gigs
     .discuss-btn-primary { border-radius: 4px; background: var(--brand-600) !important; color: var(--on-primary) !important; border-color: var(--border-default) !important; }
     .discuss-btn-primary:hover { background: var(--surface-inset) !important; color: var(--text-primary) !important; border-color: var(--border-default) !important; }
 }
-.discuss-avatar, .discuss-avatar-div, .discuss-thread-line {
+.discuss-avatar, .discuss-avatar-div, .discuss-thread-line, .discuss-collapse-line div {
     z-index: 0 !important;
 }
 
