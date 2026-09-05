@@ -12,7 +12,7 @@ const rawDate = data[0].commit.author.date;
 
 const formattedDate = new Date(rawDate).toLocaleDateString('en-GB', { 
   year: 'numeric', 
-  month: 'long', 
+  month: 'short', 
   day: 'numeric' 
 });
 const pageTitle = "Now - Thamara Kandabada";
@@ -37,8 +37,10 @@ const slashpageImage = "/featured-images/now.png";
             <li>Tinkering with this website</li>
             <ul>
               <li>Improving accessibility to conform with WCAG guidelines.</li>
+              <li>Adding more slashpages and content.</li>
             </ul>
             <li>Working through my <a href="/notebook/2026/05/spring-summer-reading-list">summer reading list</a></li>
+            <li>Playing Assassin's Creed Black Flag Resynced</li>
           </ul>
       </div>
       <div>
