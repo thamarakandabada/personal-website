@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('gigs'))
+  .sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0));
+
+const currentGigIndex = posts.findIndex(post => post.id === Astro.params.slug);
+
+const previousGig =
+  ((currentGigIndex >= 0) && (currentGigIndex < posts.length - 1))
+    ? posts[currentGigIndex + 1]
+    : undefined;
+
+const nextGig =
+  currentGigIndex > 0
+    ? posts[currentGigIndex - 1]
+    : undefined;
+
+const allGigs =
+  currentGigIndex > 0
+    ? posts[currentGigIndex]
+    : undefined;
+---
+
+{
+  (previousGig || allGigs || nextGig) && (
+    <nav class="post-nav">
+      {previousGig && (
+        <p>
+          <a href={`/gigs/${previousGig.id}/`}>Previous</a>
+        </p>
+      )}
+
+      {allGigs && (
+        <p>
+          <a href={`/gigs/`}>All Gigs</a>
+        </p>
+      )}
+
+      {nextGig && (
+        <p>
+          <a href={`/gigs/${nextGig.id}/`}>Next</a>
+        </p>
+      )}
+    </nav>
+  )
+}

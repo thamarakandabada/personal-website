@@ -11,7 +11,7 @@ const rawDate = data[0].commit.author.date;
 
 const formattedDate = new Date(rawDate).toLocaleDateString('en-GB', { 
   year: 'numeric', 
-  month: 'long', 
+  month: 'short', 
   day: 'numeric' 
 });
 const pageTitle = "Uses - Thamara Kandabada";

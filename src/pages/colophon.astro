@@ -20,7 +20,7 @@ const commitHash = commitData?.sha ? commitData.sha.slice(0, 7) : 'main';
 const commitUrl = commitData?.html_url ?? 'https://github.com/thamarakandabada/personal-website/';
 
 const formattedDate = rawDate 
-  ? new Date(rawDate).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' }) 
+  ? new Date(rawDate).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' }) 
   : 'Recent';
 
 const pageTitle = "Colophon - Thamara Kandabada";
