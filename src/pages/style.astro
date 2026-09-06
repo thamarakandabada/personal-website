@@ -103,7 +103,7 @@ const slashpageImage = "/featured-images/style.png";
   <p>Inline <Code code={`a`} inline /> elements in the body are set in the primary text colour. They are styled with a background, set as a linear gradient using the accent colour in variable opacities. The background is offset to look like a thick underline, which on hover transforms to encapsulate the entire linked text. The resulting background has a <Code code={`4px`} inline /> border radius and <Code code={`0.1rem 0.3rem`} inline /> padding. Navigation links in the header and footer differ, with both opting to transition from the primary text colour to the accent colour on hover.</p>
   <p>Some linked elements resize using the <Code code={`transform: scale()`} inline /> function on hover. The posts list in the <a href="/notebook">Notebook</a> is an example of this.</p>
   <p>Inline code snippets are set in the monospace font Cascadia Mono at <Code code={`0.9rem`} inline /> (to offset variable font heights between Cascadia Mono and Maiola) and are enclosed in a background block with a border radius of <Code code={`4px`} inline />.</p>
-  <p>Code blocks are also enclosed in a background block with a border radius of <Code code={`4px`} inline /> and <Code code=`0.5rem 1rem` inline /> padding. Overflow on the x-axis triggers a scrollbar. Syntax highlighting is handled by the built-in <a href="https://shiki.style/" target="_blank">Shiki</a> integration. I'm using the default <em>GitHub Dark</em> theme from Shiki, and this does not currently switch to a light theme when the website theme is toggled.</p>
+  <p>Code blocks are also enclosed in a background block with a border radius of <Code code={`4px`} inline /> and <Code code={`0.5rem 1rem`} inline /> padding. Overflow on the x-axis triggers a scrollbar. Syntax highlighting is handled by the built-in <a href="https://shiki.style/" target="_blank">Shiki</a> integration. I'm using the default <em>GitHub Dark</em> theme from Shiki, and this does not currently switch to a light theme when the website theme is toggled.</p>
   <p>See an example below:</p>
   <Code
   lang="css"
@@ -116,7 +116,7 @@ const slashpageImage = "/featured-images/style.png";
       border-radius: 4px;
   }
   `} />
-  <p>Inline code snippets, however, are handled slightly differently. They are enclosed in a background set in the tertiary background colour, with a <Code code=`4px` inline /> border radius and <Code code=`0.25rem 0.5rem` inline /> padding.</p>
+  <p>Inline code snippets, however, are handled slightly differently. They are enclosed in a background set in the tertiary background colour, with a <Code code={`4px`} inline /> border radius and <Code code={`0.25rem 0.5rem`} inline /> padding.</p>
   <p>Blockquotes are italicised. They are <Code code={`1.5rem`} inline /> in font size and styled in the secondary text colour, with a <Code code={`1px`} inline /> left border styled in the accent colour. Blockquotes are only used for quotations rather than as a decorative element. See example below. </p>
   <blockquote>
     Arise, arise, Riders of Théoden!<br>Fell deeds awake: fire and slaughter!<br>Spear shall be shaken, shield be splintered,<br>a sword-day, a red day, ere the sun rises!<br>Ride now, ride now! Ride to Gondor!
@@ -144,9 +144,9 @@ const slashpageImage = "/featured-images/style.png";
       </ul>
     </div>
   </div>
-  <p>All text, except blog post titles, are left-aligned. Blog post titles are centre aligned-with a background set in the secondary background colour, on which the hero image (if available) overlaps with a <Code code={`-120px`} inline /> vertical spacing. See an example <a href="/notebook/gehenu-lamai">here</a>.</p>
+  <p>All text, except blog post titles, is left-aligned. Blog post titles are centre-aligned with a background set in the secondary background colour, on which the hero image (if available) overlaps with a <Code code={`-120px`} inline /> vertical spacing. See an example <a href="/notebook/gehenu-lamai">here</a>.</p>
   <h2>Images</h2>
-  <p>All images are served in AVIF with fallback to WebP, with a <Code code={`4px`} inline /> border radius and have alt text. Captions, when used, are right aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour.</p>
+  <p>All images are served in AVIF with fallback to WebP, feature a <Code code={`4px`} inline /> border radius, and include alt text. Captions, when used, are right-aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour.</p>
   <p>All images have a subtle shadow, set to the values <Code code={`rgba(0, 0, 0, 0.16) 0px 1px 4px;`} inline />.</p>
   <p>See example below.</p>
   <figure>
@@ -162,10 +162,13 @@ const slashpageImage = "/featured-images/style.png";
   <p>See an example below:</p>
   <h3>Kings of Gondor</h3>
   <table>
-    <tr>
-      <th>Name</th>
-      <th>Reign</th>
-    </tr>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Reign</th>
+      </tr>
+    </thead>
+    <tbody>
     <tr>
       <td>Elendil</td>
       <td>Second Age 3320 – Second Age 3441</td>
@@ -178,6 +181,7 @@ const slashpageImage = "/featured-images/style.png";
       <td>Isildur</td>
       <td>Second Age 3320 – Third Age 2</td>
     </tr>
+    </tbody>
   </table>
   <h2>Other components</h2>
   <p>Grid elements have a <Code code={`1px`} inline /> thick solid border set in the border colour, with a <Code code={`4px`} inline /> border radius. The background is styled in the tertiary background colour. If the grid element is hyperlinked, the border transitions to the accent colour and the entire element moves up by <Code code={`4px`} inline /> on hover using the <Code code={`translateY()`} inline /> function.</p>

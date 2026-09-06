@@ -9,7 +9,7 @@ const slashpageImage = "/featured-images/credits.png";
 
     <h1>Credits</h1>
     
-    <p>I'm using the following tools to create and maintain this website. A number of them are open source projects created by indepenedent developers.</p>
+    <p>I'm using the following tools to create and maintain this website. A number of them are open source projects created by independent developers.</p>
     
     <div class="see-also">
       <ul>
@@ -30,7 +30,7 @@ const slashpageImage = "/featured-images/credits.png";
     <p>Vercel provides the cloud-based server infrastructure for this website to be deployed on. I'm also using their analytics and pagespeed insights tools to improve the browsing experience. I'm currently on Vercel's generous free tier, which offers more than enough computing power for a small personal website.</p>
     
     <h2><a href="https://github.com/karthikeyankc/discuss" target="_blank">Discuss</a></h2>
-    <p>Discuss is a lighweight comment engine for static sites, created by <a href="https://karthikeyankc.com/" target="_blank">Karthikeyan KC</a>. I use it to power my Guestbook and the comments on my blogposts.</p>
+    <p>Discuss is a lightweight comment engine for static sites, created by <a href="https://karthikeyankc.com/" target="_blank">Karthikeyan KC</a>. I use it to power my Guestbook and the comments on my blogposts.</p>
   
     <h2><a href="https://www.digitalocean.com/" target="_blank">Digital Ocean</a></h2>
     <p>Discuss is a self-hosted tool, so I use a basic VPS from Digital Ocean (called a Droplet) to host the comments for this site. It is effective and easy to set up, and quite affordable.</p>
@@ -39,60 +39,64 @@ const slashpageImage = "/featured-images/credits.png";
     <p>All icons used on this website are from the open-source Bootstrap Icon Library. I am using them both as SVGs and web fonts.</p>
 
     <h2><a href="https://renata.haliya.net/thelab.html" target="_blank">Renata's Lab</a></h2>
-    <p>This is a wonderfull collection of CSS snippets by Renata, a self-described "enthusiast of all things delightful."</p>
+    <p>This is a wonderful collection of CSS snippets by Renata, a self-described "enthusiast of all things delightful."</p>
 
     <h2 id="commit-message-conventions"><a href="https://brennan.day/colophon/#commit-conventions" target="_blank">Commit Message Conventions</a></h2>
-    <p>I use the commit message conventions developed by <a href="https://brennan.day/" target="_blank">Brennan Kenneth Brown</a>. All commit messages follow this format: <Code code=`<type>: <description> [optional body]` inline /></p>
-    <p>Here is a full list of the types of commits and explainations of when they're used.</p>
+    <p>I use the commit message conventions developed by <a href="https://brennan.day/" target="_blank">Brennan Kenneth Brown</a>. All commit messages follow this format: <Code code={`<type>: <description> [optional body]`} inline /></p>
+    <p>Here is a full list of the types of commits and explanations of when they're used.</p>
     <table>
+      <thead>
+        <tr>
+          <th scope="col">Type</th>
+          <th scope="col">Usage</th>
+        </tr>
+      </thead>
+      <tbody>
       <tr>
-        <th>Type</th>
-        <th>Usage</th>
-      </tr>
-      <tr>
-        <td><Code code=`post:` inline /></td>
+        <td><Code code={`post:`} inline /></td>
         <td>A new essay, blog post, or other written content is published</td>
       </tr>
       <tr>
-        <td><Code code=`edit:` inline /></td>
+        <td><Code code={`edit:`} inline /></td>
         <td>Corrections, revisions, or expansions to existing written content</td>
       </tr>
       <tr>
-        <td><Code code=`update:` inline /></td>
+        <td><Code code={`update:`} inline /></td>
         <td>Routine data refreshes like comments, uses page, now page, blogroll, podroll</td>
       </tr>
       <tr>
-        <td><Code code=`design:` inline /></td>
+        <td><Code code={`design:`} inline /></td>
         <td>Visual, layout, or CSS changes</td>
       </tr>
       <tr>
-        <td><Code code=`build:` inline /></td>
+        <td><Code code={`build:`} inline /></td>
         <td>Site infrastructure, config, tooling, or dependency changes</td>
       </tr>
       <tr>
-        <td><Code code=`fix:` inline /></td>
-        <td>Code bugs only; prose corrections use <Code code=`edit:` inline /> instead</td>
+        <td><Code code={`fix:`} inline /></td>
+        <td>Code bugs only; prose corrections use <Code code={`edit:`} inline /> instead</td>
       </tr>
       <tr>
-        <td><Code code=`ci:` inline /></td>
+        <td><Code code={`ci:`} inline /></td>
         <td>CI/CD pipeline changes (GitHub CI, Vercel config)</td>
       </tr>
       <tr>
-        <td><Code code=`a11y:` inline /></td>
+        <td><Code code={`a11y:`} inline /></td>
         <td>Accessibility improvements like ARIA, contrast, alt text, semantics</td>
       </tr>
       <tr>
-        <td><Code code=`perf:` inline /></td>
+        <td><Code code={`perf:`} inline /></td>
         <td>Performance improvements like build speed, asset size, caching</td>
       </tr>
       <tr>
-        <td><Code code=`refactor:` inline /></td>
+        <td><Code code={`refactor:`} inline /></td>
         <td>Code restructuring without behaviour change</td>
       </tr>
       <tr>
-        <td><Code code=`revert:` inline /></td>
+        <td><Code code={`revert:`} inline /></td>
         <td>Undoing a previous commit</td>
       </tr>
+    </tbody>
     </table>
     <h2><a href="https://webmention.io/" target="_blank">Webmention.io</a></h2>
     <p>This tool acts as an inbox that captures all incoming webmentions for this site. I display webmentions on my blogposts; they are populated on each build.</p>
