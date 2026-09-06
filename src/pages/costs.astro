@@ -1,0 +1,132 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+const pageTitle = "Costs - Thamara Kandabada";
+const slashpageImage = "/featured-images/costs.png";
+---
+<PageLayout title={pageTitle} image={slashpageImage}>
+  <h1>Costs</h1>
+  <p>These are the costs associated with maintaining this website. I have converted all costs to GBP (£) for consistency. They are rounded up to the nearest pound.</p>
+  <p><strong>Last updated:</strong> 06 Sep 2026</p>
+
+<h2>Preface</h2>
+  <p>This is a document of the costs I'm currently incurring, rather than one of what it <em>could</em> cost—hence the inclusion of all the redirected domain names. Ideally, if you're thinking of running a small personal website using the same setup (Astro, GitHub, Vercel), your costs will be much lower with a single domain name.</p>
+  <p>I have not included any hardware costs since I haven't purchased any dedicated hardware specifically to run this website.</p>
+<h2>Monthly costs</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Item</th>
+      <th scope="col">Service</th>
+      <th scope="col">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Web hosting (static site deployment)</td>
+      <td>Vercel (free tier)</td>
+      <td>£0</td>
+    </tr>
+    <tr>
+      <td>Code hosting</td>
+      <td>GitHub (free tier)</td>
+      <td>£0</td>
+    </tr>
+    <tr>
+      <td>Comments hosting for Discuss</td>
+      <td>Digital Ocean Droplet</td>
+      <td>£3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2"><strong>Total monthly costs</strong></td>
+      <td>£3</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2>Annual costs</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col" colspan="2">Item</th>
+      <th scope="col">Service</th>
+      <th scope="col">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td rowspan="10">Domain names</td>
+    <td>thamara.co.uk (main)</td>
+    <td rowspan="10">Porkbun</td>
+    <td>£5</td>
+  </tr>
+  <tr>
+    <td>thamara.uk (redirect)</td>
+    <td>£5</td>
+  </tr>
+  <tr>
+    <td>thamara.blog (redirect)</td>
+    <td>£12</td>
+  </tr>
+  <tr>
+    <td>thamara.xyz (redirect)</td>
+    <td>£11</td>
+  </tr>
+  <tr>
+    <td>thamarakandabada.com (redirect)</td>
+    <td>£9</td>
+  </tr>
+  <tr>
+    <td>thamara.work (redirect)</td>
+    <td>£8</td>
+  </tr>
+  <tr>
+    <td>thamara.contact (redirect)</td>
+    <td>£9</td>
+  </tr>
+  <tr>
+    <td>thamara.cv (redirect)</td>
+    <td>£6</td>
+  </tr>
+  <tr>
+    <td>windingroad.studio (redirect)</td>
+    <td>£24</td>
+  </tr>
+  <tr>
+    <td>thebadtake.com (redirect)</td>
+    <td>£9</td>
+  </tr>
+  <tr>
+    <td colspan="2">DNS</td>
+    <td>Porkbun (free)</td>
+    <td>£0</td>
+  </tr>
+  <tr>
+    <td colspan="2">SSL certificate</td>
+    <td>Porkbun (free)</td>
+    <td>£0</td>
+  </tr>
+</tbody>
+<tfoot>
+  <tr>
+    <td colspan="3"><strong>Total annual costs</strong></td>
+    <td>£98</td>
+  </tr>
+</tfoot>
+</table>
+
+<h2>Total cost per year</h2>
+<p>Taking all these expenses into account, the total cost for running this website is <strong>approximately £134 per year</strong>.</p>
+
+<h2>More IndieWeb examples</h2>
+<ul>
+  <li><a href="https://jamesg.blog/costs" target="_blank">James</a></li>
+  <li><a href="https://turner.enemyterritory.org/user/carrvo/website/homeserver-bom-calculator.html" target="_blank">carrvo</a></li>
+  <li><a href="https://burgeonlab.com/costs/" target="_blank">Naty</a></li>
+</ul>
+
+</PageLayout>
