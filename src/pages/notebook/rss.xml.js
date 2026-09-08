@@ -1,34 +1,38 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+const parser = new MarkdownIt();
 
 export async function GET(context) {
-  const blog = await getCollection('blog');
-  const posts = blog.sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-  );
-  
-  const siteUrl = context.site || 'https://thamara.co.uk';
+  const notebook = await getCollection('blog'); // Adjust to your actual collection name
 
   return rss({
     title: 'Notebook - Thamara Kandabada',
-    description: 'Uncensored thoughts on Life, The Universe, and Everything',
-    site: siteUrl,
-    customData: `
-      <language>en-gb</language>
-      <atom:link href="${new URL('/notebook/rss.xml', siteUrl).href}" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
-    `,
-    items: posts.map((post) => {
-      const fallbackTitle = post.data.title || post.data.description || 'Untitled Streamlet';
-      const itemUrl = new URL(`/notebook/${post.id}/`, siteUrl).href;
+    description: 'Ars longa. Vita brevis.',
+    site: context.site,
+    items: notebook.map((post) => {
+      
+      // 1. Build the HTML for the featured image if it exists in frontmatter
+      const featuredImageHtml = post.data.imageUrl 
+        ? `<figure>
+             <img src="${new URL(post.data.imageUrl, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
+             ${post.data.imageCaption ? `<figcaption>${post.data.imageCaption}</figcaption>` : ''}
+           </figure>`
+        : '';
 
-      // Destructure 'author' out of post.data to prevent the RSS email validation error
-      const { author, ...restData } = post.data;
+      // 2. Parse the markdown body to HTML
+      const htmlBody = parser.render(post.body || '');
+
+      // 3. Combine them and sanitize
+      const fullContent = sanitizeHtml(`${featuredImageHtml}${htmlBody}`);
 
       return {
-        ...restData,
-        title: fallbackTitle,
-        description: post.data.description || fallbackTitle,
-        link: itemUrl,
+        title: post.data.title,
+        pubDate: post.data.pubDate,
+        description: post.data.description,
+        link: `/notebook/${post.slug}/`,
+        content: fullContent,
       };
     }),
   });
