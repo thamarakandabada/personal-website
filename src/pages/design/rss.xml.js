@@ -7,6 +7,7 @@ const parser = new MarkdownIt({ html: true });
 
 export async function GET(context) {
   const posterPosts = await getCollection('poster');
+  const siteUrl = context.site || 'https://thamara.co.uk';
 
   return rss({
     title: 'Design - Thamara Kandabada',
@@ -16,7 +17,7 @@ export async function GET(context) {
       
       const featuredImageHtml = post.data.imageUrl 
         ? `<figure>
-             <img src="${new URL(post.data.imageUrl, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
+             <img src="${new URL(post.data.imageUrl.src, siteUrl).toString()}" alt="${post.data.imageAlt || ''}" />
            </figure>`
         : '';
 
@@ -25,7 +26,14 @@ export async function GET(context) {
         : '';
 
       const htmlBody = parser.render(post.body || '');
-      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`);
+      
+      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`, {
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img', 'figure', 'figcaption', 'hr' ]),
+        allowedAttributes: {
+          ...sanitizeHtml.defaults.allowedAttributes,
+          'img': [ 'src', 'alt', 'title', 'width', 'height' ]
+        }
+      });
 
       return {
         title: post.data.title,

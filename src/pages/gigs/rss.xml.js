@@ -7,6 +7,7 @@ const parser = new MarkdownIt({ html: true });
 
 export async function GET(context) {
   const gigPosts = await getCollection('gigs');
+  const siteUrl = context.site || 'https://thamara.co.uk';
 
   return rss({
     title: 'Gigs - Thamara Kandabada',
@@ -16,23 +17,30 @@ export async function GET(context) {
       
       const featuredImageHtml = post.data.imageUrl 
         ? `<figure>
-             <img src="${new URL(post.data.imageUrl.src, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
-             ${post.data.imageCaption ? `<figcaption>${post.data.imageCaption}</figcaption>` : ''}
+             <img src="${new URL(post.data.imageUrl.src, siteUrl).toString()}" alt="${post.data.imageAlt || ''}" />
            </figure>`
         : '';
 
-      // Build a nice subtitle meta block using venue and city info
       const gigMeta = `<p><em>Live at ${post.data.venue} (${post.data.city})</em></p>`;
-      const descriptionHtml = post.data.description 
-        ? `<p>${post.data.description}</p>${gigMeta}<hr>` 
-        : `${gigMeta}<hr>`;
       
       const supportHtml = post.data.support
         ? `<p><strong>Support:</strong> ${post.data.support}</p>`
         : '';
 
+      const descriptionHtml = post.data.description 
+        ? `<p>${post.data.description}</p>` 
+        : '';
+
       const htmlBody = parser.render(post.body || '');
-      const fullContent = sanitizeHtml(`${featuredImageHtml}${supportHtml}${gigMeta}${descriptionHtml}${htmlBody}`);
+
+      // Cleanly order everything in sequence, ending with <hr> before the body
+      const fullContent = sanitizeHtml(`${featuredImageHtml}${gigMeta}${supportHtml}${descriptionHtml}<hr>${htmlBody}`, {
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img', 'figure', 'figcaption', 'hr' ]),
+        allowedAttributes: {
+          ...sanitizeHtml.defaults.allowedAttributes,
+          'img': [ 'src', 'alt', 'title', 'width', 'height' ]
+        }
+      });
 
       return {
         title: post.data.title,
