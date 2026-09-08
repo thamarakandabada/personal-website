@@ -7,19 +7,19 @@ const parser = new MarkdownIt({ html: true });
 
 export async function GET(context) {
   const notebook = await getCollection('blog');
+  const siteUrl = context.site || 'https://thamara.co.uk';
 
   return rss({
     title: 'Notebook - Thamara Kandabada',
     description: 'Generalist. Tinkerer.',
     site: context.site,
     items: notebook.map((post) => {
-      
-      // 1. Build the HTML for the featured image if it exists in frontmatter
+
       const featuredImageHtml = post.data.imageUrl 
         ? `<figure>
-             <img src="${new URL(post.data.imageUrl, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
-             ${post.data.imageCaption ? `<figcaption>${post.data.imageCaption}</figcaption>` : ''}
-           </figure>`
+            <img src="${new URL(post.data.imageUrl.src, siteUrl).toString()}" alt="${post.data.imageAlt || ''}" />
+            ${post.data.imageCaption ? `<figcaption>${post.data.imageCaption}</figcaption>` : ''}
+          </figure>`
         : '';
 
       // 2. Build the HTML for the description to act as a subtitle in the reading pane
@@ -31,9 +31,15 @@ export async function GET(context) {
       const htmlBody = parser.render(post.body || '');
 
       // 4. Combine and sanitize to ensure valid XML for RSS clients and Webmention.io
-      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`);
-
-      return {
+      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`, {
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img', 'figure', 'figcaption', 'hr' ]),
+        allowedAttributes: {
+          ...sanitizeHtml.defaults.allowedAttributes,
+          'img': [ 'src', 'alt', 'title', 'width', 'height' ]
+        }
+    });
+    
+    return {
         title: post.data.title,
         pubDate: post.data.pubDate,
         description: post.data.description, // Keeps the snippet visible in the RSS timeline view

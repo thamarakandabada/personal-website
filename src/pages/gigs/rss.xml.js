@@ -16,7 +16,8 @@ export async function GET(context) {
       
       const featuredImageHtml = post.data.imageUrl 
         ? `<figure>
-             <img src="${new URL(post.data.imageUrl, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
+             <img src="${new URL(post.data.imageUrl.src, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
+             ${post.data.imageCaption ? `<figcaption>${post.data.imageCaption}</figcaption>` : ''}
            </figure>`
         : '';
 
@@ -25,9 +26,13 @@ export async function GET(context) {
       const descriptionHtml = post.data.description 
         ? `<p>${post.data.description}</p>${gigMeta}<hr>` 
         : `${gigMeta}<hr>`;
+      
+      const supportHtml = post.data.support
+        ? `<p><strong>Support:</strong> ${post.data.support}</p>`
+        : '';
 
       const htmlBody = parser.render(post.body || '');
-      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`);
+      const fullContent = sanitizeHtml(`${featuredImageHtml}${supportHtml}${gigMeta}${descriptionHtml}${htmlBody}`);
 
       return {
         title: post.data.title,
