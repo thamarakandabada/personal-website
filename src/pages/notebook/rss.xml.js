@@ -1,6 +1,9 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+
+const parser = new MarkdownIt({ html: true });
 
 // Helper function to turn relative links and inline image sources into absolute URLs
 function absolutizeHtml(htmlString, siteUrl) {
@@ -11,7 +14,7 @@ function absolutizeHtml(htmlString, siteUrl) {
     return `href="${new URL(p1, siteUrl).toString()}"`;
   });
 
-  // Convert src attributes (catches Astro's native /_astro/... paths)
+  // Convert src attributes starting with /, ./, or plain folder names like images/
   processed = processed.replace(/src="(?!https?:\/\/)(?:\.\/)?([^"]*)"/g, (match, p1) => {
     const cleanPath = p1.replace(/^\/+/, '');
     return `src="${new URL(cleanPath, siteUrl).toString()}"`;
@@ -43,22 +46,16 @@ export async function GET(context) {
         ? `<p><em>${post.data.description}</em></p><hr>` 
         : '';
 
-      // 3. Grab Astro's pre-compiled HTML string instead of parsing raw markdown
-      const rawHtmlBody = post.rendered?.html || '';
-      
-      // 4. Make internal/inline image URLs absolute
+      // 3. Parse markdown body and make internal/inline image URLs absolute
+      const rawHtmlBody = parser.render(post.body || '');
       const absoluteBody = absolutizeHtml(rawHtmlBody, siteUrl);
 
-      // 5. Combine and sanitize with rules optimized for Astro's asset pipeline
+      // 4. Combine and sanitize
       const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${absoluteBody}`, {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 
-          'img', 'figure', 'figcaption', 'hr', 
-          'picture', 'source' 
-        ]),
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img', 'figure', 'figcaption', 'hr' ]),
         allowedAttributes: {
           ...sanitizeHtml.defaults.allowedAttributes,
-          'img': [ 'src', 'alt', 'title', 'width', 'height', 'loading', 'decoding', 'srcset', 'sizes' ],
-          'source': [ 'srcset', 'media', 'type', 'sizes' ]
+          'img': [ 'src', 'alt', 'title', 'width', 'height' ]
         }
       });
 
