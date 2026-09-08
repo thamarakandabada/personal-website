@@ -1,44 +1,61 @@
-// src/pages/notebook/sections/[section]/rss.xml.js
-
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+
+const parser = new MarkdownIt({ html: true });
+
+// 1. Map your URL slugs to your frontmatter section names
+const sectionMap = {
+  'life': 'Life',
+  'the-universe': 'The Universe',
+  'everything-else': 'Everything Else',
+  'stream': 'Stream'
+};
 
 export async function getStaticPaths() {
-  return [
-    { params: { section: 'life' }, props: { sectionName: 'Life' } },
-    { params: { section: 'the-universe' }, props: { sectionName: 'The Universe' } },
-    { params: { section: 'everything-else' }, props: { sectionName: 'Everything Else' } },
-    { params: { section: 'stream' }, props: { sectionName: 'Stream' } },
-  ];
+  return Object.keys(sectionMap).map((section) => ({
+    params: { section },
+  }));
 }
 
 export async function GET(context) {
-  const { sectionName } = context.props;
-const sectionParam = context.params.section;
-  const blog = await getCollection('blog');
-  const sectionPosts = blog.filter((post) => post.data.sections?.includes(sectionName));
-  sectionPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-  const siteUrl = context.site || 'https://thamara.co.uk';
+  const { section } = context.params;
+  const targetSection = sectionMap[section];
+  const notebook = await getCollection('blog');
+
+  // 2. Filter posts where the section array includes the matching target section
+  const filteredPosts = notebook.filter((post) => {
+    const postSections = post.data.sections || [];
+    return postSections.includes(targetSection);
+  });
 
   return rss({
-    title: `${sectionName} - Notebook - Thamara Kandabada`,
-    description: `Uncensored thoughts on ${sectionName}`,
-    site: siteUrl,
-    customData: `
-      <language>en-gb</language>
-<atom:link href="${new URL(`/notebook/${sectionParam}/rss.xml`, siteUrl).href}" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />    `,
-    items: sectionPosts.map((post) => {
-      const fallbackTitle = post.data.title || post.data.description || 'Untitled Post';
-      const itemUrl = new URL(`/notebook/${post.id}/`, siteUrl).href;
+    title: `Notebook (${targetSection}) - Thamara Kandabada`,
+    description: `Latest posts in the ${targetSection} section.`,
+    site: context.site,
+    items: filteredPosts.map((post) => {
+      
+      const featuredImageHtml = post.data.imageUrl 
+        ? `<figure>
+             <img src="${new URL(post.data.imageUrl, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
+             ${post.data.imageCaption ? `<figcaption>${post.data.imageCaption}</figcaption>` : ''}
+           </figure>`
+        : '';
 
-      // Destructure 'author' out of post.data to prevent the RSS email validation error
-      const { author, ...restData } = post.data;
+      const descriptionHtml = post.data.description 
+        ? `<p><em>${post.data.description}</em></p><hr>` 
+        : '';
+
+      const htmlBody = parser.render(post.body || '');
+      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`);
 
       return {
-        ...restData,
-        title: fallbackTitle,
-        description: post.data.description || fallbackTitle,
-        link: itemUrl,
+        title: post.data.title,
+        pubDate: post.data.pubDate,
+        description: post.data.description, 
+        link: `/notebook/${post.id}/`,      
+        content: fullContent,               
       };
     }),
   });

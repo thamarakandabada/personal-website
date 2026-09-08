@@ -1,34 +1,38 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+
+const parser = new MarkdownIt({ html: true });
 
 export async function GET(context) {
-  const blog = await getCollection('poster');
-  const posts = blog.sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-  );
-  
-  const siteUrl = context.site || 'https://thamara.co.uk';
+  const posterPosts = await getCollection('poster');
 
   return rss({
     title: 'Design - Thamara Kandabada',
-    description: 'A collection of my design work',
-    site: siteUrl,
-    customData: `
-      <language>en-gb</language>
-      <atom:link href="${new URL('/design/rss.xml', siteUrl).href}" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
-    `,
-    items: posts.map((post) => {
-      const fallbackTitle = post.data.title || post.data.description || 'Untitled Design';
-      const itemUrl = new URL(`/design/${post.id}/`, siteUrl).href;
+    description: 'Design work and posters.',
+    site: context.site,
+    items: posterPosts.map((post) => {
+      
+      const featuredImageHtml = post.data.imageUrl 
+        ? `<figure>
+             <img src="${new URL(post.data.imageUrl, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
+           </figure>`
+        : '';
 
-      // Destructure 'author' out of post.data to prevent the RSS email validation error
-      const { author, ...restData } = post.data;
+      const descriptionHtml = post.data.description 
+        ? `<p><em>${post.data.description}</em></p><hr>` 
+        : '';
+
+      const htmlBody = parser.render(post.body || '');
+      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`);
 
       return {
-        ...restData,
-        title: fallbackTitle,
-        description: post.data.description || fallbackTitle,
-        link: itemUrl,
+        title: post.data.title,
+        pubDate: post.data.pubDate,
+        description: post.data.description,
+        link: `/design/${post.id}/`,
+        content: fullContent,
       };
     }),
   });

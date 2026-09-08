@@ -1,34 +1,38 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+
+const parser = new MarkdownIt({ html: true });
 
 export async function GET(context) {
-  const blog = await getCollection('desk');
-  const posts = blog.sort(
-    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-  );
-  
-  const siteUrl = context.site || 'https://thamara.co.uk';
+  const deskPosts = await getCollection('desk');
 
   return rss({
     title: 'Desk - Thamara Kandabada',
-    description: 'The evolution of my desk setup',
-    site: siteUrl,
-    customData: `
-      <language>en-gb</language>
-      <atom:link href="${new URL('/desk/rss.xml', siteUrl).href}" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
-    `,
-    items: posts.map((post) => {
-      const fallbackTitle = post.data.title || post.data.description || 'Untitled Desk Setup';
-      const itemUrl = new URL(`/desk/${post.id}/`, siteUrl).href;
+    description: 'Workspace setup updates.',
+    site: context.site,
+    items: deskPosts.map((post) => {
+      
+      const featuredImageHtml = post.data.imageUrl 
+        ? `<figure>
+             <img src="${new URL(post.data.imageUrl, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
+           </figure>`
+        : '';
 
-      // Destructure 'author' out of post.data to prevent the RSS email validation error
-      const { author, ...restData } = post.data;
+      const descriptionHtml = post.data.description 
+        ? `<p><em>${post.data.description}</em></p><hr>` 
+        : '';
+
+      const htmlBody = parser.render(post.body || '');
+      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`);
 
       return {
-        ...restData,
-        title: fallbackTitle,
-        description: post.data.description || fallbackTitle,
-        link: itemUrl,
+        title: post.data.description || 'Desk Update', // Fallback title since schema has no title field
+        pubDate: post.data.date,
+        description: post.data.description,
+        link: `/desk/${post.id}/`,
+        content: fullContent,
       };
     }),
   });

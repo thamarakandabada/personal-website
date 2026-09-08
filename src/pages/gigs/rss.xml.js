@@ -1,34 +1,40 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+
+const parser = new MarkdownIt({ html: true });
 
 export async function GET(context) {
-  const blog = await getCollection('gigs');
-  const posts = blog.sort(
-    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-  );
-  
-  const siteUrl = context.site || 'https://thamara.co.uk';
+  const gigPosts = await getCollection('gigs');
 
   return rss({
     title: 'Gigs - Thamara Kandabada',
-    description: 'Music, theatre, comedy, and other live performances I see',
-    site: siteUrl,
-    customData: `
-      <language>en-gb</language>
-      <atom:link href="${new URL('/gigs/rss.xml', siteUrl).href}" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
-    `,
-    items: posts.map((post) => {
-      const fallbackTitle = post.data.title || post.data.description || 'Untitled Gig';
-      const itemUrl = new URL(`/gigs/${post.id}/`, siteUrl).href;
+    description: 'Concert and gig logs.',
+    site: context.site,
+    items: gigPosts.map((post) => {
+      
+      const featuredImageHtml = post.data.imageUrl 
+        ? `<figure>
+             <img src="${new URL(post.data.imageUrl, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
+           </figure>`
+        : '';
 
-      // Destructure 'author' out of post.data to prevent the RSS email validation error
-      const { author, ...restData } = post.data;
+      // Build a nice subtitle meta block using venue and city info
+      const gigMeta = `<p><em>Live at ${post.data.venue} (${post.data.city})</em></p>`;
+      const descriptionHtml = post.data.description 
+        ? `<p>${post.data.description}</p>${gigMeta}<hr>` 
+        : `${gigMeta}<hr>`;
+
+      const htmlBody = parser.render(post.body || '');
+      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`);
 
       return {
-        ...restData,
-        title: fallbackTitle,
-        description: post.data.description || fallbackTitle,
-        link: itemUrl,
+        title: post.data.title,
+        pubDate: post.data.date,
+        description: post.data.description,
+        link: `/gigs/${post.id}/`,
+        content: fullContent,
       };
     }),
   });
