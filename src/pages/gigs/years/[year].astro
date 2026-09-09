@@ -5,10 +5,11 @@ import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const allGigs = await getCollection('gigs');
-  allGigs.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const pastGigs = allGigs.filter((post) => !post.data.upcoming);
+  pastGigs.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
   const gigYears = new Map();
 
-  allGigs.forEach((post) => {
+  pastGigs.forEach((post) => {
     const year = post.data.date.getFullYear();
 
     if (!gigYears.get(year)) {

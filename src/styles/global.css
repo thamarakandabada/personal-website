@@ -838,7 +838,7 @@ Grids and sub-grids
     column-gap: 1.5rem;
 }
 
-.hobbies-section, .guitar-showcase, .wwc-grid, .iw-grid {
+.hobbies-section, .guitar-showcase, .wwc-grid, .iw-grid, .two-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
@@ -934,7 +934,7 @@ Grids and sub-grids
     color: var(--accent);
 }
 
-.debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover, .gigs-grid div:hover:not(.gig-photo, .gig-label) {
+.debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover, .gigs-grid div:hover:not(.gig-photo, .gig-label, .upcoming-gig-timeline-node, .upcoming-gig-label) {
     border-color: var(--accent);
     transform: translateY(-4px);
 }
@@ -1086,7 +1086,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .md-grid, .poster-list, .hobbies-section, .guitar-showcase, .wwc-grid, .iw-grid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .md-grid, .poster-list, .hobbies-section, .guitar-showcase, .wwc-grid, .iw-grid, .two-grid {
         grid-template-columns: 1fr !important;
     }
 
@@ -1172,7 +1172,7 @@ Media queries
         gap: 0;
     }
 
-    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .hobbies-section, .guitar-showcase, .wwc-grid, .iw-grid {
+    .uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .blogroll-grid, .verify-grid, .podcast-grid, .podroll-grid, .podroll-subgrid, .notebook-grid, .gigs-grid, .hobbies-section, .guitar-showcase, .wwc-grid, .iw-grid, .two-grid {
     grid-template-columns: 1fr;
     }
 
@@ -1533,17 +1533,18 @@ Gigs
     color: var(--accent);
 }
 
-.gig-timeline-node, .desk-timeline-node {
+.gig-timeline-node, .desk-timeline-node, .upcoming-gig-timeline-node {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 1rem;
     margin-bottom: 1.5rem;
 }
 
-.gig-timeline-node p, .desk-timeline-node p {
+.gig-timeline-node p, .desk-timeline-node p, .upcoming-gig-timeline-node p {
     margin: 0;
     padding: 0;
 }
+
 .gig-label, .desk-location {
     margin: -1rem 0 0 1rem;
     border: 1px solid var(--border-color);
@@ -1553,6 +1554,20 @@ Gigs
     font-size: 1rem;
     width: fit-content;
     display: inline-block;
+}
+
+.upcoming-gig-label p {
+    color: var(--accent);
+}
+
+.upcoming-gig-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.upcoming-gig-venue, .upcoming-gig-date {
+    font-style: italic;
+    color: var(--text-secondary);
 }
 
 .gig-title {

@@ -5,15 +5,16 @@ import Gig from '../../../components/Gig.astro';
 
 export async function getStaticPaths() {
   const allGigs = await getCollection("gigs");
-  allGigs.sort((a, b) => {
+  const pastGigs = allGigs.filter((post) => !post.data.upcoming);
+  pastGigs.sort((a, b) => {
     const dateA = new Date(a.data.date).valueOf();
     const dateB = new Date(b.data.date).valueOf();
     return dateB - dateA;
   });
-  const uniqueCities = [...new Set(allGigs.map((gig) => gig.data.city).filter(Boolean))];
+  const uniqueCities = [...new Set(pastGigs.map((gig) => gig.data.city).filter(Boolean))];
 
 return uniqueCities.map((city) => {
-  const filteredGigs = allGigs.filter((gig) => gig.data.city === city);
+  const filteredGigs = pastGigs.filter((gig) => gig.data.city === city);
   return {
     params: { city: String(city).toLowerCase().replace(/\s+/g, '-') },
     props: { page: { data: filteredGigs }, displayCity: city },
