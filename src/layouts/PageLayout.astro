@@ -61,6 +61,32 @@ const socialImageURL = new URL(imagePath, Astro.site || 'https://thamara.co.uk')
         
     <Analytics/>
     <SpeedInsights/>
+<script is:inline>
+      const applyTheme = () => {
+        const theme = (() => {
+          const localStorageTheme = localStorage?.getItem("theme") ?? '';
+          if (['dark', 'light'].includes(localStorageTheme)) {
+            return localStorageTheme;
+          }
+          if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+          }
+          return 'light';
+        })();
+
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      };
+
+      // Run exactly once on the first page load
+      applyTheme();
+
+      // Run every time a new page is swapped in, BEFORE it paints to the screen
+      document.addEventListener('astro:after-swap', applyTheme);
+    </script>
 </head>
 <body>
     <Navigation />
