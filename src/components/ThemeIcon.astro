@@ -7,21 +7,6 @@
   </svg>
 </button>
 
-<style>
-  #themeToggle {
-    border: 0;
-    background: none;
-    cursor: pointer;
-    text-align: left;
-  }
-
-  .sun { fill: var(--text-primary); }
-  .moon { fill: transparent; }
-
-  :global(.dark) .sun { fill: transparent; }
-  :global(.dark) .moon { fill: var(--text-primary); }
-</style>
-
 <script is:inline>
   const theme = (() => {
     const localStorageTheme = localStorage?.getItem("theme") ?? '';
@@ -52,3 +37,18 @@
 
   document.getElementById("themeToggle")?.addEventListener("click", handleToggleClick);
 </script>
+
+<style>
+  #themeToggle {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .sun { fill: var(--text-primary); }
+  .moon { fill: transparent; }
+
+  :global(.dark) .sun { fill: transparent; }
+  :global(.dark) .moon { fill: var(--text-primary); }
+</style>
