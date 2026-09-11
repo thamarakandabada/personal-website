@@ -1,0 +1,12 @@
+---
+const { label, title, venue, date, city } = Astro.props;
+---
+<div class="upcoming-gig-timeline-node h-entry">
+  <div class="upcoming-gig-label">
+    <p>{label}</p>
+  </div>
+  <p class="upcoming-gig-title p-name">{title}</p>
+  <p class="upcoming-gig-date"><time class="dt-published" datetime={date.toISOString()}>
+    {date.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}
+  </time> at <span class="upcoming-gig-venue">{venue}, {city}</span></p>
+</div>

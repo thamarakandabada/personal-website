@@ -3,7 +3,7 @@ imageUrl: 'images/49AFE11E-3123-4C1D-9A8F-6B32445EA0CA_1_102_o.jpeg'
 imageAlt: 'McGrath playing guitar and singing next to a large portrait of Sinead O''Connor'
 label: 'Music'
 title: 'Regard 24'
-support: 'Ciana O''Muireadhaigh, McGrath, Amanda Fawn, Maria Nickolay, Erin Cahill'
+support: 'Ciana O''Muireadhaigh, McGrath, Amanda Fawn, Maria Nickolay, Erin Hill'
 description: 'This month''s Regard gig was at the beautiful Pigment Space, a working art studio in Belfast that also hosts events. In between the three musical acts, two artists shared their work with the crowd. The night ended with Amanda Fawn''s song "I''m Carried"—it was a nice throwback to the very first Regard event we attended in January this year where we had first heard the song being performed. I''m grateful to the Regard team for bringing us into these cool venues every month to experience wonderful local musicians.'
 venue: 'Pigment Space'
 date: 2026-09-05

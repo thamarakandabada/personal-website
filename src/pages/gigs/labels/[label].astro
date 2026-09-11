@@ -5,15 +5,16 @@ import Gig from '../../../components/Gig.astro';
 
 export async function getStaticPaths() {
   const allGigs = await getCollection("gigs");
-  allGigs.sort((a, b) => {
+  const pastGigs = allGigs.filter((post) => !post.data.upcoming);
+  pastGigs.sort((a, b) => {
     const dateA = new Date(a.data.date).valueOf();
     const dateB = new Date(b.data.date).valueOf();
     return dateB - dateA;
   });
-  const uniqueLabels = [...new Set(allGigs.map((gig) => gig.data.label).filter(Boolean))];
+  const uniqueLabels = [...new Set(pastGigs.map((gig) => gig.data.label).filter(Boolean))];
 
 return uniqueLabels.map((label) => {
-  const filteredGigs = allGigs.filter((gig) => gig.data.label === label);
+  const filteredGigs = pastGigs.filter((gig) => gig.data.label === label);
   return {
     params: { label: String(label).toLowerCase().replace(/\s+/g, '-') },
     props: { page: { data: filteredGigs }, displayLabel: label },

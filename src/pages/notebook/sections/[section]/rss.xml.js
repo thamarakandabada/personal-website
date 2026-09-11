@@ -5,11 +5,10 @@ import MarkdownIt from 'markdown-it';
 
 const parser = new MarkdownIt({ html: true });
 
-// 1. Map your URL slugs to your frontmatter section names
 const sectionMap = {
   'life': 'Life',
   'the-universe': 'The Universe',
-  'everything-else': 'Everything Else',
+  'everything': 'Everything Else',
   'stream': 'Stream'
 };
 
@@ -23,8 +22,8 @@ export async function GET(context) {
   const { section } = context.params;
   const targetSection = sectionMap[section];
   const notebook = await getCollection('blog');
+  const siteUrl = context.site || 'https://thamara.co.uk';
 
-  // 2. Filter posts where the section array includes the matching target section
   const filteredPosts = notebook.filter((post) => {
     const postSections = post.data.sections || [];
     return postSections.includes(targetSection);
@@ -35,12 +34,12 @@ export async function GET(context) {
     description: `Latest posts in the ${targetSection} section.`,
     site: context.site,
     items: filteredPosts.map((post) => {
-      
+
       const featuredImageHtml = post.data.imageUrl 
         ? `<figure>
-             <img src="${new URL(post.data.imageUrl, context.site).toString()}" alt="${post.data.imageAlt || ''}" />
-             ${post.data.imageCaption ? `<figcaption>${post.data.imageCaption}</figcaption>` : ''}
-           </figure>`
+            <img src="${new URL(post.data.imageUrl.src, siteUrl).toString()}" alt="${post.data.imageAlt || ''}" />
+            ${post.data.imageCaption ? `<figcaption>${post.data.imageCaption}</figcaption>` : ''}
+          </figure>`
         : '';
 
       const descriptionHtml = post.data.description 
@@ -48,8 +47,15 @@ export async function GET(context) {
         : '';
 
       const htmlBody = parser.render(post.body || '');
-      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`);
 
+      const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`, {
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img', 'figure', 'figcaption', 'hr' ]),
+        allowedAttributes: {
+          ...sanitizeHtml.defaults.allowedAttributes,
+          'img': [ 'src', 'alt', 'title', 'width', 'height' ]
+        }
+      });
+    
       return {
         title: post.data.title,
         pubDate: post.data.pubDate,

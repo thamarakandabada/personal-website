@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import GigLayout from '../../layouts/GigLayout.astro';
+import UpcomingGigLayout from '../../layouts/UpcomingGigLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('gigs');
@@ -11,8 +12,10 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+let Layout = post.data.upcoming ? UpcomingGigLayout : GigLayout;
 ---
 
-<GigLayout frontmatter={post.data}>
+<Layout frontmatter={post.data}>
   <Content />
-</GigLayout>
+</Layout>
