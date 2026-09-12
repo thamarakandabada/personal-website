@@ -14,7 +14,7 @@ After a lot of effort I've managed to get full content RSS feeds implemented acr
 
 My initial setup was based on Astro's basic feed generation logic that is laid out in their [official documentation](https://docs.astro.build/en/recipes/rss/). They also have a section on including full post content, which never quite worked for me properly because I sometimes write raw HTML inside my markdown posts (e.g., to make image grids, and to include a [post footer](/style#other-components)). I also have posts going back several years with relative URLs, which require additional logic to be handled properly within full content feeds. Another consideration was the fact that some posts have featured images that I wanted to be visible in feed readers.
 
-Following Astro's documentation for this was a bit confusing for me at this stage as I don't understand JavaScript, so in view of full transparency (see my [AI policy](/ai))I must admit that I had Google Gemini's help in writing some of the logic required to parse the feeds correctly. Here is the code that generates the feed for this blog.
+Following Astro's documentation for this was a bit confusing for me at this stage as I don't understand JavaScript, so in view of full transparency (see my [AI policy](/ai)) I must admit that I had Google Gemini's help in writing some of the logic required to parse the feeds correctly. Here is the code that generates the feed for this blog.
 
 ```javascript
 
