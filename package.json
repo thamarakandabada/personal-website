@@ -10,7 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prune-vercel": "vercel rm satellite-shepherd --safe --yes",
+    "prune-vercel": "npx vercel rm satellite-shepherd --safe --yes",
     "postbuild": "webmention dist/notebook/rss.xml --limit 1 --send"
   },
   "dependencies": {
