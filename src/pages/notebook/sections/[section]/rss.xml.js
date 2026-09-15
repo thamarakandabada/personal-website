@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 export async function GET(context) {
   const { section } = context.params;
   const targetSection = sectionMap[section];
-  const notebook = await getCollection('blog');
+  const notebook = await getCollection('notebook');
   const siteUrl = context.site || 'https://thamara.co.uk';
 
   const filteredPosts = notebook.filter((post) => {

@@ -6,7 +6,7 @@ import { defineCollection } from "astro:content";
 import { z } from "astro/zod";
 
 // Define a `loader` and `schema` for each collection
-const blog = defineCollection({
+const notebook = defineCollection({
     loader: glob({ pattern: '**/[^_]*.md', base: "./src/notebook" }),
     schema: ({ image }) => z.object({
       title: z.string().optional(),
@@ -78,7 +78,7 @@ const podcast = defineCollection({
     })
 });
 
-const poster = defineCollection({
+const design = defineCollection({
     loader: glob({ pattern: '**/[^_]*.md', base: "./src/design" }),
     schema: ({ image }) => z.object({
       title: z.string(),
@@ -95,10 +95,10 @@ const poster = defineCollection({
 
 // Export a single `collections` object to register your collection(s)
 export const collections = {
-  'blog': blog,
+  'notebook': notebook,
   'debas': debas,
   'gigs': gigs,
   'podcast': podcast,
-  'poster': poster,
+  'design': design,
   'desk': desk
 };

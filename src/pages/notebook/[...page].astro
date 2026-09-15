@@ -5,7 +5,7 @@ import PageLayout from '../../layouts/PageLayout.astro';
 import BlogPost from '../../components/BlogPost.astro';
 
 export const getStaticPaths = (async ({paginate}) => {
-  const posts = (await getCollection('blog'))
+  const posts = (await getCollection('notebook'))
     .sort((a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0));
   
   const publishedPosts = posts.filter(post => !post.data.draft);

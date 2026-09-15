@@ -4,7 +4,7 @@ import { Picture } from 'astro:assets';
 import coverImage from '../assets/images/main/thamara-kandabada.jpg';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog'))
+const posts = (await getCollection('notebook'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .filter(post => !post.data.draft)
   .filter(post => !post.data.sections?.includes('Stream'))

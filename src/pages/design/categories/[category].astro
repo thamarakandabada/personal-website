@@ -4,7 +4,7 @@ import PageLayout from '../../../layouts/PageLayout.astro';
 import Poster from '../../../components/Poster.astro';
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection("poster");
+  const allPosts = await getCollection("design");
   allPosts.sort((a, b) => {
     const dateA = new Date(a.data.pubDate).valueOf();
     const dateB = new Date(b.data.pubDate).valueOf();

@@ -5,7 +5,7 @@ import PageLayout from '../../layouts/PageLayout.astro';
 import Poster from '../../components/Poster.astro';
 
 export const getStaticPaths = (async ({paginate}) => {
-  const posts = (await getCollection('poster'))
+  const posts = (await getCollection('design'))
     .sort((a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0));
 
   return paginate(posts, { pageSize: 24 } );

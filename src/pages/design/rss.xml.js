@@ -6,7 +6,7 @@ import MarkdownIt from 'markdown-it';
 const parser = new MarkdownIt({ html: true });
 
 export async function GET(context) {
-  const posterPosts = await getCollection('poster');
+  const posterPosts = await getCollection('design');
   const siteUrl = context.site || 'https://thamara.co.uk';
 
   return rss({

@@ -4,7 +4,7 @@ import PageLayout from '../../../layouts/PageLayout.astro';
 import BlogPost from '../../../components/BlogPost.astro';
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection("blog");
+  const allPosts = await getCollection("notebook");
   allPosts.sort((a, b) => {
     const dateA = new Date(a.data.pubDate).valueOf();
     const dateB = new Date(b.data.pubDate).valueOf();

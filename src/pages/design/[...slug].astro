@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import PosterLayout from '../../layouts/PosterLayout.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('poster');
+  const posts = await getCollection('design');
   return posts.map(post => ({
     params: { slug: post.id }, props: { post },
   }));
