@@ -25,56 +25,50 @@ If you scroll down to the bottom of this post you will see there is a new sectio
 HTML:
 
 ```html
-  
-  <div class="marquee-container">
-    <span class="marquee-text">Join the IndieWeb</span>
-  </div>
-
-
+<div class="marquee-container">
+  <span class="marquee-text">Join the IndieWeb</span>
+</div>
 ```
 
 CSS:
 
 ```css
+.marquee-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+    white-space: nowrap;
+    background: var(--accent);
+    padding: 0.5rem 0;
+}
 
-  .marquee-container {
-      width: 100vw;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      overflow: hidden;
-      white-space: nowrap;
-      background: var(--accent);
-      padding: 0.5rem 0;
-  }
+.marquee-text {
+    display: inline-block;
+    width: auto;
+    color: white;
+    font-size: 0.75rem;
+    font-family: "Cascadia Mono", monospace;
+    animation: marquee-scroll 20s linear infinite normal;
+}
 
-  .marquee-text {
-      display: inline-block;
-      width: auto;
-      color: white;
-      font-size: 0.75rem;
-      font-family: "Cascadia Mono", monospace;
-      animation: marquee-scroll 20s linear infinite normal;
-  }
-
-  .marquee-text:hover {
+.marquee-text:hover {
     animation-play-state: paused;
-  }
+}
 
-  @media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
     .marquee-text {
         animation: none !important;
     }
-  }
+}
 
-  @keyframes marquee-scroll {
-      0%   { transform: translateX(100vw); }
-      100% { transform: translateX(-100%); }
-  }
-
-
+@keyframes marquee-scroll {
+    0%   { transform: translateX(100vw); }
+    100% { transform: translateX(-100%); }
+}
 ```
 
 The credit for this code belongs to the [GetZenQuery](https://www.getzenquery.com/tools/marquee-generator/) website, where I copied and adapted it from. This text links to my newly-created [IndieWeb](/indieweb) page.

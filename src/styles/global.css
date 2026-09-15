@@ -362,14 +362,23 @@ a:hover:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .noteboo
     color: var(--accent);
 }
 
-.astro-code, .astro-code span, code {
+code {
     font-family: "Cascadia Mono", monospace;
     font-size: 0.9rem;
+}
+
+code:not(pre code) {
+    padding: 0.25rem 0.5rem !important;
+}
+
+code:not(pre code) {
+    background-color: var(--bg-tertiary);
     border-radius: 4px;
 }
 
-code {
-    padding: 0.25rem 0.5rem;
+.astro-code {
+    border-radius: 4px;
+    padding: 1rem;
 }
 
 table {

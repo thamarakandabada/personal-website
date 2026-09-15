@@ -3,7 +3,6 @@ import PageLayout from './PageLayout.astro';
 import BlogPostNavPrevNext from '../components/BlogPostNavPrevNext.astro';
 import PostReference from '../components/PostReference.astro';
 import Webmentions from '../components/Webmentions.astro';
-import OldPostDisclaimer from '../components/OldPostDisclaimer.astro';
 
 const currentUrl = new URL(Astro.url.pathname, Astro.site || 'https://thamara.co.uk').href;
 const { frontmatter } = Astro.props;

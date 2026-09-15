@@ -25,26 +25,21 @@ For anyone looking to do this in Astro, here is the code I used:
 First, the TypeScript which goes in the frontmatter of my blog post template:
 
 ```typescript
-
-  let DisclaimerThreshold = 2; // years
-  let currentYear = new Date().getFullYear();
-  let postYear = frontmatter.pubDate ? new Date(frontmatter.pubDate).getFullYear() : currentYear;
-  let postAge = currentYear - postYear;
-  let showDisclaimer = postAge > DisclaimerThreshold;
-  
+let DisclaimerThreshold = 2; // years
+let currentYear = new Date().getFullYear();
+let postYear = frontmatter.pubDate ? new Date(frontmatter.pubDate).getFullYear() : currentYear;
+let postAge = currentYear - postYear;
+let showDisclaimer = postAge > DisclaimerThreshold;  
 ```
 
 And this snippet, which is included in the body of the template, just before the point where the markdown content is injected.
 
 ```html
-
-  {showDisclaimer && (
-    <div class="old-post-disclaimer">
-      <p><span class="disclaimer-tag"><strong>Disclaimer:</strong></span> This post was written over {postAge} years ago and may not reflect my current views or opinions. Please take this into consideration when reading.</p>
-    </div>
-  )}
-
-
+{showDisclaimer && (
+  <div class="old-post-disclaimer">
+    <p><span class="disclaimer-tag"><strong>Disclaimer:</strong></span> This post was written over {postAge} years ago and may not reflect my current views or opinions. Please take this into consideration when reading.</p>
+  </div>
+)}
 ```
 
 I'm aware this simple subtraction of years creates an edge case where some posts which are not as old as 2 years may be counted as such. I'm fine with it. The purpose is not to establish the exact chronology.
