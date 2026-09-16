@@ -21,7 +21,7 @@
     "@remy/webmention": "^1.5.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "astro": "^7.3.2",
+    "astro": "^7.3.3",
     "markdown-it": "^15.0.0",
     "mdast-util-to-string": "^4.0.0",
     "reading-time": "^1.5.0",
