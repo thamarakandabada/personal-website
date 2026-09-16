@@ -7,7 +7,7 @@ import { z } from "astro/zod";
 
 // Define a `loader` and `schema` for each collection
 const notebook = defineCollection({
-    loader: glob({ pattern: '**/[^_]*.md', base: "./src/notebook" }),
+    loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/notebook" }),
     schema: ({ image }) => z.object({
       title: z.string().optional(),
       pubDate: z.date(),
@@ -40,7 +40,7 @@ const debas = defineCollection({
 });
 
 const gigs = defineCollection({
-    loader: glob({ pattern: '**/[^_]*.md', base: "./src/gigs" }),
+    loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/gigs" }),
     schema: ({ image }) => z.object({
       title: z.string(),
       date: z.date(),
@@ -56,7 +56,7 @@ const gigs = defineCollection({
 });
 
 const desk = defineCollection({
-    loader: glob({ pattern: '**/[^_]*.md', base: "./src/desk" }),
+    loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/desk" }),
     schema: ({ image }) => z.object({
       date: z.date(),
       imageUrl: image(),
@@ -79,7 +79,7 @@ const podcast = defineCollection({
 });
 
 const design = defineCollection({
-    loader: glob({ pattern: '**/[^_]*.md', base: "./src/design" }),
+    loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/design" }),
     schema: ({ image }) => z.object({
       title: z.string(),
       pubDate: z.date(),
