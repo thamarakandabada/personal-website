@@ -12,7 +12,7 @@ html {
   --text-secondary: #67686b;
   --border-color: #c6beb0;
   --accent: #AF4F41;
-  --accent-op1: #AF4F4130;
+  --accent-op1: #AF4F4120;
   --accent-op2: #AF4F4190;
 }
 
@@ -51,10 +51,10 @@ a {
     background-image: linear-gradient(to right, var(--accent-op1), var(--accent-op2));
     background-repeat: no-repeat;
     background-position: 50% 95%;
-    background-size: 200% 20%;
+    background-size: 200% 10%;
     overflow-wrap: break-word;
     word-break: break-word;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     text-decoration: none !important;
     transition: 0.5s;
 }
@@ -65,4 +65,5 @@ a:hover {
     background-position: 0% 100%;
     background-size: 300% 100%;
     font-weight: 700;
+    color: var(--accent);
 }
