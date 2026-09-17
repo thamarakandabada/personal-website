@@ -10,3 +10,5 @@ director: 'The Turnaround Project'
 ---
 
 I was approached by the Turnaround team to design a poster for the event based on our previous experience working together and I was glad to oblige.
+
+The brief was quite straightfoward. The team wanted a poster that communicated the key details of the event, which they were hoping to circulate via print and social media.

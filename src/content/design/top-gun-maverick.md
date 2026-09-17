@@ -8,3 +8,7 @@ imageUrl: 'images/Top-Gun-Maverick-scaled.jpg'
 imageAlt: 'Film poster with Tom Cruise and Jennifer Connelly, towards the left of the image, near a car. 3 Jets pass overhead next to a bright yellow sun.'
 director: 'Joseph Kosinski'
 ---
+
+When I posted this on Reddit, I [got some flak](https://www.reddit.com/r/MoviePosterPorn/comments/vs4r1u/comment/if0vm2s/) for highlighting the "babyboomer romance" aspect of the film. I was simply looking to incorporate this scene between Tom Cruise and Jennifer Connelly next to her character's vintage car, and thought the end result turned out ok. I am not, however, happy with the typography, and which I had chosen a different font.
+
+[Digital copy](https://ko-fi.com/s/b0877af4cf)
