@@ -39,7 +39,8 @@ const socialImageURL = new URL(imagePath, Astro.site || 'https://thamara.co.uk')
     <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
     <link rel="webmention" href="https://webmention.io/thamara.co.uk/webmention" />
     <link rel="pingback" href="https://webmention.io/thamara.co.uk/xmlrpc" />
-    <link rel="indieauth-metadata" href="https://indiekey.id/s/v3cpz4n3jc7yzbqv/metadata">
+    <link rel="authorization_endpoint" href="https://indiekey.id/s/v3cpz4n3jc7yzbqv/auth">
+    <link rel="token_endpoint" href="https://indiekey.id/token">
         
     {feeds.map((feed) => (
         <link rel="alternate" type="application/rss+xml" title={feed.title} href={feed.href} />
