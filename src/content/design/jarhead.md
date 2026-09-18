@@ -8,3 +8,7 @@ imageUrl: 'images/Jarhead-768x1024.jpg'
 imageAlt: 'Jake Gyllenhaal''s character Anthony Swofford laying on his back and reading a book'
 director: 'Sam Mendes'
 ---
+
+I thought Sam Mendes did well with this film in bringing the ground realities of war on to the big screen without fetishising the American military, like most films made about similar subjects do.
+
+[Digital copy](https://ko-fi.com/s/f91150f30e) / [Physical copy](https://www.redbubble.com/i/poster/Jarhead-2005-by-123thamara-k/104797810/flk2)

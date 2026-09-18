@@ -8,3 +8,7 @@ imageUrl: 'images/Apocalypse-Now-scaled.jpg'
 imageAlt: 'The face of Martin Sheen''s character Captain Benjamin Willard half-submerged in a bog from the iconic scene in the film, with Marlon Brando''s Colonel Kurtz looming above him'
 director: 'Francis Ford Coppola'
 ---
+
+Coppola said they were going crazy in the jungle making this film. I can see why. If you're a fan of this classic I would highly recommend the documentary [*Hearts of Darkness: A Filmmaker's Apocalypse*](https://en.wikipedia.org/wiki/Hearts_of_Darkness:_A_Filmmaker%27s_Apocalypse).
+
+[Digital copy](https://ko-fi.com/s/f82c7b6b62) / [Physical copy](https://www.redbubble.com/i/poster/Apocalypse-Now-1979-by-123thamara-k/102091855/flk2)
