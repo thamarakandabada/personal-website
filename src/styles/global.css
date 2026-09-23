@@ -193,6 +193,12 @@ nav p, nav div {
     white-space: nowrap;
     background: var(--accent);
     padding: 0.5rem 0;
+    filter: grayscale();
+    transition: 0.5s;
+}
+
+.marquee-container:hover {
+    filter: none;
 }
 
 .marquee-text {
@@ -1478,9 +1484,14 @@ Blog
     transition: 0.5s;
 }
 
+.buttons8815 img {
+    filter: grayscale();
+}
+
 .buttons8815 img:hover, .letterboxd-embed-tc-poster img:hover {
     transform: translateY(-4px);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    filter: none;
 }
 
 button, .sub-button {
