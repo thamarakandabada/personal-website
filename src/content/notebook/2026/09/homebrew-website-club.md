@@ -5,7 +5,7 @@ description: Web meetup for all things personal websites
 author: Thamara Kandabada
 imageUrl: images/95E7DEFE-FC3C-4984-95CD-0E86F293D1C5.jpeg
 imageAlt: My desk setup for the meeting. My laptop is open to the Etherpad note-taker, and behind it is a large TV, on which Zoom is open. On top of the Zoom window is James, he is smiling. Right below him, I can be seen taking this photo on my phone.
-imageCaption: ''
+imageCaption: James and I setting up today's meetup before the other participants joined.
 sections:
 - Everything Else
 topics:
