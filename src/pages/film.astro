@@ -1,10 +1,63 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import { getCollection } from 'astro:content';
 
+const posts = (await getCollection('notebook'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .filter(post => !post.data.draft)
+  .filter(post => post.data.topics?.includes('Film'))
+  .slice(0,5);
+const posters = (await getCollection('design'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .filter(post => post.data.category?.includes('Film Poster'))
+  .slice(0,5);
 const pageTitle = "Film - Thamara Kandabada";
 const slashpageImage = "/featured-images/film.png";
 ---
 <PageLayout title={pageTitle} image={slashpageImage}>
-    <h1>Film</h1>
-    <p>Work in progress</p>
+  <h1>Film</h1>
+  <div class="see-also">
+    <p>This page is a work in progress.</p>
+  </div>
+  <p>I love film. I am not an expert, or a critic, but I enjoy watching films. I’m an avid cinema-goer, Letterboxd-logger, and physical media collector. I sometimes design retro-themed film posters. This page is a central hub for all the film related content on this site, and some outside the site, too.</p>
+  <p>Don't ask my what my favourite film is; I don't have one. Or rather, the answer changes all the time. My four favourites on Letterboxd are updated regularly.</p>
+  <h2>Recent watches</h2>
+    <p>These are the last five films I watched. The data is pulled from my Letterboxd profile using <a href="https://letterboxd-embed.timcieplowski.com/" target="_blank">a third-party tool</a>. The <i class="bi bi-recycle"></i> symbol indicates a rewatch.</p>
+    <div id="letterboxd-embed-wrapper-tc">Loading...</div>
+      <script>
+          fetch('https://lb-embed-content.bokonon.dev?username=thamarak')
+          .then(response => response.text())
+          .then(data => {
+          document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
+          });
+      </script>
+  <div class="two-grid">
+    <div>
+      <h2>Blog posts</h2>
+        <p>The latest film-related posts from my blog.</p>
+          <ul class="recent-blogposts-list">
+              {posts.map(post => (
+              <li><a href={`/notebook/${post.id}`}>{post.data.title}</a></li>
+            ))}
+            <li><strong><a href="/notebook/topics/film/">All film-related posts</a></strong></li>
+          </ul>
+    </div>
+    <div>
+      <h2>Posters</h2>
+        <p>The latest film poster designs I've done.</p>
+          <ul class="recent-blogposts-list">
+              {posters.map(post => (
+              <li><a href={`/design/${post.id}`}>{post.data.title}</a></li>
+            ))}
+            <li><strong><a href="/design/categories/film-poster/">All film posters</a></strong></li>
+          </ul>
+    </div>
+    <div>
+      <h2>More links</h2>
+      <ul class="recent-blogposts-list">
+        <li><a href="" target="_blank">Letterboxd profile</a></li>
+        <li><a href="" target="_blank">Physical media collection</a></li>
+      </ul>
+    </div>
+  </div>
 </PageLayout>

@@ -5,7 +5,7 @@ import siteImage from '../assets/images/wwc/wwcsite.png';
 import forumImage from '../assets/images/wwc/wwcforum.png';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog'))
+const posts = (await getCollection('notebook'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .filter(post => !post.data.draft)
   .filter(post => post.data.topics?.includes('WWC'))
