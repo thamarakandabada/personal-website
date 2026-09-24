@@ -11,7 +11,7 @@ const slashpageImage = "/featured-images/style.png";
   <h1>Style</h1>
   <p>On this page you can see how different elements are styled on this website. I have not used any pre-packaged themes; all CSS was handwritten from the ground up.</p>
   <p>While this website is designed to be fully responsive using media queries, it is best viewed on desktop.</p>
-  <h2>Colour palette</h2>
+  <h2 id="colour-palette">Colour palette</h2>
   <p>When you visit this site, your browser will default to light or dark mode based on your system settings by using client-side JavaScript. The site gives you the option to switch between modes by using the toggle on the top navigation menu. All elements are dynamically repainted in the following colours based on theme. No elements use hard-coded colour values.</p>
   <div class="colour-palette-grid">
     <div>
@@ -81,7 +81,7 @@ const slashpageImage = "/featured-images/style.png";
         </div>
       </div>
     </div>
-<h2>Typography</h2>
+<h2 id="typography">Typography</h2>
   <p>This site uses the typeface <a href="https://www.type-together.com/maiola-font" target="_blank">Maiola</a> from the foundry <a href="https://www.type-together.com/" target="_blank">TypeTogether</a> throughout. Code blocks and inline code use the monospace font <a href="https://fonts.google.com/specimen/Cascadia+Mono" target="_blank">Cascadia Mono</a>. Here are various text elements set in these fonts.</p>
   <div class="type-showcase">
     <h1>Heading 1</h1>
@@ -143,7 +143,7 @@ const slashpageImage = "/featured-images/style.png";
     </div>
   </div>
   <p>All text, except blog post titles, is left-aligned. Blog post titles are centre-aligned with a background set in the secondary background colour, on which the hero image (if available) overlaps with a <Code code={`-120px`} inline /> vertical spacing. See an example <a href="/notebook/gehenu-lamai">here</a>.</p>
-  <h2>Images</h2>
+  <h2 id="images">Images</h2>
   <p>All images are served in AVIF with fallback to WebP, feature a <Code code={`4px`} inline /> border radius, and include alt text. Captions, when used, are right-aligned and italicised. They are set in a font size of <Code code={`1rem`} inline /> and in the secondary text colour.</p>
   <p>All images have a subtle shadow, set to the values <Code code={`rgba(0, 0, 0, 0.16) 0px 1px 4px;`} inline />.</p>
   <p>See example below.</p>
@@ -155,7 +155,7 @@ const slashpageImage = "/featured-images/style.png";
   <figcaption>Gothmog, Lord of the Balrogs, riding a dragon. <a href="https://commons.wikimedia.org/wiki/File:GOTHMOG-1_(detail).jpg" target="_blank">Tttom</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>, via Wikimedia Commons</figcaption>
   </figure>
   <p>Linked images, like the 88x31 buttons in the footer, move up by <Code code={`4px`} inline /> on hover using the <Code code={`translateY()`} inline /> function.</p>
-  <h2>Tables</h2>
+  <h2 id="tables">Tables</h2>
   <p>Tables have a <Code code={`1px`} inline /> thick solid border set in the border colour with no border radius. The background of the header row is styled in the secondary background colour, while other rows have a transparent background. All text is left-aligned and vertically aligned to the top.</p>
   <p>See an example below:</p>
   <h3>Kings of Gondor</h3>
@@ -200,6 +200,6 @@ const slashpageImage = "/featured-images/style.png";
       <li><span><em>The Lord of the Rings:</em> The conclusion of the story of The Hobbit as well as things mentioned in The Silmarillion.</span></li>  
     </ol>
   </div>
-  <h2>Currently not in use</h2>
+  <h2 id="not-in-use">Currently not in use</h2>
   <p>I'm currently not using accordions and definition lists within this website.</p>
 </PageLayout>
