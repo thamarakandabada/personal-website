@@ -1,6 +1,6 @@
 ---
 title: Reclaiming storage space on macOS by deleting screensavers
-pubDate: 2026-09-24
+pubDate: 2026-09-27T13:20:00+01:00
 description: Aerial views are great, but they eat up too much space
 author: Thamara Kandabada
 imageUrl: images/Apple-macOS-Tahoe-Wallpaper-Tahoe-Day.jpg
