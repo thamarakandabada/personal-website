@@ -78,18 +78,29 @@ const podcast = defineCollection({
     })
 });
 
-const design = defineCollection({
-    loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/design" }),
-    schema: ({ image }) => z.object({
+  const design = defineCollection({
+      loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/design" }),
+      schema: ({ image }) => z.object({
+        title: z.string(),
+        pubDate: z.date(),
+        year: z.string().optional(),
+        imageUrl: image(),
+        imageAlt: z.string(),
+        description: z.string(),
+        category: z.array(z.string()),
+        director: z.string().optional(),
+        customer: z.string().optional(),
+      })
+  });
+
+const films = defineCollection({
+    loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/films" }),
+    schema: z.object({
       title: z.string(),
-      pubDate: z.date(),
-      year: z.string().optional(),
-      imageUrl: image(),
-      imageAlt: z.string(),
-      description: z.string(),
-      category: z.array(z.string()),
-      director: z.string().optional(),
-      customer: z.string().optional(),
+      url: z.string(),
+      year: z.string(),
+      director: z.string(),
+      notes: z.string().optional(),
     })
 });
 
@@ -100,5 +111,6 @@ export const collections = {
   'gigs': gigs,
   'podcast': podcast,
   'design': design,
-  'desk': desk
+  'desk': desk,
+  'films': films
 };

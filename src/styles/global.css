@@ -1033,11 +1033,6 @@ Media queries
         padding-right: 1rem !important;
     }
 
-    #letterboxd-embed-tc {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr;
-    }
-
     .homepage-flex, .home-page-hero {
         display: flex;
         flex: wrap;
@@ -1131,11 +1126,6 @@ Media queries
     .page-content, nav:not(.post-nav), .footer-content, .blog-content,.blog-header-no-image h1, .blog-header-no-image p, .blog-header h1, .blog-header p, .podcast-header h1, .podcast-header p {
         padding-left: 1rem;
         padding-right: 1rem;
-    }
-
-    #letterboxd-embed-tc {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .homepage-flex, .home-page-hero {
@@ -1815,11 +1805,6 @@ Gigs
 
     #letterboxd-embed-tc {
         margin-top: 2rem;
-        flex-direction: row !important;
-    }
-
-    #letterboxd-embed-tc div {
-        flex: 100%;
     }
 
     .letterboxd-embed-tc-diary-entry {
@@ -1854,20 +1839,11 @@ Gigs
         display: none;
     }
 
-    .letterboxd-embed-tc-divider {
-        display: none;
-    }
-
     .letterboxd-embed-tc-poster img {
         border-radius: 4px !important;
-        width: 100% !important;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
     }
 
-    .letterboxd-embed-tc-footer {
+    .letterboxd-embed-tc-footer, .letterboxd-embed-tc-divider {
         display: none;
-    }
-
-    .letterboxd-embed-tc-content {
-        flex-direction: column !important;
     }
