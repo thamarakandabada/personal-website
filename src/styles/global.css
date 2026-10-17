@@ -350,22 +350,20 @@ ul, ol {
 a:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a, .gigs-grid a, .letterboxd-embed-tc-poster a) {
     background-image: linear-gradient(to right, var(--accent-op1), var(--accent-op2));
     background-repeat: no-repeat;
-    background-position: 50% 95%;
-    background-size: 200% 10%;
+    background-position: 10% 100%;
+    background-size: 100% 10%;
     overflow-wrap: break-word;
     word-break: break-word;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     text-decoration: none !important;
     transition: 0.5s;
 }
 
 a:hover:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a, .gigs-grid a, .letterboxd-embed-tc-poster a) {
-    border-radius: 4px;
     padding: 0.1rem 0.4rem;
     background-position: 0% 100%;
-    background-size: 300% 100%;
+    background-size: 300% 15%;
     font-weight: 700;
-    color: var(--accent);
 }
 
 code {
