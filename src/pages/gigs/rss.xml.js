@@ -24,7 +24,7 @@ export async function GET(context) {
       const gigMeta = `<p><em>At ${post.data.venue} (${post.data.city})</em></p>`;
       
       const supportHtml = post.data.support
-        ? `<p><strong>Support:</strong> ${post.data.support}</p>`
+        ? `<p>${post.data.support}</p>`
         : '';
 
       const descriptionHtml = post.data.description 
