@@ -24,6 +24,7 @@ const currentUrl = new URL(Astro.url.pathname, Astro.site || 'https://thamara.co
 	title: 'Leave a note',
   });
 </script>
+<div class="guestbookmentions">
 <Webmentions targetUrl={currentUrl} />
-
+</div>
 </PageLayout>

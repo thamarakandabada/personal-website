@@ -1845,3 +1845,13 @@ Gigs
     .letterboxd-embed-tc-footer, .letterboxd-embed-tc-divider {
         display: none;
     }
+
+    .guestbookmentions h3 {
+        font-size: 1.2rem !important;
+        font-weight: 400 !important;
+        text-transform: uppercase;
+    }
+
+    .guestbookmentions h3 {
+        display: none;
+    }
