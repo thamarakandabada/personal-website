@@ -1,8 +1,10 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import Webmentions from '../components/Webmentions.astro';
 
 const pageTitle = "Guestbook - Thamara Kandabada";
 const slashpageImage = "/featured-images/guestbook.png";
+const currentUrl = new URL(Astro.url.pathname, Astro.site || 'https://thamara.co.uk').href;
 ---
 <PageLayout title={pageTitle} image={slashpageImage}>
   
@@ -22,5 +24,6 @@ const slashpageImage = "/featured-images/guestbook.png";
 	title: 'Leave a note',
   });
 </script>
+<Webmentions targetUrl={currentUrl} />
 
 </PageLayout>
