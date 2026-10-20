@@ -43,6 +43,7 @@ const isoDate = frontmatter.pubDate
       />
       <figcaption>{frontmatter.imageCaption}</figcaption>
     </figure>
+    <div class="e-content">
 {showDisclaimer && (
   <div class="old-post-disclaimer">
     <p><span class="disclaimer-tag"><strong>Disclaimer:</strong></span> This post was written over {postAge} years ago and may not reflect my current views or opinions. Please take this into consideration when reading.</p>
@@ -50,10 +51,9 @@ const isoDate = frontmatter.pubDate
 )}
 {frontmatter.replyTo && frontmatter.replyToUrl && (
   <div class="reply-to">
-    <p><strong>In reply to:</strong> <a href={frontmatter.replyToUrl}>{frontmatter.replyTo}</a></p>
+    <p><strong>In reply to:</strong> <a rel="in-reply-to" href={frontmatter.replyToUrl}>{frontmatter.replyTo}</a></p>
   </div>
 )}
-    <div class="e-content">
       <slot />
 	  </div>  
     <div class="topics-reference">

@@ -36,6 +36,8 @@ const isoDate = frontmatter.pubDate
 	  <p class="blog-description p-summary">{frontmatter.description}</p>
 	  <p class="blog-author">by {frontmatter.author}</p>
   </div>
+
+<div class="e-content">
 {showDisclaimer && (
   <div class="old-post-disclaimer">
     <p><span class="disclaimer-tag"><strong>Disclaimer:</strong></span> This post was written over {postAge} years ago and may not reflect my current views or opinions. Please take this into consideration when reading.</p>
@@ -46,7 +48,6 @@ const isoDate = frontmatter.pubDate
     <p><strong>In reply to:</strong> <a rel="in-reply-to" href={frontmatter.replyToUrl}>{frontmatter.replyTo}</a></p>
   </div>
 )}
-<div class="e-content">
     <slot />
   </div>
 	<div class="topics-reference">
