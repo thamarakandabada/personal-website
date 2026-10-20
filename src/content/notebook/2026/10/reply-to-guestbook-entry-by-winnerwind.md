@@ -8,7 +8,7 @@ imageAlt: ''
 imageCaption: ''
 sections:
 - Replies
-topics: [""]
+topics: ["Guestbook"]
 replyTo: 'Guestbook entry by WinnerWind'
 replyToUrl: 'https://winnerwind.in/webmentions/replies/2026-10-14-Thamara-guestbook-entry'
 ---

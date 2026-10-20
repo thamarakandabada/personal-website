@@ -17,7 +17,7 @@ const notebook = defineCollection({
       imageAlt: z.string(),
       imageCaption: z.string(),
       sections: z.array(z.string()),
-      topics: z.array(z.string()),
+      topics: z.array(z.string()).optional(),
       draft: z.boolean().default(false),
       replyTo: z.string().optional(),
       replyToUrl: z.string().optional(),
