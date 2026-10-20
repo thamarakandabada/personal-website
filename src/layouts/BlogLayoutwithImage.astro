@@ -48,6 +48,11 @@ const isoDate = frontmatter.pubDate
     <p><span class="disclaimer-tag"><strong>Disclaimer:</strong></span> This post was written over {postAge} years ago and may not reflect my current views or opinions. Please take this into consideration when reading.</p>
   </div>
 )}
+{frontmatter.replyTo && frontmatter.replyToUrl && (
+  <div class="reply-to">
+    <p><strong>In reply to:</strong> <a href={frontmatter.replyToUrl}>{frontmatter.replyTo}</a></p>
+  </div>
+)}
     <div class="e-content">
       <slot />
 	  </div>  
