@@ -1,0 +1,9 @@
+name: Send Webmentions
+on:
+  deployment_status:
+jobs:
+  webmentions:
+    if: github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - run: npx webmention https://thamara.co.uk/notebook/rss.xml --limit 1 --send
