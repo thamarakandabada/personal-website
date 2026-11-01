@@ -1,6 +1,6 @@
 ---
-imageUrl: 'images/9170681B-ABE5-4172-A626-2B78BAD67BED_1_201_a.jpeg'
-imageAlt: 'Nicky, Kian, and Shane on stage, illuminated by red light, and between two large screens.'
+imageUrl: 'images/IMG_0474.jpeg'
+imageAlt: 'A large arena crowd holding up phone lights, facing a massive stage screen that shows Westlife members Shane, Kian, and Nicky standing together in black jackets and white shirts.'
 label: 'Music'
 title: 'Westlife'
 support: 'Support acts: Paddy Keyes, Ana Sky'
@@ -58,6 +58,8 @@ More than anything, I was glad to experience this with Nuwani, as Westlife's mus
 ![The band performing on a brightly illuminated stage, with large screens behind them displaying scenery of a city awash in neon lights](images/69448E60-9D90-4DA1-BD61-F5812F1F1C7A_1_201_a.jpeg)
 
 ![The band on stage illuminated in red light, with the large screens behind them displaying a black and white striped pattern](images/833F8512-DF68-4E70-8B37-88201D76FF06_1_201_a.jpeg)
+
+![A wide view from the arena crowd showing three band members silhouetted in bright red light on the center stage, flanked by two massive screens displaying black-and-white live footage of the singers.](images/9170681B-ABE5-4172-A626-2B78BAD67BED_1_201_a.jpeg)
 
 ![Shane, Nicky, and Kian on a small stage in the middle of the crowd. The screens on the main stage are showing a camera feed, trained on Shane, while he plays an acoustic guitar.](images/A59AC06D-1070-4E4F-A714-271C8DDE1290_1_201_a.jpeg)
 
