@@ -28,14 +28,26 @@ export async function GET(context) {
         : '';
 
       // 3. Parse the markdown body to HTML, adding a fallback for empty posts
-      const htmlBody = parser.render(post.body || '');
+      let htmlBody = parser.render(post.body || '');
 
-      // 4. Combine and sanitize to ensure valid XML for RSS clients and Webmention.io
+      // 4. Resolve the absolute URL for the current post
+      const postUrl = new URL(`/notebook/${post.id}/`, siteUrl).href;
+
+      // 5. Convert relative body images (images/...) to absolute URLs
+      htmlBody = htmlBody.replace(/src="([^"]+)"/g, (match, src) => {
+        // Leave external/absolute URLs alone (e.g., Wikimedia links)
+        if (src.startsWith('http')) return match;
+        // Resolve relative paths against the absolute post URL
+        return `src="${new URL(src, postUrl).href}"`;
+      });
+
+      // 6. Combine and sanitize to ensure valid XML for RSS clients and Webmention.io
       const fullContent = sanitizeHtml(`${featuredImageHtml}${descriptionHtml}${htmlBody}`, {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img', 'figure', 'figcaption', 'hr' ]),
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img', 'figure', 'figcaption', 'hr', 'div' ]),
         allowedAttributes: {
           ...sanitizeHtml.defaults.allowedAttributes,
-          'img': [ 'src', 'alt', 'title', 'width', 'height' ]
+          'img': [ 'src', 'alt', 'title', 'width', 'height' ],
+          'div': [ 'class' ] // Allowing div classes keeps your md-grid layouts intact in feed readers that support it
         }
     });
     
