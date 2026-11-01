@@ -31,14 +31,24 @@ export async function GET(context) {
         ? `<p>${post.data.description}</p>` 
         : '';
 
-      const htmlBody = parser.render(post.body || '');
+      let htmlBody = parser.render(post.body || '');
 
-      // Cleanly order everything in sequence, ending with <hr> before the body
+      // 1. Resolve the absolute URL for the current gig post
+      const postUrl = new URL(`/gigs/${post.id}/`, siteUrl).href;
+
+      // 2. Convert relative body images (images/...) to absolute URLs
+      htmlBody = htmlBody.replace(/src="([^"]+)"/g, (match, src) => {
+        if (src.startsWith('http')) return match;
+        return `src="${new URL(src, postUrl).href}"`;
+      });
+
+      // 3. Cleanly order everything in sequence, ending with <hr> before the body
       const fullContent = sanitizeHtml(`${featuredImageHtml}${gigMeta}${supportHtml}${descriptionHtml}<hr>${htmlBody}`, {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img', 'figure', 'figcaption', 'hr' ]),
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img', 'figure', 'figcaption', 'hr', 'div' ]),
         allowedAttributes: {
           ...sanitizeHtml.defaults.allowedAttributes,
-          'img': [ 'src', 'alt', 'title', 'width', 'height' ]
+          'img': [ 'src', 'alt', 'title', 'width', 'height' ],
+          'div': [ 'class' ] // Keeps your md-grid photo galleries intact
         }
       });
 
