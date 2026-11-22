@@ -563,6 +563,10 @@ iframe {
     color: var(--bg-primary);
 }
 
+.primary-text p code, .secondary-text p code {
+    color: var(--text-primary);
+}
+
 .secondary-text {
     background-color: var(--text-secondary);
     padding: 1rem 2rem;
