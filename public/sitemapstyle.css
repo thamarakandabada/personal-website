@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Erode-Variable';
-  src: url('/src/fonts/Erode-Variable.woff2') format('woff2'),
-       url('/src/fonts/Erode-Variable.woff') format('woff'),
-       url('/src/fonts/Erode-Variable.ttf') format('truetype');
+  src: url('/fonts/Erode-Variable.woff2') format('woff2'),
+       url('/fonts/Erode-Variable.woff') format('woff'),
+       url('/fonts/Erode-Variable.ttf') format('truetype');
   font-weight: 300 700;
   font-display: swap;
   font-style: normal;
@@ -10,9 +10,9 @@
 
 @font-face {
   font-family: 'Erode-VariableItalic';
-  src: url('/src/fonts/Erode-VariableItalic.woff2') format('woff2'),
-       url('/src/fonts/Erode-VariableItalic.woff') format('woff'),
-       url('/src/fonts/Erode-VariableItalic.ttf') format('truetype');
+  src: url('/fonts/Erode-VariableItalic.woff2') format('woff2'),
+       url('/fonts/Erode-VariableItalic.woff') format('woff'),
+       url('/fonts/Erode-VariableItalic.ttf') format('truetype');
   font-weight: 300 700;
   font-display: swap;
   font-style: italic;
@@ -20,9 +20,9 @@
 
 @font-face {
   font-family: 'Plein-Variable';
-  src: url('/src/fonts/Plein-Variable.woff2') format('woff2'),
-       url('/src/fonts/Plein-Variable.woff') format('woff'),
-       url('/src/fonts/Plein-Variable.ttf') format('truetype');
+  src: url('/fonts/Plein-Variable.woff2') format('woff2'),
+       url('/fonts/Plein-Variable.woff') format('woff'),
+       url('/fonts/Plein-Variable.ttf') format('truetype');
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
@@ -58,18 +58,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: Erode-Variable, serif;
     font-size: 2.8rem;
     margin: 3rem 1rem 2rem 1rem;
     font-weight: 500;
 }
 
 p, li {
-    font-family: Plein-Variable, sans-serif;
     font-size: 1.2rem;
     margin: 0 1rem 0.5rem 1rem;
     line-height: 1.5;
-    color: var(--text-primary);
     overflow-wrap: break-word;
     word-break: break-word;
 }
@@ -86,13 +83,8 @@ a {
 a:hover {
     color: var(--accent);
     text-decoration: underline 1px var(--accent);
-    font-weight: 700;
 }
 
-i, em {
-    font-family: Plein-VariableItalic, sans-serif;
-}
-
-h1 i, h1 em, h2 i, h2 em, h3 i, h3 em, h4 i, h4 em, h5 i, h5 em, h6 i, h6 em {
+h1 i {
     font-family: Erode-VariableItalic, serif;
 }
