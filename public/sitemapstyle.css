@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Erode-Variable';
-  src: url('../fonts/Erode-Variable.woff2') format('woff2'),
-       url('../fonts/Erode-Variable.woff') format('woff'),
-       url('../fonts/Erode-Variable.ttf') format('truetype');
+  src: url('/src/fonts/Erode-Variable.woff2') format('woff2'),
+       url('/src/fonts/Erode-Variable.woff') format('woff'),
+       url('/src/fonts/Erode-Variable.ttf') format('truetype');
   font-weight: 300 700;
   font-display: swap;
   font-style: normal;
@@ -10,9 +10,9 @@
 
 @font-face {
   font-family: 'Erode-VariableItalic';
-  src: url('../fonts/Erode-VariableItalic.woff2') format('woff2'),
-       url('../fonts/Erode-VariableItalic.woff') format('woff'),
-       url('../fonts/Erode-VariableItalic.ttf') format('truetype');
+  src: url('/src/fonts/Erode-VariableItalic.woff2') format('woff2'),
+       url('/src/fonts/Erode-VariableItalic.woff') format('woff'),
+       url('/src/fonts/Erode-VariableItalic.ttf') format('truetype');
   font-weight: 300 700;
   font-display: swap;
   font-style: italic;
@@ -20,9 +20,9 @@
 
 @font-face {
   font-family: 'Plein-Variable';
-  src: url('../fonts/Plein-Variable.woff2') format('woff2'),
-       url('../fonts/Plein-Variable.woff') format('woff'),
-       url('../fonts/Plein-Variable.ttf') format('truetype');
+  src: url('/src/fonts/Plein-Variable.woff2') format('woff2'),
+       url('/src/fonts/Plein-Variable.woff') format('woff'),
+       url('/src/fonts/Plein-Variable.ttf') format('truetype');
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
