@@ -1,0 +1,178 @@
+/**
+* @license
+*
+* Font Family: Erode
+* Designed by: Nikhil Ranganathan
+* URL: https://www.fontshare.com/fonts/erode
+* © 2026 Indian Type Foundry
+*
+* Erode Light 
+* Erode LightItalic 
+* Erode Regular 
+* Erode Italic 
+* Erode Medium 
+* Erode MediumItalic 
+* Erode Semibold 
+* Erode SemiboldItalic 
+* Erode Bold 
+* Erode BoldItalic 
+* Erode Variable (Variable font)
+* Erode VariableItalic (Variable font)
+
+*
+*/
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0;
+*
+* available axes:
+'wght' (range from 300.0 to 700.0
+*/
+@font-face {
+  font-family: 'Erode-Variable';
+  src: url('../fonts/Erode-Variable.woff2') format('woff2'),
+       url('../fonts/Erode-Variable.woff') format('woff'),
+       url('../fonts/Erode-Variable.ttf') format('truetype');
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0;
+*
+* available axes:
+'wght' (range from 300.0 to 700.0
+*/
+@font-face {
+  font-family: 'Erode-VariableItalic';
+  src: url('../fonts/Erode-VariableItalic.woff2') format('woff2'),
+       url('../fonts/Erode-VariableItalic.woff') format('woff'),
+       url('../fonts/Erode-VariableItalic.ttf') format('truetype');
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+/**
+* @license
+*
+* Font Family: Plein
+* Designed by: Inga Plönnigs
+* URL: https://www.fontshare.com/fonts/plein
+* © 2026 Indian Type Foundry
+*
+* Plein Light 
+* Plein LightItalic 
+* Plein Regular 
+* Plein Italic 
+* Plein Medium 
+* Plein MediumItalic 
+* Plein Bold 
+* Plein BoldItalic 
+* Plein Black 
+* Plein BlackItalic 
+* Plein Variable (Variable font)
+* Plein VariableItalic (Variable font)
+
+*
+*/
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Plein-Variable';
+  src: url('../fonts/Plein-Variable.woff2') format('woff2'),
+       url('../fonts/Plein-Variable.woff') format('woff'),
+       url('../fonts/Plein-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Plein-VariableItalic';
+  src: url('../fonts/Plein-VariableItalic.woff2') format('woff2'),
+       url('../fonts/Plein-VariableItalic.woff') format('woff'),
+       url('../fonts/Plein-VariableItalic.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+* @license
+*
+* Font Family: JetBrains Mono
+* Designed by: JetBrains, Philipp Nurullin, Konstantin Bulenkov
+* URL: https://www.fontshare.com/fonts/jet-brains-mono
+* © 2026 Indian Type Foundry
+*
+* JetBrains Mono Thin 
+* JetBrains Mono ThinItalic 
+* JetBrains Mono ExtraLight 
+* JetBrains Mono ExtraLightItalic 
+* JetBrains Mono Light 
+* JetBrains Mono LightItalic 
+* JetBrains Mono Regular 
+* JetBrains Mono Italic 
+* JetBrains Mono Medium 
+* JetBrains Mono MediumItalic 
+* JetBrains Mono SemiBold 
+* JetBrains Mono SemiBoldItalic 
+* JetBrains Mono Bold 
+* JetBrains Mono BoldItalic 
+* JetBrains Mono ExtraBold 
+* JetBrains Mono ExtraBoldItalic 
+* JetBrains Mono Variable (Variable font)
+* JetBrains Mono VariableItalic (Variable font)
+
+*
+*/
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 400.0;
+*
+* available axes:
+'wght' (range from 100.0 to 800.0
+*/
+@font-face {
+  font-family: 'JetBrainsMono-Variable';
+  src: url('../fonts/JetBrainsMono-Variable.woff2') format('woff2'),
+       url('../fonts/JetBrainsMono-Variable.woff') format('woff'),
+       url('../fonts/JetBrainsMono-Variable.ttf') format('truetype');
+  font-weight: 100 800;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 400.0;
+*
+* available axes:
+'wght' (range from 100.0 to 800.0
+*/
+@font-face {
+  font-family: 'JetBrainsMono-VariableItalic';
+  src: url('../fonts/JetBrainsMono-VariableItalic.woff2') format('woff2'),
+       url('../fonts/JetBrainsMono-VariableItalic.woff') format('woff'),
+       url('../fonts/JetBrainsMono-VariableItalic.ttf') format('truetype');
+  font-weight: 100 800;
+  font-display: swap;
+  font-style: italic;
+}
