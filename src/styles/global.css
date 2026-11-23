@@ -62,7 +62,7 @@ nav p, nav div {
 }
 
 .site-title {
-    font-family: Erode-Variable, sans-serif;
+    font-family: Erode-Variable, serif;
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--text-primary);
@@ -219,7 +219,7 @@ Text elements
 */
 
 h1 {
-    font-family: Erode-Variable, sans-serif;
+    font-family: Erode-Variable, serif;
     font-size: 2.8rem;
     margin-bottom: 2rem;
     margin-top: 3rem;
@@ -227,7 +227,7 @@ h1 {
 }
 
 h2 {
-    font-family: Erode-Variable, sans-serif;
+    font-family: Erode-Variable, serif;
     font-size: 1.8rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
@@ -247,7 +247,7 @@ h2:after {
 }
 
 h3 {
-    font-family: Erode-Variable, sans-serif;
+    font-family: Erode-Variable, serif;
     font-size: 1.65rem;
     margin-bottom: 0.75rem;
     margin-top: 1.5rem;
@@ -256,7 +256,7 @@ h3 {
 }
 
 h4 {
-    font-family: Erode-Variable, sans-serif;
+    font-family: Erode-Variable, serif;
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
@@ -265,7 +265,7 @@ h4 {
 }
 
 h5 {
-    font-family: Erode-Variable, sans-serif;
+    font-family: Erode-Variable, serif;
     font-size: 1.25rem;
     margin-bottom: 0.4rem;
     margin-top: 0.75rem;
@@ -274,7 +274,7 @@ h5 {
 }
 
 h6 {
-    font-family: Erode-Variable, sans-serif;
+    font-family: Erode-Variable, serif;
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
     margin-top: 0.5rem;
@@ -1635,7 +1635,7 @@ Gigs
     margin-top: 2rem;
     z-index: 0;
     --brand-600: var(--accent) !important;
-    --discuss-font-family: Erode-Variable, serif;
+    --discuss-font-family: Plein-Variable, sans-serif !important;
     --text-primary: var(--text-primary);
     --text-secondary: var(--text-secondary);
     --text-tertiary: var(--text-secondary);
