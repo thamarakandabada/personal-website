@@ -47,7 +47,7 @@ html, body {
     font-family: Plein-Variable, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: Erode-Variable, serif;
 }
 
@@ -85,6 +85,6 @@ a:hover {
     text-decoration: underline 1px var(--accent);
 }
 
-h1 i {
+h1 i, h1 em {
     font-family: Erode-VariableItalic, serif;
 }
