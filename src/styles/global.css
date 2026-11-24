@@ -687,9 +687,11 @@ iframe {
     padding: 1rem 1.5rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+}
+
+.recommendation:not(.recommendation:last-child) {
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1rem;
 }
 
 .resume-glance {
@@ -1025,15 +1027,10 @@ Media queries
         flex-direction: column;
     }
 
-    .resume-recs, .resume-glance {
+    .resume-glance {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    }
-
-    .recommendation:not(.recommendation:last-child) {
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 1rem;
     }
 }
 
@@ -1123,15 +1120,10 @@ Media queries
         flex: 60%;
     }
     
-    .resume-recs, .resume-glance {
+    .resume-glance {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    }
-
-    .recommendation:not(.recommendation:last-child) {
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 1rem;
     }
 }
 
