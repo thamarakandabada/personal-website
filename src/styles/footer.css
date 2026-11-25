@@ -1,0 +1,113 @@
+.period-footer {
+    color: var(--accent);
+}
+
+.global-footer {
+    padding: 2em 1em;
+    margin-top: 5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-text {
+    background-color: var(--bg-secondary);
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    box-shadow: 0 50vh 0 50vh var(--bg-secondary);
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.footer-text p {
+    font-family: JetBrainsMono-Variable, monospace;
+    font-size: 0.75rem;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-quote {
+    font-family: Erode-VariableItalic, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.social-links a {
+    color: var(--text-primary);
+    transition: 0.5s;
+}
+
+.social-links a:hover {
+    color: var(--accent) !important;
+    transform: translateY(-4px);
+}
+
+.footer-nav-links {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.footer-nav-links nav {
+    gap: 1.5rem;
+}
+
+.footer-nav-links a {
+    font-family: Plein-Variable, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: 0.5s;
+}
+
+.marquee-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+    white-space: nowrap;
+    background: var(--accent);
+    padding: 0.5rem 0;
+    transition: 0.5s;
+}
+
+.marquee-container:hover {
+    filter: none;
+}
+
+.marquee-text {
+    display: inline-block;
+    width: auto;
+    color: white;
+    font-size: 1rem;
+    font-family: JetBrainsMono-Variable, monospace;
+    animation: marquee-scroll 20s linear infinite normal;
+}
+
+.marquee-text:hover {
+    animation-play-state: paused !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-text {
+        animation: none !important;
+    }
+}
+
+        @keyframes marquee-scroll {
+            0%   { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
