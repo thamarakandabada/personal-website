@@ -1,7 +1,4 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-@import url('fonts.css');
-
-html {
+:root {
   --bg-primary: #16213E;
   --bg-secondary: #161B22;
   --bg-tertiary: #21262D;
@@ -9,26 +6,35 @@ html {
   --text-secondary: #94A3B8;
   --border-color: #E94560;
   --accent: #4DA8DA;
+  --font-family-body: Plein-Variable, sans-serif;
+  --font-family-body-italic: Plein-VariableItalic, sans-serif;
+  --font-family-heading: Erode-Variable, serif;
+  --font-family-heading-italic: Erode-VariableItalic, serif;
+  --font-family-code: JetBrainsMono-Variable, monospace;
+  --font-size-base: 1.1rem;
+  --font-size-small: 0.9rem;
+  --font-size-h1: 2.75rem;
+  --font-size-h2: 1.75rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --border-radius: 4px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --font-weight-black: 700;
+  --page-max-width: 1024px;
+  --page-margin: 0 auto;
+  --standard-transition: all 0.5s ease-in-out;
+  --standard-gap: 1rem;
 }
 
-/* Main components */
-
-html, body {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background: var(--bg-primary);
-    color: var(--text-primary);
-    font-family: Plein-Variable, serif;
+    font-family: var(--font-family-body);
 }
-
-.page-content {
-    text-align: left;
-    max-width: 1024px !important;
-    margin: 0 auto !important;
-}
-
-/* Navigation, header and footer */
 
 nav {
   display: flex;
@@ -39,263 +45,19 @@ nav {
   margin: 0 auto;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-color);
-    z-index: 1;
-}
-
 nav p, nav div {
     align-items: baseline;
+    margin: 1rem 0 1rem 0;
 }
 
-.top-nav-links, .top-nav-burger {
-    font-family: Plein-Variable, sans-serif;
-    font-weight: 500;
-    display: flex;
-    font-size: 1.2rem;
-    gap: 1rem;
-}
-
-.site-title {
-    font-family: Erode-Variable, serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--text-primary);
-}
-
-.header a {
-    text-decoration: none;
-    color: var(--text-primary);
-}
-
-.site-tagline {
-    font-weight: 400;
-    font-size: 1.1rem;
-    font-family: Erode-VariableItalic, serif;
-    color: var(--text-secondary);
-}
-
-.period-header {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--accent);
-}
-
-.period-footer {
-    color: var(--accent);
-}
-
-.global-footer {
-    padding: 2em 1em;
-    margin-top: 5rem;
-    border-top: 1px solid var(--border-color);
-}
-
-.footer-text {
-    background-color: var(--bg-secondary);
-    padding-top: 0.5rem;
-    padding-bottom: 0.75rem;
-    box-shadow: 0 50vh 0 50vh var(--bg-secondary);
-}
-
-.footer-content {
-    text-align: center;
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-.footer-text p {
-    font-family: JetBrainsMono-Variable, monospace;
-    font-size: 0.75rem;
-    margin: 0;
-    text-align: center;
-}
-
-.footer-quote {
-    font-family: Erode-VariableItalic, serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.social-links {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-    font-size: 1.5rem;
-}
-
-.social-links a {
-    color: var(--text-primary);
-    transition: 0.5s;
-}
-
-.social-links a:hover {
-    color: var(--accent) !important;
-    transform: translateY(-4px);
-}
-
-.footer-nav-links {
-    display: flex;
-    margin-bottom: 3rem;
-}
-
-.footer-nav-links nav {
-    gap: 1.5rem;
-}
-
-.footer-nav-links a {
-    font-family: Plein-Variable, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--text-primary);
-    transition: 0.5s;
-}
-
-.top-nav-links a {
-    transition: 0.5s !important;
-}
-
-.footer-nav-links a:hover, .top-nav-links a:hover {
-    color: var(--accent) !important;
+iframe {
+    width: 100%;
+    border-radius: 4px;
+    overflow-y: visible;
 }
 
 .post-nav {
     font-weight: 700;
-}
-
-.marquee-container {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    overflow: hidden;
-    white-space: nowrap;
-    background: var(--accent);
-    padding: 0.5rem 0;
-    transition: 0.5s;
-}
-
-.marquee-container:hover {
-    filter: none;
-}
-
-.marquee-text {
-    display: inline-block;
-    width: auto;
-    color: white;
-    font-size: 1rem;
-    font-family: JetBrainsMono-Variable, monospace;
-    animation: marquee-scroll 20s linear infinite normal;
-}
-
-.marquee-text:hover {
-    animation-play-state: paused !important;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .marquee-text {
-        animation: none !important;
-    }
-}
-
-        @keyframes marquee-scroll {
-            0%   { transform: translateX(100vw); }
-            100% { transform: translateX(-100%); }
-        }
-
-
-/*
-Text elements
---------------
-*/
-
-h1 {
-    font-family: Erode-Variable, serif;
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
-    font-weight: 500;
-}
-
-h2 {
-    font-family: Erode-Variable, serif;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    font-weight: 700;
-    color: var(--text-secondary);
-    overflow: hidden;
-}
-
-h2:after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    margin-right: -100%;
-    margin-left: 10px;
-    border-top: 1px solid var(--border-color);
-}
-
-h3 {
-    font-family: Erode-Variable, serif;
-    font-size: 1.65rem;
-    margin-bottom: 0.75rem;
-    margin-top: 1.5rem;
-    font-weight: 500;
-    color: var(--text-primary);
-}
-
-h4 {
-    font-family: Erode-Variable, serif;
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-    font-weight: 400;
-    color: var(--text-secondary);
-}
-
-h5 {
-    font-family: Erode-Variable, serif;
-    font-size: 1.25rem;
-    margin-bottom: 0.4rem;
-    margin-top: 0.75rem;
-    font-weight: 400;
-    color: var(--text-secondary);
-}
-
-h6 {
-    font-family: Erode-Variable, serif;
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
-    margin-top: 0.5rem;
-    font-weight: 400;
-    color: var(--text-secondary);
-}
-
-p {
-    font-family: inherit;
-    font-size: 1.1rem;
-    margin-bottom: 1.1rem;
-    line-height: 1.5;
-    color: var(--text-primary);
-    overflow-wrap: break-word;
-    word-break: break-word;
-}
-
-i, em {
-    font-family: Plein-VariableItalic, sans-serif;
-}
-
-h1 i, h1 em, h2 i, h2 em, h3 i, h3 em, h4 i, h4 em, h5 i, h5 em, h6 i, h6 em {
-    font-family: Erode-VariableItalic, serif;
 }
 
 .homepage-intro-paragraph {
@@ -312,38 +74,6 @@ h1 i, h1 em, h2 i, h2 em, h3 i, h3 em, h4 i, h4 em, h5 i, h5 em, h6 i, h6 em {
     field-sizing: content;
     background-color: var(--bg-primary);
     color: var(--text-primary);
-}
-
-blockquote {
-    font-size: 1.5rem;
-    color: var(--text-secondary);
-    font-family: Erode-VariableItalic, serif;
-    font-weight: 400;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    margin-left: 0;
-    padding-left: 1.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-left: 1px solid var(--accent)
-}
-
-blockquote p {
-    font-size: 1.5rem;
-    color: var(--text-secondary);
-    font-family: Erode-VariableItalic, serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    font-size: 1.1rem;
-    line-height: 1.75;
-}
-
-ul, ol {
-    margin-bottom: 2rem;
 }
 
 a:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a, .gigs-grid a, .letterboxd-embed-tc-poster a) {
@@ -454,12 +184,6 @@ Page elements
 .commit-hash {
     font-family: JetBrainsMono-Variable, monospace;
     font-size: 1rem;
-}
-
-iframe {
-    width: 100%;
-    border-radius: 4px;
-    overflow-y: visible;
 }
 
 .podcast-embed {
@@ -1198,7 +922,7 @@ Media queries
     }
 
     .top-nav-burger {
-        display: none;
+        display: none !important;
     }
 
     .x {
@@ -1218,7 +942,7 @@ Media queries
     }
 
     .top-nav-burger {
-        display: none;
+        display: none !important;
     }
 
     .x {

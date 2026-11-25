@@ -1,5 +1,5 @@
 ---
-import "../styles/global.css";
+import "../styles/index.css";
 import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from "@vercel/speed-insights/astro";
 import Navigation from "../components/TopNavigation.astro";
@@ -59,9 +59,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://thamara.
     </head>
     <body>
       <Navigation />
-      <div class="page-content">
+      <section class="page-content">
         <slot />
-      </div>   
+      </section>   
       <GlobalFooter />
     </body>
   </html>
