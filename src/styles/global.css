@@ -1776,3 +1776,11 @@ Gigs
     .letterboxd-embed-tc-footer, .letterboxd-embed-tc-divider {
         display: none;
     }
+
+#open-web-calendar {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-primary);
+}
