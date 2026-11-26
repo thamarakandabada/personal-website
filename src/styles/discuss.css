@@ -4,11 +4,6 @@
     line-height: 1.5;
     color: var(--text-primary);
     
-    --text-primary: var(--text-primary);
-    --text-secondary: var(--text-secondary);
-    --text-tertiary: var(--text-secondary);
-    --text-muted: var(--text-secondary);
-    --text-subtle: var(--text-secondary);
     --surface-base: var(--bg-primary);
     --surface-inset: var(--bg-secondary);
     --surface-overlay: var(--bg-tertiary);
@@ -92,7 +87,7 @@
     gap: 0.3rem;
     padding: 0.2rem 0.5rem;
     font-size: var(--font-size-base);
-    color: var(--text-muted);
+    color: var(--text-secondary);
     border: 1px solid var(--border-button);
     border-radius: var(--border-radius);
     background: transparent;
@@ -164,7 +159,7 @@
 }
 
 .discuss-form-textarea::placeholder {
-    color: var(--text-subtle);
+    color: var(--text-secondary);
 }
 
 .discuss-form-bottom {
@@ -189,7 +184,7 @@
     left: 0.6rem;
     width: 1rem;
     height: 1rem;
-    color: var(--text-muted);
+    color: var(--text-secondary);
     pointer-events: none;
 }
 
@@ -202,6 +197,7 @@
     background: var(--surface-base);
     color: var(--text-primary);
     outline: none;
+    transition: var(--standard-transition);
 }
 
 .discuss-form-input:focus {
@@ -209,7 +205,7 @@
 }
 
 .discuss-form-input::placeholder {
-    color: var(--text-subtle);
+    color: var(--text-secondary);
 }
 
 .discuss-btn {
@@ -305,18 +301,6 @@
 
 .discuss-text-xs {
     font-size: var(--font-size-small);
-}
-
-.discuss-text-lg {
-    font-size: var(--font-size-base);
-}
-
-.discuss-font-semibold {
-    font-weight: var(--font-weight-bold);
-}
-
-.discuss-uppercase {
-    text-transform: uppercase;
 }
 
 .discuss-tracking-wide {
