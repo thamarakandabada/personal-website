@@ -3,15 +3,14 @@ import PageLayout from '../layouts/PageLayout.astro';
 import { Code } from 'astro:components';
 
 const pageTitle = "Hello - Thamara Kandabada";
-const slashpageImage = "/featured-images/hello.png";
 ---
-<PageLayout title={pageTitle} image={slashpageImage}>
+<PageLayout title={pageTitle}>
     <h1>Say Hello</h1>
       <p>If you enjoyed browsing this website, or want to get in touch for any other reason, the best way to say hello is through email: <Code code=`t@thamara.co.uk` inline />. You can also iMessage me at this address.</p>
       <p>My Signal username is <Code code=`thamara.01` inline />.</p>
       <p>My Discord username is <Code code=`thamara_k` inline />. I'm usually active on the <a href="https://indieweb.org/discuss" target="_blank">IndieWeb IRC channels</a>.</p>
       <p>Alternatively, send me a message using the contact form below.</p>
-      <div class="contact-form">
+      <div>
         <form id="form">
           <input type="hidden" name="access_key" value="34186b8d-619f-451d-938d-634b9ae0b2e5" />
           <label for="name">Name:</label>

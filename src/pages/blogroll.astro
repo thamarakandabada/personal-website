@@ -2,13 +2,13 @@
 import PageLayout from '../layouts/PageLayout.astro';
 
 const pageTitle = "Blogroll - Thamara Kandabada";
-const slashpageImage = "/featured-images/blogroll.png";
 ---
-<PageLayout title={pageTitle} image={slashpageImage}>
+<PageLayout title={pageTitle}>
   <h1>Blogroll</h1>
     <p>A list of blogs, personal sites, and other online publications I follow. I generally consume all this content through my feed reader of choice, <a href="https://www.currentreader.app/" target="_blank">Current</a>, on macOS and iOS.</p>
     <p>I also use <a href="https://bubbles.town/" target="_blank">bubbles.town</a> occasionally to discover IndieWeb blogs.</p>
-
+      <div class="grid">
+        <div class="grid-box">
           <h2>Personal blogs and sites</h2>
             <ul>
               <li><a href="https://jamesg.blog" target="_blank">with words, wonder 🌷</a></li>
@@ -68,40 +68,49 @@ const slashpageImage = "/featured-images/blogroll.png";
               <li><a href="https://www.trovster.com/timeline.xml" target="_blank">Trevor Morris</a></li>
             </ul> 
             <p>Note: Some of these writers are also members of the <a href="https://webwriterscollective.com/" target="_blank">Web Writers Collective</a>. You can find a feed of all WWC members <a href="https://artemis.jamesg.blog/u/web-writers-collective" target="_blank">here</a>.</p>
-
-            <h2>News</h2>
-              <ul>
-                <li><a href="https://www.npr.org/" target="_blank">NPR</a></li>
-                <li><a href="https://www.democracynow.org/" target="_blank">Democracy Now!</a></li>
-                <li><a href="https://www.theguardian.com/" target="_blank">The Guardian</a></li>
-              </ul>
-
-            <h2>Web</h2>
-              <ul>
-                <li><a href="https://www.goodinternetmagazine.com/" target="_blank">Good Internet Magazine</a></li>
-              </ul>
-
-            <h2>Film</h2>
-            <ul>
-              <li><a href="https://www.criterion.com/current/posts" target="_blank">Current</a></li>
-            </ul>
-
-            <h2>Technology</h2>
-              <ul>
-                <li><a href="https://daringfireball.net/" target="_blank">Daring Fireball</a></li>
-                <li><a href="https://arstechnica.com/" target="_blank">Ars Technica</a></li>
-              </ul>
-
-            <h2>Longform</h2>
-              <ul>
-                <li><a href="https://aeon.co/" target="_blank">Aeon</a></li>
-              </ul>
-
-            <h2>Sri Lanka</h2>
-              <ul>
-                <li><a href="https://www.examiner.media/" target="_blank">The Examiner</a></li>
-                <li><a href="https://www.arutharesearch.org/" target="_blank">Arutha Research</a></li>
-                <li><a href="https://muragala.lk/" target="_blank">Muragala</a></li>
-              </ul>
-
+        </div>
+          <div class="sub-grid">
+            <div class="grid-box">
+              <h2>News</h2>
+                <ul>
+                  <li><a href="https://www.npr.org/" target="_blank">NPR</a></li>
+                  <li><a href="https://www.democracynow.org/" target="_blank">Democracy Now!</a></li>
+                  <li><a href="https://www.theguardian.com/" target="_blank">The Guardian</a></li>
+                </ul>
+            </div>
+            <div class="grid-box">
+              <h2>Web</h2>
+                <ul>
+                  <li><a href="https://www.goodinternetmagazine.com/" target="_blank">Good Internet Magazine</a></li>
+                </ul>
+            </div>
+            <div class="grid-box">
+              <h2>Film</h2>
+                <ul>
+                  <li><a href="https://www.criterion.com/current/posts" target="_blank">Current</a></li>
+                </ul>
+            </div>
+            <div class="grid-box">
+              <h2>Technology</h2>
+                <ul>
+                  <li><a href="https://daringfireball.net/" target="_blank">Daring Fireball</a></li>
+                  <li><a href="https://arstechnica.com/" target="_blank">Ars Technica</a></li>
+                </ul>
+            </div>
+            <div class="grid-box">
+              <h2>Longform</h2>
+                <ul>
+                  <li><a href="https://aeon.co/" target="_blank">Aeon</a></li>
+                </ul>
+            </div>
+            <div class="grid-box">
+              <h2>Sri Lanka</h2>
+                <ul>
+                  <li><a href="https://www.examiner.media/" target="_blank">The Examiner</a></li>
+                  <li><a href="https://www.arutharesearch.org/" target="_blank">Arutha Research</a></li>
+                  <li><a href="https://muragala.lk/" target="_blank">Muragala</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
 </PageLayout>

@@ -16,13 +16,12 @@ const formattedDate = new Date(rawDate).toLocaleDateString('en-GB', {
   day: 'numeric' 
 });
 const pageTitle = "Now - Thamara Kandabada";
-const slashpageImage = "/featured-images/now.png";
 ---
-<PageLayout title={pageTitle} image={slashpageImage}>
+<PageLayout title={pageTitle}>
   <h1>Now</h1>
     <p>This is a page dedicated to what’s happening in my life right now. Inspired by my friend <a href="https://ukr.lk/now/" target="_blank">Kaveen’s now page</a>, which in turn was inspired by <a href="https://nownownow.com/about" target="_blank">nownownow.com</a>.</p>
     <p><strong>Last Updated:</strong> <span id="commit-date">{formattedDate}</span></p>
-    <div class="now-location-weather">
+    <div class="notice">
       <ul>
         <li><strong>Homebase:</strong> Belfast</li>
         <li><strong>Current location:</strong> Loading...</li>

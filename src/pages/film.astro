@@ -14,14 +14,13 @@ const posters = (await getCollection('design'))
   .filter(post => post.data.category?.includes('Film Poster'))
   .slice(0,5);
 const pageTitle = "Film - Thamara Kandabada";
-const slashpageImage = "/featured-images/film.png";
 ---
-<PageLayout title={pageTitle} image={slashpageImage}>
+<PageLayout title={pageTitle}>
 <h1>Film</h1>
 <p>I love film. I am not an expert, or a critic, but I enjoy watching films. I’m an avid cinema-goer, Letterboxd-logger, and physical media collector. I sometimes design retro-themed film posters. This page is a central hub for all the film-related content on this site, and some outside the site, too.</p>
 <p>Don't ask me what my favourite film is; I don't have one. Or rather, the answer changes all the time. My four favourites on Letterboxd are updated regularly.</p>
 
-<div class="two-grid">
+<div class="grid">
   <div>
     <h2>Recent watches</h2>
       <p>These are the last five films I watched. The data is pulled from my Letterboxd profile using <a href="https://letterboxd-embed.timcieplowski.com/" target="_blank">a third-party tool</a>. The <i class="bi bi-recycle"></i> symbol indicates a rewatch.</p>

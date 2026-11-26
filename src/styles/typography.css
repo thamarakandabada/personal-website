@@ -21,7 +21,7 @@ h2:after {
     vertical-align: middle;
     width: 100%;
     margin-right: -100%;
-    margin-left: 10px;
+    margin-left: var(--standard-gap);
     border-top: var(--border);
 }
 
@@ -90,7 +90,7 @@ ul, ol {
     margin: var(--margin-p);
 }
 
-a:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a, .gigs-grid a, .letterboxd-embed-tc-poster a) {
+a {
     text-decoration: underline 1px var(--border-color);
     text-underline-offset: 4px;
     overflow-wrap: break-word;
@@ -99,7 +99,7 @@ a:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .notebook-post
     transition: var(--standard-transition);
 }
 
-a:hover:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a, .gigs-grid a, .letterboxd-embed-tc-poster a) {
+a:hover {
     color: var(--accent);
     text-decoration: underline 1px var(--accent);
     font-weight: var(--font-weight-black);

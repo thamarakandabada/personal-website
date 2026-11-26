@@ -1,17 +1,21 @@
 .grid {
     display: grid;
     grid-template-columns: var(--standard-grid-template-columns);
-    column-gap: var(--standard-gap);
-    row-gap: var(--standard-gap);
-    margin: 1rem 0 0 0;
+    gap: var(--standard-gap);
+    margin: calc(var(--standard-gap) * 2) 0 0 0;
 }
 
-.threes-grid {
+.sub-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--standard-gap);
+}
+
+.three-column-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: var(--standard-gap);
-    row-gap: var(--standard-gap);
-    margin: 1rem 0 0 0;  
+    gap: var(--standard-gap);
+    margin: calc(var(--standard-gap) * 2) 0 0 0;
 }
 
 .grid > p {
@@ -22,9 +26,13 @@
 .grid-box {
     border: var(--border);
     border-radius: var(--border-radius);
-    padding: 1rem 1.5rem;
+    padding: var(--standard-gap) calc(var(--standard-gap) * 1.5);
     background-color: var(--bg-tertiary);
     transition: var(--standard-transition); 
+}
+
+.grid-box > h2 {
+    margin: 0;
 }
 
 .grid-box a {

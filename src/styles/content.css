@@ -1,0 +1,74 @@
+/* Common */
+
+.timeline-entry {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--standard-gap);
+}
+
+.content-label {
+    margin: calc(var(--standard-gap) * -1) 0 0 var(--standard-gap);
+    padding: var(--button-padding);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-tertiary);
+    width: fit-content;
+    display: inline-block;
+}
+
+.content-label > p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Gigs */
+
+.venue {
+    font-weight: var(--font-weight-normal);
+    color: var(--accent);
+}
+
+
+
+.upcoming-gig-label p {
+    color: var(--accent);
+}
+
+.upcoming-gig-title {
+    font-family: Erode-Variable, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.upcoming-gig-venue, .upcoming-gig-date {
+    color: var(--text-secondary);
+}
+
+.gig-title {
+    margin-top: 1rem !important;
+    font-family: Erode-Variable, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.gig-description, .desk-description {
+    margin-top: 0.5rem !important;
+    font-family: Erode-VariableItalic, serif;
+}
+
+.gig-date, .desk-date {
+    border-top: 1px solid var(--border-color);
+    margin-top: 1rem !important;
+    padding-top: 0.5rem !important;
+    color: var(--text-secondary);
+}
+
+.gig-support {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+}
+
+.gig-photo img, .desk-photo img, .wishlist-guitar img, .wwc-grid img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}

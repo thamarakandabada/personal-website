@@ -15,9 +15,8 @@ export const getStaticPaths = (async ({paginate}) => {
 const { page } = Astro.props;
 const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
 const pageTitle = "Notebook - Thamara Kandabada";
-const slashpageImage = "/featured-images/notebook.png";
 ---
-<PageLayout title={pageTitle} image={slashpageImage}>
+<PageLayout title={pageTitle}>
   <div class="h-feed">
     <h1 class="p-name">Notebook</h1>
     <p>Welcome to my personal blog. Here you can find my uncensored thoughts on <a href="/notebook/sections/life">Life</a>, <a href="/notebook/sections/the-universe">The Universe</a>, and <a href="/notebook/sections/everything-else">Everything</a>. There is also a <a href="/notebook/sections/stream">Stream</a> section for shorter musings and more frequent updates.</p>
@@ -52,27 +51,7 @@ const slashpageImage = "/featured-images/notebook.png";
       <div class="notebook-subgrid">
         <div>
           <h2>Subscribe</h2>
-          <p>Susbcribe using SubToMe or access the raw RSS feed link below. Go to the <a href=/feeds>/Feeds</a> page for more granular feed options.</p>
-          <div class="subscribe-buttons">
-            <input 
-              class="sub-button" 
-              type="button" 
-              value="SubToMe" 
-              onclick="(function(btn){
-                var link = document.createElement('link');
-                link.rel = 'alternate';
-                link.type = 'application/rss+xml';
-                link.href = 'https://thamara.co.uk/notebook/rss.xml';
-                document.head.insertBefore(link, document.head.firstChild);
-    
-              var z = document.createElement('script');
-              document.subtomeBtn = btn;
-              z.src = 'https://www.subtome.com/load.js';
-              document.body.appendChild(z);
-            })(this)"
-            />
-            <a href="/notebook/rss.xml"><button type="button"><i class="bi bi-rss-fill"></i></button></a>
-          </div>
+          <p>You can subscribe to this blog via RSS. Go to the <a href=/feeds>/Feeds</a> page for all feed options.</p>
         </div>
 
         <div>

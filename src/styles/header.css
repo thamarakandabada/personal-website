@@ -43,6 +43,7 @@
     transition: var(--standard-transition);
 }
 
-.footer-nav-links a:hover, .top-nav-links a:hover {
+.top-nav-links a:hover {
     color: var(--accent);
+    font-weight: var(--font-weight-medium);
 }

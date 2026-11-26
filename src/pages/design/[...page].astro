@@ -14,24 +14,21 @@ export const getStaticPaths = (async ({paginate}) => {
 const { page } = Astro.props;
 const pageNumbers = Array.from({length: page.lastPage}, (_, i) => i + 1);
 const pageTitle = "Design - Thamara Kandabada";
-const slashpageImage = "/featured-images/design.png";
 ---
-<PageLayout title={pageTitle} image={slashpageImage}>
+<PageLayout title={pageTitle}>
 <div class="h-feed">
     <h1 class="p-name">Design</h1>
     <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
     <p>Although I have no formal training in design, I dabble. These side projects are presented on the web and elsewhere under my alias <strong><em>Winding Road Design</em></strong>, named after one of my favourite songs by the greatest band of all time. While it is primarily a hobby, culminating in alternate poster designs for films and TV, I have occasionally been involved in fundraising ventures such as <a href="https://www.theturnaroundproject.org/" target="_blank">The Turnaround Project</a>'s <em>Great Legal Challenge</em>.</p>
     <p>These updates have an RSS feed, <a href="/design/rss.xml">subscribe here</a>.</p>
-    <div class="see-also">
+    <p><strong>See also:</strong></p>    
     <ul>
-      <li><strong>See also:</strong></li>
       <li><a href="https://www.behance.net/thamarakandaba" target="_blank">Behance</a></li>
       <li><a href="https://ko-fi.com/windingroaddesign" target="_blank">Digital copies (Ko-fi)</a></li>
       <li><a href="https://www.redbubble.com/people/123thamara-k/shop" target="_blank">Physical copies (Redbubble)</a></li>
     </ul>
-    </div>
 
-          <div class="poster-list">
+          <div class="three-column-grid">
             {page.data.map((post: any) => <Poster pubDate={post.data.pubDate} url={`/design/${post.id}/`} title={post.data.title} category={post.data.category} year={post.data.year} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt}/>)}
           </div>
 

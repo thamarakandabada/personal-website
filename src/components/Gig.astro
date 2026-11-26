@@ -3,7 +3,7 @@ import { Picture } from "astro:assets";
 
 const { imageUrl, imageAlt, label, title, description, venue, date, support, city, url } = Astro.props;
 ---
-<div class="gig-timeline-node h-event h-entry">
+<div class="timeline-entry h-event h-entry">
   <a class="u-url" href={url}>
   <div class="gig-photo u-photo">
     <Picture
@@ -12,7 +12,7 @@ const { imageUrl, imageAlt, label, title, description, venue, date, support, cit
       alt={imageAlt}
     />
   </div>
-  <div class="gig-label">
+  <div class="content-label">
     <p>{label}</p>
   </div>
   <p class="gig-title p-name">{title}</p>

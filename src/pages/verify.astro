@@ -3,141 +3,123 @@ import PageLayout from '../layouts/PageLayout.astro';
 import { Code } from 'astro:components';
 
 const pageTitle = "Verify - Thamara Kandabada";
-const slashpageImage = "/featured-images/verify.png";
 ---
-<PageLayout title={pageTitle} image={slashpageImage}>
-
-    <h1>Verify</h1>
-    
+<PageLayout title={pageTitle}>
+  <h1>Verify</h1>
     <p>This is a list of online identities I maintain. If you see an account that looks like it might be me but isn't listed here, please <a href="/hello">let me know</a>.</p>
-
     <p><strong>Last updated:</strong> 24 Nov 2026</p>
-
-    <div class="verify-grid">
-      <div class="verify-subgrid">
-        <div class="grid-long">
-          <h2>Domains</h2>
-          <p>I own the following domains. They are managed through my registrar of choice, <a href="https://porkbun.com/" target="_blank">Porkbun</a>.</p>
-          <ul>
-            <li><Code code=`thamara.co.uk` inline />: this website</li>
-            <li><Code code=`thamara.uk` inline />: redirects here</li>
-            <li><Code code=`thamara.xyz` inline />: redirects here</li>
-            <li><Code code=`thamarakandabada.com` inline />: redirects here</li>
-            <li><Code code=`thamara.blog` inline />: redirects to <a href="/notebook">Notebook</a></li>
-            <li><Code code=`thamara.cv` inline />: redirects to <a href="/resume">Resume</a></li>
-            <li><Code code=`thamara.work` inline />: redirects to <a href="/resume">Resume</a></li>
-            <li><Code code=`thamara.contact` inline />: redirects to <a href="/hello">Hello</a></li>
-            <li><Code code=`thamara.party` inline />: my permanent Zoom meeting URL</li>
-            <li><Code code=`thebadtake.com` inline />: redirects to <a href="/projects/podcast">Podcast</a></li>
-            <li><Code code=`windingroad.design` inline />: redirects to <a href="/design">Design</a></li>
-            <li><Code code=`filmposte.rs` inline />: redirects to <a href="/design">Design</a>. <a href="https://indieweb.org/days_since_last_domain_purchase_at_HWC" target="_blank">Bought</a> during <a href="https://indieweb.org/Homebrew_Website_Club" target="_blank">HWC</a> Europe.</li>
-          </ul>
+      <div class="grid">
+        <div class="sub-grid">
+          <div class="grid-box">
+            <h2>Domains</h2>
+              <p>I own the following domains. They are managed through my registrar of choice, <a href="https://porkbun.com/" target="_blank">Porkbun</a>.</p>
+                <ul>
+                  <li><Code code=`thamara.co.uk` inline />: this website</li>
+                  <li><Code code=`thamara.uk` inline />: redirects here</li>
+                  <li><Code code=`thamara.xyz` inline />: redirects here</li>
+                  <li><Code code=`thamarakandabada.com` inline />: redirects here</li>
+                  <li><Code code=`thamara.blog` inline />: redirects to <a href="/notebook">Notebook</a></li>
+                  <li><Code code=`thamara.cv` inline />: redirects to <a href="/resume">Resume</a></li>
+                  <li><Code code=`thamara.work` inline />: redirects to <a href="/resume">Resume</a></li>
+                  <li><Code code=`thamara.contact` inline />: redirects to <a href="/hello">Hello</a></li>
+                  <li><Code code=`thamara.party` inline />: my permanent Zoom meeting URL</li>
+                  <li><Code code=`thebadtake.com` inline />: redirects to <a href="/projects/podcast">Podcast</a></li>
+                  <li><Code code=`windingroad.design` inline />: redirects to <a href="/design">Design</a></li>
+                  <li><Code code=`filmposte.rs` inline />: redirects to <a href="/design">Design</a>. <a href="https://indieweb.org/days_since_last_domain_purchase_at_HWC" target="_blank">Bought</a> during <a href="https://indieweb.org/Homebrew_Website_Club" target="_blank">HWC</a> Europe.</li>
+                </ul>
+          </div>
+          <div class="grid-box">
+            <h2>Social Media & Public Profiles</h2>
+              <ul>
+                <li>Reddit: <a href="https://www.reddit.com/user/thamara-k/" target="_blank">u/thamara-k</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/thamarakandabada/" target="_blank">Thamara Kandabada</a></li>
+                <li>Gravatar: <a href="https://gravatar.com/thamarakandabada" target="_blank">thamarakandabada</a></li>
+                <li>YouTube: <a href="https://www.youtube.com/@ThamaraKandabada" target="_blank">@ThamaraKandabada</a></li>
+                <li>Google Maps: <a href="https://maps.app.goo.gl/mvpW1ZsL9DXgGqEG7?g_st=iw" target="_blank">Thamara Kandabada</a></li>
+                <li>Twitter: <a href="https://twitter.com/thebadtake" target="_blank">@thebadtake</a> (dormant, kept for archival purposes)</li>
+              </ul>
+              <p>I do not maintain any other social media profiles such as Instagram, Facebook, or TikTok. If you see an account that looks like it might be me but isn't listed here, please <a href="/hello">let me know</a>.</p>
+          </div>
+          <div class="grid-box">
+            <h2>Film, TV & Books</h2>
+              <ul>
+                <li>Letterboxd: <a href="https://letterboxd.com/thamarak/" target="_blank">thamarak</a></li>
+                <li>MUBI: <a href="https://mubi.com/en/users/11920807" target="_blank">Thamara Kandabada</a></li>
+                <li>Trakt: <a href="https://app.trakt.tv/profile/thamarakandabada" target="_blank">Thamara Kandabada</a></li>
+                <li>Goodreads: <a href=" https://www.goodreads.com/thamarakandabada target="_blank">Thamara Kandabada</a></li>
+                <li>The StoryGraph: <a href="https://app.thestorygraph.com/profile/thamarakandabada" target="_blank">@thamarakandabada</a></li>
+              </ul>
+          </div>
+          <div class="grid-box">
+            <h2>Creative</h2>
+              <ul>
+                <li>Behance: <a href="https://www.behance.net/thamarakandaba" target="_blank">Thamara Kandabada</a></li>
+              </ul>
+          </div>
+          <div class="grid-box">
+            <h2>Fitness</h2>
+              <ul>
+                <li>Strava: <a href="https://www.strava.com/athletes/167611354" target="_blank">thamarakandabada</a></li>
+              </ul>
+          </div>
         </div>
-
-        <div class="grid-long">
-          <h2>Social Media & Public Profiles</h2>
-          <ul>
-            <li>Reddit: <a href="https://www.reddit.com/user/thamara-k/" target="_blank">u/thamara-k</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/thamarakandabada/" target="_blank">Thamara Kandabada</a></li>
-            <li>Gravatar: <a href="https://gravatar.com/thamarakandabada" target="_blank">thamarakandabada</a></li>
-            <li>YouTube: <a href="https://www.youtube.com/@ThamaraKandabada" target="_blank">@ThamaraKandabada</a></li>
-            <li>Google Maps: <a href="https://maps.app.goo.gl/mvpW1ZsL9DXgGqEG7?g_st=iw" target="_blank">Thamara Kandabada</a></li>
-            <li>Twitter: <a href="https://twitter.com/thebadtake" target="_blank">@thebadtake</a> (dormant, kept for archival purposes)</li>
-          </ul>
-          <p>I do not maintain any other social media profiles such as Instagram, Facebook, or TikTok. If you see an account that looks like it might be me but isn't listed here, please <a href="/hello">let me know</a>.</p>
-        </div>
-
-        <div class="grid-long">
-          <h2>Film, TV & Books</h2>
-          <ul>
-            <li>Letterboxd: <a href="https://letterboxd.com/thamarak/" target="_blank">thamarak</a></li>
-            <li>MUBI: <a href="https://mubi.com/en/users/11920807" target="_blank">Thamara Kandabada</a></li>
-            <li>Trakt: <a href="https://app.trakt.tv/profile/thamarakandabada" target="_blank">Thamara Kandabada</a></li>
-            <li>Goodreads: <a href=" https://www.goodreads.com/thamarakandabada target="_blank">Thamara Kandabada</a></li>
-            <li>The StoryGraph: <a href="https://app.thestorygraph.com/profile/thamarakandabada" target="_blank">@thamarakandabada</a></li>
-          </ul>
-        </div>
-
-        <div class="grid-long">
-          <h2>Creative</h2>
-          <ul>
-            <li>Behance: <a href="https://www.behance.net/thamarakandaba" target="_blank">Thamara Kandabada</a></li>
-          </ul>
-        </div>
-
-        <div class="grid-long">
-          <h2>Fitness</h2>
-          <ul>
-            <li>Strava: <a href="https://www.strava.com/athletes/167611354" target="_blank">thamarakandabada</a></li>
-          </ul>
+        <div class="sub-grid">
+          <div class="grid-box">
+            <h2>Email & Chat</h2>
+              <ul>
+                <li>Discord: thamara_k</li>
+                <li>Signal: thamara.01</li>
+                <li>iMessage: t@thamara.co.uk</li>
+                <li>Email: <a href="mailto:et@thamara.co.uk">t@thamara.co.uk</a></li>
+              </ul>
+          </div>
+          <div class="grid-box">
+            <h2>Gaming</h2>
+              <ul>
+                <li>PlayStation: <a href="https://profile.playstation.com/thamarakandabada" target="_blank">thamarakandabada</a></li>
+                <li>PSN Profiles: <a href="https://psnprofiles.com/thamarakandabada" target="_blank">thamarakandabada</a></li>
+                <li>Steam: <a href="https://steamcommunity.com/id/thamarakandabada/" target="_blank">TheLastAuditore</a></li>
+              </ul>
+          </div>
+          <div class="grid-box">
+            <h2>Writing & Publishing</h2>
+              <ul>
+                <li>Medium: <a href="https://thamara.medium.com/" target="_blank">thamara</a> (dormant, kept for archival purposes)</li>
+                <li>SubStack: <a href="https://substack.com/@thamarak" target="_blank">@thamarak</a> (unused, kept for reference purposes)</li>
+              </ul>
+          </div>
+          <div class="grid-box">
+            <h2>Coding</h2>
+              <ul>
+                <li>GitHub: <a href="https://github.com/thamarakandabada" target="_blank">thamarakandabada</a></li>
+                <li>Lovable: <a href="https://lovable.dev/@thamarak" target="_blank">@thamarak</a></li>
+              </ul>
+          </div>
+          <div class="grid-box">
+            <h2>Wiki</h2>
+              <ul>
+                <li>IndieWeb: <a href="https://indieweb.org/User:Thamara.co.uk" target="_blank">Thamara.co.uk</a></li>
+                <li>Wikipedia: <a href="https://www.mediawiki.org/wiki/User:TKandabada" target="_blank">TKandabada</a></li>
+              </ul>
+          </div>
+          <div class="grid-box">
+            <h2>Music</h2>
+              <ul>
+                <li>Apple Music: <a href="https://music.apple.com/profile/thamaraxyz" target="_blank">@thamaraxyz</a></li>
+                <li>SoundCloud: <a href="https://soundcloud.com/user-499510711" target="_blank">Thamara Kandabada</a> (dormant)</li>
+                <li>Spotify: <a href="https://open.spotify.com/user/hd2l5c0uipyrdljootsontbvc?si=9050d0dd7dd547c4" target="_blank">Thamara Kandabada</a> (unused)</li>
+              </ul>
+          </div>
+          <div class="grid-box">
+            <h2>Shops & Support</h2>
+              <ul>
+                <li>Redbubble: <a href="https://www.redbubble.com/people/123thamara-k/shop" target="_blank">Winding Road Design</a></li>
+                <li>Kofi: <a href="https://ko-fi.com/windingroaddesign/shop" target="_blank">Winding Road Design</a></li>
+                <li>eBay: <a href="https://www.ebay.co.uk/usr/masterthamara" target="_blank">masterthamara</a></li>
+                <li>PayPal: <a href="https://www.paypal.me/thamaraxyz" target="_blank">@thamaraxyz</a></li>
+                <li>Revolut: <a href="https://revolut.me/thamarak" target="_blank">thamarak</a></li>
+              </ul>
+          </div>
         </div>
       </div>
-
-      <div class="verify-subgrid">
-        <div class="grid-short">
-          <h2>Email & Chat</h2>
-          <ul>
-            <li>Discord: thamara_k</li>
-            <li>Signal: thamara.01</li>
-            <li>iMessage: t@thamara.co.uk</li>
-            <li>Email: <a href="mailto:et@thamara.co.uk">t@thamara.co.uk</a></li>
-          </ul>
-        </div>
- 
-        <div class="grid-short">
-          <h2>Gaming</h2>
-          <ul>
-            <li>PlayStation: <a href="https://profile.playstation.com/thamarakandabada" target="_blank">thamarakandabada</a></li>
-            <li>PSN Profiles: <a href="https://psnprofiles.com/thamarakandabada" target="_blank">thamarakandabada</a></li>
-            <li>Steam: <a href="https://steamcommunity.com/id/thamarakandabada/" target="_blank">TheLastAuditore</a></li>
-          </ul>
-        </div>
-
-        <div class="grid-short">
-          <h2>Writing & Publishing</h2>
-          <ul>
-            <li>Medium: <a href="https://thamara.medium.com/" target="_blank">thamara</a> (dormant, kept for archival purposes)</li>
-            <li>SubStack: <a href="https://substack.com/@thamarak" target="_blank">@thamarak</a> (unused, kept for reference purposes)</li>
-          </ul>
-        </div>
-
-        <div class="grid-short">
-          <h2>Coding</h2>
-          <ul>
-            <li>GitHub: <a href="https://github.com/thamarakandabada" target="_blank">thamarakandabada</a></li>
-            <li>Lovable: <a href="https://lovable.dev/@thamarak" target="_blank">@thamarak</a></li>
-          </ul>
-        </div>
-
-        <div class="grid-short">
-        <h2>Wiki</h2>
-          <ul>
-            <li>IndieWeb: <a href="https://indieweb.org/User:Thamara.co.uk" target="_blank">Thamara.co.uk</a></li>
-            <li>Wikipedia: <a href="https://www.mediawiki.org/wiki/User:TKandabada" target="_blank">TKandabada</a></li>
-          </ul>
-        </div>
-
-        <div class="grid-short">
-        <h2>Music</h2>
-        <ul>
-          <li>Apple Music: <a href="https://music.apple.com/profile/thamaraxyz" target="_blank">@thamaraxyz</a></li>
-          <li>SoundCloud: <a href="https://soundcloud.com/user-499510711" target="_blank">Thamara Kandabada</a> (dormant)</li>
-          <li>Spotify: <a href="https://open.spotify.com/user/hd2l5c0uipyrdljootsontbvc?si=9050d0dd7dd547c4" target="_blank">Thamara Kandabada</a> (unused)</li>
-        </ul>
-        </div>
-
-        <div class="grid-short">
-        <h2>Shops & Support</h2>
-        <ul>
-          <li>Redbubble: <a href="https://www.redbubble.com/people/123thamara-k/shop" target="_blank">Winding Road Design</a></li>
-          <li>Kofi: <a href="https://ko-fi.com/windingroaddesign/shop" target="_blank">Winding Road Design</a></li>
-          <li>eBay: <a href="https://www.ebay.co.uk/usr/masterthamara" target="_blank">masterthamara</a></li>
-          <li>PayPal: <a href="https://www.paypal.me/thamaraxyz" target="_blank">@thamaraxyz</a></li>
-          <li>Revolut: <a href="https://revolut.me/thamarak" target="_blank">thamarak</a></li>
-        </ul>
-        </div>
- 
-      </div>
-    </div>
-
 </PageLayout>

@@ -1,0 +1,29 @@
+form {
+    margin: calc(var(--standard-gap) * 2) 0 calc(var(--standard-gap) * 2) 0;
+}
+
+form input, form textarea {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family-body);
+    color: var(--text-secondary);
+    font-size: var(--font-size-base);
+    padding: calc(var(--standard-gap) * 0.5) calc(var(--standard-gap) * 0.75);
+    background-color: var(--bg-secondary);
+    margin: calc(var(--standard-gap) * 0.75) 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: var(--standard-transition);
+}
+
+form label {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary)
+}
+
+form input:focus, form textarea:focus {
+    border: 1px solid var(--accent);
+    outline: none;
+}

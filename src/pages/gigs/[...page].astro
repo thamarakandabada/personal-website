@@ -24,16 +24,15 @@ const labels = [...new Set(allGigs.map((post) => post.data.label).filter(Boolean
 const sortedLabels = labels.sort();
 const cities = [...new Set(allGigs.map((post) => post.data.city).filter(Boolean).flat())]
 const sortedCities = cities.sort();
-const slashpageImage = "/featured-images/gigs.png"
 ---
-<PageLayout title={pageTitle} image={slashpageImage}>
+<PageLayout title={pageTitle}>
   <div class="h-feed">
     <h1 class="p-name">Gigs</h1>
     <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
     <p>My definition of "gig" in the context of this page is quite broad—it includes music, theatre, comedy, and many other kinds of live performances. This page draws inspiration from <a href="https://lynnandtonic.com/" target="_blank">Lynn Fisher</a>'s excellent <a href="https://concerts.lynnandtonic.com/" target="_blank">concerts page</a>, which in my mind is the gold standard for such pages. You can find more great examples on the <a href="https://indieweb.org/concerts" target="_blank">IndieWeb wiki</a>.</p>
     <p>These updates have an RSS feed, <a href="/gigs/rss.xml">subscribe here</a>.</p>
     <h2>Browse the archive</h2>
-    <div class="gigs-filter two-grid">
+    <div>
     <div>
     <h3>By year</h3>
     <div class="tags">
@@ -60,7 +59,7 @@ const slashpageImage = "/featured-images/gigs.png"
     <div>
     <h2 id="upcoming-gigs">Upcoming gigs</h2>
     <p>Events I've purchased tickets for and look forward to attending.</p>
-    <div class="threes-grid">
+    <div class="three-column-grid">
       {upcomingGigs.map((gig) => (
         <UpcomingGig
           label={gig.data.label}
