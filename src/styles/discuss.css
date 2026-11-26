@@ -162,7 +162,8 @@
 }
 
 .discuss-form-bottom {
-    display: flex !important;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: var(--standard-gap);
     padding: calc(var(--standard-gap) * 0.75);
@@ -295,16 +296,8 @@
     gap: calc(var(--standard-gap) * 1.5);
 }
 
-.discuss-text-sm {
-    font-size: var(--font-size-small);
-}
-
 .discuss-text-xs {
     font-size: var(--font-size-small);
-}
-
-.discuss-tracking-wide {
-    letter-spacing: calc(var(--standard-gap) / 40);
 }
 
 .discuss-mb-10 {
