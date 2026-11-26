@@ -168,6 +168,8 @@
 
 .discuss-form-bottom {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
     gap: var(--standard-gap);
     padding: calc(var(--standard-gap) * 0.75);
@@ -177,6 +179,9 @@
 
 .discuss-form-inputs {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: var(--standard-gap);
 }
 
 .discuss-form-input-wrapper {
