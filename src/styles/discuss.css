@@ -168,12 +168,15 @@
 
 .discuss-form-bottom {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: var(--standard-gap);
     padding: calc(var(--standard-gap) * 0.75);
     background: var(--surface-inset);
     border-top: 1px solid var(--border-subtle);
+}
+
+.discuss-form-inputs {
+    display: flex;
 }
 
 .discuss-form-input-wrapper {
