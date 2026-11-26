@@ -182,6 +182,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: var(--standard-gap);
+    flex: 1;
 }
 
 .discuss-form-input-wrapper {
