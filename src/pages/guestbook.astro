@@ -12,18 +12,16 @@ const currentUrl = new URL(Astro.url.pathname, Astro.site || 'https://thamara.co
     
     <p>If you enjoyed browsing the website, please consider signing my guestbook below. You can also sign by sending me an <a href="mailto:t@thamara.co.uk">email</a> or a <a href="https://webmention.io/thamara.co.uk/webmention" target="_blank">webmention</a>.</p>
 
-<!-- Discuss comment widget -->
-<link rel="stylesheet" href="https://discuss.thamara.co.uk/client.css">
-<div id="discuss-comments" data-dark-selector=".dark"></div>
-<script is:inline src="https://discuss.thamara.co.uk/client.js"></script>
-<script>
-  new DiscussWidget({
-    container: document.getElementById('discuss-comments'),
-    serverUrl: 'https://discuss.thamara.co.uk',
-	darkSelector: '.dark',
-	title: 'Leave a note',
-  });
-</script>
+    <!-- Discuss comment widget -->
+        <div id="discuss-comments"></div>
+          <script is:inline src="https://discuss.thamara.co.uk/client.js"></script>
+            <script>
+              new DiscussWidget({
+                container: document.getElementById('discuss-comments'),
+                serverUrl: 'https://discuss.thamara.co.uk',
+	              title: 'Leave a note',
+              });
+            </script>
 <div class="guestbookmentions">
 <Webmentions targetUrl={currentUrl} />
 </div>

@@ -4,7 +4,7 @@
     line-height: 1.5;
     color: var(--text-primary);
     
-    --text-primary:   var(--text-primary);
+    --text-primary: var(--text-primary);
     --text-secondary: var(--text-secondary);
     --text-tertiary: var(--text-secondary);
     --text-muted: var(--text-secondary);
@@ -83,7 +83,7 @@
 }
 
 .discuss-nested {
-    margin: 1rem 0 0 2.75rem;
+    margin: 1rem 0 0 2rem;
 }
 
 .discuss-action-btn {
@@ -98,6 +98,7 @@
     background: transparent;
     cursor: pointer;
     text-decoration: none;
+    transition: var(--standard-transition);
 }
 
 .discuss-action-btn:hover {
@@ -230,6 +231,7 @@
     background: var(--accent);
     color: var(--on-primary);
     border-color: var(--accent);
+    transition: var(--standard-transition);
 }
 
 .discuss-btn-primary:hover {
@@ -242,6 +244,7 @@
     color: var(--text-secondary);
     border-color:
     var(--border-button);
+    transition: var(--standard-transition);
 }
 
 .discuss-btn-secondary:hover {
