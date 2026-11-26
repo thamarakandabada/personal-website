@@ -1,9 +1,8 @@
 #discuss-comments {
     font-family: var(--font-family-body);
     font-size: var(--font-size-base);
-    line-height: 1.5;
+    line-height: var(--standard-line-height);
     color: var(--text-primary);
-    
     --surface-base: var(--bg-primary);
     --surface-inset: var(--bg-secondary);
     --surface-overlay: var(--bg-tertiary);
@@ -21,12 +20,12 @@
 .discuss-comment-row {
     display: flex;
     gap: var(--standard-gap);
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 calc(var(--standard-gap) * 1.5) 0;
 }
 
 .discuss-avatar {
-    width: 2rem;
-    height: 2rem;
+    width: calc(var(--standard-gap) * 2);
+    height: calc(var(--standard-gap) * 2);
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
@@ -45,13 +44,13 @@
 
 .discuss-comment-body {
     font-size: var(--font-size-base);
-    line-height: 1.5;
+    line-height: var(--standard-line-height);
     color: var(--text-primary);
-    margin: 0.25rem 0 0.5rem;
+    margin: calc(var(--standard-gap) * 0.25) 0 calc(var(--standard-gap) * 0.5) 0;
 }
 
 .discuss-comment-body p {
-    margin: 0 0 0.5em;
+    margin: 0 0 calc(var(--standard-gap) * 0.5) 0;
 }
 
 .discuss-comment-body p:last-child {
@@ -61,14 +60,14 @@
 .discuss-comment-body code {
     font-family: var(--font-family-code);
     background: var(--surface-overlay);
-    padding: 0.1em 0.3em;
+    padding: calc(var(--standard-gap) * 0.1) calc(var(--standard-gap) * 0.3);
     border-radius: var(--border-radius);
 }
 
 .discuss-comment-body pre {
     background: var(--text-primary);
     color: var(--surface-base);
-    padding: 1rem;
+    padding: var(--standard-gap);
     border-radius: var(--border-radius);
     overflow-x: auto;
 }
@@ -78,14 +77,14 @@
 }
 
 .discuss-nested {
-    margin: 1rem 0 0 2rem;
+    margin: var(--standard-gap) 0 0 calc(var(--standard-gap) * 2);
 }
 
 .discuss-action-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.3rem;
-    padding: 0.2rem 0.5rem;
+    gap: calc(var(--standard-gap) * 0.3);
+    padding: calc(var(--standard-gap) * 0.2) calc(var(--standard-gap) * 0.5);
     font-size: var(--font-size-base);
     color: var(--text-secondary);
     border: 1px solid var(--border-button);
@@ -104,7 +103,7 @@
 .discuss-badge {
     display: inline-flex;
     align-items: center;
-    padding: 0.1rem 0.5rem;
+    padding: calc(var(--standard-gap) * 0.1) calc(var(--standard-gap) * 0.5);
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-bold);
     border-radius: 999px;
@@ -123,21 +122,21 @@
 .discuss-reply-tag {
     display: inline-flex;
     align-items: center;
-    padding: 0.1rem 0.4rem;
+    padding: calc(var(--standard-gap) * 0.1) calc(var(--standard-gap) * 0.4);
     border-radius: var(--border-radius);
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-bold);
     background: var(--accent-surface);
     color: var(--accent-fg);
     text-decoration: none;
-    margin-right: 0.25rem;
+    margin-right: calc(var(--standard-gap) * 0.25);
 }
 
 .discuss-form-container {
     border: 1px solid var(--border-control);
     border-radius: var(--border-radius);
     overflow: hidden;
-    margin-top: 2rem;
+    margin-top: calc(var(--standard-gap) * 2);
 }
 
 .discuss-form-container:focus-within {
@@ -148,7 +147,7 @@
     display: block;
     width: 100%;
     min-height: 80px;
-    padding: 0.75rem;
+    padding: calc(var(--standard-gap) * 0.75);
     border: none;
     resize: vertical;
     font: inherit;
@@ -165,8 +164,8 @@
 .discuss-form-bottom {
     display: flex;
     flex-wrap: wrap;
-    gap: calc(var(--standard-gap) / 2);
-    padding: 0.75rem;
+    gap: var(--standard-gap);
+    padding: calc(var(--standard-gap) * 0.75);
     background: var(--surface-inset);
     border-top: 1px solid var(--border-subtle);
 }
@@ -181,16 +180,16 @@
 
 .discuss-form-input-wrapper svg {
     position: absolute;
-    left: 0.6rem;
-    width: 1rem;
-    height: 1rem;
+    left: calc(var(--standard-gap) * 0.6);
+    width: var(--standard-gap);
+    height: var(--standard-gap);
     color: var(--text-secondary);
     pointer-events: none;
 }
 
 .discuss-form-input {
     width: 100%;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    padding: calc(var(--standard-gap) * 0.5) calc(var(--standard-gap) * 0.5) calc(var(--standard-gap) * 0.5) calc(var(--standard-gap) * 2);
     border: 1px solid var(--border-control);
     border-radius: var(--border-radius);
     font: inherit;
@@ -212,15 +211,16 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0 var(--standard-gap);
     height: 36px;
     border: 1px solid transparent;
     border-radius: var(--border-radius);
     font: inherit;
-    font-weight: 500;
+    font-weight: var(--font-weight-bold);
     cursor: pointer;
     white-space: nowrap;
     text-decoration: none;
+    color: var(--bg-secondary);
 }
 
 .discuss-btn-primary {
