@@ -60,7 +60,7 @@ const slashpageImage = "/featured-images/gigs.png"
     <div>
     <h2 id="upcoming-gigs">Upcoming gigs</h2>
     <p>Events I've purchased tickets for and look forward to attending.</p>
-    <div class="gigs-grid">
+    <div class="threes-grid">
       {upcomingGigs.map((gig) => (
         <UpcomingGig
           label={gig.data.label}
@@ -75,7 +75,7 @@ const slashpageImage = "/featured-images/gigs.png"
     
     <h2 id="past-gigs">Past gigs</h2>
     <p>Events I've attended, sorted in reverse chronological order. My pre-2022 records are incomplete and I have only added the ones that I remember. I intend to dig through old photos and emails to make this list as comprehensive as possible. Where support acts are mentioned, I've only included the ones I saw live.</p>
-    <div class="gigs-grid">
+    <div class="grid">
       {page.data.map((post: any) => <Gig date={post.data.date} title={post.data.title} venue={post.data.venue} description={post.data.description} label={post.data.label} imageUrl={post.data.imageUrl} imageAlt={post.data.imageAlt} support={post.data.support} city={post.data.city} url={`/gigs/${post.id}/`} />)}
     </div>
     

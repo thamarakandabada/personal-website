@@ -1,0 +1,96 @@
+.grid {
+    display: grid;
+    grid-template-columns: var(--standard-grid-template-columns);
+    column-gap: var(--standard-gap);
+    row-gap: var(--standard-gap);
+    margin: 1rem 0 0 0;
+}
+
+.threes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--standard-gap);
+    row-gap: var(--standard-gap);
+    margin: 1rem 0 0 0;  
+}
+
+.grid > p {
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.grid-box {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem 1.5rem;
+    background-color: var(--bg-tertiary);
+    transition: var(--standard-transition); 
+}
+
+.grid-box a {
+    text-decoration: none !important;
+}
+
+.grid-box a:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+}
+
+.debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover, .gigs-grid div:hover:not(.gig-photo, .gig-label, .upcoming-gig-timeline-node, .upcoming-gig-label) {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+}
+
+.debas-grid, .now-grid, .projects-grid, .style-grid, .meals, .verify-grid, .podcast-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.notebook-grid {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    column-gap: 3rem;
+    row-gap: 2rem;
+}
+
+.verify-subgrid, .notebook-subgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+.notebook-subgrid {
+    height: fit-content;
+}
+
+.notebook-subgrid {
+    position: sticky;
+    top: 5rem;
+    z-index: 0;
+}
+
+.debas-grid a, .podcast-grid a, .gigs-grid a {
+    text-decoration: none !important;
+}
+
+.uses-grid-container div, .now-grid div, .debas-grid div, .unlinked-grid, .linked-grid, .post-footer, .verify-grid div:not(.verify-subgrid), .podcast-grid div {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    background-color: var(--bg-tertiary);
+    transition: 0.5s;
+}
+
+.gigs-grid div {
+    transition: 0.5s;
+}
+
+.uses-grid-div-img {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: inherit !important;
+}

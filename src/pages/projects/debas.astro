@@ -17,7 +17,7 @@ const slashpageImage = "/featured-images/debas.png"
     <p>This is the complete archive of <Code code=`debas.lk` inline />, an online platform which sought to bring together diverse perspectives on Sri Lankan politics, economy, society, and culture in conversation with one another. Debas was the brainchild of my friends <a href="https://scholar.google.com/citations?user=hCXEBkgAAAAJ&hl=en" target="_blank">Rajni Gamage</a> and <a href="https://himalkk.substack.com/" target="_blank">Himal Kotelawala</a>. I helped create and maintain the website, while another friend, <a href="https://rothbourne.substack.com/" target="_blank">Johanns Rogers</a> (Jo), was in charge of social media. Debas accepted submissions from academics, experts, and thinkers of various disciplines. All published posts are archived here for posterity.</p>
     <p>The logo was designed by Jo.</p>
 
-    <div class="debas-grid">
+    <div class="grid">
         {sortedPosts.map((post: any) => <DebasPost pubDate={post.data.pubDate} url={`/projects/debas/${post.id}/`} title={post.data.title} author={post.data.author} />)}
     </div>
   </div>

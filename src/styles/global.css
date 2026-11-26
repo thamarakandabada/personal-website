@@ -14,10 +14,18 @@
   --font-family-code: JetBrainsMono-Variable, monospace;
   --font-size-base: 1.1rem;
   --font-size-small: 0.9rem;
+  --font-size-xs: 0.75rem;
   --font-size-h1: 2.75rem;
   --font-size-h2: 1.75rem;
   --font-size-h3: 1.5rem;
   --font-size-h4: 1.25rem;
+  --margin-h1: calc(var(--standard-gap) * 3) 0 calc(var(--standard-gap) * 2) 0;
+  --margin-h2: calc(var(--standard-gap) * 1.5) 0 0 0;
+  --margin-h3: calc(var(--standard-gap) * 0.5) 0;
+  --margin-h4: calc(var(--standard-gap) * 0.25) 0;
+  --margin-p: calc(var(--standard-gap) * 0.75) 0;
+  --standard-line-height: 1.5;
+  --border: 1px solid var(--border-color);
   --border-radius: 4px;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
@@ -27,6 +35,8 @@
   --page-margin: 0 auto;
   --standard-transition: all 0.5s ease-in-out;
   --standard-gap: 1rem;
+  --standard-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --standard-grid-template-columns: repeat(2, 1fr);
 }
 
 body {
@@ -38,12 +48,12 @@ body {
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
-  max-width: 1024px;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: var(--page-max-width);
+    margin: var(--page-margin);
 }
 
 nav p, nav div {
@@ -53,8 +63,63 @@ nav p, nav div {
 
 iframe {
     width: 100%;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     overflow-y: visible;
+}
+
+table {
+    border: var(--border);
+    width: 100%;
+    font-size: var(--font-size-base);
+    border-collapse: collapse;
+    text-align: left;
+    color: var(--text-primary);
+}
+
+tr {
+    border-bottom: var(--border);
+}
+
+td, th {
+    padding: 1rem;
+    border-right: var(--border);
+    vertical-align: top;
+}
+
+th {
+    background-color: var(--bg-secondary);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
+    box-shadow: var(--standard-box-shadow);
+}
+
+audio {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
+    font-family: var(--font-family-heading-italic);
+    padding: 0.25rem 0 0 0;
+    text-align: right;
+    margin: 0.5rem 0 2rem 0;
+}
+
+hr {
+    height: 1px;
+    background-color: var(--border-color);
+    border: none;
 }
 
 .post-nav {
@@ -77,99 +142,13 @@ iframe {
     color: var(--text-primary);
 }
 
-a:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a, .gigs-grid a, .letterboxd-embed-tc-poster a) {
-    text-decoration: underline 1px var(--border-color);
-    text-underline-offset: 4px;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    color: var(--text-secondary);
-    transition: 0.5s;
-}
-
-a:hover:not(.header a, .not-a, .not-a a, .kupietz, .footer-nav-links a, .notebook-post-list-item a, .tag a, .buttons8815 a, .social-links a, .footer-bottom a, .poster-list a, .debas-grid a, .podcast-grid a, .subscribe-buttons a, .gigs-grid a, .letterboxd-embed-tc-poster a) {
-    color: var(--accent) !important;
-    text-decoration: underline 1px var(--accent) !important;
-    font-weight: 700;
-}
-
-code {
-    font-family: JetBrainsMono-Variable, monospace;
-    font-size: 0.9rem;
-}
-
-code:not(pre code) {
-    padding: 0.15rem 0.25rem !important;
-    background-color: var(--bg-tertiary);
-    border-radius: 4px;
-    border: 1px dotted var(--accent);
-}
-
-.astro-code {
-    border-radius: 4px;
-    padding: 1rem;
-}
-
-table {
-    border: 1px solid var(--border-color);
-    width: 100%;
-    font-size: 1.1rem;
-    border-collapse: collapse;
-    text-align: left;
-}
-
 .md-table {
     overflow-x: auto;
-} 
-
-tr {
-    border-bottom: 1px solid var(--border-color);
 }
 
-td, th {
-    padding: 1rem;
-    border-right: 1px solid var(--border-color);
-    vertical-align: top;
-}
 
-th {
-    background-color: var(--bg-secondary);
-}
 
-img:not(.buttons8815 img) {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
 
-audio {
-    width: 100%;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-figcaption {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    font-family: Erode-VariableItalic, serif;
-    padding-top: 0.25rem;
-    text-align: right;
-    margin-bottom: 2rem;
-}
-
-figcaption a {
-    text-decoration: none;
-}
-
-hr {
-    height: 1px;
-    background-color: var(--border-color);
-    border: none;
-}
 
 /*
 Page elements
@@ -501,86 +480,7 @@ Grids and sub-grids
 */
 
 
-.gigs-grid, .md-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1.5rem;
-}
 
-.hobbies-section, .guitar-showcase, .wwc-grid, .iw-grid, .two-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-}
-
-.gigs-grid {
-    margin-top: 2rem;
-}
-
-.uses-grid-container, .debas-grid, .now-grid, .uses-grid-container, .projects-grid, .style-grid, .meals, .blogroll-grid, .verify-grid, .podcast-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    margin-top: 2.5rem;
-}
-
-.notebook-grid {
-    display: grid;
-    grid-template-columns: 0.6fr 0.4fr;
-    column-gap: 3rem;
-    row-gap: 2rem;
-}
-
-.podroll-subgrid {
-    margin-top: 2rem;
-}
-
-.blogroll-subgrid, .verify-subgrid, .notebook-subgrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-}
-
-.notebook-subgrid {
-    height: fit-content;
-}
-
-.notebook-subgrid {
-    position: sticky;
-    top: 5rem;
-    z-index: 0;
-}
-
-.podroll-subgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-    column-gap: 2rem;
-}
-
-.debas-grid a, .podcast-grid a, .gigs-grid a {
-    text-decoration: none !important;
-}
-
-.uses-grid-container div, .now-grid div, .debas-grid div, .unlinked-grid, .linked-grid, .post-footer, .podroll-grid div:not(.podroll-subgrid), .blogroll-grid div:not(.blogroll-subgrid), .verify-grid div:not(.verify-subgrid), .podcast-grid div {
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    padding: 0.75rem 2rem;
-    background-color: var(--bg-tertiary);
-    transition: 0.5s;
-}
-
-.gigs-grid div {
-    transition: 0.5s;
-}
-
-.uses-grid-div-img {
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    background-color: inherit !important;
-}
 
 .podcast-meta {
     display: flex;
@@ -601,11 +501,6 @@ Grids and sub-grids
     font-family: Erode-VariableItalic, serif;
     font-size: 1.5rem;
     color: var(--accent);
-}
-
-.debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover, .gigs-grid div:hover:not(.gig-photo, .gig-label, .upcoming-gig-timeline-node, .upcoming-gig-label) {
-    border-color: var(--accent);
-    transform: translateY(-4px);
 }
 
 /*

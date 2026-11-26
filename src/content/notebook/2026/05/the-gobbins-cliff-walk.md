@@ -46,7 +46,7 @@ The cliffs are home to a variety of birdlife including the extremely elusive puf
 
 The walk took about 2 hours in total, and our guide was with us the whole time. The views were indeed incredible, and the photos below don't do them justice.
 
-<div class="md-grid">
+<div class="grid">
 
 <figure>
 

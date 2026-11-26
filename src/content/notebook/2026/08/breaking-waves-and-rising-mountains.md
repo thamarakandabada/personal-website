@@ -32,7 +32,7 @@ Take the following paintings, for example. Using simple colours and gradients, t
 
 </figure>
 
-<div class="md-grid">
+<div class="grid">
 
 <figure>
 

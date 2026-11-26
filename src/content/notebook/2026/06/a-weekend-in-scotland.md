@@ -36,7 +36,7 @@ Unsurprisingly, I wanted to visit a film theatre while in Glasgow. I picked [The
 
 The cinema is cozily tucked away on [Ashton Lane](https://maps.app.goo.gl/8HX4bi33aRkxiuh5A), surrounded by several bars. Being a Saturday night, it was as busy as it could get, with throngs of people milling about. When we walked into screen 2, the first thing I noticed was how the thumping bass from the music playing outside was leaking through. I chose to ignore this and settled in to see the film, which sadly did not turn out to be an enjoyable experience. It was ruined by people walking in and out of the cinema constantly—some jumping over seats to do so!—and a group of (possibly drunk) teenagers interjecting every so often, whom the manager eventually had to throw out.
 
-<div class="md-grid">
+<div class="grid">
 
 ![Nuwani posing outside the cinema, under the large illuminated sign that reads The Grosvenor Picture Theatre.](images/IMG_3519-768x1024.jpg)
 
@@ -68,7 +68,7 @@ Barrowland was a 15-minute walk from our hotel. I made my way there around 7pm, 
 
 Big Thief took the stage around 9pm. They performed a mix of new and old tracks, including my favourites _Mary_ (from the album _Capacity_) and _Not_ (from the album _Two Hands_). I posted a video of their performance of _Not_ on my [/Gigs](/gigs) page; it was every bit as powerful as I had hoped it would be. The audience was abuzz with a palpable energy that night; I must say I enjoyed every minute of it.
 
-<div class="md-grid">
+<div class="grid">
 
 ![The band on stage, mid-performance. They're illuminated by soft orange and purple lights while the audience in the foreground looks on.](images/IMG_3560-scaled.jpg)
 
@@ -90,7 +90,7 @@ The famous [Glasgow Necropolis](https://en.wikipedia.org/wiki/Glasgow_Necropolis
 
 While it is by design a resting place for the dead, there is a lot of life to be found in these grounds. It is by no means a desolate graveyard. Bees buzzing around the flower beds, squirrels in the trees, and the constant birdsong in the air make it an ideal place for quiet walks, absorbed in deep contemplation if you are so inclined. But the city is only a few minutes away, and its sounds do penetrate the invisible walls of this unlikely sanctuary occasionally—nothing like a loud car horn to remind you of the never-ending pursuit of industry.
 
-<div class="md-grid">
+<div class="grid">
 
 ![One of the many leafy walkways through the necropolis, with trees bursting in green along both sides](images/IMG_3608-scaled.jpg)
 
@@ -122,7 +122,7 @@ This impressive cathedral, first built in the 1100s, has undergone several renov
 
 Christian architecture fascinates me because I find its mere existence impossible to comprehend. How can such beauty and grace be imbued into places built in the service of a capricious god? How are the same people capable of committing unspeakable atrocities in the name of their god also be skilled in producing wondrous monuments to him? While impressed by the craftsmanship and artistry of it all, I remain staunchly irreligious, but even I must fess up to the following, albeit reluctantly: Christianity ain't all bad; it gave us beautiful cathedrals (and Martin Scorsese).
 
-<div class="md-grid">
+<div class="grid">
 
 ![A copy of the King James Bible printed in 1617 that is displayed at the cathedral inside a glass case.](images/IMG_3628-scaled.jpg)
 
@@ -150,7 +150,7 @@ This small museum is located right next to the cathedral. It showcases the belie
 
 On the way back we noticed a [coffee shop](https://www.instagram.com/copperboxcoffee/) located in an old police box, TARDIS-style. It was getting colder and there was a light drizzle, so we got ourselves some hot chocolate to enjoy on the way back to the hotel. That morning I had read [the post James wrote about Caramel Logs](https://jamesg.blog/2026/05/31/the-caramel-log), which this coffee shop happened to be selling, so we bought two of them to try. James was right; they are excellent treats with a great flavour combination, and they certainly won me—someone who generally avoids caramel-flavoured food—over.
 
-<div class="md-grid">
+<div class="grid">
 
 ![Copperbox Coffee, a small specialty coffee shop based in the Cathedral Square in Glasgow which is run out of a blue police box.](images/IMG_3638.jpg)
 

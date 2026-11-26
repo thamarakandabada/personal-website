@@ -14,7 +14,7 @@ We arrived in London yesterday morning. The primary reason for the visit was to 
 
 When I first bought tickets a few months ago, we had planned to make a weekend out of it by exploring London a bit more. Our tickets were for the 10.30pm screening—it was the only one I could get decent seats for—so we caught up with a friend who lives in London. We walked around the Southbank for a bit. The place is always busy, with foodstalls, street performers, and plenty of patrons. We explored an open-air bookstall at the entrance to BFI Southbank, which had a massive selection of books of all genres neatly laid out on tables. Nuwani bought a book on Ancient Egypt for her niece—gotta get them started young.
 
-<div class="md-grid">
+<div class="grid">
 
 ![Rows of book set up on tables and people browsing through them. Overhead, the underside of a bridge can be seen.](images/85E44D37-07CE-4685-94D5-77334517D471_1_102_o.jpeg)
 

@@ -12,7 +12,7 @@ topics: ["Art", "David Bowie", "Design", "Music", "Poster"]
 
 In February, I approached [Akila Weerasinghe](https://www.instagram.com/akilaweera3/) to commission two vintage style artworks of David Bowie and The Beatles. The idea was to get them printed, framed and hung on my living room wall.
 
-<div class="md-grid">
+<div class="grid">
 
 <figure>
 

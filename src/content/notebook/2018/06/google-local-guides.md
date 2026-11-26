@@ -18,7 +18,7 @@ They’ve gamified this process quite well by giving points to Local Guides base
 
 ![My Google Local Guides profile which displays my level, points, and the badges I've earned](images/1gTBfYnZmCVVRX4PMylHu6Q-1024x573.webp)
 
-<div class="md-grid">
+<div class="grid">
 
 ![The Master Reviewer badge, awarded for quantity, helpfulness, and impact of reviews](images/1cxS2W37HI2_A-0vJrv00bA-473x1024.webp)
 

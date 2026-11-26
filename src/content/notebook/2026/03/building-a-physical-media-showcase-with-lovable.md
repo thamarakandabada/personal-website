@@ -163,7 +163,7 @@ I kept this section limited to 15 directors. Anything more than that would have 
 
 ### Formats
 
-<div class="md-grid">
+<div class="grid">
 
 ![A screenshot of the stats section, showing a pie chart of titles by video quality](images/image_2026-03-04_112536740.png)
 

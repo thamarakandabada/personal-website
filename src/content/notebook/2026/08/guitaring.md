@@ -26,7 +26,7 @@ Soon after the move, I decided I was due for an upgrade. I sold the Squier to a 
 
 These four guitars make up my current arsenal. They aren't the most expensive, but they serve me well. Because I didn't, and don't, have any aspirations of being a musician, or even performing in public for that matter, they aren't sources of resentment or harsh reminders of a life that could have been. As Maron likes to put it, his (and my) guitars aren't vessels for broken dreams. They are simply there when I need them, always ready to be played, always willingly making the splendid cacophony I love to make with them.
 
-<div class="md-grid">
+<div class="grid">
 
 <figure>
 
