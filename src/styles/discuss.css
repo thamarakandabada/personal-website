@@ -162,7 +162,7 @@
 }
 
 .discuss-form-bottom {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     gap: var(--standard-gap);
     padding: calc(var(--standard-gap) * 0.75);
@@ -225,14 +225,14 @@
 
 .discuss-btn-primary {
     background: var(--accent);
-    color: var(--on-primary);
-    border-color: var(--accent);
+    color: var(--surface-inset);
+    border-color: var(--border-default);
     transition: var(--standard-transition);
 }
 
 .discuss-btn-primary:hover {
-    background: var(--bg-primary);
-    border-color: var(--border-color);
+    background: var(--bg-secondary);
+    border-color: var(--accent);
 }
 
 .discuss-btn-secondary {
