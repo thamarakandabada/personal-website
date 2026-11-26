@@ -15,6 +15,7 @@
     --accent-surface: var(--accent);
     --focus-ring: var(--accent);
     --on-primary: var(--accent);
+    margin: var(--standard-gap) 0 0 0;
 }
 
 .discuss-comment-row {
@@ -40,6 +41,10 @@
 .discuss-comment-content {
     flex: 1;
     min-width: 0;
+}
+
+.discuss-comment-content > div {
+    font-size: var(--font-size-base) !important;
 }
 
 .discuss-comment-body {
