@@ -22,7 +22,7 @@ h2:after {
     width: 100%;
     margin-right: -100%;
     margin-left: var(--standard-gap);
-    border-top: var(--border);
+    border-top: var(--dotted-border);
 }
 
 h3 {

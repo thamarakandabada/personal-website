@@ -20,11 +20,11 @@
 
 .grid > p {
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: var(--standard-gap) 0 0 0;
 }
 
 .grid-box {
-    border: var(--border);
+    border: var(--border-muted);
     border-radius: var(--border-radius);
     padding: var(--standard-gap) calc(var(--standard-gap) * 1.5);
     background-color: var(--bg-tertiary);
@@ -33,15 +33,6 @@
 
 .grid-box > h2 {
     margin: 0;
-}
-
-.grid-box a {
-    text-decoration: none !important;
-}
-
-.grid-box a:hover {
-    border-color: var(--accent);
-    transform: translateY(-4px);
 }
 
 .debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover, .gigs-grid div:hover:not(.gig-photo, .gig-label, .upcoming-gig-timeline-node, .upcoming-gig-label) {

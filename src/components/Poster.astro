@@ -12,10 +12,10 @@ const { title, url, year, category, imageUrl, imageAlt, pubDate } = Astro.props;
         alt={imageAlt}
       />
     </figure>
-    <div class="poster-meta">
+    <div>
       <p hidden><time class="dt-published" datetime={pubDate.toISOString()}>{pubDate.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</time></p>
-      <p class="poster-list-category p-category">{category}</p>
-      <p><span class="poster-list-title p-name">{title}</span> <span class="poster-list-year">{year}</span></p>
+      <div class="content-label"><p class="p-category">{category}</p></div>
+      <p><span class="p-name">{title}</span> <span class="pubdate">{year}</span></p>
     </div>
   </a>
 </div>

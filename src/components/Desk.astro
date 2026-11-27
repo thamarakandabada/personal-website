@@ -4,7 +4,7 @@ import { Picture } from "astro:assets";
 const { imageUrl, imageAlt, date , description , location } = Astro.props;
 ---
 <div class="timeline-entry h-entry">
-  <div class="desk-photo u-photo">
+  <div class="featured-photo u-photo">
     <Picture
       src={imageUrl}
       formats={['avif', 'webp']}
@@ -14,6 +14,7 @@ const { imageUrl, imageAlt, date , description , location } = Astro.props;
   <div class="content-label">
     <p>{location}</p>
   </div>
-  <p class="desk-description p-name p-summary">{description}</p>
-  <p class="desk-date"><time class="dt-published" datetime={date.toISOString()}>{date.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</time></p>
+  <p class="p-name p-summary">{description}</p>
+  <hr>
+  <p class="pubdate"><time class="dt-published" datetime={date.toISOString()}>{date.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}</time></p>
 </div>

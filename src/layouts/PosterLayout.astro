@@ -17,18 +17,18 @@ const isoDate = frontmatter.pubDate
 <article class="h-entry">
 <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
 <a class="u-url" href={Astro.url.href} hidden>Permalink</a>
-<div class="poster-content">
     <div class="poster-page-flex">
 	  <div class="poster-image u-photo">
 		<Picture src={frontmatter.imageUrl} formats={['avif', 'webp']} alt={frontmatter.imageAlt} />
 	  </div>
 	  <div class="poster-details">
-		<p class="poster-category">{frontmatter.category?.map((category: string, index: number) => (<><a class="p-category" href={`/design/categories/${String(category).toLowerCase().replace(/\s+/g, '-')}/`}>{category}</a></>))}</p>
-		<h1 class="poster-title p-name">{frontmatter.title}</h1>
-		<p class="poster-year">{frontmatter.year}</p>
+		<p>{frontmatter.category?.map((category: string, index: number) => (<><a class="p-category" href={`/design/categories/${String(category).toLowerCase().replace(/\s+/g, '-')}/`}>{category}</a></>))}</p>
+		<h1 class="p-name">{frontmatter.title}</h1>
+		<p class="pubdate">{frontmatter.year}</p>
 		<p class="poster-director">{frontmatter.director}</p>
 		<p class="poster-customer">{frontmatter.customer}</p>
 		<p class="poster-description p-summary">{frontmatter.description}</p>
+    <hr>
 		<div class="e-content">
       <slot />
 	  </div>
@@ -38,9 +38,8 @@ const isoDate = frontmatter.pubDate
 
 	  </div>
 	</div>
-  <div class="poster-nav">
+  <div class="content-nav">
   <PosterNavPrevNext />
-  </div>
   </div>
 </article>
 </PageLayout>

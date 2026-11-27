@@ -2,4 +2,5 @@
     text-align: left;
     max-width: var(--page-max-width);
     margin: var(--page-margin);
+    padding: var(--page-padding);
 }

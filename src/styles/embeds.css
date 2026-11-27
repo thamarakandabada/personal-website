@@ -1,0 +1,41 @@
+/* Letterboxd & OWC (on /film page) */
+
+#letterboxd-embed-tc {
+    margin-top: calc(var(--standard-gap) * 2);
+}
+
+.letterboxd-embed-tc-diary-entry {
+    padding: 0 !important;
+}
+
+.letterboxd-embed-tc-title {
+    color: var(--text-primary);
+}
+
+.letterboxd-embed-tc-year {
+    font-size: var(--font-size-base) !important;
+    color: var(--text-secondary) !important;
+}
+
+.letterboxd-embed-tc-date {
+        color: var(--text-secondary) !important;
+}
+
+.letterboxd-embed-tc-poster img {
+    border-radius: var(--border-radius);
+    box-shadow: var(--standard-box-shadow);
+    transition: var(--standard-transition);
+}
+
+.letterboxd-embed-tc-poster img:hover {
+    transform: var(--img-transform);
+}
+
+.letterboxd-embed-tc-rating, .letterboxd-embed-tc-review, .letterboxd-embed-tc-footer, .letterboxd-embed-tc-divider {
+        display: none;
+    }
+
+#open-web-calendar {
+    border: var(--border-muted);
+    border-radius: var(--border-radius);
+}

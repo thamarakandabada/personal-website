@@ -5,7 +5,7 @@ const { imageUrl, imageAlt, label, title, description, venue, date, support, cit
 ---
 <div class="timeline-entry h-event h-entry">
   <a class="u-url" href={url}>
-  <div class="gig-photo u-photo">
+  <div class="featured-photo u-photo">
     <Picture
       src={imageUrl}
       formats={['avif', 'webp']}
@@ -15,11 +15,12 @@ const { imageUrl, imageAlt, label, title, description, venue, date, support, cit
   <div class="content-label">
     <p>{label}</p>
   </div>
-  <p class="gig-title p-name">{title}</p>
-  <p class="gig-support">{support}</p>
-  <p class="gig-description p-summary">{description}</p>
-  <p class="gig-date"><time class="dt-start dt-published" datetime={date.toISOString()}>
+  <h3 class="p-name">{title}</h3>
+  <h4>{support}</h4>
+  <p class="p-summary">{description}</p>
+  <hr>
+  <p class="pubdate"><time class="dt-start dt-published" datetime={date.toISOString()}>
     {date.toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})}
-  </time> at <span class="gig-venue p-location">{venue}, {city}</span></p>
+  </time> at <span class="p-location">{venue}, {city}</span></p>
 </a>
 </div>

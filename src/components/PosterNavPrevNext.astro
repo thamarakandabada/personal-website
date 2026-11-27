@@ -24,23 +24,17 @@ const allPosters =
 
 {
   (previousPoster || allPosters || nextPoster) && (
-    <nav class="post-nav">
+    <nav>
       {previousPoster && (
-        <p>
+        <button>
           <a href={`/design/${previousPoster.id}/`}>Previous</a>
-        </p>
-      )}
-
-      {allPosters && (
-        <p>
-          <a href={`/design/`}>All Posters</a>
-        </p>
+        </button>
       )}
 
       {nextPoster && (
-        <p>
+        <button>
           <a href={`/design/${nextPoster.id}/`}>Next</a>
-        </p>
+        </button>
       )}
     </nav>
   )
