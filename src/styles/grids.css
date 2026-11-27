@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: var(--standard-grid-template-columns);
     gap: var(--standard-gap);
-    margin: calc(var(--standard-gap) * 2) 0 0 0;
+    margin: calc(var(--standard-gap) * 2) 0;
 }
 
 .sub-grid {
@@ -33,6 +33,11 @@
 
 .grid-box > h2 {
     margin: 0;
+}
+
+.grid-box:has(> a):hover {
+    border-color: var(--accent);
+    transform: var(--img-transform);
 }
 
 .debas-grid div:hover, .linked-grid:hover, .podcast-grid div:hover, .gigs-grid div:hover:not(.gig-photo, .gig-label, .upcoming-gig-timeline-node, .upcoming-gig-label) {

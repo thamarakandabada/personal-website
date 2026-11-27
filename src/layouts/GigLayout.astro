@@ -20,16 +20,16 @@ const isoDate = frontmatter.date
 <article class="h-event h-entry">
   <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
   <a class="u-url" href={Astro.url.href} hidden>Permalink</a>
-  <div class="blog-header">
-    <p><span class="blog-date"><time class="dt-start dt-published" datetime={isoDate}>
+  <div class="post-header">
+    <p><span class="pubdate"><time class="dt-start dt-published" datetime={isoDate}>
 	    {formattedDate}
-	  </time></span>//<span class="blog-category p-category">{frontmatter.label}</span></p>
-    <h1 class="blog-title p-name">{frontmatter.title}</h1>
-      <p class="p-location venue">{frontmatter.venue}, {frontmatter.city}</p>
-      <p class="blog-description p-summary">{frontmatter.support}</p>
+	  </time></span> — <span class="post-category p-category">{frontmatter.label}</span></p>
+    <h1 class="p-name">{frontmatter.title}</h1>
+    <h3 class="post-description p-summary">{frontmatter.support}</h3>  
+    <h4 class="p-location">at {frontmatter.venue}, {frontmatter.city}</h4>
   </div>
-  <div class="blog-image">
-	  <figure class="blog-hero-image u-photo">
+  <div>
+	  <figure class="post-image u-photo">
       <Picture
         src={frontmatter.imageUrl}
 		    formats={['avif', 'webp']}
@@ -44,6 +44,8 @@ const isoDate = frontmatter.date
   <div class="permalink">
     <p><strong>Permalink:</strong> <textarea>{Astro.url.href}</textarea></p>
   </div>
+  <div class="content-nav">
   <GigNavPrevNext />
+  </div>
 </article>
 </PageLayout>

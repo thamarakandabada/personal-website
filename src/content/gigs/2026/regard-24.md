@@ -22,7 +22,7 @@ Here are some useful links.
 
 ## More photos from today's event
 
-<div class="md-grid">
+<div class="grid">
 
 ![The team setting up the performance area prior to the event. There are portraits hung on the wall and several lights illuminating the area. There are 3 people sat in the first row of the audience.](images/F51031F8-F834-4C3D-B1CB-FFA8514D0370_1_102_o.jpeg)
 

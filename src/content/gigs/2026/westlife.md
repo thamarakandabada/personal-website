@@ -43,7 +43,7 @@ More than anything, I was glad to experience this with Nuwani, as Westlife's mus
 
 ## More photos
 
-<div class="md-grid">
+<div class="grid">
 
 ![Nuwani holding her VIP lanyard](images/47C786E0-29B5-4BAA-8107-3AFAEB842371_1_201_a.jpeg)
 
@@ -71,7 +71,7 @@ More than anything, I was glad to experience this with Nuwani, as Westlife's mus
 
 ![An open box, containing a small notebook, pen, a decorative ticket, and a photo strip of the band](images/1C837081-B698-41AE-B4AD-9CA3431D5C65_1_201_a.jpeg)
 
-<div class="md-grid">
+<div class="grid">
 
 ![The VIP lanyard](images/3662BF24-E98A-4597-9808-E51FD6186970_1_201_a.jpeg)
 

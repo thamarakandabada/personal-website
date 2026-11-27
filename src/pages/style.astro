@@ -44,7 +44,7 @@ const slashpageImage = "/featured-images/style.png";
           <li><a href="https://www.fontshare.com/fonts/jet-brains-mono" target="_blank">JetBrains Mono</a> is used for code blocks and inline code.</li>
         </ul>
       <p>I am self-hosting these fonts. The variable font weights are used to create variations in text appearance as necessary.</p>
-        <div class="type-showcase">
+        <div class="grid-box">
           <h1>Heading 1</h1>
             <p>Level 1 headings are set in Erode and the primary text colour, and have the following properties:</p>
             <p>Font size: <Code code={`2.8rem`} inline />, Font weight: <Code code={`500`} inline /></p>
@@ -83,7 +83,7 @@ const slashpageImage = "/featured-images/style.png";
           Arise, arise, Riders of Théoden!<br>Fell deeds awake: fire and slaughter!<br>Spear shall be shaken, shield be splintered,<br>a sword-day, a red day, ere the sun rises!<br>Ride now, ride now! Ride to Gondor!
         </blockquote>
       <p>Unordered lists use the default <Code code={`disc`} inline /> style and ordered lists use the default <Code code={`decimal`} inline /> style. Font colours are inherited from the parent. This is illustrated below.</p>
-        <div class="meals type-showcase">
+        <div class="grid-box grid">
           <div>
             <h3>Meals of the day</h3>
               <ol>
@@ -149,12 +149,14 @@ const slashpageImage = "/featured-images/style.png";
           </table>
     <h2 id="other-components">Other components</h2>
       <p>Grid elements have a <Code code={`1px`} inline /> thick solid border set in the border colour, with a <Code code={`4px`} inline /> border radius. The background is styled in the tertiary background colour. If the grid element is hyperlinked, the border transitions to the accent colour and the entire element moves up by <Code code={`4px`} inline /> on hover using the <Code code={`translateY()`} inline /> function.</p>
-        <div class="style-grid">
-          <div class="unlinked-grid">
+        <div class="grid">
+          <div class="grid-box">
             <p>This is an example of an unlinked grid element. See this in use on the <a href="/uses">Uses</a> page.</p>
           </div>
-          <div class="linked-grid">
+          <div class="grid-box">
+
             <p>This is an example of a linked grid element. See this in use on the <a href="/projects/debas">Debas Archives</a> page.</p>
+
           </div>
         </div>
       <p><a href="https://indieweb.org/post_footer" target="_blank">Post footers</a> share the above styles (with the exception of the hover effect). On ordered lists inside post footers, numbers are styled in the accent colour. See example below.</p>

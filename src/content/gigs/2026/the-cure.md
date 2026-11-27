@@ -16,7 +16,7 @@ I wrote a blog post while waiting for this gig to start, you can read it [here](
 
 ![](images/9C33F35E-10DA-4F67-BB18-859E0831F589_1_102_o.jpeg)
 
-<div class="md-grid">
+<div class="grid">
 
 ![Drummer Jason Cooper as seen through a large screen to the left of the stage](images/1B0748D0-5B67-4565-B363-5EFFE3CE03AB_1_102_o.jpeg)
 

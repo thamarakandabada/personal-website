@@ -12,6 +12,11 @@
     text-decoration: none;
 }
 
+.timeline-entry:has(> a):hover {
+    border-color: var(--accent);
+    transform: var(--img-transform);
+}
+
 .content-label {
     margin: calc(var(--standard-gap) * -1) 0 0 var(--standard-gap);
     padding: var(--button-padding);
@@ -43,7 +48,7 @@
     object-fit: cover;
 }
 
-.pubdate {
+.pubdate, .post-category {
     font-size: var(--font-size-small);
     color: var(--text-secondary)
 }
@@ -79,6 +84,34 @@
     color: var(--accent);
     font-weight: var(--font-weight-normal);
     text-decoration: none;
+}
+
+.post-header {  
+    background-color: var(--bg-secondary);
+    text-align: center;
+    margin: calc(var(--standard-gap) * -3) -50vw;
+    padding: calc(var(--standard-gap) * 3) 0 calc(var(--standard-gap) * 8);
+}
+
+.post-image {
+    margin: calc(var(--standard-gap) * -5) 0 calc(var(--standard-gap) * 3);
+}
+
+.post-footer {
+    border: var(--border-muted);
+    border-radius: var(--border-radius);
+    padding: var(--standard-gap) calc(var(--standard-gap) * 1.5);
+    background-color: var(--bg-tertiary);
+    transition: var(--standard-transition);
+    margin: calc(var(--standard-gap) * 2) 0 0 0;
+}
+
+#post-footer-list li span {
+    color: var(--text-primary);
+}
+
+#post-footer-list li {
+    color: var(--accent);
 }
 
 /* Posters */
@@ -120,4 +153,39 @@
 
 .poster-director, .poster-customer {
     font-weight: var(--font-weight-bold);
+}
+
+/*
+Blog
+-----
+*/
+
+.old-post-disclaimer {
+    font-family: Erode-VariableItalic, serif;
+    border-bottom: 1px solid var(--accent);
+}
+
+.old-post-disclaimer p {
+    color: var(--text-secondary);
+}
+
+.disclaimer-tag {
+    color: var(--accent);
+}
+
+.poster-content {
+    margin-top: 3rem;
+}
+
+
+
+.blog-header-no-image, .podcast-header {
+    background-color: var(--bg-secondary);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 3rem 0 3rem;
 }

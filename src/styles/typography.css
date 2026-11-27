@@ -90,6 +90,10 @@ ul, ol {
     margin: var(--margin-p);
 }
 
+ul:has(+ hr), ol:has(+ hr) {
+    margin: 0 0 calc(var(--standard-gap) * 2) 0;
+}
+
 a {
     text-decoration: underline 1px var(--border-color);
     text-underline-offset: 4px;

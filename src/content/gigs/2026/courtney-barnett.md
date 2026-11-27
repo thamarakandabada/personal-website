@@ -46,7 +46,7 @@ Courtney is an incredible guitarist and a formidable stage presence. The blister
 
 ![Four musicians on stage illuminated by lights from the back](images/D8F4AD36-2148-45F6-B325-B8F72D509494_1_201_a.jpeg)
 
-<div class="md-grid">
+<div class="grid">
 
 ![The drummer](images/FA8987F3-6394-4CFA-9E3E-CD2667FA2822_1_201_a.jpeg)
 
@@ -68,7 +68,7 @@ Courtney is an incredible guitarist and a formidable stage presence. The blister
 
 ![Bones playing bass](images/71BCD433-A2C0-4EE5-B955-26F5BDFFB63B_1_201_a.jpeg)
 
-<div class="md-grid">
+<div class="grid">
 
 ![Courtney playing guitar, illuminated by a red light](images/42D2BBC4-B2C0-4241-B367-31D31EAB661B_1_201_a.jpeg)
 

@@ -15,32 +15,21 @@ const nextGig =
   currentGigIndex > 0
     ? posts[currentGigIndex - 1]
     : undefined;
-
-const allGigs =
-  currentGigIndex > 0
-    ? posts[currentGigIndex]
-    : undefined;
 ---
 
 {
-  (previousGig || allGigs || nextGig) && (
-    <nav class="post-nav">
+  (previousGig || nextGig) && (
+    <nav>
       {previousGig && (
-        <p>
+        <button>
           <a href={`/gigs/${previousGig.id}/`}>Previous</a>
-        </p>
-      )}
-
-      {allGigs && (
-        <p>
-          <a href={`/gigs/`}>All Gigs</a>
-        </p>
+        </button>
       )}
 
       {nextGig && (
-        <p>
+        <button>
           <a href={`/gigs/${nextGig.id}/`}>Next</a>
-        </p>
+        </button>
       )}
     </nav>
   )
