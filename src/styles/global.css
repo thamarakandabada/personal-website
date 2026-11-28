@@ -154,7 +154,7 @@ button:hover {
 .notice, .see-also-list {
     padding: calc(var(--standard-gap) * 0.1) var(--standard-gap);
     background: var(--bg-secondary);
-    border: var(--border-muted);
+    border: var(--border-alt);
     border-radius: var(--border-radius);
 }
 
@@ -519,12 +519,6 @@ Grids and sub-grids
     font-weight: 700;
 }
 
-.debas-author, .podcast-guest {
-    font-family: Erode-VariableItalic, serif;
-    font-size: 1.5rem;
-    color: var(--accent);
-}
-
 /*
 Site notices
 =============
@@ -584,11 +578,6 @@ Media queries
     .site-tagline, .poster-page-flex {
         display: flex;
         flex-direction: column;
-    }
-
-    .author-info {
-        display: flex;
-        flex-direction: column !important;
     }
 
     #mobile-menu {
@@ -800,28 +789,6 @@ Media queries
     }
 }
 
-/*
-Content collections
-===================
-
-Debas
------
-*/
-
-.debas-header {
-    background-color: var(--bg-secondary);
-    margin: 0;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.debas-header h1, .debas-header p {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-}
-
 
 
 .notebook-post-list {
@@ -877,41 +844,6 @@ Debas
     font-size: 1rem;
 }
 
-
-
-/*
-Debas
------
-*/
-
-.disclaimer {
-    font-family: Erode-VariableItalic, serif;
-    color: var(--text-secondary);
-    border-top: 1px solid var(--border-color);
-    padding-top: 1rem;
-}
-
-.author-info p {
-    margin: 0;
-    padding: 0;
-}
-
-.author-info {
-    border-top: 1px solid var(--border-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-}
-
-.author-photo {
-    flex: 30%;
-}
-
-.author-description {
-    flex: 70%;
-}
 
 .webmentions-section h4 {
     font-size: 1.4rem;

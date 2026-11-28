@@ -118,7 +118,7 @@ code:not(pre code) {
     padding: 0.15rem 0.25rem !important;
     background-color: var(--bg-tertiary);
     border-radius: var(--border-radius);
-    border: 1px dotted var(--accent);
+    border: 1px solid var(--alt-accent);
 }
 
 .astro-code {

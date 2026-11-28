@@ -18,16 +18,18 @@ const isoDate = frontmatter.pubDate
 
 <article class="h-entry">
 <a class="u-url" href={Astro.url.href} hidden>Permalink</a>
-<div class="blog-header">
-  <p><span class="blog-date"><time class="dt-published" datetime={isoDate}>{formattedDate}</time></span>//<span class="blog-category">Language: <span class="p-category">{frontmatter.language}</span></span></p>
-  <h1 class="blog-title p-name">{frontmatter.title}</h1>
+<div class="post-header">
+  <div class="post-meta">
+  <p><span class="pubdate"><time class="dt-published" datetime={isoDate}>{formattedDate}</time></span> — <span class="post-category"><span class="p-category">{frontmatter.language}</span></span></p>
+  <h1 class="post-title p-name">{frontmatter.title}</h1>
   <div class="p-author h-card">
-    <p class="blog-author">by <span class="p-name">{frontmatter.author}</span></p>
+    <p class="post-author">by <span class="p-name">{frontmatter.author}</span></p>
+  </div>
   </div>
 </div>
 
-  <div class="blog-image">
-  <figure class="blog-hero-image u-photo">
+  <div>
+  <figure class="post-image u-photo">
     <Picture
       src={frontmatter.imageUrl}
 	  formats={['avif', 'webp']}
@@ -39,23 +41,23 @@ const isoDate = frontmatter.pubDate
   <div class="e-content">
   <slot />
   </div>
-  <div class="author-info">
-    <div class="author-photo">
-	  <Picture
+  <div class="debas-infobox">
+    <div class="debas-author-avatar">
+	    <Picture
         src={frontmatter.authorPhotoUrl}
-		formats={['avif', 'webp']}
-		alt={frontmatter.authorPhotoAlt}
+		    formats={['avif', 'webp']}
+		    alt={frontmatter.authorPhotoAlt}
       />
-	</div>
-	<div class="author-description">
-	  <p>{frontmatter.authorInfo}</p>
-	</div>
+	  </div>
+	  <div class="debas-author-bio">
+	    <p>{frontmatter.authorInfo}</p>
+	  </div>
+    <div class="debas-disclaimer">
+	    <p>{frontmatter.disclaimer}</p>
+    </div>
   </div>
-  <div>
-	<p class="disclaimer">{frontmatter.disclaimer}</p>
   <div class="permalink">
   <p><strong>Permalink:</strong> <textarea>{Astro.url.href}</textarea></p>
-  </div>
   </div>
 </article>  
 </PageLayout>

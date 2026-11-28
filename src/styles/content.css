@@ -93,6 +93,10 @@
     padding: calc(var(--standard-gap) * 3) 0 calc(var(--standard-gap) * 8);
 }
 
+.post-meta {
+    margin: 0 50vw;
+}
+
 .post-image {
     margin: calc(var(--standard-gap) * -5) 0 calc(var(--standard-gap) * 3);
 }
@@ -155,10 +159,7 @@
     font-weight: var(--font-weight-bold);
 }
 
-/*
-Blog
------
-*/
+/* Blog */
 
 .old-post-disclaimer {
     font-family: Erode-VariableItalic, serif;
@@ -177,8 +178,6 @@ Blog
     margin-top: 3rem;
 }
 
-
-
 .blog-header-no-image, .podcast-header {
     background-color: var(--bg-secondary);
     width: 100vw;
@@ -188,4 +187,34 @@ Blog
     margin-left: -50vw;
     margin-right: -50vw;
     padding: 3rem 0 3rem;
+}
+
+/* Debas */
+
+.debas-infobox {
+    border: var(--border-alt);
+    border-radius: var(--border-radius);
+    margin: calc(var(--standard-gap) * 5) 0 var(--standard-gap) 0;
+    background-color: var(--bg-tertiary);
+    padding: calc(var(--standard-gap) * 0.5) var(--standard-gap);
+    text-align: center;
+}
+
+.debas-infobox div {
+    display: flex;
+    justify-content: center;
+}
+
+.debas-author-avatar img {
+    aspect-ratio: 1/1;
+    max-width: 100px;
+    object-fit: cover;
+    margin: -50px 0 0 0;
+}
+
+.debas-disclaimer p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-small);
+    border-top: var(--border-alt);
+    padding: var(--standard-gap) 0 0 0;
 }

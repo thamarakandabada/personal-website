@@ -21,6 +21,7 @@ const isoDate = frontmatter.date
   <a class="p-author h-card" href="https://thamara.co.uk/" hidden>Thamara Kandabada</a>
   <a class="u-url" href={Astro.url.href} hidden>Permalink</a>
   <div class="post-header">
+    <div class="post-meta">
     <p><span class="pubdate"><time class="dt-start dt-published" datetime={isoDate}>
 	    {formattedDate}
 	  </time></span> — <span class="post-category p-category">{frontmatter.label}</span></p>
@@ -28,6 +29,7 @@ const isoDate = frontmatter.date
     <h3 class="post-description p-summary">{frontmatter.support}</h3>  
     <h4 class="p-location">at {frontmatter.venue}, {frontmatter.city}</h4>
   </div>
+</div>
   <div>
 	  <figure class="post-image u-photo">
       <Picture

@@ -35,6 +35,10 @@
     margin: 0;
 }
 
+.grid-box > a {
+    text-decoration: none;
+}
+
 .grid-box:has(> a):hover {
     border-color: var(--accent);
     transform: var(--img-transform);
